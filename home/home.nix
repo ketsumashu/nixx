@@ -3,6 +3,8 @@
     	imports = [
 	    ./hyprland
 	    ./nvim
+	    ./terminals
+	    ./fish
 	];
 
 	home = {
