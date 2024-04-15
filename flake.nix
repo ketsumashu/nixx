@@ -12,10 +12,9 @@
                 inputs.nixpkgs.follows = "nixpkgs";
             };
             nixos-hardware.url = "github:NixOS/nixos-hardware/master";
-            hyprland.url = "github:hyprwm/Hyprland";
             waybar.url = "github:Alexays/Waybar";
         };
-        outputs = inputs@{ nixpkgs, waybar, home-manager, nixvim, hyprland, nixos-hardware, ... }: {
+        outputs = inputs@{ nixpkgs, waybar, home-manager, nixvim, nixos-hardware, ... }: {
                 nixosConfigurations = {
                     mashunix = nixpkgs.lib.nixosSystem {
                         system = "x86_64-linux";
