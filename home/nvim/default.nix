@@ -1,4 +1,4 @@
-    { pkgs, inputs, ... }; {
+    { pkgs, inputs, ... }: {
         imports = [
 	    imputs.nixvim.homeManagerModules.nixvim
 	];

@@ -1,4 +1,4 @@
-    { self, pkgs, config, hyprland, ... }; {
+    { self, pkgs, config, hyprland, ... }: {
     	
 	imports = [ ./hyprlock.nix ./hypridle.nix ];
 

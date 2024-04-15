@@ -1,4 +1,4 @@
-    { pkgs, config, lib, waybar, ... }; {
+    { pkgs, config, lib, waybar, ... }: {
 	programs.waybar = {
 	    enable = true;
 	    package = waybar.packages."${pkgs.system}".waybar;
