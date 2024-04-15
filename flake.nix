@@ -12,9 +12,8 @@
                 inputs.nixpkgs.follows = "nixpkgs";
             };
             nixos-hardware.url = "github:NixOS/nixos-hardware/master";
-            waybar.url = "github:Alexays/Waybar";
         };
-        outputs = inputs@{ nixpkgs, waybar, home-manager, nixvim, nixos-hardware, ... }: {
+        outputs = inputs@{ nixpkgs, home-manager, nixvim, nixos-hardware, ... }: {
                 nixosConfigurations = {
                     mashunix = nixpkgs.lib.nixosSystem {
                         system = "x86_64-linux";
@@ -31,7 +30,6 @@
                                     users.mashu = import ./home/home.nix;
                                     extraSpecialArgs = {
                                         inherit inputs;
-                                        inherit waybar;
                                     };
                                 };
                             }
