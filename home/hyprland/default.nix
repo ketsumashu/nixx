@@ -65,7 +65,7 @@
                     "$mod SHIFT, j, movewindow, d"
                     "$mod SHIFT, k, movewindow, u"
                     "$mod SHIFT, l, movewindow, r"
-		];
+		]
 		++ (
                     # workspaces
                     # binds $mod + [shift +] {1..10} to [move to] workspace {1..10}
@@ -88,8 +88,7 @@
                 );
 		bindm = [ "$mod, mouse:272, movewindow" "$mod, mouse:273, resizewindow" ];
 
-		general = {
-		    
+		general = {		    
                     gaps_in = 3;
                     gaps_out = 9;
                     border_size = 2;
