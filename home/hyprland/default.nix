@@ -1,4 +1,4 @@
-    { pkgs, config, lib, inputs, ... }: {
+    { pkgs, ... }: {
     	imports = [ ./hyprlock.nix ./hypridle.nix ];
 
 	home.packages = with pkgs; [
@@ -9,7 +9,6 @@
 	    wlroots
 	    qt5ct
 	    gnome.gnome-themes-extra
-	    libva
 	    wayland-utils
 	    wayland-protocols
 	    meson
@@ -18,7 +17,6 @@
 	wayland.windowManager.hyprland = {
 	    enable = true;
 	    xwayland.enable = true;
-	    systemd.enable = true;
 
 	    settings = {
                 "$mod" = "SUPER";
