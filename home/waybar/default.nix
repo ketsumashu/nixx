@@ -1,6 +1,7 @@
     { pkgs, config, lib, ... }: {
 	programs.waybar = {
 	    enable = true;
+	    systemd = { enabled = false; };
 	    settings = {
 		mainbar = {
                     layer = "top";
