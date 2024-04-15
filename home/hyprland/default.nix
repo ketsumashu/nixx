@@ -4,11 +4,9 @@
 	home.packages = with pkgs; [
 	    xdg-desktop-portal-hyprland
 	    wl-clipboard
-	    xwayland
 	    xdg-desktop-portal-gtk
 	    wlroots
 	    qt5ct
-	    gnome.gnome-themes-extra
 	    wayland-utils
 	    wayland-protocols
 	    meson
@@ -23,7 +21,6 @@
 
 		exec-once = [
 		    "${pkgs.hypridle}/bin/hypridle"
-		    "${pkgs.waybar}/bin/waybar"
 		];
 		monitor = [
 		    "HDMI-A-2,2560x1440@144,0x0,1"
@@ -137,20 +134,6 @@
                         "workspaces, 1, 4, default, fade"
 		   ];
                 };
-
-		qt = {
-		    enable = true;
-		    platformTheme = "gtk";
-		    style.name = "gtk2";
-		};
-
-		gtk = {
-		    enable = true;
-		    theme = {
-			package = pkgs.flat-remix-icon-theme;
-			name = "Flat-Remix-Grey-Darkest";
-		    };
-		};
 	    };
 	};
     }
