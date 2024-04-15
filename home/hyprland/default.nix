@@ -17,7 +17,6 @@
 	    xwayland.enable = true;
 
 	    settings = {
-                "$mod" = "SUPER";
 
 		exec-once = [
 		    "${pkgs.hypridle}/bin/hypridle"
@@ -40,30 +39,30 @@
 		];
 
 		bind = [
-                    "$mod, B, exec, firefox"
-                    "$mod, SPACE, exec, rofi -show drun"
-                    "$mod, RETURN, exec, foot"
-                    "$mod, period, exec, hyprlock"
-                    "$mod CTRL, Q, exit"
-                    "$mod , V, togglefloating"
+                    "SUPER, B, exec, firefox"
+                    "SUPER, SPACE, exec, rofi -show drun"
+                    "SUPER, RETURN, exec, foot"
+                    "SUPER, period, exec, hyprlock"
+                    "SUPER CTRL, Q, exit"
+                    "SUPER , V, togglefloating"
                     "SUPER, P, exec, cliphist list | rofi -dmenu | cliphist decode | wl-copy"
-                    "$mod CTRL, equal, exec, pactl set-sink-volume @DEFAULT_SINK@ +5%"
-                    "$mod CTRL, minus, exec, pactl set-sink-volume @DEFAULT_SINK@ -5%"
-                    "$mod, X, killactive"
-                    "$mod, F, Fullscreen"
-                    "$mod, H,movefocus, l"
-                    "$mod, L,movefocus, r"
-                    "$mod, K,movefocus, u"
-                    "$mod, J,movefocus, d"
+                    "SUPER CTRL, equal, exec, pactl set-sink-volume @DEFAULT_SINK@ +5%"
+                    "SUPER CTRL, minus, exec, pactl set-sink-volume @DEFAULT_SINK@ -5%"
+                    "SUPER, X, killactive"
+                    "SUPER, F, Fullscreen"
+                    "SUPER, H,movefocus, l"
+                    "SUPER, L,movefocus, r"
+                    "SUPER, K,movefocus, u"
+                    "SUPER, J,movefocus, d"
                    
-                    "$mod SHIFT, h, movewindow, l"
-                    "$mod SHIFT, j, movewindow, d"
-                    "$mod SHIFT, k, movewindow, u"
-                    "$mod SHIFT, l, movewindow, r"
+                    "SUPER SHIFT, h, movewindow, l"
+                    "SUPER SHIFT, j, movewindow, d"
+                    "SUPER SHIFT, k, movewindow, u"
+                    "SUPER SHIFT, l, movewindow, r"
 		]
 		++ (
                     # workspaces
-                    # binds $mod + [shift +] {1..10} to [move to] workspace {1..10}
+                    # binds SUPER + [shift +] {1..10} to [move to] workspace {1..10}
                     builtins.concatLists (builtins.genList
                       (
                         x:
@@ -75,13 +74,13 @@
                             builtins.toString (x + 1 - (c * 10));
                         in
                         [
-                          "$mod, ${ws}, workspace, ${toString (x + 1)}"
-                          "$mod SHIFT, ${ws}, movetoworkspace, ${toString (x + 1)}"
+                          "SUPER, ${ws}, workspace, ${toString (x + 1)}"
+                          "SUPER SHIFT, ${ws}, movetoworkspace, ${toString (x + 1)}"
                         ]
                       )
                       10)
                 );
-		bindm = [ "$mod, mouse:272, movewindow" "$mod, mouse:273, resizewindow" ];
+		bindm = [ "SUPER, mouse:272, movewindow" "SUPER, mouse:273, resizewindow" ];
 
 		general = {		    
                     gaps_in = 3;
