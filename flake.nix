@@ -32,7 +32,6 @@
                                     extraSpecialArgs = {
                                         inherit inputs;
                                         inherit waybar;
-                                        inherit hyprland;
                                     };
                                 };
                             }
