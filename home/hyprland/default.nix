@@ -15,7 +15,7 @@
 	    meson
 	];
 
-	wayland.windowmanager.hyprland = {
+	wayland.windowManager.hyprland = {
 	    enable = true;
 	    xwayland.enable = true;
 	    package = hyprland.packages."${pkgs.system}".hyprland;
