@@ -72,6 +72,14 @@
     wireplumber.enable = true;
   };
 
+  # Graphics
+  hardware.opengl.enable = true;
+  hardware.opengl.driSupport = true;
+  hardware.opengl.driSupport32Bit = true;
+  service.dbus.enable = true;
+
+  # Polkit
+  security.polkit.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.mashu = {
