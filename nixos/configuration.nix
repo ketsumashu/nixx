@@ -76,7 +76,7 @@
   hardware.opengl.enable = true;
   hardware.opengl.driSupport = true;
   hardware.opengl.driSupport32Bit = true;
-  service.dbus.enable = true;
+  services.dbus.enable = true;
 
   # Polkit
   security.polkit.enable = true;
