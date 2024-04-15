@@ -25,7 +25,6 @@
 
 		exec-once = [
 		    "${pkgs.hypridle}/bin/hypridle"
-		    "${pkgs.hyprlock}/bin/hyprlock"
 		    "${pkgs.waybar}/bin/waybar"
 		];
 		monitor = [
