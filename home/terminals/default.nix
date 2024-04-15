@@ -1,5 +1,5 @@
-    { config,pkgs, ... }: {
-        programs.foot.enable = true;
+    { pkgs,config, ... }: {
+        home.packages = with pkgs; [ foot ];
 
         xdg.configFile."foot/foot.ini".text = ''
             shell=fish
@@ -186,9 +186,6 @@
             # select-word=BTN_LEFT-2
             # select-word-whitespace=Control+BTN_LEFT-2
             # select-row=BTN_LEFT-3
-            
             # vim: ft=dosini
-
         '';
-            
     }
