@@ -1,4 +1,4 @@
-    { pkgs, config, ... }: {
+    { pkgs, ... }: {
 	programs.waybar = {
 	    enable = true;
 	    systemd = { enabled = false; };
