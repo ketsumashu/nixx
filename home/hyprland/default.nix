@@ -78,7 +78,7 @@
                     "$mod SHIFT, l, movewindow, r"
 		];
 
-		bindm = { "$mod, mouse:272, movewindow" "$mod, mouse:273, resizewindow" };
+		bindm = [ "$mod, mouse:272, movewindow" "$mod, mouse:273, resizewindow" ];
 
 		general = {
 		    
@@ -115,13 +115,13 @@
                     mouse_move_enables_dpms = true;
                 };
                 input = {
-                    kb_layout = "us"
-                    kb_options = "ctrl:nocaps"
-                    repeat_delay = 270
-                    repeat_rate = 50
+                    kb_layout = "us";
+                    kb_options = "ctrl:nocaps";
+                    repeat_delay = 270;
+                    repeat_rate = 50;
                 };
                 animations = {
-                    enabled = true
+                    enabled = true;
                     bezier = [
                         "myBezier, 0.05, 0.9, 0.1, 1.05"
                         "cubic, 0.1, 0.23, 0.41, 0.9"
