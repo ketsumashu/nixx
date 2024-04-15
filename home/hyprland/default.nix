@@ -9,6 +9,7 @@
 	    xdg-desktop-portal-gtk
 	    wlroots
 	    qt5ct
+	    gnome.gnome-themes-extra
 	    libva
 	    wayland-utils
 	    wayland-protocols
@@ -30,6 +31,18 @@
 		monitor = [
 		    "HDMI-A-2,2560x1440@144,0x0,1"
                     "DP-1,2560x1440@100,2560x0,1"
+		];
+
+		env = [
+
+                    "XCURSOR_SIZE,24"
+                    "XDG_SESSION_TYPE,wayland"
+                    "XDG_CURRENT_DESKTOP,Hyprland"
+                    "XDG_SESSION_DESKTOP,Hyprland"
+                    "QT_WAYLAND_DISABLE_WINDOWDECORATION,1"
+                    "QT_QPA_PLATFORM,wayland;xcb"
+                    "GDK_DPI_SCALE,1"
+                    "QT_AUTO_SCREEN_SCALE_FACTOR,1"
 		];
 
 		bind = [
@@ -131,6 +144,20 @@
                         "workspaces, 1, 4, default, fade"
 		   ];
                 };
+
+		qt = {
+		    enable = true;
+		    platformTheme = "gtk";
+		    style.name = "gtk2";
+		};
+
+		gtk = {
+		    enable = true;
+		    theme = {
+			package = pkgs.flat-remix-icon-theme;
+			name = "Flat-Remix-Grey-Darkest";
+		    };
+		};
 	    };
 	};
     }
