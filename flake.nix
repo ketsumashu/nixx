@@ -23,7 +23,7 @@
                             nixos-hardware.nixosModules.common-cpu-amd
                             nixos-hardware.nixosModules.common-gpu-amd
                             ./nixos/configuration.nix
-                            { _module_args = { inherit inputs; } }
+                            { _module_args = { inherit inputs; }; }
                             home-manager.nixosModules.home-manager {
                                 home-manager = {
                                     useGlobalPkgs = true;
