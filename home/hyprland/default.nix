@@ -1,6 +1,5 @@
     { pkgs, config, lib, inputs, ... }: {
-    	
-	imports = [ ./hyprlock.nix ./hypridle.nix ];
+    	imports = [ ./hyprlock.nix ./hypridle.nix ];
 
 	home.packages = with pkgs; [
 	    xdg-desktop-portal-hyprland
@@ -67,6 +66,26 @@
                     "$mod SHIFT, k, movewindow, u"
                     "$mod SHIFT, l, movewindow, r"
 		];
+		++ (
+                    # workspaces
+                    # binds $mod + [shift +] {1..10} to [move to] workspace {1..10}
+                    builtins.concatLists (builtins.genList
+                      (
+                        x:
+                        let
+                          ws =
+                            let
+                              c = (x + 1) / 10;
+                            in
+                            builtins.toString (x + 1 - (c * 10));
+                        in
+                        [
+                          "$mod, ${ws}, workspace, ${toString (x + 1)}"
+                          "$mod SHIFT, ${ws}, movetoworkspace, ${toString (x + 1)}"
+                        ]
+                      )
+                      10)
+                );
 		bindm = [ "$mod, mouse:272, movewindow" "$mod, mouse:273, resizewindow" ];
 
 		general = {
@@ -135,26 +154,6 @@
 			name = "Flat-Remix-Grey-Darkest";
 		    };
 		};
-		++ (
-                    # workspaces
-                    # binds $mod + [shift +] {1..10} to [move to] workspace {1..10}
-                    builtins.concatLists (builtins.genList
-                      (
-                        x:
-                        let
-                          ws =
-                            let
-                              c = (x + 1) / 10;
-                            in
-                            builtins.toString (x + 1 - (c * 10));
-                        in
-                        [
-                          "$mod, ${ws}, workspace, ${toString (x + 1)}"
-                          "$mod SHIFT, ${ws}, movetoworkspace, ${toString (x + 1)}"
-                        ]
-                      )
-                      10)
-                  );
 	    };
 	};
     }
