@@ -20,5 +20,5 @@
 	    enable = true;
 	    xwayland.enable = true;
 	};
-	xdg.configFile."hypr/hyprland.conf".source = /home/mashu/dotfiles/hypr/hyprland.conf;
+	xdg.configFile."hypr/hyprland.conf".source = ./hyprland.conf;
     }
