@@ -1,148 +1,109 @@
-    { pkgs, ... }: {
-    	imports = [ ./hyprlock.nix ./hypridle.nix ];
+{ config, pkgs, ... }:
 
-	home.packages = with pkgs; [
-	    xdg-desktop-portal-hyprland
-	    wl-clipboard
-	    xdg-desktop-portal-gtk
-	    wlroots
-	    qt5ct
-	    wayland-utils
-	    wayland-protocols
-	    meson
-	];
+{
 
-	wayland.windowManager.hyprland = {
-	    enable = true;
-	    xwayland.enable = true;
-	    package = pkgs.hyprland;
-	    systemd.enable = true;
+  wayland.windowManager.hyprland = {
+    # Whether to enable Hyprland wayland compositor
+    enable = true;
+    # The hyprland package to use
+    package = pkgs.hyprland;
+    # Whether to enable XWayland
+    xwayland.enable = true;
 
-	    settings = {
+    # Optional
+    # Whether to enable hyprland-session.target on hyprland startup
+    systemd.enable = true;
+  };
 
-		"$mod" = "Super_L";
-		exec-once = [
-		    "hypridle"
-		];
+  wayland.windowManager.hyprland.settings = {
+    "$mod" = "Super_L";
+    "$terminal" = "foot";
+    misc = {
+      disable_hyprland_logo = true;
+      disable_splash_rendering = true;
+      force_default_wallpaper = 0;
+      disable_autoreload = true; # we are nixed up, we don't need this
+    };
+    binds = {
+      scroll_event_delay = 0;
+    };
+    decoration = {
+      rounding = 10;
+      blur = {
+        enabled = true;
+        size = 25;
+        passes = 3;
+        vibrancy = 0.1696;
+      };
+      drop_shadow = true;
+      shadow_range = 4;
+      shadow_render_power = 3;
+    };
+    animations = {
+      enabled = true;
 
-		monitor = [
-		    "HDMI-A-2,2560x1440@144,0x0,1"
-                    "DP-1,2560x1440@100,2560x0,1"
-		];
+      bezier = [
+        "myBezier, 0.05, 0.9, 0.1, 1.05"
+      ];
 
-		env = [
-                    "XCURSOR_SIZE,24"
-                    "XDG_SESSION_TYPE,wayland"
-                    "XDG_CURRENT_DESKTOP,Hyprland"
-                    "XDG_SESSION_DESKTOP,Hyprland"
-                    "QT_WAYLAND_DISABLE_WINDOWDECORATION,1"
-                    "QT_QPA_PLATFORM,wayland;xcb"
-                    "GDK_DPI_SCALE,1"
-                    "QT_AUTO_SCREEN_SCALE_FACTOR,1"
-		];
+      animation = [
+        "windows, 1, 4, myBezier"
+        "windowsOut, 1, 4, default, popin 80%"
+        "border, 1, 5, default"
+        "borderangle, 1, 8, default"
+        "fade, 1, 7, default"
+        "workspaces, 1, 6, default"
+      ];
+    };
+    input = {
+      follow_mouse = 2;
+    };
+    exec-once = [
+      "hypridle"
+      "waybar"
+    ];
+    bindm = [
+      "$mod, mouse:272, movewindow"
+      "$mod, mouse:273, resizewindow"
+    ];
+    bind =
+      [
+        # firefox is $mod + F, kitty is $mod + ENTER
+        "$mod, B, exec, firefox"
+        ", Print, exec, grimblast copy area"
+        "SHIFT, Print, exec, grimblast copysave area"
+        "$mod, Return, exec, $terminal"
+        #"$mod, C, exec, chromium" #replace with color picker
+        "$mod CTRL, Q, exit"
+        "$mod, Space, exec, rofi -show run"
+        "$mod, X, killactive"
+        "$mod, E, exec, nemo"
+        "$mod, left, movefocus, l"
+        "$mod, right, movefocus, r"
+        "$mod, up, movefocus, u"
+        "$mod, down, movefocus, d"
+        "Alt_L, Tab, workspace, e+1"
+        "Alt_l SHIFT, Tab, workspace, e-1"
+        "$mod, minus, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
+        "$mod, equal, exec, wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+"
+        "$mod, V, togglefloating"
+      ]
+      ++ (
+        # workspaces
+        # binds $mod + [shift +] {1..10} to [move to] workspace {1..10}
+        builtins.concatLists (builtins.genList (
+            x: let
+              ws = let
+                c = (x + 1) / 10;
+              in
+                builtins.toString (x + 1 - (c * 10));
+            in [
+              "$mod, ${ws}, workspace, ${toString (x + 1)}"
+              "$mod SHIFT, ${ws}, movetoworkspace, ${toString (x + 1)}"
+            ]
+          )
+          10)
+      );
+  };
 
-		general = {		    
-                    gaps_in = 3;
-                    gaps_out = 9;
-                    border_size = 2;
-                    "col.active_border" = "rgb(0000ff)";
-                    "col.inactive_border" = "rgb(000000)";
-                    layout = "dwindle";
-		};
-
-		decoration = {
-		    rounding = 8;
-		    drop_shadow = "yes";
-		    shadow_range = 3;
-		    shadow_render_power = 3;
-		    "col.shadow" = "rgb(000000)"; 
-		    blur = {
-			enable = true;
-			size = 2;
-			passes = 3;
-			popups = true;
-			contrast = 1;
-			noise = 0.01;
-			brightness = 0.92;
-		    };
-		};
-	        master = {
-		    new_is_master = true;
-		};
-
-                misc = {
-                    disable_hyprland_logo = true;
-                    enable_swallow = true;
-                    key_press_enables_dpms = true;
-                    mouse_move_enables_dpms = true;
-                };
-                input = {
-                    kb_layout = "us";
-                    kb_options = "ctrl:nocaps";
-                    repeat_delay = 270;
-                    repeat_rate = 50;
-                };
-                animations = {
-                    enabled = true;
-                    bezier = [
-                        "myBezier, 0.05, 0.9, 0.1, 1.05"
-                        "cubic, 0.1, 0.23, 0.41, 0.9"
-                        "windows, 1, 1.2, cubic, slide"
-                        "border, 1, 0.1, default"
-                        "borderangle, 0, 0.2, default"
-                        "fade, 1, 4, default"
-                        "workspaces, 1, 4, default, fade"
-		   ];
-                };
-
-		bindm = [
-		    "$mod, mouse:272, movewindow" 
-		    "$mod, mouse:273, resizewindow" 
-		];
-
-		bind = [
-                    "$mod, B, exec, firefox"
-                    "$mod, SPACE, exec, rofi -show drun"
-                    "$mod, RETURN, exec, foot"
-                    "$mod, period, exec, hyprlock"
-                    "$mod CTRL, Q, exit"
-                    "$mod , V, togglefloating"
-                    "$mod, P, exec, cliphist list | rofi -dmenu | cliphist decode | wl-copy"
-                    "$mod CTRL, equal, exec, pactl set-sink-volume @DEFAULT_SINK@ +5%"
-                    "$mod CTRL, minus, exec, pactl set-sink-volume @DEFAULT_SINK@ -5%"
-                    "$mod, X, killactive"
-                    "$mod, F, Fullscreen"
-                    "$mod, H,movefocus, l"
-                    "$mod, L,movefocus, r"
-                    "$mod, K,movefocus, u"
-                    "$mod, J,movefocus, d"
-                   
-                    "$mod SHIFT, h, movewindow, l"
-                    "$mod SHIFT, j, movewindow, d"
-                    "$mod SHIFT, k, movewindow, u"
-                    "$mod SHIFT, l, movewindow, r"
-		]
-		++ (
-                    # workspaces
-                    # binds SUPER + [shift +] {1..10} to [move to] workspace {1..10}
-                    builtins.concatLists (builtins.genList
-                      (
-                        x:
-                        let
-                          ws =
-                            let
-                              c = (x + 1) / 10;
-                            in
-                            builtins.toString (x + 1 - (c * 10));
-                        in
-                        [
-                          "$mod, ${ws}, workspace, ${toString (x + 1)}"
-                          "$mod SHIFT, ${ws}, movetoworkspace, ${toString (x + 1)}"
-                        ]
-                      )
-                      10)
-                );
-
-	    };
-	};
-    }
+}
