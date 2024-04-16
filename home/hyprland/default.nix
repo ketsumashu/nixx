@@ -15,12 +15,14 @@
 	wayland.windowManager.hyprland = {
 	    enable = true;
 	    xwayland.enable = true;
+	    package = pkgs.hyprland;
+	    systemd.enable = true;
 
 	    settings = {
 
 		"$mod" = "Super_L";
 		exec-once = [
-		    "${pkgs.hypridle}/bin/hypridle"
+		    "hypridle"
 		];
 
 		monitor = [
@@ -50,7 +52,7 @@
 
 		decoration = {
 		    rounding = 8;
-		    drop_shadow = true;
+		    drop_shadow = "yes";
 		    shadow_range = 3;
 		    shadow_render_power = 3;
 		    "col.shadow" = "rgb(000000)"; 
