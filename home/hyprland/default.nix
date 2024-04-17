@@ -18,6 +18,10 @@
   wayland.windowManager.hyprland.settings = {
     "$mod" = "Super_L";
     "$terminal" = "foot";
+    monitor = [
+		  "HDMI-A-2,2560x1440@144,0x0,1"
+      "DP-1,2560x1440@100,2560x0,1"
+    ];
     misc = {
       disable_hyprland_logo = true;
       disable_splash_rendering = true;
