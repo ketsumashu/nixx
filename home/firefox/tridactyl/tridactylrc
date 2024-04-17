@@ -1,8 +1,8 @@
 " General Settings
 set configversion 2.0
 set smoothscroll true
-colorscheme --url https://github.com/ketsumashu/dotfiles/blob/master/tridactyl/themes/substrata.css substrata
 set theme substrata
+colorscheme substrata
 
 " Binds
 bind J tabnext
