@@ -20,8 +20,8 @@
                         format = "{name}";
                         all-outputs = false;
                         persistent-workspaces = {
-                            "HDMI-A-2" = [ 1, 2, 3, 4];
-                            "DP-1" = [ 5, 6, 7, 8, 9];
+                            "HDMI-A-2" = [ 1 2 3 4];
+                            "DP-1" = [ 5 6 7 8 9];
                         };
                     };
 
