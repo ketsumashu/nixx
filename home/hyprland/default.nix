@@ -21,7 +21,7 @@
     misc = {
       disable_hyprland_logo = true;
       disable_splash_rendering = true;
-      force_default_wallpaper = 0;
+      force_default_wallpaper = 1;
       disable_autoreload = true; # we are nixed up, we don't need this
     };
     binds = {
@@ -31,33 +31,50 @@
       rounding = 10;
       blur = {
         enabled = true;
-        size = 25;
+        size = 2;
         passes = 3;
-        vibrancy = 0.1696;
+        popups = true;
+        contrast = 1;
+        noise = 0.01;
+        brightness = 0.92;
       };
       drop_shadow = true;
-      shadow_range = 4;
+      shadow_range = 3;
       shadow_render_power = 3;
-    };
-    animations = {
-      enabled = true;
+      };
+      animations = {
+        enabled = true;
 
       bezier = [
         "myBezier, 0.05, 0.9, 0.1, 1.05"
       ];
 
       animation = [
-        "windows, 1, 4, myBezier"
-        "windowsOut, 1, 4, default, popin 80%"
-        "border, 1, 5, default"
-        "borderangle, 1, 8, default"
-        "fade, 1, 7, default"
-        "workspaces, 1, 6, default"
+         "windows, 1, 1.2, cubic, slide"
+         "border, 1, 0.1, default"
+         "borderangle, 0, 0.2, default"
+         "fade, 1, 4, default"
+         "workspaces, 1, 4, default, fade"
       ];
     };
-    input = {
-      follow_mouse = 2;
+
+    dwindle = {
+      pseudotile = true;
+      preserve_split = true;
+      force_split = 2;
     };
+
+    master = {
+      new_is_master = true;
+    };
+
+    input = {
+    kb_layout = "us";
+    kb_options = "ctrl:nocaps";
+    repeat_delay = 270;
+    repeat_rate = 50;
+    };
+
     exec-once = [
       "hypridle"
       "waybar"
@@ -70,18 +87,15 @@
       [
         # firefox is $mod + F, kitty is $mod + ENTER
         "$mod, B, exec, firefox"
-        ", Print, exec, grimblast copy area"
-        "SHIFT, Print, exec, grimblast copysave area"
         "$mod, Return, exec, $terminal"
-        #"$mod, C, exec, chromium" #replace with color picker
         "$mod CTRL, Q, exit"
-        "$mod, Space, exec, rofi -show run"
+        "$mod, Space, exec, rofi -show drun"
         "$mod, X, killactive"
-        "$mod, E, exec, nemo"
-        "$mod, left, movefocus, l"
-        "$mod, right, movefocus, r"
-        "$mod, up, movefocus, u"
-        "$mod, down, movefocus, d"
+        "$mod, E, exec, discord"
+        "$mod, H, movefocus, l"
+        "$mod, L, movefocus, r"
+        "$mod, K, movefocus, u"
+        "$mod, J, movefocus, d"
         "Alt_L, Tab, workspace, e+1"
         "Alt_l SHIFT, Tab, workspace, e-1"
         "$mod, minus, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
