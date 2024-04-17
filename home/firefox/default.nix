@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{pkgs, inputs, ...}: {
   programs.firefox = {
     enable = true;
     profiles.mashu = {
