@@ -9,8 +9,8 @@
 	    enable = true;
 	    colorschemes.catppuccin.enable = true;
 	    settings = {
-		viAlias = true;
-		vimAlias = true;
+					viAlias = true;
+		      vimAlias = true;
 	    };
 	};
     }
