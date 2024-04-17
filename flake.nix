@@ -14,7 +14,7 @@
             nixos-hardware.url = "github:NixOS/nixos-hardware/master";
             waybar.url = "github:Alexays/Waybar";
         };
-        outputs = inputs@{ nixpkgs, home-manager, nixvim, nixos-hardware, ... }: {
+        outputs = inputs@{ nixpkgs, home-manager, nixvim, nixos-hardware, waybar, ... }: {
                 nixosConfigurations = {
                     mashunix = nixpkgs.lib.nixosSystem {
                         system = "x86_64-linux";
@@ -23,7 +23,7 @@
                             nixos-hardware.nixosModules.common-gpu-amd
                             nixos-hardware.nixosModules.common-pc-ssd
                             ./nixos/configuration.nix
-			    ./host
+			                      ./host
                             { _module.args = { inherit inputs; }; }
                             home-manager.nixosModules.home-manager {
                                 home-manager = {
