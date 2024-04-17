@@ -108,6 +108,7 @@
       [
         # firefox is $mod + F, kitty is $mod + ENTER
         "$mod, B, exec, firefox"
+        "$mod, S, exec, steam"
         "$mod, Return, exec, $terminal"
         "$mod CTRL, Q, exit"
         "$mod, Space, exec, rofi -show drun"
