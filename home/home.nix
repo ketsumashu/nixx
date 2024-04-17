@@ -6,6 +6,7 @@
 	    ./terminals
 	    ./fish
       ./waybar
+      ./firefox
 	];
 
 	home = {
@@ -19,7 +20,6 @@
 	        ripgrep
 	        blueman
 	        xdg_utils
-	        firefox
 	    ];
 
 	    stateVersion = "24.05";
