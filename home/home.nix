@@ -5,6 +5,7 @@
 	    ./nvim
 	    ./terminals
 	    ./fish
+      ./waybar
 	];
 
 	home = {

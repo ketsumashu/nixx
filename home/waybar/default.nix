@@ -1,7 +1,7 @@
-    { pkgs, ... }: {
+    { pkgs, config, lib, waybar, ... }: {
 	     programs.waybar = {
 	         enable = true;
-           package = pkgs.waybar;
+           package = waybar.packages."${pkgs.system}".waybar;
 	         systemd = { enabled = false; };
 	         settings = {
 		           mainBar = {
