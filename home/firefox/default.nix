@@ -3,11 +3,6 @@
     enable = true;
     profiles.mashu = {
       bookmarks = {};
-      extensions = with pkgs.firefox-addons; [
-        ublock-origin
-        tridactyl
-      ];
-      bookmarks = {};
       settings = {
         "browser.disableResetPrompt" = true;
         "browser.download.panel.shown" = false;
