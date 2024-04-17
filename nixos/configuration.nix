@@ -64,6 +64,8 @@
     };
   };
 
+  hardware.xpadneo.enable = true;
+
   #Environment variables
   environment.variables = {
       MOZ_ENABLE_WAYLAND = "1";
