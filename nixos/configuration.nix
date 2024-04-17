@@ -102,7 +102,14 @@
       proton-ge-bin
       libkrb5
       keyutils
-
+      xorg.libXcursor
+      xorg.libXi
+      xorg.libXinerama
+      xorg.libXScrnSaver
+      libpng
+      libpulseaudio
+      libvorbis
+      stdenv.cc.cc.lib
     ];
   };
 
