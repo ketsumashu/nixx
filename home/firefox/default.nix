@@ -22,13 +22,6 @@
     };
   };
 
-  home = {
-    persistence = {
-      # Not persisting is safer
-      # "/persist/home/misterio".directories = [ ".mozilla/firefox" ];
-    };
-  };
-
   xdg.mimeApps.defaultApplications = {
     "text/html" = ["firefox.desktop"];
     "text/xml" = ["firefox.desktop"];
