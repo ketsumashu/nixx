@@ -1,6 +1,15 @@
 { config, pkgs, ... }:
 
 {
+  imports = [ ./hypridle.nix ./hyprlock.nix ];
+
+  home.packages = with pkgs; [
+    wl-clipboard
+    dconf
+    meson
+    xdg-desktop-portal-hyprland
+    xdg-desktop-portal-gtk
+  ];
 
   wayland.windowManager.hyprland = {
     # Whether to enable Hyprland wayland compositor
