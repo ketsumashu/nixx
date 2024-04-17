@@ -15,7 +15,7 @@
   boot.loader.systemd-boot.consoleMode = "max";
   boot.loader.efi.canTouchEfiVariables = true;
 
-  networking.hostName = "nixos"; # Define your hostname.
+  networking.hostName = "mashunix"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
 
@@ -77,6 +77,17 @@
   hardware.opengl.driSupport = true;
   hardware.opengl.driSupport32Bit = true;
   services.dbus.enable = true;
+
+  # Steam, for opengl access
+  programs.steam = {
+    enable = true;
+    remotePlay.openFirewall = true;
+    dedicatedServer.openFirewall = true;
+    gamescopeSession.enable =true;
+    extraCompatPackages = with pkgs; [
+      proton-ge-bin
+    ];
+  };
 
   # Polkit
   security.polkit.enable = true;
