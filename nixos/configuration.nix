@@ -14,6 +14,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.systemd-boot.consoleMode = "max";
   boot.loader.efi.canTouchEfiVariables = true;
+  boot.initrd.KernelModules = [ "usbhid" "joydev" "xpad" ];
   boot.extraModprobeConfig = '' options bluetooth disable_ertm=1 '';
 
   networking.hostName = "mashunix"; # Define your hostname.
