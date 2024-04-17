@@ -19,11 +19,7 @@
         deleted = "x";
       };
       git_commit = {
-        ahead = ">";
-        behind = "<";
-        diverged = "<>";
-        renamed = "r";
-        deleted = "x";
+        tag_symbol = " tag ";
       };
       time = {
         disabled = false;
