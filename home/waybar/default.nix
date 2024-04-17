@@ -1,4 +1,5 @@
   { pkgs, config, lib, waybar, ... }: {
+    xdg.configFile."waybar/style.css".source = ./style.css;
     programs.waybar = {
 	    enable = true;
       package = waybar.packages."${pkgs.system}".waybar;
@@ -87,6 +88,5 @@
         };
       };
 	  };
-    xdg.configFile."waybar/style.css".source = ./style.css;
   };
   }
