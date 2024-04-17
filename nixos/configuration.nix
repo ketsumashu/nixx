@@ -14,8 +14,8 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.systemd-boot.consoleMode = "max";
   boot.loader.efi.canTouchEfiVariables = true;
-  boot.initrd.kernelModules = [ "usbhid" "joydev" "xpad" ];
-  boot.extraModprobeConfig = '' options bluetooth disable_ertm=1 '';
+#  boot.initrd.kernelModules = [ "usbhid" "joydev" "xpad" ];
+#  boot.extraModprobeConfig = '' options bluetooth disable_ertm=1 '';
 
   networking.hostName = "mashunix"; # Define your hostname.
   #networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -52,19 +52,7 @@
   hardware.bluetooth = {
     enable = true;
     powerOnBoot = true;
-    settings = {
-      General = {
-        Class = "0x000100";
-        ControllerMode = "bredr";
-        FastConnectable = true;
-        JustWorksRepairing = "always";
-        Privacy = "device";
-        Experimental = true;
-      };
-    };
   };
-
-  hardware.xpadneo.enable = true;
 
   #Environment variables
   environment.variables = {
