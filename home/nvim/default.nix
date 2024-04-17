@@ -8,5 +8,9 @@
 	programs.nixvim = {
 	    enable = true;
 	    colorschemes.catppuccin.enable = true;
+	    settings = {
+		viAlias = true;
+		vimAlias = true;
+	    };
 	};
     }

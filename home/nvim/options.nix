@@ -4,7 +4,7 @@
 	    number = true;
 	    autoindent = true;
 	    clipboard = "unnamedplus";
-	    expandedtab = true;
+	    expandtab = true;
 	    tabstop = 2;
 	    softtabstop = 2;
 	    smartindent = true;
