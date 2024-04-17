@@ -1,25 +1,25 @@
 # Edit this configuration file to define what should be installed on
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
-
-{ config, pkgs, ... }:
-
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-    ];
+  config,
+  pkgs,
+  ...
+}: {
+  imports = [
+    # Include the results of the hardware scan.
+    ./hardware-configuration.nix
+  ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.systemd-boot.consoleMode = "max";
   boot.loader.efi.canTouchEfiVariables = true;
-#  boot.initrd.kernelModules = [ "usbhid" "joydev" "xpad" ];
-#  boot.extraModprobeConfig = '' options bluetooth disable_ertm=1 '';
+  #  boot.initrd.kernelModules = [ "usbhid" "joydev" "xpad" ];
+  #  boot.extraModprobeConfig = '' options bluetooth disable_ertm=1 '';
 
   networking.hostName = "mashunix"; # Define your hostname.
   #networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-
 
   # Enable networking
   networking.networkmanager.enable = true;
@@ -47,7 +47,7 @@
     layout = "us";
     xkbVariant = "";
   };
-  
+
   #Enable bluetooth
   hardware.bluetooth = {
     enable = true;
@@ -56,12 +56,12 @@
 
   #Environment variables
   environment.variables = {
-      MOZ_ENABLE_WAYLAND = "1";
-      EDITOR = "nvim";
+    MOZ_ENABLE_WAYLAND = "1";
+    EDITOR = "nvim";
   };
 
   #Sounds
-  sound = { enable = true; };
+  sound = {enable = true;};
 
   security.rtkit.enable = true;
   hardware.pulseaudio.enable = false;
@@ -85,14 +85,15 @@
     enable = true;
     remotePlay.openFirewall = true;
     dedicatedServer.openFirewall = true;
-    gamescopeSession.enable =true;
+    gamescopeSession.enable = true;
     extraCompatPackages = with pkgs; [
       proton-ge-bin
     ];
   };
   nixpkgs.config.packageOverrides = pkgs: {
-      steam = pkgs.steam.override {
-        extraPkgs = pkgs: with pkgs; [
+    steam = pkgs.steam.override {
+      extraPkgs = pkgs:
+        with pkgs; [
           xorg.libXcursor
           xorg.libXi
           xorg.libXinerama
@@ -104,8 +105,8 @@
           libkrb5
           keyutils
         ];
-      };
     };
+  };
   # Polkit
   security.polkit.enable = true;
 
@@ -113,7 +114,7 @@
   users.users.mashu = {
     isNormalUser = true;
     description = "mashu";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = ["networkmanager" "wheel"];
     packages = with pkgs; [];
   };
 
@@ -124,7 +125,7 @@
   nix = {
     settings = {
       auto-optimise-store = true;
-      experimental-features = [ "nix-command" "flakes" ];
+      experimental-features = ["nix-command" "flakes"];
     };
     gc = {
       automatic = true;
@@ -137,13 +138,12 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-  #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-  #  wget
-  gh
-  git
+    #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+    #  wget
+    gh
+    git
   ];
 
-
   system.stateVersion = "24.05"; # Did you read the comment?
-
 }
+

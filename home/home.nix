@@ -1,29 +1,33 @@
-    { config, pkgs, ... }: {
+{
+  config,
+  pkgs,
+  ...
+}: {
+  imports = [
+    ./hyprland
+    ./nvim
+    ./terminals
+    ./fish
+    ./waybar
+    ./firefox
+  ];
 
-    	imports = [
-	    ./hyprland
-	    ./nvim
-	    ./terminals
-	    ./fish
-      ./waybar
-      ./firefox
-	];
+  home = {
+    username = "mashu";
+    homeDirectory = "/home/mashu";
 
-	home = {
-	    username = "mashu";
-	    homeDirectory = "/home/mashu";
+    packages = with pkgs; [
+      discord
+      btop
+      fd
+      ripgrep
+      blueman
+      xdg_utils
+    ];
 
-	    packages = with pkgs; [
-	        discord
-	        btop
-	        fd
-	        ripgrep
-	        blueman
-	        xdg_utils
-	    ];
+    stateVersion = "24.05";
+  };
 
-	    stateVersion = "24.05";
-	};
+  programs.home-manager.enable = true;
+}
 
-	programs.home-manager.enable = true;
-    }

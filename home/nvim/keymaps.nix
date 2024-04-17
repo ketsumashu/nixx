@@ -1,10 +1,10 @@
+{
+  programs.nixvim.keymaps = [
     {
-	programs.nixvim.keymaps = [
-	    {
-		mode = "i";
-		key = "jj";
-		action = "<esc>";
-	    }
-	];
-	
+      mode = "i";
+      key = "jj";
+      action = "<esc>";
     }
+  ];
+}
+

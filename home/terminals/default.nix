@@ -1,4 +1,8 @@
-    { pkgs,config, ... }: {
-        programs.foot.enable = true;
-        xdg.configFile."foot/foot.ini".source = ./foot.ini;
-    }
+{
+  pkgs,
+  config,
+  ...
+}: {
+  programs.foot.enable = true;
+  xdg.configFile."foot/foot.ini".source = ./foot.ini;
+}

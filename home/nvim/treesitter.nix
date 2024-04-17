@@ -8,3 +8,4 @@
     treesitter-context.enable = true;
   };
 }
+

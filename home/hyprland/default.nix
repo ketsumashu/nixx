@@ -1,7 +1,9 @@
-{ config, pkgs, ... }:
-
 {
-  imports = [ ./hypridle.nix ./hyprlock.nix ];
+  config,
+  pkgs,
+  ...
+}: {
+  imports = [./hypridle.nix ./hyprlock.nix];
 
   home.packages = with pkgs; [
     wl-clipboard
@@ -28,7 +30,7 @@
     "$mod" = "Super_L";
     "$terminal" = "foot";
     monitor = [
-		  "HDMI-A-2,2560x1440@144,0x0,1"
+      "HDMI-A-2,2560x1440@144,0x0,1"
       "DP-1,2560x1440@100,2560x0,1"
     ];
     general = {
@@ -62,20 +64,20 @@
       drop_shadow = true;
       shadow_range = 3;
       shadow_render_power = 3;
-      };
-      animations = {
-        enabled = true;
+    };
+    animations = {
+      enabled = true;
 
       bezier = [
-         "myBezier, 0.05, 0.9, 0.1, 1.05"
-         "cubic, 0.1, 0.23, 0.41, 0.9"
+        "myBezier, 0.05, 0.9, 0.1, 1.05"
+        "cubic, 0.1, 0.23, 0.41, 0.9"
       ];
       animation = [
-         "windows, 1, 1.2, cubic, slide"
-         "border, 1, 0.1, default"
-         "borderangle, 0, 0.2, default"
-         "fade, 1, 4, default"
-         "workspaces, 1, 4, default, fade"
+        "windows, 1, 1.2, cubic, slide"
+        "border, 1, 0.1, default"
+        "borderangle, 0, 0.2, default"
+        "fade, 1, 4, default"
+        "workspaces, 1, 4, default, fade"
       ];
     };
 
@@ -90,10 +92,10 @@
     };
 
     input = {
-    kb_layout = "us";
-    kb_options = "ctrl:nocaps";
-    repeat_delay = 270;
-    repeat_rate = 50;
+      kb_layout = "us";
+      kb_options = "ctrl:nocaps";
+      repeat_delay = 270;
+      repeat_rate = 50;
     };
 
     exec-once = [
@@ -141,5 +143,4 @@
           10)
       );
   };
-
 }
