@@ -33,6 +33,17 @@
       "HDMI-A-2,2560x1440@144,0x0,1"
       "DP-1,2560x1440@100,2560x0,1"
     ];
+    workspace = [
+      "HDMI-A-2, 1, default:true"
+      "HDMI-A-2, 2, default:true"
+      "HDMI-A-2, 3, default:true"
+      "HDMI-A-2, 4, default:true"
+      "DP-1, 5, default:true"
+      "DP-1, 6, default:true"
+      "DP-1, 7, default:true"
+      "DP-1, 8, default:true"
+      "DP-1, 9, default:true"
+    ];
     general = {
       gaps_in = 3;
       gaps_out = 9;
@@ -143,4 +154,31 @@
           10)
       );
   };
+
+  qt = {
+    enable = true;
+    platformTheme = "gtk";
+    style.name = "gtk2";
+  };
+
+  gtk = {
+    enable = true;
+    theme = {
+      package = pkgs.flat-remix-gtk;
+      name = "Flat-Remix-GTK-White-Darkest-Solid";
+    };
+
+    iconTheme = {
+      package = pkgs.flat-remix-icon-theme;
+      name = "Flat-Remix-Grey-Darkest";
+    };
+  };
+
+  home.pointerCursor = {
+    gtk.enable = true;
+    package = pkgs.bibata-cursors;
+    name = "Bibata-Modern-Classic";
+    size = 14;
+  };
+
 }
