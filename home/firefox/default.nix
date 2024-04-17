@@ -1,11 +1,11 @@
-{pkgs, inputs, ...}: {
+{pkgs, ...}: {
   programs.firefox = {
     enable = true;
     profiles.mashu = {
       bookmarks = {};
-      extensions = with pkgs.inputs.firefox-addons; [
+      extensions = with pkgs.firefox-addons; [
         ublock-origin
-        browserpass
+        tridactyl
       ];
       bookmarks = {};
       settings = {
