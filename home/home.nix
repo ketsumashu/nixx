@@ -10,6 +10,7 @@
     ./fish
     ./waybar
     ./firefox
+    ./starship
   ];
 
   home = {
