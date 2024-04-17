@@ -22,6 +22,14 @@
 		  "HDMI-A-2,2560x1440@144,0x0,1"
       "DP-1,2560x1440@100,2560x0,1"
     ];
+    general = {
+      gaps_in = 3;
+      gaps_out = 9;
+      border_size = 2;
+      "col.active_border" = "rgb(77adb1)";
+      "col.inactive_border" = "rgb(525566)";
+      layout = dwindle;
+    };
     misc = {
       disable_hyprland_logo = true;
       disable_splash_rendering = true;
@@ -32,7 +40,7 @@
       scroll_event_delay = 0;
     };
     decoration = {
-      rounding = 10;
+      rounding = 6;
       blur = {
         enabled = true;
         size = 2;
