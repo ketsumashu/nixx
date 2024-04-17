@@ -1,9 +1,10 @@
     { pkgs, ... }: {
-	programs.waybar = {
-	    enable = true;
-	    systemd = { enabled = false; };
-	    settings = {
-		mainbar = {
+	     programs.waybar = {
+	         enable = true;
+           package = pkgs.waybar;
+	         systemd = { enabled = false; };
+	         settings = {
+		           mainBar = {
                     layer = "top";
                     position = "left";
                     output = [ "HDMI-A-2" "DP-1" ];
