@@ -31,6 +31,7 @@
           nixos-hardware.nixosModules.common-pc-ssd
           ./nixos/configuration.nix
           ./host
+          ./systemd
           {_module.args = {inherit inputs;};}
           home-manager.nixosModules.home-manager
           {
