@@ -2,7 +2,7 @@
 	     programs.waybar = {
 	         enable = true;
            package = waybar.packages."${pkgs.system}".waybar;
-	         systemd = { enabled = false; };
+	         systemd = { enable = false; };
 	         settings = {
 		           mainBar = {
                     layer = "top";
