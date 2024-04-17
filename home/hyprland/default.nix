@@ -45,6 +45,10 @@
       animations = {
         enabled = true;
 
+      bezier = [
+         "myBezier, 0.05, 0.9, 0.1, 1.05"
+         "cubic, 0.1, 0.23, 0.41, 0.9"
+      ];
       animation = [
          "windows, 1, 1.2, cubic, slide"
          "border, 1, 0.1, default"
