@@ -1,7 +1,7 @@
 {pkgs, ...}: {
   programs.firefox = {
     enable = true;
-    nativeMessageingHosts = with pkgs; [
+    nativeMessagingHosts = with pkgs; [
       tridactyl-native
     ];
   };
