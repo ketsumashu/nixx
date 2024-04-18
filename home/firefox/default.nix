@@ -1,8 +1,11 @@
 {pkgs, ...}: {
   programs.firefox = {
     enable = true;
-    nativeMessagingHosts.tridactyl = true;
+    nativeMessageingHosts = with pkgs; [
+      tridactyl-native
+    ];
   };
+
   xdg.mimeApps.defaultApplications = {
     "text/html" = ["firefox.desktop"];
     "text/xml" = ["firefox.desktop"];
