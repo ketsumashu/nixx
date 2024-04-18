@@ -127,12 +127,6 @@
       auto-optimise-store = true;
       experimental-features = ["nix-command" "flakes"];
     };
-    gc = {
-      automatic = true;
-      persistent = true;
-      dates = "daily";
-      options = "--delete-older-than 1d";
-    };
   };
 
   # List packages installed in system profile. To search, run:
