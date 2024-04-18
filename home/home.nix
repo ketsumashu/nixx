@@ -11,6 +11,7 @@
     ./waybar
     ./firefox
     ./starship
+    ./nh
   ];
 
   home = {
