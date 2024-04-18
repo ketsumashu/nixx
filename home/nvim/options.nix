@@ -12,5 +12,6 @@
     ignorecase = true;
     swapfile = false;
     undofile = true;
+    termguicolors = true;
   };
 }
