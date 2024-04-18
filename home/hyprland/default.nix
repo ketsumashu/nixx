@@ -23,8 +23,7 @@
   };
 
   wayland.windowManager.hyprland.settings = {
-
-    "$mod" = "Super_L";
+"$mod" = "Super_L";
     "$terminal" = "foot";
 
     monitor = [
@@ -131,7 +130,7 @@
       "float,class:^(steam)$,title:^(Steam Guard - Computer Authorization Required)$"
     ];
 
-    layerlue = [
+    layerrule = [
       "blur,rofi"
       "blur,neovim"
       "blur,waybar"
