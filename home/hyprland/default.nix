@@ -35,15 +35,15 @@
       "DP-1,2560x1440@100,2560x0,1"
     ];
     workspace = [
-      "HDMI-A-2, 1, default:true"
-      "HDMI-A-2, 2, default:true"
-      "HDMI-A-2, 3, default:true"
-      "HDMI-A-2, 4, default:true"
-      "DP-1, 5, default:true"
-      "DP-1, 6, default:true"
-      "DP-1, 7, default:true"
-      "DP-1, 8, default:true"
-      "DP-1, 9, default:true"
+      "1, monitor:HDMI-A-2, default:true, persistent:true"
+      "2, monitor:HDMI-A-2, default:true, persistent:true"
+      "3, monitor:HDMI-A-2, default:true, persistent:true"
+      "4, monitor:HDMI-A-2, default:true, persistent:true"
+      "5, monitor:DP-1, default:true, persistent:true"
+      "6, monitor:DP-1, default:true, persistent:true"
+      "7, monitor:DP-1, default:true, persistent:true"
+      "8, monitor:DP-1, default:true, persistent:true"
+      "9, monitor:DP-1, default:true, persistent:true"
     ];
     general = {
       gaps_in = 3;

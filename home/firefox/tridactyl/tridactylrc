@@ -3,6 +3,7 @@ set configversion 2.0
 set smoothscroll true
 set theme substrata
 colorscheme substrata
+set newtab about:newtab
 
 " Binds
 bind J tabnext
