@@ -11,6 +11,7 @@
     meson
     xdg-desktop-portal-hyprland
     xdg-desktop-portal-gtk
+    swww
   ];
 
   wayland.windowManager.hyprland = {
@@ -112,6 +113,7 @@
     exec-once = [
       "hypridle"
       "waybar"
+      "swww-daemon"
     ];
     bindm = [
       "$mod, mouse:272, movewindow"
