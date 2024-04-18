@@ -79,7 +79,7 @@
   hardware.opengl.driSupport = true;
   hardware.opengl.driSupport32Bit = true;
   services.dbus.enable = true;
-
+  services.lactd.enable =true;
   # Steam, for opengl access
   programs.steam = {
     enable = true;
