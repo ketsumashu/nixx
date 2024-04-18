@@ -7,6 +7,6 @@
     enable = true;
     packages = pkgs.nh;
     clean.enable = true;
-    flake = "/home/mashunix/nixx";
+    flake = "/home/mashu/nixx";
   }; 
 }
