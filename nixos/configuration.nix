@@ -80,6 +80,9 @@
   hardware.opengl.driSupport32Bit = true;
   services.dbus.enable = true;
 
+  # RGB control
+  services.hardware.openrgb.enable =true;
+
   # Steam, for opengl access
   programs.steam = {
     enable = true;
@@ -107,6 +110,7 @@
         ];
     };
   };
+
   # Polkit
   security.polkit.enable = true;
 
@@ -136,7 +140,6 @@
     #  wget
     gh
     git
-    openrgb
   ];
 
   system.stateVersion = "24.05"; # Did you read the comment?
