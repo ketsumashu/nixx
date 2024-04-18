@@ -7,6 +7,7 @@
 
   home.packages = with pkgs; [
     wl-clipboard
+    cliphist
     dconf
     meson
     xdg-desktop-portal-hyprland
@@ -15,25 +16,22 @@
   ];
 
   wayland.windowManager.hyprland = {
-    # Whether to enable Hyprland wayland compositor
     enable = true;
-    # The hyprland package to use
     package = pkgs.hyprland;
-    # Whether to enable XWayland
     xwayland.enable = true;
-
-    # Optional
-    # Whether to enable hyprland-session.target on hyprland startup
     systemd.enable = true;
   };
 
   wayland.windowManager.hyprland.settings = {
+
     "$mod" = "Super_L";
     "$terminal" = "foot";
+
     monitor = [
       "HDMI-A-2,2560x1440@144,0x0,1"
       "DP-1,2560x1440@100,2560x0,1"
     ];
+
     workspace = [
       "1, monitor:HDMI-A-2, default:true, persistent:true"
       "2, monitor:HDMI-A-2, default:true, persistent:true"
@@ -45,6 +43,7 @@
       "8, monitor:DP-1, default:true, persistent:true"
       "9, monitor:DP-1, default:true, persistent:true"
     ];
+
     general = {
       gaps_in = 3;
       gaps_out = 9;
@@ -53,15 +52,18 @@
       "col.inactive_border" = "rgb(525566)";
       layout = "dwindle";
     };
+
     misc = {
       disable_hyprland_logo = true;
       disable_splash_rendering = true;
       force_default_wallpaper = 1;
-      disable_autoreload = true; # we are nixed up, we don't need this
+      disable_autoreload = false;
     };
+
     binds = {
       scroll_event_delay = 0;
     };
+
     decoration = {
       rounding = 6;
       blur = {
@@ -77,6 +79,7 @@
       shadow_range = 3;
       shadow_render_power = 3;
     };
+
     animations = {
       enabled = true;
 
@@ -110,18 +113,48 @@
       repeat_rate = 50;
     };
 
+    windowrulev2 = [
+      "float,class:^(blueman-manager)$"
+      "float,title:(Save File)$"
+      "float,title:(Open Files)$"
+      "workspace 2 silent,class:^(steam)$"
+      "float,class:^(steam)$,title:(ist)$"
+      "float,class:^(steam)$,title:(ings)$"
+      "float,class:^(steam)$,title:(Chat)$"
+      "workspace 2,class:^(gamescope)"
+      "float,class:^(steam)$,title:^(Steam - News)"
+      "float,class:^(steam)$,title:(Chat)$"
+      "float,class:^(steam)$,title:(started)$"
+      "float,class:^(steam)$,title:(CD key)$"
+      "float,class:^(steam)$,title:^(Steam - Self Updater)$"
+      "float,class:^(steam)$,title:(Manager)$"
+      "float,class:^(steam)$,title:^(Steam Guard - Computer Authorization Required)$"
+    ];
+
+    layerlue = [
+      "blur,rofi"
+      "blur,neovim"
+      "blur,waybar"
+    ];
+
     exec-once = [
       "hypridle"
       "waybar"
+      "hyprctl dispatch exec \"\[workspace 2 silent\]\" steam"
+      "fcitx5 -rd"
       "swww-daemon"
+      "openrgb --startminimized"
+      "wl-paste --type text --watch cliphist store"
+      "wl-paste --type image --watch cliphist store"
     ];
+
     bindm = [
       "$mod, mouse:272, movewindow"
       "$mod, mouse:273, resizewindow"
     ];
+
     bind =
       [
-        # firefox is $mod + F, kitty is $mod + ENTER
         "$mod, B, exec, firefox"
         "$mod, S, exec, steam"
         "$mod, Return, exec, $terminal"
@@ -133,6 +166,10 @@
         "$mod, L, movefocus, r"
         "$mod, K, movefocus, u"
         "$mod, J, movefocus, d"
+        "$mod SHIFT, H, movewindow, l"
+        "$mod SHIFT, L, movewindow, r"
+        "$mod SHIFT, K, movewindow, u"
+        "$mod SHIFT, J, movewindow, d"
         "Alt_L, Tab, workspace, e+1"
         "Alt_l SHIFT, Tab, workspace, e-1"
         "$mod, minus, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
@@ -180,7 +217,7 @@
     gtk.enable = true;
     package = pkgs.bibata-cursors;
     name = "Bibata-Modern-Classic";
-    size = 14;
+    size = 11;
   };
 
 }
