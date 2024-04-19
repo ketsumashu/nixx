@@ -13,6 +13,7 @@
     xdg-desktop-portal-hyprland
     xdg-desktop-portal-gtk
     swww
+    pavucontrol
   ];
 
   wayland.windowManager.hyprland = {
