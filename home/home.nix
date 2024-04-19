@@ -20,7 +20,6 @@
     homeDirectory = "/home/mashu";
 
     packages = with pkgs; [
-      vesktop
       btop
       fd
       ripgrep
