@@ -14,6 +14,7 @@
     xdg-desktop-portal-gtk
     swww
     pavucontrol
+    lm_sensors
   ];
 
   wayland.windowManager.hyprland = {
