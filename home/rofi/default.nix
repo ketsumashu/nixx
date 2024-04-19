@@ -1,9 +1,9 @@
 { pkgs, ... }:
 
 {
-  programs.rofi = {
+  programs.rofi-wayland = {
     enable = true;
-    terminal = "${pkgs.alacritty}/bin/foot";
+    terminal = "${pkgs.foot}/bin/foot";
     theme = ./rosepinekai.rasi;
   };
 }
