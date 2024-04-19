@@ -116,7 +116,7 @@
     windowrulev2 = [
       "float,class:^(blueman-manager)$"
       "float,title:(Save File)$"
-      "float,title:$(Volume)"
+      "float,class:^(pavu)"
       "float,title:(Open Files)$"
       "workspace 2 silent,class:^(steam)$"
       "float,class:^(steam)$,title:(ist)$"
