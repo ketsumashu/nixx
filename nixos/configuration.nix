@@ -92,7 +92,7 @@
   services.dbus.enable = true;
 
   # RGB control
-  services.hardware.openrgb.enable =true;
+  services.hardware.openrgb.enable = true;
 
   # Steam, for opengl access
   programs.steam = {
@@ -155,4 +155,3 @@
 
   system.stateVersion = "24.05"; # Did you read the comment?
 }
-
