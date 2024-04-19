@@ -211,7 +211,7 @@
         tweaks = ["rimless" "black"];
         variant = "frappe";
       };
-      name = "Catppucin-Frappe-Compact-Pink-Dark";
+      name = "Catppuccin-Frappe-Compact-Pink-Dark";
     };
 
     iconTheme = {
