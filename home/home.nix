@@ -20,7 +20,7 @@
     homeDirectory = "/home/mashu";
 
     packages = with pkgs; [
-      discord
+      vesktop
       btop
       fd
       ripgrep
