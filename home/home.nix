@@ -12,6 +12,7 @@
     ./firefox
     ./starship
     ./libskk
+    ./rofi
   ];
 
   home = {
