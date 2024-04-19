@@ -205,8 +205,13 @@
   gtk = {
     enable = true;
     theme = {
-      package = pkgs.flat-remix-gtk;
-      name = "Flat-Remix-GTK-White-Darkest-Solid";
+      package = pkgs.catppuccin-gtk.override{
+        accents = ["pink"];
+        size = "compact";
+        tweaks = ["rimless" "black"];
+        variant = "frappe";
+      };
+      name = "Catppucin-Frappe-Compact-Pink-Dark";
     };
 
     iconTheme = {
