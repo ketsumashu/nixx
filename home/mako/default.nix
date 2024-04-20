@@ -10,10 +10,9 @@
     height = 230;
     padding = 16;
     margin = "10,10,10";
-    max-icon-size = 64;
     output = "HDMI-A-2";
     backgroundColor = "#1b1c28dd";
-    text-color = "#ffffff";
+    textColor = "#ffffff";
     borderColor = "#5de4c7ff";
     borderSize = 2;
     borderRadius = 6;
