@@ -44,10 +44,10 @@ local function filename()
     local name = fn.expand('%:t')
     local filemode = fn.mode()
     local modecolor = {
-        n = colors.regular5,
+        n = colors.regular2,
         i = colors.regular4,
-        v = colors.regular3,
-        V = colors.regular3,
+        v = colors.regular6,
+        V = colors.regular6,
         [''] = colors.regular3,
         c = colors.regular2,
         no = colors.regular1,

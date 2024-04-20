@@ -62,7 +62,7 @@
       #cpu,
       #temperature{
           padding: 0 0px;
-          color:#89ddff;
+          color:#fcc5e9;
           /*font-weight:bold;*/
       }
 
