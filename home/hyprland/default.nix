@@ -25,7 +25,7 @@
     XDG_SESSION_TYPE = "wayland";
     XDG_CURRENT_DESKTOP = "Hyprland";
     XDG_SESSION_DESKTOP = "Hyprland";
-    QT_QPA_PLATFORM= "wayland,xcb";
+    QT_QPA_PLATFORM= "wayland;xcb";
     QT_AUTO_SCREEN_SCALE_FACTOR = "1"; 
   };
 
@@ -153,6 +153,8 @@
     ];
 
     exec-once = [
+      "systemctl --user enable xdg-desktop-portal-hyprland"
+      "systemctl --user enable xdg-desktop-portal-gtk"
       "hypridle"
       "waybar"
       "hyprctl dispatch exec \"\[workspace 2 silent\]\" steam"
