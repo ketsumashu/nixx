@@ -8,7 +8,7 @@
     anchor = "bottom-right";
     width = 400;
     height = 230;
-    padding = 16;
+    padding = "16";
     margin = "10,10,10";
     output = "HDMI-A-2";
     backgroundColor = "#1b1c28dd";
