@@ -1,6 +1,7 @@
 {
   config,
   pkgs,
+  hyprland,
   ...
 }: {
   imports = [./hypridle.nix ./hyprlock.nix];
@@ -8,30 +9,54 @@
   home.packages = with pkgs; [
     wl-clipboard
     cliphist
+    slurp
+    grim
+    libnotify
     dconf
     meson
-    xdg-desktop-portal-hyprland
-    xdg-desktop-portal-gtk
     swww
     pavucontrol
     lm_sensors
+    vesktop
   ];
+
+  xdg.portal = {
+    enable = true;
+    extraPortals  = with pkgs; [
+      xdg-desktop-portal-gtk 
+      xdg-desktop-portal-hyprland
+    ];
+    configPackages  = with pkgs; [
+      xdg-desktop-portal-gtk 
+      xdg-desktop-portal-hyprland
+    ];
+    hyprland.enable = true;
+  };
+
+  home.sessionVariables = {
+    XDG_SESSION_TYPE = "wayland";
+    XDG_CURRENT_DESKTOP = "Hyprland";
+    XDG_SESSION_DESKTOP = "Hyprland";
+    QT_QPA_PLATFORM= "wayland,xcb";
+    QT_AUTO_SCREEN_SCALE_FACTOR = "1"; 
+  };
 
   wayland.windowManager.hyprland = {
     enable = true;
-    package = pkgs.hyprland;
+    package = hyprland.packages."${pkgs.system}".hyprland;
     xwayland.enable = true;
     systemd.enable = true;
   };
 
   wayland.windowManager.hyprland.settings = {
-"$mod" = "Super_L";
+    "$mod" = "Super_L";
     "$terminal" = "foot";
 
     monitor = [
       "HDMI-A-2,2560x1440@144,0x0,1"
       "DP-1,2560x1440@100,2560x0,1"
     ];
+
 
     workspace = [
       "1, monitor:HDMI-A-2, default:true, persistent:true"

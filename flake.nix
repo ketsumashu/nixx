@@ -12,14 +12,14 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
-    waybar.url = "github:Alexays/Waybar";
+    hyprland.url = "github:hyprwm/Hyprland";
   };
   outputs = inputs @ {
     nixpkgs,
     home-manager,
     nixvim,
     nixos-hardware,
-    waybar,
+    hyprland,
     ...
   }: {
     nixosConfigurations = {
@@ -41,7 +41,7 @@
               users.mashu = import ./home/home.nix;
               extraSpecialArgs = {
                 inherit inputs;
-                inherit waybar;
+                inherit hyprland;
               };
             };
           }

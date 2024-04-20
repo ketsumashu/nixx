@@ -2,12 +2,11 @@
   pkgs,
   config,
   lib,
-  waybar,
   ...
 }: {
   programs.waybar = {
     enable = true;
-    package = waybar.packages."${pkgs.system}".waybar;
+    package = pkgs.waybar;
     systemd = {enable = false;};
     style = ''
 
