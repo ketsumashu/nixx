@@ -38,7 +38,7 @@
         background = "1b1c28";
         foreground = "a6accd";
         regular0 = "1b1c28";
-        regular1 = "d0679d";
+        regular1 = "fcc5e9";
         regular2 = "5de4c7";
         regular3 = "ffffff";
         regular4 = "5de4c7";
@@ -46,7 +46,7 @@
         regular6 = "add7ff";
         regular7 = "ffffff";
         bright0 = "a6accd";
-        bright1 = "d0679d";
+        bright1 = "fae4fc";
         bright2 = "5de4c7";
         bright3 = "ffffff";
         bright4 = "5de4c7";
