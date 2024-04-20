@@ -38,20 +38,20 @@
         background = "191c25";
         foreground = "c5c4d4";
         regular0 = "525566";
-        regular1 = "a994b8";
+        regular1 = "5de4c7";
         regular2 = "77adb1";
         regular3 = "c5c4d4";
         regular4 = "889bb4";
-        regular5 = "a994b8";
+        regular5 = "5de4c7";
         regular6 = "77adb1";
         regular7 = "c5c4d4";
 
         bright0 = "666b7f";
-        bright1 = "cdb6dd";
+        bright1 = "fae4fc";
         bright2 = "94cdd1";
         bright3 = "f0ecfe";
         bright4 = "afc5de";
-        bright5 = "cdb6dd";
+        bright5 = "fae4fc";
         bright6 = "94cdd1";
         bright7 = "f0ecfe";
       };

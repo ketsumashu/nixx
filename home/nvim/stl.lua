@@ -19,26 +19,12 @@ local function lspname()
 end
 
 local colors = {
-    --  rosewater = "#F2D5CF",
-    --  flamingo = "#EEBEBE",
-    --  pink = "#F4B8E4",
-    --  mauve = "#CA9EE6",
-    --  red = "#E78284",
-    --  maroon = "#EA999C",
-    --  peach = "#EF9F76",
-    --  yellow = "#E5C890",
-    --  green = "#A6D189",
-    --  teal = "#81C8BE",
-    --  sky = "#99D1DB",
-    --  sapphire = "#85C1DC",
-    --  blue = "#8CAAEE",
-    --  lavender = "#BABBF1",
     regular0 = "#525566", -- black
     regular1 = "#d59076", -- red
-    regular2 = "#83aa74", -- green
+    regular2 = "#5de4c7", -- green
     regular3 = "#b8a161", -- yellow
-    regular4 = "#889bb4", -- blue
-    regular5 = "#a994b8", -- magenta
+    regular4 = "#77adb1", -- blue
+    regular5 = "#5de4c7", -- magenta
     regular6 = "#77adb1", -- cyan
     regular7 = "#bfbed0", -- white
     bright0 = "#666b7f", -- bright black

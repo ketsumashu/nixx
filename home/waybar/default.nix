@@ -107,7 +107,7 @@
       }
 
       #pulseaudio {
-          color: #77adb1;
+          color: #5de4c7;
       }
 
       #pulseaudio.muted {
