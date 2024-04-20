@@ -17,5 +17,6 @@
     viAlias = true;
     vimAlias = true;
     colorschemes.catppuccin.enable = true;
+    grobals.mapleader = " ";
   };
 }
