@@ -1,8 +1,8 @@
 " General Settings
 set configversion 2.0
 set smoothscroll true
-set theme substrata
-colorscheme substrata
+set theme poimandres
+colorscheme poimandres
 set newtab about:newtab
 
 " Binds

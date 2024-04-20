@@ -1,0 +1,127 @@
+:root {
+    /* Generic */
+    --tridactyl-font-family: "Cozette","mplus12";
+    --tridactyl-font-family-sans: "Cozette","mplus12";
+    --tridactyl-font-size: 13px;
+    --tridactyl-small-font-size: 13px;
+    --tridactyl-bg: #1b1c28;
+    --tridactyl-fg: #a6accd;
+    --tridactyl-logo: url("moz-extension://__MSG_@@extension_id__/static/logo/Tridactyl_64px.png");
+    --tridactyl-scrollbar-color: auto;
+
+    /* Mode indicator */
+    --tridactyl-status-font-family: var(--tridactyl-font-family);
+    --tridactyl-status-font-size: var(--tridactyl-font-size);
+    --tridactyl-status-bg: var(--tridactyl-bg);
+    --tridactyl-status-fg: var(--tridactyl-fg);
+    --tridactyl-status-border: 1px #1b1c28 solid;
+    --tridactyl-status-border-radius: 0px;
+
+    /* Search highlight */
+    --tridactyl-search-highlight-color: #81c8be;
+
+    /* Hinting */
+
+    /* Hint character tags */
+    --tridactyl-hintspan-font-family: var(--tridactyl-font-family);
+    --tridactyl-hintspan-font-size: var(--tridactyl-small-font-size);
+    --tridactyl-hintspan-font-weight: bold;
+    --tridactyl-hintspan-fg: #5de4c7;
+    --tridactyl-hintspan-bg: #1b1c28;
+    --tridactyl-hintspan-border-color: ButtonShadow;
+    --tridactyl-hintspan-border-width: 0px;
+    --tridactyl-hintspan-border-style: solid;
+    --tridactyl-hintspan-js-background: rgba(76, 86, 106, 0);
+
+    /* Element highlights */
+    --tridactyl-hint-active-fg: #1b1c28;
+    --tridactyl-hint-active-bg: rgba(76, 86, 106, 1);
+    --tridactyl-hint-active-outline: 1px solid #5e81ac;
+    --tridactyl-hint-bg: rgba(129, 161, 193, 0);
+    --tridactyl-hint-outline: 1px solid #8caaee;
+
+    /* :viewsource */
+    --tridactyl-vs-bg: var(--tridactyl-bg);
+    --tridactyl-vs-fg: var(--tridactyl-fg);
+    --tridactyl-vs-font-family: var(--tridactyl-font-family);
+
+    /*commandline*/
+
+    --tridactyl-cmdl-bg: var(--tridactyl-bg);
+    --tridactyl-cmdl-fg: var(--tridactyl-fg);
+    --tridactyl-cmdl-line-height: 1.5;
+    --tridactyl-cmdl-font-family: "Cozette","mplus12";
+    --tridactyl-cmdl-font-size: 13px;
+
+    /*completions*/
+
+    --tridactyl-cmplt-option-height: 1.24em;
+    --tridactyl-cmplt-fg: var(--tridactyl-fg);
+    --tridactyl-cmplt-bg: var(--tridactyl-bg);
+    --tridactyl-cmplt-font-size: 13px;
+    --tridactyl-cmplt-font-family: "Cozette","mplus12";
+    /* i don't think 0.5px is redered */
+    --tridactyl-cmplt-border-top: 0.5px solid grey;
+
+    /* need a better way for naming variables
+     *
+        - .Properties for .HistoryCompletionSource table
+        - .Properties for .BmarkCompletionSource table
+
+    */
+
+    /*sectionHeader*/
+
+    --tridactyl-header-first-bg: #1b1c28;
+    --tridactyl-header-second-bg: #1b1c28;
+    --tridactyl-header-third-bg: #1b1c28;
+
+
+    --tridactyl-header-font-size: inherit;
+    --tridactyl-header-font-weight:normal;
+    /* i don't think 0.5px is redered */
+    --tridactyl-header-border-bottom: 1px solid bottom;
+
+    /*url style*/
+
+    --tridactyl-url-text-decoration: none;
+    --tridactyl-url-fg: #c6d0f5;
+    --tridactyl-url-bg: var(--tridactyl-bg);
+    --tridactyl-url-cursor: pointer;
+
+    /*option focused*/
+
+    --tridactyl-of-fg: #1b1c28;
+    --tridactyl-of-bg: #8caaee;
+
+    /*new tab spoiler box*/
+    --tridactyl-highlight-box-bg: #414559;
+    --tridactyl-highlight-box-fg: var(--tridactyl-fg);
+
+    --tridactyl-private-window-icon-url: url("chrome://browser/skin/privatebrowsing/private-browsing.svg");
+
+    --tridactyl-container-fingerprint-url: url("resource://usercontext-content/fingerprint.svg");
+    --tridactyl-container-briefcase-url: url("resource://usercontext-content/briefcase.svg");
+    --tridactyl-container-dollar-url: url("resource://usercontext-content/dollar.svg");
+    --tridactyl-container-cart-url: url("resource://usercontext-content/cart.svg");
+    --tridactyl-container-circle-url: url("resource://usercontext-content/circle.svg");
+    --tridactyl-container-gift-url: url("resource://usercontext-content/gift.svg");
+    --tridactyl-container-vacation-url: url("resource://usercontext-content/vacation.svg");
+    --tridactyl-container-food-url: url("resource://usercontext-content/food.svg");
+    --tridactyl-container-fruit-url: url("resource://usercontext-content/fruit.svg");
+    --tridactyl-container-pet-url: url("resource://usercontext-content/pet.svg");
+    --tridactyl-container-tree-url: url("resource://usercontext-content/tree.svg");
+    --tridactyl-container-chill-url: url("resource://usercontext-content/chill.svg");
+
+    --tridactyl-container-color-blue: #8caaee;
+    --tridactyl-container-color-turquoise: #81c8be;
+    --tridactyl-container-color-green: #a6d189;
+    --tridactyl-container-color-yellow: #e5c890;
+    --tridactyl-container-color-orange: #ef9f76;
+    --tridactyl-container-color-red: #ea999c;
+    --tridactyl-container-color-pink: #f4b8e4;
+    --tridactyl-container-color-purple: #babbf1;
+
+    --tridactyl-externaledit-bg: var(--tridactyl-logo) no-repeat center;
+}
+    :root .sectionHeader { background: #8caaee; }

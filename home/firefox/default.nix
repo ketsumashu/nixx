@@ -13,5 +13,6 @@
     "x-scheme-handler/https" = ["firefox.desktop"];
   };
   xdg.configFile."tridactyl/themes/substrata.css".source = ./tridactyl/substrata.css;
+  xdg.configFile."tridactyl/themes/poimandres.css".source = ./tridactyl/poimandres.css;
   xdg.configFile."tridactyl/tridactylrc".source = ./tridactyl/tridactylrc;
 }
