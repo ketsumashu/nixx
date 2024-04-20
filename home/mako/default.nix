@@ -19,7 +19,7 @@
     font = "Cozette,mplus12 11px";
 
     extraConfig = ''
-      format ="<b>%s</b>\n\n%b"
+      format=<b>%s</b>\n\n%b
     '';
   };
 }
