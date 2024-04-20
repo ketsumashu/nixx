@@ -160,7 +160,7 @@
       "hyprctl dispatch exec \"\[workspace 2 silent\]\" steam"
       "fcitx5 -rd"
       "swww-daemon"
-      "openrgb --startminimized"
+      "openrgb --startminimized -p ~/.config/OpenRGB/pro.orp"
       "wl-paste --type text --watch cliphist store"
       "wl-paste --type image --watch cliphist store"
     ];
