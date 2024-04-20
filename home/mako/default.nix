@@ -5,7 +5,6 @@
     icons = 1;
     sort = "-time";
     layer = "overlay";
-    ignore-timeout = 1;
     anchor = "bottom-right";
     width = 400;
     height = 230;
