@@ -85,14 +85,14 @@
     /*url style*/
 
     --tridactyl-url-text-decoration: none;
-    --tridactyl-url-fg: #c6d0f5;
+    --tridactyl-url-fg: #a6accd;
     --tridactyl-url-bg: var(--tridactyl-bg);
     --tridactyl-url-cursor: pointer;
 
     /*option focused*/
 
     --tridactyl-of-fg: #1b1c28;
-    --tridactyl-of-bg: #8caaee;
+    --tridactyl-of-bg: #5de4c7;
 
     /*new tab spoiler box*/
     --tridactyl-highlight-box-bg: #414559;
