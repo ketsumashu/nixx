@@ -13,7 +13,6 @@
     ./starship
     ./libskk
     ./rofi
-    ./qute
   ];
 
   home = {
@@ -23,6 +22,8 @@
     packages = with pkgs; [
       btop
       fd
+      duf
+      eza
       ripgrep
       blueman
       xdg_utils
