@@ -19,22 +19,22 @@ local function lspname()
 end
 
 local colors = {
-    regular0 = "#525566", -- black
-    regular1 = "#5de4c7", -- red
-    regular2 = "#77adb1", -- green
-    regular3 = "#c5c4d4", -- yellow
-    regular4 = "#889bb4", -- blue
-    regular5 = "#5de4c7", -- magenta
-    regular6 = "#77adb1", -- cyan
-    regular7 = "#c5c4d4", -- white
-    bright0 = "#666b7f", -- bright black
-    bright1 = "#fae4fc", -- bright red
-    bright2 = "#94cdd1", -- bright green
-    bright3 = "#f0ecfe", -- bright yellow
-    bright4 = "#afc5de", -- bright blue
+    regular0 = "#1b1c28", -- black
+    regular1 = "#d0679d", -- red
+    regular2 = "#5de4c7", -- green
+    regular3 = "#fffac2", -- yellow
+    regular4 = "#89ddff", -- blue
+    regular5 = "#fcc5e9", -- magenta
+    regular6 = "#add7ff", -- cyan
+    regular7 = "#ffffff", -- white
+    bright0 = "#a6accd", -- bright black
+    bright1 = "#d0679d", -- bright red
+    bright2 = "#5de4c7", -- bright green
+    bright3 = "#fffac2", -- bright yellow
+    bright4 = "#add7ff", -- bright blue
     bright5 = "#fae4fc", -- bright magenta
-    bright6 = "#94cdd1", -- bright cyan
-    bright7 = "#f0ecfe", -- bright white
+    bright6 = "#89ddff", -- bright cyan
+    bright7 = "#ffffff", -- bright white
 }
 local function highlight(group, fg, bg)
     cmd("highlight " .. group .. " guifg=" .. fg .. " guibg=" .. bg)
