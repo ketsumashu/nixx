@@ -30,7 +30,6 @@
       xdg-desktop-portal-gtk 
       xdg-desktop-portal-hyprland
     ];
-    hyprland.enable = true;
   };
 
   home.sessionVariables = {
