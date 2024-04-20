@@ -90,7 +90,7 @@
   hardware.opengl.driSupport = true;
   hardware.opengl.driSupport32Bit = true;
   services.dbus.enable = true;
-
+  
   # RGB control
   services.hardware.openrgb.enable = true;
 
