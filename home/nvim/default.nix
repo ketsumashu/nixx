@@ -10,6 +10,7 @@
     ./lsp.nix
     ./treesitter.nix
     ./cmp.nix
+    ./telescope.nix
   ];
 
   programs.nixvim = {
