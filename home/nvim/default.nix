@@ -11,6 +11,7 @@
     ./treesitter.nix
     ./cmp.nix
     ./telescope.nix
+    ./statusline.nix
   ];
 
   programs.nixvim = {
