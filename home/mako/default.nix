@@ -2,7 +2,7 @@
 {
   services.mako = {
     enable = true;
-    icons = 1;
+    icons = true;
     sort = "-time";
     layer = "overlay";
     anchor = "bottom-right";
