@@ -13,6 +13,7 @@
     ./starship
     ./libskk
     ./rofi
+    ./mako
   ];
 
   home = {
