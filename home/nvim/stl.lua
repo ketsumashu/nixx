@@ -20,19 +20,19 @@ end
 
 local colors = {
     regular0 = "#525566", -- black
-    regular1 = "#d59076", -- red
-    regular2 = "#5de4c7", -- green
-    regular3 = "#b8a161", -- yellow
-    regular4 = "#77adb1", -- blue
+    regular1 = "#5de4c7", -- red
+    regular2 = "#77adb1", -- green
+    regular3 = "#c5c4d4", -- yellow
+    regular4 = "#889bb4", -- blue
     regular5 = "#5de4c7", -- magenta
     regular6 = "#77adb1", -- cyan
-    regular7 = "#bfbed0", -- white
+    regular7 = "#c5c4d4", -- white
     bright0 = "#666b7f", -- bright black
-    bright1 = "#fead90", -- bright red
-    bright2 = "#9dca8c", -- bright green
-    bright3 = "#dbc380", -- bright yellow
+    bright1 = "#fae4fc", -- bright red
+    bright2 = "#94cdd1", -- bright green
+    bright3 = "#f0ecfe", -- bright yellow
     bright4 = "#afc5de", -- bright blue
-    bright5 = "#cdb6dd", -- bright magenta
+    bright5 = "#fae4fc", -- bright magenta
     bright6 = "#94cdd1", -- bright cyan
     bright7 = "#f0ecfe", -- bright white
 }

@@ -45,7 +45,6 @@
         regular5 = "5de4c7";
         regular6 = "77adb1";
         regular7 = "c5c4d4";
-
         bright0 = "666b7f";
         bright1 = "fae4fc";
         bright2 = "94cdd1";
