@@ -33,7 +33,7 @@
       };
     };
     extensions = {
-      file-brower = {
+      file-browser = {
         enable = true;
         settings = {
           theme = "dropdown";
