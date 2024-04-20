@@ -12,6 +12,7 @@
       abbr -a ga "git add ."
       abbr -a gco "git commit --allow-empty-message -m \'\'" 
       abbr -a gpu "git push"
+      abbr -a ngc "sudo nix-collect-garbage -d"
     '';
   };
 
