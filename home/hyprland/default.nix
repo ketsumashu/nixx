@@ -155,6 +155,7 @@
     exec-once = [
       "systemctl --user enable xdg-desktop-portal-hyprland"
       "systemctl --user enable xdg-desktop-portal-gtk"
+      "mako"
       "hypridle"
       "waybar"
       "hyprctl dispatch exec \"\[workspace 2 silent\]\" steam"
