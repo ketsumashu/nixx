@@ -1,5 +1,5 @@
 { pkgs, ...}:{
-  programs.mako = {
+  services.mako = {
     enable = true;
     icons = true;
     sort = "-time";
@@ -17,6 +17,9 @@
     borderRadius = 6;
     defaultTimeout = 5000;
     font = "Cozette,mplus12 11px";
-    format ="<b>%s</b>\n\n%b";
+
+    extraConfig = ''
+      format ="<b>%s</b>\n\n%b";
+    '';
   };
 }
