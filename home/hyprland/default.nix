@@ -20,18 +20,6 @@
     vesktop
   ];
 
-  xdg.portal = {
-    enable = true;
-    gtkUsePortal = true;
-    extraPortals  = with pkgs; [
-      xdg-desktop-portal-gtk 
-      xdg-desktop-portal-hyprland
-    ];
-    configPackages  = with pkgs; [
-      xdg-desktop-portal-gtk 
-      xdg-desktop-portal-hyprland
-    ];
-  };
 
   home.sessionVariables = {
     XDG_SESSION_TYPE = "wayland";
