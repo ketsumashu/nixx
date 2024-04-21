@@ -147,6 +147,7 @@
       "blur,rofi"
       "blur,neovim"
       "blur,waybar"
+      "blur,mako"
     ];
 
     exec-once = [
