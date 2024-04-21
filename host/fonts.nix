@@ -12,6 +12,7 @@
       (nerdfonts.override {fonts = ["FiraCode"];})
       cozette
       migu
+      wqy_zenhei
     ];
     fontDir.enable = true;
     fontconfig = {
