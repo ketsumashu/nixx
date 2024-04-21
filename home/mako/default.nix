@@ -1,4 +1,4 @@
-{ pkgs, ...}:{
+{pkgs, ...}: {
   services.mako = {
     enable = true;
     icons = true;

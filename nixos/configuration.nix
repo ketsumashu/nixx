@@ -91,7 +91,7 @@
   hardware.opengl.driSupport = true;
   hardware.opengl.driSupport32Bit = true;
   services.dbus.enable = true;
-  
+
   # RGB control
   services.hardware.openrgb.enable = true;
 
@@ -125,12 +125,12 @@
 
   xdg.portal = {
     enable = true;
-    extraPortals  = with pkgs; [
-      xdg-desktop-portal-gtk 
+    extraPortals = with pkgs; [
+      xdg-desktop-portal-gtk
       xdg-desktop-portal-hyprland
     ];
-    configPackages  = with pkgs; [
-      xdg-desktop-portal-gtk 
+    configPackages = with pkgs; [
+      xdg-desktop-portal-gtk
       xdg-desktop-portal-hyprland
     ];
   };

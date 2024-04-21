@@ -19,13 +19,12 @@
     lm_sensors
   ];
 
-
   home.sessionVariables = {
     XDG_SESSION_TYPE = "wayland";
     XDG_CURRENT_DESKTOP = "Hyprland";
     XDG_SESSION_DESKTOP = "Hyprland";
-    QT_QPA_PLATFORM= "wayland";
-    QT_AUTO_SCREEN_SCALE_FACTOR = "1"; 
+    QT_QPA_PLATFORM = "wayland";
+    QT_AUTO_SCREEN_SCALE_FACTOR = "1";
   };
 
   wayland.windowManager.hyprland = {
@@ -43,7 +42,6 @@
       "HDMI-A-2,2560x1440@144,0x0,1"
       "DP-1,2560x1440@100,2560x0,1"
     ];
-
 
     workspace = [
       "1, monitor:HDMI-A-2, default:true, persistent:true"
@@ -218,7 +216,7 @@
   gtk = {
     enable = true;
     theme = {
-      package = pkgs.catppuccin-gtk.override{
+      package = pkgs.catppuccin-gtk.override {
         accents = ["pink"];
         size = "compact";
         tweaks = ["rimless"];

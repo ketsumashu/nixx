@@ -16,7 +16,7 @@
         };
         winblend = 0;
         mappings = {
-          n = { 
+          n = {
             "q" = {
               __raw = "require \"telescope.actions\".close";
             };
@@ -27,7 +27,7 @@
           ".git"
         ];
       };
-      pickers.find_files ={
+      pickers.find_files = {
         hidden = true;
         disable_devicons = true;
       };

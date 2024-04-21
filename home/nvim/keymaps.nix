@@ -1,6 +1,5 @@
 {
   programs.nixvim.keymaps = [
-
     #insert mode key map
     {
       mode = "i";
@@ -61,4 +60,3 @@
     }
   ];
 }
-

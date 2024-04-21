@@ -1,3 +1,3 @@
-{pkgs, ...}:{
+{pkgs, ...}: {
   xdg.configFile."libskk/rules".source = ./rules;
 }
