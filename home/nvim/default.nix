@@ -17,6 +17,7 @@
 
   programs.nixvim = {
     enable = true;
+    enableMan = false;
     viAlias = true;
     vimAlias = true;
     colorschemes.poimandres.enable = true;

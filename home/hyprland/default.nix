@@ -17,7 +17,6 @@
     swww
     pavucontrol
     lm_sensors
-    vesktop
   ];
 
 

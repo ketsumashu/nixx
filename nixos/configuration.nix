@@ -52,6 +52,7 @@
       ];
     };
   };
+  environment.pathToLink = ["/share/fcitx5"];
 
   # Configure keymap in X11
   services.xserver = {
@@ -165,6 +166,7 @@
     #  wget
     gh
     git
+    vesktop
   ];
 
   system.stateVersion = "24.05"; # Did you read the comment?
