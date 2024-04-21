@@ -49,5 +49,6 @@
       };
     };
     formatter."x86_64-linux" = nixpkgs.legacyPackages."x86_64-linux".alejandra;
+    packages."x86_64-linux" = (system: import ./pkgs inputs.nixpkgs.legacyPackages.${system});
   };
 }
