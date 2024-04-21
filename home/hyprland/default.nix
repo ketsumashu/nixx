@@ -217,12 +217,12 @@
     enable = true;
     theme = {
       package = pkgs.catppuccin-gtk.override {
-        accents = ["pink"];
+        accents = ["teal"];
         size = "compact";
         tweaks = ["rimless"];
         variant = "frappe";
       };
-      name = "Catppuccin-Frappe-Compact-Pink-Dark";
+      name = "Catppuccin-Frappe-Compact-Teal-Dark";
     };
 
     iconTheme = {
