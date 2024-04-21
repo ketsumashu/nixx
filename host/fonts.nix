@@ -3,7 +3,7 @@
   inputs,
   ...
 }: let
-  myPackages = inputs.self.outputs.packages.${pkgs."x86_64-linux"};
+  myPackages = inputs.self.outputs.packages.${pkgs.system};
 in {
   fonts = {
     packages =
