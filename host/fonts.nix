@@ -18,24 +18,25 @@ in {
         noto-fonts-cjk-serif
       ]);
     fontDir.enable = true;
-    fontconfig = {
-      defaultFonts = {
-        serif = [
-          "Noto Serif CJK JP"
-          "Blobmoji"
-        ];
-        sansSerif = [
-          "Noto Sans CJK JP"
-          "Blobmoji"
-        ];
-        monospace = [
-          "FiraCode Nerd Font"
-          "Blobmoji"
-        ];
-        emoji = [
-          "Blobmoji"
-        ];
-      };
-    };
+    fontconfig.enable = true;
+#    fontconfig = {
+#      defaultFonts = {
+#        serif = [
+#          "Noto Serif CJK JP"
+#          "Blobmoji"
+#        ];
+#        sansSerif = [
+#          "Noto Sans CJK JP"
+#          "Blobmoji"
+#        ];
+#        monospace = [
+#          "FiraCode Nerd Font"
+#          "Blobmoji"
+#        ];
+#        emoji = [
+#          "Blobmoji"
+#        ];
+#      };
+#    };
   };
 }
