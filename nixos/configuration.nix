@@ -1,25 +1,18 @@
-# Edit this configuration file to define what should be installed on
-# your system.  Help is available in the configuration.nix(5) man page
-# and in the NixOS manual (accessible by running ‘nixos-help’).
 {
   config,
   pkgs,
   ...
 }: {
   imports = [
-    # Include the results of the hardware scan.
     ./hardware-configuration.nix
   ];
 
-  # Bootloader.
+  # Bootloader
   boot.loader.systemd-boot.enable = true;
   boot.loader.systemd-boot.consoleMode = "max";
   boot.loader.efi.canTouchEfiVariables = true;
-  #  boot.initrd.kernelModules = [ "usbhid" "joydev" "xpad" ];
-  #  boot.extraModprobeConfig = '' options bluetooth disable_ertm=1 '';
 
-  networking.hostName = "mashunix"; # Define your hostname.
-  #networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
+  networking.hostName = "mashunix";  
 
   # Enable networking
   networking.networkmanager.enable = true;
@@ -29,7 +22,7 @@
 
   # Select internationalisation properties.
   i18n = {
-    defaultLocale = "en_US.UTF-8";
+    defaultLocale = "en_GB.UTF-8";
     extraLocaleSettings = {
       LC_ADDRESS = "ja_JP.UTF-8";
       LC_IDENTIFICATION = "ja_JP.UTF-8";
@@ -39,7 +32,7 @@
       LC_NUMERIC = "ja_JP.UTF-8";
       LC_PAPER = "ja_JP.UTF-8";
       LC_TELEPHONE = "ja_JP.UTF-8";
-      LC_TIME = "ja_JP.UTF-8";
+      LC_TIME = "en_US.UTF-8";
     };
     inputMethod = {
       enabled = "fcitx5";
