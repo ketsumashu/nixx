@@ -17,10 +17,13 @@
   # Enable networking
   networking.networkmanager.enable = true;
 
-  # Set your time zone.
-  time.timeZone = "Asia/Tokyo";
+  # Set time zone and sync Nixos and Win
+  time ={
+    timeZone = "Asia/Tokyo";
+    hardwareClockInLocalTime = true;
+  };
 
-  # Select internationalisation properties.
+  # Set Locale and input method
   i18n = {
     defaultLocale = "en_GB.UTF-8";
     extraLocaleSettings = {
@@ -53,21 +56,20 @@
     xkb.variant = "";
   };
 
-  #Enable bluetooth
+  # Enable bluetooth
   hardware.bluetooth = {
     enable = true;
     powerOnBoot = true;
   };
 
-  #Environment variables
+  # Environment variables
   environment.variables = {
     MOZ_ENABLE_WAYLAND = "1";
     EDITOR = "nvim";
   };
 
-  #Sounds
+  # Sounds
   sound = {enable = true;};
-
   security.rtkit.enable = true;
   hardware.pulseaudio.enable = false;
   services.pipewire = {
@@ -88,7 +90,7 @@
   # RGB control
   services.hardware.openrgb.enable = true;
 
-  # Steam, for opengl access
+  # Steam
   programs.steam = {
     enable = true;
     remotePlay.openFirewall = true;
@@ -98,6 +100,7 @@
       proton-ge-bin
     ];
   };
+  # Fix gamescope not work in steam
   nixpkgs.config.packageOverrides = pkgs: {
     steam = pkgs.steam.override {
       extraPkgs = pkgs:
@@ -116,6 +119,7 @@
     };
   };
 
+  # Screensharing
   xdg.portal = {
     enable = true;
     extraPortals = with pkgs; [
@@ -131,7 +135,7 @@
   # Polkit
   security.polkit.enable = true;
 
-  # Define a user account. Don't forget to set a password with ‘passwd’.
+  # User account
   users.users.mashu = {
     isNormalUser = true;
     description = "mashu";
@@ -142,7 +146,7 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  #Enable flakes
+  # Enable flakes
   nix = {
     settings = {
       auto-optimise-store = true;
@@ -152,15 +156,11 @@
     };
   };
 
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
   environment.systemPackages = with pkgs; [
-    #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-    #  wget
     gh
     git
     vesktop
   ];
 
-  system.stateVersion = "24.05"; # Did you read the comment?
+  system.stateVersion = "24.05";
 }
