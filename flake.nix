@@ -21,7 +21,10 @@
     nixos-hardware,
     hyprland,
     ...
-  }: {
+  }: let
+    mySystem = ["x86_64-linux"];
+    forMySystems = inputs.nixpkgs.lib.genAttrs mySystem;
+  in {
     nixosConfigurations = {
       mashunix = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
@@ -49,6 +52,6 @@
       };
     };
     formatter."x86_64-linux" = nixpkgs.legacyPackages."x86_64-linux".alejandra;
-    packages =  inputs.nixpkgs.lib.genAttrs "x86_64-linux" (system: import ./pkgs inputs.nixpkgs.legacyPackages.${system});
+    packages = forMySystems (system: import ./pkgs inputs.nixpkgs.legacyPackages.${system});
   };
 }

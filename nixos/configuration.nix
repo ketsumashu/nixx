@@ -12,13 +12,13 @@
   boot.loader.systemd-boot.consoleMode = "max";
   boot.loader.efi.canTouchEfiVariables = true;
 
-  networking.hostName = "mashunix";  
+  networking.hostName = "mashunix";
 
   # Enable networking
   networking.networkmanager.enable = true;
 
   # Set time zone and sync Nixos and Win
-  time ={
+  time = {
     timeZone = "Asia/Tokyo";
     hardwareClockInLocalTime = true;
   };
