@@ -115,7 +115,7 @@
           stdenv.cc.cc.lib
           libkrb5
           keyutils
-          Migu-1P
+          migu
         ];
     };
   };
