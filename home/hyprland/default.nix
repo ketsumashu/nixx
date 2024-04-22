@@ -20,11 +20,6 @@
     vesktop
   ];
 
-  packageOverrides = pkgs: {
-    vesktop = pkgs.vesktop.override {
-        withSystemVencord = false;
-    };
-  };
 
   home.sessionVariables = {
     XDG_SESSION_TYPE = "wayland";

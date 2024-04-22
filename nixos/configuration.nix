@@ -132,6 +132,12 @@
     ];
   };
 
+  packageOverrides = pkgs: {
+    vesktop = pkgs.vesktop.override {
+        withSystemVencord = false;
+    };
+  };
+
   # Polkit
   security.polkit.enable = true;
 
