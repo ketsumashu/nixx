@@ -115,10 +115,8 @@
           stdenv.cc.cc.lib
           libkrb5
           keyutils
+          Migu-1P
         ];
-    };
-    vesktop = pkgs.vesktop.override {
-      withSystemVencord = false;
     };
   };
 
@@ -167,7 +165,6 @@
   environment.systemPackages = with pkgs; [
     gh
     git
-    vesktop
   ];
 
   system.stateVersion = "24.05";
