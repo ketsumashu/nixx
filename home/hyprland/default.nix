@@ -20,6 +20,7 @@
     ( vesktop.override {
       withSystemVencord = false;
     })
+    arrpc
   ];
 
   home.sessionVariables = {
