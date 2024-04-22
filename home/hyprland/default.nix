@@ -160,6 +160,7 @@
       "mako"
       "hypridle"
       "waybar"
+      "arrpc"
       "hyprctl dispatch exec \"\[workspace 2 silent\]\" steam"
       "fcitx5 -rd"
       "swww-daemon"
