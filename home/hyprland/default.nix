@@ -17,6 +17,9 @@
     swww
     pavucontrol
     lm_sensors
+    vesktop.override {
+      withSystemVencord = false;
+    }
   ];
 
   home.sessionVariables = {

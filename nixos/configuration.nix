@@ -164,7 +164,6 @@
   environment.systemPackages = with pkgs; [
     gh
     git
-    vesktop
   ];
 
   system.stateVersion = "24.05";
