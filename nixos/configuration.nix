@@ -117,6 +117,9 @@
           keyutils
         ];
     };
+    vesktop = pkgs.vesktop.override {
+      withSystemVencord = false;
+    };
   };
 
   # Screensharing
