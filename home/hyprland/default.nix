@@ -17,9 +17,7 @@
     swww
     pavucontrol
     lm_sensors
-    vesktop
   ];
-
 
   home.sessionVariables = {
     XDG_SESSION_TYPE = "wayland";

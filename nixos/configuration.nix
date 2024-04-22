@@ -117,9 +117,6 @@
           keyutils
         ];
     };
-    vesktop = pkgs.vesktop.override {
-        withSystemVencord = false;
-    };
   };
 
   # Screensharing
@@ -167,6 +164,7 @@
   environment.systemPackages = with pkgs; [
     gh
     git
+    vesktop
   ];
 
   system.stateVersion = "24.05";
