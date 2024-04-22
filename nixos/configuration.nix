@@ -117,6 +117,9 @@
           keyutils
         ];
     };
+    vesktop = pkgs.vesktop.override {
+        withSystemVencord = false;
+    };
   };
 
   # Screensharing
@@ -130,12 +133,6 @@
       xdg-desktop-portal-gtk
       xdg-desktop-portal-hyprland
     ];
-  };
-
-  packageOverrides = pkgs: {
-    vesktop = pkgs.vesktop.override {
-        withSystemVencord = false;
-    };
   };
 
   # Polkit
