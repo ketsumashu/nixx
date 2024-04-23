@@ -4,6 +4,9 @@
   wayland-pipewire-idle-inhibit,
   ...
 }: {
+  imports = [
+    wayland-pipewire-idle-inhibit.homeModules.default
+  ];
   services.wayland-pipewire-idle-inhibit = {
     enable = true;
     package = wayland-pipewire-idle-inhibit.packages."${pkgs.system}".wayland-pipewire-idle-inhibit;
