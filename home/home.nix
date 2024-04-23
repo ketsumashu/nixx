@@ -14,6 +14,7 @@
     ./libskk
     ./rofi
     ./mako
+    ./ncspot
   ];
 
   home = {
