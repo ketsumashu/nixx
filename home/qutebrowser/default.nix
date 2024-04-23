@@ -34,7 +34,7 @@ in {
       editor.command = ["foot" "-e" "{file}"];
       content.javascript.clipboard = "access-paste";
       fonts = {
-        default_family = [ "Cozette" "mplus12" ];
+        default_family = ["Cozette" "mplus12"];
         default_size = "11px";
       };
       scrolling.smooth = true;
@@ -219,14 +219,14 @@ in {
               fg = palette.green;
             };
             selected = {
-            even = {
-              bg = palette.background;
-              fg = palette.green;
-            };
-            odd = {
-              bg = palette.background;
-              fg = palette.green;
-            };
+              even = {
+                bg = palette.background;
+                fg = palette.green;
+              };
+              odd = {
+                bg = palette.background;
+                fg = palette.green;
+              };
             };
           };
         };
@@ -242,7 +242,21 @@ in {
           width = 1;
         };
         position = "left";
-        width = "15%";
+        width = "9%";
+        padding = [
+          "bottom:10"
+          "left:5"
+          "right:5"
+          "top:10"
+        ];
+      };
+      statusbar = {
+        padding = [
+          "bottom:10"
+          "left:5"
+          "right:5"
+          "top:10"
+        ];
       };
     };
   };
