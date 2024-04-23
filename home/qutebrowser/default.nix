@@ -248,7 +248,7 @@ in {
       };
     };
     extraConfig = ''
-      c.statusbar.padding = { "bottom":10, "right":5, "left":5, "top":10 }
+      c.statusbar.padding = { "bottom":0, "right":5, "left":5, "top":10 }
       c.tabs.padding = { "bottom":10, "right":5, "left":5, "top":10 }
     '';
   };
