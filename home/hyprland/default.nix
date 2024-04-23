@@ -132,6 +132,7 @@
       "float,class:^(blueman-manager)$"
       "float,title:(Save File)$"
       "float,class:^(pavu)"
+      "float,title:^(ncspot)"
       "float,title:(Open Files)$"
       "workspace 2 silent,class:^(steam)$"
       "float,class:^(steam)$,title:(ist)$"
@@ -162,6 +163,7 @@
       "waybar"
       "arrpc"
       "hyprctl dispatch exec \"\[workspace 2 silent\]\" steam"
+      "hyprctl dispatch exec \"\[workspace 5 silent\]\" vesktop"
       "fcitx5 -rd"
       "swww-daemon"
       "openrgb --startminimized -p ~/.config/OpenRGB/pro.orp"
@@ -177,6 +179,7 @@
     bind =
       [
         "$mod, B, exec, firefox"
+        "$mod, E, exec, vesktop"
         "$mod, S, exec, steam"
         "$mod, Return, exec, $terminal"
         "$mod, Space, exec, rofi -show drun"
