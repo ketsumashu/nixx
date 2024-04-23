@@ -17,7 +17,7 @@
     swww
     pavucontrol
     lm_sensors
-    ( vesktop.override {
+    (vesktop.override {
       withSystemVencord = false;
     })
     arrpc
