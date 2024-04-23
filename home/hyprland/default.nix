@@ -200,7 +200,7 @@
         "$mod SHIFT, Tab, workspace, e-1"
         "$mod, V, togglefloating"
         "$mod, F, Fullscreen"
-        "$mod CTRL, T, grim -o HDMI-A-2 ~/screenshot/$(date +\"%Y_%m_%d\".png)"
+        "$mod CTRL, T, exec, grim -o HDMI-A-2 ~/screenshot/$(date +\"%Y_%m_%d\".png)"
       ]
       ++ (
         # workspaces
