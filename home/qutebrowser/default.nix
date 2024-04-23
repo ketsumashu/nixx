@@ -43,11 +43,11 @@ in {
         completion = {
           category = {
             bg = palette.background;
+            fg = palette.foreground;
             border = {
               bottom = palette.border;
               top = palette.border;
             };
-            fg = palette.foreground;
           };
           even = {
             bg = palette.background;
@@ -55,7 +55,6 @@ in {
           odd = {
             bg = palette.background-alt;
           };
-          fg = palette.foreground;
           item = {
             selected = {
               bg = palette.background;
@@ -66,7 +65,6 @@ in {
               fg = palette.green;
               match = {
                 fg = palette.purple;
-                bg = palette.background;
               };
             };
           };
@@ -243,20 +241,20 @@ in {
         };
         position = "left";
         width = "9%";
-        padding = [
-          "bottom:10"
-          "left:5"
-          "right:5"
-          "top:10"
-        ];
+        padding = {
+          bottom = 10;
+          left = 5;
+          right = 5;
+          top = 10;
+        };
       };
       statusbar = {
-        padding = [
-          "bottom:10"
-          "left:5"
-          "right:5"
-          "top:10"
-        ];
+        padding = {
+          bottom = 10;
+          left = 5;
+          right = 5;
+          top = 10;
+        };
       };
     };
   };
