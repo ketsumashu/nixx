@@ -38,7 +38,9 @@ in {
         default_size = "11px";
       };
       content.blocking.method = "both";
-      content.blocking.adblock.lists = "\[\"https://raw.githubusercontent.com/tofukko/filter/master/Adblock_Plus_list.txt\"\]";
+      content.blocking.adblock.lists = ''
+        '["https://raw.githubusercontent.com/tofukko/filter/master/Adblock_Plus_list.txt"]'
+      '';
       scrolling.smooth = true;
       colors = {
         webpage.preferred_color_scheme = "dark";
