@@ -34,6 +34,7 @@
           nixos-hardware.nixosModules.common-cpu-amd
           nixos-hardware.nixosModules.common-gpu-amd
           nixos-hardware.nixosModules.common-pc-ssd
+          inputs.wayland-pipewire-idle-inhibit.homeModules.default
           ./nixos
           {_module.args = {inherit inputs;};}
           home-manager.nixosModules.home-manager
