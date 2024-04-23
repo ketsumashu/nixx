@@ -29,7 +29,7 @@
       ];
     };
   };
-  environment.pathsToLink = ["/share/fcitx5"]; # fix theme not applied in firefox
+  environment.pathsToLink = ["/share/fcitx5" "/share/qutebrowser"]; # fix theme not applied in firefox
 
   # Configure keymap in X11
   services.xserver = {
