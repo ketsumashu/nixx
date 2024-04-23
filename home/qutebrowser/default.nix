@@ -37,6 +37,7 @@ in {
         default_family = ["Cozette" "mplus12"];
         default_size = "11px";
       };
+      content.blocking.method = "both";
       scrolling.smooth = true;
       colors = {
         webpage.preferred_color_scheme = "dark";
@@ -241,20 +242,8 @@ in {
         };
         position = "left";
         width = "9%";
-        padding = {
-          bottom = 10;
-          left = 5;
-          right = 5;
-          top = 10;
-        };
       };
       statusbar = {
-        padding = {
-          bottom = 10;
-          left = 5;
-          right = 5;
-          top = 10;
-        };
       };
     };
   };
