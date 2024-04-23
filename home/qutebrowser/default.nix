@@ -64,6 +64,10 @@ in {
                 top = palette.selection;
               };
               fg = palette.green;
+              match = {
+                fg = palette.purple;
+                bg = palette.background;
+              };
             };
           };
           match = {
@@ -205,6 +209,27 @@ in {
               fg = palette.green;
             };
           };
+          pinned = {
+              even = {
+                bg = palette.background;
+                fg = palette.green;
+              };
+              odd = {
+                bg = palette.background;
+                fg = palette.green;
+              };
+            selected = {
+              even = {
+                bg = palette.background;
+                fg = palette.green;
+              };
+              odd = {
+                bg = palette.background;
+                fg = palette.green;
+              };
+            };
+          };
+          };
         };
       };
       hints = {
@@ -218,9 +243,9 @@ in {
           width = 1;
         };
         position = "left";
+        width = "15%";
       };
     };
-  };
   home.packages = with pkgs; [
     # widevine-cdm
   ];
