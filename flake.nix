@@ -30,7 +30,6 @@
           nixos-hardware.nixosModules.common-gpu-amd
           nixos-hardware.nixosModules.common-pc-ssd
           ./nixos
-          ./systemd
           {_module.args = {inherit inputs;};}
           home-manager.nixosModules.home-manager
           {
