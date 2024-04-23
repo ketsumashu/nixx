@@ -252,6 +252,6 @@ in {
     '';
   };
   home.packages = with pkgs; [
-     widevine-cdm
+    widevine-cdm
   ];
 }

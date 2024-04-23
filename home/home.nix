@@ -15,7 +15,7 @@
     ./rofi
     ./mako
     ./ncspot
-    ./qutebrowser
+    ./idle-inhibitor
   ];
 
   home = {

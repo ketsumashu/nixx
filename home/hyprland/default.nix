@@ -161,6 +161,7 @@
       "mako"
       "hypridle"
       "waybar"
+      "wayland-pipewire-idle-inhibit"
       "arrpc"
       "hyprctl dispatch exec \"\[workspace 2 silent\]\" steam"
       "hyprctl dispatch exec \"\[workspace 5 silent\]\" vesktop"
