@@ -6,6 +6,7 @@
 }: {
   services.wayland-pipewire-idle-inhibit = {
     enable = true;
+    package = wayland-pipewire-idle-inhibit.packages."${pkgs.system}".wayland-pipewire-idle-inhibit;
     systemdTarget = "hyprland-session.target";
     settings = {
       verbosity = "INFO";
