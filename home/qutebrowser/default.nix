@@ -34,9 +34,10 @@ in {
       editor.command = ["foot" "-e" "{file}"];
       content.javascript.clipboard = "access-paste";
       fonts = {
-        default_family = "Noto Sans CJK JP";
-        default_size = "11.00pt";
+        default_family = [ "Cozette" "mplus12" ];
+        default_size = "11px";
       };
+      scrolling.smooth = true;
       colors = {
         webpage.preferred_color_scheme = "dark";
         completion = {
@@ -57,12 +58,12 @@ in {
           fg = palette.foreground;
           item = {
             selected = {
-              bg = palette.selection;
+              bg = palette.background;
               border = {
                 bottom = palette.selection;
                 top = palette.selection;
               };
-              fg = palette.foreground;
+              fg = palette.green;
             };
           };
           match = {
@@ -90,7 +91,7 @@ in {
         };
         hints = {
           bg = palette.background;
-          fg = palette.purple;
+          fg = palette.green;
           match = {
             fg = palette.foreground-alt;
           };
@@ -178,10 +179,10 @@ in {
         };
         tabs = {
           bar = {
-            bg = palette.selection;
+            bg = palette.background;
           };
           even = {
-            bg = palette.selection;
+            bg = palette.background;
             fg = palette.foreground;
           };
           indicator = {
@@ -191,17 +192,17 @@ in {
             system = "none";
           };
           odd = {
-            bg = palette.selection;
+            bg = palette.background;
             fg = palette.foreground;
           };
           selected = {
             even = {
               bg = palette.background;
-              fg = palette.foreground;
+              fg = palette.green;
             };
             odd = {
               bg = palette.background;
-              fg = palette.foreground;
+              fg = palette.green;
             };
           };
         };
@@ -216,6 +217,7 @@ in {
         indicator = {
           width = 1;
         };
+        position = "left";
       };
     };
   };
