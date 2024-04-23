@@ -38,9 +38,9 @@ in {
         default_size = "11px";
       };
       content.blocking.method = "both";
-      content.blocking.adblock.lists = ''
-        '["https://raw.githubusercontent.com/tofukko/filter/master/Adblock_Plus_list.txt"]'
-      '';
+      content.blocking.adblock.lists = [
+        "https://raw.githubusercontent.com/tofukko/filter/master/Adblock_Plus_list.txt"
+      ];
       scrolling.smooth = true;
       colors = {
         webpage.preferred_color_scheme = "dark";
@@ -246,11 +246,13 @@ in {
         position = "left";
         width = "9%";
       };
-      statusbar = {
-      };
+      extraConfig = ''
+        c.statusbar.padding = {"bottom";10, "right":5, "left":5, "top":10 }
+        c.tabs.padding = {"bottom";10, "right":5, "left":5, "top":10 }
+      '';
     };
   };
   home.packages = with pkgs; [
-    # widevine-cdm
+     widevine-cdm
   ];
 }
