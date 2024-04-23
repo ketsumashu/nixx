@@ -246,11 +246,11 @@ in {
         position = "left";
         width = "9%";
       };
-      extraConfig = ''
-        c.statusbar.padding = {"bottom";10, "right":5, "left":5, "top":10 }
-        c.tabs.padding = {"bottom";10, "right":5, "left":5, "top":10 }
-      '';
     };
+    extraConfig = ''
+      c.statusbar.padding = { "bottom";10, "right":5, "left":5, "top":10 }
+      c.tabs.padding = { "bottom";10, "right":5, "left":5, "top":10 }
+    '';
   };
   home.packages = with pkgs; [
      widevine-cdm
