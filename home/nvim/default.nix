@@ -12,7 +12,7 @@
     ./cmp.nix
     ./telescope.nix
     ./statusline.nix
-    ./surround.nix
+    ./auto-pair.nix
   ];
 
   programs.nixvim = {

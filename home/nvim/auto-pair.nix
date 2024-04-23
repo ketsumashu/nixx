@@ -1,6 +1,6 @@
 {
   programs.nixvim.plugins = {
-    surround = {
+    nvim-autopairs = {
       enable = true;
     };
   };
