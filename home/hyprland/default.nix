@@ -83,7 +83,7 @@
       rounding = 6;
       blur = {
         enabled = true;
-        size = 2;
+        size = 4;
         passes = 3;
         popups = true;
         contrast = 1;
