@@ -13,6 +13,7 @@
       abbr -a go "git commit --allow-empty-message -m \'\' "
       abbr -a gu "git push"
       abbr -a nc "sudo nix-collect-garbage -d"
+      fish_vi_key_bindings
     '';
   };
 }
