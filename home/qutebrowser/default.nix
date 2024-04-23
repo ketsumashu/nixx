@@ -210,25 +210,24 @@ in {
             };
           };
           pinned = {
-              even = {
-                bg = palette.background;
-                fg = palette.green;
-              };
-              odd = {
-                bg = palette.background;
-                fg = palette.green;
-              };
-            selected = {
-              even = {
-                bg = palette.background;
-                fg = palette.green;
-              };
-              odd = {
-                bg = palette.background;
-                fg = palette.green;
-              };
+            even = {
+              bg = palette.background;
+              fg = palette.green;
             };
-          };
+            odd = {
+              bg = palette.background;
+              fg = palette.green;
+            };
+            selected = {
+            even = {
+              bg = palette.background;
+              fg = palette.green;
+            };
+            odd = {
+              bg = palette.background;
+              fg = palette.green;
+            };
+            };
           };
         };
       };
@@ -246,6 +245,7 @@ in {
         width = "15%";
       };
     };
+  };
   home.packages = with pkgs; [
     # widevine-cdm
   ];
