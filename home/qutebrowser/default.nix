@@ -26,8 +26,6 @@ in {
     enable = true;
     keyBindings = {
       normal = {
-        "j" = "scroll-px 0 700";
-        "k" = "scroll-px 0 -700";
       };
     };
     settings = {
@@ -40,6 +38,7 @@ in {
       content.blocking.method = "both";
       content.blocking.adblock.lists = [
         "https://raw.githubusercontent.com/tofukko/filter/master/Adblock_Plus_list.txt"
+        "https://raw.githubusercontent.com/robonxt/CleanYourTwitter/master/CleanYourTwitter.txt"
       ];
       scrolling.smooth = true;
       colors = {
