@@ -14,6 +14,7 @@
     };
     gc = {
       automatic = true;
+      persistent = true;
       dates = "daily";
       options = "-d";
     };
