@@ -14,6 +14,7 @@
       abbr -a gu "git push"
       abbr -a nc "sudo nix-collect-garbage -d"
       fish_vi_key_bindings
+      bind -M insert -m default jj backward-char force-repaint
     '';
   };
 }
