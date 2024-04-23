@@ -112,8 +112,8 @@
     };
 
     dwindle = {
-      pseudotile = true;
-      preserve_split = false;
+      pseudotile = false;
+      preserve_split = true;
       force_split = 2;
     };
 
