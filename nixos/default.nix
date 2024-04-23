@@ -12,5 +12,6 @@
     ./media.nix
     ./localisation.nix
     ./fonts.nix
+    ./systemd
   ];
 }
