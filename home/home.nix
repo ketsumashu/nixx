@@ -15,6 +15,7 @@
     ./rofi
     ./mako
     ./ncspot
+    ./qutebrowser
   ];
 
   home = {
