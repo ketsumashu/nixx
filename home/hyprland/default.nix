@@ -113,7 +113,7 @@
 
     dwindle = {
       pseudotile = true;
-      preserve_split = true;
+      preserve_split = false;
       force_split = 2;
     };
 
@@ -158,10 +158,10 @@
     exec-once = [
       "systemctl --user enable xdg-desktop-portal-hyprland"
       "systemctl --user enable xdg-desktop-portal-gtk"
+      "systemctl --user enable wayland-pipewire-idle-inhibit"
       "mako"
       "hypridle"
       "waybar"
-      "wayland-pipewire-idle-inhibit"
       "arrpc"
       "hyprctl dispatch exec \"\[workspace 2 silent\]\" steam"
       "hyprctl dispatch exec \"\[workspace 5 silent\]\" vesktop"
