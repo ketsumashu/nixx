@@ -1,8 +1,8 @@
 {pkgs, ...}: {
   systemd.services.chownX11 = {
     wantedBy = ["multi-user.target"];
-    after = ["network.target"];
-    description = "chown /tmp/.X11-unix to mashu for executing gamescope in Steam app";
+    after = ["multi-user.target"];
+    description = "chown mashu /tmp/.X11-unix";
     serviceConfig = {
       Type = "simple";
       ExecStart = ''${pkgs.coreutils}/bin/chown mashu /tmp/.X11-unix'';
