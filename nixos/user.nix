@@ -7,7 +7,6 @@
     isNormalUser = true;
     description = "mashu";
     extraGroups = ["networkmanager" "wheel"];
-    packages = with pkgs; [];
   };
   environment.variables = {
     MOZ_ENABLE_WAYLAND = "1";

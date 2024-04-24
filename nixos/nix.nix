@@ -20,10 +20,5 @@
     };
   };
 
-  environment.systemPackages = with pkgs; [
-    gh
-    git
-  ];
-
   system.stateVersion = "24.05";
 }

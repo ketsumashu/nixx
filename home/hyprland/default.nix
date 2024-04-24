@@ -30,6 +30,8 @@
     xdg_utils
     killall
     which
+    gh
+    git
   ];
 
   home.sessionVariables = {
