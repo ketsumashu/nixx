@@ -23,7 +23,7 @@
     homeDirectory = "/home/mashu";
 
     packages = with pkgs; [
-      btop
+      ( btop.override { rocmSupport = true;})
       fd
       duf
       eza

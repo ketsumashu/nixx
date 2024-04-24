@@ -45,7 +45,6 @@
               extraSpecialArgs = {
                 inherit inputs;
                 inherit hyprland;
-                inherit wayland-pipewire-idle-inhibit;
               };
             };
           }
