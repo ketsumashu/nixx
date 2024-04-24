@@ -9,7 +9,7 @@
     --tridactyl-logo: url("moz-extension://__MSG_@@extension_id__/static/logo/Tridactyl_64px.png");
     --tridactyl-scrollbar-color: auto;
 
-    /* Mode indicator */
+    /* Mode Indicator */
     --tridactyl-status-font-family: var(--tridactyl-font-family);
     --tridactyl-status-font-size: var(--tridactyl-font-size);
     --tridactyl-status-bg: var(--tridactyl-bg);

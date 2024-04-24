@@ -4,6 +4,7 @@
     settings = {
       use_nerdfont = false;
       gapless = true;
+
       theme = {
         background = "#1B1C28";
         primary = "#A6ACCD";
