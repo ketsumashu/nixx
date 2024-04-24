@@ -16,6 +16,7 @@
     ./mako
     ./ncspot
     ./idle-inhibitor
+    ./localfonts
   ];
 
   home = {
