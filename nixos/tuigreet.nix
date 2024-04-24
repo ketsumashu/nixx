@@ -2,6 +2,10 @@
   services.greetd = {
     enable = true;
     settings = {
+      default_session = {
+        command = "tuigreet --cmd Hyprland";
+        user = "greeter";
+      };
       initial_session = {
         command = "Hyprland";
         user = "mashu";
