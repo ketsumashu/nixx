@@ -21,6 +21,15 @@
       withSystemVencord = false;
     })
     arrpc
+    (btop.override {rocmSupport = true;})
+    fd
+    duf
+    eza
+    ripgrep
+    blueman
+    xdg_utils
+    killall
+    which
   ];
 
   home.sessionVariables = {

@@ -21,19 +21,6 @@
   home = {
     username = "mashu";
     homeDirectory = "/home/mashu";
-
-    packages = with pkgs; [
-      ( btop.override { rocmSupport = true;})
-      fd
-      duf
-      eza
-      ripgrep
-      blueman
-      xdg_utils
-      killall
-      which
-    ];
-
     stateVersion = "24.05";
   };
 
