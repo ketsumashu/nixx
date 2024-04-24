@@ -30,6 +30,8 @@
       ripgrep
       blueman
       xdg_utils
+      killall
+      which
     ];
 
     stateVersion = "24.05";
