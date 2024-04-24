@@ -1,21 +1,16 @@
-{ pkgs, ... }: {
+{pkgs, ...}: {
   services.greetd = {
     enable = true;
     settings = {
       initial_session = {
-        command =
-          "Hyprland";
+        command = "Hyprland";
         user = "mashu";
       };
     };
   };
 
-  environment.systemPackages = with pkgs; [ greetd.tuigreet ];
+  environment.systemPackages = with pkgs; [greetd.tuigreet];
 
-  # this is a life saver.
-  # literally no documentation about this anywhere.
-  # might be good to write about this...
-  # https://www.reddit.com/r/NixOS/comments/u0cdpi/tuigreet_with_xmonad_how/
   systemd.services.greetd.serviceConfig = {
     Type = "idle";
     StandardInput = "tty";

@@ -13,5 +13,6 @@
     ./localisation.nix
     ./fonts.nix
     ./systemd
+    ./tuigreet.nix
   ];
 }
