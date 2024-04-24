@@ -10,6 +10,7 @@
     ./lsp.nix
     ./treesitter.nix
     ./cmp.nix
+    ./leap.nix
     ./telescope.nix
     ./statusline.nix
     ./auto-pair.nix
