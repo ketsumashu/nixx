@@ -1,14 +1,10 @@
-{pkgs,config, lib, ...}: {
+{pkgs, ...}: {
   services.greetd = {
     enable = true;
     settings = {
       default_session = {
         command = "tuigreet --cmd Hyprland";
         user = "greeter";
-      };
-      initial_session = lib.mkIf config.autologin.enable {
-        command = lib.mkIf config.hyprland.enable "Hyprland";
-        user = "mashu";
       };
     };
   };
