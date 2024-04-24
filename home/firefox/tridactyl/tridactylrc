@@ -3,7 +3,7 @@ set configversion 2.0
 set smoothscroll true
 set theme poimandres
 colorscheme poimandres
-set newtab https://duckduckgo.com
+set newtab about:newtab
 
 " Binds
 bind J tabnext
