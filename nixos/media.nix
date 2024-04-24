@@ -23,4 +23,7 @@
   hardware.opengl.driSupport32Bit = true;
   services.dbus.enable = true;
   services.hardware.openrgb.enable = true;
+  hardware.opengl.extraPackages = with pkgs; [
+    rocmPackages.clr.icd
+  ];
 }
