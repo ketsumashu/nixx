@@ -28,7 +28,7 @@ in {
       normal = {
       };
       insert = {
-        "jj" = "<esc>";
+        "jj" = "";
       };
     };
     settings = {

@@ -15,7 +15,6 @@
     ./ncspot
     ./idle-inhibitor
     ./localfont
-    ./qutebrowser
   ];
 
   home = {

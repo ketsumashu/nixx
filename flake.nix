@@ -42,6 +42,8 @@
               users.mashu = import ./home/home.nix;
               extraSpecialArgs = {
                 inherit inputs;
+                inherit nixvim;
+                inherit wayland-pipewire-idle-inhibit;
               };
             };
           }
