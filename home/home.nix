@@ -1,6 +1,4 @@
 {
-  config,
-  pkgs,
   ...
 }: {
   imports = [
@@ -17,6 +15,7 @@
     ./ncspot
     ./idle-inhibitor
     ./localfont
+    ./qutebrowser
   ];
 
   home = {
