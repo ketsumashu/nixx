@@ -11,12 +11,18 @@
       url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    wayland-pipewire-idle-inhibit = {
+      url = "github:rafaelrc7/wayland-pipewire-idle-inhibit";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    nixos-hardware.url = "github:NixOS/nixos-hardware/master";
   };
   outputs = inputs @ {
     nixpkgs,
     home-manager,
     nixvim,
     nixos-hardware,
+    wayland-pipewire-idle-inhibit,
     ...
   }: {
     nixosConfigurations = {
