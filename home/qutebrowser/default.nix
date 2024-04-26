@@ -1,5 +1,4 @@
 {
-  inputs,
   pkgs,
   ...
 }: let
@@ -22,10 +21,14 @@
     yellow = "#5de4c7";
   };
 in {
+  xdg.configFile."qutebrowser/userscripts".source = ./userscripts;
   programs.qutebrowser = {
     enable = true;
     keyBindings = {
       normal = {
+      };
+      insert = {
+        "jj" = "<esc>";
       };
     };
     settings = {
@@ -244,6 +247,9 @@ in {
         };
         position = "left";
         width = "9%";
+      };
+      completion = {
+        height = "15%";
       };
     };
     extraConfig = ''
