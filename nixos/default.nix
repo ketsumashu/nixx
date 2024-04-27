@@ -1,6 +1,4 @@
 {
-  config,
-  pkgs,
   ...
 }: {
   imports = [
@@ -14,5 +12,6 @@
     ./fonts.nix
     ./systemd
     ./tuigreet.nix
+    ./nix-ld.nix
   ];
 }
