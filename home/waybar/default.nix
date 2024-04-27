@@ -1,7 +1,5 @@
 {
   pkgs,
-  config,
-  lib,
   ...
 }: {
   programs.waybar = {
@@ -12,7 +10,7 @@
       mainBar = {
         layer = "top";
         position = "left";
-        output = ["HDMI-A-2" "DP-1"];
+        output = ["HDMI-A-2" "HDMI-A-1"];
         width = 59;
         margin-top = 8;
         margin-bottom = 8;
