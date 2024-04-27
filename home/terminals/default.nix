@@ -1,4 +1,4 @@
-{...}: {
+{
   programs.foot = {
     enable = true;
     settings = {
@@ -15,7 +15,7 @@
         letter-spacing = 1.14;
         vertical-letter-offset = 1.0;
         dpi-aware = false;
-        pad = "10x6 center"; # optionally append 'center'
+        pad = "10x6 center";
       };
       environment = {
         GTK_IM_MODULE = "fcitx";

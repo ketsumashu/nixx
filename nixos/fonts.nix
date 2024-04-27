@@ -1,8 +1,4 @@
-{
-  pkgs,
-  inputs,
-  ...
-}: {
+{pkgs, ...}: {
   fonts = {
     packages = with pkgs; [
       noto-fonts-emoji-blob-bin

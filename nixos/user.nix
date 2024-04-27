@@ -1,8 +1,4 @@
 {
-  config,
-  pkgs,
-  ...
-}: {
   users.users.mashu = {
     isNormalUser = true;
     description = "mashu";
