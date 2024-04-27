@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{...}: {
   services.mako = {
     enable = true;
     icons = true;
@@ -9,7 +9,7 @@
     height = 230;
     padding = "16";
     margin = "10,10,10";
-    output = "HDMI-A-2";
+    output = "HDMI-A-1";
     backgroundColor = "#1b1c28dd";
     textColor = "#ffffff";
     borderColor = "#5de4c7ff";
