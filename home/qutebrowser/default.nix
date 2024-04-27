@@ -1,7 +1,4 @@
-{
-  pkgs,
-  ...
-}: let
+{pkgs, ...}: let
   palette = {
     background = "#1b1c28";
     background-alt = "#1b1c28";

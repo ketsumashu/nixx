@@ -53,7 +53,7 @@
 
     monitor = [
       "HDMI-A-2,2560x1440@144,0x0,1"
-      "DP-1,2560x1440@100,2560x0,1"
+      "HDMI-A-1,2560x1440@100,2560x0,1"
     ];
 
     workspace = [
@@ -61,11 +61,11 @@
       "2, monitor:HDMI-A-2, default:true, persistent:true"
       "3, monitor:HDMI-A-2, default:true, persistent:true"
       "4, monitor:HDMI-A-2, default:true, persistent:true"
-      "5, monitor:DP-1, default:true, persistent:true"
-      "6, monitor:DP-1, default:true, persistent:true"
-      "7, monitor:DP-1, default:true, persistent:true"
-      "8, monitor:DP-1, default:true, persistent:true"
-      "9, monitor:DP-1, default:true, persistent:true"
+      "5, monitor:HDMI-A-1, default:true, persistent:true"
+      "6, monitor:HDMI-A-1, default:true, persistent:true"
+      "7, monitor:HDMI-A-1, default:true, persistent:true"
+      "8, monitor:HDMI-A-1, default:true, persistent:true"
+      "9, monitor:HDMI-A-1, default:true, persistent:true"
     ];
 
     general = {
