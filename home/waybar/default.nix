@@ -10,7 +10,7 @@
       mainBar = {
         layer = "top";
         position = "left";
-        output = ["HDMI-A-2" "HDMI-A-1"];
+        output = ["HDMI-A-1" "HDMI-A-2"];
         width = 59;
         margin-top = 8;
         margin-bottom = 8;
@@ -23,8 +23,8 @@
           format = "{name}";
           all-outputs = false;
           persistent-workspaces = {
-            "HDMI-A-2" = [1 2 3 4];
-            "DP-1" = [5 6 7 8 9];
+            "HDMI-A-1" = [1 2 3 4];
+            "HDMI-A-2" = [5 6 7 8 9];
           };
         };
 
