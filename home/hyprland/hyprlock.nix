@@ -30,7 +30,7 @@
       monitor =
       text = cmd[update:1000] echo "<b><big> $(date +"%H:%M:%S") </big></b>"
       font_size = 64
-      font_family = FiraCode 10
+      font_family = Cozette 
       shadow_passes = 3
       shadow_size = 4
 
@@ -43,7 +43,7 @@
       monitor =
       text = cmd[update:18000000] echo "<b> "$(date +'%A, %-d %B %Y')" </b>"
       font_size = 24
-      font_family = FiraCode 10
+      font_family = Cozette 
   
       position = 0, -16
       halign = center
