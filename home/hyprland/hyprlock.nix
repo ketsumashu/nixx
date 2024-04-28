@@ -28,8 +28,8 @@
     }
     label{
       monitor =
-      text = cmd[update:1000] echo "<b><big> $(date +"%H:%M:%S") </big></b>"
-      font_size = 64
+      text = cmd[update:1000] echo "<big> $(date +"%H:%M:%S") </big>"
+      font_size = 24
       font_family = CozetteHiDpi 
       shadow_passes = 3
       shadow_size = 4
