@@ -41,8 +41,8 @@
     # Date
     label {
       monitor =
-      text = cmd[update:18000000] echo "<b> "$(date +'%A, %-d %B %Y')" </b>"
-      font_size = 24
+      text = cmd[update:18000000] echo ""$(date +'%A, %-d %B %Y')""
+      font_size = 16
       font_family = CozetteHiDpi
   
       position = 0, -16
