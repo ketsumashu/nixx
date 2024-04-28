@@ -22,14 +22,13 @@
       placeholder_text = <i>Password...</i> # Text rendered in the input box when it's empty.
       hide_input = false
 
-      position = 0, 50
+      position = 0, 100
       halign = center
       valign = bottom
     }
     label{
       monitor =
       text = cmd[update:1000] echo "<b><big> $(date +"%H:%M:%S") </big></b>"
-      color = $color6
       font_size = 64
       font_family = FiraCode 10
       shadow_passes = 3
@@ -44,22 +43,11 @@
       monitor =
       text = cmd[update:18000000] echo "<b> "$(date +'%A, %-d %B %Y')" </b>"
       font_size = 24
-      font_family = JetBrains Mono Nerd Font 10
+      font_family = FiraCode 10
   
       position = 0, -16
       halign = center
       valign = center
-    }
-
-    label {
-      monitor =
-      text = Hey $USER
-      font_size = 18
-      font_family = FiraCode
-    
-      position = 0, 30
-      halign = center
-      valign = bottom
     }
   '';
 }
