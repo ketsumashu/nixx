@@ -8,5 +8,7 @@
     MOZ_ENABLE_WAYLAND = "1";
     EDITOR = "nvim";
   };
+  environment.pathsToLink = ["/share/fcitx5" "/share/fish"]; #おまじない
+
   security.polkit.enable = true;
 }

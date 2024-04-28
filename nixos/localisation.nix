@@ -29,7 +29,6 @@
       ];
     };
   };
-  environment.pathsToLink = ["/share/fcitx5" "/share/fish"]; # fix theme not applied in firefox
 
   # Configure keymap in X11
   services.xserver = {
