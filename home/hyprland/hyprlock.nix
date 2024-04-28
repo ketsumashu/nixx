@@ -1,7 +1,4 @@
-{
-  pkgs,
-  ...
-}: {
+{pkgs, ...}: {
   home.packages = with pkgs; [hyprlock];
 
   xdg.configFile."hypr/hyprlock.conf".text = ''
@@ -30,7 +27,7 @@
       monitor =
       text = cmd[update:1000] echo "$(date +"%H:%M:%S")"
       font_size = 16
-      font_family = CozetteHiDpi 
+      font_family = CozetteHiDpi
       shadow_passes = 3
       shadow_size = 4
 
@@ -44,7 +41,7 @@
       text = cmd[update:18000000] echo ""$(date +'%A, %-d %B %Y')""
       font_size = 16
       font_family = CozetteHiDpi
-  
+
       position = 0, -16
       halign = center
       valign = center

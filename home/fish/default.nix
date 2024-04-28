@@ -1,8 +1,4 @@
 {
-  config,
-  pkgs,
-  ...
-}: {
   programs.fish = {
     enable = true;
     interactiveShellInit = ''
@@ -19,4 +15,5 @@
 
     '';
   };
+  environment.pathsToLink = ["/share/fish"];
 }
