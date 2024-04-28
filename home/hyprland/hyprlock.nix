@@ -21,7 +21,7 @@
       monitor = HDMI-A-1
       text = $TIME
       position = 100, 100
-      font_size = 26
+      font_size = 40
       font_family = CozetteHiDpi
     }
   '';
