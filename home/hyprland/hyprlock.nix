@@ -1,6 +1,5 @@
 {
   pkgs,
-  config,
   ...
 }: {
   home.packages = with pkgs; [hyprlock];
@@ -13,17 +12,17 @@
       noise = 0.01
     }
     input-field {
-      monitor = HDMI-A-2
+      monitor = HDMI-A-1
       outline_thickness = 1
       dots_size = 0.2
       valign = bottom
     }
     label{
-      monitor = HDMI-A-2
+      monitor = HDMI-A-1
       text = $TIME
       position = 100, 100
-      font_size = 40
-      font_family = PlemolJP35 Console HS
+      font_size = 26
+      font_family = CozetteHiDpi
     }
   '';
 }
