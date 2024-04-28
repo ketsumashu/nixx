@@ -15,7 +15,7 @@
       monitor = HDMI-A-1
       outline_thickness = 1
       dots_size = 0.2
-      position = 300, 100
+      position = 0, 100
       valign = bottom
     }
     label{
