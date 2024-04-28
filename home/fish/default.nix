@@ -15,5 +15,4 @@
 
     '';
   };
-  environment.pathsToLink = ["/share/fish"];
 }
