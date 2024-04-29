@@ -1,7 +1,7 @@
 {pkgs, ...}: {
   programs.firefox = {
     enable = true;
-    package = pkgs.firefox-devedition-unwrapped;
+    package = pkgs.firefox-devedition;
     nativeMessagingHosts = with pkgs; [
       tridactyl-native
     ];
