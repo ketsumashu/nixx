@@ -16,7 +16,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
-    hyprland.url = "github:hyprwm/Hyprland";
   };
   outputs = inputs @ {
     nixpkgs,
@@ -24,7 +23,6 @@
     nixvim,
     nixos-hardware,
     wayland-pipewire-idle-inhibit,
-    hyprland,
     ...
   }: {
     nixosConfigurations = {
@@ -46,7 +44,6 @@
                 inherit inputs;
                 inherit nixvim;
                 inherit wayland-pipewire-idle-inhibit;
-                inherit hyprland;
               };
             };
           }
