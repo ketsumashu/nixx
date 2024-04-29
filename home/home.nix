@@ -13,6 +13,7 @@
     ./ncspot
     ./idle-inhibitor
     ./localfont
+    ./spicetify
   ];
 
   home = {
