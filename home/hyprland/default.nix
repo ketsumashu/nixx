@@ -188,7 +188,7 @@
 
     bind =
       [
-        "$mod, B, exec, firefox"
+        "$mod, B, exec, firefox-devedition"
         "$mod, E, exec, vesktop"
         "$mod, S, exec, steam"
         "$mod, Return, exec, $terminal"
