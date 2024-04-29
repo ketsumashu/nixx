@@ -16,6 +16,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
+    spicetify-nix.url = "github:the-argus/spicetify-nix";
   };
   outputs = inputs @ {
     nixpkgs,
@@ -23,6 +24,7 @@
     nixvim,
     nixos-hardware,
     wayland-pipewire-idle-inhibit,
+    spicetify-nix,
     ...
   }: {
     nixosConfigurations = {
@@ -43,6 +45,7 @@
               extraSpecialArgs = {
                 inherit inputs;
                 inherit nixvim;
+                inherit spicetify-nix;
                 inherit wayland-pipewire-idle-inhibit;
               };
             };
