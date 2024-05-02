@@ -1,7 +1,11 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  waybar,
+  ...
+}: {
   programs.waybar = {
     enable = true;
-    package = pkgs.waybar;
+    package = waybar.packages."${pkgs.system}".waybar;
     systemd = {enable = false;};
     settings = {
       mainBar = {

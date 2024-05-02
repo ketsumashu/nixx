@@ -18,6 +18,7 @@
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
     spicetify-nix.url = "github:the-argus/spicetify-nix";
     hyprland.url = "github:hyprwm/Hyprland";
+    waybar.url = "github:alexays/waybar";
   };
   outputs = inputs @ {
     nixpkgs,
@@ -27,6 +28,7 @@
     wayland-pipewire-idle-inhibit,
     spicetify-nix,
     hyprland,
+    waybar,
     ...
   }: {
     nixosConfigurations = {
@@ -50,6 +52,7 @@
                 inherit spicetify-nix;
                 inherit wayland-pipewire-idle-inhibit;
                 inherit hyprland;
+                inherit waybar;
               };
             };
           }
