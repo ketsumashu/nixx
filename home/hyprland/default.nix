@@ -44,7 +44,7 @@
 
   wayland.windowManager.hyprland = {
     enable = true;
-    program = hyprland.packages."${pkgs.system}".hyprland;
+    package = hyprland.packages."${pkgs.system}".hyprland;
     xwayland.enable = true;
     systemd.enable = true;
   };
