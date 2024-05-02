@@ -14,7 +14,7 @@
         {name = "HyperX QuadCast S Analog Stereo";}
       ];
       node_blacklist = [
-        { app_name = "[Ss]potify"; }
+        {app_name = "[Ss]potify";}
       ];
     };
   };
