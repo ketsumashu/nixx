@@ -7,6 +7,7 @@
       noto-fonts
       noto-fonts-cjk-sans
       noto-fonts-cjk-serif
+      plemoljp-hs
     ];
     fontDir.enable = true;
     fontconfig.enable = true;
