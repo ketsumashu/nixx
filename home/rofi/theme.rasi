@@ -1,13 +1,13 @@
 * {
-    bg-col:  #1b1c2899;
+    bg-col:  #1b1c28;
     bg-col-light: #1b1c28;
     border-col: #5de4c7;
 
-    selected-col: #1b1c28aa;
+    selected-col: #1b1c28;
     blue: #5de4c7;
     fg-col: #b5b4c9;
     fg-col2: #5de4c7;
-    grey: #5b5f71aa;
+    grey: #5b5f71;
 
     width: 700;
     font: "FiraCode Nerd Font 10";
