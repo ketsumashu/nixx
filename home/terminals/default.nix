@@ -103,8 +103,8 @@
       color10 #5de4c7
 
       # Yellow
-      color3  #fffac2
-      color11 #fffac2
+      color3  #fcc5e9
+      color11 #fcc5e9
 
       # Blue
       color4  #5de4c7
@@ -115,8 +115,8 @@
       color13 #fcc5e9
 
       # Cyan
-      color6  #add7ef
-      color14 #add7ef
+      color6  #5de4c7
+      color14 #5de4c7
       # White
       color7  #ffffff
       color15 #ffffff
