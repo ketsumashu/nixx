@@ -10,5 +10,6 @@
     ./fonts.nix
     ./systemd
     ./tuigreet.nix
+    ./gnome.nix
   ];
 }
