@@ -22,7 +22,7 @@
       disable_background = true;
       disable_float_background = false;
       disable_italics = true;
-      dark_variant = true;
+      dark_variant = "main";
     };
   };
 }
