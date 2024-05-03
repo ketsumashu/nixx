@@ -96,7 +96,7 @@
 
       * {
           font-family: "FiraCode Nerd Font";
-          font-weight: Medium;
+          font-weight: 500;
           font-size: 11px;
           min-height: 0;
       }
