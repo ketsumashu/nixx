@@ -82,10 +82,10 @@
 
     };
     extraConfig = ''
-      modify_font cell_height 120%
+      modify_font cell_height 100%
       click_interval 0.5
       cursor_blink_interval 0
-      modify_font cell_width 87%
+      modify_font cell_width 100%
       background #1b1c28
       foreground #a6accd
       cursor     #e0def4
