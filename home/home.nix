@@ -14,7 +14,6 @@
     ./idle-inhibitor
     ./localfont
     ./spicetify
-    ./gnome
   ];
 
   home = {
