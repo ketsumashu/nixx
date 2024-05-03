@@ -9,8 +9,8 @@
     fg-col2: #5de4c7;
     grey: #5b5f71;
 
-    width: 700;
-    font: "FiraCode Nerd Font Medium 10";
+    width: 800;
+    font: "FiraCode Nerd Font Bold 12";
 }
 
 element-text, element-icon , mode-switcher {
@@ -19,8 +19,8 @@ element-text, element-icon , mode-switcher {
 }
 
 window {
-    height: 320px;
-    border: 2px;
+    height: 4000px;
+    border: 3px;
     border-radius: 6px;
     border-color: @border-col;
     background-color: @bg-col;
