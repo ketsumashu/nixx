@@ -96,12 +96,13 @@
 
       * {
           font-family: "FiraCode Nerd Font";
+          font-weight: Medium;
           font-size: 11px;
           min-height: 0;
       }
 
       window#waybar {
-          background-color: rgba(27,30,40,0.88);
+          background-color: rgba(27,30,40,1);
           border-top-right-radius:12px;
           border-bottom-right-radius:12px;
       }
