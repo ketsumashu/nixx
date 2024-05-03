@@ -95,8 +95,8 @@
     style = ''
 
       * {
-          font-family: "CozetteHiDpi","mplus12";
-          font-size: 13px;
+          font-family: "FiraCode Nerd Font";
+          font-size: 11px;
           min-height: 0;
       }
 
