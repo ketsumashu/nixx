@@ -11,10 +11,10 @@
         font-bold = "FiraCode Nerd Font:size=11,mplus12:size=9";
         font-italic = "FiraCode Nerd Font:size=11,mplus12:size=9";
         font-bold-italic = "FiraCode Nerd Font:size=11,mplus12:size=9";
-        line-height = 13.2;
-        letter-spacing = 1.14;
+        line-height = 14;
+        letter-spacing = 1.04;
         vertical-letter-offset = 1.0;
-        dpi-aware = false;
+        dpi-aware = true;
         pad = "10x6 center";
       };
       environment = {
