@@ -51,7 +51,7 @@
 
   wayland.windowManager.hyprland.settings = {
     "$mod" = "Super_L";
-    "$terminal" = "foot";
+    "$terminal" = "kitty";
 
     monitor = [
       "HDMI-A-1,2560x1440@144,0x0,1"
@@ -75,7 +75,7 @@
       gaps_out = 9;
       border_size = 2;
       "col.active_border" = "rgb(5de4c7)";
-      "col.inactive_border" = "rgb(525566)";
+      "col.inactive_border" = "rgb(1b1c28)";
       layout = "dwindle";
     };
 
