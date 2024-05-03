@@ -92,11 +92,11 @@
 
       # Black
       color0 #1b1c28
-      color8 #a6accd
+      color8 #1b1c28
 
       # Red
-      color1 #d0679d
-      color9 #d0679d
+      color1 #fcc5e9
+      color9 #fcc5e9
 
       # Green
       color2  #5de4c7
