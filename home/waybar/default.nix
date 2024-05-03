@@ -146,7 +146,7 @@
       #cpu,
       #temperature{
           padding: 0 0px;
-          color:#fcc5e9;
+          color:#add7ff;
           /*font-weight:bold;*/
       }
 
@@ -168,7 +168,7 @@
 
       #network,
       #clock {
-          color: #89ddff;
+          color: #5de4c7;
           font-size: 13px;
           margin-bottom: 2px;
       }
