@@ -10,7 +10,7 @@
     grey: #5b5f71aa;
 
     width: 700;
-    font: "Cozette,mplus12 9";
+    font: "FiraCode 12";
 }
 
 element-text, element-icon , mode-switcher {
