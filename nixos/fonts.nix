@@ -18,7 +18,7 @@
           "Blobmoji"
         ];
         sansSerif = [
-          "FiraCode Nerd Font"
+          "PlemolJP35 Console HS"
           "Blobmoji"
         ];
         monospace = [
