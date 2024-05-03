@@ -7,12 +7,12 @@
         login-shell = "yes";
         app-id = "foot";
         title = "foot";
-        font = "FiraCode Nerd Font:size=11,mplus12:size=9";
-        font-bold = "FiraCode Nerd Font:size=11,mplus12:size=9";
-        font-italic = "FiraCode Nerd Font:size=11,mplus12:size=9";
-        font-bold-italic = "FiraCode Nerd Font:size=11,mplus12:size=9";
-        line-height = 14;
-        letter-spacing = 1.04;
+        font = "FiraCode Nerd Font:size=10";
+        font-bold = "FiraCode Nerd Font:size=10";
+        font-italic = "FiraCode Nerd Font:size=10";
+        font-bold-italic = "FiraCode Nerd Font:size=10";
+        line-height = 16;
+        letter-spacing = 1.0;
         vertical-letter-offset = 1.0;
         dpi-aware = true;
         pad = "10x6 center";

@@ -10,7 +10,7 @@
     grey: #5b5f71aa;
 
     width: 700;
-    font: "FiraCode Nerd Font 12";
+    font: "FiraCode Nerd Font 10";
 }
 
 element-text, element-icon , mode-switcher {
