@@ -66,7 +66,7 @@
         "memory" = {
           format = " {used:0.1f}G\n ---- \n{total:0.1f}G";
           interval = 1;
-          on-click = "wezterm start btop";
+          on-click = "kitty -e btop";
           rotate = 0;
         };
 
@@ -97,7 +97,7 @@
       * {
           font-family: "FiraCode Nerd Font";
           font-weight: Bold;
-          font-size: 12px;
+          font-size: 13px;
           min-height: 0;
       }
 
@@ -147,7 +147,7 @@
       #cpu,
       #temperature{
           padding: 0 0px;
-          color:#add7ff;
+          color:#5de4c7;
           /*font-weight:bold;*/
       }
 
@@ -169,7 +169,7 @@
 
       #network,
       #clock {
-          color: #5de4c7;
+          color: #fcc5e9;
           font-size: 13px;
           margin-bottom: 2px;
       }
