@@ -52,4 +52,9 @@
       };
     };
   };
+
+  programs.wezterm = {
+    enable = true;
+    colorschemes = "poimandres";
+  };
 }
