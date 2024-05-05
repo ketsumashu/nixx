@@ -253,6 +253,9 @@
       package = pkgs.flat-remix-icon-theme;
       name = "Flat-Remix-Grey-Darkest";
     };
+    font = {
+      name = "PlemolJP35 Console HS Medium 11";
+    };
   };
 
   home.pointerCursor = {

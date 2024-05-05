@@ -26,7 +26,6 @@
       visual_bell_duration = 0;
       enable_audio_bell = "no";
       bell_on_tab = "yes";
-
     };
     extraConfig = ''
       modify_font cell_height 100%
