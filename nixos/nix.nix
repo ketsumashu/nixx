@@ -8,12 +8,13 @@
       substituters = ["https://hyprland.cachix.org"];
       trusted-public-keys = ["hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="];
     };
-    gc = {
-      automatic = true;
-      persistent = true;
-      dates = "daily";
-      options = "-d";
-    };
+  };
+
+  programs.nh = {
+    enable = true;
+    clean.enable = true;
+    clean.extraArgs = "--keep since 1d --keep 2";
+    flake = "/home/mashu/nixx/";
   };
 
   system.stateVersion = "24.05";
