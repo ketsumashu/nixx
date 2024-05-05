@@ -13,7 +13,7 @@
   programs.nh = {
     enable = true;
     clean.enable = true;
-    clean.extraArgs = "--keep since 1d --keep 2";
+    clean.extraArgs = "all";
     flake = "/home/mashu/nixx/";
   };
 
