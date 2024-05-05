@@ -29,6 +29,18 @@
           "Blobmoji"
         ];
       };
+      localConf = ''
+        <?xml version="1.0"?>
+        <!DOCTYPE fontconfig SYSTEM "fonts.dtd">
+        <fontconfig>
+          <!-- Use heavier weights -->
+          <match target="pattern">
+            <test name="family"><string>PlemolJP35 Console HS</string></test>
+            <test name="weight" compare="eq"><const>Regular</const></test>
+            <edit name="weight" mode="assign" binding="strong"><const>Medium</const></edit>
+          </match>
+        </fontconfig>
+      '';   
     };
   };
 }
