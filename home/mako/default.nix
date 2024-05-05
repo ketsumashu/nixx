@@ -16,7 +16,7 @@
     borderSize = 2;
     borderRadius = 6;
     defaultTimeout = 5000;
-    font = "FiraCode Nerd Font,Noto Sans CJK JP Medium 11px";
+    font = "FiraCode Nerd Font,Noto Sans CJK JP Medium 14px";
 
     extraConfig = ''
       format=<b>%s</b>\n\n%b
