@@ -159,13 +159,6 @@
       "float,class:^(steam)$,title:^(Steam Guard - Computer Authorization Required)$"
     ];
 
-    layerrule = [
-      "blur,rofi"
-      "blur,neovim"
-      "blur,waybar"
-      "blur,mako"
-    ];
-
     exec-once = [
       "systemctl --user enable xdg-desktop-portal-hyprland"
       "systemctl --user enable xdg-desktop-portal-gtk"
