@@ -4,7 +4,7 @@
   hyprland,
   ...
 }: {
-  imports = [./hypridle.nix ./hyprlock.nix];
+  imports = [./hypridle.nix ./hyprlock.nix ./xdph.nix];
 
   home.packages = with pkgs; [
     wl-clipboard
