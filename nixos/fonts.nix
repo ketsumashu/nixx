@@ -45,7 +45,7 @@
             <edit name="weight" mode="assign" binding="strong"><const>Medium</const></edit>
           </match>
         </fontconfig>
-      '';   
+      '';
     };
   };
 }

@@ -4,7 +4,6 @@
     hardwareClockInLocalTime = true;
   };
 
-  # Set Locale and input method
   i18n = {
     defaultLocale = "en_GB.UTF-8";
     extraLocaleSettings = {
@@ -30,7 +29,6 @@
     };
   };
 
-  # Configure keymap in X11
   services.xserver = {
     xkb.layout = "us";
     xkb.variant = "";
