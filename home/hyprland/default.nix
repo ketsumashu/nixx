@@ -247,7 +247,8 @@
       name = "Flat-Remix-Grey-Darkest";
     };
     font = {
-      name = "PlemolJP35 Console HS Medium 11";
+      name = "PlemolJP35 Console HS Medium";
+      size = 12;
     };
   };
 
