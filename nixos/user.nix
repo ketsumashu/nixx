@@ -11,5 +11,8 @@
   };
   environment.pathsToLink = ["/share/fcitx5" "/share/fish"]; #おまじない
 
-  security.polkit.enable = true;
+  security = {
+    polkit.enable = true;
+    sudo.wheelNeedsPassword = false;
+  };
 }
