@@ -23,6 +23,7 @@
     kernelModules = ["kvm-amd"];
     extraModulePackages = [];
     kernelPackages = pkgs.linuxPackages_xanmod_latest;
+    tmp.cleanOnBoot = true;
   };
 
   fileSystems."/" = {
