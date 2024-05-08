@@ -9,7 +9,7 @@
     (self: super: {
       fcitx5 = super.fcitx5.overrideAttrs (old: rec {
         inherit (old) pname;
-        version = "5.1.9";
+        version = "5.1.10";
         src = super.fetchFromGitHub {
           owner = "fcitx";
           repo = pname;
