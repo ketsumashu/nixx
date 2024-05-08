@@ -20,21 +20,17 @@
     })
   ];
 
-  programs.nixvim.extraConfigLua = ''
-    vim.api.nvim_exec([[
-              call skkeleton#config({
-                  \  'eggLikeNewline': v:true,
-                  \  'useSkkServer': v:false,
-                  \  'markerHenkan': ">",
-                  \  'markerHenkanSelect': ">>",
-                  \  'globalJisyo': "/home/mashu/nixx/home/libskk/SKK-JISYO.L",
-                  \  'showCandidatesCount': 2,
-                  \  'registerConvertResult': v:true,
-                  \  'keepState': v:true
-                  \})
-          ]], false)
-          vim.api.nvim_exec([[
-              call skkeleton#register_keymap('input', ';', 'henkanPoint')
-          ]], false)
+  programs.nixvim.extraConfigVim = ''
+    call skkeleton#config({
+      \  'eggLikeNewline': v:true,
+      \  'useSkkServer': v:false,
+      \  'markerHenkan': ">",
+      \  'markerHenkanSelect': ">>",
+      \  'globalJisyo': "/home/mashu/nixx/home/libskk/SKK-JISYO.L",
+      \  'showCandidatesCount': 2,
+      \  'registerConvertResult': v:true,
+      \  'keepState': v:true
+      \})
+    call skkeleton#register_keymap('input', ';', 'henkanPoint')
   '';
 }
