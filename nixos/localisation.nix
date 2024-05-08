@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+ {
   time = {
     timeZone = "Asia/Tokyo";
     hardwareClockInLocalTime = true;
@@ -17,16 +17,6 @@
       LC_TELEPHONE = "ja_JP.UTF-8";
       LC_TIME = "en_US.UTF-8";
     };
-    #    inputMethod = {
-    #      enabled = "fcitx5";
-    #      fcitx5.addons = with pkgs; [
-    #        fcitx5-gtk
-    #        fcitx5-skk
-    #        fcitx5-rose-pine
-    #        libsForQt5.fcitx5-qt
-    #        libsForQt5.fcitx5-configtool
-    #      ];
-    #    };
   };
 
   services.xserver = {

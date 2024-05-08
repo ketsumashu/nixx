@@ -9,7 +9,7 @@
     EDITOR = "nvim";
     FLAKE = "/home/mashu/nixx/";
   };
-  environment.pathsToLink = ["/share/fcitx5" "/share/fish"]; #おまじない
+  environment.pathsToLink = ["/share/fish"]; #おまじない
 
   security = {
     polkit.enable = true;
