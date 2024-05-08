@@ -23,10 +23,9 @@
   programs.nixvim.extraConfigVim = ''
     call skkeleton#config({
       \  'eggLikeNewline': v:true,
-      \  'useSkkServer': v:false,
       \  'markerHenkan': ">",
       \  'markerHenkanSelect': ">>",
-      \  'globalJisyo': "/home/mashu/nixx/home/libskk/SKK-JISYO.L",
+      \  'globalDictionaries': "/home/mashu/nixx/home/libskk/SKK-JISYO.L",
       \  'showCandidatesCount': 2,
       \  'registerConvertResult': v:true,
       \  'keepState': v:true
