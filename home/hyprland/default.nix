@@ -169,7 +169,6 @@
       "arrpc"
       "hyprctl dispatch exec \"\[workspace 2 silent\]\" steam"
       "hyprctl dispatch exec \"\[workspace 5 silent\]\" vesktop"
-      "fcitx5 -rd"
       "swww-daemon"
       "openrgb --startminimized -p ~/.config/OpenRGB/pro.orp"
       "wl-paste --type text --watch cliphist store"
