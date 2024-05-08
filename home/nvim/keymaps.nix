@@ -14,7 +14,7 @@
     {
       mode = "i";
       key = "<C-j>";
-      action = "<Plug>(skkeleton-enable)";
+      action = "<Plug>(skkeleton-toggle)";
     }
 
     #normal mode key map
