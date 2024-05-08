@@ -1,5 +1,5 @@
 {
-  programs.nixvim.lualine = {
+  programs.nixvim.plugins.lualine = {
     enable = true;
     alwaysDivideMiddle = true;
     globalstatus = true;
