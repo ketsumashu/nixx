@@ -11,6 +11,11 @@
       key = "jk";
       action = "<esc>";
     }
+    {
+      mode = "i";
+      key = "<C-j>";
+      action = "<Plug>(skkeleton-toggle)";
+    }
 
     #normal mode key map
     {
