@@ -10,6 +10,7 @@
     ./telescope.nix
     ./statusline.nix
     ./auto-pair.nix
+    ./skkeleton.nix
   ];
 
   programs.nixvim = {
