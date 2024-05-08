@@ -6,7 +6,7 @@
         owner = "vim-skk";
         repo = "skkeleton";
         rev = "87ad1d1f594e592ecad0429d651be45ce5fb03da";
-        hash = "sha256-KLB2nrXC3JwEOhNfLvcl3dWGi0j7ow/oIlId4EVe3yM=";
+        hash = "";
       };
     })
     (pkgs.vimUtils.buildVimPlugin {
