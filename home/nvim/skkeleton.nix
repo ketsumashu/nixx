@@ -25,7 +25,7 @@
       \  'eggLikeNewline': v:true,
       \  'markerHenkan': ">",
       \  'markerHenkanSelect': ">>",
-      \  'globalDictionaries': "/home/mashu/nixx/home/libskk/SKK-JISYO.L",
+      \  'globalDictionaries': ["/home/mashu/nixx/home/libskk/SKK-JISYO.L"],
       \  'showCandidatesCount': 2,
       \  'registerConvertResult': v:true,
       \  'keepState': v:true
