@@ -15,7 +15,7 @@
         owner = "vim-denops";
         repo = "denops.vim";
         rev = "2a393849db9531d14106dcd437f9b7deb5012057";
-        hash = "";
+        hash = "sha256-KLB2nrXC3JwEOhNfLvcl3dWGi0j7ow/oIlId4EVe3yM=";
       };
     })
   ];
