@@ -11,7 +11,6 @@
       abbr -a df "duf --theme ansi"
       fish_vi_key_bindings
       bind -M insert -m default jj backward-char force-repaint
-
     '';
   };
 }
