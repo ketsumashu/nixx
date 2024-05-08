@@ -41,6 +41,5 @@
       \  'keepState': v:true
       \})
     call skkeleton#register_keymap('input', ';', 'henkanPoint')
-    call firenvim#install(0)
   '';
 }
