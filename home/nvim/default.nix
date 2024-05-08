@@ -8,7 +8,7 @@
     ./cmp.nix
     ./leap.nix
     ./telescope.nix
-    ./statusline.nix
+    ./lualine.nix
     ./auto-pair.nix
     ./skkeleton.nix
   ];
