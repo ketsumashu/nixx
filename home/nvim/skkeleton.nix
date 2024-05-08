@@ -18,6 +18,15 @@
         hash = "sha256-KLB2nrXC3JwEOhNfLvcl3dWGi0j7ow/oIlId4EVe3yM=";
       };
     })
+    (pkgs.vimUtils.buildVimPlugin {
+      name = "firenvim";
+      src = pkgs.fetchFromGitHub {
+        owner = "glacambre";
+        repo = "firenvim";
+        rev = "03ba12a5a92a02d171005775a8150998c4060a74";
+        hash = "";
+      };
+    })
   ];
 
   programs.nixvim.extraConfigVim = ''
@@ -26,10 +35,12 @@
       \  'markerHenkan': ">",
       \  'markerHenkanSelect': ">>",
       \  'globalDictionaries': ["/home/mashu/nixx/home/libskk/SKK-JISYO.L"],
+      \  'sources': [ "skk_dictionary", "google_japanese_input" ],
       \  'showCandidatesCount': 2,
       \  'registerConvertResult': v:true,
       \  'keepState': v:true
       \})
     call skkeleton#register_keymap('input', ';', 'henkanPoint')
+    call firenvim#install(0)
   '';
 }
