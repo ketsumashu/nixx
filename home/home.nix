@@ -13,6 +13,7 @@
     ./idle-inhibitor
     ./localfont
     ./spicetify
+    ./scripts
   ];
 
   home = {
