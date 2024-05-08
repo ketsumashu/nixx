@@ -5,9 +5,7 @@
       set fish_greeting
       starship init fish | source
       abbr -a sw "nh os switch --ask"
-      abbr -a ga "git add ."
-      abbr -a go "git commit --allow-empty-message -m \" \" "
-      abbr -a gu "git push"
+      abbr -a gg "cd ~/nixx && git add . && git commit --allow-empty-message -m \" \"  && git push"
       abbr -a nc "nh clean all"
       abbr -a ll "eza -al"
       abbr -a df "duf --theme ansi"
