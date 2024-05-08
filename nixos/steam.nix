@@ -9,17 +9,6 @@
       proton-ge-bin
     ];
   };
-  # Fix gamescope not work in steam
-  nixpkgs.config.packageOverrides = pkgs: {
-    steam = pkgs.steam.override {
-      extraPkgs = pkgs:
-        with pkgs; [
-          libkrb5
-          keyutils
-          migu
-        ];
-    };
-  };
 
   # Screensharing
   xdg.portal = {
