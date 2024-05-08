@@ -14,7 +14,7 @@
           owner = "fcitx";
           repo = pname;
           rev = "45c024abc26dcfe07fc688a6b022e484b8275117";
-          sha256 = "";
+          sha256 = "sha256-/fFlXLQR6MP14yrXaIQ7ND2CdQxCcKB0xROx7YcpNlQ=";
         };
       });
     })
