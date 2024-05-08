@@ -24,7 +24,7 @@
         owner = "glacambre";
         repo = "firenvim";
         rev = "03ba12a5a92a02d171005775a8150998c4060a74";
-        hash = "";
+        hash = "sha256-fBV+lIquhuNDKu3JIZG39vhxTMyTdL+2+zmINQhJRDk=";
       };
     })
   ];
