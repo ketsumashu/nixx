@@ -144,7 +144,7 @@
       "float,class:^(blueman-manager)$"
       "float,title:(Save File)$"
       "float,class:^(pavu)"
-      "float,class:^(Floaterm)"
+      "float,size 400 400,class:^(Floaterm)"
       "float,title:^(ncspot)"
       "float,title:(Open Files)$"
       "workspace 2 silent,fullscreen:1,class:^(steam)$"
