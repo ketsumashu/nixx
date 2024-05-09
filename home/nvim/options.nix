@@ -14,6 +14,7 @@
     ignorecase = true;
     swapfile = false;
     undofile = true;
+    guifont = "FiraCode Nerd Font";
     termguicolors = true;
   };
 }
