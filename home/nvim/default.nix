@@ -11,6 +11,7 @@
     ./statusline.nix
     ./auto-pair.nix
     ./skkeleton.nix
+    ./blankline.nix
   ];
 
   programs.nixvim = {
