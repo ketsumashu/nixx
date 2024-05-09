@@ -45,6 +45,7 @@
   programs.nixvim.extraConfigLua = ''
     if vim.g.started_by_firenvim == true then
       vim.o.number = false
+      vim.o.laststatus = 0
     else
       vim.o.number = true
     end
