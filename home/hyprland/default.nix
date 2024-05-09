@@ -169,7 +169,7 @@
       "hypridle"
       "waybar"
       "arrpc"
-      "hyprctl dispatch exec \"\[workspace 2 silent;fullscreen:1\]\" steam -gamepadui"
+      "hyprctl dispatch exec \"\[workspace 2 silent;maximize\]\" steam -gamepadui"
       "hyprctl dispatch exec \"\[workspace 5 silent\]\" vesktop"
       "swww-daemon"
       "openrgb --startminimized -p ~/.config/OpenRGB/pro.orp"
