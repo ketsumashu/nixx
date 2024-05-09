@@ -169,7 +169,7 @@
       "hypridle"
       "waybar"
       "arrpc"
-      "hyprctl dispatch exec \"\[workspace 2 silent;maximize\]\" steam -gamepadui"
+      "hyprctl dispatch exec \"\[workspace 2 silent\;maximize\]\" steam"
       "hyprctl dispatch exec \"\[workspace 5 silent\]\" vesktop"
       "swww-daemon"
       "openrgb --startminimized -p ~/.config/OpenRGB/pro.orp"
@@ -206,7 +206,7 @@
         "$mod SHIFT, Tab, workspace, e-1"
         "$mod, V, togglefloating"
         "$mod, F, Fullscreen"
-        "$mod CTRL, T, exec, grim -o HDMI-A-2 ~/screenshot/$(date +\"%Y_%m_%d\".png)"
+        "$mod CTRL, T, exec, grim -o HDMI-A-1 ~/screenshot/$(date +\"%Y_%m_%d\".png)"
       ]
       ++ (
         # workspaces
