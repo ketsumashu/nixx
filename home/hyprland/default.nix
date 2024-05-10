@@ -247,7 +247,7 @@
 
     iconTheme = {
       package = pkgs.tela-circle-icon-theme;
-      name = "Tela circle dark";
+      name = "Tela-circle-dark";
     };
     font = {
       name = "FiraCode Nerd Font";
