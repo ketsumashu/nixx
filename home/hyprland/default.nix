@@ -11,8 +11,8 @@
     cliphist
     slurp
     grim
-    xfce.thunar
     libnotify
+    cinnamon.nemo
     dconf
     meson
     swww
