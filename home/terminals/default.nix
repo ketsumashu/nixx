@@ -16,6 +16,7 @@
       mouse_hide_wait = 0;
       focus_follows_mouse = "yes";
       shell = "fish";
+      remember_window_size = "yes";
 
       # Performance
       repaint_delay = 20;
