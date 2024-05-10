@@ -247,7 +247,7 @@
 
     iconTheme = {
       package = pkgs.tela-circle-icon-theme;
-      name = "Tela";
+      name = "Tela Circle Nord";
     };
     font = {
       name = "PlemolJP35 Console HS Medium";
