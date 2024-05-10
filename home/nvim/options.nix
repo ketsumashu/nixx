@@ -8,7 +8,7 @@
     tabstop = 2;
     softtabstop = 2;
     laststatus = 3;
-    cmdheight = 1;
+    cmdheight = 0;
     smartindent = true;
     shiftwidth = 2;
     ignorecase = true;
