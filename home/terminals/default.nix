@@ -23,7 +23,7 @@
       # Performance
       repaint_delay = 20;
       input_delay = 2;
-      sync_to_monitor = "no";
+      sync_to_monitor = "yes";
 
       # Bell
       visual_bell_duration = 0;

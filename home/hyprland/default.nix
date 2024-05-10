@@ -250,8 +250,8 @@
       name = "Tela Circle Nord";
     };
     font = {
-      name = "PlemolJP35 Console HS Medium";
-      size = 12;
+      name = "FiraCode Nerd Font";
+      size = 11;
     };
   };
   dconf.settings = {
