@@ -163,7 +163,6 @@
 
     exec-once = [
       "systemctl --user enable xdg-desktop-portal-hyprland"
-      "systemctl --user enable xdg-desktop-portal-gtk"
       "systemctl --user enable wayland-pipewire-idle-inhibit"
       "mako"
       "hypridle"
@@ -229,7 +228,7 @@
   qt = {
     enable = true;
     platformTheme.name = "gtk";
-    style.name = "qt6gtk2";
+    style.name = "gtk2";
   };
 
   gtk = {
