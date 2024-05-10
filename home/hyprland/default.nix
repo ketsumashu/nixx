@@ -11,6 +11,7 @@
     cliphist
     slurp
     grim
+    xfce.thunar
     libnotify
     dconf
     meson
