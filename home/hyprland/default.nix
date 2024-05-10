@@ -246,12 +246,21 @@
     };
 
     iconTheme = {
-      package = pkgs.flat-remix-icon-theme;
-      name = "Flat-Remix-Grey-Darkest";
+      package = pkgs.tela-circle-icon-theme;
+      name = "Tela";
     };
     font = {
       name = "PlemolJP35 Console HS Medium";
       size = 12;
+    };
+  };
+  dconf.settings = {
+    "org/gtk/settings/file-chooser" = {
+      sort-directories-first = true;
+    };
+    "org/gnome/desktop/interface" = {
+      gtk-theme = "Catppuccin-Frappe-Compact-Teal-Dark";
+      color-scheme = "prefer-dark";
     };
   };
 
