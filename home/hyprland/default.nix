@@ -12,8 +12,8 @@
     slurp
     grim
     libnotify
-    cinnamon.nemo
     dconf
+    pcmanfm
     meson
     swww
     pavucontrol
