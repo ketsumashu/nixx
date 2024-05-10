@@ -17,8 +17,8 @@
       focus_follows_mouse = "yes";
       shell = "fish";
       remember_window_size = "no";
-      initial_window_width = "300";
-      initial_window_height = "200";
+      initial_window_width = "800";
+      initial_window_height = "300";
 
       # Performance
       repaint_delay = 20;
