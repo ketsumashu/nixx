@@ -44,28 +44,29 @@
       color8 #a6accd
 
       # Red
-      color1 #fcc5e9
-      color9 #fcc5e9
+      color1 #d0679d
+      color9 #d0679d
 
       # Green
       color2  #5de4c7
       color10 #5de4c7
 
       # Yellow
-      color3  #fcc5e9
-      color11 #fcc5e9
+      color3  #d0679d
+      color11 #d0679d
 
       # Blue
       color4  #5de4c7
       color12 #5de4c7
 
       # Magenta
-      color5  #fcc5e9
-      color13 #fcc5e9
+      color5  #d0679d
+      color13 #d0679d
 
       # Cyan
       color6  #add7ff
       color14 #add7ff
+
       # White
       color7  #ffffff
       color15 #ffffff
