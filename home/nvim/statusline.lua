@@ -3,15 +3,15 @@
     local colors = {
       bg       = '#1b1c28',
       fg       = '#a6accd',
-      yellow   = '#fcc5e9',
+      yellow   = '#d0679d',
       cyan     = '#add7ff',
       darkblue = '#5de4c7',
       green    = '#5de4c7',
-      orange   = '#fcc5e9',
-      violet   = '#fcc5e9',
-      magenta  = '#fcc5e9',
+      orange   = '#d0679d',
+      violet   = '#5de4c7',
+      magenta  = '#d0679d',
       blue     = '#5de4c7',
-      red      = '#fcc5e9',
+      red      = '#d0679d',
     }
 
     local conditions = {
