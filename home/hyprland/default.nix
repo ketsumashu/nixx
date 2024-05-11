@@ -170,7 +170,7 @@
       "hypridle"
       "waybar"
       "arrpc"
-      "hyprctl dispatch exec \"\[workspace 2 silent\;maximize\]\" steam"
+      "hyprctl dispatch exec \"\[workspace 2 silent\;maximize\]\" steam -gamepadui"
       "hyprctl dispatch exec \"\[workspace 5 silent\]\" vesktop"
       "swww-daemon"
       "openrgb --startminimized -p ~/.config/OpenRGB/pro.orp"
@@ -257,10 +257,6 @@
   dconf.settings = {
     "org/gtk/settings/file-chooser" = {
       sort-directories-first = true;
-    };
-    "org/gnome/desktop/interface" = {
-      gtk-theme = "Catppuccin-Frappe-Compact-Teal-Dark";
-      color-scheme = "prefer-dark";
     };
   };
 
