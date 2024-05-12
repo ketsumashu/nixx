@@ -170,8 +170,8 @@
       "hypridle"
       "waybar"
       "arrpc"
-      "hyprctl dispatch exec \"\[workspace 2 silent\;maximize\]\" steam -gamepadui"
-      "hyprctl dispatch exec \"\[workspace 5 silent\]\" vesktop"
+      "hyprctl dispatch exec \"\[workspace 2 silent\;maximize\]\" \"steam -gamepadui\""
+      "hyprctl dispatch exec \"\[workspace 5 silent\]\" vesktop --enable-features=UseOzonePlatform --ozone-platform-hint=auto"
       "swww-daemon"
       "openrgb --startminimized -p ~/.config/OpenRGB/pro.orp"
       "wl-paste --type text --watch cliphist store"
@@ -186,7 +186,7 @@
     bind =
       [
         "$mod, B, exec, firefox-devedition"
-        "$mod, E, exec, vesktop"
+        "$mod, E, exec, vesktop --enable-features=UseOzonePlatform --ozone-platform-hint=auto"
         "$mod, S, exec, steam -gamepadui"
         "$mod, I, exec, scr"
         "$mod, Return, exec, $terminal"
