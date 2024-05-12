@@ -172,6 +172,7 @@
           color: #fcc5e9;
           font-size: 13px;
           margin-bottom: 2px;
+          padding-bottom: 4px;
       }
 
       @keyframes blink {
