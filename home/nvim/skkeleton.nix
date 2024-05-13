@@ -18,15 +18,6 @@
         hash = "sha256-KLB2nrXC3JwEOhNfLvcl3dWGi0j7ow/oIlId4EVe3yM=";
       };
     })
-    (pkgs.vimUtils.buildVimPlugin {
-      name = "firenvim";
-      src = pkgs.fetchFromGitHub {
-        owner = "glacambre";
-        repo = "firenvim";
-        rev = "03ba12a5a92a02d171005775a8150998c4060a74";
-        hash = "sha256-fBV+lIquhuNDKu3JIZG39vhxTMyTdL+2+zmINQhJRDk=";
-      };
-    })
   ];
 
   programs.nixvim.extraConfigVim = ''
@@ -41,14 +32,5 @@
       \  'keepState': v:true
       \})
     call skkeleton#register_keymap('input', ';', 'henkanPoint')
-  '';
-  programs.nixvim.extraConfigLua = ''
-    if vim.g.started_by_firenvim == true then
-      vim.o.number = false
-      vim.o.laststatus = 0
-      vim.cmd "startinsert"
-    else
-      vim.o.number = true
-    end
   '';
 }
