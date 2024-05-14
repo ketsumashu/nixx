@@ -89,7 +89,7 @@
       disable_autoreload = false;
       allow_session_lock_restore = true;
       initial_workspace_tracking = 1;
-      vrr = 1;
+      vrr = 0;
     };
 
     binds = {
