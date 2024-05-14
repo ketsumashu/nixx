@@ -87,6 +87,9 @@
       disable_splash_rendering = true;
       force_default_wallpaper = 1;
       disable_autoreload = false;
+      allow_session_lock_restore = true;
+      initial_workspace_tracking = 1;
+      vrr = 1;
     };
 
     binds = {
