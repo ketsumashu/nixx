@@ -175,7 +175,7 @@
       "waybar"
       "arrpc"
       "blueman-applet"
-      "hyprctl dispatch exec \"\[workspace 2 silent\]\" \"steam\""
+      "hyprctl dispatch exec \"\[workspace 2 silent\]\" steam"
       "hyprctl dispatch exec \"\[workspace 5 silent\]\" \"vesktop --enable-features=UseOzonePlatform --ozone-platform-hint=auto\""
       "swww-daemon"
       "openrgb --startminimized -p ~/.config/OpenRGB/pro.orp"
