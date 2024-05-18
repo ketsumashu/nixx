@@ -19,7 +19,6 @@
     spicetify-nix.url = "github:the-argus/spicetify-nix";
     hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
     waybar.url = "github:alexays/waybar";
-    stylix.url = "github:danth/stylix";
   };
   outputs = inputs @ {
     nixpkgs,
@@ -30,7 +29,6 @@
     spicetify-nix,
     hyprland,
     waybar,
-    stylix,
     ...
   }: {
     nixosConfigurations = {
@@ -56,7 +54,6 @@
                 inherit wayland-pipewire-idle-inhibit;
                 inherit hyprland;
                 inherit waybar;
-                inherit stylix;
               };
             };
           }
