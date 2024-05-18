@@ -1,6 +1,7 @@
 {inputs, ...}:{
   imports = [  inputs.stylix.homeManagerModules.stylix ];
   stylix = {
+    image = ../../18a9a4a054e4d1f8.png;
     polarity = "dark";
     targets = {
       fish.enable = true;
