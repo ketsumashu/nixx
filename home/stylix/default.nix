@@ -12,6 +12,6 @@
       rofi.enable = true;
       mako.enable = true;
       kitty.enable = true;
-    }
+    };
   };
 }
