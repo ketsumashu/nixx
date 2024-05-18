@@ -1,5 +1,5 @@
-{pkgs, inputs, ...}:{
-  modules = [  inputs.stylix.homeManagerModules.stylix];
+{inputs, ...}:{
+  modules = [  inputs.stylix.homeManagerModules.stylix ];
   stylix = {
     polarity = "dark";
     autoenable = true;
