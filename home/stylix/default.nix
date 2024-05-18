@@ -2,7 +2,6 @@
   imports = [  inputs.stylix.homeManagerModules.stylix ];
   stylix = {
     polarity = "dark";
-    autoenable = true;
     targets = {
       fish.enable = true;
       gtk.enable = true;
