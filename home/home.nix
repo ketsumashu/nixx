@@ -14,7 +14,6 @@
     ./localfont
     ./spicetify
     ./scripts
-    ./stylix
   ];
 
   home = {
