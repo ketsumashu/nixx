@@ -88,7 +88,7 @@
       force_default_wallpaper = 1;
       disable_autoreload = false;
       allow_session_lock_restore = true;
-      initial_workspace_tracking = 1;
+      initial_workspace_tracking = 0;
       vrr = 0;
     };
 
