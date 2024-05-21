@@ -18,9 +18,7 @@
     swww
     pavucontrol
     lm_sensors
-    (vesktop.override {
-      withSystemVencord = false;
-    })
+    vesktop
     arrpc
     (btop.override {rocmSupport = true;})
     fd
