@@ -1,7 +1,7 @@
 {
   config,
   pkgs,
-  hyprland,
+  inputs,
   ...
 }: {
   imports = [./hypridle.nix ./hyprlock.nix ./xdph.nix];
@@ -45,7 +45,7 @@
 
   wayland.windowManager.hyprland = {
     enable = true;
-    package = hyprland.packages."${pkgs.system}".hyprland;
+    package = inputs.hyprland.packages."${pkgs.system}".hyprland;
     xwayland.enable = true;
     systemd.enable = true;
   };

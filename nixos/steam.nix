@@ -1,4 +1,6 @@
-{pkgs, ...}: {
+{pkgs,inputs, ...}: let
+ pkgs-unsta = inputs.hyprland.inputs.nixpkgs.legacyPackages.${pkgs.stdenv.hostPlatform.system};
+in{
   # Steam
   programs.steam = {
     enable = true;
@@ -13,11 +15,11 @@
   # Screensharing
   xdg.portal = {
     enable = true;
-    extraPortals = with pkgs; [
+    extraPortals = with pkgs-unsta; [
       xdg-desktop-portal-gtk
       xdg-desktop-portal-hyprland
     ];
-    configPackages = with pkgs; [
+    configPackages = with pkgs-unsta; [
       xdg-desktop-portal-gtk
       xdg-desktop-portal-hyprland
     ];
