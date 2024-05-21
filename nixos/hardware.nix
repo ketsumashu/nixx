@@ -5,6 +5,7 @@ in{
     opengl = {
       enable = true;
       package = pkgs-unsta.mesa.drivers;
+      package32 = pkgs-unsta.pkgsi686Linux.mesa.drivers;
       driSupport = true;
       driSupport32Bit = true;
       extraPackages = with pkgs; [
