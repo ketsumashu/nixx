@@ -1,7 +1,10 @@
-{pkgs, ...}: {
+{pkgs,inputs, ...}: let
+  pkgs-unsta = inputs.hyprland.inputs.nixpkgs.legacyPackages.${pkgs.stdenv.hostPlatform.system};
+in{
   hardware = {
     opengl = {
       enable = true;
+      package = pkgs-unsta.mesa.drivers;
       driSupport = true;
       driSupport32Bit = true;
       extraPackages = with pkgs; [
