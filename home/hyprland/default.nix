@@ -252,7 +252,7 @@
       name = "Tela-circle-dark";
     };
     font = {
-      name = "FiraCode Nerd Font";
+      name = "PlemolJP35 Console HS Medium";
       size = 11;
     };
   };
