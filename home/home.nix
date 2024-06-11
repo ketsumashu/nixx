@@ -10,7 +10,6 @@
     ./libskk
     ./rofi
     ./mako
-    ./idle-inhibitor
     ./localfont
     ./spicetify
     ./scripts

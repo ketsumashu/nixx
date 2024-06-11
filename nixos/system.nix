@@ -27,13 +27,14 @@
   };
 
   fileSystems."/" = {
-    device = "/dev/disk/by-uuid/0f77c041-6a9e-4d90-8ad6-1028d433f563";
+    device = "/dev/disk/by-uuid/cc362739-1aab-4377-87a2-94789ef3f509";
     fsType = "ext4";
   };
 
   fileSystems."/boot" = {
-    device = "/dev/disk/by-uuid/B291-D249";
+    device = "/dev/disk/by-uuid/E3B5-A188";
     fsType = "vfat";
+    options = [ "fmask=0022" "dmask=0022" ];
   };
 
   swapDevices = [];
