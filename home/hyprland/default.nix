@@ -144,6 +144,7 @@
     windowrulev2 = [
       "float,class:^(blueman-manager)$"
       "float,title:(Save File)$"
+      "float,title:^(blob)"
       "float,class:^(pavu)"
       "float,maxsize 400 100,class:^(Floaterm)"
       "float,title:^(ncspot)"
