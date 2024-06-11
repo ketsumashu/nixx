@@ -37,14 +37,14 @@
 
         "temperature#cpu" = {
           format = "{temperatureC}°C";
-          hwmon-path = "/sys/class/hwmon/hwmon1/temp1_input";
+          hwmon-path = "/sys/class/hwmon/hwmon2/temp3_input";
           interval = 1;
           rotate = 0;
         };
 
         "temperature#gpu" = {
           format = "{temperatureC}°C";
-          hwmon-path = "/sys/class/hwmon/hwmon4/temp1_input";
+          hwmon-path = "/sys/class/hwmon/hwmon1/temp2_input";
           interval = 1;
           rotate = 0;
         };
