@@ -19,7 +19,7 @@
     lm_sensors
     vesktop
     arrpc
-    btop
+    (btop.override {rocmSupport = true;})
     fd
     duf
     eza
