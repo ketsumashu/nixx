@@ -150,6 +150,7 @@
       "float,title:^(.blueman-manager)"
       "float,title:(Open Files)$"
       "workspace 2 silent,class:(eam)$"
+      "workspace 5,class:(ktop)$"
       "float,class:^(steam)$,title:(ist)$"
       "float,class:^(steam)$,title:(ings)$"
       "float,class:^(steam)$,title:(Chat)$"
