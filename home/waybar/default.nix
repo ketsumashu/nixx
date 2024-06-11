@@ -5,8 +5,7 @@
 }: {
   programs.waybar = {
     enable = true;
-    package = waybar.packages."${pkgs.system}".waybar;
-    #package = pkgs.waybar;
+    package = pkgs.waybar;
     systemd = {enable = false;};
     settings = {
       mainBar = {
@@ -19,7 +18,7 @@
         spacing = 15;
         modules-left = ["hyprland/window"];
         modules-center = ["hyprland/workspaces"];
-        modules-right = ["pulseaudio" "memory" "temperature" "clock" "tray"];
+        modules-right = ["pulseaudio" "memory" "temperature#cpu" "temperature#gpu" "clock" "tray"];
 
         "hyprland/workspaces" = {
           format = "{name}";
@@ -36,9 +35,16 @@
           rotate = 270;
         };
 
-        "temperature" = {
+        "temperature#cpu" = {
           format = "{temperatureC}°C";
-          hwmon-path = "/sys/class/hwmon/hwmon2/temp1_input";
+          hwmon-path = "/sys/class/hwmon/hwmon1/temp1_input";
+          interval = 1;
+          rotate = 0;
+        };
+
+        "temperature#gpu" = {
+          format = "{temperatureC}°C";
+          hwmon-path = "/sys/class/hwmon/hwmon4/temp1_input";
           interval = 1;
           rotate = 0;
         };

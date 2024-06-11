@@ -20,7 +20,7 @@
     lm_sensors
     vesktop
     arrpc
-    (btop.override {rocmSupport = true;})
+    btop
     fd
     duf
     eza
@@ -45,7 +45,6 @@
 
   wayland.windowManager.hyprland = {
     enable = true;
-    package = inputs.hyprland.packages."${pkgs.system}".hyprland;
     xwayland.enable = true;
     systemd.enable = true;
   };
@@ -87,7 +86,6 @@
       disable_autoreload = false;
       allow_session_lock_restore = true;
       initial_workspace_tracking = 0;
-      vrr = 0;
     };
 
     binds = {
@@ -141,6 +139,7 @@
       kb_options = "ctrl:nocaps";
       repeat_delay = 270;
       repeat_rate = 50;
+      follow_mouse = 1;
     };
 
     windowrulev2 = [
@@ -174,7 +173,7 @@
       "arrpc"
       "blueman-applet"
       "hyprctl dispatch exec \"\[workspace 2 silent\]\" steam"
-      "hyprctl dispatch exec \"\[workspace 5 silent\]\" \"vesktop --enable-features=UseOzonePlatform --ozone-platform-hint=auto\""
+      "hyprctl dispatch exec \"\[workspace 5 silent\]\" vesktop"
       "swww-daemon"
       "openrgb --startminimized -p ~/.config/OpenRGB/pro.orp"
       "wl-paste --type text --watch cliphist store"
@@ -188,8 +187,8 @@
 
     bind =
       [
-        "$mod, B, exec, firefox-devedition"
-        "$mod, E, exec, vesktop --enable-features=UseOzonePlatform --ozone-platform-hint=auto"
+        "$mod, B, exec, firefox"
+        "$mod, E, exec, vesktop"
         "$mod, S, exec, steam -gamepadui"
         "$mod, I, exec, scr"
         "$mod, Return, exec, $terminal"

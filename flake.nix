@@ -11,24 +11,15 @@
       url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    wayland-pipewire-idle-inhibit = {
-      url = "github:rafaelrc7/wayland-pipewire-idle-inhibit";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
     spicetify-nix.url = "github:the-argus/spicetify-nix";
-    hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
-    waybar.url = "github:alexays/waybar";
   };
   outputs = inputs @ {
     nixpkgs,
     home-manager,
     nixvim,
     nixos-hardware,
-    wayland-pipewire-idle-inhibit,
     spicetify-nix,
-    hyprland,
-    waybar,
     ...
   }: {
     nixosConfigurations = {
@@ -51,9 +42,6 @@
                 inherit inputs;
                 inherit nixvim;
                 inherit spicetify-nix;
-                inherit wayland-pipewire-idle-inhibit;
-                inherit hyprland;
-                inherit waybar;
               };
             };
           }
