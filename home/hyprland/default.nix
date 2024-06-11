@@ -1,7 +1,6 @@
 {
   config,
   pkgs,
-  inputs,
   ...
 }: {
   imports = [./hypridle.nix ./hyprlock.nix ./xdph.nix];
@@ -55,19 +54,19 @@
 
     monitor = [
       "HDMI-A-1,2560x1440@144,0x0,1"
-      "HDMI-A-2,2560x1440@100,2560x0,1"
+      "HDMI-A-2,2560x1440@100,2560x0,1,transform,1"
     ];
 
     workspace = [
-      "1, monitor:HDMI-A-1, default:true, persistent:true"
-      "2, monitor:HDMI-A-1, default:true, persistent:true"
-      "3, monitor:HDMI-A-1, default:true, persistent:true"
-      "4, monitor:HDMI-A-1, default:true, persistent:true"
-      "5, monitor:HDMI-A-2, default:true, persistent:true"
-      "6, monitor:HDMI-A-2, default:true, persistent:true"
-      "7, monitor:HDMI-A-2, default:true, persistent:true"
-      "8, monitor:HDMI-A-2, default:true, persistent:true"
-      "9, monitor:HDMI-A-2, default:true, persistent:true"
+      "1, monitor:HDMI-A-1, default:true"
+      "2, monitor:HDMI-A-1, default:true"
+      "3, monitor:HDMI-A-1, default:true"
+      "4, monitor:HDMI-A-1, default:true"
+      "5, monitor:HDMI-A-2, default:true"
+      "6, monitor:HDMI-A-2, default:true"
+      "7, monitor:HDMI-A-2, default:true"
+      "8, monitor:HDMI-A-2, default:true"
+      "9, monitor:HDMI-A-2, default:true"
     ];
 
     general = {
@@ -150,7 +149,7 @@
       "float,title:^(ncspot)"
       "float,title:^(.blueman-manager)"
       "float,title:(Open Files)$"
-      "workspace 2 silent,fullscreen:1,class:^(steam)$"
+      "workspace 2 silent,class:(eam)$"
       "float,class:^(steam)$,title:(ist)$"
       "float,class:^(steam)$,title:(ings)$"
       "float,class:^(steam)$,title:(Chat)$"
