@@ -1,6 +1,14 @@
-{inputs, ...}: {
+{
+  inputs,
+  pkgs,
+  ...
+}: {
+  imports = [
+    inputs.wayland-pipewire-idle-inhibit.homeModules.default
+  ];
   services.wayland-pipewire-idle-inhibit = {
     enable = true;
+    package = pkgs.wayland-pipewire-idle-inhibit;
     systemdTarget = "hyprland-session.target";
     settings = {
       verbosity = "INFO";

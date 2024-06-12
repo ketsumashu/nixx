@@ -1,4 +1,4 @@
-{pkgs,inputs, ...}:{
+{pkgs, ...}: {
   # Steam
   programs.steam = {
     enable = true;

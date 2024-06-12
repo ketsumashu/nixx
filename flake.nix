@@ -11,6 +11,10 @@
       url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    wayland-pipewire-idle-inhibit = {
+      url = "github:rafaelrc7/wayland-pipewire-idle-inhibit";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
     spicetify-nix.url = "github:the-argus/spicetify-nix";
   };
@@ -18,6 +22,7 @@
     nixpkgs,
     home-manager,
     nixvim,
+    wayland-pipewire-idle-inhibit,
     nixos-hardware,
     spicetify-nix,
     ...
@@ -41,6 +46,7 @@
               extraSpecialArgs = {
                 inherit inputs;
                 inherit nixvim;
+                inherit wayland-pipewire-idle-inhibit;
                 inherit spicetify-nix;
               };
             };
