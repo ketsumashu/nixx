@@ -21,7 +21,7 @@
       efi.canTouchEfiVariables = true;
     };
     kernelModules = ["kvm-amd"];
-    extraModulePackages = [];
+    extraModulePackages = ["zenpower"];
     kernelPackages = pkgs.linuxPackages_xanmod_latest;
     tmp.cleanOnBoot = true;
   };

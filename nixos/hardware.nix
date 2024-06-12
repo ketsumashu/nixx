@@ -16,9 +16,6 @@
     };
     pulseaudio.enable = false;
   };
-  environment.systemPackages = with pkgs;[
-    zenpower
-  ];
   services = {
     dbus.enable = true;
     hardware.openrgb.enable = true;
