@@ -21,6 +21,7 @@
       efi.canTouchEfiVariables = true;
     };
     kernelModules = ["kvm-amd"];
+    blacklistedKernelModules = ["k10temp"];
     extraModulePackages = with config.boot.kernelPackages;[zenpower];
     kernelPackages = pkgs.linuxPackages_xanmod_latest;
     tmp.cleanOnBoot = true;
