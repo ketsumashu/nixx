@@ -15,7 +15,7 @@
       media_minimum_duration = 10;
       idle_inhibitor = "wayland";
       sink_whitelist = [
-        {name = "HyperX QuadCast S Analog Stereo";}
+        {name = "Starship/Matisse HD Audio Controller Analog Stereo";}
       ];
       node_blacklist = [
         {app_name = "[Ss]potify";}
