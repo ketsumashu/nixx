@@ -1,6 +1,5 @@
 {
   pkgs,
-  waybar,
   ...
 }: {
   programs.waybar = {
@@ -37,7 +36,7 @@
 
         "temperature#cpu" = {
           format = "{temperatureC}°C";
-          hwmon-path = "/sys/class/hwmon/hwmon2/temp3_input";
+          hwmon-path = "/sys/class/hwmon/hwmon2/temp1_input";
           interval = 1;
           rotate = 0;
         };
