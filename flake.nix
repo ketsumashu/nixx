@@ -17,6 +17,7 @@
     };
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
     spicetify-nix.url = "github:the-argus/spicetify-nix";
+    nur.url = "github:nix-community/NUR";
   };
   outputs = inputs @ {
     nixpkgs,
@@ -25,6 +26,7 @@
     wayland-pipewire-idle-inhibit,
     nixos-hardware,
     spicetify-nix,
+    nur,
     ...
   }: {
     nixosConfigurations = {
@@ -34,6 +36,7 @@
           nixos-hardware.nixosModules.common-cpu-amd
           nixos-hardware.nixosModules.common-gpu-amd
           nixos-hardware.nixosModules.common-pc-ssd
+          nur.nixosModules.nur
           ./nixos
           ./overlay
           {_module.args = {inherit inputs;};}
