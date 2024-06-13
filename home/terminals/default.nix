@@ -12,7 +12,7 @@
       window_padding_width = 24;
       adjust_line_height = 0;
       adjust_column_width = 0;
-      box_drawing_scale = "0.01, 0.8, 1.5, 2";
+      box_drawing_scale = "0.01, 1, 1.5, 2";
       mouse_hide_wait = 0;
       focus_follows_mouse = "yes";
       shell = "fish";
