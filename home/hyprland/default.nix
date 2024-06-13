@@ -174,7 +174,7 @@
       "arrpc"
       "blueman-applet"
       "hyprctl dispatch exec \"\[workspace 2 silent\]\" steam"
-      "hyprctl dispatch exec \"\[workspace 5 silent\]\" vesktop --gtk-version=4 --ozone-platform=wayland"
+      "hyprctl dispatch exec \"\[workspace 5 silent\]\" \"vesktop --gtk-version=4 --ozone-platform=wayland\""
       "swww-daemon"
       "openrgb --startminimized -p ~/.config/OpenRGB/pro.orp"
       "wl-paste --type text --watch cliphist store"
