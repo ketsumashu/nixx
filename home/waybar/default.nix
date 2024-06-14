@@ -176,7 +176,7 @@
 
       #network,
       #clock {
-          color: #0679d9;
+          color: #d0679d;
           font-size: 13px;
           margin-bottom: 2px;
           padding-bottom: 4px;
