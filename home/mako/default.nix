@@ -10,9 +10,9 @@
     padding = "16";
     margin = "10,10,10";
     output = "HDMI-A-1";
-    backgroundColor = "#1b1c28dd";
+    backgroundColor = "#1b1c28";
     textColor = "#ffffff";
-    borderColor = "#5de4c7ff";
+    borderColor = "#5de4c7";
     borderSize = 2;
     borderRadius = 6;
     defaultTimeout = 5000;
