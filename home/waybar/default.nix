@@ -26,6 +26,8 @@
             "HDMI-A-1" = [1 2 3 4];
             "HDMI-A-2" = [5 6 7 8 9];
           };
+          on-scroll-up = "hyprctl dispatch workspace e-1";
+          on-scroll-down = "hyprctl dispatch workspace e+1";
         };
 
         "hyprland/window" = {
