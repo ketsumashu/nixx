@@ -22,6 +22,7 @@
     (btop.override {rocmSupport = true;})
     fd
     duf
+    bat
     eza
     ripgrep
     deno
