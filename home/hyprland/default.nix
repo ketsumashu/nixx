@@ -12,7 +12,6 @@
     grim
     libnotify
     dconf
-    pcmanfm
     meson
     swww
     pavucontrol
