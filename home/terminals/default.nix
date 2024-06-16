@@ -6,7 +6,7 @@
       italic_font = "auto";
       bold_font = "auto";
       bold_italic_font = "auto";
-      font_size = 10;
+      font_size = 11;
       disable_ligatures = "never";
       confirm_os_window_close = 0;
       window_padding_width = 24;
@@ -34,7 +34,7 @@
       modify_font cell_height 100%
       click_interval 0.5
       cursor_blink_interval 0
-      modify_font cell_width 107%
+      modify_font cell_width 100%
       background #1b1c28
       foreground #a6accd
       cursor     #e0def4
