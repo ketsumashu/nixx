@@ -18,6 +18,7 @@
   };
   services = {
     dbus.enable = true;
+    gvfs.enable = true;
     hardware.openrgb.enable = true;
     pipewire = {
       enable = true;
