@@ -19,6 +19,8 @@
   services = {
     dbus.enable = true;
     gvfs.enable = true;
+    udisks2.enable = true;
+    devmon.enable = true;
     hardware.openrgb.enable = true;
     pipewire = {
       enable = true;
