@@ -68,7 +68,7 @@
         };
 
         "memory" = {
-          format = " {used:0.1f}G\n ---- \n{total:0.1f}G";
+          format = " {used:0.1f}G";
           interval = 1;
           on-click = "kitty -e btop";
           rotate = 0;
@@ -76,7 +76,7 @@
 
         "pulseaudio" = {
           scroll-step = 5;
-          format = " vol\n----\n {volume}%";
+          format = " {volume}%";
           format-bluetooth = "vol.{volume}";
           format-bluetooth-muted = " {icon} {format_source}";
           format-muted = "MUTED";
@@ -173,7 +173,7 @@
 
       #network,
       #clock {
-          color: #d0679d;
+          color: #5de4c7;
           font-size: 13px;
           margin-bottom: 2px;
           padding-bottom: 4px;
