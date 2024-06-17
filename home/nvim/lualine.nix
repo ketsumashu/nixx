@@ -193,7 +193,7 @@ in
       },
     }
     components.filetype = { "filetype", cond = nil, padding = { left = 1, right = 1 } }
-    components.fileformat = { "filename", cond = nil, padding = { left = 1, right = 1 }, color = "${colors.green}" }
+    components.filename = { "filename", cond = nil, padding = { left = 1, right = 1 }, color = "${colors.green}" }
 
     components.lsp = {
       function()
