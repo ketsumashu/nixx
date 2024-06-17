@@ -1,4 +1,3 @@
-{}:
 let
   themeColors = {
     bg = "none";
