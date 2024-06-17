@@ -2,7 +2,7 @@
 let
   themeColors = {
     bg = "none";
-    fg = "#d2d2d2";
+    fg = "#ffffff";
     yellow = "#ECBE7B";
     cyan = "#008080";
     darkblue = "#081633";
