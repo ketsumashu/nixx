@@ -287,7 +287,7 @@ in
 
     components.location = {
       "location",
-      color = { fg = mode_color[vim.fn.mode()] },
+      color = { fg = "#ffffff" },
     }
 
     local sections = {
