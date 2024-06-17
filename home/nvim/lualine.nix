@@ -193,7 +193,8 @@ in
       },
     }
     components.filetype = { "filetype", cond = nil, padding = { left = 1, right = 1 } }
-    components.filename = { "filename", cond = nil, padding = { left = 1, right = 1 }, color = "${colors.green}" }
+    components.fileformat = { "fileformat", cond = nil, padding = { left = 1, right = 1 }, color = "SLGreen" }
+    components.filename = { "filename", color = "${colors.green}"}
 
     components.lsp = {
       function()
@@ -293,7 +294,7 @@ in
 
     local sections = {
       lualine_a = { components.mode },
-      lualine_b = { components.filename, "encoding" },
+      lualine_b = { components.fileformat, "encoding" },
       lualine_c = { components.branch, components.diff },
       lualine_x = {
         components.indicator(),
