@@ -1,4 +1,4 @@
-{ icons, ... }:
+{}:
 let
   themeColors = {
     bg = "none";
