@@ -8,10 +8,10 @@
     ./cmp.nix
     ./leap.nix
     ./telescope.nix
-    ./statusline.nix
     ./auto-pair.nix
     ./skkeleton.nix
     ./blankline.nix
+    ./lualine.nix
   ];
 
   programs.nixvim = {
