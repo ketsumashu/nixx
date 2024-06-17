@@ -288,9 +288,8 @@ in
 
     components.location = {
       "location",
-      color = { fg = "#000000" },
+      color = { fg = "#ffffff" },
     }
-
 
     local sections = {
       lualine_a = { components.mode },
