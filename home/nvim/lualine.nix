@@ -6,7 +6,7 @@ let
     yellow = "#ECBE7B";
     cyan = "#008080";
     darkblue = "#081633";
-    green = "#98be65";
+    green = "#5de4c7";
     orange = "#FF8800";
     violet = "#a9a1e1";
     magenta = "#c678dd";
@@ -42,8 +42,8 @@ in
       };
       insert = {
         a = {
-          fg = themeColors.bg;
-          bg = themeColors.green;
+          fg = themeColors.fg;
+          bg = themeColors.bg;
           gui = "bold";
         };
         b = {
@@ -163,7 +163,7 @@ in
         return { fg = mode_color[vim.fn.mode()], bg = "#none" }
       end,
       fmt = function()
-        return ""
+        return ""
       end,
     }
 
@@ -193,7 +193,7 @@ in
       },
     }
     components.filetype = { "filetype", cond = nil, padding = { left = 1, right = 1 } }
-    components.fileformat = { "fileformat", cond = nil, padding = { left = 1, right = 1 }, color = "SLGreen" }
+    components.fileformat = { "filename", cond = nil, padding = { left = 1, right = 1 }, color = "${colors.green}" }
 
     components.lsp = {
       function()
