@@ -28,12 +28,12 @@ in
       normal = with themeColors; {
         a = {
           fg = themeColors.bg;
-          bg = themeColors.blue;
+          bg = themeColors.bg;
           gui = "bold";
         };
         b = {
           fg = themeColors.fg;
-          bg = themeColors.darkblue;
+          bg = themeColors.bg;
         };
         c = {
           fg = themeColors.fg;
@@ -48,7 +48,7 @@ in
         };
         b = {
           fg = themeColors.fg;
-          bg = themeColors.darkblue;
+          bg = themeColors.bg;
         };
         c = {
           fg = themeColors.fg;
@@ -58,12 +58,12 @@ in
       visual = {
         a = {
           fg = themeColors.bg;
-          bg = themeColors.magenta;
+          bg = themeColors.bg;
           gui = "bold";
         };
         b = {
           fg = themeColors.fg;
-          bg = themeColors.darkblue;
+          bg = themeColors.bg;
         };
         c = {
           fg = themeColors.fg;
@@ -73,12 +73,12 @@ in
       replace = {
         a = {
           fg = themeColors.bg;
-          bg = themeColors.red;
+          bg = themeColors.bg;
           gui = "bold";
         };
         b = {
           fg = themeColors.fg;
-          bg = themeColors.darkblue;
+          bg = themeColors.bg;
         };
         c = {
           fg = themeColors.fg;
@@ -88,12 +88,12 @@ in
       command = {
         a = {
           fg = themeColors.bg;
-          bg = themeColors.orange;
+          bg = themeColors.bg;
           gui = "bold";
         };
         b = {
           fg = themeColors.fg;
-          bg = themeColors.darkblue;
+          bg = themeColors.bg;
         };
         c = {
           fg = themeColors.fg;
