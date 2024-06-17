@@ -14,8 +14,8 @@ let
     red = "#ec5f67";
   };
   colors = themeColors // {
-    bg = "#202328";
-    fg = "#bbc2cf";
+    bg = "#none";
+    fg = "#ffffff";
   };
 
 in
