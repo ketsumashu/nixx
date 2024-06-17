@@ -294,7 +294,7 @@ in
 
     local sections = {
       lualine_a = { components.mode },
-      lualine_b = { components.filename, "encoding" },
+      lualine_b = { "filename", "encoding" },
       lualine_c = { components.branch, components.diff },
       lualine_x = {
         components.indicator(),
