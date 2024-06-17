@@ -12,7 +12,7 @@ in {
   programs.spicetify = {
     enable = true;
     theme = spicePkgs.themes.text;
-    colorScheme = "TokyoNight";
+    colorScheme = "custom";
         customColorScheme = {
           text ="a6accd";
           subtext ="ffffff";
