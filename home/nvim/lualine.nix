@@ -118,7 +118,7 @@ in
     };
   };
 
-  extraConfigLua = ''
+  programs.nixvim.extraConfigLua = ''
 
       local function diff_source()
       ---@diagnostic disable-next-line: undefined-field
