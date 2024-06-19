@@ -20,7 +20,6 @@
     arrpc
     (btop.override {rocmSupport = true;})
     fd
-    bitwarden-cli
     duf
     bat
     eza
@@ -32,8 +31,6 @@
     which
     gh
     git
-    python3
-    python3Packages.tldextract
   ];
 
   home.sessionVariables = {
