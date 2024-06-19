@@ -24,7 +24,6 @@ in {
     keyBindings = {
       normal = {
         "t" = "cmd-set-text -s :open -t";
-        "<escape>" = "fake-key <escape>";
       };
       insert = {
         "<escape>" = "fake-key <escape>";
