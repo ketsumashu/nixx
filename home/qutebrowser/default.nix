@@ -6,7 +6,7 @@
     border = "#5de4c7";
     current-line = "#44475a";
     selection = "#44475a";
-    foreground = "#a6accd";
+    foreground = "#ffffff";
     foreground-alt = "#e0e0e0";
     foreground-attention = "#ffffff";
     comment = "#6272a4";
@@ -25,7 +25,6 @@ in {
       normal = {
       };
       insert = {
-        "jj" = "<esc>";
       };
     };
     settings = {
@@ -40,7 +39,8 @@ in {
         "https://raw.githubusercontent.com/tofukko/filter/master/Adblock_Plus_list.txt"
         "https://raw.githubusercontent.com/robonxt/CleanYourTwitter/master/CleanYourTwitter.txt"
       ];
-      scrolling.smooth = true;
+      scrolling.smooth = false;
+      auto_save.session = true;
       colors = {
         webpage.preferred_color_scheme = "dark";
         completion = {
@@ -62,8 +62,8 @@ in {
             selected = {
               bg = palette.background;
               border = {
-                bottom = palette.selection;
-                top = palette.selection;
+                bottom = palette.green;
+                top = palette.green;
               };
               fg = palette.green;
               match = {
@@ -213,11 +213,11 @@ in {
           pinned = {
             even = {
               bg = palette.background;
-              fg = palette.green;
+              fg = palette.foreground;
             };
             odd = {
               bg = palette.background;
-              fg = palette.green;
+              fg = palette.foreground;
             };
             selected = {
               even = {
@@ -252,6 +252,8 @@ in {
     extraConfig = ''
       c.statusbar.padding = { "bottom":0, "right":5, "left":5, "top":10 }
       c.tabs.padding = { "bottom":10, "right":5, "left":5, "top":10 }
+      c.tabs.title.format = "{current_title}"
+      c.tabs.title.format_pinned = ">{current_title}"
     '';
   };
   home.packages = with pkgs; [
