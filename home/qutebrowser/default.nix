@@ -24,9 +24,10 @@ in {
     keyBindings = {
       normal = {
         "t" = "cmd-set-text -s :open -t";
+        "<escape>" = "fake-key <escape>";
       };
       insert = {
-        "jj" = "fake-key <escape>";
+        "<escape>" = "fake-key <escape>";
       };
     };
     settings = {
