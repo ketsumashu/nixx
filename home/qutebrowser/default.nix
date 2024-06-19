@@ -26,6 +26,7 @@ in {
         "t" = "cmd-set-text -s :open -t";
       };
       insert = {
+        "jj" = "fake-key <escape>";
       };
     };
     settings = {
