@@ -26,7 +26,6 @@ in {
         "t" = "cmd-set-text -s :open -t";
       };
       insert = {
-        "jj" = "mode-leave";
       };
     };
     settings = {
