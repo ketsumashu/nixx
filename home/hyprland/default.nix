@@ -33,6 +33,7 @@
     gh
     git
     python3
+    python3Packages.tldextract
   ];
 
   home.sessionVariables = {
