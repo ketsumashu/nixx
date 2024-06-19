@@ -12,13 +12,13 @@ let
     blue = "#51afef";
     red = "#ec5f67";
   };
-  colors = themeColors // {
-    bg = "#none";
-    fg = "#ffffff";
-  };
-
-in
-{
+  colors =
+    themeColors
+    // {
+      bg = "#none";
+      fg = "#ffffff";
+    };
+in {
   programs.nixvim.plugins.lualine = {
     enable = true;
     alwaysDivideMiddle = true;

@@ -13,12 +13,12 @@ in {
     enable = true;
     theme = spicePkgs.themes.text;
     colorScheme = "custom";
-        customColorScheme = {
-          accent ="5de4c7";
-          accent-active ="5de4c7";
-          text ="ffffff";
-          main="1b1c28";
-        };
+    customColorScheme = {
+      accent = "5de4c7";
+      accent-active = "5de4c7";
+      text = "ffffff";
+      main = "1b1c28";
+    };
     enabledExtensions = with spicePkgs.extensions; [
       hidePodcasts
       playlistIcons
