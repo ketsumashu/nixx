@@ -32,6 +32,7 @@
     which
     gh
     git
+    python
   ];
 
   home.sessionVariables = {
