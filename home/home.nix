@@ -14,6 +14,7 @@
     ./spicetify
     ./scripts
     ./idle-inhibitor
+    ./qutebrowser
   ];
 
   home = {
