@@ -26,7 +26,6 @@
     ripgrep
     deno
     blueman
-    darktable
     xdg_utils
     killall
     which
