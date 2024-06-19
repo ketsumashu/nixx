@@ -20,6 +20,7 @@
     arrpc
     (btop.override {rocmSupport = true;})
     fd
+    bitwarden-cli
     duf
     bat
     eza
