@@ -31,7 +31,7 @@
       };
       hinting = {
         enable = true;
-        style = "full";
+        style = "slight";
       };
       subpixel = {
         rgba = "rgb";
