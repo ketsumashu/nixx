@@ -17,7 +17,7 @@
     };
     hyprland ={
       type = "git";
-      url = "https://github.com/hyprwm/Hyprland?ref=v0.41.1&rev=9e781040d9067c2711ec2e9f5b47b76ef70762b3";
+      url = "https://github.com/hyprwm/Hyprland?ref=v0.41.1";
       submodules = true;
     };
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
