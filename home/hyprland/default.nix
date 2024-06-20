@@ -131,7 +131,7 @@
     };
     
     master = {
-      new_on_top = true;
+      smart_resizing = true;
     };
 
     input = {
