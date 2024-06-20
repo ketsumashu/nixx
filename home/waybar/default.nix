@@ -14,7 +14,7 @@
         spacing = 15;
         modules-left = ["hyprland/window"];
         modules-center = ["hyprland/workspaces"];
-        modules-right = ["pulseaudio" "memory" "temperature#cpu" "temperature#gpu" "clock" "tray"];
+        modules-right = [ "idle_inhibitor" "pulseaudio" "memory" "temperature#cpu" "temperature#gpu" "clock" "tray"];
 
         "hyprland/workspaces" = {
           format = "{name}";
@@ -93,6 +93,14 @@
           };
           rotate = 0;
           on-click = "pavucontrol";
+        };
+
+        "idle_inhibitor" = {
+          format = "{icon}";
+          format-icons = {
+            activated = "on";
+            deactivated = "off";
+          };
         };
       };
     };
@@ -210,12 +218,11 @@
       }
 
       #idle_inhibitor {
-          background-color: #191c25;
+        color: #5de4c7;
       }
 
       #idle_inhibitor.activated {
-          background-color: #ecf0f1;
-          color: #2d3436;
+          color: #5de4c7;
       }
 
     '';
