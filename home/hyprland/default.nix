@@ -4,7 +4,7 @@
   inputs,
   ...
 }: {
-  imports = [./hypridle.nix ./hyprlock.nix ./xdph.nix inputs.hyprland.homeManagerModules.default];
+  imports = [./hyprlock.nix ./xdph.nix inputs.hyprland.homeManagerModules.default];
 
   home.packages = with pkgs; [
     wl-clipboard
@@ -168,9 +168,7 @@
 
     exec-once = [
       "systemctl --user enable xdg-desktop-portal-hyprland"
-      "systemctl --user enable wayland-pipewire-idle-inhibit"
       "mako"
-      "hypridle"
       "waybar"
       "arrpc"
       "blueman-applet"
@@ -210,6 +208,7 @@
         "$mod, Tab, workspace, e+1"
         "$mod SHIFT, Tab, workspace, e-1"
         "$mod, V, togglefloating"
+        "$mod, period, exec, hyprlock"
         "$mod, F, Fullscreen"
         "$mod CTRL, T, exec, grim -o HDMI-A-1 ~/screenshot/$(date +\"%Y_%m_%d\".png)"
       ]

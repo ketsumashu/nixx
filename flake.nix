@@ -11,11 +11,7 @@
       url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    wayland-pipewire-idle-inhibit = {
-      url = "github:rafaelrc7/wayland-pipewire-idle-inhibit";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    hyprland ={
+   hyprland ={
       type = "git";
       url = "https://github.com/hyprwm/Hyprland?ref=v0.41.1";
       submodules = true;
@@ -27,7 +23,6 @@
     nixpkgs,
     home-manager,
     nixvim,
-    wayland-pipewire-idle-inhibit,
     hyprland,
     nixos-hardware,
     spicetify-nix,
@@ -52,7 +47,6 @@
               extraSpecialArgs = {
                 inherit inputs;
                 inherit nixvim;
-                inherit wayland-pipewire-idle-inhibit;
                 inherit spicetify-nix;
                 inherit hyprland;
               };
