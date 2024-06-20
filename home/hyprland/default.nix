@@ -130,10 +130,6 @@
       force_split = 2;
     };
 
-    master = {
-      new_is_master = true;
-    };
-
     input = {
       kb_layout = "us";
       kb_options = "ctrl:nocaps";
