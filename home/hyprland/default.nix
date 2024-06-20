@@ -129,6 +129,10 @@
       preserve_split = true;
       force_split = 2;
     };
+    
+    master = {
+      new_on_top = true;
+    };
 
     input = {
       kb_layout = "us";
