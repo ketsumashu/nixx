@@ -14,7 +14,7 @@
         spacing = 15;
         modules-left = ["hyprland/window"];
         modules-center = ["hyprland/workspaces"];
-        modules-right = [ "idle_inhibitor" "pulseaudio" "memory" "temperature#cpu" "temperature#gpu" "clock" "tray"];
+        modules-right = [ "pulseaudio" "memory" "temperature#cpu" "temperature#gpu" "clock" "tray"];
 
         "hyprland/workspaces" = {
           format = "{name}";
