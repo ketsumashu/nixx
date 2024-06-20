@@ -1,9 +1,10 @@
 {
   config,
   pkgs,
+  inputs,
   ...
 }: {
-  imports = [./hypridle.nix ./hyprlock.nix ./xdph.nix];
+  imports = [./hypridle.nix ./hyprlock.nix ./xdph.nix inputs.hyprland.homeManagerModules.default];
 
   home.packages = with pkgs; [
     wl-clipboard
