@@ -105,7 +105,7 @@ const config = {
   // Experiments
   // none currently
   // Desktop only
-  fullWidthContent: false,
+  fullWidthContent: true,
   fullWidthMedia: true,
   hideAccountSwitcher: false,
   hideExploreNav: true,
