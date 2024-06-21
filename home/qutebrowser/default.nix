@@ -42,6 +42,7 @@ in {
       ];
       scrolling.smooth = false;
       auto_save.session = true;
+      qt.force_software_rendering = "chromium";
       colors = {
         webpage.preferred_color_scheme = "dark";
         completion = {
@@ -263,6 +264,8 @@ in {
       c.tabs.padding = { "bottom":5, "right":5, "left":5, "top":5 }
       c.tabs.title.format = "{current_title}"
       c.tabs.title.format_pinned = ">{current_title}"
+      config.unbind("O")
+      config.load_autoconfig(true)
     '';
   };
   home.packages = with pkgs; [

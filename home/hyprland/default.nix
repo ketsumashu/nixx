@@ -239,13 +239,8 @@
   gtk = {
     enable = true;
     theme = {
-      package = pkgs.catppuccin-gtk.override {
-        accents = ["teal"];
-        size = "compact";
-        tweaks = ["rimless"];
-        variant = "frappe";
-      };
-      name = "Catppuccin-Frappe-Compact-Teal-Dark";
+      package = pkgs.nightgfox-gtk-theme;
+      name = "Nightfox-BL-GS";
     };
 
     iconTheme = {
