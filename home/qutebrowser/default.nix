@@ -232,6 +232,14 @@ in {
             };
           };
         };
+        contextmenu = {
+          disabled.fg = palette.foreground;
+          menu = {
+            bg = palette.background;
+            fg = palette.foreground;
+          };
+          selected.fg = palette.green;
+        };
       };
       hints = {
         border = "1px solid ${palette.background-alt}";
