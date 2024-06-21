@@ -265,7 +265,7 @@ in {
       c.tabs.title.format = "{current_title}"
       c.tabs.title.format_pinned = ">{current_title}"
       config.unbind("O")
-      config.load_autoconfig(true)
+      config.load_autoconfig(True)
     '';
   };
   home.packages = with pkgs; [
