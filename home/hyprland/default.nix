@@ -239,7 +239,7 @@
   gtk = {
     enable = true;
     theme = {
-      package = pkgs.nightgfox-gtk-theme;
+      package = pkgs.nightfox-gtk-theme;
       name = "Nightfox-BL-GS";
     };
 
