@@ -32,7 +32,7 @@
         "#rightadfloat",
         "#hdp + hr",
         "div[align=\"center\"]",
-        "div style=\"width:728px;margin:2px auto;\"",
+        "div[style=\"width:728px;margin:2px auto;\"]",
         "body > div:nth-child(16)",
         "body > div:nth-child(17)",
         "body > div:nth-child(18)",
