@@ -238,21 +238,21 @@ in {
       };
       tabs = {
         favicons = {
-          scale = 1;
+          scale = 1.2;
         };
         indicator = {
-          width = 1;
+          width = 1.2;
         };
         position = "left";
-        width = "9%";
+        width = "10%";
       };
       completion = {
-        height = "15%";
+        height = "12%";
       };
     };
     extraConfig = ''
-      c.statusbar.padding = { "bottom":0, "right":5, "left":5, "top":10 }
-      c.tabs.padding = { "bottom":10, "right":5, "left":5, "top":10 }
+      c.statusbar.padding = { "bottom":0, "right":5, "left":5, "top":5 }
+      c.tabs.padding = { "bottom":5, "right":5, "left":5, "top":5 }
       c.tabs.title.format = "{current_title}"
       c.tabs.title.format_pinned = ">{current_title}"
     '';
