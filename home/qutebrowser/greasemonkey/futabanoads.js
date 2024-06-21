@@ -28,6 +28,8 @@
         "body > div:nth-child(6) > div",
         "body > div:nth-child(8) > div",
         "body > div.tue",
+        "body > div.tue2",
+        "div"
         "#rightadfloat",
         "#hdp + hr",
         "div[align=\"center\"]",
