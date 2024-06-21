@@ -27,7 +27,7 @@ this.$ = this.jQuery = jQuery.noConflict(true);
 	var USE_SOUDANE = true;								//そうだねをハイライト表示する
 	var USE_CLEAR_BUTTON = true;					//フォームにクリアボタンを表示する
 	var USE_TITLE_NAME = true;						//新着レス数・スレ消滅状態をタブに表示する
-	var RELOAD_INTERVAL_NORMAL = 60000;		//リロード間隔[ミリ秒](通常時)
+	var RELOAD_INTERVAL_NORMAL = 6000;		//リロード間隔[ミリ秒](通常時)
 	var RELOAD_INTERVAL_LIVE = 5000;			//リロード間隔[ミリ秒](実況モード時)
 	var LIVE_SCROLL_INTERVAL = 12;				//実況モードスクロール間隔[ミリ秒]
 	var LIVE_SCROLL_SPEED = 3;						//実況モードスクロール幅[px]
