@@ -42,7 +42,7 @@ in {
       ];
       scrolling.smooth = false;
       auto_save.session = true;
-      qt.force_software_rendering = "chromium";
+      qt.highdpi = true;
       colors = {
         webpage.preferred_color_scheme = "dark";
         completion = {
