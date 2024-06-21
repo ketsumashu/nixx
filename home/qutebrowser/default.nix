@@ -238,10 +238,10 @@ in {
       };
       tabs = {
         favicons = {
-          scale = 1.2;
+          scale = 2;
         };
         indicator = {
-          width = 1.2;
+          width = 2;
         };
         position = "left";
         width = "10%";
