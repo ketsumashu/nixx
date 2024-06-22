@@ -140,7 +140,7 @@
       }
 
       #workspaces button.active {
-          color: #9ccfd8;
+          color: #569fba;
       }
 
       #workspaces button.urgent {
@@ -159,7 +159,7 @@
       #cpu,
       #temperature{
           padding: 0 0px;
-          color:#c4a7e7;
+          color:#ea9a97;
           /*font-weight:bold;*/
       }
 
@@ -181,7 +181,7 @@
 
       #network,
       #clock {
-          color: #a3be8c;
+          color: #e2e0f7;
           font-size: 13px;
           margin-bottom: 2px;
           padding-bottom: 4px;
