@@ -233,7 +233,7 @@
   qt = {
     enable = true;
     platformTheme.name = "gtk";
-    style.name = "gtk2";
+    style.name = "qt6gtk2";
   };
 
   gtk = {
