@@ -56,8 +56,8 @@
       color11 #d0679d
 
       # Blue
-      color4  #5de4c7
-      color12 #5de4c7
+      color4  #add7ff
+      color12 #add7ff
 
       # Magenta
       color5  #d0679d

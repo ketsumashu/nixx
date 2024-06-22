@@ -129,7 +129,7 @@
       preserve_split = true;
       force_split = 2;
     };
-    
+
     master = {
       smart_resizing = true;
     };
