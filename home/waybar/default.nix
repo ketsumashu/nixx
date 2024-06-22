@@ -114,7 +114,7 @@
       }
 
       window#waybar {
-          background-color: #192330;
+          background-color: #232136;
           border-top-right-radius:12px;
           border-bottom-right-radius:12px;
       }
@@ -126,7 +126,7 @@
       #workspaces button {
           padding:  10px 0px;
           background-color: transparent;
-          color: #cdcecf;
+          color: #e0def4;
       }
 
       #workspaces button.persistent {
@@ -140,7 +140,7 @@
       }
 
       #workspaces button.active {
-          color: #5de4c7;
+          color: #a3be8c;
       }
 
       #workspaces button.urgent {
@@ -159,12 +159,12 @@
       #cpu,
       #temperature{
           padding: 0 0px;
-          color:#5de4c7;
+          color:#c4a7e7;
           /*font-weight:bold;*/
       }
 
       #window{
-          color:#a6accd;
+          color:#e0def4;
           padding: 100px 20px;
       }
       #workspaces {
@@ -181,7 +181,7 @@
 
       #network,
       #clock {
-          color: #5de4c7;
+          color: #a3be8c;
           font-size: 13px;
           margin-bottom: 2px;
           padding-bottom: 4px;
@@ -204,7 +204,7 @@
       }
 
       #pulseaudio {
-          color: #5de4c7;
+          color: #c4a7e7;
       }
 
       #pulseaudio.muted {

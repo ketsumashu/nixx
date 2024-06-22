@@ -21,7 +21,7 @@
     vimAlias = true;
     colorschemes.nightfox = {
       enable = true;
-      flavor = "nightfox";
+      flavor = "duskfox";
       settings = {
         transparent = true;
       };
