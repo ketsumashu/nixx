@@ -63,11 +63,11 @@
       "2, monitor:HDMI-A-1, default:true"
       "3, monitor:HDMI-A-1, default:true"
       "4, monitor:HDMI-A-1, default:true"
-      "5, monitor:HDMI-A-2, default:true, layoutopt:orientation:top"
-      "6, monitor:HDMI-A-2, default:true, layoutopt:orientation:top"
-      "7, monitor:HDMI-A-2, default:true, layoutopt:orientation:top"
-      "8, monitor:HDMI-A-2, default:true, layoutopt:orientation:top"
-      "9, monitor:HDMI-A-2, default:true, layoutopt:orientation:top"
+      "5, monitor:HDMI-A-2, default:true"
+      "6, monitor:HDMI-A-2, default:true"
+      "7, monitor:HDMI-A-2, default:true"
+      "8, monitor:HDMI-A-2, default:true"
+      "9, monitor:HDMI-A-2, default:true"
     ];
 
     general = {
