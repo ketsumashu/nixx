@@ -4,8 +4,8 @@
     --tridactyl-font-family-sans: "Cozette","mplus12";
     --tridactyl-font-size: 13px;
     --tridactyl-small-font-size: 13px;
-    --tridactyl-bg: #1b1c28;
-    --tridactyl-fg: #a6accd;
+    --tridactyl-bg: #232136;
+    --tridactyl-fg: #e0def4;
     --tridactyl-logo: url("moz-extension://__MSG_@@extension_id__/static/logo/Tridactyl_64px.png");
     --tridactyl-scrollbar-color: auto;
 
@@ -14,11 +14,11 @@
     --tridactyl-status-font-size: var(--tridactyl-font-size);
     --tridactyl-status-bg: var(--tridactyl-bg);
     --tridactyl-status-fg: var(--tridactyl-fg);
-    --tridactyl-status-border: 1px #1b1c28 solid;
+    --tridactyl-status-border: 1px #232136 solid;
     --tridactyl-status-border-radius: 0px;
 
     /* Search highlight */
-    --tridactyl-search-highlight-color: #81c8be;
+    --tridactyl-search-highlight-color: #569fba;
 
     /* Hinting */
 
@@ -26,15 +26,15 @@
     --tridactyl-hintspan-font-family: var(--tridactyl-font-family);
     --tridactyl-hintspan-font-size: var(--tridactyl-small-font-size);
     --tridactyl-hintspan-font-weight: bold;
-    --tridactyl-hintspan-fg: #5de4c7;
-    --tridactyl-hintspan-bg: #1b1c28;
+    --tridactyl-hintspan-fg: #569fba;
+    --tridactyl-hintspan-bg: #232136;
     --tridactyl-hintspan-border-color: ButtonShadow;
     --tridactyl-hintspan-border-width: 0px;
     --tridactyl-hintspan-border-style: solid;
     --tridactyl-hintspan-js-background: rgba(76, 86, 106, 0);
 
     /* Element highlights */
-    --tridactyl-hint-active-fg: #1b1c28;
+    --tridactyl-hint-active-fg: #232136;
     --tridactyl-hint-active-bg: rgba(76, 86, 106, 1);
     --tridactyl-hint-active-outline: 1px solid #5e81ac;
     --tridactyl-hint-bg: rgba(129, 161, 193, 0);
@@ -72,9 +72,9 @@
 
     /*sectionHeader*/
 
-    --tridactyl-header-first-bg: #1b1c28;
-    --tridactyl-header-second-bg: #1b1c28;
-    --tridactyl-header-third-bg: #1b1c28;
+    --tridactyl-header-first-bg: #569fba;
+    --tridactyl-header-second-bg: #569fba;
+    --tridactyl-header-third-bg: #569fba;
 
 
     --tridactyl-header-font-size: inherit;
@@ -91,8 +91,8 @@
 
     /*option focused*/
 
-    --tridactyl-of-fg: #1b1c28;
-    --tridactyl-of-bg: #5de4c7;
+    --tridactyl-of-fg: #569fba;
+    --tridactyl-of-bg: #232136;
 
     /*new tab spoiler box*/
     --tridactyl-highlight-box-bg: #414559;
