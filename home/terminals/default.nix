@@ -31,62 +31,60 @@
       bell_on_tab = "yes";
     };
     extraConfig = ''
-            modify_font cell_height 100%
-            click_interval 0.5
-            cursor_blink_interval 0
-            modify_font cell_width 100%
-      # vim:ft=kitty
+    modify_font cell_height 100%
+    click_interval 0.5
+    cursor_blink_interval 0
+    modify_font cell_width 100%
+    # Nightfox colors for Kitty
+## name: duskfox
+## upstream: https://github.com/edeneast/nightfox.nvim/raw/main/extra/duskfox/kitty.conf
 
-      ## name: Nightfox
-      ## author: EdenEast
-      ## license: MIT
-      ## upstream: https://github.com/EdenEast/nightfox.nvim/blob/main/extra/nightfox/nightfox_kitty.conf
+background #232136
+foreground #e0def4
+selection_background #433c59
+selection_foreground #e0def4
+cursor_text_color #232136
+url_color #a3be8c
 
-      background #192330
-      foreground #cdcecf
-      selection_background #2b3b51
-      selection_foreground #cdcecf
-      url_color #81b29a
+# Cursor
+# uncomment for reverse background
+# cursor none
+cursor #e0def4
 
-      # Cursor
-      # uncomment for reverse background
-      # cursor none
-      cursor #cdcecf
+# Border
+active_border_color #569fba
+inactive_border_color #4b4673
+bell_border_color #ea9a97
 
-      # Border
-      active_border_color #719cd6
-      inactive_border_color #39506d
-      bell_border_color #f4a261
+# Tabs
+active_tab_background #569fba
+active_tab_foreground #191726
+inactive_tab_background #433c59
+inactive_tab_foreground #817c9c
 
-      # Tabs
-      active_tab_background #719cd6
-      active_tab_foreground #131a24
-      inactive_tab_background #2b3b51
-      inactive_tab_foreground #738091
+# normal
+color0 #393552
+color1 #eb6f92
+color2 #a3be8c
+color3 #f6c177
+color4 #569fba
+color5 #c4a7e7
+color6 #9ccfd8
+color7 #e0def4
 
-      # normal
-      color0 #393b44
-      color1 #c94f6d
-      color2 #81b29a
-      color3 #dbc074
-      color4 #719cd6
-      color5 #9d79d6
-      color6 #63cdcf
-      color7 #dfdfe0
+# bright
+color8 #47407d
+color9 #f083a2
+color10 #b1d196
+color11 #f9cb8c
+color12 #65b1cd
+color13 #ccb1ed
+color14 #a6dae3
+color15 #e2e0f7
 
-      # bright
-      color8 #575860
-      color9 #d16983
-      color10 #8ebaa4
-      color11 #e0c989
-      color12 #86abdc
-      color13 #baa1e2
-      color14 #7ad5d6
-      color15 #e4e4e5
-
-      # extended colors
-      color16 #f4a261
-      color17 #d67ad2
+# extended colors
+color16 #ea9a97
+color17 #eb98c3
     '';
   };
 }

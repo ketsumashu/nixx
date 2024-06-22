@@ -114,7 +114,7 @@
       }
 
       window#waybar {
-          background-color: rgba(27,30,40,1);
+          background-color: #192330;
           border-top-right-radius:12px;
           border-bottom-right-radius:12px;
       }
@@ -126,7 +126,7 @@
       #workspaces button {
           padding:  10px 0px;
           background-color: transparent;
-          color: #a6accd;
+          color: #cdcecf;
       }
 
       #workspaces button.persistent {
