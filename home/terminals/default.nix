@@ -31,46 +31,62 @@
       bell_on_tab = "yes";
     };
     extraConfig = ''
-      modify_font cell_height 100%
-      click_interval 0.5
-      cursor_blink_interval 0
-      modify_font cell_width 100%
-      background #1b1c28
-      foreground #a6accd
-      cursor     #e0def4
+            modify_font cell_height 100%
+            click_interval 0.5
+            cursor_blink_interval 0
+            modify_font cell_width 100%
+      # vim:ft=kitty
 
-      # Black
-      color0 #1b1c28
-      color8 #a6accd
+      ## name: Nightfox
+      ## author: EdenEast
+      ## license: MIT
+      ## upstream: https://github.com/EdenEast/nightfox.nvim/blob/main/extra/nightfox/nightfox_kitty.conf
 
-      # Red
-      color1 #add7ff
-      color9 #add7ff
+      background #192330
+      foreground #cdcecf
+      selection_background #2b3b51
+      selection_foreground #cdcecf
+      url_color #81b29a
 
-      # Green
-      color2  #5de4c7
-      color10 #5de4c7
+      # Cursor
+      # uncomment for reverse background
+      # cursor none
+      cursor #cdcecf
 
-      # Yellow
-      color3  #add7ff
-      color11 #add7ff
+      # Border
+      active_border_color #719cd6
+      inactive_border_color #39506d
+      bell_border_color #f4a261
 
-      # Blue
-      color4  #5de4c7
-      color12 #5de4c7
+      # Tabs
+      active_tab_background #719cd6
+      active_tab_foreground #131a24
+      inactive_tab_background #2b3b51
+      inactive_tab_foreground #738091
 
-      # Magenta
-      color5  #5de4c7
-      color13 #5de4c7
+      # normal
+      color0 #393b44
+      color1 #c94f6d
+      color2 #81b29a
+      color3 #dbc074
+      color4 #719cd6
+      color5 #9d79d6
+      color6 #63cdcf
+      color7 #dfdfe0
 
-      # Cyan
-      color6  #add7ff
-      color14 #add7ff
+      # bright
+      color8 #575860
+      color9 #d16983
+      color10 #8ebaa4
+      color11 #e0c989
+      color12 #86abdc
+      color13 #baa1e2
+      color14 #7ad5d6
+      color15 #e4e4e5
 
-      # White
-      color7  #ffffff
-      color15 #ffffff
-
+      # extended colors
+      color16 #f4a261
+      color17 #d67ad2
     '';
   };
 }
