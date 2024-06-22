@@ -19,13 +19,11 @@
     enableMan = false;
     viAlias = true;
     vimAlias = true;
-    colorschemes.poimandres = {
+    colorschemes.nightfox = {
       enable = true;
+      flavor = "duskfox";
       settings = {
-        disable_background = true;
-        disable_float_background = false;
-        disable_italics = true;
-        dark_variant = "main";
+        transparent = true;
       };
     };
   };
