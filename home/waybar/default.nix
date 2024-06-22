@@ -140,7 +140,7 @@
       }
 
       #workspaces button.active {
-          color: #a3be8c;
+          color: #9ccfd8;
       }
 
       #workspaces button.urgent {
