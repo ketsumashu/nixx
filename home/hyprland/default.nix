@@ -248,7 +248,7 @@
       name = "Tela-circle-dark";
     };
     font = {
-      name = "PlemolJP35 Console HS Medium";
+      name = "PlemolJP35 Console HS Bold";
       size = 11;
     };
   };
