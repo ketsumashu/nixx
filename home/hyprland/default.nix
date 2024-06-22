@@ -76,7 +76,7 @@
       border_size = 3;
       "col.active_border" = "rgb(5de4c7)";
       "col.inactive_border" = "rgb(1b1c28)";
-      layout = "master";
+      layout = "dwindle";
     };
 
     misc = {
