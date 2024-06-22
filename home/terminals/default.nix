@@ -44,8 +44,8 @@
       color8 #a6accd
 
       # Red
-      color1 #d0679d
-      color9 #d0679d
+      color1 #add7ff
+      color9 #add7ff
 
       # Green
       color2  #5de4c7
@@ -56,8 +56,8 @@
       color11 #d0679d
 
       # Blue
-      color4  #add7ff
-      color12 #add7ff
+      color4  #5de4c7
+      color12 #5de4c7
 
       # Magenta
       color5  #d0679d
