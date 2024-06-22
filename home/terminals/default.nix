@@ -52,8 +52,8 @@
       color10 #5de4c7
 
       # Yellow
-      color3  #d0679d
-      color11 #d0679d
+      color3  #add7ff
+      color11 #add7ff
 
       # Blue
       color4  #5de4c7
