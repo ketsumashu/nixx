@@ -28,6 +28,11 @@ in {
       insert = {
       };
     };
+    searchEngines = {
+      "DEFAULT" = "https://google.com/search?q={}";
+      "y" = "https://youtube.com/results?search_query={}";
+      "gt" = "https://github.com/search?q={}&type=repositories";
+    };
     settings = {
       editor.command = ["kitty" "-e" "nvim" "{file}"];
       content.javascript.clipboard = "access-paste";
@@ -252,8 +257,10 @@ in {
         indicator = {
           width = 1;
         };
-        position = "left";
+        position = "bottom";
         width = "10%";
+        show = "switching";
+        show_switching_delay = 800;
       };
       completion = {
         height = "12%";
