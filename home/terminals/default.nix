@@ -60,8 +60,8 @@
       color12 #5de4c7
 
       # Magenta
-      color5  #d0679d
-      color13 #d0679d
+      color5  #5de4c7
+      color13 #5de4c7
 
       # Cyan
       color6  #add7ff
