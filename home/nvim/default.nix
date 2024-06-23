@@ -22,7 +22,7 @@
     colorschemes.base16 = {
       enable = true;
       colorscheme = {
-        base00 = "#23252e";
+        base00 = "#232136";
         base01 = "#80638e";
         base02 = "#1aaba0";
         base03 = "#497e7a";
