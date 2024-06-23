@@ -43,7 +43,6 @@
   networking = {
     useDHCP = false;
     hostName = "mashunix";
-    networkmanager.enable = false;
     useNetworkd = true;
   };
 
