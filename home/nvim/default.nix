@@ -39,6 +39,7 @@
         base0E = "#21d6c9";
         base0F = "#497e7a";
       };
+      setUpBar = false;
     };
   };
 }
