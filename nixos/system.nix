@@ -41,9 +41,17 @@
   swapDevices = [];
 
   networking = {
-    useDHCP = lib.mkDefault true;
+    useDHCP = false;
     hostName = "mashunix";
-    networkmanager.enable = true;
+    networkmanager.enable = false;
+    useNetworkd = true;
+  };
+
+  systemd.network = {
+    networks."10-wired" = {
+      matchConfig.Name = "enp4s0";
+      networkConfig.DHCP = "yes";
+    };
   };
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
