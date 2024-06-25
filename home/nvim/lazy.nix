@@ -2,7 +2,12 @@
   programs.nixvim.plugins.lazy = {
     enable = true;
     plugins = [
-      ./lazy/appearance.nix
+      {
+         name = "indent-blankline";
+         pkg = pkgs.vimPlugins.indent-blankline;
+         dev = true;
+         event = ["VimEnter"];
+      }
     ];
   };
 }
