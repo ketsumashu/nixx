@@ -4,6 +4,8 @@
     plugins.lazy = {
       enable = true;
       plugins = [
+        {
+          name = "indent-blankline-nvim";
           pkg = pkgs.vimPlugins.indent-blankline-nvim;
           event = ["VimEnter"];
         }
