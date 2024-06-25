@@ -7,17 +7,12 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    nixvim = {
-      url = "github:nix-community/nixvim";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
     spicetify-nix.url = "github:the-argus/spicetify-nix";
   };
   outputs = inputs @ {
     nixpkgs,
     home-manager,
-    nixvim,
     nixos-hardware,
     spicetify-nix,
     ...
@@ -40,7 +35,6 @@
               users.mashu = import ./home/home.nix;
               extraSpecialArgs = {
                 inherit inputs;
-                inherit nixvim;
                 inherit spicetify-nix;
               };
             };
