@@ -24,7 +24,6 @@
     extraConfigLua = ''
         require("ibl").setup()
 	require("cmp").setup()
-	require("luasnip").setup()
     '';
   };
 }
