@@ -13,5 +13,12 @@
       \})
   call skkeleton#register_keymap('input', ';', 'henkanPoint')
   ]]
+  require 'skkeleton_indicator'.setup{
+    hiraText = "hl",
+    kataText = "kt",
+    eijiText = "ej",
+    hankataText = "hnk",
+    zenkakuText = "zen",
+  }
   '';
 }
