@@ -6,7 +6,6 @@
         {
           name = "indent-blankline";
           pkg = pkgs.vimPlugins.indent-blankline-nvim;
-          dev = true;
           event = ["VimEnter"];
         }
       ];
