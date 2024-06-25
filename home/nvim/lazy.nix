@@ -1,5 +1,5 @@
 {pkgs, ...}: {
-  imports = [./lazy];
+  imports = [./lazy/cmp.nix ./lazy/appearance.nix ./lazy/skk.nix ];
   programs.nixvim = {
     plugins.lazy = {
       enable = true;
