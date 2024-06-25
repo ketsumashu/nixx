@@ -13,6 +13,6 @@
 	config = function()
 	  require\'ibl\'.setup()
 	end,
-    ''
+    '';
   };
 }
