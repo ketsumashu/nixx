@@ -18,7 +18,7 @@
             cmp_luasnip
             cmp-nvim-lsp
           ];
-	  event = ["InsertEnter","CmdlineEnter"];
+	  event = ["InsertEnter" "CmdlineEnter"];
         }
 	{
           name = "LuaSnip";
