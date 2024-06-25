@@ -55,7 +55,7 @@
           call skkeleton#register_keymap('input', ';', 'henkanPoint')
           ]])
           '';
-          event = ["VimEnter"];
+          lazy = false;
         }
       ];
     };
