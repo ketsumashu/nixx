@@ -11,11 +11,6 @@
       url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    hyprland = {
-      type = "git";
-      url = "https://github.com/hyprwm/Hyprland?ref=v0.41.1";
-      submodules = true;
-    };
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
     spicetify-nix.url = "github:the-argus/spicetify-nix";
   };
@@ -23,7 +18,6 @@
     nixpkgs,
     home-manager,
     nixvim,
-    hyprland,
     nixos-hardware,
     spicetify-nix,
     ...
@@ -48,7 +42,6 @@
                 inherit inputs;
                 inherit nixvim;
                 inherit spicetify-nix;
-                inherit hyprland;
               };
             };
           }
