@@ -28,15 +28,15 @@
         }
         {
           name = "skkeleton";
-          pkg =  (pkgs.vimUtils.buildVimPlugin {
-                    name = "skkeleton";
-                    src = pkgs.fetchFromGitHub {
-                    owner = "vim-skk";
-                    repo = "skkeleton";
-                    rev = "87ad1d1f594e592ecad0429d651be45ce5fb03da";
-                    hash = "sha256-7qPFVnNzBgkQMD73JEhYEXxCWuGROzH8pjfPQpKwf0I=";
-                    };
-                  });
+          pkg = pkgs.vimUtils.buildVimPlugin {
+            name = "skkeleton";
+            src = pkgs.fetchFromGitHub {
+              owner = "vim-skk";
+              repo = "skkeleton";
+              rev = "87ad1d1f594e592ecad0429d651be45ce5fb03da";
+              hash = "sha256-7qPFVnNzBgkQMD73JEhYEXxCWuGROzH8pjfPQpKwf0I=";
+            };
+          };
           event = ["VimEnter"];
         }
       ];
