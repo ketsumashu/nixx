@@ -38,7 +38,7 @@
             };
           });
           dependencies = with pkgs.vimPlugins; [
-            denops-nvim
+            denops-vim
           ];
           event = ["VimEnter"];
         }
