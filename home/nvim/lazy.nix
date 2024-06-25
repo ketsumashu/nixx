@@ -13,7 +13,7 @@
     };
     extraConfigLua = ''
       config = function()
-        require\'ibl\'.setup()
+        require("ibl").setup()
       end,
     '';
   };
