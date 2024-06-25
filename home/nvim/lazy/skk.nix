@@ -1,6 +1,6 @@
 {
   programs.nixvim.extraConfigLuaPost = ''
-  vim.cmd = '''
+  vim.cmd  '''
   call skkeleton#config({
       \  'eggLikeNewline': v:true,
       \  'markerHenkan': ">",
