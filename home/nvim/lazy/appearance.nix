@@ -1,5 +1,5 @@
 {
-  program.nixvim.extraConfigLua = ''
+  programs.nixvim.extraConfigLua = ''
     require("ibl").setup()
   '';
 }
