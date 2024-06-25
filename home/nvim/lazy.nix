@@ -10,11 +10,11 @@
           event = ["VimEnter"];
         }
       ];
-      extraConfigLua = ''
-        config = function()
-          require\'ibl\'.setup()
-        end,
-      '';
     };
+    extraConfigLua = ''
+      config = function()
+        require\'ibl\'.setup()
+      end,
+    '';
   };
 }
