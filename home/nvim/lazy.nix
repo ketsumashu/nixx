@@ -1,6 +1,6 @@
 {pkgs, ...}:{
-  programs.nixvim.plugins.lazy = {
-    enable = true;
+  programs.nixvim = {
+    plugins.lazy.enable = true;
     plugins = [
       {
          name = "indent-blankline";
@@ -9,10 +9,10 @@
          event = ["VimEnter"];
       }
     ];
-  };
   extraConfigLua = ''
     config = function()
       require\'ibl\'.setup()
     end,
   '';
+  };
 }
