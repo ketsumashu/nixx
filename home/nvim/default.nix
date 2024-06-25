@@ -1,17 +1,18 @@
 {inputs, ...}: {
   imports = [
     inputs.nixvim.homeManagerModules.nixvim
-    ./options.nix
-    ./keymaps.nix
-    ./lsp.nix
-    ./treesitter.nix
-    ./cmp.nix
-    ./leap.nix
-    ./telescope.nix
-    ./auto-pair.nix
-    ./skkeleton.nix
-    ./blankline.nix
-    ./lualine.nix
+#    ./options.nix
+#    ./keymaps.nix
+#    ./lsp.nix
+#    ./treesitter.nix
+#    ./cmp.nix
+#    ./leap.nix
+#    ./telescope.nix
+#    ./auto-pair.nix
+#    ./skkeleton.nix
+#    ./blankline.nix
+#    ./lualine.nix
+      ./lazy.nix
   ];
 
   programs.nixvim = {
