@@ -50,7 +50,7 @@
             owner = "delphinus";
             repo = "skkeleton_indicator.nvim";
             rev = "d9b649d734ca7d3871c4f124004771d0213dc747";
-            hash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAA";
+            hash = "";
             };
           });
           lazy = false;
