@@ -1,11 +1,9 @@
 {pkgs, ...}: {
-  import = [./lazy/cmp.nix ./lazy/appearance.nix];
+  import = [./lazy/cmp.nix ./lazy/appearance.nix ./lazy/skk.nix];
   programs.nixvim = {
     plugins.lazy = {
       enable = true;
       plugins = [
-        {
-          name = "indent-blankline";
           pkg = pkgs.vimPlugins.indent-blankline-nvim;
           event = ["VimEnter"];
         }
@@ -37,6 +35,9 @@
               hash = "sha256-7qPFVnNzBgkQMD73JEhYEXxCWuGROzH8pjfPQpKwf0I=";
             };
           };
+          dependencies = with pkgs.vimPlugins; [
+            denops-nvim
+          ];
           event = ["VimEnter"];
         }
       ];
