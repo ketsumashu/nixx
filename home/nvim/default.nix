@@ -7,5 +7,5 @@
 
   xdg.configFile = {
     "nvim".recursive = ./nvim;
-  }
+  };
 }
