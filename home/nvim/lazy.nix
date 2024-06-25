@@ -18,12 +18,17 @@
             cmp_luasnip
             cmp-nvim-lsp
           ];
+	  event = ["InsertEnter","CmdlineEnter"];
         }
+	{
+          name = "LuaSnip";
+	  pkg = pkgs.vimPlugins.luasnip;
+	  event = ["InsertEnter"];
+	}
       ];
     };
     extraConfigLua = ''
              require("ibl").setup()
-
       local check_backspace = function()
                      local line, col = unpack(vim.api.nvim_win_get_cursor(0))
                      return col ~= 0 and
