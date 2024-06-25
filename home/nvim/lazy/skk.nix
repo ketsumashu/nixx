@@ -1,6 +1,5 @@
 {
-  programs.nixvim.extraConfigLuaPost = ''
-  vim.cmd [[
+  programs.nixvim.extraConfigVim = ''
   call skkeleton#config({
       \  'eggLikeNewline': v:true,
       \  'markerHenkan': ">",
@@ -12,6 +11,5 @@
       \  'keepState': v:true
       \})
     call skkeleton#register_keymap('input', ';', 'henkanPoint')
-  ]]
   '';
 }
