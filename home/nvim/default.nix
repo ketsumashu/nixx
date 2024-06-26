@@ -3,15 +3,8 @@
     inputs.nixvim.homeManagerModules.nixvim
     ./options.nix
     ./keymaps.nix
-    #    ./lsp.nix
-    #    ./treesitter.nix
-    #    ./cmp.nix
-    #    ./leap.nix
-    #    ./telescope.nix
-    #    ./auto-pair.nix
-    #    ./skkeleton.nix
-    #    ./blankline.nix
-    #    ./lualine.nix
+    ./lsp.nix
+    ./treesitter.nix
     ./lazy.nix
   ];
 

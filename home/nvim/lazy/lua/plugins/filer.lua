@@ -50,6 +50,7 @@ return {
                             ["i"] = {
                             },
                             ["n"] = {
+                              ["q"] = actions.close
                             },
                         },
                     },

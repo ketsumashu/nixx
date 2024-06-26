@@ -8,6 +8,7 @@
       };
       keymaps.lspBuf = {
         "gd" = "definition";
+        "gf" = "format";
         "gD" = "references";
         "gt" = "type_definition";
         "gi" = "implementation";

@@ -33,7 +33,7 @@
       pickers = {
         find_files = {
           hidden = true,
-          disable_devicons = true,
+          disable_devicons = false,
         }
       },
       extensions = {
@@ -46,6 +46,7 @@
             ["i"] = {
             },
             ["n"] = {
+              ["q"] = actions.close
             },
           },
         },
