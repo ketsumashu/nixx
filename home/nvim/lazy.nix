@@ -55,6 +55,21 @@
           });
           lazy = false;
         }
+        {
+          name = "nvim-bufdel";
+          pkg = pkgs.vimPlugins.bufdelete-nvim;
+          event = ["VimEnter"];
+        }
+        {
+          name = "nvim-autopairs";
+          pkg = pkgs.vimPlugins.auto-pairs;
+          event = ["InsertEnter"];
+        }
+        {
+          name = "alpha";
+          pkg = pkgs.vimPlugins.alpha-nvim;
+          event = ["VimEnter"];
+        }
       ];
     };
   };
