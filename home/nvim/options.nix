@@ -7,7 +7,7 @@
     expandtab = true;
     tabstop = 2;
     softtabstop = 2;
-    laststatus = 0;
+    laststatus = 3;
     cmdheight = 0;
     smartindent = true;
     shiftwidth = 2;
