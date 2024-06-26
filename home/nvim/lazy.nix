@@ -62,7 +62,7 @@
         }
         {
           name = "nvim-autopairs";
-          pkg = pkgs.vimPlugins.auto-pairs;
+          pkg = pkgs.vimPlugins.nvim-autopairs;
           event = ["InsertEnter"];
         }
         {
