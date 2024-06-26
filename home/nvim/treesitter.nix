@@ -5,6 +5,5 @@
       nixGrammars = true;
       indent = true;
     };
-    treesitter-context.enable = true;
   };
 }
