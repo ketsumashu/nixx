@@ -70,6 +70,15 @@
           pkg = pkgs.vimPlugins.alpha-nvim;
           event = ["VimEnter"];
         }
+        {
+          name = "telescope";
+          pkg = pkgs.vimPlugins.telescope-nvim;
+          dependencies = with pkgs.vimPlugins; [
+            plenary-nvim
+            telescope-file-browser-nvim
+          ];
+          event = ["VimEnter"];
+        }
       ];
     };
   };
