@@ -57,7 +57,7 @@
         }
         {
           name = "nvim-bufdel";
-          pkg = pkgs.vimPlugins.bufdelete-nvim;
+          pkg = pkgs.vimPlugins.nvim-bufdel;
           event = ["VimEnter"];
         }
         {
