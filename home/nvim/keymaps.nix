@@ -56,7 +56,7 @@
     {
       mode = "n";
       key = "<Leader>q";
-      action = ":q<CR>";
+      action = ":BufDel<CR>";
     }
     {
       mode = "n";
