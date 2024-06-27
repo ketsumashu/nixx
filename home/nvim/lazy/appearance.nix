@@ -113,5 +113,5 @@
         }
     end
     o.stl = "%!luaeval('status_line()')"
-      '';
-    }
+  '';
+}
