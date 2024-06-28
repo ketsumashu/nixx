@@ -29,11 +29,15 @@ in {
       };
     };
     searchEngines = {
-      "DEFAULT" = "https://google.com/?q={}";
+      "DEFAULT" = "https://google.com/?hl=ja&q={}";
       "y" = "https://youtube.com/results?search_query={}";
       "gt" = "https://github.com/search?q={}&type=repositories";
     };
     settings = {
+      url = {
+        default_page = "https://google.com/?hl=ja&q={}";
+        start_pages = ["https://google.com/?hl=ja&q={}"];
+      };
       editor.command = ["kitty" "-e" "nvim" "{file}"];
       content.javascript.clipboard = "access-paste";
       fonts = {
@@ -43,7 +47,6 @@ in {
       content.blocking.method = "both";
       content.blocking.adblock.lists = [
         "https://raw.githubusercontent.com/tofukko/filter/master/Adblock_Plus_list.txt"
-        "https://raw.githubusercontent.com/robonxt/CleanYourTwitter/master/CleanYourTwitter.txt"
       ];
       scrolling.smooth = false;
       auto_save.session = true;
