@@ -6,6 +6,7 @@
     ./fish
     ./waybar
     ./firefox
+    ./qutebrowser
     ./starship
     ./libskk
     ./rofi
