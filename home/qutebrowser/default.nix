@@ -29,7 +29,7 @@ in {
       };
     };
     searchEngines = {
-      "DEFAULT" = "https://google.com/?hl=ja&q=";
+      "DEFAULT" = "https://google.com/search?q={}";
       "y" = "https://youtube.com/results?search_query={}";
       "gt" = "https://github.com/search?q={}&type=repositories";
     };
