@@ -49,6 +49,7 @@ in {
         "https://raw.githubusercontent.com/tofukko/filter/master/Adblock_Plus_list.txt"
       ];
       scrolling.smooth = false;
+      scrolling.bar = "never";
       auto_save.session = true;
       qt.highdpi = true;
       colors = {
