@@ -25,7 +25,6 @@
     eza
     ripgrep
     deno
-    blueman
     xdg_utils
     killall
     which
