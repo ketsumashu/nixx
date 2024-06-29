@@ -11,7 +11,6 @@
     slurp
     grim
     libnotify
-    dconf
     meson
     swww
     pavucontrol
