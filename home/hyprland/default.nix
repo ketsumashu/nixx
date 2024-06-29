@@ -184,7 +184,7 @@
 
     bind =
       [
-        "$mod, B, exec, qutebrowser"
+        "$mod, B, exec, firefox"
         "$mod, E, exec, vesktop --gtk-version=4 --ozone-platform=wayland"
         "$mod, S, exec, steam -gamepadui"
         "$mod, I, exec, scr"
