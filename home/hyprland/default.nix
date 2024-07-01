@@ -256,12 +256,12 @@
     };
   };
 
-  home.pointerCursor = {
-    gtk.enable = true;
-    package = pkgs.bibata-cursors;
-    name = "Bibata-Modern-Ice";
-    size = 11;
-  };
+#  home.pointerCursor = {
+#    gtk.enable = true;
+#    package = pkgs.bibata-cursors;
+#    name = "Bibata-Modern-Ice";
+#    size = 11;
+#  };
   xdg.configFile = {
     "gtk-4.0/assets".source = "${config.gtk.theme.package}/share/themes/${config.gtk.theme.name}/gtk-4.0/assets";
     "gtk-4.0/gtk.css".source = "${config.gtk.theme.package}/share/themes/${config.gtk.theme.name}/gtk-4.0/gtk.css";
