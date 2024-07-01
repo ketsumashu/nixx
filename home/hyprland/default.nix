@@ -236,10 +236,10 @@
 
   gtk = {
     enable = true;
-    theme = {
-      package = pkgs.nightfox-gtk-theme;
-      name = "Nightfox-Dusk-B";
-    };
+#    theme = {
+#      package = pkgs.nightfox-gtk-theme;
+#      name = "Nightfox-Dusk-B";
+#    };
 
     iconTheme = {
       package = pkgs.tela-circle-icon-theme;

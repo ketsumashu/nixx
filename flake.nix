@@ -13,6 +13,7 @@
     };
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
     spicetify-nix.url = "github:the-argus/spicetify-nix";
+    stylix.url = "github:danth/stylix";
   };
   outputs = inputs @ {
     nixpkgs,
@@ -20,6 +21,7 @@
     nixvim,
     nixos-hardware,
     spicetify-nix,
+    stylix,
     ...
   }: {
     nixosConfigurations = {
@@ -42,6 +44,7 @@
                 inherit inputs;
                 inherit nixvim;
                 inherit spicetify-nix;
+                inherit stylix;
               };
             };
           }
