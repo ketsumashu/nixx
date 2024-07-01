@@ -15,6 +15,7 @@
     swww
     pavucontrol
     lm_sensors
+    dconf
     vesktop
     arrpc
     (btop.override {rocmSupport = true;})
