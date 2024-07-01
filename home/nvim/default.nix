@@ -12,12 +12,12 @@
     enableMan = false;
     viAlias = true;
     vimAlias = true;
-#    colorschemes.nightfox = {
-#      enable = true;
-#      flavor = "duskfox";
-#      settings = {
-#        transparent = true;
-#      };
-#    };
+    #    colorschemes.nightfox = {
+    #      enable = true;
+    #      flavor = "duskfox";
+    #      settings = {
+    #        transparent = true;
+    #      };
+    #    };
   };
 }
