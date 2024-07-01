@@ -1,6 +1,7 @@
 {
   config,
   pkgs,
+  lib,
   ...
 }: {
   imports = [./hyprlock.nix ./xdph.nix];
@@ -72,8 +73,8 @@
       gaps_in = 5;
       gaps_out = 9;
       border_size = 3;
-      "col.active_border" = "rgb(5de4c7)";
-      "col.inactive_border" = "rgb(1b1c28)";
+      "col.active_border" = lib.mkDefault "rgb(5de4c7)";
+      "col.inactive_border" = lib.mkDefault "rgb(1b1c28)";
       layout = "dwindle";
     };
 
