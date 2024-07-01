@@ -234,22 +234,22 @@
     style.name = "adwaita-dark";
   };
 
-  gtk = {
-    enable = true;
-    #    theme = {
-    #      package = pkgs.nightfox-gtk-theme;
-    #      name = "Nightfox-Dusk-B";
-    #    };
+ # gtk = {
+ #   enable = true;
+ #   #    theme = {
+ #   #      package = pkgs.nightfox-gtk-theme;
+ #   #      name = "Nightfox-Dusk-B";
+ #   #    };
 
-    iconTheme = {
-      package = pkgs.tela-circle-icon-theme;
-      name = "Tela-circle-dark";
-    };
-    font = {
-      name = "PlemolJP35 Console HS Bold";
-      size = 11;
-    };
-  };
+ #   iconTheme = {
+ #     package = pkgs.tela-circle-icon-theme;
+ #     name = "Tela-circle-dark";
+ #   };
+ #   font = {
+ #     name = "PlemolJP35 Console HS Bold";
+ #     size = 11;
+ #   };
+ # };
   dconf.settings = {
     "org/gtk/settings/file-chooser" = {
       sort-directories-first = true;
