@@ -3,7 +3,7 @@
   input,
   ...
 }: {
-  import = [input.stylix.homeManagerModules.stylix];
+  imports = [input.stylix.homeManagerModules.stylix];
 
   stylix = {
     enable = true;
