@@ -36,7 +36,7 @@ in {
     settings = {
       url = {
         default_page = "https://google.com/?hl=ja&q={}";
-        start_pages = ["https://google.com/?hl=ja&q={}"];
+        start_pages = ["https://google.com/?hl=ja"];
       };
       editor.command = ["kitty" "-e" "nvim" "{file}"];
       content.javascript.clipboard = "access-paste";
