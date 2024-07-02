@@ -263,7 +263,7 @@ in {
         indicator = {
           width = 1;
         };
-        position = "bottom";
+        position = "left";
         width = "10%";
         show = "always";
         show_switching_delay = 800;
