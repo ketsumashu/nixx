@@ -263,7 +263,7 @@ in {
         };
         position = "bottom";
         width = "10%";
-        show = "always";
+        show = "switching";
         show_switching_delay = 800;
       };
       completion = {

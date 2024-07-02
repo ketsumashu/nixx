@@ -30,6 +30,7 @@
     which
     gh
     git
+    bitwarden-cli
   ];
 
   home.sessionVariables = {
