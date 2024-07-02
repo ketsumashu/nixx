@@ -32,6 +32,7 @@
     git
     bitwarden-cli
     keyutils
+    python312Packages.pyperclip
   ];
 
   home.sessionVariables = {
