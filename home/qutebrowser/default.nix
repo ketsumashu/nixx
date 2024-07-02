@@ -24,6 +24,8 @@ in {
     keyBindings = {
       normal = {
         "t" = "cmd-set-text -s :open -t";
+        ",p" = "spawn --userscript qute-bitwarden --auto-lock 0";
+        ",t" = "spawn --userscript qute-bitwarden --auto-lock 0 -T";
       };
       insert = {
       };
@@ -263,7 +265,7 @@ in {
         };
         position = "bottom";
         width = "10%";
-        show = "switching";
+        show = "always";
         show_switching_delay = 800;
       };
       completion = {
