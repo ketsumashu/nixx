@@ -31,6 +31,7 @@
     gh
     git
     bitwarden-cli
+    keyutils
   ];
 
   home.sessionVariables = {
