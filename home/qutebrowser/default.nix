@@ -35,7 +35,7 @@ in {
     };
     settings = {
       url = {
-        default_page = "https://google.com/?hl=ja&q={}";
+        default_page = "https://google.com/?hl=ja";
         start_pages = ["https://google.com/?hl=ja"];
       };
       editor.command = ["kitty" "-e" "nvim" "{file}"];
