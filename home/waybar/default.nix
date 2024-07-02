@@ -105,7 +105,6 @@
       };
     };
     style = ''
-
       * {
           font-family: "FiraCode Nerd Font";
           font-weight: Bold;
@@ -114,7 +113,7 @@
       }
 
       window#waybar {
-          background-color: #232136;
+          background-color: rgba(27,30,40,1);
           border-top-right-radius:12px;
           border-bottom-right-radius:12px;
       }
@@ -126,7 +125,7 @@
       #workspaces button {
           padding:  10px 0px;
           background-color: transparent;
-          color: #e0def4;
+          color: #a6accd;
       }
 
       #workspaces button.persistent {
@@ -140,7 +139,7 @@
       }
 
       #workspaces button.active {
-          color: #569fba;
+          color: #5de4c7;
       }
 
       #workspaces button.urgent {
@@ -159,12 +158,12 @@
       #cpu,
       #temperature{
           padding: 0 0px;
-          color:#ea9a97;
+          color:#5de4c7;
           /*font-weight:bold;*/
       }
 
       #window{
-          color:#e0def4;
+          color:#a6accd;
           padding: 100px 20px;
       }
       #workspaces {
@@ -181,7 +180,7 @@
 
       #network,
       #clock {
-          color: #e2e0f7;
+          color: #5de4c7;
           font-size: 13px;
           margin-bottom: 2px;
           padding-bottom: 4px;
@@ -204,7 +203,7 @@
       }
 
       #pulseaudio {
-          color: #c4a7e7;
+          color: #5de4c7;
       }
 
       #pulseaudio.muted {
