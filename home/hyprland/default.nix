@@ -26,6 +26,7 @@
     ripgrep
     deno
     xdg_utils
+    darktable
     killall
     which
     gh
