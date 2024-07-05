@@ -43,7 +43,7 @@ in {
       editor.command = ["kitty" "-e" "nvim" "{file}"];
       content.javascript.clipboard = "access-paste";
       fonts = {
-        default_family = ["FiraCode Nerd Font" "Noto Sans CJK JP"];
+        default_family = ["Cozette" "mplus12"];
         default_size = "11px";
       };
       content.blocking.method = "both";
