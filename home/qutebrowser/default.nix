@@ -269,12 +269,12 @@ in {
         show_switching_delay = 800;
       };
       completion = {
-        height = "12%";
+        height = "15%";
       };
     };
     extraConfig = ''
       c.statusbar.padding = { "bottom":0, "right":5, "left":5, "top":5 }
-      c.tabs.padding = { "bottom":5, "right":5, "left":5, "top":5 }
+      c.tabs.padding = { "bottom":7, "right":5, "left":5, "top":5 }
       c.tabs.title.format = "{current_title}"
       c.tabs.title.format_pinned = ">{current_title}"
       config.unbind("O")
