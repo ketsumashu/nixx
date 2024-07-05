@@ -44,7 +44,7 @@ in {
       content.javascript.clipboard = "access-paste";
       fonts = {
         default_family = ["Cozette" "mplus12"];
-        default_size = "11px";
+        default_size = "13px";
       };
       content.blocking.method = "both";
       content.blocking.adblock.lists = [
