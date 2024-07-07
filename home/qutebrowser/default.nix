@@ -58,7 +58,7 @@ in {
       content.blocking.adblock.lists = [
         "https://raw.githubusercontent.com/tofukko/filter/master/Adblock_Plus_list.txt"
       ];
-      zoom.default = "100%";
+      zoom.default = "90%";
       scrolling.smooth = false;
       scrolling.bar = "never";
       auto_save.session = true;
