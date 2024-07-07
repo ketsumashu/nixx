@@ -36,7 +36,7 @@
     background-position: right center;
   }
   .userjs-preview-imageWrap {
-    max-width: 720px;
+    max-width: calc(100vw - 200px);
     width: fit-content;
   }
   .userjs-preview-inner {
@@ -55,7 +55,7 @@
     border-radius: 4px;
   }
   .userjs-preview-image {
-    max-width: calc(100vw - 200px) !important;
+    max-width: 720px !important;
     max-height: none !important;
     transition: all 0.2s ease-in-out;
     border-radius: 4px;
