@@ -45,6 +45,10 @@ in {
       fonts = {
         default_family = ["Cozette" "mplus12"];
         default_size = "13px";
+        web.family= {
+          sans_serif = ["PlemolJP35 Console HS"];
+          serif = ["Noto Serif CJK JP"];
+        };
       };
       content.blocking.method = "both";
       content.blocking.adblock.lists = [
