@@ -22,7 +22,7 @@
     }
  
     .media-preview {
-      max-width: 100vw;
+      max-width: 45vw;
       max-height: 100vh;
       display: block;
       margin: auto;
