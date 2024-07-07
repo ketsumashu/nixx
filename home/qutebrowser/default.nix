@@ -281,7 +281,4 @@ in {
       config.load_autoconfig(False)
     '';
   };
-  home.packages = with pkgs; [
-    widevine-cdm
-  ];
 }
