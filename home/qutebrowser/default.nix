@@ -276,6 +276,7 @@ in {
         width = "10%";
         show = "always";
         show_switching_delay = 800;
+        new_position.related = "last";
       };
       completion = {
         height = "15%";
