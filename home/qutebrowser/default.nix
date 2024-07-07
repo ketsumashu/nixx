@@ -273,7 +273,7 @@ in {
           width = 1;
         };
         position = "left";
-        width = "10%";
+        width = 250;
         show = "always";
         show_switching_delay = 800;
         new_position.related = "last";
