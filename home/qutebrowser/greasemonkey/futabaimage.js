@@ -36,7 +36,7 @@
     background-position: right center;
   }
   .userjs-preview-imageWrap {
-    max-width: calc(100vw - 200px);
+    max-width: 720px;
     width: fit-content;
   }
   .userjs-preview-inner {
