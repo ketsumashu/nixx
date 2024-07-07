@@ -278,6 +278,7 @@ in {
         show_switching_delay = 800;
         new_position.related = "last";
       };
+      statusbar.show = "in-mode";
       completion = {
         height = "15%";
       };
