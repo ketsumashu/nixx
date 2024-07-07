@@ -24,8 +24,10 @@ in {
     keyBindings = {
       normal = {
         "t" = "cmd-set-text -s :open -t";
-        ",p" = "spawn --userscript qute-bitwarden --auto-lock 0";
-        ",t" = "spawn --userscript qute-bitwarden --auto-lock 0 -T";
+        "yf" = "hint links yank";
+        "yd" = "hint links download";
+        "'p" = "spawn --userscript qute-bitwarden --auto-lock 0";
+        "'t" = "spawn --userscript qute-bitwarden --auto-lock 0 -T";
       };
       insert = {
       };
