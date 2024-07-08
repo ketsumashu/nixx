@@ -14,10 +14,10 @@ in {
     theme = spicePkgs.themes.text;
     colorScheme = "custom";
     customColorScheme = {
-      accent = "5de4c7";
-      accent-active = "5de4c7";
-      text = "ffffff";
-      main = "1b1c28";
+      accent = "77adb1";
+      accent-active = "77adb1";
+      text = "c5c4d4";
+      main = "191c25";
     };
     enabledExtensions = with spicePkgs.extensions; [
       hidePodcasts
