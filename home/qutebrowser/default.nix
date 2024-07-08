@@ -278,16 +278,16 @@ in {
         show_switching_delay = 800;
         new_position.related = "last";
       };
-      statusbar.show = "in-mode";
+      statusbar.show = "always";
       completion = {
-        height = "15%";
+        height = "10%";
       };
     };
     extraConfig = ''
-      c.statusbar.padding = { "bottom":0, "right":5, "left":5, "top":5 }
-      c.tabs.padding = { "bottom":7, "right":5, "left":5, "top":5 }
+      c.statusbar.padding = { "bottom":2, "right":5, "left":5, "top":2 }
+      c.tabs.padding = { "bottom":2, "right":5, "left":5, "top":2 }
       c.tabs.title.format = "{current_title}"
-      c.tabs.title.format_pinned = ">{current_title}"
+      c.tabs.title.format_pinned = "{current_title}"
       config.unbind("O")
       config.load_autoconfig(False)
     '';
