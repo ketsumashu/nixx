@@ -8,7 +8,7 @@
         layer = "top";
         position = "left";
         output = ["HDMI-A-1" "HDMI-A-2"];
-        width = 59;
+        width = 50;
         margin-top = 8;
         margin-bottom = 8;
         spacing = 15;
@@ -106,14 +106,14 @@
     };
     style = ''
       * {
-          font-family: "FiraCode Nerd Font";
+          font-family: "Cozette,mplus12";
           font-weight: Bold;
-          font-size: 13px;
+          font-size: 10px;
           min-height: 0;
       }
 
       window#waybar {
-          background-color: rgba(27,30,40,1);
+          background-color: rgba(25,28,37,1);
           border-top-right-radius:12px;
           border-bottom-right-radius:12px;
       }
@@ -125,13 +125,13 @@
       #workspaces button {
           padding:  10px 0px;
           background-color: transparent;
-          color: #a6accd;
+          color: #c5c4d4;
       }
 
       #workspaces button.persistent {
           padding:  10px 0px;
           background-color: transparent;
-          color: #a6accd;
+          color: #c5c4d4;
       }
 
       #workspaces button:hover {
@@ -139,12 +139,12 @@
       }
 
       #workspaces button.active {
-          color: #5de4c7;
+          color: #77adb1;
       }
 
       #workspaces button.urgent {
           background-color: #1b1e28;
-          color: #d0679d;
+          color: #a994b8;
       }
 
       #mode {
@@ -158,12 +158,12 @@
       #cpu,
       #temperature{
           padding: 0 0px;
-          color:#5de4c7;
+          color:#77adb1;
           /*font-weight:bold;*/
       }
 
       #window{
-          color:#a6accd;
+          color:#c5c4d4;
           padding: 100px 20px;
       }
       #workspaces {
@@ -180,8 +180,8 @@
 
       #network,
       #clock {
-          color: #5de4c7;
-          font-size: 13px;
+          color: #94cdd1;
+          font-size: 10px;
           margin-bottom: 2px;
           padding-bottom: 4px;
       }
@@ -217,11 +217,11 @@
       }
 
       #idle_inhibitor {
-        color: #5de4c7;
+        color: #77adb1;
       }
 
       #idle_inhibitor.activated {
-          color: #5de4c7;
+          color: #77adb1;
       }
 
     '';
