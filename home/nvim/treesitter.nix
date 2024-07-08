@@ -3,7 +3,7 @@
     treesitter = {
       enable = true;
       indent = true;
-      settings.highlight.enable = true;
+      ensureInstalled = ["lua" "css" "nix" ];
     };
   };
 }
