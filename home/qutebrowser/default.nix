@@ -1,25 +1,24 @@
-{pkgs, ...}: let
+{...}: let
   palette = {
-    background = "#1b1c28";
-    background-alt = "#1b1c28";
-    background-attention = "#181920";
-    border = "#5de4c7";
-    current-line = "#44475a";
-    selection = "#44475a";
-    foreground = "#ffffff";
+    background = "#191c25";
+    background-alt = "#191c25";
+    background-attention = "#191724";
+    border = "#77adb1";
+    current-line = "#525566";
+    selection = "#525566";
+    foreground = "#c5c4d4";
     foreground-alt = "#e0e0e0";
     foreground-attention = "#ffffff";
-    comment = "#6272a4";
-    cyan = "#fae4fc";
-    green = "#5de4c7";
-    pink = "#fcc5e9";
-    purple = "#fae4fc";
-    red = "#fcc5e9";
-    yellow = "#5de4c7";
+    comment = "#77adb1";
+    cyan = "#94cdd1";
+    green = "#77adb1";
+    pink = "#cdb6dd";
+    purple = "#cdb6dd";
+    red = "#a994b8";
+    yellow = "#77adb1";
   };
 in {
-  xdg.configFile."qutebrowser/greasemonkey".source = ./greasemonkey;
-  programs.qutebrowser = {
+  xdg.configFile."qutebrowser/greasemonkey".source = ./greasemonkey; programs.qutebrowser = {
     enable = true;
     keyBindings = {
       normal = {
