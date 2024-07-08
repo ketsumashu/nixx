@@ -1,16 +1,16 @@
 * {
-    bg-col:  #1b1c28;
-    bg-col-light: #1b1c28;
-    border-col: #5de4c7;
+    bg-col:  #191c25;
+    bg-col-light: #191c25;
+    border-col: #77adb1;
 
-    selected-col: #1b1c28;
-    blue: #5de4c7;
-    fg-col: #b5b4c9;
-    fg-col2: #5de4c7;
-    grey: #5b5f71;
+    selected-col: #191c25;
+    blue: #77adb1;
+    fg-col: #77adb1;
+    fg-col2: #77adb1;
+    grey: #94cdd1;
 
     width:700;
-    font: "FiraCode Nerd Font Bold 10";
+    font: "Cozette,mplus12 10";
 }
 
 element-text, element-icon , mode-switcher {
