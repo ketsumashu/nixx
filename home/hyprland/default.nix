@@ -168,6 +168,10 @@
       "float,class:^(steam)$,title:^(Steam Guard - Computer Authorization Required)$"
     ];
 
+    layerrule = [
+      "blur,waybar"
+    ];
+
     exec-once = [
       "systemctl --user enable xdg-desktop-portal-hyprland"
       "mako"

@@ -15,12 +15,8 @@
         letter-spacing = 1.12;
         vertical-letter-offset = 1.0;
         dpi-aware = false;
-        pad = "10x6 center"; # optionally append 'center'
-      };
-      environment = {
-        GTK_IM_MODULE = "fcitx";
-        QT_IM_MODULE = "fcitx";
-        XMODIFIERS = "@im=fcitx";
+        pad = "20x15 center"; # optionally append 'center'
+        initial-window-size-pixels = "640x200";
       };
       mouse = {
         hide-when-typing = "yes";
