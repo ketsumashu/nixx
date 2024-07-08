@@ -18,7 +18,8 @@
     yellow = "#77adb1";
   };
 in {
-  xdg.configFile."qutebrowser/greasemonkey".source = ./greasemonkey; programs.qutebrowser = {
+  xdg.configFile."qutebrowser/greasemonkey".source = ./greasemonkey;
+  programs.qutebrowser = {
     enable = true;
     keyBindings = {
       normal = {
@@ -46,7 +47,7 @@ in {
       fonts = {
         default_family = ["Cozette" "mplus12"];
         default_size = "13px";
-        web.family= {
+        web.family = {
           sans_serif = "PlemolJP35 Console HS";
           serif = "Noto Sans CJK JP";
           fixed = "PlemolJP35 Console HS";
@@ -64,6 +65,7 @@ in {
       qt.highdpi = true;
       colors = {
         webpage.preferred_color_scheme = "dark";
+        webpage.darkmode.enabled = true;
         completion = {
           category = {
             bg = palette.background;
