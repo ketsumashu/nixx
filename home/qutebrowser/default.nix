@@ -65,7 +65,6 @@ in {
       qt.highdpi = true;
       colors = {
         webpage.preferred_color_scheme = "dark";
-        webpage.darkmode.enabled = true;
         completion = {
           category = {
             bg = palette.background;
