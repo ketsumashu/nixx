@@ -4,7 +4,6 @@
     ./options.nix
     ./keymaps.nix
     ./lsp.nix
-    ./treesitter.nix
     ./lazy.nix
   ];
 
