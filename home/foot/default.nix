@@ -30,7 +30,7 @@
         color = "191724 e0def4";
       };
       colors = {
-        alpha = 0.85;
+        alpha = 0.94;
         background="191c25";
         foreground="c5c4d4";
         regular0="525566"  ;
