@@ -5,7 +5,6 @@
     ./keymaps.nix
     ./lsp.nix
     ./lazy.nix
-    ./treesitter.nix
   ];
 
   programs.nixvim = {
