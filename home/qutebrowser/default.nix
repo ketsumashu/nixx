@@ -46,12 +46,12 @@ in {
       content.javascript.clipboard = "access-paste";
       fonts = {
         default_family = ["Cozette" "mplus12"];
-        default_size = "13px";
+        default_size = "11px";
         web.family = {
-          sans_serif = ["Cozette" "mplus12"];
+          sans_serif = "PlemolJP35 Console HS";
           serif = "Noto Sans CJK JP";
-          fixed = "Cozette";
-          standard = ["Cozette" "mplus12"];
+          fixed = "PlemolJP35 Console HS";
+          standard = "PlemolJP35 Console HS";
         };
       };
       content.blocking.method = "both";
