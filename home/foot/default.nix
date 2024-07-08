@@ -12,7 +12,7 @@
         font-italic = "Cozette:size=11,mplus12:size=9";
         font-bold-italic = "Cozette:size=11,mplus12:size=9";
         line-height = 12.2;
-        letter-spacing = 1.14;
+        letter-spacing = 1.12;
         vertical-letter-offset = 1.0;
         dpi-aware = false;
         pad = "10x6 center"; # optionally append 'center'
