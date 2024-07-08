@@ -108,7 +108,7 @@
       * {
           font-family: "Cozette,mplus12";
           font-weight: Bold;
-          font-size: 10px;
+          font-size: 12px;
           min-height: 0;
       }
 

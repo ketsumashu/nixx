@@ -2,7 +2,7 @@
   imports = [
     ./hyprland
     ./nvim
-    ./terminals
+    ./foot
     ./fish
     ./waybar
     ./starship
