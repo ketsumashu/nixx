@@ -107,7 +107,6 @@
     style = ''
       * {
           font-family: "Cozette,mplus12";
-          font-weight: Medium;
           font-size: 12px;
           min-height: 0;
       }
