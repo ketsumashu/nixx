@@ -26,8 +26,8 @@ in {
         "t" = "cmd-set-text -s :open -t";
         "yf" = "hint links yank";
         "yd" = "hint links download";
-        "'p" = "spawn --userscript qute-bitwarden --auto-lock 0";
-        "'t" = "spawn --userscript qute-bitwarden --auto-lock 0 -T";
+        ";p" = "spawn --userscript qute-bitwarden --auto-lock 0";
+        ";t" = "spawn --userscript qute-bitwarden --auto-lock 0 -T";
       };
       insert = {
       };
