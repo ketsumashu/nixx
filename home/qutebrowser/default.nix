@@ -48,10 +48,10 @@ in {
         default_family = ["Cozette" "mplus12"];
         default_size = "13px";
         web.family = {
-          sans_serif = "PlemolJP35 Console HS";
+          sans_serif = ["Cozette" "mplus12"];
           serif = "Noto Sans CJK JP";
-          fixed = "PlemolJP35 Console HS";
-          standard = "PlemolJP35 Console HS";
+          fixed = "Cozette";
+          standard = ["Cozette" "mplus12"];
         };
       };
       content.blocking.method = "both";
