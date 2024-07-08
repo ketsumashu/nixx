@@ -112,7 +112,7 @@
       }
 
       window#waybar {
-          background-color: rgba(25,28,37,1);
+          background-color: rgba(25,28,37,0.95);
           border-top-right-radius:12px;
           border-bottom-right-radius:12px;
       }
