@@ -113,5 +113,14 @@
         }
     end
     o.stl = "%!luaeval('status_line()')"
+    vim.g.substrata_italic_functions = false
+    vim.g.substrata_italic_keywords = false
+    vim.g.substrata_italic_booleans = false
+    vim.g.substrata_italic_comments = false
+    vim.g.substrata_italic_variables = false
+    vim.g.substrata_transparent = true
+    vim.g.substrata_variant = "brighter"
+    vim.cmd [[colorscheme substrata]]
+    vim.cmd [[highlight FloatBorder guibg=NONE]]
   '';
 }

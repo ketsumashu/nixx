@@ -71,6 +71,11 @@
           event = ["VimEnter"];
         }
         {
+          name = "substrata";
+          pkg = pkgs.vimPlugins.substrata-nvim;
+          event = ["VimEnter"];
+        }
+        {
           name = "telescope";
           pkg = pkgs.vimPlugins.telescope-nvim;
           dependencies = with pkgs.vimPlugins; [
