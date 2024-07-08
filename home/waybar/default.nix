@@ -107,7 +107,7 @@
     style = ''
       * {
           font-family: "Cozette,mplus12";
-          font-weight: Bold;
+          font-weight: Medium;
           font-size: 12px;
           min-height: 0;
       }
@@ -181,7 +181,7 @@
       #network,
       #clock {
           color: #94cdd1;
-          font-size: 10px;
+          font-size: 12px;
           margin-bottom: 2px;
           padding-bottom: 4px;
       }
