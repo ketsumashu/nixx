@@ -18,7 +18,7 @@
     dconf
     vesktop
     arrpc
-    (btop.override {rocmSupport = true;})
+ #   (btop.override {rocmSupport = true;})
     fd
     duf
     bat
