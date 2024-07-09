@@ -25,6 +25,9 @@
       jack.enable = true;
       wireplumber.enable = true;
     };
+    devmon.enable = true;
+    gvfs.enable = true;
+    udisks2.enable = true;
   };
   sound = {enable = true;};
   security.rtkit.enable = true;
