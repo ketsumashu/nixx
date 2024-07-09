@@ -12,6 +12,7 @@
     ./localfont
     ./spicetify
     ./firefox
+    ./qutebrowser
     ./scripts
   ];
 
