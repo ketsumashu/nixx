@@ -4,7 +4,7 @@
     --tridactyl-font-family-sans: "Cozette","mplus12";
     --tridactyl-font-size: 13px;
     --tridactyl-small-font-size: 13px;
-    --tridactyl-bg: #232136;
+    --tridactyl-bg: #191c25;
     --tridactyl-fg: #e0def4;
     --tridactyl-logo: url("moz-extension://__MSG_@@extension_id__/static/logo/Tridactyl_64px.png");
     --tridactyl-scrollbar-color: auto;
@@ -18,7 +18,7 @@
     --tridactyl-status-border-radius: 0px;
 
     /* Search highlight */
-    --tridactyl-search-highlight-color: #569fba;
+    --tridactyl-search-highlight-color: #77adb1;
 
     /* Hinting */
 
@@ -26,7 +26,7 @@
     --tridactyl-hintspan-font-family: var(--tridactyl-font-family);
     --tridactyl-hintspan-font-size: var(--tridactyl-small-font-size);
     --tridactyl-hintspan-font-weight: bold;
-    --tridactyl-hintspan-fg: #569fba;
+    --tridactyl-hintspan-fg: #77adb1;
     --tridactyl-hintspan-bg: #232136;
     --tridactyl-hintspan-border-color: ButtonShadow;
     --tridactyl-hintspan-border-width: 0px;
@@ -72,9 +72,9 @@
 
     /*sectionHeader*/
 
-    --tridactyl-header-first-bg: #569fba;
-    --tridactyl-header-second-bg: #569fba;
-    --tridactyl-header-third-bg: #569fba;
+    --tridactyl-header-first-bg: #77adb1;
+    --tridactyl-header-second-bg: #77adb1;
+    --tridactyl-header-third-bg: #77adb1;
 
 
     --tridactyl-header-font-size: inherit;
@@ -91,7 +91,7 @@
 
     /*option focused*/
 
-    --tridactyl-of-fg: #569fba;
+    --tridactyl-of-fg: #77adb1;
     --tridactyl-of-bg: #232136;
 
     /*new tab spoiler box*/
