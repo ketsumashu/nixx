@@ -34,6 +34,7 @@
     bitwarden-cli
     keyutils
     python312Packages.pyperclip
+    pcmanfm
   ];
 
   home.sessionVariables = {
