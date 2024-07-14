@@ -247,7 +247,7 @@
     enable = true;
     theme = {
       package = pkgs.nightfox-gtk-theme;
-      name = "Nightfox-Dusk-B";
+      name = "Nightfox-Dark";
     };
 
     iconTheme = {
