@@ -10,7 +10,6 @@
     ./rofi
     ./mako
     ./localfont
-    ./spicetify
     ./firefox
     ./qutebrowser
     ./scripts
