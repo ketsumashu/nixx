@@ -272,8 +272,8 @@ in {
         indicator = {
           width = 3;
         };
-        position = "bottom";
-        width = 250;
+        position = "left";
+        width = "14%";
         show = "always";
         show_switching_delay = 800;
         new_position.related = "last";
