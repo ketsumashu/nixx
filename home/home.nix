@@ -12,6 +12,7 @@
     ./localfont
     ./firefox
     ./qutebrowser
+    ./vivaldi
     ./scripts
   ];
 
