@@ -274,11 +274,11 @@ in {
         };
         position = "bottom";
         width = 250;
-        show = "in-mode";
+        show = "always";
         show_switching_delay = 800;
         new_position.related = "last";
       };
-      statusbar.show = "always";
+      statusbar.show = "in-mode";
       completion = {
         height = "10%";
       };
