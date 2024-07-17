@@ -274,7 +274,7 @@ in {
         };
         position = "bottom";
         width = 250;
-        show = "always";
+        show = "in-mode";
         show_switching_delay = 800;
         new_position.related = "last";
       };
