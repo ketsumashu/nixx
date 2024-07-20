@@ -80,6 +80,7 @@
       "col.active_border" = "rgb(77adb1)";
       "col.inactive_border" = "rgb(191c25)";
       layout = "dwindle";
+      allow_tearing = true;
     };
 
     misc = {
