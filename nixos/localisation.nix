@@ -25,7 +25,7 @@
           fcitx5-skk
           fcitx5-gtk
           kdePackages.fcitx5-qt
-          fcitx-nord
+          fcitx5-nord
         ];
         waylandFrontend = true;
       };
