@@ -22,7 +22,7 @@
       enable = true;
       fcitx5 = {
         addons = with pkgs; [
-          fcitx5-skk
+          fcitx5-mozc
           fcitx5-gtk
           kdePackages.fcitx5-qt
           fcitx5-nord
