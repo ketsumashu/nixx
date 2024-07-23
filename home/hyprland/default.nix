@@ -168,6 +168,7 @@
       "float,class:^(steam)$,title:^(Steam - Self Updater)$"
       "float,class:^(steam)$,title:(Manager)$"
       "float,class:^(steam)$,title:^(Steam Guard - Computer Authorization Required)$"
+      "pseudo,class:(fcitx5)$"
     ];
 
     layerrule = [
@@ -177,6 +178,7 @@
     exec-once = [
       "systemctl --user enable xdg-desktop-portal-hyprland"
       "mako"
+      "fcitx5 -rd"
       "waybar"
       "arrpc"
       "blueman-applet"
