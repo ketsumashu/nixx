@@ -13,6 +13,7 @@
     };
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
     spicetify-nix.url = "github:the-argus/spicetify-nix";
+    hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
   };
   outputs = inputs @ {
     nixpkgs,
@@ -20,6 +21,7 @@
     nixvim,
     nixos-hardware,
     spicetify-nix,
+    hyprland,
     ...
   }: {
     nixosConfigurations = {
@@ -42,6 +44,7 @@
                 inherit inputs;
                 inherit nixvim;
                 inherit spicetify-nix;
+                inherit hyprland;
               };
             };
           }
