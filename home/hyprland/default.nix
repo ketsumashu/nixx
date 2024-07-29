@@ -52,6 +52,7 @@
     QT_AUTO_SCREEN_SCALE_FACTOR = "1";
     HYPRCURSOR_THEME = "Bibata-Modern-Ice";
     HYPRCURSOR_SIZE = "24";
+    BROWSER = "qutebrowser";
   };
 
   wayland.windowManager.hyprland = {
@@ -287,4 +288,6 @@
     "gtk-4.0/gtk.css".source = "${config.gtk.theme.package}/share/themes/${config.gtk.theme.name}/gtk-4.0/gtk.css";
     "gtk-4.0/gtk-dark.css".source = "${config.gtk.theme.package}/share/themes/${config.gtk.theme.name}/gtk-4.0/gtk-dark.css";
   };
+
+  xdg.mime.defaultApplications = { "text/html" = "qutebrowser.desktop";};
 }
