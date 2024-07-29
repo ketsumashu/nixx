@@ -55,7 +55,7 @@
 
   wayland.windowManager.hyprland.settings = {
     "$mod" = "Super_L";
-    "$terminal" = "foot";
+    "$terminal" = "kitty";
 
     monitor = [
       "HDMI-A-1,2560x1440@144,0x0,1"
