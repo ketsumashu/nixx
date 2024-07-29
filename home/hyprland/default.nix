@@ -36,7 +36,6 @@
     keyutils
     python312Packages.pyperclip
     pcmanfm
-    hyprcursor
   ];
 
   home.sessionVariables = {
