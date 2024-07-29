@@ -19,6 +19,7 @@
       systemd-boot.enable = true;
       systemd-boot.consoleMode = "max";
       efi.canTouchEfiVariables = true;
+      timeout = 1;
     };
     kernelModules = ["kvm-amd"];
     blacklistedKernelModules = ["k10temp"];
