@@ -41,7 +41,7 @@
 
       # Black
       color0 #525566
-      color8 #6667bf
+      color8 #666b7f
 
       # Red
       color1 #a994b8
@@ -49,10 +49,10 @@
 
       # Green
       color2  #77adb1
-      color10 #f0ecfe
+      color10 #94cdd1
 
       # Yellow
-      color3  #94cdd1
+      color3  #c5c4d4
       color11 #f0ecfe
 
       # Blue
