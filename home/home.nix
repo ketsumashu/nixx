@@ -2,8 +2,8 @@
   imports = [
     ./hyprland
     ./nvim
-    ./foot
     ./fish
+    ./terminals
     ./waybar
     ./starship
     ./libskk

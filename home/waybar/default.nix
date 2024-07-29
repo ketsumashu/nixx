@@ -106,7 +106,7 @@
     };
     style = ''
       * {
-          font-family: "Cozette,mplus12";
+          font-family: "Fira Code Nerd Font,PlemolJP35 Console HS";
           font-size: 12px;
           min-height: 0;
       }
