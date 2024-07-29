@@ -1,7 +1,4 @@
-{
-  pkgs,
-  ...
-}: let
+{pkgs, ...}: let
   scr = pkgs.writeShellScriptBin "scr" ''
 
     kitty --app-id Floaterm  -e nvim -c 'startinsert' -c 'set binary noeol' /tmp/scr || exit 1

@@ -4,7 +4,12 @@
   inputs,
   ...
 }: {
-  imports = [./hyprlock.nix ./xdph.nix inputs.hyprland.homeManagerModules.default];
+  imports = [
+    ./hyprcursor.nix
+    ./hyprlock.nix
+    ./xdph.nix
+    inputs.hyprland.homeManagerModules.default
+  ];
 
   home.packages = with pkgs; [
     wl-clipboard
