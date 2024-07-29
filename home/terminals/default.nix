@@ -35,41 +35,41 @@
       click_interval 0.5
       cursor_blink_interval 0
       modify_font cell_width 100%
-      background #1b1c28
+      background #191c25
       foreground #a6accd
       cursor     #e0def4
 
       # Black
-      color0 #1b1c28
-      color8 #a6accd
+      color0 #525566
+      color8 #6667bf
 
       # Red
-      color1 #d0679d
-      color9 #d0679d
+      color1 #a994b8
+      color9 #cdb6dd
 
       # Green
-      color2  #5de4c7
-      color10 #5de4c7
+      color2  #77adb1
+      color10 #f0ecfe
 
       # Yellow
-      color3  #d0679d
-      color11 #d0679d
+      color3  #94cdd1
+      color11 #f0ecfe
 
       # Blue
-      color4  #5de4c7
-      color12 #5de4c7
+      color4  #889bb4
+      color12 #afc5de
 
       # Magenta
-      color5  #d0679d
-      color13 #d0679d
+      color5  #a994b8
+      color13 #cdb6dd
 
       # Cyan
-      color6  #add7ff
-      color14 #add7ff
+      color6  #77adb1
+      color14 #94cdd1
 
       # White
-      color7  #ffffff
-      color15 #ffffff
+      color7  #c5c4d4
+      color15 #f0ecfe
 
     '';
   };

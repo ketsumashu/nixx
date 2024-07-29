@@ -45,7 +45,7 @@ in {
       editor.command = ["kitty" "-e" "nvim" "{file}"];
       content.javascript.clipboard = "access-paste";
       fonts = {
-        default_family = ["Fira Code Nerd Font" "PlemolJP35 HS Console"];
+        default_family = ["Fira Code Nerd Font" "PlemolJP35 Console HS"];
         default_size = "11px";
         web.family = {
           sans_serif = "PlemolJP35 Console HS";
