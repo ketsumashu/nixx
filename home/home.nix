@@ -10,8 +10,8 @@
     ./rofi
     ./mako
     ./localfont
-    ./qutebrowser
     ./scripts
+    ./firefox
   ];
 
   home = {
