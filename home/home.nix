@@ -12,7 +12,6 @@
     ./localfont
     ./scripts
     ./firefox
-    ./qutebrowser
   ];
 
   home = {
