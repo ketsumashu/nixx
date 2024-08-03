@@ -12,6 +12,7 @@
     ./localfont
     ./scripts
     ./firefox
+    ./vivaldi
   ];
 
   home = {
