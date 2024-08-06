@@ -13,6 +13,7 @@
     ./scripts
     ./firefox
     ./qutebrowser
+    ./spicetify
   ];
 
   home = {
