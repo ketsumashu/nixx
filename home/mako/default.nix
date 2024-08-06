@@ -16,7 +16,7 @@
     borderSize = 2;
     borderRadius = 6;
     defaultTimeout = 5000;
-    font = "Cozette,mplus12 11px";
+    font = "PlemolJP35 Console HS 13px";
 
     extraConfig = ''
       format=<b>%s</b>\n\n%b

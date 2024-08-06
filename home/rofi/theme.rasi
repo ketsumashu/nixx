@@ -10,7 +10,7 @@
     grey: #94cdd1;
 
     width:700;
-    font: "Cozette,mplus12 10";
+    font: "PlemolJP35 Console HS 10";
 }
 
 element-text, element-icon , mode-switcher {
