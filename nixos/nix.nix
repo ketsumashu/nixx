@@ -34,6 +34,7 @@
       cups
       dbus
       libdrm
+      gdk-pixbuf
     ];
   };
 
