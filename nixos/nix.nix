@@ -32,6 +32,7 @@
       nspr
       atk
       cups
+      dbus
     ];
   };
 
