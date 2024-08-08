@@ -17,33 +17,5 @@
     flake = "/home/mashu/nixx/";
   };
 
-  programs.nix-ld = {
-    enable = true;
-    libraries = with pkgs; [
-      stdenv.cc.cc
-      zlib
-      glib
-      fuse3
-      icu
-      nss
-      openssl
-      curl
-      expat
-      nspr
-      atk
-      cups
-      dbus
-      libdrm
-      gdk-pixbuf
-      gtk3
-      gtk4
-      pango
-      cairo
-      xorg.libX11
-      xorg.libXcomposite
-    ];
-  };
-
-
   system.stateVersion = "24.05";
 }
