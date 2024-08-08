@@ -38,6 +38,7 @@
       gtk3
       gtk4
       pango
+      cairo
     ];
   };
 
