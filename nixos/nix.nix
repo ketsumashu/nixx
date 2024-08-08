@@ -31,6 +31,7 @@
       expat
       nspr
       atk
+      cups
     ];
   };
 
