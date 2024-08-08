@@ -39,7 +39,8 @@
       gtk4
       pango
       cairo
-      xorg
+      xorg.libX11
+      xorg.libXcomposite
     ];
   };
 
