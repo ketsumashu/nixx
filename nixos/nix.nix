@@ -29,6 +29,7 @@
       openssl
       curl
       expat
+      nspr
     ];
   };
 
