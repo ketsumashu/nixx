@@ -1,4 +1,4 @@
-{
+{pkgs, ...}:{
   nixpkgs.config.allowUnfree = true;
 
   nix = {
@@ -16,6 +16,21 @@
     clean.extraArgs = "all";
     flake = "/home/mashu/nixx/";
   };
+
+  programs.nix-ld = {
+    enable = true;
+    libraries = with pkgs; [
+      stdenv.cc.cc
+      zlib
+      fuse3
+      icu
+      nss
+      openssl
+      curl
+      expat
+    ];
+  };
+
 
   system.stateVersion = "24.05";
 }
