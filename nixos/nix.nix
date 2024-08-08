@@ -39,8 +39,7 @@
       gtk4
       pango
       cairo
-      xorg
-      wayland
+      xorg.libX11
     ];
   };
 
