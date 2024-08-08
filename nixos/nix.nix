@@ -37,6 +37,7 @@
       gdk-pixbuf
       gtk3
       gtk4
+      pango
     ];
   };
 
