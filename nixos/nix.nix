@@ -39,6 +39,8 @@
       gtk4
       pango
       cairo
+      xorg
+      wayland
     ];
   };
 
