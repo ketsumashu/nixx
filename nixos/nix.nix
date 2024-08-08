@@ -35,6 +35,8 @@
       dbus
       libdrm
       gdk-pixbuf
+      gtk3
+      gtk4
     ];
   };
 
