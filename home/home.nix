@@ -13,7 +13,7 @@
     ./scripts
     ./firefox
     ./qutebrowser
-    ./brave
+    ./vivaldi
     ./spicetify
   ];
 
