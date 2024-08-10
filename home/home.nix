@@ -11,9 +11,7 @@
     ./mako
     ./localfont
     ./scripts
-    ./firefox
     ./qutebrowser
-    ./vivaldi
     ./spicetify
   ];
 

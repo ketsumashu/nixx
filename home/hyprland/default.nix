@@ -37,10 +37,7 @@
     which
     gh
     git
-    bitwarden-cli
-    keyutils
-    python312Packages.pyperclip
-    pcmanfm
+    yazi
   ];
 
   home.sessionVariables = {
@@ -209,7 +206,7 @@
       [
         "$mod, B, exec, qutebrowser"
         "$mod, E, exec, vesktop --gtk-version=4 --ozone-platform=wayland"
-        "$mod, S, exec, steam -gamepadui"
+        "$mod, S, exec, steam"
         "$mod, I, exec, scr"
         "$mod, Return, exec, $terminal"
         "$mod, Space, exec, rofi -show drun"
@@ -269,7 +266,7 @@
     };
     font = {
       name = "PlemolJP35 Console HS Bold";
-      size = 11;
+      size = 10;
     };
   };
   dconf.settings = {
