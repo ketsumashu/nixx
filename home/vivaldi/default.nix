@@ -1,10 +1,9 @@
 {pkgs, ...}:{
   programs.chromium = {
     enable = true;
-    package = pkgs.chromium;
+    package = pkgs.vivaldi;
     commandLineArgs = [
-      "--ozone-platform-hint=wayland"
-      "--gtk-version=4"
+      "--ozone-platform-hint=auto"
     ];
   };
 }
