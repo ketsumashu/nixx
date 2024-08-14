@@ -272,7 +272,7 @@ in {
         indicator = {
           width = 3;
         };
-        position = "bottom";
+        position = "left";
         width = 220;
         show = "always";
         show_switching_delay = 800;
@@ -287,7 +287,7 @@ in {
       c.statusbar.padding = { "bottom":2, "right":5, "left":5, "top":2 }
       c.tabs.padding = { "bottom":2, "right":5, "left":5, "top":2 }
       c.tabs.title.format = "{current_title}"
-      c.tabs.title.format_pinned = "]{current_title}"
+      c.tabs.title.format_pinned = "{current_title}"
       c.statusbar.widgets = ["keypress", "search_match","url","scroll","history","progress","clock"]
       config.unbind("O")
       config.load_autoconfig(False)
