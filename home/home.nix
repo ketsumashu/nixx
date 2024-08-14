@@ -12,7 +12,6 @@
     ./localfont
     ./scripts
     ./qutebrowser
-    ./vivaldi
     ./spicetify
   ];
 
