@@ -1,6 +1,7 @@
 {pkgs, ...}: {
   wayland.windowManager.sway = {
     enable = true;
+    checkConfig = false;
     extraConfig = ''
       ### Variables
       set $mod Mod4
