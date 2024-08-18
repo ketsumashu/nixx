@@ -2,27 +2,37 @@
   wayland.windowManager.sway = {
     enable = true;
     checkConfig = false;
+    config = {
+      modifier = "Mod4";
+      terminal = "kitty";
+      menu = "${pkgs.rofi-wayland}/bin/rofi -show drun";
+      output = {
+        "HDMI-A-1" = {
+          pos = "0 0";
+          scale = "1";
+          mode = "2560x1440@144Hz";
+        };
+        "HDMI-A-2" = {
+          pos = "2560 -600";
+          scale = "1";
+          mode = "2560x1440@100Hz";
+          transform = "270";
+        };
+      };
+      gaps = {
+        outer = 2;
+        inner = 4;
+      };
+      startup = [
+        {command = "swww-daemon";}
+        {command = "waybar";}
+        {command = "vesktop --gtk-version=4 --ozone-platform-hint=auto";}
+        {command = "autotiling-rs";}.always = true;
+      ];
+    };
     extraConfig = ''
-      ### Variables
-      set $mod Mod4
-      set $left h
-      set $down j
-      set $up k
-      set $right l
-      set $term kitty
-      set $menu "rofi -show drun"
-      ### startups
-      exec swww-daemon
-      exec fcitx5 -rd
-      exec waybar
-      exec vesktop --gtk-version=4 --ozone-platform-hint=auto
-      exec_always autotiling-rs
-      exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
       bindsym $mod+b exec qutebrowser
       bindsym $mod+ctrl+l exec hyprlock
-
-      gaps outer 2
-      gaps inner 4
       default_border pixel 3
       titlebar_border_thickness 2
       titlebar_padding 15
@@ -35,7 +45,6 @@
       for_window [title = "拡張機能: (Bitwarden Password Manager) - Bitwarden — Mozilla Firefox"] floating enable
       for_window [window_role = "About"] floating enable
       for_window [app_id="firefox" title="Library"] floating enable, border pixel 1, sticky enable
-
       for_window [class="^steam$" title="^Friends$"] floating enable
       for_window [class="^steam$" title="Steam - News"] floating enable
       for_window [class="^steam$" title=".* - Chat"] floating enable
@@ -46,10 +55,6 @@
       for_window [class="^steam$" title="^Screenshot Uploader$"] floating enable
       for_window [class="^steam$" title="^Steam Guard - Computer Authorization Required$"] floating enable
       for_window [title="^Steam Keyboard$"] floating enable
-      ### Output configuration
-      output HDMI-A-1 pos 0 0 resolution 2560x1440@144Hz scale 1
-      output HDMI-A-2 pos 2560 -600 resolution 2560x1440@100Hz scale 1 transform 270
-
       ### Input configuration
          input "*" {
          	xkb_layout "us"
