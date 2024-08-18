@@ -3,5 +3,5 @@
   wayland.windowManager.sway =  {
     enable = true;
   };
-  xdg.configFile."sway/config".source = ./config;
+  xdg.configFile."sway/config" = ./config;
 }
