@@ -2,7 +2,6 @@
 
   wayland.windowManager.sway =  {
     enable = true;
-  };
   extraConfig = ''
 ### Variables
 set $mod Mod4
@@ -231,4 +230,5 @@ client.background       #000000
 #    }
 #}
 '';
+  };
 }
