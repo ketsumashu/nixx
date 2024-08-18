@@ -15,7 +15,7 @@ set $menu "rofi -show drun"
 ### startups
 exec swww-daemon
 exec fcitx5 -rd
-exec waybar -c ~/dotfiles/waybar/config_swayfx
+exec waybar
 exec vesktop --gtk-version=4 --ozone-platform-hint=auto
 exec_always autotiling-rs
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
