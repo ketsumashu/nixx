@@ -3,7 +3,7 @@
   wayland.windowManager.sway =  {
     enable = true;
   };
-  xdg.configFile."sway/config".text = ''
+  extraConfig = ''
 ### Variables
 set $mod Mod4
 set $left h
