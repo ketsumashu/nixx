@@ -27,7 +27,7 @@
         {command = "swww-daemon";}
         {command = "waybar";}
         {command = "vesktop --gtk-version=4 --ozone-platform-hint=auto";}
-        {command = "autotiling-rs";}.always = true;
+        {command = "autotiling-rs";}
       ];
     };
     extraConfig = ''
