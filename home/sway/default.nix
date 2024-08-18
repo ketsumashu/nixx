@@ -22,7 +22,6 @@
 
       gaps outer 2
       gaps inner 4
-      corner_radius 12
       default_border pixel 3
       titlebar_border_thickness 2
       titlebar_padding 15
