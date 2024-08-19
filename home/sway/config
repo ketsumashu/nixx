@@ -20,7 +20,7 @@ gaps outer 2
 gaps inner 4
 default_border pixel 3
 titlebar_border_thickness 2
-titlebar_padding 1
+titlebar_padding 3
 ### floating setting
 for_window [app_id="pavucontrol"] floating enable
 for_window [app_id="Floaterm"] floating enable
