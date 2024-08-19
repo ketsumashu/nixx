@@ -13,6 +13,7 @@ exec vesktop --gtk-version=4 --ozone-platform-hint=auto
 exec_always autotiling-rs
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 bindsym $mod+b exec qutebrowser
+bindsym $mod+i exec scr
 bindsym $mod+ctrl+l exec hyprlock
 
 gaps outer 2
@@ -22,6 +23,7 @@ titlebar_border_thickness 2
 titlebar_padding 15
 ### floating setting
 for_window [app_id="pavucontrol"] floating enable
+for_window [app_id="floaterm"] floating enable
 for_window [class="^steam$" title="^Friends$"] floating enable
 for_window [class="^steam$" title="Steam - News"] floating enable
 for_window [class="^steam$" title=".* - Chat"] floating enable
