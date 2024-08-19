@@ -1,6 +1,7 @@
 {
   imports = [
     ./hyprland
+    ./sway
     ./nvim
     ./fish
     ./terminals
