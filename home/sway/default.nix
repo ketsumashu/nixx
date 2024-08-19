@@ -14,5 +14,6 @@
   home.packages = with pkgs;[
     autotiling-rs
     i3status-rust
+    libappindicator-gtk3
   ];
 }

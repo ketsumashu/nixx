@@ -31,7 +31,8 @@ for_window [class="^steam$" title="^Steam - Self Updater$"] floating enable
 for_window [class="^steam$" title="^Screenshot Uploader$"] floating enable
 for_window [class="^steam$" title="^Steam Guard - Computer Authorization Required$"] floating enable
 for_window [title="^Steam Keyboard$"] floating enable
-assign [app_id = "^vesktop"] -> 5
+assign [app_id = "^vesktop"] workspace number 5
+assign [class = "^steam"] workspace number 2
 ### Output configuration
 output HDMI-A-1 pos 0 0 resolution 2560x1440@144Hz scale 1
 output HDMI-A-2 pos 2560 -600 resolution 2560x1440@100Hz scale 1 transform 270
