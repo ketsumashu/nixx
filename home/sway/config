@@ -23,7 +23,7 @@ titlebar_border_thickness 2
 titlebar_padding 15
 ### floating setting
 for_window [app_id="pavucontrol"] floating enable
-for_window [app_id="floaterm"] floating enable
+for_window [app_id="Floaterm"] floating enable
 for_window [class="^steam$" title="^Friends$"] floating enable
 for_window [class="^steam$" title="Steam - News"] floating enable
 for_window [class="^steam$" title=".* - Chat"] floating enable
