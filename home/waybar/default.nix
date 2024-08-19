@@ -9,7 +9,7 @@
         position = "bottom";
         output = ["HDMI-A-1" "HDMI-A-2"];
         height = 22;
-        margin-top = 8;
+        margin-top = 0;
         margin-bottom = 0;
         spacing = 15;
         modules-left = ["sway/window"];
@@ -136,13 +136,13 @@
       }
 
       #workspaces button {
-          padding:  10px 0px;
+          padding:  0px 0px;
           background-color: transparent;
           color: #c5c4d4;
       }
 
       #workspaces button.persistent {
-          padding:  10px 0px;
+          padding:  0px 0px;
           background-color: transparent;
           color: #c5c4d4;
       }
@@ -177,7 +177,7 @@
 
       #window{
           color:#c5c4d4;
-          padding: 100px 20px;
+          padding: 0px 0px;
       }
       #workspaces {
           margin: 0 0px;
