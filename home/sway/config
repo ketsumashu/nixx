@@ -206,7 +206,7 @@ client.background       #000000
 # Status Bar:
 #
 bar {
-    position left
+    position bottom
     status_command i3status-rs
     font pango:Fira Code,Blobmoji 12px
     tray_output *
