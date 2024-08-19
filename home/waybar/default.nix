@@ -8,7 +8,7 @@
         layer = "top";
         position = "bottom";
         output = ["HDMI-A-1" "HDMI-A-2"];
-        height = 50;
+        height = 22;
         margin-top = 8;
         margin-bottom = 8;
         spacing = 15;
