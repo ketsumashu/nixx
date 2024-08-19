@@ -8,7 +8,6 @@ set $term kitty
 set $menu "rofi -show drun"
 ### startups
 exec swww-daemon
-exec fcitx5 -rd
 exec vesktop --gtk-version=4 --ozone-platform-hint=auto
 exec_always autotiling-rs
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
@@ -22,14 +21,6 @@ titlebar_border_thickness 2
 titlebar_padding 15
 ### floating setting
 for_window [app_id="pavucontrol"] floating enable
-for_window [class="fcitx5-config-qt"] floating enable
-for_window [title="Firefox — Sharing Indicator"] kill
-for_window [title="Firefox — Sharing Indicator"] kill
-for_window [title = "About Mozilla Firefox"] floating enable
-for_window [title = "拡張機能: (Bitwarden Password Manager) - Bitwarden — Mozilla Firefox"] floating enable
-for_window [window_role = "About"] floating enable
-for_window [app_id="firefox" title="Library"] floating enable, border pixel 1, sticky enable
-
 for_window [class="^steam$" title="^Friends$"] floating enable
 for_window [class="^steam$" title="Steam - News"] floating enable
 for_window [class="^steam$" title=".* - Chat"] floating enable
@@ -40,6 +31,7 @@ for_window [class="^steam$" title="^Steam - Self Updater$"] floating enable
 for_window [class="^steam$" title="^Screenshot Uploader$"] floating enable
 for_window [class="^steam$" title="^Steam Guard - Computer Authorization Required$"] floating enable
 for_window [title="^Steam Keyboard$"] floating enable
+assign [app_id = "^vesktop"] -> 5
 ### Output configuration
 output HDMI-A-1 pos 0 0 resolution 2560x1440@144Hz scale 1
 output HDMI-A-2 pos 2560 -600 resolution 2560x1440@100Hz scale 1 transform 270
