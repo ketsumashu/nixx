@@ -6,9 +6,9 @@
     settings = {
       mainBar = {
         layer = "top";
-        position = "left";
+        position = "bottom";
         output = ["HDMI-A-1" "HDMI-A-2"];
-        width = 50;
+        height = 50;
         margin-top = 8;
         margin-bottom = 8;
         spacing = 15;
@@ -30,7 +30,6 @@
         "hyprland/window" = {
           format = "{initialTitle}";
           max-length = 49;
-          rotate = 270;
         };
 
         "temperature#cpu" = {
