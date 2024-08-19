@@ -180,8 +180,8 @@
       #clock {
           color: #94cdd1;
           font-size: 12px;
-          margin-bottom: 2px;
-          padding-bottom: 4px;
+          margin-bottom: 0px;
+          padding-bottom: 0px;
       }
 
       @keyframes blink {
@@ -211,7 +211,6 @@
 
       #tray {
           color: #f5f5f5;
-          padding-bottom:10px;
       }
 
       #idle_inhibitor {
