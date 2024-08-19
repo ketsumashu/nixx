@@ -208,7 +208,7 @@ client.background       #000000
 bar {
     position bottom
     status_command i3status-rs
-    font pango:Fira Code,Blobmoji 12px
+    font pango:PlemolJP35 Console HS,Blobmoji 12px
     tray_output *
     colors {
     	background #191c25
