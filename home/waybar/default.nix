@@ -10,7 +10,7 @@
         output = ["HDMI-A-1" "HDMI-A-2"];
         height = 22;
         margin-top = 8;
-        margin-bottom = 8;
+        margin-bottom = 0;
         spacing = 15;
         modules-left = ["hyprland/window"];
         modules-center = ["hyprland/workspaces"];
@@ -112,8 +112,8 @@
 
       window#waybar {
           background-color: rgba(25,28,37,0.95);
-          border-top-right-radius:12px;
-          border-bottom-right-radius:12px;
+          border-top-right-radius:0px;
+          border-bottom-right-radius:0px;
       }
 
       window#waybar.hidden {
