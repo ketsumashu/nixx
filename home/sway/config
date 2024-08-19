@@ -8,6 +8,7 @@ set $term kitty
 set $menu "rofi -show drun"
 ### startups
 exec swww-daemon
+exec waybar
 exec vesktop --gtk-version=4 --ozone-platform-hint=auto
 exec_always autotiling-rs
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
@@ -197,23 +198,23 @@ client.background       #000000
 
 #
 # Status Bar:
+##
+#bar {
+#    position bottom
+#    status_command s
+#    font pango:PlemolJP35 Console HS,Blobmoji 12px
+#    tray_output *
+#    colors {
+#    	background #191c25
+#    	statusline #D8DEE9
+#    	separator  #666666
 #
-bar {
-    position bottom
-    status_command i3status-rs
-    font pango:PlemolJP35 Console HS,Blobmoji 12px
-    tray_output *
-    colors {
-    	background #191c25
-    	statusline #D8DEE9
-    	separator  #666666
-
-    	focused_workspace  #191c25 #191c25 #889bb4
-    	active_workspace   #191c25 #191c25 #BBFBF1
-    	inactive_workspace #191c25 #191c25 #D8DEE9
-    	urgent_workspace   #BF616A #BF616A #191c25
-    	binding_mode       #2E3440 #BF616A #191c25
-    }
-}
+#    	focused_workspace  #191c25 #191c25 #889bb4
+#    	active_workspace   #191c25 #191c25 #BBFBF1
+#    	inactive_workspace #191c25 #191c25 #D8DEE9
+#    	urgent_workspace   #BF616A #BF616A #191c25
+#    	binding_mode       #2E3440 #BF616A #191c25
+#    }
+#}
 
 include /etc/sway/config.d/*

@@ -12,8 +12,8 @@
         margin-top = 8;
         margin-bottom = 0;
         spacing = 15;
-        modules-left = ["hyprland/window"];
-        modules-center = ["hyprland/workspaces"];
+        modules-left = ["sway/window"];
+        modules-center = ["sway/workspaces"];
         modules-right = ["pulseaudio" "memory" "temperature#cpu" "temperature#gpu" "clock" "tray"];
 
         "hyprland/workspaces" = {
@@ -29,6 +29,21 @@
 
         "hyprland/window" = {
           format = "{initialTitle}";
+          max-length = 49;
+        };
+
+        "sway/workspaces" = {
+          format = "{name}";
+          all-outputs = false;
+          persistent-workspaces = {
+            "HDMI-A-1" = [1 2 3 4];
+            "HDMI-A-2" = [5 6 7 8 9];
+          };
+          disable-scroll = false;
+        };
+
+        "sway/window" = {
+          format = "{title}";
           max-length = 49;
         };
 
