@@ -9,6 +9,9 @@ set $menu "rofi -show drun"
 ### startups
 exec swww-daemon
 exec waybar
+exec arrpc
+exec openrgb
+exec steam
 exec vesktop --gtk-version=4 --ozone-platform-hint=auto
 exec_always autotiling-rs
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
@@ -41,11 +44,11 @@ output HDMI-A-1 pos 0 0 resolution 2560x1440@144Hz scale 1
 output HDMI-A-2 pos 2560 -600 resolution 2560x1440@100Hz scale 1 transform 270
 
 ### Input configuration
-   input "*" {
-   	xkb_layout "us"
-	repeat_delay 270
-	repeat_rate 50
-    xkb_options ctrl:nocaps
+input "*" {
+ 	xkb_layout "us"
+  repeat_delay 270
+  repeat_rate 50
+  xkb_options ctrl:nocaps
    }
 
 # You can get the names of your inputs by running: swaymsg -t get_inputs
