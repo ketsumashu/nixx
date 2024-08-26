@@ -13,6 +13,7 @@
     ./localfont
     ./scripts
     ./qutebrowser
+    ./programs
   ];
 
   home = {
