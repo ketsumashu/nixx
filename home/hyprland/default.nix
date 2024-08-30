@@ -157,10 +157,8 @@
     exec-once = [
       "systemctl --user enable xdg-desktop-portal-hyprland"
       "mako"
-      "fcitx5 -rd"
       "waybar"
       "arrpc"
-      "blueman-applet"
       "hyprctl dispatch exec \"\[workspace 2 silent\]\" steam"
       "hyprctl dispatch exec \"\[workspace 5 silent\]\" \"vesktop --gtk-version=4 --ozone-platform=wayland\""
       "swww-daemon"
@@ -176,7 +174,7 @@
 
     bind =
       [
-        "$mod, B, exec, qutebrowser"
+        "$mod, B, exec, firefox"
         "$mod, E, exec, vesktop --gtk-version=4 --ozone-platform=wayland"
         "$mod, S, exec, steam"
         "$mod, I, exec, scr"

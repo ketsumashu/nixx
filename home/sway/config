@@ -17,7 +17,7 @@ exec wl-paste --type text --watch cliphist store
 exec wl-paste --type image --watch cliphist store
 exec_always autotiling-rs
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
-bindsym $mod+b exec qutebrowser
+bindsym $mod+b exec firefox
 bindsym $mod+i exec scr
 bindsym $mod+ctrl+l exec hyprlock
 
