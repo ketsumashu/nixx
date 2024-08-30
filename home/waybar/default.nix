@@ -6,7 +6,7 @@
     settings = {
       mainBar = {
         layer = "top";
-        position = "bottom";
+        position = "top";
         output = ["HDMI-A-1" "HDMI-A-2"];
         height = 22;
         margin-top = 0;
