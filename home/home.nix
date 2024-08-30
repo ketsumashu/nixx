@@ -14,6 +14,7 @@
     ./scripts
     ./qutebrowser
     ./firefox
+    ./vivaldi
     ./programs
   ];
 
