@@ -12,8 +12,8 @@
         margin-top = 0;
         margin-bottom = 0;
         spacing = 15;
-        modules-left = ["sway/workspaces"];
-        modules-center = ["sway/window"];
+        modules-left = ["sway/workspaces" "hyprland/workspaces"];
+        modules-center = ["sway/window" "hyprland/window"];
         modules-right = ["pulseaudio" "memory" "temperature#cpu" "temperature#gpu" "clock" "tray"];
 
         "hyprland/workspaces" = {

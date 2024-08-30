@@ -10,9 +10,11 @@ set $menu "rofi -show drun"
 exec swww-daemon
 exec waybar
 exec arrpc
-exec openrgb
+exec openrgb --startminimized -p ~/.config/OpenRGB/pro.orp
 exec steam
 exec vesktop --gtk-version=4 --ozone-platform-hint=auto
+exec wl-paste --type text --watch cliphist store
+exec wl-paste --type image --watch cliphist store
 exec_always autotiling-rs
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 bindsym $mod+b exec qutebrowser
@@ -30,7 +32,7 @@ for_window [app_id="Floaterm"] floating enable
 for_window [class="^steam$" title="^Friends$"] floating enable
 for_window [class="^steam$" title="Steam - News"] floating enable
 for_window [class="^steam$" title=".* - Chat"] floating enable
-for_window [class="^steam$" title="^Settings$"] floating enable
+for_window [class="^steam$" title="Settings$"] floating enable
 for_window [class="^steam$" title=".* - event started"] floating enable
 for_window [class="^steam$" title=".* CD key"] floating enable
 for_window [class="^steam$" title="^Steam - Self Updater$"] floating enable
