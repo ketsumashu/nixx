@@ -1,17 +1,10 @@
 {pkgs, ...}: {
   programs.firefox = {
     enable = true;
-    package = pkgs.firefox;
+    package = pkgs.floorp;
     nativeMessagingHosts = with pkgs; [
       tridactyl-native
     ];
-  };
-
-  xdg.mimeApps.defaultApplications = {
-    "text/html" = ["firefox.desktop"];
-    "text/xml" = ["firefox.desktop"];
-    "x-scheme-handler/http" = ["firefox.desktop"];
-    "x-scheme-handler/https" = ["firefox.desktop"];
   };
 
   xdg.configFile."tridactyl/themes/poimandres.css".source = ./tridactyl/poimandres.css;
