@@ -12,7 +12,6 @@
     ./mako
     ./localfont
     ./scripts
-    ./qutebrowser
     ./firefox
     ./programs
   ];
