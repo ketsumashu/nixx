@@ -20,6 +20,7 @@ in {
       hidePodcasts
       playlistIcons
       keyboardShortcut
+      adblockify
     ];
   };
 }
