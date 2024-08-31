@@ -14,6 +14,7 @@
     ./scripts
     ./firefox
     ./programs
+    ./spicetify
   ];
 
   home = {
