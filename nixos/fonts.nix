@@ -8,7 +8,6 @@
       noto-fonts-cjk-sans
       noto-fonts-cjk-serif
       plemoljp-hs
-      tewi-font
     ];
     fontDir.enable = true;
     fontconfig.enable = true;
