@@ -15,6 +15,7 @@
     ./firefox
     ./programs
     ./spicetify
+    ./gui
   ];
 
   home = {
