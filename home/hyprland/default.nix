@@ -227,7 +227,7 @@
     enable = true;
     theme = {
       package = pkgs.tokyonight-gtk-theme;
-      name = "Tokyonight-Teal-Dark";
+      name = "Tokyonight-Dark";
     };
 
     iconTheme = {
