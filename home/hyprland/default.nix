@@ -1,14 +1,12 @@
 {
   config,
   pkgs,
-  inputs,
   ...
 }: {
   imports = [
     ./hyprcursor.nix
     ./hyprlock.nix
     ./xdph.nix
-    inputs.hyprland.homeManagerModules.default
   ];
 
 
