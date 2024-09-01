@@ -226,8 +226,8 @@
   gtk = {
     enable = true;
     theme = {
-      package = pkgs.nightfox-gtk-theme;
-      name = "Nightfox-Dark";
+      package = pkgs.tokyonight-gtk-theme;
+      name = "Tokyonight-Teal-Dark";
     };
 
     iconTheme = {
