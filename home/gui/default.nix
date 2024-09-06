@@ -1,5 +1,9 @@
- {pkgs, config, ...}:{
- qt = {
+{
+  pkgs,
+  config,
+  ...
+}: {
+  qt = {
     enable = true;
     platformTheme.name = "gtk";
     style.name = "adwaita-dark";
@@ -39,4 +43,3 @@
     "gtk-4.0/gtk-dark.css".source = "${config.gtk.theme.package}/share/themes/${config.gtk.theme.name}/gtk-4.0/gtk-dark.css";
   };
 }
-

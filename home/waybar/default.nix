@@ -36,8 +36,14 @@
           format = "{name}";
           all-outputs = false;
           persistent-workspaces = {
-            "HDMI-A-1" = [1 2 3 4];
-            "HDMI-A-2" = [5 6 7 8 9];
+            "1" = ["HDMI-A-1"];
+            "2" = ["HDMI-A-1"];
+            "3" = ["HDMI-A-1"];
+            "4" = ["HDMI-A-1"];
+            "5" = ["HDMI-A-2"];
+            "6" = ["HDMI-A-2"];
+            "7" = ["HDMI-A-2"];
+            "8" = ["HDMI-A-2"];
           };
           disable-scroll = false;
         };
