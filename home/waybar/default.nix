@@ -160,6 +160,9 @@
       #workspaces button.active {
           color: #77adb1;
       }
+      #workspaces button.focused {
+          color: #77adb1;
+      }
 
       #workspaces button.urgent {
           background-color: #1b1e28;
