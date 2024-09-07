@@ -34,7 +34,7 @@
               owner = "vim-skk";
               repo = "skkeleton";
               rev = "882ec0c10856aadd0c2bf843b9b04cf16272a19b";
-              hash = "sha256-7qPFVnNzBgkQMD73JEhYEXxCWuGROzH8pjfPQpKwf0I=";
+              hash = "sha256-SSSSSSSSSSSSSS";
             };
           };
           dependencies = with pkgs.vimPlugins; [
