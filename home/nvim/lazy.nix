@@ -33,7 +33,7 @@
             src = pkgs.fetchFromGitHub {
               owner = "vim-skk";
               repo = "skkeleton";
-              rev = "87ad1d1f594e592ecad0429d651be45ce5fb03da";
+              rev = "882ec0c10856aadd0c2bf843b9b04cf16272a19b";
               hash = "sha256-7qPFVnNzBgkQMD73JEhYEXxCWuGROzH8pjfPQpKwf0I=";
             };
           };
