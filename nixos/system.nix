@@ -44,18 +44,10 @@
 
   swapDevices = [];
 
-  environment.systemPackages = [pkgs.tailscale];
-  services.tailscale.enable = true;
-
   networking = {
     useDHCP = false;
     hostName = "mashunix";
     useNetworkd = true;
-    firewall = {
-      enable = true;
-      trustedInterfaces = [ "tailscale0" ];
-      allowedUDPPorts = [ config.services.tailscale.port ];
-    };
   };
 
   systemd.network = {
