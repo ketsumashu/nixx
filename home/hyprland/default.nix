@@ -120,7 +120,7 @@
       "float,class:^(blueman-manager)$"
       "float,title:(Save File)$"
       "float,title:^(blob)"
-      "float,class:^(pavu)"
+      "float,class:^(org.pulseaudio.pavu)"
       "float,maxsize 400 100,class:^(Floaterm)"
       "float,title:^(ncspot)"
       "float,title:^(.blueman-manager)"
