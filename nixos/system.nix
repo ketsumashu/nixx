@@ -44,7 +44,7 @@
 
   swapDevices = [];
 
-  setvices.tailscale.enable = true;
+  services.tailscale.enable = true;
 
   networking = {
     useDHCP = false;
