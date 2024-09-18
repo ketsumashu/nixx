@@ -166,7 +166,7 @@
 
     bind =
       [
-        "$mod, B, exec, firefox"
+        "$mod, B, exec, floorp"
         "$mod, E, exec, vesktop --gtk-version=4 --ozone-platform=wayland"
         "$mod, S, exec, steam"
         "$mod, I, exec, scr"
