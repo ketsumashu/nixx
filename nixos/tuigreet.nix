@@ -3,7 +3,7 @@
     enable = true;
     settings = {
       default_session = {
-        command = "tuigreet --cmd sway";
+        command = "tuigreet --cmd Hyprland";
         user = "greeter";
       };
     };
