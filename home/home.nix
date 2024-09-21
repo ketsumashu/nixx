@@ -14,7 +14,6 @@
     ./firefox
     ./programs
     ./spicetify
-    ./qutebrowser
     ./gui
   ];
 
