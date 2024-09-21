@@ -26,7 +26,6 @@
     gh
     git
     yazi
-    xfce.tumbler
-    xfce.thunar
+    nautilus
   ];
 }
