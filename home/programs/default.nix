@@ -26,7 +26,7 @@
     gh
     git
     yazi
-    pcmanfm
+    nemo
     libopenraw
   ];
 }
