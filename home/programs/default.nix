@@ -27,6 +27,6 @@
     git
     yazi
     nemo
-    libopenraw
+    xfce.tumbler
   ];
 }
