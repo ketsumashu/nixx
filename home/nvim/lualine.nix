@@ -16,7 +16,8 @@ let
     bg = "#none";
     fg = "#ffffff";
   };
-in {
+in
+{
   programs.nixvim.plugins.lualine = {
     enable = true;
     alwaysDivideMiddle = true;

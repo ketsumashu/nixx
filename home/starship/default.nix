@@ -14,7 +14,9 @@
         renamed = "r";
         deleted = "x";
       };
-      git_commit = { tag_symbol = " tag "; };
+      git_commit = {
+        tag_symbol = " tag ";
+      };
       time = {
         disabled = false;
         style = "blue";

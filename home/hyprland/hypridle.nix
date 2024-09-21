@@ -1,4 +1,5 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
+{
   home.packages = with pkgs; [ hypridle ];
 
   xdg.configFile."hypr/hypridle.conf".text = ''

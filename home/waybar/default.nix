@@ -1,19 +1,31 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
+{
   programs.waybar = {
     enable = true;
     package = pkgs.waybar;
-    systemd = { enable = false; };
+    systemd = {
+      enable = false;
+    };
     settings = {
       mainBar = {
         layer = "top";
         position = "top";
-        output = [ "HDMI-A-1" "HDMI-A-2" ];
+        output = [
+          "HDMI-A-1"
+          "HDMI-A-2"
+        ];
         height = 22;
         margin-top = 0;
         margin-bottom = 0;
         spacing = 15;
-        modules-left = [ "sway/workspaces" "hyprland/workspaces" ];
-        modules-center = [ "sway/window" "hyprland/window" ];
+        modules-left = [
+          "sway/workspaces"
+          "hyprland/workspaces"
+        ];
+        modules-center = [
+          "sway/window"
+          "hyprland/window"
+        ];
         modules-right = [
           "pulseaudio"
           "memory"
@@ -27,8 +39,19 @@
           format = "{name}";
           all-outputs = false;
           persistent-workspaces = {
-            "HDMI-A-1" = [ 1 2 3 4 ];
-            "HDMI-A-2" = [ 5 6 7 8 9 ];
+            "HDMI-A-1" = [
+              1
+              2
+              3
+              4
+            ];
+            "HDMI-A-2" = [
+              5
+              6
+              7
+              8
+              9
+            ];
           };
           on-scroll-up = "hyprctl dispatch workspace e-1";
           on-scroll-down = "hyprctl dispatch workspace e+1";
@@ -74,7 +97,9 @@
           rotate = 0;
         };
 
-        "tray" = { spacing = 10; };
+        "tray" = {
+          spacing = 10;
+        };
 
         "clock" = {
           tooltip-format = ''
@@ -118,7 +143,11 @@
             phone = "";
             portable = "";
             car = "";
-            default = [ "" "" "" ];
+            default = [
+              ""
+              ""
+              ""
+            ];
           };
           rotate = 0;
           on-click = "pavucontrol";

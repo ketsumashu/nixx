@@ -14,8 +14,16 @@
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
   };
-  outputs = inputs@{ nixpkgs, home-manager, nixvim, nixos-hardware
-    , spicetify-nix, ... }: {
+  outputs =
+    inputs@{
+      nixpkgs,
+      home-manager,
+      nixvim,
+      nixos-hardware,
+      spicetify-nix,
+      ...
+    }:
+    {
       nixosConfigurations = {
         mashunix = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
@@ -25,7 +33,11 @@
             nixos-hardware.nixosModules.common-pc-ssd
             ./nixos
             ./overlay
-            { _module.args = { inherit inputs; }; }
+            {
+              _module.args = {
+                inherit inputs;
+              };
+            }
             home-manager.nixosModules.home-manager
             {
               home-manager = {

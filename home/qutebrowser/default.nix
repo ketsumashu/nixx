@@ -18,7 +18,8 @@ let
     red = "#a994b8";
     yellow = "#77adb1";
   };
-in {
+in
+{
   xdg.configFile."qutebrowser/greasemonkey".source = ./greasemonkey;
   programs.qutebrowser = {
     enable = true;
@@ -42,10 +43,18 @@ in {
         default_page = "https://google.com/?hl=ja";
         start_pages = [ "https://google.com/?hl=ja" ];
       };
-      editor.command = [ "kitty" "-e" "nvim" "{file}" ];
+      editor.command = [
+        "kitty"
+        "-e"
+        "nvim"
+        "{file}"
+      ];
       content.javascript.clipboard = "access-paste";
       fonts = {
-        default_family = [ "Fira Code Nerd Font" "PlemolJP35 Console HS" ];
+        default_family = [
+          "Fira Code Nerd Font"
+          "PlemolJP35 Console HS"
+        ];
         default_size = "13px";
         web.family = {
           sans_serif = "PlemolJP35 Console HS";
@@ -74,8 +83,12 @@ in {
               top = palette.border;
             };
           };
-          even = { bg = palette.background; };
-          odd = { bg = palette.background-alt; };
+          even = {
+            bg = palette.background;
+          };
+          odd = {
+            bg = palette.background-alt;
+          };
           item = {
             selected = {
               bg = palette.background;
@@ -84,33 +97,47 @@ in {
                 top = palette.green;
               };
               fg = palette.green;
-              match = { fg = palette.purple; };
+              match = {
+                fg = palette.purple;
+              };
             };
           };
-          match = { fg = palette.green; };
+          match = {
+            fg = palette.green;
+          };
           scrollbar = {
             bg = palette.background;
             fg = palette.foreground;
           };
         };
         downloads = {
-          bar = { bg = palette.background; };
+          bar = {
+            bg = palette.background;
+          };
           error = {
             bg = palette.background;
             fg = palette.red;
           };
-          stop = { bg = palette.background; };
-          system = { bg = "none"; };
+          stop = {
+            bg = palette.background;
+          };
+          system = {
+            bg = "none";
+          };
         };
         hints = {
           bg = palette.background;
           fg = palette.green;
-          match = { fg = palette.foreground-alt; };
+          match = {
+            fg = palette.foreground-alt;
+          };
         };
         keyhint = {
           bg = palette.background;
           fg = palette.purple;
-          suffix = { fg = palette.selection; };
+          suffix = {
+            fg = palette.selection;
+          };
         };
         messages = {
           error = {
@@ -162,20 +189,34 @@ in {
             bg = palette.background-alt;
             fg = palette.foreground-alt;
           };
-          progress = { bg = palette.background; };
+          progress = {
+            bg = palette.background;
+          };
           url = {
-            error = { fg = palette.red; };
-            fg = palette.foreground;
-            hover = { fg = palette.cyan; };
-            success = {
-              http = { fg = palette.green; };
-              https = { fg = palette.green; };
+            error = {
+              fg = palette.red;
             };
-            warn = { fg = palette.yellow; };
+            fg = palette.foreground;
+            hover = {
+              fg = palette.cyan;
+            };
+            success = {
+              http = {
+                fg = palette.green;
+              };
+              https = {
+                fg = palette.green;
+              };
+            };
+            warn = {
+              fg = palette.yellow;
+            };
           };
         };
         tabs = {
-          bar = { bg = palette.background; };
+          bar = {
+            bg = palette.background;
+          };
           even = {
             bg = palette.background;
             fg = palette.foreground;
@@ -230,10 +271,16 @@ in {
           selected.fg = palette.green;
         };
       };
-      hints = { border = "1px solid ${palette.background-alt}"; };
+      hints = {
+        border = "1px solid ${palette.background-alt}";
+      };
       tabs = {
-        favicons = { scale = 1; };
-        indicator = { width = 3; };
+        favicons = {
+          scale = 1;
+        };
+        indicator = {
+          width = 3;
+        };
         position = "left";
         width = 220;
         show = "always";
@@ -241,7 +288,9 @@ in {
         new_position.related = "last";
       };
       statusbar.show = "always";
-      completion = { height = "10%"; };
+      completion = {
+        height = "10%";
+      };
     };
     extraConfig = ''
       c.statusbar.padding = { "bottom":2, "right":5, "left":5, "top":2 }

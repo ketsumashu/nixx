@@ -9,4 +9,7 @@ let
         rm -f /tmp/scr
     fi
   '';
-in { home.packages = with pkgs; [ scr ]; }
+in
+{
+  home.packages = with pkgs; [ scr ];
+}

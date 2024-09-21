@@ -3,7 +3,9 @@
     lsp-format.enable = true;
     lsp = {
       enable = true;
-      servers = { nixd.enable = true; };
+      servers = {
+        nil.enable = true;
+      };
       keymaps.lspBuf = {
         "gd" = "definition";
         "gf" = "format";

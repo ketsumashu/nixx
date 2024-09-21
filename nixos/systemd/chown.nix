@@ -1,4 +1,5 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
+{
   systemd.services.chownX11 = {
     wantedBy = [ "multi-user.target" ];
     after = [ "multi-user.target" ];

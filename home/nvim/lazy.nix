@@ -1,6 +1,11 @@
-{ pkgs, ... }: {
-  imports =
-    [ ./lazy/cmp.nix ./lazy/appearance.nix ./lazy/skk.nix ./lazy/utils.nix ];
+{ pkgs, ... }:
+{
+  imports = [
+    ./lazy/cmp.nix
+    ./lazy/appearance.nix
+    ./lazy/skk.nix
+    ./lazy/utils.nix
+  ];
   programs.nixvim = {
     plugins.lazy = {
       enable = true;
@@ -20,7 +25,10 @@
             cmp_luasnip
             cmp-nvim-lsp
           ];
-          event = [ "InsertEnter" "CmdlineEnter" ];
+          event = [
+            "InsertEnter"
+            "CmdlineEnter"
+          ];
         }
         {
           name = "LuaSnip";
