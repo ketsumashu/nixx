@@ -26,7 +26,7 @@
     gh
     git
     yazi
-    nemo
     xfce.tumbler
+    xfce.thunar
   ];
 }
