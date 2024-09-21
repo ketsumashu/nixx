@@ -4,7 +4,7 @@
     lsp = {
       enable = true;
       servers = {
-        nil.enable = true;
+        nil-ls.enable = true;
       };
       keymaps.lspBuf = {
         "gd" = "definition";
