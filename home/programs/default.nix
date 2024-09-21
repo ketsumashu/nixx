@@ -27,6 +27,6 @@
     git
     yazi
     pcmanfm
-    libraw
+    libopenraw
   ];
 }
