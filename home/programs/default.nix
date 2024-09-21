@@ -27,5 +27,6 @@
     git
     yazi
     pcmanfm
+    libraw
   ];
 }
