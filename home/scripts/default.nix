@@ -1,5 +1,1 @@
-{
-  imports = [
-    ./nvimime.nix
-  ];
-}
+{ imports = [ ./nvimime.nix ]; }

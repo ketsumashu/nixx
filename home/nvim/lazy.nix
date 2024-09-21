@@ -1,5 +1,6 @@
-{pkgs, ...}: {
-  imports = [./lazy/cmp.nix ./lazy/appearance.nix ./lazy/skk.nix ./lazy/utils.nix];
+{ pkgs, ... }: {
+  imports =
+    [ ./lazy/cmp.nix ./lazy/appearance.nix ./lazy/skk.nix ./lazy/utils.nix ];
   programs.nixvim = {
     plugins.lazy = {
       enable = true;
@@ -7,7 +8,7 @@
         {
           name = "indent-blankline-nvim";
           pkg = pkgs.vimPlugins.indent-blankline-nvim;
-          event = ["VimEnter"];
+          event = [ "VimEnter" ];
         }
         {
           name = "nvim-cmp";
@@ -19,12 +20,12 @@
             cmp_luasnip
             cmp-nvim-lsp
           ];
-          event = ["InsertEnter" "CmdlineEnter"];
+          event = [ "InsertEnter" "CmdlineEnter" ];
         }
         {
           name = "LuaSnip";
           pkg = pkgs.vimPlugins.luasnip;
-          event = ["InsertEnter"];
+          event = [ "InsertEnter" ];
         }
         {
           name = "skkeleton";
@@ -37,9 +38,7 @@
               hash = "sha256-b3tDU4iz0tV3mebSPlmvXDSrvw8hdR5w0EPyDXjaiqA=";
             };
           };
-          dependencies = with pkgs.vimPlugins; [
-            denops-vim
-          ];
+          dependencies = with pkgs.vimPlugins; [ denops-vim ];
           lazy = false;
         }
         {
@@ -58,22 +57,22 @@
         {
           name = "nvim-bufdel";
           pkg = pkgs.vimPlugins.nvim-bufdel;
-          event = ["VimEnter"];
+          event = [ "VimEnter" ];
         }
         {
           name = "nvim-autopairs";
           pkg = pkgs.vimPlugins.nvim-autopairs;
-          event = ["InsertEnter"];
+          event = [ "InsertEnter" ];
         }
         {
           name = "alpha";
           pkg = pkgs.vimPlugins.alpha-nvim;
-          event = ["VimEnter"];
+          event = [ "VimEnter" ];
         }
         {
           name = "substrata";
           pkg = pkgs.vimPlugins.substrata-nvim;
-          event = ["VimEnter"];
+          event = [ "VimEnter" ];
         }
         {
           name = "telescope";
@@ -82,7 +81,7 @@
             plenary-nvim
             telescope-file-browser-nvim
           ];
-          event = ["VimEnter"];
+          event = [ "VimEnter" ];
         }
       ];
     };

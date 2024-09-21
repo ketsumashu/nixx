@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{ pkgs, ... }: {
   home.packages = with pkgs; [
     wl-clipboard
     cliphist
@@ -12,7 +12,7 @@
     dconf
     vesktop
     arrpc
-    (btop.override {rocmSupport = true;})
+    (btop.override { rocmSupport = true; })
     fd
     duf
     bat
@@ -25,7 +25,5 @@
     which
     gh
     git
-    yazi
-    nautilus
   ];
 }

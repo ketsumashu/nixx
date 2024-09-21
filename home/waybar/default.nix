@@ -1,27 +1,34 @@
-{pkgs, ...}: {
+{ pkgs, ... }: {
   programs.waybar = {
     enable = true;
     package = pkgs.waybar;
-    systemd = {enable = false;};
+    systemd = { enable = false; };
     settings = {
       mainBar = {
         layer = "top";
         position = "top";
-        output = ["HDMI-A-1" "HDMI-A-2"];
+        output = [ "HDMI-A-1" "HDMI-A-2" ];
         height = 22;
         margin-top = 0;
         margin-bottom = 0;
         spacing = 15;
-        modules-left = ["sway/workspaces" "hyprland/workspaces"];
-        modules-center = ["sway/window" "hyprland/window"];
-        modules-right = ["pulseaudio" "memory" "temperature#cpu" "temperature#gpu" "clock" "tray"];
+        modules-left = [ "sway/workspaces" "hyprland/workspaces" ];
+        modules-center = [ "sway/window" "hyprland/window" ];
+        modules-right = [
+          "pulseaudio"
+          "memory"
+          "temperature#cpu"
+          "temperature#gpu"
+          "clock"
+          "tray"
+        ];
 
         "hyprland/workspaces" = {
           format = "{name}";
           all-outputs = false;
           persistent-workspaces = {
-            "HDMI-A-1" = [1 2 3 4];
-            "HDMI-A-2" = [5 6 7 8 9];
+            "HDMI-A-1" = [ 1 2 3 4 ];
+            "HDMI-A-2" = [ 5 6 7 8 9 ];
           };
           on-scroll-up = "hyprctl dispatch workspace e-1";
           on-scroll-down = "hyprctl dispatch workspace e+1";
@@ -36,14 +43,14 @@
           format = "{name}";
           all-outputs = false;
           persistent-workspaces = {
-            "1" = ["HDMI-A-1"];
-            "2" = ["HDMI-A-1"];
-            "3" = ["HDMI-A-1"];
-            "4" = ["HDMI-A-1"];
-            "5" = ["HDMI-A-2"];
-            "6" = ["HDMI-A-2"];
-            "7" = ["HDMI-A-2"];
-            "8" = ["HDMI-A-2"];
+            "1" = [ "HDMI-A-1" ];
+            "2" = [ "HDMI-A-1" ];
+            "3" = [ "HDMI-A-1" ];
+            "4" = [ "HDMI-A-1" ];
+            "5" = [ "HDMI-A-2" ];
+            "6" = [ "HDMI-A-2" ];
+            "7" = [ "HDMI-A-2" ];
+            "8" = [ "HDMI-A-2" ];
           };
           disable-scroll = false;
         };
@@ -67,12 +74,12 @@
           rotate = 0;
         };
 
-        "tray" = {
-          spacing = 10;
-        };
+        "tray" = { spacing = 10; };
 
         "clock" = {
-          tooltip-format = "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
+          tooltip-format = ''
+            <big>{:%Y %B}</big>
+            <tt><small>{calendar}</small></tt>'';
           interval = 1;
           format = "{:%H:%M:%S}";
           rotate = 0;
@@ -81,7 +88,9 @@
         "network" = {
           interface = "enp4s0";
           interval = 1;
-          format = "{bandwidthDownBits} \n{bandwidthUpBits}";
+          format = ''
+            {bandwidthDownBits} 
+            {bandwidthUpBits}'';
           format-disconnected = "OFFLINE";
           tooltip-format = "{ifname}: {ipaddr}";
           rotate = 0;
@@ -109,7 +118,7 @@
             phone = "";
             portable = "";
             car = "";
-            default = ["" "" ""];
+            default = [ "" "" "" ];
           };
           rotate = 0;
           on-click = "pavucontrol";

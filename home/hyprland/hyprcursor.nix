@@ -1,3 +1,1 @@
-{
-  xdg.dataFile."icons/hypr-bibata".source = ./hypr-bibata;
-}
+{ xdg.dataFile."icons/hypr-bibata".source = ./hypr-bibata; }

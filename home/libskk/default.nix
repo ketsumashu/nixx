@@ -1,3 +1,1 @@
-{
-  xdg.configFile."libskk/rules".source = ./rules;
-}
+{ xdg.configFile."libskk/rules".source = ./rules; }

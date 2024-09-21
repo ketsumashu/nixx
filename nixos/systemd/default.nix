@@ -1,6 +1,1 @@
-{
-  imports = [
-    ./chown.nix
-    ./lact.nix
-  ];
-}
+{ imports = [ ./chown.nix ./lact.nix ]; }

@@ -22,9 +22,7 @@
         hide-when-typing = "yes";
         alternate-scroll-mode = "yes";
       };
-      cursor = {
-        color = "191724 e0def4";
-      };
+      cursor = { color = "191724 e0def4"; };
       colors = {
         alpha = 0.94;
         background = "191c25";

@@ -1,8 +1,8 @@
-{pkgs, ...}: {
+{ pkgs, ... }: {
   fonts = {
     packages = with pkgs; [
       noto-fonts-emoji-blob-bin
-      (nerdfonts.override {fonts = ["FiraCode"];})
+      (nerdfonts.override { fonts = [ "FiraCode" ]; })
       cozette
       noto-fonts
       noto-fonts-cjk-sans
@@ -13,29 +13,16 @@
     fontconfig.enable = true;
     fontconfig = {
       defaultFonts = {
-        serif = [
-          "Noto Serif CJK JP"
-          "Blobmoji"
-        ];
-        sansSerif = [
-          "PlemolJP35 Console HS"
-          "Blobmoji"
-        ];
-        monospace = [
-          "FiraCode Nerd Font"
-          "Blobmoji"
-        ];
-        emoji = [
-          "Blobmoji"
-        ];
+        serif = [ "Noto Serif CJK JP" "Blobmoji" ];
+        sansSerif = [ "PlemolJP35 Console HS" "Blobmoji" ];
+        monospace = [ "FiraCode Nerd Font" "Blobmoji" ];
+        emoji = [ "Blobmoji" ];
       };
       hinting = {
         enable = true;
         style = "slight";
       };
-      subpixel = {
-        rgba = "rgb";
-      };
+      subpixel = { rgba = "rgb"; };
       localConf = ''
         <?xml version="1.0"?>
         <!DOCTYPE fontconfig SYSTEM "fonts.dtd">

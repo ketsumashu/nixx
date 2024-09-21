@@ -21,7 +21,7 @@
     {
       mode = "n";
       key = "x";
-      action = "\"_x";
+      action = ''"_x'';
     }
     {
       mode = "n";
