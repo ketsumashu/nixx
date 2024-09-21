@@ -26,5 +26,6 @@
     gh
     git
     yazi
+    pcmanfm
   ];
 }
