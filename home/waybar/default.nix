@@ -74,7 +74,7 @@
         "clock" = {
           tooltip-format = "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
           interval = 1;
-          format = "{:%H:%M}";
+          format = "{:%H:%M:%S}";
           rotate = 0;
         };
 
