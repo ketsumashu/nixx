@@ -14,9 +14,6 @@
 
   programs.nh = {
     enable = true;
-    clean.enable = true;
-    clean.extraArgs = "all";
-    flake = "/home/mashu/nixx/";
   };
 
   system.stateVersion = "24.05";
