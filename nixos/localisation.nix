@@ -1,4 +1,4 @@
-{
+{pkgs, ...}:{
   time = {
     timeZone = "Asia/Tokyo";
     hardwareClockInLocalTime = true;
@@ -22,6 +22,18 @@
       "en_GB.UTF-8/UTF-8"
       "ja_JP.UTF-8/UTF-8"
     ];
+    inputMethod = {
+        type = "fcitx5";
+        enable = true;
+        fcitx5.addons = with pkgs; [
+          fcitx5-skk
+          fcitx5-gtk
+          fcitx5-nord
+          fcitx-configtool
+        ];
+        fcitx5.waylandFrontend = true;
+      };
+
   };
 
   services.xserver = {

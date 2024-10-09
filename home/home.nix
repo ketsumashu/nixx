@@ -15,7 +15,6 @@
     ./programs
     ./spicetify
     ./gui
-    ./input
   ];
 
   home = {
