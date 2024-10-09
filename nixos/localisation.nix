@@ -29,7 +29,7 @@
           fcitx5-skk
           fcitx5-gtk
           fcitx5-nord
-          fcitx-configtool
+          fcitx5-configtool
         ];
         fcitx5.waylandFrontend = true;
       };
