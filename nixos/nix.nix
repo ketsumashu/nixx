@@ -15,19 +15,6 @@
   programs.nh = {
     enable = true;
   };
-  programs.nix-ld = {
-    enable = true;
-    libraries = with pkgs; [
-      glibc
-      stdenv.cc.cc
-      util-linux
-      zlib
-      zstd
-      nss
-      dbus
-      libgcc
-    ];
-  };
 
   system.stateVersion = "24.05";
 }
