@@ -19,6 +19,12 @@
     enable = true;
     libraries = with pkgs; [
       glibc
+      stdenv.cc.cc
+      util-linux
+      zlib
+      zstd
+      nss
+      dbus
     ];
   };
 
