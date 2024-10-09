@@ -15,7 +15,12 @@
   programs.nh = {
     enable = true;
   };
-  programs.nix-ld.enable = true;
+  programs.nix-ld = {
+    enable = true;
+    libraries = with pkgs; [
+      glibc
+    ];
+  };
 
   system.stateVersion = "24.05";
 }
