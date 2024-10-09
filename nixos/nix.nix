@@ -16,9 +16,6 @@
     enable = true;
   };
   programs.nix-ld.enable = true;
-  environment.variables = {
-    NIX_LD= pkgs.stdenv.cc.bintools.dynamicLinker;
-  };
 
   system.stateVersion = "24.05";
 }
