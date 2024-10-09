@@ -151,6 +151,7 @@
       "mako"
       "waybar"
       "arrpc"
+      "fcitx5 -rd"
       ''hyprctl dispatch exec "[workspace 2 silent]" steam''
       ''hyprctl dispatch exec "[workspace 5 silent]" "vesktop --gtk-version=4 --ozone-platform=wayland"''
       "swww-daemon"
