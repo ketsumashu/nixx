@@ -25,6 +25,7 @@
       zstd
       nss
       dbus
+      libgcc
     ];
   };
 
