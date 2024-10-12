@@ -38,10 +38,6 @@
     device = "/dev/disk/by-uuid/cc362739-1aab-4377-87a2-94789ef3f509";
     fsType = "ext4";
   };
-  fileSystems."/home/mashu/data" = {
-    device = "/dev/disk/by-uuid/b116af93-7e00-4cbd-9840-b5789417ee9e";
-    fsType = "ext4";
-  };
   fileSystems."/boot" = {
     device = "/dev/disk/by-uuid/E3B5-A188";
     fsType = "vfat";
