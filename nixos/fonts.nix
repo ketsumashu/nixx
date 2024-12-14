@@ -3,7 +3,7 @@
   fonts = {
     packages = with pkgs; [
       noto-fonts-emoji-blob-bin
-      nerd-fonts.firacode
+      nerd-fonts.fira-code
       cozette
       noto-fonts
       noto-fonts-cjk-sans
