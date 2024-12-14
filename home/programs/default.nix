@@ -20,7 +20,7 @@
     eza
     ripgrep
     deno
-    xdg_utils
+    xdg-utils
     darktable
     killall
     which
