@@ -47,7 +47,7 @@
       "dmask=0022"
     ];
   };
-  fileSystems."/home/mashu/data/" = {
+  fileSystems."/home/mashu/data" = {
     device = "/dev/disk/by-uuid/78F0F0ACF0F0722C";
     fsType = "ntfs-3g";
     options = [ "rw" "uid=1000" ];
