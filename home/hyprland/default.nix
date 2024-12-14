@@ -78,9 +78,11 @@
         noise = 1.0e-2;
         brightness = 0.92;
       };
-      drop_shadow = true;
-      shadow_range = 3;
-      shadow_render_power = 3;
+      shadow = {
+        enabled = true;
+        range = 3;
+        render_power = 3;
+      };
     };
 
     animations = {
