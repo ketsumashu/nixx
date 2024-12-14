@@ -32,6 +32,7 @@
     extraModulePackages = with config.boot.kernelPackages; [ zenpower ];
     kernelPackages = pkgs.linuxPackages_xanmod_latest;
     tmp.cleanOnBoot = true;
+    supportedFilesystems = [ "ntfs" ];
   };
 
   fileSystems."/" = {
@@ -45,6 +46,11 @@
       "fmask=0022"
       "dmask=0022"
     ];
+  };
+  fileSystems."/home/mashu/data/" = {
+    device = "/dev/disk/by-uuid/78F0F0ACF0F0722C";
+    fsType = "ntfs-3g";
+    options = [ "rw" "uid=1000" ];
   };
 
   swapDevices = [ ];
