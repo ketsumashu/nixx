@@ -18,7 +18,9 @@ in
       hidePodcasts
       playlistIcons
       keyboardShortcut
-      adblockify
+    ];
+    enabledApps = with spicePkgs.apps; [
+      marketplace
     ];
   };
 }
