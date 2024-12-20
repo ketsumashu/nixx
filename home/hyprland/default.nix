@@ -169,7 +169,7 @@
 
     bind =
       [
-        "$mod, B, exec, floorp"
+        "$mod, B, exec, zen"
         "$mod, E, exec, vesktop --gtk-version=4 --ozone-platform=wayland"
         "$mod, S, exec, steam"
         "$mod, I, exec, scr"
