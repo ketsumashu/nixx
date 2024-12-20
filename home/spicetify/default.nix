@@ -19,7 +19,7 @@ in
       playlistIcons
       keyboardShortcut
     ];
-    enabledApps = with spicePkgs.apps; [
+    enabledCustomApps = with spicePkgs.apps; [
       marketplace
     ];
   };
