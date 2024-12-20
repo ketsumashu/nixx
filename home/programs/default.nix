@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 {
   home.packages = with pkgs; [
     wl-clipboard
@@ -26,5 +26,6 @@
     which
     gh
     git
+    inputs.zen.packages."${system}".specific
   ];
 }
