@@ -50,19 +50,6 @@
           lazy = false;
         }
         {
-          name = "skkeleton-indicator";
-          pkg = pkgs.vimUtils.buildVimPlugin {
-            name = "skkeleton_indicator.nvim";
-            src = pkgs.fetchFromGitHub {
-              owner = "delphinus";
-              repo = "skkeleton_indicator.nvim";
-              rev = "d9b649d734ca7d3871c4f124004771d0213dc747";
-              hash = "sha256-xr2yTHsGclLvXPpRNYBFS+dIB0+RNUb27TlGq5apBig=";
-            };
-          };
-          lazy = false;
-        }
-        {
           name = "nvim-bufdel";
           pkg = pkgs.vimPlugins.nvim-bufdel;
           event = [ "VimEnter" ];
