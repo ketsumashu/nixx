@@ -26,6 +26,6 @@
     which
     gh
     git
-    inputs.zen.packages."${system}".specific
+    inputs.zen.packages."${system}".default
   ];
 }
