@@ -39,13 +39,13 @@
           format = "{name}";
           all-outputs = false;
           persistent-workspaces = {
-            "HDMI-A-1" = [
+            "HDMI-A-2" = [
               1
               2
               3
               4
             ];
-            "HDMI-A-2" = [
+            "HDMI-A-1" = [
               5
               6
               7
@@ -114,7 +114,7 @@
           interface = "enp4s0";
           interval = 1;
           format = ''
-            {bandwidthDownBits} 
+            {bandwidthDownBits}
             {bandwidthUpBits}'';
           format-disconnected = "OFFLINE";
           tooltip-format = "{ifname}: {ipaddr}";
