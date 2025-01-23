@@ -13,7 +13,7 @@
     dconf
     vesktop
     arrpc
-    (btop.override { rocmSupport = true; })
+    btop
     fd
     duf
     bat

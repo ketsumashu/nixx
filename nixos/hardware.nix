@@ -5,7 +5,6 @@
       enable = true;
       package = pkgs.mesa.drivers;
       package32 = pkgs.pkgsi686Linux.mesa.drivers;
-      extraPackages = with pkgs; [ rocmPackages.clr.icd ];
     };
     bluetooth = {
       enable = true;
