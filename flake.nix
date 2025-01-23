@@ -15,6 +15,7 @@
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
     nur.url = "github:nix-community/NUR";
     zen.url = "github:0xc000022070/zen-browser-flake";
+    hyprland.url = "github:hyprwm/Hyprland";
   };
   outputs =
     inputs@{
@@ -25,6 +26,7 @@
       spicetify-nix,
       nur,
       zen,
+      hyprland,
       ...
     }:
     {
@@ -54,6 +56,7 @@
                   inherit nixvim;
                   inherit spicetify-nix;
                   inherit zen;
+                  inherit hyprland;
                 };
               };
             }
