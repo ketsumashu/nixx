@@ -42,7 +42,7 @@
             src = pkgs.fetchFromGitHub {
               owner = "vim-skk";
               repo = "eskk.vim";
-              rev = "e530575790cca5d6603b8ab984298459ecf3c0c0h";
+              rev = "e530575790cca5d6603b8ab984298459ecf3c0c0";
               hash = "";
             };
           };
