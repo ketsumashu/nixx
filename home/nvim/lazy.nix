@@ -36,17 +36,16 @@
           event = [ "InsertEnter" ];
         }
         {
-          name = "skkeleton";
+          name = "eskk.vim";
           pkg = pkgs.vimUtils.buildVimPlugin {
-            name = "skkeleton";
+            name = "eskk.vim";
             src = pkgs.fetchFromGitHub {
               owner = "vim-skk";
-              repo = "skkeleton";
-              rev = "8bb1b8782227291c8cbe2aa62a9af732557690cc";
-              hash = "sha256-V86J+8rg1/5ZUL9t0k2S5H+z7KZ1DZwLwmb5yM0+vts=";
+              repo = "eskk.vim";
+              rev = "e530575790cca5d6603b8ab984298459ecf3c0c0h";
+              hash = "";
             };
           };
-          dependencies = with pkgs.vimPlugins; [ denops-vim ];
           lazy = false;
         }
         {

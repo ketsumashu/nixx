@@ -1,17 +1,10 @@
 {
   programs.nixvim.extraConfigLua = ''
     vim.cmd [[
-    call skkeleton#config({
-        \  'eggLikeNewline': v:true,
-        \  'markerHenkan': ">",
-        \  'markerHenkanSelect': ">>",
-        \  'globalDictionaries': ["/home/mashu/nixx/home/libskk/SKK-JISYO.L"],
-        \  'sources': [ "skk_dictionary", "google_japanese_input" ],
-        \  'showCandidatesCount': 2,
-        \  'registerConvertResult': v:true,
-        \  'keepState': v:true
-        \})
-    call skkeleton#register_keymap('input', ';', 'henkanPoint')
+      let g:eskk#directory = "~/.config/eskk"
+      let g:eskk#dictionary = { 'path': "~/.config/eskk/my_jisyo", 'sorted': 1, 'encoding': 'utf-8',}
+      let g:eskk#large_dictionary = {'path': "~/dotfiles/libskk/SKK-JISYO.L", 'sorted': 1, 'encoding': 'euc-jp',}
+      let g:eskk#egg_like_newline = 1
     ]]
   '';
 }
