@@ -43,7 +43,7 @@
               owner = "vim-skk";
               repo = "skkeleton";
               rev = "8bb1b8782227291c8cbe2aa62a9af732557690cc";
-              hash = "sha256-b3tDU4iz0tV3mebSPlmvXDSrvw8hdR5w0EPyDXjaiqA=";
+              hash = "";
             };
           };
           dependencies = with pkgs.vimPlugins; [ denops-vim ];
