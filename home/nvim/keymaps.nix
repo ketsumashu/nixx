@@ -14,7 +14,7 @@
     {
       mode = "i";
       key = "<C-j>";
-      action = "<Plug>(skkeleton-toggle)";
+      action = "<Plug>(eskk:toggle)";
     }
 
     #normal mode key map
