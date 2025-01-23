@@ -43,7 +43,7 @@
               owner = "vim-skk";
               repo = "eskk.vim";
               rev = "e530575790cca5d6603b8ab984298459ecf3c0c0";
-              hash = "";
+              hash = "sha256-7nPzxCbKHBwplrTCsO4SxdFe/VK0VMHWDspWvVJvwLU=";
             };
           };
           lazy = false;
