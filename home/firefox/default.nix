@@ -2,7 +2,7 @@
 {
   programs.firefox = {
     enable = true;
-    package = pkgs.floorp;
+    package = pkgs.floorp-bin;
     nativeMessagingHosts = with pkgs; [ tridactyl-native ];
   };
 
