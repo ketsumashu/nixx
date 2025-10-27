@@ -4,6 +4,6 @@
     inputs.niri.homeModules.niri
   ];
   programs.niri = {
-    enable = false;
+    enable = true;
   };
 }
