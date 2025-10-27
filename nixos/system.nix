@@ -24,8 +24,10 @@
     loader = {
       systemd-boot.enable = true;
       systemd-boot.consoleMode = "max";
+      systemd-boot.extraEntries = true;
+      systemd-boot.extraFiles = true;
       efi.canTouchEfiVariables = true;
-      timeout = 1;
+      timeout = 5;
     };
     kernelModules = [ "kvm-amd" ];
     blacklistedKernelModules = [ "k10temp" ];
