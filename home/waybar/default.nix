@@ -12,7 +12,6 @@
         position = "top";
         output = [
           "HDMI-A-1"
-          "HDMI-A-2"
         ];
         height = 22;
         margin-top = 0;
@@ -39,18 +38,11 @@
           format = "{name}";
           all-outputs = false;
           persistent-workspaces = {
-            "HDMI-A-2" = [
+            "HDMI-A-1" = [
               1
               2
               3
               4
-            ];
-            "HDMI-A-1" = [
-              5
-              6
-              7
-              8
-              9
             ];
           };
           on-scroll-up = "hyprctl dispatch workspace e-1";
