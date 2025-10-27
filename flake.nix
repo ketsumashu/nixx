@@ -35,6 +35,7 @@
           system = "x86_64-linux";
           modules = [
             nur.modules.nixos.default
+            niri.modules.nixos.default
             nixos-hardware.nixosModules.common-cpu-amd
             nixos-hardware.nixosModules.common-gpu-amd
             nixos-hardware.nixosModules.common-pc-ssd
