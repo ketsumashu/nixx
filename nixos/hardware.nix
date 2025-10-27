@@ -10,6 +10,8 @@
       enable = true;
       powerOnBoot = true;
     };
+    amdgpu.overdrive.enable = true;
+
     pulseaudio.enable = false;
   };
   services = {
