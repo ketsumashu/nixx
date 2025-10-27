@@ -27,7 +27,7 @@
       systemd-boot.extraEntries = {
         "windows.conf" = ''
           title windows11
-          linux /EFI/Microsoft/Boot/bootmgfw.efi
+          efi /EFI/Microsoft/Boot/bootmgfw.efi
         '';
       };
       efi.canTouchEfiVariables = true;
