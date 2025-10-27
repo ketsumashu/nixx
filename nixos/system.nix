@@ -63,7 +63,7 @@
 
   networking = {
     useDHCP = false;
-    hostName = "mas-nix-101";
+    hostName = "mashu-nix-101";
     useNetworkd = true;
   };
 
