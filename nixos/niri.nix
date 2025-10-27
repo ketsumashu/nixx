@@ -1,4 +1,4 @@
-{niri,pkgs, ...}:{
+{pkgs, ...}:{
   imports = [
     niri.nixOSModules.niri
   ];
