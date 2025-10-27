@@ -26,7 +26,7 @@
       spicetify-nix,
       nur,
       zen,
-      niri
+      niri,
       ...
     }:
     {
