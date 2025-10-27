@@ -15,6 +15,7 @@
     ./spicetify
     ./gui
     ./qutebrowser
+    ./niri
   ];
 
   home = {
