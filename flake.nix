@@ -14,6 +14,7 @@
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
     nur.url = "github:nix-community/NUR";
+    niri.url = "github:sodiboo/niri-flake";
     zen.url = "github:0xc000022070/zen-browser-flake";
   };
   outputs =
@@ -25,6 +26,7 @@
       spicetify-nix,
       nur,
       zen,
+      niri
       ...
     }:
     {
@@ -54,6 +56,7 @@
                   inherit nixvim;
                   inherit spicetify-nix;
                   inherit zen;
+                  inherit niri;
                 };
               };
             }
