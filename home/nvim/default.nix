@@ -11,5 +11,6 @@
     enableMan = false;
     viAlias = true;
     vimAlias = true;
+    colorscheme = "kanagawa";
   };
 }
