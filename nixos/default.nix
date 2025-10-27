@@ -9,5 +9,6 @@
     ./tuigreet.nix
     ./system.nix
     ./hardware.nix
+    ./niri.nix
   ];
 }
