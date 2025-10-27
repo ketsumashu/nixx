@@ -1,6 +1,6 @@
-{inputs, pkgs, ...}:{
+{niri,pkgs, ...}:{
   imports = [
-    inputs.niri.nixOSModules.niri
+    niri.nixOSModules.niri
   ];
   programs.niri = {
     enable = false;
