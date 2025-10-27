@@ -11,6 +11,6 @@
     enableMan = false;
     viAlias = true;
     vimAlias = true;
-    colorscheme.oxocarbon.enable = true;
+    colorschemes.oxocarbon.enable = true;
   };
 }
