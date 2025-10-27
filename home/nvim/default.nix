@@ -4,8 +4,6 @@
     inputs.nixvim.homeManagerModules.nixvim
     ./options.nix
     ./keymaps.nix
-    ./lsp.nix
-    ./lazy.nix
   ];
 
   programs.nixvim = {

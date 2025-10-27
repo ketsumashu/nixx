@@ -36,11 +36,11 @@
   };
 
   fileSystems."/" = {
-    device = "/dev/disk/by-uuid/cc362739-1aab-4377-87a2-94789ef3f509";
+    device = "/dev/disk/by-uuid/4e0fc1a1-da4c-49aa-898e-1d5abcc47e57";
     fsType = "ext4";
   };
   fileSystems."/boot" = {
-    device = "/dev/disk/by-uuid/E3B5-A188";
+    device = "/dev/disk/by-uuid/24D0-28B9";
     fsType = "vfat";
     options = [
       "fmask=0022"
@@ -53,11 +53,17 @@
     options = [ "rw" "uid=1000" ];
   };
 
+  fileSystems."/home/mashu/game" = {
+    device = "/dev/disk/by-uuid/ECB01508B014DB42";
+    fsType = "ntfs-3g";
+    options = [ "rw" "uid=1000" ];
+  };
+
   swapDevices = [ ];
 
   networking = {
     useDHCP = false;
-    hostName = "mashunix";
+    hostName = "mas-nix-101";
     useNetworkd = true;
   };
 

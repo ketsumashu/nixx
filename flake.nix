@@ -15,7 +15,6 @@
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
     nur.url = "github:nix-community/NUR";
     zen.url = "github:0xc000022070/zen-browser-flake";
-    hyprland.url = "github:hyprwm/Hyprland";
   };
   outputs =
     inputs@{
@@ -26,12 +25,11 @@
       spicetify-nix,
       nur,
       zen,
-      hyprland,
       ...
     }:
     {
       nixosConfigurations = {
-        mashunix = nixpkgs.lib.nixosSystem {
+        mashu-nix-101 = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
           modules = [
             nur.modules.nixos.default
@@ -56,7 +54,6 @@
                   inherit nixvim;
                   inherit spicetify-nix;
                   inherit zen;
-                  inherit hyprland;
                 };
               };
             }

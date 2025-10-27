@@ -1,6 +1,5 @@
 {
   imports = [
-    ./hyprland
     ./nvim
     ./fish
     ./terminals
@@ -21,7 +20,7 @@
   home = {
     username = "mashu";
     homeDirectory = "/home/mashu";
-    stateVersion = "24.05";
+    stateVersion = "25.05";
   };
 
   programs.home-manager.enable = true;
