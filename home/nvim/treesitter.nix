@@ -2,7 +2,16 @@
   programs.nixvim.plugins = {
     treesitter = {
       enable = true;
-      indent = true;
+      grammarPackages = with pkgs.vimPlugins.nvim-treesitter.builtGrammars; [
+        bash
+        nix
+        lua
+        vim
+      ];
+      settings = {
+        auto_install = true;
+        indent.enable = true;
+      };
     };
   };
 }
