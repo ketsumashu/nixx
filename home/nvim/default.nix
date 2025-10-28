@@ -1,6 +1,6 @@
 {inputs, ...}: {
   imports = [
-    inputs.nixvim.homeManagerModules.nixvim
+    inputs.nixvim.homeModules.nixvim
     ./options.nix
     ./keymaps.nix
     ./lsp.nix
@@ -8,7 +8,7 @@
     ./cmp.nix
     ./leap.nix
     ./telescope.nix
-    ./auto-pair.nix
+    ./autopair.nix
     ./skkeleton.nix
     ./blankline.nix
     ./lualine.nix
