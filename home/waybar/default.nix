@@ -9,11 +9,13 @@
     settings = {
       mainBar = {
         layer = "top";
-        position = "top";
+        position = "bottom";
         output = [
           "HDMI-A-1"
+          "DP-2"
+          "DP-3"
         ];
-        height = 26;
+        height = 30;
         margin-top = 0;
         margin-bottom = 0;
         spacing = 15;
