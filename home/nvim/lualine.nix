@@ -162,7 +162,7 @@ in
           ["!"] = "${colors.red}",
           t = "${colors.red}",
         } -- }}}
-        return { fg = mode_color[vim.fn.mode()], bg = "#none" }
+        return { fg = mode_color[vim.fn.mode()], bg = "none" }
       end,
       fmt = function()
         return ""
