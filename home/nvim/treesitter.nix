@@ -9,7 +9,7 @@
         vim
       ];
       settings = {
-        auto_install = true;
+        auto_install = false;
         indent.enable = true;
       };
     };
