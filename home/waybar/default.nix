@@ -13,17 +13,19 @@
         output = [
           "HDMI-A-1"
         ];
-        height = 22;
+        height = 26;
         margin-top = 0;
         margin-bottom = 0;
         spacing = 15;
         modules-left = [
           "sway/workspaces"
           "hyprland/workspaces"
+          "niri/workspaces"
         ];
         modules-center = [
           "sway/window"
           "hyprland/window"
+          "niri/window"
         ];
         modules-right = [
           "pulseaudio"
