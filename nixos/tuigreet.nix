@@ -4,13 +4,13 @@
     enable = true;
     settings = {
       default_session = {
-        command = "tuigreet --cmd niri";
+        command = "tuigreet --cmd niri-session";
         user = "greeter";
       };
     };
   };
 
-  environment.systemPackages = with pkgs; [ greetd.tuigreet ];
+  environment.systemPackages = with pkgs; [ tuigreet ];
 
   systemd.services.greetd.serviceConfig = {
     Type = "idle";
