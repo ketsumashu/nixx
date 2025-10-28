@@ -20,7 +20,6 @@ in
 {
   programs.nixvim.plugins.lualine = {
     enable = true;
-    alwaysDivideMiddle = true;
     iconsEnabled = true;
     theme = {
       normal = with themeColors; {
