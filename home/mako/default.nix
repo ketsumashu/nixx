@@ -11,12 +11,12 @@
       padding = "16";
       margin = "10,10,10";
       output = "HDMI-A-1";
-      backgroundColor = "#191c25";
-      textColor = "#c5c4d4";
-      borderColor = "#77adb1";
-      borderSize = 2;
-      borderRadius = 6;
-      defaultTimeout = 5000;
+      background-color = "#191c25";
+      text-color = "#c5c4d4";
+      border-color = "#77adb1";
+      border-size = 2;
+      border-radius = 6;
+      default-timeout = 5000;
       font = "PlemolJP35 Console HS 13px";
     };
     extraConfig = ''
