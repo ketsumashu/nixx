@@ -20,96 +20,101 @@ in
 {
   programs.nixvim.plugins.lualine = {
     enable = true;
-    iconsEnabled = true;
-    theme = {
-      normal = with themeColors; {
-        a = {
-          fg = themeColors.bg;
-          bg = themeColors.bg;
-          gui = "bold";
-        };
-        b = {
-          fg = themeColors.fg;
-          bg = themeColors.bg;
-        };
-        c = {
-          fg = themeColors.fg;
-          bg = themeColors.bg;
-        };
-      };
-      insert = {
-        a = {
-          fg = themeColors.fg;
-          bg = themeColors.bg;
-          gui = "bold";
-        };
-        b = {
-          fg = themeColors.fg;
-          bg = themeColors.bg;
-        };
-        c = {
-          fg = themeColors.fg;
-          bg = themeColors.bg;
-        };
-      };
-      visual = {
-        a = {
-          fg = themeColors.bg;
-          bg = themeColors.bg;
-          gui = "bold";
-        };
-        b = {
-          fg = themeColors.fg;
-          bg = themeColors.bg;
-        };
-        c = {
-          fg = themeColors.fg;
-          bg = themeColors.bg;
-        };
-      };
-      replace = {
-        a = {
-          fg = themeColors.bg;
-          bg = themeColors.bg;
-          gui = "bold";
-        };
-        b = {
-          fg = themeColors.fg;
-          bg = themeColors.bg;
-        };
-        c = {
-          fg = themeColors.fg;
-          bg = themeColors.bg;
-        };
-      };
-      command = {
-        a = {
-          fg = themeColors.bg;
-          bg = themeColors.bg;
-          gui = "bold";
-        };
-        b = {
-          fg = themeColors.fg;
-          bg = themeColors.bg;
-        };
-        c = {
-          fg = themeColors.fg;
-          bg = themeColors.bg;
-        };
-      };
-      inactive = {
-        a = {
-          fg = themeColors.fg;
-          bg = themeColors.bg;
-          gui = "bold";
-        };
-        b = {
-          fg = themeColors.fg;
-          bg = themeColors.bg;
-        };
-        c = {
-          fg = themeColors.fg;
-          bg = themeColors.bg;
+    settings = {
+      options = {
+        alwaysDivideMiddle = true;
+        iconsEnabled = true;
+        theme = {
+          normal = with themeColors; {
+            a = {
+              fg = themeColors.bg;
+              bg = themeColors.bg;
+              gui = "bold";
+            };
+            b = {
+              fg = themeColors.fg;
+              bg = themeColors.bg;
+            };
+            c = {
+              fg = themeColors.fg;
+              bg = themeColors.bg;
+            };
+          };
+          insert = {
+            a = {
+              fg = themeColors.fg;
+              bg = themeColors.bg;
+              gui = "bold";
+            };
+            b = {
+              fg = themeColors.fg;
+              bg = themeColors.bg;
+            };
+            c = {
+              fg = themeColors.fg;
+              bg = themeColors.bg;
+            };
+          };
+          visual = {
+            a = {
+              fg = themeColors.bg;
+              bg = themeColors.bg;
+              gui = "bold";
+            };
+            b = {
+              fg = themeColors.fg;
+              bg = themeColors.bg;
+            };
+            c = {
+              fg = themeColors.fg;
+              bg = themeColors.bg;
+            };
+          };
+          replace = {
+            a = {
+              fg = themeColors.bg;
+              bg = themeColors.bg;
+              gui = "bold";
+            };
+            b = {
+              fg = themeColors.fg;
+              bg = themeColors.bg;
+            };
+            c = {
+              fg = themeColors.fg;
+              bg = themeColors.bg;
+            };
+          };
+          command = {
+            a = {
+              fg = themeColors.bg;
+              bg = themeColors.bg;
+              gui = "bold";
+            };
+            b = {
+              fg = themeColors.fg;
+              bg = themeColors.bg;
+            };
+            c = {
+              fg = themeColors.fg;
+              bg = themeColors.bg;
+            };
+          };
+          inactive = {
+            a = {
+              fg = themeColors.fg;
+              bg = themeColors.bg;
+              gui = "bold";
+            };
+            b = {
+              fg = themeColors.fg;
+              bg = themeColors.bg;
+            };
+            c = {
+              fg = themeColors.fg;
+              bg = themeColors.bg;
+            };
+          };
         };
       };
     };
