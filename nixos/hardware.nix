@@ -12,10 +12,10 @@
     };
     amdgpu.overdrive.enable = true;
 
-    pulseaudio.enable = false;
   };
   services = {
     dbus.enable = true;
+    pulseaudio.enable = false;
     hardware.openrgb.enable = true;
     pipewire = {
       enable = true;

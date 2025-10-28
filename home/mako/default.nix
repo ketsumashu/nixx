@@ -1,5 +1,5 @@
 {
-  services.mako = {
+  services.mako.settings = {
     enable = true;
     icons = true;
     sort = "-time";
