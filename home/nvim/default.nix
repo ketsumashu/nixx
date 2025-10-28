@@ -1,9 +1,17 @@
-{ inputs, ... }:
-{
+{inputs, ...}: {
   imports = [
-    inputs.nixvim.homeModules.nixvim
+    inputs.nixvim.homeManagerModules.nixvim
     ./options.nix
     ./keymaps.nix
+    ./lsp.nix
+    ./treesitter.nix
+    ./cmp.nix
+    ./leap.nix
+    ./telescope.nix
+    ./auto-pair.nix
+    ./skkeleton.nix
+    ./blankline.nix
+    ./lualine.nix
   ];
 
   programs.nixvim = {
@@ -11,6 +19,14 @@
     enableMan = false;
     viAlias = true;
     vimAlias = true;
-    colorschemes.oxocarbon.enable = true;
+    colorschemes.poimandres = {
+      enable = true;
+      settings = {
+        disable_background = true;
+        disable_float_background = false;
+        disable_italics = true;
+        dark_variant = "main";
+      };
+    };
   };
 }

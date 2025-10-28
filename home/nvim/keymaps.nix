@@ -14,7 +14,7 @@
     {
       mode = "i";
       key = "<C-j>";
-      action = "<Plug>(eskk:toggle)";
+      action = "<Plug>(skkeleton:toggle)";
     }
 
     #normal mode key map
@@ -56,7 +56,7 @@
     {
       mode = "n";
       key = "<Leader>q";
-      action = ":BufDel<CR>";
+      action = ":q<CR>";
     }
     {
       mode = "n";
