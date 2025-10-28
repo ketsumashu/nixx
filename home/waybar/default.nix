@@ -12,8 +12,8 @@
         position = "bottom";
         output = [
           "HDMI-A-1"
-          "DP-2"
           "DP-3"
+          "DP-1"
         ];
         height = 30;
         margin-top = 0;
@@ -49,6 +49,10 @@
               4
             ];
           };
+        "niri/workspaces" = {
+          format = "{name}";
+          all-outputs = true;
+          };
           on-scroll-up = "hyprctl dispatch workspace e-1";
           on-scroll-down = "hyprctl dispatch workspace e+1";
         };
@@ -58,7 +62,7 @@
           max-length = 49;
         };
 
-        "niri/workspaces" = {
+        "sway/workspaces" = {
           format = "{name}";
           all-outputs = false;
           persistent-workspaces = {
@@ -66,10 +70,10 @@
             "2" = [ "HDMI-A-1" ];
             "3" = [ "HDMI-A-1" ];
             "4" = [ "HDMI-A-1" ];
-            "5" = [ "DP-2" ];
-            "6" = [ "DP-2" ];
-            "7" = [ "DP-1" ];
-            "8" = [ "DP-1" ];
+            "5" = [ "HDMI-A-2" ];
+            "6" = [ "HDMI-A-2" ];
+            "7" = [ "HDMI-A-2" ];
+            "8" = [ "HDMI-A-2" ];
           };
           disable-scroll = false;
         };
