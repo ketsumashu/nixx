@@ -11,8 +11,8 @@
 
     listener {
       timeout = 305                           # 5.5min
-      on-timeout = hyprctl dispatch dpms off  # screen off when timeout has passed
-      on-resume = hyprctl dispatch dpms on    # screen on when activity is detected after timeout has fired.
+      on-timeout = niri msg action power-off-monitors  # screen off when timeout has passed
+      on-resume = niri msg action power-on-monitors   # screen on when activity is detected after timeout has fired.
     }
   '';
 }
