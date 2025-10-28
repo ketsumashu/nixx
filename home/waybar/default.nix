@@ -58,7 +58,7 @@
           max-length = 49;
         };
 
-        "sway/workspaces" = {
+        "niri/workspaces" = {
           format = "{name}";
           all-outputs = false;
           persistent-workspaces = {
@@ -66,10 +66,10 @@
             "2" = [ "HDMI-A-1" ];
             "3" = [ "HDMI-A-1" ];
             "4" = [ "HDMI-A-1" ];
-            "5" = [ "HDMI-A-2" ];
-            "6" = [ "HDMI-A-2" ];
-            "7" = [ "HDMI-A-2" ];
-            "8" = [ "HDMI-A-2" ];
+            "5" = [ "DP-2" ];
+            "6" = [ "DP-2" ];
+            "7" = [ "DP-1" ];
+            "8" = [ "DP-1" ];
           };
           disable-scroll = false;
         };
