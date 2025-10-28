@@ -24,12 +24,6 @@
     loader = {
       systemd-boot.enable = true;
       systemd-boot.consoleMode = "max";
-      systemd-boot.extraEntries = {
-        "windows.conf" = ''
-          title windows11
-          efi /EFI/Microsoft/Boot/bootmgfw.efi
-        '';
-      };
       efi.canTouchEfiVariables = true;
       timeout = 5;
     };
