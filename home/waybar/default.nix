@@ -273,7 +273,7 @@
 
       #tray {
           color: #f5f5f5;
-          margin-right: 5px;
+          padding-right: 5px;
       }
 
       #idle_inhibitor {

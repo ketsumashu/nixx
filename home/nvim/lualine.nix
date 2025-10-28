@@ -13,7 +13,7 @@ let
     red = "#ec5f67";
   };
   colors = themeColors // {
-    bg = "#none";
+    bg = "none";
     fg = "#ffffff";
   };
 in
