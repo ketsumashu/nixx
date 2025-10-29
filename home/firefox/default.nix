@@ -2,7 +2,7 @@
 
 {
   imports = [
-  inputs.zen-browser.homeModules.beta
+  inputs.zen.homeModules.beta
   ];
 
   programs.zen-browser = {
