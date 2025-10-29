@@ -10,7 +10,6 @@
     ./mako
     ./localfont
     ./scripts
-    ./firefox
     ./programs
     ./spicetify
     ./gui
