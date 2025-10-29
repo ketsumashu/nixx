@@ -4,6 +4,7 @@
     ./fish
     ./terminals
     ./waybar
+    ./firefox
     ./starship
     ./libskk
     ./rofi
