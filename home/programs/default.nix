@@ -11,8 +11,6 @@
     pavucontrol
     lm_sensors
     dconf
-    vesktop
-    arrpc
     btop
     fd
     duf
@@ -27,5 +25,6 @@
     gh
     git
     xwayland-satellite
+    discord
   ];
 }
