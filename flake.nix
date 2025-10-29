@@ -15,7 +15,10 @@
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
     nur.url = "github:nix-community/NUR";
     niri.url = "github:sodiboo/niri-flake";
-    zen.url = "github:0xc000022070/zen-browser-flake";
+    zen = {
+      url ="github:0xc000022070/zen-browser-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
   outputs =
     inputs@{

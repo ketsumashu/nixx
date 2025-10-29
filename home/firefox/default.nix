@@ -1,8 +1,12 @@
 { pkgs,inputs, ... }:
+
 {
-  programs.firefox = {
+  imports = [
+  inputs.zen-browser.homeModules.beta
+  ];
+
+  programs.zen-browser = {
     enable = true;
-    package = inputs.zen.packages."${pkgs.system}".default;
     nativeMessagingHosts = with pkgs; [ tridactyl-native ];
   };
 
