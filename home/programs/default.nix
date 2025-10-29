@@ -26,7 +26,6 @@
     which
     gh
     git
-    inputs.zen.packages."${system}".default
     xwayland-satellite
   ];
 }

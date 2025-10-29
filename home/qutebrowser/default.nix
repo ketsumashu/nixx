@@ -68,7 +68,7 @@ in
         "https://raw.githubusercontent.com/tofukko/filter/master/Adblock_Plus_list.txt"
       ];
       zoom.default = "100%";
-      scrolling.smooth = false;
+      scrolling.smooth = true;
       scrolling.bar = "never";
       auto_save.session = true;
       qt.highdpi = true;

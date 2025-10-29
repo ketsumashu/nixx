@@ -1,8 +1,8 @@
-{ pkgs, ... }:
+{ pkgs,inputs, ... }:
 {
   programs.firefox = {
     enable = true;
-    package = pkgs.floorp-bin;
+    package = inputs.zen.packages."${pkgs.system}".default;
     nativeMessagingHosts = with pkgs; [ tridactyl-native ];
   };
 
