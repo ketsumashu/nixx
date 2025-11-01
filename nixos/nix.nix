@@ -16,5 +16,5 @@
     enable = true;
   };
 
-  system.stateVersion = "25.11";
+  stdenv.hostPlatform.system.stateVersion = "25.11";
 }
