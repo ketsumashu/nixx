@@ -1,4 +1,5 @@
-{pkgs, ...}:{
+{ pkgs, ... }:
+{
   time = {
     timeZone = "Asia/Tokyo";
     hardwareClockInLocalTime = true;

@@ -49,9 +49,9 @@
               4
             ];
           };
-        "niri/workspaces" = {
-          format = "{name}";
-          all-outputs = true;
+          "niri/workspaces" = {
+            format = "{name}";
+            all-outputs = true;
           };
           on-scroll-up = "hyprctl dispatch workspace e-1";
           on-scroll-down = "hyprctl dispatch workspace e+1";

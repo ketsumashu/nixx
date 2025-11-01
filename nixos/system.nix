@@ -50,13 +50,19 @@
   fileSystems."/home/mashu/data" = {
     device = "/dev/disk/by-uuid/78F0F0ACF0F0722C";
     fsType = "ntfs-3g";
-    options = [ "rw" "uid=1000" ];
+    options = [
+      "rw"
+      "uid=1000"
+    ];
   };
 
   fileSystems."/home/mashu/game" = {
     device = "/dev/disk/by-uuid/ECB01508B014DB42";
     fsType = "ntfs-3g";
-    options = [ "rw" "uid=1000" ];
+    options = [
+      "rw"
+      "uid=1000"
+    ];
   };
 
   swapDevices = [ ];

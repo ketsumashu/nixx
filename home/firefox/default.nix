@@ -1,8 +1,8 @@
-{ pkgs,inputs, ... }:
+{ pkgs, inputs, ... }:
 
 {
   imports = [
-  inputs.zen.homeModules.beta
+    inputs.zen.homeModules.beta
   ];
 
   programs.zen-browser = {
