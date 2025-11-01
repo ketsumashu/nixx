@@ -93,8 +93,9 @@ layout {
 // This line starts waybar, a commonly used bar for Wayland compositors.
 spawn-at-startup "waybar"
 spawn-at-startup "swww-daemon"
+spawn-at-startup "arrpc"
 spawn-sh-at-startup "steam --start-minimized"
-spawn-sh-at-startup "discord --gtk-version=4 --ozone-platform-hint=auto"
+spawn-sh-at-startup "vesktop --gtk-version=4 --ozone-platform-hint=auto"
 spawn-at-startup "hypridle"
 spawn-sh-at-startup "openrgb --startminimized -p ~/.config/OpenRGB/pro.orp"
 
@@ -143,9 +144,8 @@ window-rule {
     max-width 1000
 }
 window-rule {
-    match title=r#"Open Files$"#
+    match app-id=r#"xdg-desktop-portal-gtk$"#
     open-floating true
-    default-floating-position x=1200 y=1000
     max-height 800
     max-width 1400
 }
