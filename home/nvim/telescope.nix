@@ -44,5 +44,5 @@
       };
     };
   };
-  programs.nixvim.plugins.web-devicon.enable = true;
+  programs.nixvim.plugins.web-devicons.enable = true;
 }
