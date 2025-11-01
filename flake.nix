@@ -14,7 +14,6 @@
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
     nur.url = "github:nix-community/NUR";
-    niri.url = "github:sodiboo/niri-flake";
     zen = {
       url ="github:0xc000022070/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -29,7 +28,6 @@
       spicetify-nix,
       nur,
       zen,
-      niri,
       ...
     }:
     {
@@ -38,7 +36,6 @@
           system = "x86_64-linux";
           modules = [
             nur.modules.nixos.default
-            niri.nixosModules.niri
             nixos-hardware.nixosModules.common-cpu-amd
             nixos-hardware.nixosModules.common-gpu-amd
             nixos-hardware.nixosModules.common-pc-ssd
@@ -60,7 +57,6 @@
                   inherit nixvim;
                   inherit spicetify-nix;
                   inherit zen;
-                  inherit niri;
                 };
               };
             }
