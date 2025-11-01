@@ -55,7 +55,7 @@ in
           "Cozette"
           "mplus12"
         ];
-        default_size = "20px";
+        default_size = "16px";
         web.family = {
           sans_serif = "PlemolJP35 Console HS";
           serif = "Noto Sans CJK JP";
