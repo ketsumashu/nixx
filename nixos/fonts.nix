@@ -29,7 +29,7 @@
         emoji = [ "Blobmoji" ];
       };
       hinting = {
-        enable = true;
+        enable = false;
         style = "none";
       };
       subpixel = {
