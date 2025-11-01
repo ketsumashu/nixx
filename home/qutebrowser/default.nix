@@ -52,8 +52,8 @@ in
       content.javascript.clipboard = "access-paste";
       fonts = {
         default_family = [
-          "Fira Code Nerd Font"
-          "PlemolJP35 Console HS"
+          "Cozette"
+          "mplus12"
         ];
         default_size = "13px";
         web.family = {
@@ -281,7 +281,7 @@ in
         indicator = {
           width = 3;
         };
-        position = "left";
+        position = "bottom";
         width = 220;
         show = "always";
         show_switching_delay = 800;
