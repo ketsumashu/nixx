@@ -31,7 +31,7 @@
     {
       nixosConfigurations = {
         mashu-nix-101 = nixpkgs.lib.nixosSystem {
-          stdenv.hostPlatform.system = "x86_64-linux";
+          system = "x86_64-linux";
           modules = [
             nixos-hardware.nixosModules.common-cpu-amd
             nixos-hardware.nixosModules.common-gpu-amd
