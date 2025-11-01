@@ -1,4 +1,4 @@
-{ pkgs, inputs, ... }:
+{ pkgs,... }:
 {
   home.packages = with pkgs; [
     wl-clipboard
@@ -25,6 +25,7 @@
     gh
     git
     xwayland-satellite
-    discord
+    vesktop
+    arrpc
   ];
 }
