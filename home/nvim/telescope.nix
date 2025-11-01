@@ -1,5 +1,5 @@
 {
- programs.nixvim.plugins.telescope = {
+  programs.nixvim.plugins.telescope = {
     enable = true;
     settings = {
       defaults = {
@@ -44,4 +44,5 @@
       };
     };
   };
+  programs.nixvim.plugins.web-devicon.enable = true;
 }
