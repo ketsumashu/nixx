@@ -1,32 +1,25 @@
-{ pkgs, lib, config, ... }:
+{ pkgs, ... }:
 {
-  services.greetd =
-    let
-    minimumConfig = pkgs.writeText "minimum-config.kdl" ''
-      hotkey-overlay {
-        skip-at-startup
-      }
-      spawn-sh-at-startup "${lib.getExe pkgs.regreet}; niri msg action quit --skip-confirmation"
-    '';
-    in
-    {
+  services.greetd = {
     enable = true;
     settings = {
       default_session = {
-        command = "${lib.getExe pkgs.niri} --config ${minimumConfig}";
+        command = "tuigreet --time --remember --cmd niri-session";
         user = "greeter";
       };
     };
   };
 
-  # systemd.services.greetd.serviceConfig = {
-  #   Type = "idle";
-  #   StandardInput = "tty";
-  #   StandardOutput = "tty";
-  #   StandardError = "journal"; # Without this errors will spam on screen
-  #   # Without these bootlogs will spam on screen
-  #   TTYReset = true;
-  #   TTYVHangup = true;
-  #   TTYVTDisallocate = true;
-  # };
+  environment.systemPackages = with pkgs; [ regreet ];
+
+  systemd.services.greetd.serviceConfig = {
+    Type = "idle";
+    StandardInput = "tty";
+    StandardOutput = "tty";
+    StandardError = "journal"; # Without this errors will spam on screen
+    # Without these bootlogs will spam on screen
+    TTYReset = true;
+    TTYVHangup = true;
+    TTYVTDisallocate = true;
+  };
 }
