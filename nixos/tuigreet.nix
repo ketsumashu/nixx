@@ -6,7 +6,7 @@
       hotkey-overlay {
         skip-at-startup
       }
-      spawn-sh-at-startup "${lib.getExe pkgs.greetd.regreet}; niri msg action quit --skip-confirmation"
+      spawn-sh-at-startup "${lib.getExe pkgs.regreet}; niri msg action quit --skip-confirmation"
     '';
     in
     {
