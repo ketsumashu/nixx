@@ -27,10 +27,6 @@
     xwayland-satellite
     vesktop
     arrpc
-    bitwarden-cli
-    bitwarden-menu
-    python312Packages.tldextract
-    wtype
   ];
 
 }
