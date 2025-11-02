@@ -22,14 +22,10 @@
       systemd.enable = true;
     };
     loader = {
-      grub = {
-        enable = true;
-        efiSupport = true;
-        device = "nodev";
-        timeout = 5;
-        useOSProber = true;
-      };
+      systemd-boot.enable = true;
+      systemd-boot.consoleMode = "max";
       efi.canTouchEfiVariables = true;
+      timeout = 5;
     };
     kernelModules = [ "kvm-amd" ];
     blacklistedKernelModules = [ "k10temp" ];
@@ -37,7 +33,6 @@
     kernelPackages = pkgs.linuxPackages_xanmod_latest;
     tmp.cleanOnBoot = true;
     supportedFilesystems = [ "ntfs" ];
-    kernelParams = ["video=HDMI-A-1:e"];
   };
 
   fileSystems."/" = {
