@@ -10,7 +10,7 @@
     };
   };
 
-  environment.systemPackages = with pkgs; [ regreet ];
+  environment.systemPackages = with pkgs; [ tuigreet ];
 
   systemd.services.greetd.serviceConfig = {
     Type = "idle";
