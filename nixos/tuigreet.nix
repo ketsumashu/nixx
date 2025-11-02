@@ -7,6 +7,10 @@
         command = "tuigreet --time --remember --cmd niri-session";
         user = "greeter";
       };
+      initial_session = {
+        command = "niri-session";
+        user = "mashu";
+      };
     };
   };
 

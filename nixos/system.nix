@@ -27,7 +27,7 @@
         efiSupport = true;
         device = "nodev";
         useOSProber = true;
-        gfxmodeEfi = "1440x2560x32";
+        gfxmodeEfi = "2560x1440x32";
       };
       efi.canTouchEfiVariables = true;
       timeout = 5;
@@ -38,7 +38,7 @@
     kernelPackages = pkgs.linuxPackages_xanmod_latest;
     tmp.cleanOnBoot = true;
     supportedFilesystems = [ "ntfs" ];
-    kernelParams = ["fbcon=rotate:3"];
+    kernelParams = ["fbcon=rotate:1"];
   };
 
   fileSystems."/" = {
