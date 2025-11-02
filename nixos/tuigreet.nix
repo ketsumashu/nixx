@@ -19,8 +19,6 @@
     };
   };
 
-  environment.systemPackages = with pkgs; [ regreet ];
-
   # systemd.services.greetd.serviceConfig = {
   #   Type = "idle";
   #   StandardInput = "tty";
