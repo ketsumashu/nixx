@@ -28,6 +28,7 @@
         device = "nodev";
         useOSProber = true;
         gfxmodeEfi = "2560x1440x32";
+        theme = "${pkgs.kdePackages.breeze-grub}/grub/themes/breeze";
       };
       efi.canTouchEfiVariables = true;
       timeout = 5;
