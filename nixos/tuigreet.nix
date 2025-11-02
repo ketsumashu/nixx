@@ -13,7 +13,7 @@
     enable = true;
     settings = {
       default_session = {
-        command = "${lib.getExe config.programs.niri.package} --config ${minimumConfig}";
+        command = "${lib.getExe pkgs.niri} --config ${minimumConfig}";
         user = "greeter";
       };
     };
