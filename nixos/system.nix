@@ -28,7 +28,7 @@
         device = "nodev";
         timeout = 5;
         useOSProber = true;
-        gfxmodeEfi = "3840x2160";
+        gfxmodeEfi = "2560x1440x32";
       };
       efi.canTouchEfiVariables = true;
     };
