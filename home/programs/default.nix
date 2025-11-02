@@ -30,6 +30,7 @@
     bitwarden-cli
     bitwarden-menu
     python312Packages.tldextract
+    wtype
   ];
 
 }
