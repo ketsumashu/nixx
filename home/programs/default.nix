@@ -27,7 +27,9 @@
     xwayland-satellite
     vesktop
     arrpc
-    rbw
-    rofi-rbw-wayland
+    bitwarden-cli
+    bitwarden-menu
+    python312Packages.tldextract
   ];
+
 }
