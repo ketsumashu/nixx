@@ -28,6 +28,7 @@
         device = "nodev";
         timeout = 5;
         useOSProber = true;
+        gfxmodeEfi = "3840x2160";
       };
       efi.canTouchEfiVariables = true;
     };
@@ -37,7 +38,6 @@
     kernelPackages = pkgs.linuxPackages_xanmod_latest;
     tmp.cleanOnBoot = true;
     supportedFilesystems = [ "ntfs" ];
-    kernelParams = ["video=HDMI-A-1:e"];
   };
 
   fileSystems."/" = {
