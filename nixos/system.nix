@@ -26,11 +26,11 @@
         enable = true;
         efiSupport = true;
         device = "nodev";
-        timeout = 5;
         useOSProber = true;
-        gfxmodeEfi = "2560x1440x32";
+        gfxmodeEfi = "1440x2560x32";
       };
       efi.canTouchEfiVariables = true;
+      timeout = 5;
     };
     kernelModules = [ "kvm-amd" ];
     blacklistedKernelModules = [ "k10temp" ];
