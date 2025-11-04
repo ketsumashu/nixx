@@ -26,7 +26,7 @@
     {
       mode = "n";
       key = "<Leader>f";
-      action = ":<plug>(leap)";
+      action = "<plug>(leap)";
     }
     {
       mode = "n";
