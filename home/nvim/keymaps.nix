@@ -26,7 +26,7 @@
     {
       mode = "n";
       key = "<Leader>f";
-      action = ":Telescope find_files<CR>";
+      action = ":<plug>(leap)";
     }
     {
       mode = "n";
