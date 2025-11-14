@@ -59,9 +59,9 @@ layout {
     border {
         off
         width 4
-        active-color "#ffc87f"
-        inactive-color "#505050"
-        urgent-color "#9b0000"
+        active-color "#77adb1"
+        inactive-color "#191c25"
+        urgent-color "#77adb1"
     }
 
     shadow {
