@@ -40,7 +40,7 @@
 
         "hyprland/workspaces" = {
           format = "{name}";
-          all-outputs = true;
+          all-outputs = false;
           persistent-workspaces = {
             "HDMI-A-1" = [
               1
