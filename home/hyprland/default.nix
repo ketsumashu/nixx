@@ -18,6 +18,8 @@
  
    wayland.windowManager.hyprland = {
      enable = true;
+     packages = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
+     portalPackages = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
      xwayland.enable = true;
      systemd.enable = true;
      plugins = [
@@ -169,6 +171,7 @@
        "openrgb --startminimized -p ~/.config/OpenRGB/pro.orp"
        "wl-paste --type text --watch cliphist store"
        "wl-paste --type image --watch cliphist store"
+       ''hyprctl plugin load "$HYPR_PLUGIN_DIR/lib/libhyprscrolling.so"''
      ];
  
      bindm = [
