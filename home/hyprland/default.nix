@@ -27,9 +27,9 @@
      "$terminal" = "kitty";
  
      monitor = [
-       "DP-1,2560x1440@120,0x0,3"
+       "DP-1,2560x1440@120,0x0,1,transform,1"
        "HDMI-A-1,3840x2160@120,1440x0,1"
-       "DP-3,2560x1440@120,5280x0,3"
+       "DP-3,2560x1440@120,5280x0,transform,3"
      ];
  
      workspace = [
