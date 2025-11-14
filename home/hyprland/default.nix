@@ -204,7 +204,7 @@
       "$mod SHIFT, J, layoutmsg, movewindowto d"
       "$mod SHIFT, F, Fullscreen"
       "$mod, C, layoutmsg, togglefit"
-      "$mod, F, layoutmsg, focus"
+      "$mod, F, layoutmsg, fit active"
       "$mod, Tab, workspace, e+1"
       "$mod SHIFT, Tab, workspace, e-1"
       "$mod, V, togglefloating"
