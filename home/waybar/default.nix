@@ -40,13 +40,21 @@
 
         "hyprland/workspaces" = {
           format = "{name}";
-          all-outputs = false;
+          all-outputs = true;
           persistent-workspaces = {
             "HDMI-A-1" = [
               1
               2
               3
               4
+            ];
+            "DP-3" = [
+              5 
+              6
+            ];
+            "DP-1" = [
+              7 
+              8
             ];
           };
           "niri/workspaces" = {
