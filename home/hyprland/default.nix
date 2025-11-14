@@ -198,15 +198,18 @@
       "$mod, K, movefocus, u"
       "$mod, J, movefocus, d"
       "$mod CTRL, Q, exit"
-      "$mod SHIFT, H, movewindow, l"
-      "$mod SHIFT, L, movewindow, r"
-      "$mod SHIFT, K, movewindow, u"
-      "$mod SHIFT, J, movewindow, d"
+      "$mod SHIFT, H, layoutmsg, movewindowto, l"
+      "$mod SHIFT, L, layoutmsg, movewindowto, r"
+      "$mod SHIFT, K, layoutmsg, movewindowto, u"
+      "$mod SHIFT, J, layoutmsg, movewindowto, d"
+      "$mod SHIFT, F, Fullscreen"
+      "$mod, F, layoutmsg, togglefit"
+      "$mod, C, layoutmsg, focus"
+      "$mod, layoutmsg, togglefit"
       "$mod, Tab, workspace, e+1"
       "$mod SHIFT, Tab, workspace, e-1"
       "$mod, V, togglefloating"
       "$mod, period, exec, hyprlock"
-      "$mod, F, Fullscreen"
       ''$mod CTRL, T, exec, grim -o HDMI-A-1 ~/screenshot/$(date +"%Y_%m_%d".png)''
     ]
     ++ (
