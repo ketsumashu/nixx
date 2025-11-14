@@ -23,8 +23,8 @@
 
   wayland.windowManager.hyprland = {
     enable = true;
-    packages = null;
-    portalPackages = null;
+    package = null;
+    portalPackage = null;
     xwayland.enable = true;
     systemd.enable = true;
     plugins = [
