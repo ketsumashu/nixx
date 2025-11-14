@@ -39,7 +39,7 @@
     kernelPackages = pkgs.linuxPackages_xanmod_latest;
     tmp.cleanOnBoot = true;
     supportedFilesystems = [ "ntfs" ];
-    kernelParams = ["fbcon=rotate:1"];
+    kernelParams = [ "fbcon=rotate:1" ];
   };
 
   fileSystems."/" = {
