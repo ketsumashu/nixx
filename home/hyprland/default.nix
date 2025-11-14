@@ -139,6 +139,7 @@
     windowrulev2 = [
       "float,class:^(blueman-manager)$"
       "float,class:^(Waydroid)"
+      "float,class:^(xdg-desktop-portal-)"
       "float,title:(Save File)$"
       "float,title:^(blob)"
       "float,class:^(org.pulseaudio.pavucontrol)"
