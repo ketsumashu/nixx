@@ -43,6 +43,13 @@
        "8, monitor:DP-1, default:true"
        "9, monitor:DP-1, default:true"
      ];
+
+    plugin = {
+      hyprscrolling = {
+        column_width = 0.5;
+        fullscreen_on_one_column = true;
+      };
+    };
  
      general = {
        gaps_in = 5;
@@ -50,7 +57,7 @@
        border_size = 3;
        "col.active_border" = "rgb(77adb1)";
        "col.inactive_border" = "rgb(191c25)";
-       layout = "dwindle";
+       layout = "scrolling";
        allow_tearing = true;
      };
  
