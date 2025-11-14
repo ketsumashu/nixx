@@ -4,6 +4,8 @@ input {
              layout "us"
             options "ctrl:nocaps"
         }
+        repeat_delay 270
+        repeat_rate 50
     }
 
     touchpad {
