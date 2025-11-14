@@ -28,7 +28,7 @@
     xwayland.enable = true;
     systemd.enable = true;
     plugins = [
-      inputs.hyprland-plugins.packages.${pkgs.system}.hyprscrolling
+      inputs.hyprland-plugins.packages.${pkgs.stdenv.hostPlatform.system}.hyprscrolling
     ];
   };
 
