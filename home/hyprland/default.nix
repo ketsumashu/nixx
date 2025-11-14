@@ -153,7 +153,6 @@
        "mako"
        "waybar"
        "arrpc"
-       "fcitx5 -rd"
        ''hyprctl dispatch exec "[workspace 2 silent]" steam''
        ''hyprctl dispatch exec "[workspace 5 silent]" "vesktop --gtk-version=4 --ozone-platform=wayland"''
        "swww-daemon"
@@ -177,7 +176,6 @@
          "$mod, Space, exec, rofi -show drun"
          "$mod, P, exec, cliphist list | rofi -dmenu | cliphist decode | wl-copy"
          "$mod, X, killactive"
-         "$mod, E, exec, discord"
          "$mod, H, movefocus, l"
          "$mod, L, movefocus, r"
          "$mod, K, movefocus, u"
