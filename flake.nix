@@ -17,6 +17,7 @@
       url = "github:0xc000022070/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    hyprland.url = "github:hyprwm/Hyprland";
   };
   outputs =
     inputs@{
@@ -26,6 +27,7 @@
       nixos-hardware,
       spicetify-nix,
       zen,
+      hyprland,
       ...
     }:
     {
@@ -54,6 +56,7 @@
                   inherit nixvim;
                   inherit spicetify-nix;
                   inherit zen;
+                  inherit hyprland;
                 };
               };
             }
