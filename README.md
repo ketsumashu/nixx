@@ -11,4 +11,3 @@ requires `git` and enable `nix command`,`flakes`
   ln -s ~/nixx /etc/nixos
   sudo nixos-rebuild switch
 ```
-
