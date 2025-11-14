@@ -27,18 +27,18 @@
      "$terminal" = "kitty";
  
      monitor = [
-       "DP-1,2560x1440@120,0x0,1,transform,1"
+       "DP-3,2560x1440@120,0x0,1,transform,1"
        "HDMI-A-1,3840x2160@120,1440x0,1"
-       "DP-3,2560x1440@120,5280x0,transform,3"
+       "DP-1,2560x1440@120,5280x0,1,transform,3"
      ];
  
      workspace = [
-       "1, monitor:HDMI-A-2, default:true"
-       "2, monitor:HDMI-A-2, default:true"
-       "3, monitor:HDMI-A-2, default:true"
-       "4, monitor:HDMI-A-2, default:true"
+       "1, monitor:HDMI-A-1, default:true"
+       "2, monitor:HDMI-A-1, default:true"
+       "3, monitor:HDMI-A-1, default:true"
+       "4, monitor:HDMI-A-1, default:true"
        "5, monitor:HDMI-A-1, default:true"
-       "6, monitor:HDMI-A-1, default:true"
+       "6, monitor:HDMI-A-2, default:true"
        "7, monitor:HDMI-A-1, default:true"
        "8, monitor:HDMI-A-1, default:true"
        "9, monitor:HDMI-A-1, default:true"
