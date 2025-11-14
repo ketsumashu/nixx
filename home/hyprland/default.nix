@@ -141,7 +141,7 @@
       "float,class:^(Waydroid)"
       "float,title:(Save File)$"
       "float,title:^(blob)"
-      "float,class:^(org.pulseaudio.pavu)"
+      "float,class:^(org.pulseaudio.pavucontrol)"
       "float,maxsize 400 100,class:^(Floaterm)"
       "float,title:^(ncspot)"
       "float,title:^(.blueman-manager)"
