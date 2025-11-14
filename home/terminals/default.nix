@@ -2,7 +2,7 @@
   programs.kitty = {
     enable = true;
     settings = {
-      background_opacity = 0.96;
+      background_opacity = 0.92;
       font_family = "FiraCode Nerd Font";
       italic_font = "auto";
       bold_font = "auto";
