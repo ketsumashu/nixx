@@ -138,7 +138,7 @@
 
     windowrulev2 = [
       "float,class:^(blueman-manager)$"
-      "float,initialclass:^(xdg-desktop-portal-gtk)$"
+      "float,class:^(xdg-desktop-portal-gtk)$"
       "float,title:(Save File)$"
       "float,title:^(blob)"
       "float,class:^(org.pulseaudio.pavucontrol)"
