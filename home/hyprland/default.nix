@@ -158,6 +158,7 @@
       "float,class:^(steam)$,title:(CD key)$"
       "float,class:^(steam)$,title:^(Steam - Self Updater)$"
       "float,class:^(steam)$,title:(Manager)$"
+      "float,class:^(steam)$,title:(フレンドリスト)$"
       "float,class:^(steam)$,title:^(Steam Guard - Computer Authorization Required)$"
       "pseudo,class:(fcitx5)$"
       "workspace 2,class:(1477590)$"
