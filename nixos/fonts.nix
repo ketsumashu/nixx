@@ -30,10 +30,10 @@
       };
       hinting = {
         enable = false;
-        style = "none";
+        style = "full";
       };
       subpixel = {
-        rgba = "none";
+        rgba = "rgb";
       };
       localConf = ''
         <?xml version="1.0"?>
