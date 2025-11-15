@@ -35,7 +35,7 @@
       modify_font cell_height 100%
       click_interval 0.5
       cursor_blink_interval 0
-      modify_font cell_width 90%
+      modify_font cell_width 100%
       background #191c25
       foreground #a6accd
       cursor     #e0def4
