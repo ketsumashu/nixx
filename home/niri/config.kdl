@@ -60,7 +60,7 @@ layout {
 
     border {
         off
-        width 4
+        width 2
         active-color "#77adb1"
         inactive-color "#191c25"
         urgent-color "#77adb1"
@@ -69,7 +69,7 @@ layout {
     shadow {
         on
         softness 30
-        spread 5
+        spread 6
         offset x=0 y=5
         color "#0007"
     }
@@ -380,7 +380,6 @@ binds {
     Mod+Comma  { consume-window-into-column; }
     // Expel the bottom window from the focused column to the right.
     Mod+Period { expel-window-from-column; }
-
     Mod+R { switch-preset-column-width; }
     // Cycling through the presets in reverse order is also possible.
     // Mod+R { switch-preset-column-width-back; }
