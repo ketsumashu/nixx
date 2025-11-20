@@ -57,10 +57,10 @@ in
         ];
         default_size = "16px";
         web.family = {
-          sans_serif = "HackGen35 Console NF";
+          sans_serif = "Moralerspace Argon";
           serif = "Noto Sans CJK JP";
-          fixed = "HackGen35 Console NF";
-          standard = "HackGen35 Console NF";
+          fixed = "Moralerspace Argon";
+          standard = "Moralerspace Argon";
         };
       };
       content.blocking.method = "both";
