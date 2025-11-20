@@ -57,10 +57,10 @@ in
         ];
         default_size = "16px";
         web.family = {
-          sans_serif = "Moralerspace Neon";
+          sans_serif = "Moralerspace Argon";
           serif = "Noto Sans CJK JP";
-          fixed = "Moralerspace Neon";
-          standard = "Moralerspace Neon";
+          fixed = "Moralerspace Argon";
+          standard = "Moralerspace Argon";
         };
       };
       content.blocking.method = "both";
