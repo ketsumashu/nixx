@@ -20,7 +20,7 @@
           "Blobmoji"
         ];
         sansSerif = [
-          "PlemolJP35 Console HS"
+          "HackGen Console NF"
           "Blobmoji"
         ];
         monospace = [
