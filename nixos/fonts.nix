@@ -10,6 +10,7 @@
       noto-fonts-cjk-serif
       plemoljp-hs
       hackgen-nf-font
+      moralerspace
     ];
     fontDir.enable = true;
     fontconfig.enable = true;
