@@ -57,10 +57,10 @@ in
         ];
         default_size = "16px";
         web.family = {
-          sans_serif = "HackGen35 Console";
+          sans_serif = "HackGen35 Console NF";
           serif = "Noto Sans CJK JP";
-          fixed = "HackGen35 Console";
-          standard = "HackGen35 Console";
+          fixed = "HackGen35 Console NF";
+          standard = "HackGen35 Console NF";
         };
       };
       content.blocking.method = "both";
