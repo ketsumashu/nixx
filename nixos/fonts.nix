@@ -9,6 +9,7 @@
       noto-fonts-cjk-sans
       noto-fonts-cjk-serif
       plemoljp-hs
+      hackgen-nf-font
     ];
     fontDir.enable = true;
     fontconfig.enable = true;
