@@ -21,7 +21,7 @@
           "Blobmoji"
         ];
         sansSerif = [
-          "HackGen Console NF"
+          "Moralerspace Radon"
           "Blobmoji"
         ];
         monospace = [
