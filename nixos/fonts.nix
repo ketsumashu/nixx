@@ -65,12 +65,12 @@
           <match target="pattern">
             <test name="family"><string>Moralerspace Argon</string></test>
             <test name="weight" compare="eq"><const>Regular</const></test>
-            <edit name="weight" mode="assign" binding="strong"><const>Medium</const></edit>
+            <edit name="weight" mode="assign" binding="strong"><const>Bold</const></edit>
           </match>
           <match target="pattern">
             <test name="family"><string>Moralerspace Argon</string></test>
             <test name="weight" compare="eq"><const>Light</const></test>
-            <edit name="weight" mode="assign" binding="strong"><const>Medium</const></edit>
+            <edit name="weight" mode="assign" binding="strong"><const>Bold</const></edit>
           </match>
         </fontconfig>
       '';
