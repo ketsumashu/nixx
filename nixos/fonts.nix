@@ -25,7 +25,7 @@
           "Blobmoji"
         ];
         monospace = [
-          "FiraCode Nerd Font"
+          "Moralerspace Radon"
           "Blobmoji"
         ];
         emoji = [ "Blobmoji" ];
