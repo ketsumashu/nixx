@@ -18,8 +18,8 @@
       name = "Tela-circle-dark";
     };
     font = {
-      name = "PlemolJP35 Console HS Bold";
-      size = 10;
+      name = "Moralerspace Argon Bold";
+      size = 12;
     };
   };
   dconf.settings = {
