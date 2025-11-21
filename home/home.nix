@@ -17,7 +17,6 @@
     ./qutebrowser
     ./niri
     ./hyprland
-    ./walker
   ];
 
   home = {
