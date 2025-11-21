@@ -1,6 +1,6 @@
 { inputs, ... }:
 {
-  imports = [ inputs.walker.nixosModules.default ];
+  imports = [ inputs.walker.homeManagerModules.default ];
 
   programs.walker = {
     enable = true;
