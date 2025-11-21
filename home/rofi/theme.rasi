@@ -10,7 +10,7 @@
     grey: #94cdd1;
 
     width:700;
-    font: "PlemolJP35 Console HS 10";
+    font: "Moralerspace Radon 12";
 }
 
 element-text, element-icon , mode-switcher {
