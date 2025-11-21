@@ -10,7 +10,7 @@
     grey: #94cdd1;
 
     width:700;
-    font: "Moralerspace Radon 12";
+    font: "Moralerspace Argon Bold 12";
 }
 
 element-text, element-icon , mode-switcher {
