@@ -27,7 +27,6 @@
     xwayland-satellite
     vesktop
     arrpc
-    walker
   ];
 
 }

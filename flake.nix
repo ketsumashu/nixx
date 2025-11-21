@@ -22,6 +22,11 @@
       url = "github:hyprwm/hyprland-plugins";
       inputs.hyprland.follows = "hyprland";
     };
+    elephant.url = "github:abenz1267/elephant";
+    walker = {
+      url = "github:abenz1267/walker";
+      inputs.elephant.follows = "elephant";
+    };
   };
   outputs =
     inputs@{
@@ -33,6 +38,8 @@
       zen,
       hyprland,
       hyprland-plugins,
+      elephant,
+      walker,
       ...
     }:
     {
@@ -63,6 +70,8 @@
                   inherit zen;
                   inherit hyprland;
                   inherit hyprland-plugins;
+                  inherit elephant;
+                  inherit walker;
                 };
               };
             }
