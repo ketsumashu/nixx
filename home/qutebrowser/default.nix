@@ -28,8 +28,6 @@ in
         "t" = "cmd-set-text -s :open -t";
         "yf" = "hint links yank";
         "yd" = "hint links download";
-        ";p" = "spawn --userscript qute-bitwarden --auto-lock 0";
-        ";t" = "spawn --userscript qute-bitwarden --auto-lock 0 -T";
       };
       insert = { };
     };
@@ -52,8 +50,7 @@ in
       content.javascript.clipboard = "access-paste";
       fonts = {
         default_family = [
-          "Cozette"
-          "mplus12"
+          "Moralerspace Argon"
         ];
         default_size = "16px";
         web.family = {
@@ -287,7 +284,7 @@ in
         show_switching_delay = 800;
         new_position.related = "last";
       };
-      statusbar.show = "always";
+      statusbar.show = "in-mode";
       completion = {
         height = "10%";
       };
@@ -297,7 +294,7 @@ in
       c.tabs.padding = { "bottom":2, "right":5, "left":5, "top":2 }
       c.tabs.title.format = "{current_title}"
       c.tabs.title.format_pinned = "{current_title}"
-      c.statusbar.widgets = ["keypress", "search_match","url","scroll","history","progress","clock"]
+      c.statusbar.widgets = ["keypress", "search_match","url","scroll","history","progress"]
       config.unbind("O")
       config.load_autoconfig(False)
     '';
