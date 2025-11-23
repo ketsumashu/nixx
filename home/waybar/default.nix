@@ -34,6 +34,7 @@
           "memory"
           "temperature#cpu"
           "temperature#gpu"
+          "network"
           "clock"
           "tray"
         ];
@@ -57,12 +58,12 @@
               8
             ];
           };
-          "niri/workspaces" = {
-            format = "{name}";
-            all-outputs = true;
-          };
           on-scroll-up = "hyprctl dispatch workspace e-1";
           on-scroll-down = "hyprctl dispatch workspace e+1";
+        };
+        "niri/workspaces" = {
+          format = "{name}";
+          all-outputs = true;
         };
 
         "hyprland/window" = {
@@ -106,7 +107,7 @@
         };
 
         "tray" = {
-          spacing = 10;
+          spacing = 16;
         };
 
         "clock" = {
@@ -173,7 +174,7 @@
     style = ''
       * {
           font-family: "Moralerspace Argon Bold";
-          font-size: 16px;
+          font-size: 14px;
           min-height: 0;
       }
 
@@ -249,7 +250,6 @@
       #network,
       #clock {
           color: #94cdd1;
-          font-size: 12px;
           margin-bottom: 0px;
           padding-bottom: 0px;
       }
