@@ -172,8 +172,8 @@
     };
     style = ''
       * {
-          font-family: "Fira Code Nerd Font,PlemolJP35 Console HS";
-          font-size: 12px;
+          font-family: "Moralerspace Argon Bold";
+          font-size: 16px;
           min-height: 0;
       }
 
