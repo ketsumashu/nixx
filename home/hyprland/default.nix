@@ -28,8 +28,8 @@
     xwayland.enable = true;
     systemd.enable = true;
     plugins = [
-      #inputs.hyprland-plugins.packages.${pkgs.stdenv.hostPlatform.system}.hyprscrolling
-      "${pkgs.hyprlandPlugins.hyprscrolling}/lib/libhyprscrolling.so"
+      inputs.hyprland-plugins.packages.${pkgs.stdenv.hostPlatform.system}.hyprscrolling
+      #"${pkgs.hyprlandPlugins.hyprscrolling}/lib/libhyprscrolling.so"
     ];
   };
 
@@ -172,7 +172,7 @@
       "openrgb --startminimized -p ~/.config/OpenRGB/pro.orp"
       "wl-paste --type text --watch cliphist store"
       "wl-paste --type image --watch cliphist store"
-      ''hyprctl plugin load "${pkgs.hyprlandPlugins.hyprscrolling}/lib/libhyprscrolling.so"''
+      ''hyprctl plugin load "inputs.hyprland-plugins.packages.${pkgs.stdenv.hostPlatform.system}/lib/libhyprscrolling.so"''
     ];
 
     bindm = [
