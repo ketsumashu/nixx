@@ -140,12 +140,12 @@
 
     windowrule = [
       "match:class ^(blueman-manager)$, float"
-      "match:class^(xdg-desktop-portal-gtk)$, float"
-      "match:title(Save File), float$"
-      "match:title^(blob), float"
+      "match:class ^(xdg-desktop-portal-gtk)$, float"
+      "match:title (Save File), float$"
+      "match:title ^(blob), float"
       "match:class ^(org.pulseaudio.pavucontrol),max_size 900 600"
       "match:class ^(Floaterm), max_size 900 600"
-      "match:class(vesktop)$, workspace 5"
+      "match:class (vesktop)$, workspace 5"
       "match:class ^(steam)$, match:title(ist)$, float"
       "match:class ^(steam)$, match:title^(Steam Settings)$, float"
       "match:class ^(steam)$, match:title(Chat)$, float"
