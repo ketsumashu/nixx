@@ -15,7 +15,6 @@
     ./spicetify
     ./gui
     ./qutebrowser
-    ./niri
     ./hyprland
   ];
 
