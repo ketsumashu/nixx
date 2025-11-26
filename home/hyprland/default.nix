@@ -29,7 +29,7 @@
     systemd.enable = true;
     plugins = [
       #inputs.hyprland-plugins.packages.${pkgs.stdenv.hostPlatform.system}.hyprscrolling
-      pkgs.hyprlandPlugins.hyprscrolling
+      "${pkgs.hyprlandPlugins.hyprscrolling}/lib/libhyprscrolling.so"
     ];
   };
 
