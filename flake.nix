@@ -19,7 +19,7 @@
     };
     hyprland.url = "github:hyprwm/Hyprland";
     hyprland-plugins = {
-      url = "github:hyprwm/hyprland-plugins?rev=81f6d1426537981fcbb921f8b5e470b1280ef8f3";
+      url = "github:hyprwm/hyprland-plugins?rev=a5a6f93d72d5fb37e78b98c756cfd8b340e71a19";
       inputs.hyprland.follows = "hyprland";
     };
   };
