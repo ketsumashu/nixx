@@ -144,7 +144,7 @@
       "match:title (Save File)$, float true"
       "match:title ^(blob), float true"
       "match:class ^(org.pulseaudio.pavucontrol),max_size 900 600"
-      "match:class Floaterm, max_size 900 600"
+      "match:class ^(Floaterm)$, max_size 900 600"
       "match:class (vesktop)$, workspace 5"
       "match:class ^(steam)$, match:title (ist)$, float true"
       "match:class ^(steam)$, match:title ^(Steam Settings)$, float true"
