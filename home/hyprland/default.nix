@@ -27,9 +27,9 @@
     portalPackage = null;
     xwayland.enable = true;
     systemd.enable = true;
-    #       plugins = [
-    #     inputs.hyprland-plugins.packages.${pkgs.stdenv.hostPlatform.system}.hyprscrolling
-    #    ];
+           plugins = [
+         inputs.hyprland-plugins.packages.${pkgs.stdenv.hostPlatform.system}.hyprscrolling
+        ];
   };
 
   wayland.windowManager.hyprland.settings = {
