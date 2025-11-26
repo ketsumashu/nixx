@@ -159,7 +159,7 @@
       "match:class ^(steam)$, match:title ^(Steam Guard - Computer Authorization Required)$, float true"
     ];
 
-    layerrule = [ "match:waybar, blur true" ];
+    layerrule = [ "match:namespace waybar, blur on" ];
 
     exec-once = [
       "systemctl --user enable xdg-desktop-portal-hyprland"
