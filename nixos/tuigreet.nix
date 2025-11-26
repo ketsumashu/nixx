@@ -4,13 +4,13 @@
     enable = true;
     settings = {
       default_session = {
-        command = "tuigreet --time --remember --cmd niri-session";
+        command = "tuigreet --time --remember --cmd Hyprland";
         user = "greeter";
       };
-      #      initial_session = {
-      #        command = "niri-session";
-      #        user = "mashu";
-      #      };
+      initial_session = {
+        command = "Hyprland";
+        user = "mashu";
+      };
     };
   };
 
