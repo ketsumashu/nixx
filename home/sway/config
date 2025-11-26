@@ -43,9 +43,9 @@ assign [app_id = "^vesktop"] workspace number 5
 assign [app_id = "^floorp" title="$Extension:"] floating enable
 assign [class = "^steam"] workspace number 2
 ### Output configuration
-output HDMI-A-1 pos 1440 0 resolution 3860x2160@120Hz scale 1
+output HDMI-A-1 pos 1440 0 resolution 3840x2160@120Hz scale 1
 output DP-3 pos 0 0 resolution 2560x1440@100Hz scale 1 transform 270
-output DP-1 pos 5300 0 resolution 2560x1440@120Hz scale 1 transform 90
+output DP-1 pos 5320 0 resolution 2560x1440@120Hz scale 1 transform 90
 
 ### Input configuration
 input "*" {
