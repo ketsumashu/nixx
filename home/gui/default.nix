@@ -1,4 +1,4 @@
-{ pkgs, config, ... }:
+{ pkgs, config, lib, ... }:
 {
   qt = {
     enable = true;
@@ -28,7 +28,7 @@
     };
   };
   xdg.portal = {
-    enable = true;
+    enable = lib.mkdefault true;
     extraPortals = with pkgs; [
       xdg-desktop-portal-gnome
     ];
