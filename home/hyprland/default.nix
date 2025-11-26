@@ -172,7 +172,7 @@
       "openrgb --startminimized -p ~/.config/OpenRGB/pro.orp"
       "wl-paste --type text --watch cliphist store"
       "wl-paste --type image --watch cliphist store"
-      ''hyprctl plugin load "$HYPR_PLUGIN_DIR/lib/libhyprscrolling.so"''
+      ''hyprctl plugin load "${pkgs.hyprlandPlugins.hyprscrolling}/lib/libhyprscrolling.so"''
     ];
 
     bindm = [
