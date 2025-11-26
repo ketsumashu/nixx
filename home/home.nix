@@ -16,6 +16,7 @@
     ./gui
     ./qutebrowser
     ./hyprland
+    ./niri
   ];
 
   home = {
