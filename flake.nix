@@ -18,10 +18,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     hyprland.url = "github:hyprwm/Hyprland";
-    #hyprland-plugins = {
-    #  url = "github:hyprwm/hyprland-plugins";
-    #  inputs.hyprland.follows = "hyprland";
-    #};
+    hyprland-plugins = {
+      url = "github:hyprwm/hyprland-plugins";
+      inputs.hyprland.follows = "hyprland";
+    };
   };
   outputs =
     inputs@{
@@ -32,6 +32,7 @@
       spicetify-nix,
       zen,
       hyprland,
+      hyprland-plugins,
       ...
     }:
     {
@@ -61,6 +62,7 @@
                   inherit spicetify-nix;
                   inherit zen;
                   inherit hyprland;
+                  inherit hyprland-plugins;
                 };
               };
             }
