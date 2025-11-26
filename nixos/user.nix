@@ -12,7 +12,11 @@
     EDITOR = "nvim";
     NH_FLAKE = "/home/mashu/nixx/";
   };
-  environment.pathsToLink = [ "/share/fish" ]; # おまじない
+  environment.pathsToLink = [
+    "/share/fish" 
+    "/share/applications" 
+    "/share/xdg-desktop-portal" 
+  ]; # おまじない
 
   security = {
     polkit.enable = true;
