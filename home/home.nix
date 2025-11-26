@@ -16,6 +16,7 @@
     ./gui
     ./qutebrowser
     ./niri
+    ./sway
   ];
 
   home = {
