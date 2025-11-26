@@ -1,9 +1,15 @@
 { pkgs, lib, ... }:
 {
   home.sessionVariables = {
-    XDG_CURRENT_DESKTOP = lib.mkDefault "niri";
-    XDG_SESSION_DESKTOP = lib.mkDefault "niri";
+    XDG_CURRENT_DESKTOP = "niri";
+    XDG_SESSION_DESKTOP = "niri";
     BROWSER = "qutebrowser";
+    XDG_SESSION_TYPE = "wayland";
+    QT_QPA_PLATFORM = "wayland";
+    QT_QPA_PLATFORM_THEME = "qt6ct";
+    QT_AUTO_SCREEN_SCALE_FACTOR = "1";
+    HYPRCURSOR_THEME = "Bibata-Modern-Ice";
+    HYPRCURSOR_SIZE = "24";
   };
 
   home.packages = with pkgs; [
