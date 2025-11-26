@@ -20,15 +20,15 @@
     ];
     config = {
       common = {
-        default = [ "gnome" ];
+        default = [ "gtk" ];
       };
-      niri = {
-        default = [
-          "gnome"
-        ];
-        "org.freedesktop.impl.portal.ScreenCast" = [ "gnome" ];
-        "org.freedesktop.impl.portal.Screenshot" = [ "gnome" ];
-      };
+      #niri = {
+      #  default = [
+      #    "gnome"
+      #  ];
+      #  "org.freedesktop.impl.portal.ScreenCast" = [ "gnome" ];
+      #  "org.freedesktop.impl.portal.Screenshot" = [ "gnome" ];
+      #};
     };
   };
 }
