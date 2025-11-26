@@ -9,6 +9,5 @@
     ./tuigreet.nix
     ./system.nix
     ./hardware.nix
-    ./hyprland.nix
   ];
 }
