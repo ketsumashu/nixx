@@ -16,7 +16,7 @@
     "/share/fish" 
     "/share/applications" 
     "/share/xdg-desktop-portal" 
-  ]; # おまじない
+  ]; 
 
   security = {
     polkit.enable = true;
