@@ -185,6 +185,9 @@
           border-top-right-radius:13px;
           border-bottom-right-radius:0px;
           border-top-left-radius:13px;
+          border-top: 2px solid #77adb1;
+          border-left: 2px solid #77adb1;
+          border-right: 2px solid #77adb1;
       }
 
       window#waybar.hidden {
