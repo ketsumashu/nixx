@@ -182,8 +182,8 @@
 
       window#waybar {
           background-color: rgba(25,28,37,0.95);
-          border-top-right-radius:60px;
-          border-bottom-right-radius:60px;
+          border-top-right-radius:50px;
+          border-top-left-radius:50px;
       }
 
       window#waybar.hidden {
@@ -235,7 +235,7 @@
 
       #window{
           color:#c5c4d4;
-          padding: 100px 0px;
+          padding: 0px 0px;
       }
       #workspaces {
           margin: 0 0px;
