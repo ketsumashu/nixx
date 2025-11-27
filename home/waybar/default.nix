@@ -18,8 +18,8 @@
         height = 40;
         margin-top = 0;
         margin-bottom = 0;
-        margin-left = 30;
-        margin-right = 30;
+        margin-left = 15;
+        margin-right = 15;
         spacing = 15;
         modules-left = [
           "sway/window"
