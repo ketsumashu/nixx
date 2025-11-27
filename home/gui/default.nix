@@ -28,7 +28,7 @@
     };
   };
   xdg.portal = {
-    enable = lib.mkDefault true;
+    enable = true;
     extraPortals = with pkgs; [
       xdg-desktop-portal-gnome
     ];
