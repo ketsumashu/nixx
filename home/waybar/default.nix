@@ -182,9 +182,9 @@
 
       window#waybar {
           background-color: rgba(25,28,37,0.95);
-          border-top-right-radius:20px;
+          border-top-right-radius:13px;
           border-bottom-right-radius:0px;
-          border-top-left-radius:20px;
+          border-top-left-radius:13px;
       }
 
       window#waybar.hidden {
