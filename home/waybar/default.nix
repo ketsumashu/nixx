@@ -20,14 +20,14 @@
         margin-bottom = 0;
         spacing = 15;
         modules-left = [
-          "sway/workspaces"
-          "hyprland/workspaces"
-          "niri/workspaces"
-        ];
-        modules-center = [
           "sway/window"
           "hyprland/window"
           "niri/window"
+        ];
+        modules-center = [
+          "sway/workspaces"
+          "hyprland/workspaces"
+          "niri/workspaces"
         ];
         modules-right = [
           "pulseaudio"
@@ -93,14 +93,14 @@
         };
 
         "temperature#cpu" = {
-          format = "{temperatureC}°C";
+          format = "󰻠{temperatureC}°C";
           hwmon-path = "/sys/class/hwmon/hwmon2/temp3_input";
           interval = 1;
           rotate = 0;
         };
 
         "temperature#gpu" = {
-          format = "{temperatureC}°C";
+          format = "{temperatureC}°C";
           hwmon-path = "/sys/class/hwmon/hwmon1/temp2_input";
           interval = 1;
           rotate = 0;
@@ -123,15 +123,14 @@
           interface = "enp4s0";
           interval = 1;
           format = ''
-            {bandwidthDownBits}
-            {bandwidthUpBits}'';
-          format-disconnected = "OFFLINE";
+          󰁅{bandwidthDownBits} {bandwidthUpBits}'';
+          format-disconnected = "NoConnection";
           tooltip-format = "{ifname}: {ipaddr}";
           rotate = 0;
         };
 
         "memory" = {
-          format = "{used:0.1f}G";
+          format = "{used:0.1f}G";
           interval = 1;
           on-click = "kitty -e btop";
           rotate = 0;
@@ -139,7 +138,7 @@
 
         "pulseaudio" = {
           scroll-step = 5;
-          format = "{volume}%";
+          format = "{icon}{volume}%";
           format-bluetooth = "vol.{volume}";
           format-bluetooth-muted = " {icon} {format_source}";
           format-muted = "MUTED";
