@@ -37,7 +37,7 @@
     ];
     config = {
       common = {
-        default = [ "gtk" ];
+        default = [ "gnome" "gtk" ];
       };
       niri = {
         default = [
