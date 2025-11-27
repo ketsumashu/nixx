@@ -15,8 +15,8 @@
     ./spicetify
     ./gui
     ./qutebrowser
+    ./hyprland
     ./niri
-    ./sway
   ];
 
   home = {
