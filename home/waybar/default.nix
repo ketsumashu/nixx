@@ -15,11 +15,11 @@
           "DP-3"
           "DP-1"
         ];
-        height = 30;
+        height = 40;
         margin-top = 0;
         margin-bottom = 0;
-        margin-left = 100;
-        margin-right = 100;
+        margin-left = 30;
+        margin-right = 30;
         spacing = 15;
         modules-left = [
           "sway/window"
@@ -236,6 +236,7 @@
       #window{
           color:#c5c4d4;
           padding: 0px 0px;
+          margin-left:50px;
       }
       #workspaces {
           margin: 0 0px;
