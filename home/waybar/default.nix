@@ -183,6 +183,7 @@
       window#waybar {
           background-color: rgba(25,28,37,0.95);
           border-top-right-radius:50px;
+          border-bottom-right-radius:0px;
           border-top-left-radius:50px;
       }
 
@@ -284,7 +285,7 @@
 
       #tray {
           color: #f5f5f5;
-          padding-right: 5px;
+          padding-right: 50px;
       }
 
       #idle_inhibitor {
