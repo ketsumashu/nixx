@@ -54,14 +54,14 @@ layout {
 
     default-column-width { proportion 0.5; }
     focus-ring {
-       width 5
+       width 3
        active-color "#77adb1"
         inactive-color "#191c25"
     }
 
     border {
         off
-        width 2
+        width 1
         active-color "#77adb1"
         inactive-color "#191c25"
         urgent-color "#77adb1"
@@ -180,7 +180,7 @@ window-rule {
 // Example: enable rounded corners for all windows.
 // (This example rule is commented out with a "/-" in front.)
   window-rule {
-    geometry-corner-radius 12
+    geometry-corner-radius 6
     clip-to-geometry true
   }
   window-rule {
