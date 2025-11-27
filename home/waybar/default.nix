@@ -173,8 +173,9 @@
     };
     style = ''
       * {
-          font-family: "Moralerspace Argon Bold";
-          font-size: 14px;
+          font-family: "Moralerspace Argon";
+          font-size: 13px;
+          font-weight: SemiBold;
           min-height: 0;
       }
 
