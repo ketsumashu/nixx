@@ -27,9 +27,9 @@
     portalPackage = null;
     xwayland.enable = true;
     systemd.enable = true;
-    #plugins = [
-    #  inputs.hyprland-plugins.packages.${pkgs.stdenv.hostPlatform.system}.hyprscrolling
-    #];
+    plugins = [
+      inputs.hyprland-plugins.packages.${pkgs.stdenv.hostPlatform.system}.hyprscrolling
+    ];
   };
 
   wayland.windowManager.hyprland.settings = {
@@ -171,7 +171,7 @@
       "openrgb --startminimized -p ~/.config/OpenRGB/pro.orp"
       "wl-paste --type text --watch cliphist store"
       "wl-paste --type image --watch cliphist store"
-      #''hyprctl plugin load "inputs.hyprland-plugins.packages.${pkgs.stdenv.hostPlatform.system}/lib/libhyprscrolling.so"''
+      ''hyprctl plugin load "inputs.hyprland-plugins.packages.${pkgs.stdenv.hostPlatform.system}/lib/libhyprscrolling.so"''
     ];
 
     bindm = [
