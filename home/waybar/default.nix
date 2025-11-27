@@ -175,7 +175,7 @@
       * {
           font-family: "Moralerspace Argon";
           font-size: 13px;
-          font-weight: SemiBold;
+          font-weight: Bold;
           min-height: 0;
       }
 
