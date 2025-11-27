@@ -109,7 +109,7 @@
         };
 
         "tray" = {
-          spacing = 16;
+          spacing = 6;
         };
 
         "clock" = {
