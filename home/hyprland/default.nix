@@ -142,6 +142,7 @@
       "match:class ^(xdg-desktop-portal-gtk)$, float true"
       "match:title (Save File)$, float true"
       "match:title ^(blob), float true"
+      "match:title ^(Select what to share), float true"
       "match:class ^(org.pulseaudio.pavucontrol),max_size 900 600, float true"
       "match:class ^(Floaterm)$, max_size 900 600, float true"
       "match:class (vesktop)$, workspace 5"
