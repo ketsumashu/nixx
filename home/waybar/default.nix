@@ -18,6 +18,8 @@
         height = 30;
         margin-top = 0;
         margin-bottom = 0;
+        margin-left = 100;
+        margin-right = 100;
         spacing = 15;
         modules-left = [
           "sway/window"
@@ -93,14 +95,14 @@
         };
 
         "temperature#cpu" = {
-          format = "󰻠{temperatureC}°C";
+          format = "󰻠 {temperatureC}°C";
           hwmon-path = "/sys/class/hwmon/hwmon2/temp3_input";
           interval = 1;
           rotate = 0;
         };
 
         "temperature#gpu" = {
-          format = "{temperatureC}°C";
+          format = " {temperatureC}°C";
           hwmon-path = "/sys/class/hwmon/hwmon1/temp2_input";
           interval = 1;
           rotate = 0;
@@ -123,14 +125,14 @@
           interface = "enp4s0";
           interval = 1;
           format = ''
-          󰁅{bandwidthDownBits} {bandwidthUpBits}'';
+          󰁅 {bandwidthDownBits}  {bandwidthUpBits}'';
           format-disconnected = "NoConnection";
           tooltip-format = "{ifname}: {ipaddr}";
           rotate = 0;
         };
 
         "memory" = {
-          format = "{used:0.1f}G";
+          format = " {used:0.1f}G";
           interval = 1;
           on-click = "kitty -e btop";
           rotate = 0;
@@ -138,7 +140,7 @@
 
         "pulseaudio" = {
           scroll-step = 5;
-          format = "{icon}{volume}%";
+          format = "{icon} {volume}%";
           format-bluetooth = "vol.{volume}";
           format-bluetooth-muted = " {icon} {format_source}";
           format-muted = "MUTED";
@@ -180,8 +182,8 @@
 
       window#waybar {
           background-color: rgba(25,28,37,0.95);
-          border-top-right-radius:0px;
-          border-bottom-right-radius:0px;
+          border-top-right-radius:60px;
+          border-bottom-right-radius:60px;
       }
 
       window#waybar.hidden {
@@ -233,7 +235,7 @@
 
       #window{
           color:#c5c4d4;
-          padding: 0px 0px;
+          padding: 100px 0px;
       }
       #workspaces {
           margin: 0 0px;
