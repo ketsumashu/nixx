@@ -12,6 +12,7 @@
       hackgen-nf-font
       moralerspace
       terminus_font
+      terminus-nerdfont
     ];
     fontDir.enable = true;
     fontconfig.enable = true;
