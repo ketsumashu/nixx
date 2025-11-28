@@ -95,14 +95,14 @@
         };
 
         "temperature#cpu" = {
-          format = "󰻠 {temperatureC}°C";
+          format = "{temperatureC}°C";
           hwmon-path = "/sys/class/hwmon/hwmon2/temp3_input";
           interval = 1;
           rotate = 0;
         };
 
         "temperature#gpu" = {
-          format = " {temperatureC}°C";
+          format = "{temperatureC}°C";
           hwmon-path = "/sys/class/hwmon/hwmon1/temp2_input";
           interval = 1;
           rotate = 0;
@@ -132,7 +132,7 @@
         };
 
         "memory" = {
-          format = " {used:0.1f}G";
+          format = " {used:0.1f}G";
           interval = 1;
           on-click = "kitty -e btop";
           rotate = 0;
@@ -140,7 +140,7 @@
 
         "pulseaudio" = {
           scroll-step = 5;
-          format = "{icon} {volume}%";
+          format = "{volume}%";
           format-bluetooth = "vol.{volume}";
           format-bluetooth-muted = " {icon} {format_source}";
           format-muted = "MUTED";
@@ -174,8 +174,8 @@
     };
     style = ''
       * {
-          font-family: "Terminus","mplus12";
-          font-size: 11px;
+          font-family: "terminus","mplus12";
+          font-size: 12px;
           min-height: 0;
       }
 
