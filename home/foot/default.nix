@@ -22,13 +22,11 @@
         hide-when-typing = "yes";
         alternate-scroll-mode = "yes";
       };
-      cursor = {
-        color = "191724 e0def4";
-      };
       colors = {
         alpha = 0.94;
         background = "191c25";
         foreground = "c5c4d4";
+        cursor = "191724 e0def4";
         regular0 = "525566";
         regular1 = "a994b8";
         regular2 = "77adb1";
