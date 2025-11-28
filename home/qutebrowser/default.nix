@@ -55,10 +55,10 @@ in
         ];
         default_size = "16px";
         web.family = {
-          sans_serif = "PlemolJP35 Console HS";
-          serif = "Noto Sans CJK JP";
-          fixed = "PlemolJP35 Console HS";
-          standard = "PlemolJP35 Console HS";
+          sans_serif = "terminus";
+          serif = "terminus";
+          fixed = "terminus";
+          standard = "terminus";
         };
       };
       content.blocking.method = "both";
