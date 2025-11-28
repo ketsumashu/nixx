@@ -11,6 +11,7 @@
       plemoljp-hs
       hackgen-nf-font
       moralerspace
+      terminus_font
     ];
     fontDir.enable = true;
     fontconfig.enable = true;
