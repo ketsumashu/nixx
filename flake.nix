@@ -17,11 +17,11 @@
       url = "github:0xc000022070/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    hyprland.url = "github:hyprwm/Hyprland";
-    hyprland-plugins = {
-      url = "github:hyprwm/hyprland-plugins";
-      inputs.hyprland.follows = "hyprland";
-    };
+    #hyprland.url = "github:hyprwm/Hyprland";
+    #hyprland-plugins = {
+    #  url = "github:hyprwm/hyprland-plugins";
+    #  inputs.hyprland.follows = "hyprland";
+    #};
   };
   outputs =
     inputs@{
@@ -31,8 +31,8 @@
       nixos-hardware,
       spicetify-nix,
       zen,
-      hyprland,
-      hyprland-plugins,
+      #hyprland,
+      #hyprland-plugins,
       ...
     }:
     {
@@ -61,8 +61,8 @@
                   inherit nixvim;
                   inherit spicetify-nix;
                   inherit zen;
-                  inherit hyprland;
-                  inherit hyprland-plugins;
+                  #inherit hyprland;
+                  #inherit hyprland-plugins;
                 };
               };
             }
