@@ -50,7 +50,8 @@ in
       content.javascript.clipboard = "access-paste";
       fonts = {
         default_family = [
-          "Moralerspace Argon"
+          "terminus"
+          "mplus12"
         ];
         default_size = "16px";
         web.family = {
