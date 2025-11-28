@@ -174,7 +174,7 @@
     };
     style = ''
       * {
-          font-family: "terminus,mplus12";
+          font-family: "terminus","mplus12";
           font-size: 13px;
           font-weight: Bold;
           min-height: 0;
