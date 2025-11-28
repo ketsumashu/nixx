@@ -3,6 +3,7 @@
     ./nvim
     ./fish
     ./terminals
+    ./foot
     ./waybar
     ./firefox
     ./starship
