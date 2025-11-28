@@ -55,10 +55,10 @@ in
         ];
         default_size = "16px";
         web.family = {
-          sans_serif = "terminus";
-          serif = "terminus";
-          fixed = "terminus";
-          standard = "terminus";
+          sans_serif = "Moralerspace Argon";
+          serif = "Noto Serif CJK JP";
+          fixed = "Moralerspace Argon";
+          standard = "Moralerspace Argon";
         };
       };
       content.blocking.method = "both";
