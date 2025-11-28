@@ -174,7 +174,7 @@
     };
     style = ''
       * {
-          font-family: "Moralerspace Argon";
+          font-family: "terminus,mplus12";
           font-size: 13px;
           font-weight: Bold;
           min-height: 0;
