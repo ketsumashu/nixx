@@ -17,10 +17,10 @@
       package = pkgs.tela-circle-icon-theme;
       name = "Tela-circle-dark";
     };
-    font = {
-      name = "Moralerspace Argon Bold";
-      size = 12;
-    };
+    #font = {
+    #  name = "Moralerspace Argon Bold";
+    #  size = 12;
+    #};
   };
   dconf.settings = {
     "org/gtk/settings/file-chooser" = {
