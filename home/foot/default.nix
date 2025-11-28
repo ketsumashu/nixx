@@ -11,8 +11,8 @@
         font-bold = "terminus:size=11,mplus12:size=10";
         font-italic = "terminus:size=11,mplus12:size=10";
         font-bold-italic = "terminus:size=11,mplus12:size=10";
-        line-height = 12.2;
-        letter-spacing = 1.07;
+        line-height = 12.5;
+        letter-spacing = 1.0;
         vertical-letter-offset = 1.0;
         dpi-aware = false;
         pad = "20x15 center"; # optionally append 'center'
