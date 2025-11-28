@@ -7,10 +7,10 @@
         login-shell = "yes";
         app-id = "foot";
         title = "foot";
-        font = "terminus:size=11,mplus12:size=10";
-        font-bold = "terminus:size=11,mplus12:size=10";
-        font-italic = "terminus:size=11,mplus12:size=10";
-        font-bold-italic = "terminus:size=11,mplus12:size=10";
+        font = "terminus:size=11,mplus12:size=10,Cozette:size=11";
+        font-bold = "terminus:size=11,mplus12:size=10,Cozette:size=11";
+        font-italic = "terminus:size=11,mplus12:size=10,Cozette:size=11";
+        font-bold-italic = "terminus:size=11,mplus12:size=10,Cozette:size=11";
         line-height = 12.5;
         letter-spacing = 1.0;
         vertical-letter-offset = 1.0;
