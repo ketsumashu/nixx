@@ -114,7 +114,7 @@ const config = {
   hideProNav: true,
   hideSidebarContent: true,
   hideSpacesNav: false,
-  navBaseFontSize: true,
+  navBaseFontSize: false,
   navDensity: 'default',
   showRelevantPeople: false,
   // Mobile only
