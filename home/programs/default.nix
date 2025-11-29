@@ -27,6 +27,7 @@
     xwayland-satellite
     vesktop
     arrpc
+    nautilus
   ];
 
 }
