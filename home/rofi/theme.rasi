@@ -10,7 +10,7 @@
     grey: #94cdd1;
 
     width:700;
-    font: "Moralerspace Argon Bold 12";
+    font: "Terminus 12","mplus12 12";
 }
 
 element-text, element-icon , mode-switcher {
