@@ -23,11 +23,11 @@
           "Blobmoji"
         ];
         sansSerif = [
-          "Moralerspace Argon"
+          "PlemolJP35 Console HS"
           "Blobmoji"
         ];
         monospace = [
-          "Moralerspace Argon"
+          "PlemolJP35 Console HS"
           "Blobmoji"
         ];
         emoji = [ "Blobmoji" ];
