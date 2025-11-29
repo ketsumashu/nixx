@@ -28,6 +28,8 @@ in
         "t" = "cmd-set-text -s :open -t";
         "yf" = "hint links yank";
         "yd" = "hint links download";
+        "j" = "scroll-px 0 100";
+        "k" = "scroll-px 0 -100";
       };
       insert = { };
     };
@@ -297,6 +299,8 @@ in
       c.tabs.title.format_pinned = "{current_title}"
       c.statusbar.widgets = ["keypress", "search_match","url","scroll","history","progress"]
       config.unbind("O")
+      config.unbind("j")
+      config.unbind("k")
       config.load_autoconfig(False)
     '';
   };
