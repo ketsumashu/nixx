@@ -1,4 +1,4 @@
 {
   xdg.configFile."libskk/rules".source = ./rules; 
-  xdg.dataFile."fcitx5/skk/dictionary_list" = ./dictionary_list;
+  xdg.dataFile."fcitx5/skk/dictionary_list".source = ./dictionary_list;
 }
