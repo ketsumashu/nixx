@@ -15,7 +15,7 @@
           "DP-3"
           "DP-1"
         ];
-        height = 40;
+        height = 35;
         margin-top = 0;
         margin-bottom = 0;
         margin-left = 12;
