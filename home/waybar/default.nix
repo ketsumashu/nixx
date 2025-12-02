@@ -175,7 +175,7 @@
     style = ''
       * {
           font-family: terminus, mplus12;
-          font-size: 12px;
+          font-size: 13px;
           min-height: 0;
       }
 
