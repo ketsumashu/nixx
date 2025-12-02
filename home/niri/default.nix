@@ -1,4 +1,4 @@
-{ pkgs, lib, niri-scratchpad-flake, ... }:
+{ pkgs, lib, ... }:
 {
   home.sessionVariables = {
     BROWSER = "qutebrowser";
@@ -11,7 +11,7 @@
   };
   home.packages = with pkgs; [
     niri
-    niri-scratchpad
+    nirius
   ];
 
   xdg.configFile = {
