@@ -65,7 +65,7 @@
         };
         "niri/workspaces" = {
           format = "{name}";
-          all-outputs = true;
+          all-outputs = false;
         };
 
         "hyprland/window" = {
