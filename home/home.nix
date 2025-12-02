@@ -17,7 +17,6 @@
     ./gui
     ./qutebrowser
     ./niri
-    ./input
   ];
 
   home = {
