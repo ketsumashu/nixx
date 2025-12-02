@@ -2,7 +2,7 @@
 {
   qt = {
     enable = true;
-    platformTheme.name = "gnome";
+    platformTheme.name = "qt5ct";
     style.name = "bb10dark";
   };
 
