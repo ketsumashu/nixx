@@ -9,16 +9,25 @@
         "nix-command"
         "flakes"
       ];
-      substituters = [ "https://hyprland.cachix.org" ];
-      trusted-substituters = [ "https://hyprland.cachix.org" ];
-      trusted-public-keys = [ "hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc=" ];
+      #substituters = [ "https://hyprland.cachix.org" ];
+      #trusted-substituters = [ "https://hyprland.cachix.org" ];
+      #trusted-public-keys = [ "hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc=" ];
     };
   };
 
-  programs.nh = {
-    enable = true;
+  programs = {
+    nh = { 
+      enable = true;
+    };
+    nix-ld = {
+      enable = true;
+      libraries = with pkgs;[
+        stdenv.cc.cc.lib
+        zlib
+      ];
+    };
+    
   };
-  programs.nix-ld.enable = true;
 
   system.stateVersion = "26.05";
 }
