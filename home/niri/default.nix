@@ -1,4 +1,4 @@
-{ pkgs, lib, ... }:
+{ pkgs, lib, niri-scratchpad-flake, ... }:
 {
   home.sessionVariables = {
     BROWSER = "qutebrowser";
@@ -9,9 +9,9 @@
     QT_IM_MODULE="fcitx5";
     HYPRCURSOR_SIZE = "24";
   };
-
   home.packages = with pkgs; [
     niri
+    niri-scratchpad
   ];
 
   xdg.configFile = {
