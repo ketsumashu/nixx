@@ -125,7 +125,7 @@
           interface = "enp4s0";
           interval = 1;
           format = ''
-          󰁅 {bandwidthDownBits}  {bandwidthUpBits}'';
+           {bandwidthDownBits} / {bandwidthUpBits}'';
           format-disconnected = "NoConnection";
           tooltip-format = "{ifname}: {ipaddr}";
           rotate = 0;
