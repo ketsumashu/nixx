@@ -2,8 +2,8 @@
 {
   qt = {
     enable = true;
-    platformTheme.name = "gtk2";
-    style.name = "adwaita-dark";
+    platformTheme.name = "gnome";
+    style.name = "bb10dark";
   };
 
   gtk = {
