@@ -20,7 +20,7 @@
         margin-bottom = 0;
         margin-left = 12;
         margin-right = 12;
-        spacing = 15;
+        spacing = 12;
         modules-left = [
           "sway/window"
           "hyprland/window"
