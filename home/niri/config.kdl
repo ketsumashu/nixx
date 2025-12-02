@@ -97,7 +97,7 @@ layout {
 spawn-at-startup "waybar"
 spawn-at-startup "swww-daemon"
 spawn-at-startup "arrpc"
-spawn-sh-at-startup "steam --start-minimized"
+spawn-sh-at-startup "steam"
 spawn-sh-at-startup "vesktop --gtk-version=4 --ozone-platform-hint=auto"
 spawn-at-startup "hypridle"
 spawn-sh-at-startup "openrgb --startminimized -p ~/.config/OpenRGB/pro.orp"
