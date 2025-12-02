@@ -2,8 +2,8 @@
 {
   qt = {
     enable = true;
-    platformTheme.name = "qt5ct";
-    style.name = "bb10dark";
+    platformTheme.name = "gtk";
+    style.name = "adwaita-dark";
   };
 
   gtk = {
