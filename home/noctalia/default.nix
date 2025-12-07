@@ -1,7 +1,7 @@
-{pkgs, nocatalia, config, ...}:
+{pkgs, inputs, ...}:
 {
   imports = [
-    nocatalia.homeModules.default
+    inputs.nocatalia-shell.homeModules.default
   ];
 
   programs.nocatalia-shell = {
