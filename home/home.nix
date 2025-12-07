@@ -17,6 +17,7 @@
     ./gui
     ./qutebrowser
     ./niri
+    ./noctalia
   ];
 
   home = {
