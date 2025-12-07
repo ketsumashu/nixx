@@ -1,4 +1,4 @@
-{pkgs, nocatalia, ...}:
+{pkgs, nocatalia, config, ...}:
 {
   imports = [
     nocatalia.homeModules.default
