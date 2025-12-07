@@ -1,12 +1,12 @@
-{pkgs, inputs, ...}:
+{pkgs, nocatalia, ...}:
 {
   imports = [
-    inputs.noctalia.homeModules.default
+    nocatalia.homeModules.default
   ];
 
   programs.nocatalia-shell = {
     enable = true;
     package = null;
   };
-  services.nocatalia-shell.enable = true;
+  services.nocatalia-shell.systemd.enable = true;
 }

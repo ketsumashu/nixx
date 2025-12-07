@@ -21,10 +21,6 @@
       url = "github:noctalia-dev/noctalia-shell";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    #hyprland.url = "github:hyprwm/Hyprland";
-    #hyprland-plugins = {
-    #  url = "github:hyprwm/hyprland-plugins";
-    #  inputs.hyprland.follows = "hyprland";
   };
   outputs =
     inputs@{
@@ -35,8 +31,6 @@
       spicetify-nix,
       zen,
       noctalia,
-      #hyprland,
-      #hyprland-plugins,
       ...
     }:
     {
@@ -66,8 +60,6 @@
                   inherit spicetify-nix;
                   inherit zen;
                   inherit noctalia;
-                  #inherit hyprland;
-                  #inherit hyprland-plugins;
                 };
               };
             }
