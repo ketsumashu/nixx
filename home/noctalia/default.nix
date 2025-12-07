@@ -4,5 +4,4 @@
     inputs.noctalia.homeModules.default
   ];
 
-  services.nocatalia-shell.systemd.enable = true;
 }
