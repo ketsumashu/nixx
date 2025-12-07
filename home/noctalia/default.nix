@@ -1,7 +1,7 @@
 {pkgs, inputs, ...}:
 {
   imports = [
-    inputs.nocatalia.homeModules.default
+    inputs.noctalia.homeModules.default
   ];
 
   programs.nocatalia-shell = {
