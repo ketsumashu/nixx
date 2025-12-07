@@ -17,8 +17,8 @@
       url = "github:0xc000022070/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    niri-scratchpad-flake = {
-      url = "github:gvolpe/niri-scratchpad";
+    noctalia = {
+      url = "github:noctalia-dev/noctalia-shell";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     #hyprland.url = "github:hyprwm/Hyprland";
@@ -34,7 +34,7 @@
       nixos-hardware,
       spicetify-nix,
       zen,
-      niri-scratchpad-flake,
+      noctalia,
       #hyprland,
       #hyprland-plugins,
       ...
@@ -65,7 +65,7 @@
                   inherit nixvim;
                   inherit spicetify-nix;
                   inherit zen;
-                  inherit niri-scratchpad-flake;
+                  inherit noctalia;
                   #inherit hyprland;
                   #inherit hyprland-plugins;
                 };
