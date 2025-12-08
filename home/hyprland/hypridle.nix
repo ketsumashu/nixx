@@ -5,7 +5,7 @@
   xdg.configFile."hypr/hypridle.conf".text = ''
     listener {
       timeout = 300                           # 5min
-      on-timeout = noctalia-shell ipc call lockScreen toggle                   # lock screen when timeout has passed
+      on-timeout = pidof .quickshell-wrapped || noctalia-shell ipc call lockScreen toggle                   # lock screen when timeout has passed
       on-resume = notify-send "Welcome back!" # notification activity is detected after timeout has fired.
     }
 

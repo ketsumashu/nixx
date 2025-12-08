@@ -37,7 +37,7 @@
       bar = {
         backgroundOpacity = 1;
         capsuleOpacity = 1;
-        density = "compact";
+        density = "mini";
         exclusive = true;
         floating = false;
         marginHorizontal = 0.76;
@@ -52,8 +52,8 @@
         widgets = {
           center = [
             {
-              "colorizeDistroLogo" = false;
-              "colorizeSystemIcon" = "none";
+              "colorizeDistroLogo" = true;
+              "colorizeSystemIcon" = "primary";
               "customIconPath" = "";
               "enableColorization" = false;
               "icon" = "noctalia";
@@ -91,13 +91,13 @@
           ];
           "left" = [
             {
-              "colorizeIcons" = false;
+              "colorizeIcons" = true;
               "hideMode" = "hidden";
               "id" = "ActiveWindow";
               "maxWidth" = 145;
               "scrollingMode" = "hover";
               "showIcon" = true;
-              "useFixedWidth" = false;
+              "useFixedWidth" = true;
             }
           ];
           "right" = [
@@ -106,8 +106,8 @@
               "id" = "SystemMonitor";
               "showCpuTemp" = true;
               "showCpuUsage" = true;
-              "showDiskUsage" = true;
-              "showMemoryAsPercent" = false;
+              "showDiskUsage" = false;
+              "showMemoryAsPercent" = true;
               "showMemoryUsage" = true;
               "showNetworkStats" = true;
               "usePrimaryColor" = false;
@@ -206,22 +206,16 @@
             {
               id = "ScreenRecorder";
             }
-            {
-              id = "WallpaperSelector";
-            }
           ];
           right = [
             {
               id = "Notifications";
             }
             {
-              id = "PowerProfile";
-            }
-            {
               id = "KeepAwake";
             }
             {
-              id = "NightLight";
+              id = "WallpaperSelector";
             }
           ];
         };
