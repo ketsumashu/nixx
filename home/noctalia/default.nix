@@ -414,7 +414,7 @@
         hideWallpaperFilenames = false;
         monitorDirectories = [
         ];
-        overviewEnabled = false;
+        overviewEnabled = true;
         panelPosition = "follow_bar";
         randomEnabled = true;
         randomIntervalSec = 300;
