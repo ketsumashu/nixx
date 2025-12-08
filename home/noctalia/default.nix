@@ -1,4 +1,4 @@
-{pkgs, inputs, ...}:
+{pkgs, inputs, lib, ...}:
 {
   imports = [
     inputs.noctalia.homeModules.default
@@ -151,7 +151,7 @@
                       "drawerEnabled"= true;
                       "id"= "Tray";
                       "pinned"= [
-                          "steam";
+                          "steam"
                           "OpenRGB"
                       ];
                   }
@@ -163,8 +163,8 @@
                       "useCustomFont"= false;
                       "usePrimaryColor"= true;
                   }
-              ]
-          }
+              ];
+          };
       };
       calendar= {
           cards= [
@@ -201,19 +201,19 @@
               {
                   enabled= true;
                   id= "profile-card";
-              };
+              }
               {
                   enabled= true;
                   id= "shortcuts-card";
-              };
+              }
               {
                   enabled= true;
                   id= "audio-card";
-              };
+              }
               {
                   enabled= true;
                   id= "weather-card";
-              };
+              }
               {
                   enabled= true;
                   "id"= "media-sysmon-card";
@@ -224,13 +224,13 @@
               left= [
                   {
                       id= "WiFi";
-                  };
+                  }
                   {
                       id= "Bluetooth";
-                  };
+                  }
                   {
                       id= "ScreenRecorder";
-                  };
+                  }
                   {
                       id= "WallpaperSelector";
                   }
@@ -238,18 +238,18 @@
               right= [
                   {
                       id= "Notifications";
-                  };
+                  }
                   {
                       id= "PowerProfile";
-                  };
+                  }
                   {
                       id= "KeepAwake";
-                  };
+                  }
                   {
                       id= "NightLight";
                   }
-              ]
-          }
+              ];
+          };
       };
       dock= {
           enabled= false;
@@ -315,9 +315,9 @@
           backgroundOpacity= 1;
           enabled= true;
           enabledTypes= [
-              0;
-              1;
-              2;
+              0
+              1
+              2
           ];
           location= "top_right";
           monitors= [
@@ -345,31 +345,31 @@
                   command= "";
                   countdownEnabled= true;
                   enabled= true;
-              };
+              }
               {
                   action= "suspend";
                   command= "";
                   countdownEnabled= false;
                   enabled= false;
-              };
+              }
               {
                   action= "hibernate";
                   command= "";
                   countdownEnabled= false;
                   "enabled"= false;
-              };
+              }
               {
                   action= "reboot";
                   command= "systemctl reboot";
                   countdownEnabled= true;
                   enabled= true;
-              };
+              }
               {
                   action= "logout";
                   command= "";
                   countdownEnabled= false;
                   enabled= true;
-              };
+              }
               {
                   action= "shutdown";
                   command= "";
@@ -405,7 +405,7 @@
           discord= true;
           emacs= false;
           enableUserTemplates= false;
-          foot= force true;
+          foot= lib.mkForce true;
           fuzzel= false;
           ghostty= false;
           gtk= true;
@@ -460,5 +460,4 @@
         };
       };
     };
-  };  
 }
