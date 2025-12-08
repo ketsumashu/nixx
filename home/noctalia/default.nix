@@ -4,7 +4,7 @@
     inputs.noctalia.homeModules.default
   ];
 
-  programs.nocatalia-shell = {
+  programs.noctalia-shell = {
     enable = true;
   };
   services.noctalia-shell.systemd.enabled = true;
