@@ -405,7 +405,7 @@
           discord= true;
           emacs= false;
           enableUserTemplates= false;
-          foot= lib.mkForce true;
+          foot= lib.mkForce false;
           fuzzel= false;
           ghostty= false;
           gtk= true;

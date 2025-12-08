@@ -46,5 +46,5 @@
       #};
     };
   };
-  xdg.configFile."/foot/foot.ini".force = true;
+  xdg.configFile."/foot/foot.ini".source.force = true;
 }
