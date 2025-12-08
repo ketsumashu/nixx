@@ -47,12 +47,12 @@
           "DP-3"
         ];
         outerCorners = true;
-        position = "right";
+        position = "left";
         showCapsule = true;
         widgets = {
           center = [
             {
-              "colorizeDistroLogo" = true;
+              "colorizeDistroLogo" = false;
               "colorizeSystemIcon" = "primary";
               "customIconPath" = "";
               "enableColorization" = false;
