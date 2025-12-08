@@ -15,6 +15,7 @@
     ./gui
     ./qutebrowser
     ./niri
+    ./hyprland
     ./noctalia
   ];
 
