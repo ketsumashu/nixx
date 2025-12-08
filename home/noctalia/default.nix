@@ -61,15 +61,6 @@
               "labelMode" = "index";
             }
             {
-              "colorizeIcons" = false;
-              "hideMode" = "hidden";
-              "id" = "ActiveWindow";
-              "maxWidth" = 145;
-              "scrollingMode" = "hover";
-              "showIcon" = true;
-              "useFixedWidth" = false;
-            }
-            {
               "hideMode" = "hidden";
               "hideWhenIdle" = false;
               "id" = "MediaMini";
@@ -92,36 +83,26 @@
             #}
           ];
           "left" = [
+            {
+              "colorizeDistroLogo" = false;
+              "colorizeSystemIcon" = "none";
+              "customIconPath" = "";
+              "enableColorization" = false;
+              "icon" = "noctalia";
+              "id" = "ControlCenter";
+              "useDistroLogo" = true;
+            }
+            {
+              "colorizeIcons" = false;
+              "hideMode" = "hidden";
+              "id" = "ActiveWindow";
+              "maxWidth" = 145;
+              "scrollingMode" = "hover";
+              "showIcon" = true;
+              "useFixedWidth" = false;
+            }
           ];
           "right" = [
-            {
-              "hideMode" = "alwaysExpanded";
-              "icon" = "rocket";
-              "id" = "CustomButton";
-              "leftClickExec" = "rofi -show drun ";
-              "leftClickUpdateText" = true;
-              "maxTextLength" = {
-                "horizontal" = 10;
-                "vertical" = 10;
-              };
-              "middleClickExec" = "";
-              "middleClickUpdateText" = false;
-              "parseJson" = false;
-              "rightClickExec" = "";
-              "rightClickUpdateText" = false;
-              "showIcon" = true;
-              "textCollapse" = "";
-              "textCommand" = "";
-              "textIntervalMs" = 3000;
-              "textStream" = false;
-              "wheelDownExec" = "";
-              "wheelDownUpdateText" = false;
-              "wheelExec" = "";
-              "wheelMode" = "unified";
-              "wheelUpExec" = "";
-              "wheelUpUpdateText" = false;
-              "wheelUpdateText" = false;
-            }
             {
               "diskPath" = "/";
               "id" = "SystemMonitor";
@@ -143,15 +124,6 @@
               "id" = "Volume";
             }
             {
-              "colorizeDistroLogo" = false;
-              "colorizeSystemIcon" = "none";
-              "customIconPath" = "";
-              "enableColorization" = false;
-              "icon" = "noctalia";
-              "id" = "ControlCenter";
-              "useDistroLogo" = true;
-            }
-            {
               "blacklist" = [
               ];
               "colorizeIcons" = false;
@@ -164,7 +136,7 @@
             }
             {
               "customFont" = "";
-              "formatHorizontal" = "HH:mm ddd; MMM dd";
+              "formatHorizontal" = "HH:mm:ss ddd MM/dd";
               "formatVertical" = "HH mm ss - MM dd";
               "id" = "Clock";
               "useCustomFont" = false;
@@ -199,7 +171,7 @@
         manualSunrise = "06=30";
         manualSunset = "18=30";
         matugenSchemeType = "scheme-fruit-salad";
-        predefinedScheme = "Rose Pine";
+        predefinedScheme = "Osaka jade";
         schedulingMode = "off";
         useWallpaperColors = false;
       };
@@ -309,7 +281,7 @@
         criticalUrgencyDuration = 15;
         enableKeyboardLayoutToast = true;
         enabled = true;
-        location = "top_right";
+        location = "bottom_center";
         lowUrgencyDuration = 3;
         monitors = [
         ];
@@ -326,7 +298,7 @@
           1
           2
         ];
-        location = "top_right";
+        location = "bottom_center";
         monitors = [
         ];
         overlayLayer = true;
@@ -428,9 +400,9 @@
         wezterm = false;
       };
       ui = {
-        fontDefault = "Cozette";
+        fontDefault = "Terminus";
         fontDefaultScale = 1;
-        fontFixed = "Cozette";
+        fontFixed = "Terminus";
         fontFixedScale = 1;
         panelBackgroundOpacity = 1;
         panelsAttachedToBar = true;
