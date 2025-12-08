@@ -53,7 +53,7 @@
           center = [
             {
               "colorizeDistroLogo" = true;
-              "colorizeSystemIcon" = "Tertiary";
+              "colorizeSystemIcon" = "tertiary";
               "customIconPath" = "";
               "enableColorization" = true;
               "icon" = "noctalia";
