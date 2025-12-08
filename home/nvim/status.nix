@@ -91,13 +91,11 @@
 
     function status_line()
         return table.concat {
-            "%#StatusLeft#",
-            "[%l,%c] of %L",
+            --"%#StatusLeft#",
+            --"[%l,%c] of %L",
             "%=",
             "%#StatusMid#",
             "%=",
-            "  ",
-            "%{&fenc} ",
             "  ",
             "%#StatusMode#",
             filename(),
@@ -105,6 +103,8 @@
             "%r",
             "%h",
             "%w",
+            "%{&fenc} ",
+            "  ",
             "  ",
             "%#StatusRight#",
             "%{&ft}",
