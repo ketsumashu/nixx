@@ -208,7 +208,7 @@ binds {
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+Return hotkey-overlay-title="Open a Terminal: foot" { spawn "foot"; }
-    Super+space hotkey-overlay-title="Run an Application: rofi" { spawn-sh "rofi -show drun -modi drun"; }
+    Super+space hotkey-overlay-title="Run an Application Launcher" { spawn-sh "noctalia-shell ipc call launcher toggle"; }
     Mod+I { spawn "scr"; }
 
     // Example volume keys mappings for PipeWire & WirePlumber.
