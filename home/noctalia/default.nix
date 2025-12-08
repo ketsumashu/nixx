@@ -410,7 +410,7 @@
         ];
         overviewEnabled = true;
         panelPosition = "follow_bar";
-        randomEnabled = true;
+        randomEnabled = false;
         randomIntervalSec = 300;
         recursiveSearch = false;
         setWallpaperOnAllMonitors = true;
