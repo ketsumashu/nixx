@@ -5,14 +5,14 @@
   ...
 }:
 {
-  #qt = {
-  #  enable = true;
-  #  platformTheme.name = "gtk";
+  qt = {
+    enable = true;
+    platformTheme.name = "gtk";
   #  style.name = "adwaita-dark";
-  #};
+  };
 
-  #gtk = {
-  #  enable = true;
+  gtk = {
+    enable = true;
   #  theme = {
   #    package = pkgs.tokyonight-gtk-theme;
   #    name = "Tokyonight-Dark";
@@ -26,7 +26,7 @@
   #    name = "terminus";
   #    size = 12;
   #  };
-  #};
+  };
   dconf.settings = {
     "org/gtk/settings/file-chooser" = {
       sort-directories-first = true;
