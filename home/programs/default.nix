@@ -28,6 +28,7 @@
     vesktop
     arrpc
     nautilus
+    gsettings-desktop-schemas
   ];
 
 }
