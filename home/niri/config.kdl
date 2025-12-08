@@ -417,5 +417,5 @@ binds {
 
     Mod+Alt+L { spawn "hyprlock"; }
 
-    include /home/mashu/.config/niri/noctalia.kdl
+    include "/home/mashu/.config/niri/noctalia.kdl"
 }
