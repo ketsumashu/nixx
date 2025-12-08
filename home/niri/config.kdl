@@ -57,16 +57,11 @@ layout {
     default-column-width { proportion 0.5; }
     focus-ring {
        width 3
-       active-color "#77adb1"
-        inactive-color "#191c25"
     }
 
     border {
         off
         width 1
-        active-color "#77adb1"
-        inactive-color "#191c25"
-        urgent-color "#77adb1"
     }
 
     shadow {
@@ -74,7 +69,6 @@ layout {
         softness 30
         spread 6
         offset x=0 y=5
-        color "#0007"
     }
 
     // Struts shrink the area occupied by windows, similarly to layer-shell panels.
