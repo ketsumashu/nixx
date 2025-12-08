@@ -37,18 +37,18 @@
       bar = {
         backgroundOpacity = 1;
         capsuleOpacity = 1;
-        density = "comfortable";
+        density = "compact";
         exclusive = true;
-        floating = true;
+        floating = false;
         marginHorizontal = 0.76;
         marginVertical = 0.85;
         monitors = [
           "DP-1"
           "DP-3"
         ];
-        outerCorners = false;
-        position = "left";
-        showCapsule = false;
+        outerCorners = true;
+        position = "right";
+        showCapsule = true;
         widgets = {
           center = [
             {
@@ -167,7 +167,7 @@
         manualSunrise = "06=30";
         manualSunset = "18=30";
         matugenSchemeType = "scheme-fruit-salad";
-        predefinedScheme = "kanagawa";
+        predefinedScheme = "Monochrome";
         schedulingMode = "off";
         useWallpaperColors = false;
       };
