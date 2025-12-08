@@ -7,16 +7,16 @@
 {
   qt = {
     enable = true;
-    platformTheme.name = "gtk";
+    platformTheme.name = "qt6ct";
     #  style.name = "adwaita-dark";
   };
 
   gtk = {
     enable = true;
-    #  theme = {
-    #    package = pkgs.tokyonight-gtk-theme;
-    #    name = "Tokyonight-Dark";
-    #  };
+      theme = {
+        package = pkgs.adw-gtk3;
+        name = "adw-gtk3";
+      };
 
       iconTheme = {
         package = pkgs.tela-circle-icon-theme;
