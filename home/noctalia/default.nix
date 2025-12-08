@@ -1,7 +1,5 @@
 {
-  pkgs,
   inputs,
-  lib,
   ...
 }:
 {
@@ -382,12 +380,12 @@
         discord = true;
         emacs = false;
         enableUserTemplates = false;
-        foot = false;
+        foot = true;
         fuzzel = false;
         ghostty = false;
         gtk = true;
         kcolorscheme = false;
-        kitty = false;
+        kitty = true;
         niri = true;
         pywalfox = false;
         qt = true;
@@ -399,9 +397,9 @@
       };
       ui = {
         fontDefault = "Terminus";
-        fontDefaultScale = 1;
+        fontDefaultScale = 0.9;
         fontFixed = "Terminus";
-        fontFixedScale = 1;
+        fontFixedScale = 0.9;
         panelBackgroundOpacity = 1;
         panelsAttachedToBar = true;
         settingsPanelAttachToBar = false;
