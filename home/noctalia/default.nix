@@ -380,7 +380,7 @@
         discord = true;
         emacs = false;
         enableUserTemplates = false;
-        foot = true;
+        foot = false;
         fuzzel = false;
         ghostty = false;
         gtk = true;
