@@ -18,9 +18,9 @@
     #    name = "Tokyonight-Dark";
     #  };
 
-    #  iconTheme = {
-    #    package = pkgs.tela-circle-icon-theme;
-    #    name = "Tela-circle-dark";
+      iconTheme = {
+        package = pkgs.tela-circle-icon-theme;
+        name = "Tela-circle-dark";
     #  };
     #  font = {
     #    name = "terminus";
