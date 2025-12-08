@@ -400,9 +400,9 @@
         wezterm = false;
       };
       ui = {
-        fontDefault = "Terminus";
+        fontDefault = ["Terminus" "mplus12"];
         fontDefaultScale = 1;
-        fontFixed = "Terminus";
+        fontFixed = ["Terminus" mplus12];
         fontFixedScale = 1;
         panelBackgroundOpacity = 1;
         panelsAttachedToBar = true;
