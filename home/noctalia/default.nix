@@ -281,7 +281,7 @@
         criticalUrgencyDuration = 15;
         enableKeyboardLayoutToast = true;
         enabled = true;
-        location = "bottom_center";
+        location = "bottom_right";
         lowUrgencyDuration = 3;
         monitors = [
         ];
@@ -400,15 +400,9 @@
         wezterm = false;
       };
       ui = {
-        fontDefault = [
-          "Terminus"
-          "mplus12"
-        ];
+        fontDefault = "Terminus";
         fontDefaultScale = 1;
-        fontFixed = [
-          "Terminus"
-          "mplus12"
-        ];
+        fontFixed = "Terminus";
         fontFixedScale = 1;
         panelBackgroundOpacity = 1;
         panelsAttachedToBar = true;
