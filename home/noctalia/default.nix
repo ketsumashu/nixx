@@ -5,7 +5,7 @@
   ];
 
   programs.nocatalia-shell = {
-    enabled = true;
+    enable = true;
   };
-  services.nocatalia-shell.systemd.enabled = true;
+  services.noctalia-shell.systemd.enabled = true;
 }
