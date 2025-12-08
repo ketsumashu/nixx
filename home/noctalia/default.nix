@@ -52,10 +52,10 @@
         widgets = {
           center = [
             {
-              "colorizeDistroLogo" = false;
-              "colorizeSystemIcon" = "primary";
+              "colorizeDistroLogo" = true;
+              "colorizeSystemIcon" = "Tertiary";
               "customIconPath" = "";
-              "enableColorization" = false;
+              "enableColorization" = true;
               "icon" = "noctalia";
               "id" = "ControlCenter";
               "useDistroLogo" = true;
