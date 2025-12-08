@@ -8,8 +8,6 @@
     ./firefox
     ./starship
     ./libskk
-    ./rofi
-    ./mako
     ./localfont
     ./scripts
     ./programs
