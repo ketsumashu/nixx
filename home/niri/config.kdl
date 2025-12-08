@@ -20,6 +20,8 @@ input {
     focus-follows-mouse
 }
 
+include "noctalia.kdl"
+
  output "HDMI-A-1" {
    mode "3840x2160@120.000"
     scale 1
@@ -416,6 +418,4 @@ binds {
     Ctrl+Alt+Delete { quit; }
 
     Mod+Alt+L { spawn "hyprlock"; }
-
-    include "noctalia.kdl"
 }
