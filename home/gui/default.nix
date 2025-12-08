@@ -8,24 +8,24 @@
   qt = {
     enable = true;
     platformTheme.name = "gtk";
-  #  style.name = "adwaita-dark";
+    #  style.name = "adwaita-dark";
   };
 
   gtk = {
     enable = true;
-  #  theme = {
-  #    package = pkgs.tokyonight-gtk-theme;
-  #    name = "Tokyonight-Dark";
-  #  };
+    #  theme = {
+    #    package = pkgs.tokyonight-gtk-theme;
+    #    name = "Tokyonight-Dark";
+    #  };
 
-  #  iconTheme = {
-  #    package = pkgs.tela-circle-icon-theme;
-  #    name = "Tela-circle-dark";
-  #  };
-  #  font = {
-  #    name = "terminus";
-  #    size = 12;
-  #  };
+    #  iconTheme = {
+    #    package = pkgs.tela-circle-icon-theme;
+    #    name = "Tela-circle-dark";
+    #  };
+    #  font = {
+    #    name = "terminus";
+    #    size = 12;
+    #  };
   };
   dconf.settings = {
     "org/gtk/settings/file-chooser" = {

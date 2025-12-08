@@ -12,7 +12,7 @@
     enable = true;
     systemd.enable = true;
     settings = {
-      appLauncher ={
+      appLauncher = {
         customLaunchPrefix = "";
         customLaunchPrefixEnabled = false;
         enableClipPreview = true;
@@ -400,9 +400,15 @@
         wezterm = false;
       };
       ui = {
-        fontDefault = ["Terminus" "mplus12"];
+        fontDefault = [
+          "Terminus"
+          "mplus12"
+        ];
         fontDefaultScale = 1;
-        fontFixed = ["Terminus" mplus12];
+        fontFixed = [
+          "Terminus"
+          "mplus12"
+        ];
         fontFixedScale = 1;
         panelBackgroundOpacity = 1;
         panelsAttachedToBar = true;
