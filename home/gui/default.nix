@@ -1,4 +1,9 @@
-{ pkgs, config, lib, ... }:
+{
+  pkgs,
+  config,
+  lib,
+  ...
+}:
 {
   #qt = {
   #  enable = true;
@@ -39,7 +44,10 @@
     ];
     config = {
       common = {
-        default = [ "gnome" "gtk" ];
+        default = [
+          "gnome"
+          "gtk"
+        ];
       };
       niri = {
         default = [

@@ -159,7 +159,7 @@
       "match:class ^(steam)$, match:title ^(Steam Guard - Computer Authorization Required)$, float true"
     ];
 
-    layerrule = [ 
+    layerrule = [
       "match:namespace waybar, blur on"
       "match:namespace waybar, ignore_alpha on"
       "match:namespace waybar, dim_around off"

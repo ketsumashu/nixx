@@ -13,10 +13,10 @@
     NH_FLAKE = "/home/mashu/nixx/";
   };
   environment.pathsToLink = [
-    "/share/fish" 
-    "/share/applications" 
-    "/share/xdg-desktop-portal" 
-  ]; 
+    "/share/fish"
+    "/share/applications"
+    "/share/xdg-desktop-portal"
+  ];
 
   security = {
     polkit.enable = true;

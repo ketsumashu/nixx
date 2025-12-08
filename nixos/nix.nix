@@ -16,17 +16,17 @@
   };
 
   programs = {
-    nh = { 
+    nh = {
       enable = true;
     };
     nix-ld = {
       enable = true;
-      libraries = with pkgs;[
+      libraries = with pkgs; [
         stdenv.cc.cc.lib
         zlib
       ];
     };
-    
+
   };
   services = {
     envfs = {
