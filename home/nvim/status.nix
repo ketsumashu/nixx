@@ -114,5 +114,6 @@
     end
     o.stl = "%!luaeval('status_line()')"
     vim.cmd [[highlight FloatBorder guibg=NONE]]
+    vim.cmd [[highlight StatusLine guibg=NONE]]
   '';
 }
