@@ -23,6 +23,7 @@
     killall
     which
     gh
+    wget
     git
     xwayland-satellite
     vesktop
