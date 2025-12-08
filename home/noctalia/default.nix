@@ -42,17 +42,26 @@
         density = "comfortable";
         exclusive = true;
         floating = true;
-        marginHorizontal = 0.44;
-        marginVertical = 0.5700000000000001;
+        marginHorizontal = 0.76;
+        marginVertical = 0.85;
         monitors = [
           "DP-1"
           "DP-3"
         ];
         outerCorners = false;
-        position = "bottom";
+        position = "left";
         showCapsule = false;
         widgets = {
           center = [
+            {
+              "colorizeDistroLogo" = false;
+              "colorizeSystemIcon" = "none";
+              "customIconPath" = "";
+              "enableColorization" = false;
+              "icon" = "noctalia";
+              "id" = "ControlCenter";
+              "useDistroLogo" = true;
+            }
             {
               "characterCount" = 2;
               "followFocusedScreen" = false;
@@ -84,15 +93,6 @@
           ];
           "left" = [
             {
-              "colorizeDistroLogo" = false;
-              "colorizeSystemIcon" = "none";
-              "customIconPath" = "";
-              "enableColorization" = false;
-              "icon" = "noctalia";
-              "id" = "ControlCenter";
-              "useDistroLogo" = true;
-            }
-            {
               "colorizeIcons" = false;
               "hideMode" = "hidden";
               "id" = "ActiveWindow";
@@ -108,11 +108,11 @@
               "id" = "SystemMonitor";
               "showCpuTemp" = true;
               "showCpuUsage" = true;
-              "showDiskUsage" = false;
+              "showDiskUsage" = true;
               "showMemoryAsPercent" = false;
               "showMemoryUsage" = true;
               "showNetworkStats" = true;
-              "usePrimaryColor" = true;
+              "usePrimaryColor" = false;
             }
             {
               "hideWhenZero" = true;
@@ -130,8 +130,6 @@
               "drawerEnabled" = true;
               "id" = "Tray";
               "pinned" = [
-                "steam"
-                "OpenRGB"
               ];
             }
             {
@@ -171,7 +169,7 @@
         manualSunrise = "06=30";
         manualSunset = "18=30";
         matugenSchemeType = "scheme-fruit-salad";
-        predefinedScheme = "Osaka jade";
+        predefinedScheme = "kanagawa";
         schedulingMode = "off";
         useWallpaperColors = false;
       };
@@ -410,9 +408,9 @@
         tooltipsEnabled = true;
       };
       wallpaper = {
-        directory = "/home/mashu/Pictures/Wallpapers";
+        directory = "/home/mashu/";
         enableMultiMonitorDirectories = false;
-        enabled = false;
+        enabled = true;
         fillColor = "#000000";
         fillMode = "crop";
         hideWallpaperFilenames = false;
