@@ -406,7 +406,7 @@
         tooltipsEnabled = true;
       };
       wallpaper = {
-        directory = "/home/mashu/";
+        directory = "/home/mashu/wallpaper";
         enableMultiMonitorDirectories = false;
         enabled = true;
         fillColor = "#000000";
