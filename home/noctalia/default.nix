@@ -251,7 +251,7 @@
       location = {
         analogClockInCalendar = false;
         firstDayOfWeek = -1;
-        name = "Tokyo";
+        name = "Kashiwa";
         showCalendarEvents = true;
         showCalendarWeather = true;
         showWeekNumberInCalendar = false;
