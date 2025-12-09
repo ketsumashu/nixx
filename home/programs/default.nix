@@ -11,7 +11,7 @@
     pavucontrol
     lm_sensors
     dconf
-    btop
+    btop-rocm
     fd
     duf
     bat
@@ -29,7 +29,6 @@
     vesktop
     arrpc
     nautilus
-    gsettings-desktop-schemas
   ];
 
 }
