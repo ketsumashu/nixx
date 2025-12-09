@@ -7,7 +7,6 @@
     grim
     libnotify
     meson
-    swww
     pavucontrol
     lm_sensors
     dconf
@@ -20,7 +19,6 @@
     deno
     xdg-utils
     darktable
-    killall
     which
     gh
     wget
