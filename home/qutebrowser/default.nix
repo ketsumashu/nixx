@@ -67,7 +67,7 @@ in
       content.blocking.adblock.lists = [
         "https://raw.githubusercontent.com/tofukko/filter/master/Adblock_Plus_list.txt"
       ];
-      zoom.default = "110%";
+      zoom.default = "100%";
       scrolling.smooth = true;
       scrolling.bar = "never";
       auto_save.session = true;
@@ -287,13 +287,13 @@ in
         show_switching_delay = 800;
         new_position.related = "last";
       };
-      statusbar.show = "in-mode";
+      statusbar.show = "always";
       completion = {
         height = "10%";
       };
     };
     extraConfig = ''
-      c.statusbar.padding = { "bottom":2, "right":5, "left":5, "top":2 }
+      c.statusbar.padding = { "bottom":10, "right":5, "left":5, "top":0 }
       c.tabs.padding = { "bottom":10, "right":5, "left":5, "top":10 }
       c.tabs.title.format = "{current_title}"
       c.tabs.title.format_pinned = "{current_title}"
