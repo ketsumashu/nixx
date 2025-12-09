@@ -46,7 +46,7 @@ output "DP-1" {
 }
 
 layout {
-  gaps 25
+  gaps 16
   center-focused-column "never"
   preset-column-widths {
     proportion 0.33333
