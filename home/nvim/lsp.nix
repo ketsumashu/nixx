@@ -2,15 +2,14 @@
   programs.nixvim.plugins = {
     lsp-format = {
       enable = true;
-      lspServersToEnable = "all";
-    };
+      lspServersToEnable = "all";};
     lsp = {
       enable = true;
       servers = {
         nil_ls = {
           enable = true;
           settings = {
-            formatting.command = ["nix fmt"];
+            formatting.command = ["nixfmt"];
           };
         };
       };
