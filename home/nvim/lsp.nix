@@ -7,7 +7,12 @@
     lsp = {
       enable = true;
       servers = {
-        nixd.enable = true;
+        nil_ls = {
+          enable = true;
+          settings = {
+            formatting.command = ["nix fmt"];
+          };
+        };
       };
       keymaps.lspBuf = {
         "gd" = "definition";
