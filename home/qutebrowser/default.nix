@@ -44,7 +44,7 @@ in
         start_pages = [ "https://google.com/?hl=ja" ];
       };
       editor.command = [
-        "kitty"
+        "foot"
         "-e"
         "nvim"
         "{file}"
@@ -281,8 +281,8 @@ in
         indicator = {
           width = 3;
         };
-        position = "bottom";
-        width = 220;
+        position = "left";
+        width = 30;
         show = "always";
         show_switching_delay = 800;
         new_position.related = "last";
