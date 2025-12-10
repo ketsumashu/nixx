@@ -50,7 +50,9 @@
         position = "left";
         showCapsule = true;
         widgets = {
-          center = [
+          "left" = [
+          ];
+          "center" = [
             {
               "colorizeDistroLogo" = true;
               "colorizeSystemIcon" = "tertiary";
@@ -68,36 +70,12 @@
               "labelMode" = "index";
             }
             {
+              "colorizeIcons" = false;
               "hideMode" = "hidden";
-              "hideWhenIdle" = false;
-              "id" = "MediaMini";
-              "maxWidth" = 145;
-              "scrollingMode" = "hover";
-              "showAlbumArt" = false;
-              "showArtistFirst" = true;
-              "showProgressRing" = true;
-              "showVisualizer" = false;
-              "useFixedWidth" = false;
-              "visualizerType" = "linear";
-            }
-            #{
-            #  "colorizeIcons" = true;
-            #  "hideMode" = "hidden";
-            #  "id" = "Taskbar";
-            #  "onlyActiveWorkspaces" = true;
-            #  "onlySameOutput" = true;
-            #  "showPinnedApps" = true;
-            #}
-          ];
-          "left" = [
-            {
-              "colorizeIcons" = true;
-              "hideMode" = "hidden";
-              "id" = "ActiveWindow";
-              "maxWidth" = 145;
-              "scrollingMode" = "hover";
-              "showIcon" = true;
-              "useFixedWidth" = true;
+              "id" = "Taskbar";
+              "onlyActiveWorkspaces" = true;
+              "onlySameOutput" = false;
+              "showPinnedApps" = true;
             }
           ];
           "right" = [
@@ -197,9 +175,6 @@
         position = "close_to_bar_button";
         shortcuts = {
           left = [
-            {
-              id = "WiFi";
-            }
             {
               id = "Bluetooth";
             }
