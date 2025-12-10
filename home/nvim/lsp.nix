@@ -1,6 +1,9 @@
 {
   programs.nixvim.plugins = {
-    lsp-format.enable = true;
+    lsp-format = {
+      enable = true;
+      lspServersToEnable = "all";
+    };
     lsp = {
       enable = true;
       servers = {

@@ -13,15 +13,15 @@
 
   gtk = {
     enable = true;
-      theme = {
-        package = pkgs.adw-gtk3;
-        name = "adw-gtk3";
-      };
+    theme = {
+      package = pkgs.adw-gtk3;
+      name = "adw-gtk3";
+    };
 
-      iconTheme = {
-        package = pkgs.tela-circle-icon-theme;
-        name = "Tela-circle-dark";
-      };
+    iconTheme = {
+      package = pkgs.tela-circle-icon-theme;
+      name = "Tela-circle-dark";
+    };
     #  font = {
     #    name = "terminus";
     #    size = 12;
