@@ -2,7 +2,7 @@
 {
   programs.chromium = {
     enable = true;
-    package = pkgs.brave;
+    package = pkgs.vivaldi;
     commandLineArgs = [ "--ozone-platform-hint=auto" ];
   };
 }
