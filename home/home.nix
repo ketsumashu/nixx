@@ -13,6 +13,7 @@
     ./spicetify
     ./gui
     ./qutebrowser
+    ./vivaldi
     ./niri
     ./hyprland
     ./noctalia
