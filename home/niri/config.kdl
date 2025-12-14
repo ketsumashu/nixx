@@ -149,6 +149,7 @@ binds {
   Mod+Shift+Slash { show-hotkey-overlay; }
   
   Mod+Return hotkey-overlay-title="Open a Terminal: foot" { spawn "foot"; }
+  Mod+b hotkey-overlay-title="Open a browser: vivaldi" { spawn "vivaldi"; }
   Super+space hotkey-overlay-title="Run an Application Launcher" { spawn-sh "noctalia-shell ipc call launcher toggle"; }
   Mod+I { spawn "scr"; }
   
