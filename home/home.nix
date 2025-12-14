@@ -4,7 +4,6 @@
     ./fish
     ./terminals
     ./foot
-    ./firefox
     ./starship
     ./libskk
     ./localfont
@@ -12,7 +11,6 @@
     ./programs
     ./spicetify
     ./gui
-    ./qutebrowser
     ./vivaldi
     ./niri
     ./hyprland
