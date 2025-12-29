@@ -15,6 +15,7 @@
     ./niri
     ./hyprland
     ./noctalia
+    ./waybar
   ];
 
   home = {
