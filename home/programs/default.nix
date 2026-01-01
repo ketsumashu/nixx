@@ -29,6 +29,7 @@
     nautilus
     wine
     umu-launcher
+    desktop-file-utils
   ];
 
 }
