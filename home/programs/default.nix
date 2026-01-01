@@ -27,6 +27,8 @@
     vesktop
     arrpc
     nautilus
+    wine
+    umu-launcher
   ];
 
 }
