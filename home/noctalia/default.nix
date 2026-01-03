@@ -145,7 +145,7 @@
         manualSunrise = "06=30";
         manualSunset = "18=30";
         matugenSchemeType = "scheme-fruit-salad";
-        predefinedScheme = "Monochrome";
+        predefinedScheme = "Osaka jade";
         schedulingMode = "off";
         useWallpaperColors = false;
       };
