@@ -274,8 +274,8 @@ binds {
   
   Mod+W { toggle-column-tabbed-display; }
   
-  Print { screenshot; }
-  Ctrl+Print { screenshot-screen; }
+  Ctrl+Print { screenshot; }
+  Print { screenshot-screen; }
   Alt+Print { screenshot-window; }
   
   Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
