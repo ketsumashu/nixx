@@ -4,11 +4,9 @@ set $left h
 set $down j
 set $up k
 set $right l
-set $term kitty
-set $menu "rofi -show drun"
+set $term foot
+set $menu "noctalia-shell ipc call launcher toggle"
 ### startups
-exec swww-daemon
-exec waybar
 exec arrpc
 exec openrgb --startminimized -p ~/.config/OpenRGB/pro.orp
 exec steam
@@ -17,9 +15,8 @@ exec wl-paste --type text --watch cliphist store
 exec wl-paste --type image --watch cliphist store
 exec_always autotiling-rs
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
-bindsym $mod+b exec floorp
+bindsym $mod+b exec vivaldi
 bindsym $mod+i exec scr
-bindsym $mod+ctrl+l exec hyprlock
 
 gaps outer 2
 gaps inner 4
