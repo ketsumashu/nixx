@@ -12,7 +12,7 @@
     ./autopair.nix
     ./skkeleton.nix
     ./blankline.nix
-    ./status.nix
+    ./extui.nix
   ];
 
   programs.nixvim = {
