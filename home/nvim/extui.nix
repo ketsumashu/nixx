@@ -1,5 +1,5 @@
 {
-  programs.nixvim.extraConfigVim = ''
+  programs.nixvim.extraConfiglua = ''
 local ok, extui = pcall(require, 'vim._extui')
 if ok then
   extui.enable({
