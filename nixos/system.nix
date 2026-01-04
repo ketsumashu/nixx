@@ -81,7 +81,7 @@
     useDHCP = false;
     hostName = "mashu-nix-101";
     useNetworkd = true;
-    firewall.allowedUDPPorts = [ 10800 ];
+    firewall.allowedUDPPorts = [ ];
   };
 
   systemd.network = {
