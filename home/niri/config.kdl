@@ -139,6 +139,11 @@ window-rule {
   exclude title=r#"^Steam$"# // Exclude the main Steam window
   open-floating true
 }
+window-rule {
+  match app-id="gamescope"
+  match title=r#"^beatmania$"#
+  open-fullscreen true
+}
 
 layer-rule {
   match namespace="^noctalia-overview*"
