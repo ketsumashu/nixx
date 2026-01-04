@@ -28,13 +28,12 @@ output "HDMI-A-1" {
   position x=1440 y=0
 }
 output "DP-3" {
-//  mode "2560x1440@100.000"
-//  transform "90"
-//  position x=0 y=-20
-//  layout {
-//    default-column-width { proportion 1.0;}
-//  }
-  off
+  mode "2560x1440@100.000"
+  transform "90"
+  position x=0 y=-20
+  layout {
+    default-column-width { proportion 1.0;}
+  }
 }
 output "DP-1" {
   mode "2560x1440@120.000"
