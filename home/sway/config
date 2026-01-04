@@ -45,7 +45,7 @@ assign [class = "^steam_app_infinitas"] fullscreen enable
 ### Output configuration
 output HDMI-A-1 pos 0 0 resolution 3840x2160@120Hz scale 1
 output DP-1 pos 3840 0 resolution 2560x1440@120Hz scale 1 transform 90
-
+output DP-3 disable 
 ### Input configuration
 input "*" {
  	xkb_layout "us"
