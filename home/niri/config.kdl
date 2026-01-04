@@ -78,8 +78,8 @@ layout {
   }
 }
 
-spawn-sh-at-startup "steam"
-spawn-sh-at-startup "vesktop --gtk-version=4 --ozone-platform-hint=auto"
+spawn-sh-at-startup "sleep 10; steam"
+spawn-sh-at-startup "sleep 10; vesktop --gtk-version=4 --ozone-platform-hint=auto"
 spawn-sh-at-startup "openrgb --startminimized -p ~/.config/OpenRGB/pro.orp"
 spawn-at-startup "arrpc"
 
