@@ -36,12 +36,13 @@ output "DP-3" {
   }
 }
 output "DP-1" {
-  mode "2560x1440@120.000"
-  transform "270"
-  position x=5280 y=-30
-  layout {
-    default-column-width { proportion 1.0;}
-  }
+//  mode "2560x1440@120.000"
+//  transform "270"
+//  position x=5280 y=-30
+//  layout {
+//    default-column-width { proportion 1.0;}
+//  }
+  off
 }
 
 layout {
@@ -82,7 +83,6 @@ spawn-sh-at-startup "steam"
 spawn-sh-at-startup "vesktop --gtk-version=4 --ozone-platform-hint=auto"
 spawn-sh-at-startup "openrgb --startminimized -p ~/.config/OpenRGB/pro.orp"
 spawn-at-startup "arrpc"
-spawn-at-startup "hypridle"
 
 hotkey-overlay {
     skip-at-startup
