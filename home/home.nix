@@ -17,6 +17,7 @@
     ./noctalia
     ./waybar
     ./sway
+    ./obs
   ];
 
   home = {

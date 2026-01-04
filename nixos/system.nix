@@ -33,13 +33,16 @@
       efi.canTouchEfiVariables = true;
       timeout = 5;
     };
-    kernelModules = [ "kvm-amd" ];
+    kernelModules = [ "kvm-amd" "v4l2loopback" ];
+    supportedFilesystems = [ "ntfs" ];
     blacklistedKernelModules = [ "k10temp" ];
-    extraModulePackages = with config.boot.kernelPackages; [ zenpower ];
     kernelPackages = pkgs.linuxPackages_xanmod_latest;
     tmp.cleanOnBoot = true;
-    supportedFilesystems = [ "ntfs" ];
-    kernelParams = [ "fbcon=rotate:1" ];
+    kernelParams = [ "fbcon=rotate:1" ]; 
+    extraModulePackages = with config.boot.kernelPackages; [ zenpower v4l2loopback ];
+    extraModprobeConfig = ''
+      options v4l2loopback devices=1 video_nr=1 card_label="OBS Cam" exclusive_caps=1
+     '';
   };
 
   fileSystems."/" = {
