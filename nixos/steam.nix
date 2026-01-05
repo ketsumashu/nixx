@@ -8,8 +8,15 @@
     gamescopeSession.enable = true;
     extraCompatPackages = with pkgs; [ proton-ge-bin ];
   };
-  programs.gamescope = {
+  services.ananicy = {
     enable = true;
-    capSysNice = true;
+    package = pkgs.ananicy-cpp;
+    rulesProvider = pkgs.ananicy-cpp;
+    extraRules = [
+      {
+        "name" = "gamescope";
+        "nice" = -20;
+      }
+    ];
   };
 }
