@@ -24,7 +24,7 @@
     wget
     git
     xwayland-satellite
-    discord
+    vesktop
     arrpc
     nautilus
     wine
