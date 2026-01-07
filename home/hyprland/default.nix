@@ -23,7 +23,6 @@
 
   wayland.windowManager.hyprland = {
     enable = true;
-    xwayland.enable = true;
     systemd.enable = true;
     #plugins = [
     #  inputs.hyprland-plugins.packages.${pkgs.stdenv.hostPlatform.system}.hyprscrolling
@@ -40,6 +39,7 @@
       "DP-1,2560x1440@120,5280x0,1,transform,3"
     ];
 
+    xwayland.enable = true;
     workspace = [
       "1, monitor:HDMI-A-1, default:true"
       "2, monitor:HDMI-A-1, default:true"
