@@ -1,4 +1,4 @@
-{  pkgs, ... }:
+{ pkgs, ... }:
 {
   programs.obs-studio = {
     enable = true;
@@ -7,7 +7,7 @@
       wlrobs
       obs-backgroundremoval
       obs-pipewire-audio-capture
-      obs-vaapi #optional AMD hardware acceleration
+      obs-vaapi # optional AMD hardware acceleration
       obs-gstreamer
       obs-vkcapture
     ];

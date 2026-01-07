@@ -18,6 +18,7 @@
     ./waybar
     ./sway
     ./obs
+    ./hyprland
   ];
 
   home = {

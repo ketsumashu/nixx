@@ -38,10 +38,12 @@
       xdg-desktop-portal-gnome
       xdg-desktop-portal-gtk
       xdg-desktop-portal-wlr
+      xdg-desktop-portal-hyprland
     ];
     configPackages = with pkgs; [
       xdg-desktop-portal-gnome
       xdg-desktop-portal-wlr
+      xdg-desktop-portal-hyprland
     ];
     config = {
       common = {
@@ -64,6 +66,13 @@
         ];
         "org.freedesktop.impl.portal.ScreenCast" = [ "wlr" ];
         "org.freedesktop.impl.portal.Screenshot" = [ "wlr" ];
+      };
+      hyprland = {
+        default = [
+          "hyprland"
+        ];
+        "org.freedesktop.impl.portal.ScreenCast" = [ "hyprland" ];
+        "org.freedesktop.impl.portal.Screenshot" = [ "hyprland" ];
       };
     };
   };
