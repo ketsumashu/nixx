@@ -52,13 +52,13 @@
       "9, monitor:DP-1, default:true"
     ];
 
-    plugin = {
-      hyprscrolling = {
-        column_width = 0.5;
-        fullscreen_on_one_column = true;
-        focus_fit_method = 1;
-      };
-    };
+    #plugin = {
+    #  hyprscrolling = {
+    #    column_width = 0.5;
+    #    fullscreen_on_one_column = true;
+    #    focus_fit_method = 1;
+    #  };
+    #};
 
     general = {
       gaps_in = 5;
@@ -166,15 +166,13 @@
     exec-once = [
       "systemctl --user enable xdg-desktop-portal-hyprland"
       "mako"
-      "waybar"
       "arrpc"
       ''hyprctl dispatch exec "[workspace 2 silent]" steam''
       ''hyprctl dispatch exec "[workspace 5 silent]" "vesktop --gtk-version=4 --ozone-platform=wayland"''
-      "swww-daemon"
       "openrgb --startminimized -p ~/.config/OpenRGB/pro.orp"
       "wl-paste --type text --watch cliphist store"
       "wl-paste --type image --watch cliphist store"
-      ''hyprctl plugin load "inputs.hyprland-plugins.packages.${pkgs.stdenv.hostPlatform.system}/lib/libhyprscrolling.so"''
+      #''hyprctl plugin load "inputs.hyprland-plugins.packages.${pkgs.stdenv.hostPlatform.system}/lib/libhyprscrolling.so"''
     ];
 
     bindm = [
