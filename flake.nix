@@ -21,6 +21,10 @@
       url = "github:noctalia-dev/noctalia-shell";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    scroll-flake = {
+      url = "github:AsahiRocks/scroll-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
   outputs =
     inputs@{
@@ -31,6 +35,7 @@
       spicetify-nix,
       zen,
       noctalia,
+      scroll-flake,
       ...
     }:
     {
