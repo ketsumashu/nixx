@@ -1,7 +1,7 @@
-{pkgs,scroll-flake, ...}:
+{pkgs,inputs, ...}:
 {
   programs.scroll = {
     enable = true;
-    package = scroll-flake.packages.${pkgs.stdenv.hostPlatform.system}.scroll-git;
+    package = inputs.scroll-flake.packages.${pkgs.stdenv.hostPlatform.system}.scroll-git;
   };
 }
