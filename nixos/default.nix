@@ -8,7 +8,6 @@
     ./systemd
     ./tuigreet.nix
     ./system.nix
-    ./scroll.nix
     ./hardware.nix
   ];
 }
