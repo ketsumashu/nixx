@@ -1,8 +1,8 @@
-{pkgs,inputs, ...}:
+{pkgs,scroll-flake, ...}:
 {
-  imports = [inputs.scroll-flake.nixosModules.default];
+  imports = [scroll-flake.nixosModules.default];
   programs.scroll = {
     enable = true;
-    package = inputs.scroll-flake.packages.${pkgs.stdenv.hostPlatform.system}.scroll-git;
+    package = scroll-flake.packages.${pkgs.stdenv.hostPlatform.system}.scroll-git;
   };
 }
