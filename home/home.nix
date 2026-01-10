@@ -16,9 +16,7 @@
     ./hyprland
     ./noctalia
     ./waybar
-    ./sway
     ./obs
-    ./hyprland
   ];
 
   home = {
