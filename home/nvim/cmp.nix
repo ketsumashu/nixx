@@ -22,8 +22,6 @@
             -- 既にセミコロンがある場合は重複させない等の調整が可能
         })
     '';
-    treesitter.enable = true;
-
     extraPlugins = with pkgs.vimPlugins; [
       vim-snippets
       friendly-snippets
