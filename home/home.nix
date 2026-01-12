@@ -9,7 +9,6 @@
     ./localfont
     ./scripts
     ./programs
-    ./spicetify
     ./gui
     ./vivaldi
     ./niri

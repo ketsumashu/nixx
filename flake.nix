@@ -12,11 +12,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
-    spicetify-nix.url = "github:Gerg-L/spicetify-nix";
-    zen = {
-      url = "github:0xc000022070/zen-browser-flake";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
     noctalia = {
       url = "github:noctalia-dev/noctalia-shell";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -28,8 +23,6 @@
       home-manager,
       nixvim,
       nixos-hardware,
-      spicetify-nix,
-      zen,
       noctalia,
       ...
     }:
@@ -57,8 +50,6 @@
                 extraSpecialArgs = {
                   inherit inputs;
                   inherit nixvim;
-                  inherit spicetify-nix;
-                  inherit zen;
                   inherit noctalia;
                 };
               };
