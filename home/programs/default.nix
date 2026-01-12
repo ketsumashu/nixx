@@ -24,8 +24,6 @@
     wget
     git
     xwayland-satellite
-    vesktop
-    arrpc
     nautilus
     wine
     umu-launcher
