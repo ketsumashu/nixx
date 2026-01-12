@@ -17,6 +17,7 @@
     ./noctalia
     ./waybar
     ./obs
+    ./krisp
   ];
 
   home = {
