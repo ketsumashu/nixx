@@ -9,7 +9,6 @@
       settings = {
         check_ts = true;
       };
-    };
     luaconfig.post = ''
       local Au = require('nvim-autopairs')
         local Rule = require('nvim-autopairs.rule')
@@ -22,6 +21,7 @@
             -- 既にセミコロンがある場合は重複させない等の調整が可能
         })
     '';
+    };
     extraPlugins = with pkgs.vimPlugins; [
       vim-snippets
       friendly-snippets
@@ -114,7 +114,6 @@
               end
             '';
         };
-
         window = {
           completion = {
             winhighlight = "FloatBorder:CmpBorder,Normal:CmpPmenu,CursorLine:CmpSel,Search:PmenuSel";
