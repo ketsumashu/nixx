@@ -30,6 +30,7 @@
     wine
     umu-launcher
     desktop-file-utils
+    discord
   ];
 
 }
