@@ -26,6 +26,7 @@
     xwayland-satellite
     nautilus
     discord
+    openjdk.override {enableJavaFX = true;}
   ];
 
 }
