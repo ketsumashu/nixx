@@ -17,6 +17,10 @@
         "name" = "gamescope";
         "nice" = -20;
       }
+      {
+        "name" = "bm2dx.exe";
+        "nice" = -20;
+      }
     ];
   };
   programs.gamescope = {
