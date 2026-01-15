@@ -80,7 +80,7 @@ layout {
 
 spawn-sh-at-startup "sleep 10; steam"
 spawn-sh-at-startup "yaskkserv2 --google-suggest /home/mashu/nixx/home/libskk/jisyo.yaskkserv2"
-spawn-sh-at-startup "sleep 10; discord --gtk-version=4 --ozone-platform-hint=auto"
+spawn-sh-at-startup "sleep 10; discord --gtk-version=4 --ozone-platform-hint=auto --wayland-text-input-version=3"
 spawn-sh-at-startup "openrgb --startminimized -p ~/.config/OpenRGB/pro.orp"
 
 hotkey-overlay {
@@ -117,7 +117,7 @@ window-rule {
     // This app-id regular expression will work for both:
     // - host Firefox (app-id is "firefox")
     // - Flatpak Firefox (app-id is "org.mozilla.firefox")
-    match app-id=r#"vesktop$"#
+    match app-id=r#"discord$"#
     open-on-output "DP-3"    
     default-column-width { proportion 1.0; }
     default-window-height { proportion 1.0; }
@@ -139,11 +139,6 @@ window-rule {
   exclude title=r#"^Steam$"# // Exclude the main Steam window
   open-floating true
 }
-window-rule {
-  match app-id="gamescope"
-  match title=r#"^beatmania$"#
-  open-fullscreen true
-}
 
 layer-rule {
   match namespace="^noctalia-overview*"
@@ -153,7 +148,7 @@ binds {
   Mod+Shift+Slash { show-hotkey-overlay; }
   
   Mod+Return hotkey-overlay-title="Open a Terminal: foot" { spawn "foot"; }
-  Mod+b hotkey-overlay-title="Open a browser: vivaldi" { spawn "vivaldi"; }
+  Mod+b hotkey-overlay-title="Open a browser: vivaldi" { spawn-sh "vivaldi --wayland-text-input-version=3"; }
   Super+space hotkey-overlay-title="Run an Application Launcher" { spawn-sh "noctalia-shell ipc call launcher toggle"; }
   Mod+I { spawn "scr"; }
   
