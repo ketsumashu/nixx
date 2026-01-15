@@ -39,18 +39,27 @@
         capsuleOpacity = 1;
         density = "mini";
         exclusive = true;
-        floating = false;
-        marginHorizontal = 0.76;
-        marginVertical = 0.85;
+        floating = true;
+        marginHorizontal = 13;
+        marginVertical = 0;
         monitors = [
           "DP-1"
           "DP-3"
         ];
         outerCorners = true;
-        position = "left";
+        position = "bottom";
         showCapsule = true;
         widgets = {
           "left" = [
+                {
+                    "colorizeIcons"= false;
+                    "hideMode"= "hidden";
+                    "id"= "ActiveWindow";
+                    "maxWidth"= 145;
+                    "scrollingMode"= "hover";
+                    "showIcon"= true;
+                    "useFixedWidth"= false;
+                }
           ];
           "center" = [
             {
@@ -63,19 +72,12 @@
               "useDistroLogo" = true;
             }
             {
-              "characterCount" = 2;
-              "followFocusedScreen" = false;
-              "hideUnoccupied" = false;
-              "id" = "Workspace";
-              "labelMode" = "index";
-            }
-            {
-              "colorizeIcons" = false;
-              "hideMode" = "hidden";
-              "id" = "Taskbar";
-              "onlyActiveWorkspaces" = true;
-              "onlySameOutput" = false;
-              "showPinnedApps" = true;
+              "customFont" = "";
+              "formatHorizontal" = "HH:mm:ss ddd MM/dd";
+              "formatVertical" = "HH mm ss - MM dd";
+              "id" = "Clock";
+              "useCustomFont" = false;
+              "usePrimaryColor" = true;
             }
           ];
           "right" = [
@@ -89,6 +91,7 @@
               "showMemoryUsage" = true;
               "showNetworkStats" = true;
               "usePrimaryColor" = false;
+              "compactMode" = false;
             }
             {
               "hideWhenZero" = true;
@@ -107,14 +110,6 @@
               "id" = "Tray";
               "pinned" = [
               ];
-            }
-            {
-              "customFont" = "";
-              "formatHorizontal" = "HH:mm:ss ddd MM/dd";
-              "formatVertical" = "HH mm ss - MM dd";
-              "id" = "Clock";
-              "useCustomFont" = false;
-              "usePrimaryColor" = true;
             }
           ];
         };
