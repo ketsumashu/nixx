@@ -1,26 +1,27 @@
-{pkgs, ...}:{
+{ pkgs, ... }:
+{
   programs.nixvim.plugins = {
     luasnip = {
       enable = true;
-      fromVScode = [{}];
+      fromVScode = [ { } ];
     };
     nvim-autopairs = {
       enable = true;
       settings = {
         check_ts = true;
       };
-    luaconfig.post = ''
-      local Au = require('nvim-autopairs')
-        local Rule = require('nvim-autopairs.rule')
-        local cond = require('nvim-autopairs.conds')
+      luaconfig.post = ''
+        local Au = require('nvim-autopairs')
+          local Rule = require('nvim-autopairs.rule')
+          local cond = require('nvim-autopairs.conds')
 
-        Au.add_rules({
-          Rule("{", "};", "nix")
-            :with_pair(cond.not_after_regex("[%w%]"))
-            :with_pair(cond.not_before_regex("=$")) -- 'let {' や 'inherit {' 等を考慮
-            -- 既にセミコロンがある場合は重複させない等の調整が可能
-        })
-    '';
+          Au.add_rules({
+            Rule("{", "};", "nix")
+              :with_pair(cond.not_after_regex("[%w%]"))
+              :with_pair(cond.not_before_regex("=$")) -- 'let {' や 'inherit {' 等を考慮
+              -- 既にセミコロンがある場合は重複させない等の調整が可能
+          })
+      '';
     };
     extraPlugins = with pkgs.vimPlugins; [
       vim-snippets
@@ -43,7 +44,7 @@
       enable = true;
 
       settings = {
-        snippet.expand = ''function(args) require('luasnip').lsp_expand(args.body) end'';
+        snippet.expand = "function(args) require('luasnip').lsp_expand(args.body) end";
         sources = [
           { name = "nvim_lsp"; }
           { name = "luasnip"; }
