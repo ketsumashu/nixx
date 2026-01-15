@@ -12,7 +12,6 @@
     ./autopair.nix
     ./skkeleton.nix
     ./blankline.nix
-    ./extui.nix
     ./status.nix
   ];
 
