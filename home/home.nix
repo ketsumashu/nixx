@@ -17,6 +17,7 @@
     ./waybar
     ./obs
     ./krisp
+    ./input
   ];
 
   home = {
