@@ -18,6 +18,7 @@
     ./obs
     ./krisp
     ./input
+    ./qutebrowser
   ];
 
   home = {
