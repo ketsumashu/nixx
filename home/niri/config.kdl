@@ -78,8 +78,9 @@ layout {
   }
 }
 
-spawn-sh-at-startup "sleep 10; steam"
 spawn-sh-at-startup "yaskkserv2 --google-suggest /home/mashu/nixx/home/libskk/jisyo.yaskkserv2"
+spawn-sh-at-startup "fcitx5 -rd"
+spawn-sh-at-startup "sleep 10; steam"
 spawn-sh-at-startup "sleep 10; discord --gtk-version=4 --ozone-platform-hint=auto --wayland-text-input-version=3"
 spawn-sh-at-startup "openrgb --startminimized -p ~/.config/OpenRGB/pro.orp"
 
@@ -148,8 +149,9 @@ binds {
   Mod+Shift+Slash { show-hotkey-overlay; }
   
   Mod+Return hotkey-overlay-title="Open a Terminal: foot" { spawn "foot"; }
-  Mod+b hotkey-overlay-title="Open a browser: vivaldi" { spawn-sh "vivaldi --wayland-text-input-version=3"; }
+  Mod+b hotkey-overlay-title="Open a browser: qutebrowser" { spawn-sh "qutebrowser"; }
   Super+space hotkey-overlay-title="Run an Application Launcher" { spawn-sh "noctalia-shell ipc call launcher toggle"; }
+  Super+Alt+p hotkey-overlay-title="powermenu" { spawn-sh "noctalia-shell ipc call sessionMenu toggle"; }
   Mod+I { spawn "scr"; }
   
   XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+"; }
