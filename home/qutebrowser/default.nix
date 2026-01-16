@@ -281,7 +281,7 @@ in
         indicator = {
           width = 3;
         };
-        position = "left";
+        position = "bottom";
         width = 30;
         show = "always";
         show_switching_delay = 800;
@@ -293,8 +293,8 @@ in
       };
     };
     extraConfig = ''
-      c.statusbar.padding = { "bottom":10, "right":5, "left":5, "top":0 }
-      c.tabs.padding = { "bottom":10, "right":5, "left":5, "top":10 }
+      c.statusbar.padding = { "bottom":5, "right":5, "left":5, "top":0 }
+      c.tabs.padding = { "bottom":0, "right":5, "left":5, "top":5 }
       c.tabs.title.format = "{current_title}"
       c.tabs.title.format_pinned = "{current_title}"
       c.statusbar.widgets = ["keypress", "search_match","url","scroll","history","progress"]
