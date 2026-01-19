@@ -24,6 +24,7 @@
       enable = true;
       settings = {
         enable_italic = 0;
+        transparent_background = 2;
       };
     };
   };
