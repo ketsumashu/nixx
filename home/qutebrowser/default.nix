@@ -281,7 +281,7 @@ in
         indicator = {
           width = 3;
         };
-        position = "bottom";
+        position = "left";
         width = 30;
         show = "always";
         show_switching_delay = 800;
