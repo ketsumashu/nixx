@@ -20,13 +20,10 @@
     enableMan = false;
     viAlias = true;
     vimAlias = true;
-    colorschemes.poimandres = {
+    colorschemes.everforest = {
       enable = true;
       settings = {
-        disable_background = true;
-        disable_float_background = false;
-        disable_italics = true;
-        dark_variant = "main";
+        enable_italic = 0;
       };
     };
   };
