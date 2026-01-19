@@ -39,7 +39,7 @@
         capsuleOpacity = 1;
         density = "mini";
         exclusive = true;
-        floating = true;
+        floating = false;
         marginHorizontal = 13;
         marginVertical = 0;
         monitors = [
