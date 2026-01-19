@@ -44,10 +44,11 @@
         marginVertical = 0;
         monitors = [
           "DP-1"
+          "HDMI-A-1"
           "DP-3"
         ];
         outerCorners = true;
-        position = "bottom";
+        position = "left";
         showCapsule = true;
         widgets = {
           "left" = [
@@ -139,10 +140,10 @@
         generateTemplatesForPredefined = true;
         manualSunrise = "06=30";
         manualSunset = "18=30";
-        matugenSchemeType = "scheme-fruit-salad";
         predefinedScheme = "Osaka jade";
         schedulingMode = "off";
-        useWallpaperColors = false;
+        useWallpaperColors = true;
+        extractionMethod = "material";
       };
       controlCenter = {
         cards = [
