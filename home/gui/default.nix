@@ -7,7 +7,7 @@
 {
   qt = {
     enable = true;
-    platformTheme.name = "qt5ct";
+    platformTheme.name = "gtk2";
     style.name = "adwaita";
   };
 
