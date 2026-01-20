@@ -12,7 +12,6 @@
     ./gui
     ./vivaldi
     ./niri
-    ./hyprland
     ./noctalia
     ./waybar
     ./obs
