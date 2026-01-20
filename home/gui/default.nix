@@ -7,7 +7,7 @@
 {
   qt = {
     enable = true;
-    platformTheme.name = "gtk2";
+    platformTheme.name = "qt5ct";
     style.name = "adwaita";
   };
 
@@ -22,10 +22,10 @@
       package = pkgs.tela-circle-icon-theme;
       name = "Tela-circle-dark";
     };
-    #  font = {
-    #    name = "terminus";
-    #    size = 12;
-    #  };
+    font = {
+      name = "PlemolJP35 Console HS";
+      size = 14;
+    };
   };
   dconf.settings = {
     "org/gtk/settings/file-chooser" = {
@@ -37,20 +37,14 @@
     extraPortals = with pkgs; [
       xdg-desktop-portal-gnome
       xdg-desktop-portal-gtk
-      xdg-desktop-portal-wlr
-      xdg-desktop-portal-hyprland
     ];
     configPackages = with pkgs; [
       xdg-desktop-portal-gnome
-      xdg-desktop-portal-wlr
-      xdg-desktop-portal-hyprland
     ];
     config = {
       common = {
         default = [
           "gnome"
-          "gtk"
-          "wlr"
         ];
       };
       niri = {
@@ -59,20 +53,6 @@
         ];
         "org.freedesktop.impl.portal.ScreenCast" = [ "gnome" ];
         "org.freedesktop.impl.portal.Screenshot" = [ "gnome" ];
-      };
-      sway = {
-        default = [
-          "wlr"
-        ];
-        "org.freedesktop.impl.portal.ScreenCast" = [ "wlr" ];
-        "org.freedesktop.impl.portal.Screenshot" = [ "wlr" ];
-      };
-      hyprland = {
-        default = [
-          "hyprland"
-        ];
-        "org.freedesktop.impl.portal.ScreenCast" = [ "hyprland" ];
-        "org.freedesktop.impl.portal.Screenshot" = [ "hyprland" ];
       };
     };
   };
