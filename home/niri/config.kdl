@@ -30,7 +30,7 @@ output "HDMI-A-1" {
 output "DP-3" {
   mode "2560x1440@100.000"
   transform "normal"
-  position x=0 y=-20
+  position x=0 y=20
   layout {
     default-column-width { proportion 1.0;}
   }
@@ -38,7 +38,7 @@ output "DP-3" {
 output "DP-1" {
   mode "2560x1440@120.000"
   transform "normal"
-  position x=6400 y=-30
+  position x=6400 y=30
   layout {
     default-column-width { proportion 1.0;}
   }
@@ -78,8 +78,8 @@ layout {
   }
 }
 
-spawn-sh-at-startup "yaskkserv2 --google-suggest /home/mashu/nixx/home/libskk/jisyo.yaskkserv2"
-spawn-sh-at-startup "sleep 5;fcitx5 -rd"
+spawn-sh-at-startup "yaskkserv2 --google-suggest ~/nixx/home/libskk/jisyo.yaskkserv2"
+spawn-sh-at-startup "sleep 5; fcitx5 -rd"
 spawn-sh-at-startup "steam"
 spawn-sh-at-startup "discord --gtk-version=4 --ozone-platform-hint=auto --wayland-text-input-version=3"
 spawn-sh-at-startup "openrgb --startminimized -p ~/.config/OpenRGB/pro.orp"
