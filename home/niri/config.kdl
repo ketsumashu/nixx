@@ -78,8 +78,7 @@ layout {
   }
 }
 
-spawn-sh-at-startup "yaskkserv2 --google-suggest ~/nixx/home/libskk/jisyo.yaskkserv2"
-spawn-sh-at-startup "sleep 5; fcitx5 -rd"
+spawn-sh-at-startup "imes"
 spawn-sh-at-startup "steam"
 spawn-sh-at-startup "discord --gtk-version=4 --ozone-platform-hint=auto --wayland-text-input-version=3"
 spawn-sh-at-startup "openrgb --startminimized -p ~/.config/OpenRGB/pro.orp"
