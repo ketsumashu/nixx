@@ -12,10 +12,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
-    dms = {
-      url = "github:AvengeMedia/DankMaterialShell/stable";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
     noctalia = {
       url = "github:noctalia-dev/noctalia-shell";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -28,7 +24,6 @@
       nixvim,
       nixos-hardware,
       noctalia,
-      dms,
       ...
     }:
     {
@@ -56,7 +51,6 @@
                   inherit inputs;
                   inherit nixvim;
                   inherit noctalia;
-                  inherit dms;
                 };
               };
             }

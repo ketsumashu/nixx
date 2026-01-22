@@ -17,7 +17,6 @@
     ./obs
     ./krisp
     ./input
-    ./dms
     ./qutebrowser
   ];
 
