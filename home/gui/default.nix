@@ -24,7 +24,7 @@
     };
     font = {
       name = "PlemolJP35 Console HS";
-      size = 14;
+      size = 13;
     };
   };
   dconf.settings = {
