@@ -48,7 +48,7 @@
           "DP-3"
         ];
         outerCorners = true;
-        position = "left";
+        position = "bottom";
         showCapsule = true;
         widgets = {
           "left" = [
@@ -65,7 +65,7 @@
           "center" = [
             {
               "colorizeDistroLogo" = true;
-              "colorizeSystemIcon" = "tertiary";
+              "colorizeSystemIcon" = "primary";
               "customIconPath" = "";
               "enableColorization" = true;
               "icon" = "noctalia";
@@ -345,7 +345,7 @@
         discord = true;
         emacs = false;
         enableUserTemplates = false;
-        foot = false;
+        foot = true;
         fuzzel = false;
         ghostty = false;
         gtk = true;
@@ -361,10 +361,10 @@
         wezterm = false;
       };
       ui = {
-        fontDefault = "Terminus";
-        fontDefaultScale = 0.9;
-        fontFixed = "Terminus";
-        fontFixedScale = 0.9;
+        fontDefault = ["Terminus" "mplus12"];
+        fontDefaultScale = 1;
+        fontFixed = "Cozette";
+        fontFixedScale = 1;
         panelBackgroundOpacity = 1;
         panelsAttachedToBar = true;
         settingsPanelAttachToBar = false;
