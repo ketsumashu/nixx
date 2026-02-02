@@ -20,9 +20,12 @@
     enableMan = false;
     viAlias = true;
     vimAlias = true;
-    colorschemes.base16 = {
+    colorschemes.nightfox = {
       enable = true;
-      colorscheme = "nova";
+      flavor = "carbonfox";
+      options = {
+        transparent = true;
+      };
     };
   };
 }
