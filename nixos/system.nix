@@ -38,13 +38,12 @@
       "v4l2loopback"
     ];
     supportedFilesystems = [ "ntfs" ];
-    blacklistedKernelModules = [ "k10temp" "r8169" ];
+    blacklistedKernelModules = [ "k10temp" ];
     kernelPackages = pkgs.linuxPackages_xanmod_latest;
     tmp.cleanOnBoot = true;
     extraModulePackages = with config.boot.kernelPackages; [
       zenpower
       v4l2loopback
-      r8168
     ];
     extraModprobeConfig = ''
       options v4l2loopback devices=1 video_nr=1 card_label="OBS Cam" exclusive_caps=1
