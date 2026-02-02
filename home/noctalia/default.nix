@@ -11,17 +11,27 @@
     systemd.enable = true;
     settings = {
       appLauncher = {
-        customLaunchPrefix = "";
-        customLaunchPrefixEnabled = false;
-        enableClipPreview = true;
-        enableClipboardHistory = false;
-        pinnedExecs = [ ];
-        position = "center";
-        showCategories = false;
-        sortByMostUsed = true;
-        terminalCommand = "foot -e";
-        useApp2Unit = false;
-        viewMode = "list";
+        "enableClipboardHistory"= false;
+        "autoPasteClipboard"= false;
+        "enableClipPreview"= true;
+        "clipboardWrapText"= true;
+        "clipboardWatchTextCommand"= "wl-paste --type text --watch cliphist store";
+        "clipboardWatchImageCommand"= "wl-paste --type image --watch cliphist store";
+        "position"= "center";
+        "pinnedApps"= [];
+        "useApp2Unit"= false;
+        "sortByMostUsed"= true;
+        "terminalCommand"= "foot -e";
+        "customLaunchPrefixEnabled"= false;
+        "customLaunchPrefix"= "";
+        "viewMode"= "list";
+        "showCategories"= false;
+        "iconMode"= "tabler";
+        "showIconBackground"= false;
+        "enableSettingsSearch"= true;
+        "enableWindowsSearch"= true;
+        "ignoreMouseInput"= false;
+        "screenshotAnnotationTool"= "";
       };
       audio = {
         cavaFrameRate = 30;
@@ -52,15 +62,19 @@
         showCapsule = true;
         widgets = {
           "left" = [
-                {
-                    "colorizeIcons"= false;
-                    "hideMode"= "hidden";
-                    "id"= "ActiveWindow";
-                    "maxWidth"= 145;
-                    "scrollingMode"= "hover";
-                    "showIcon"= true;
-                    "useFixedWidth"= false;
-                }
+            {
+             "colorizeIcons"= false;
+             "hideMode"= "hidden";
+             "iconScale"= 1;
+             "id"= "Taskbar";
+             "maxTaskbarWidth"= 40;
+             "onlyActiveWorkspaces"= false;
+             "onlySameOutput"= false;
+             "showPinnedApps"= true;
+             "showTitle"= true;
+             "smartWidth"= false;
+             "titleWidth"= 120;
+            }
           ];
           "center" = [
             {
@@ -83,16 +97,13 @@
           ];
           "right" = [
             {
-              "diskPath" = "/";
-              "id" = "SystemMonitor";
-              "showCpuTemp" = true;
-              "showCpuUsage" = true;
-              "showDiskUsage" = false;
-              "showMemoryAsPercent" = true;
-              "showMemoryUsage" = true;
-              "showNetworkStats" = true;
-              "usePrimaryColor" = false;
-              "compactMode" = false;
+              "blacklist" = [
+              ];
+              "colorizeIcons" = false;
+              "drawerEnabled" = true;
+              "id" = "Tray";
+              "pinned" = [
+              ];
             }
             {
               "hideWhenZero" = true;
@@ -104,13 +115,16 @@
               "id" = "Volume";
             }
             {
-              "blacklist" = [
-              ];
-              "colorizeIcons" = false;
-              "drawerEnabled" = true;
-              "id" = "Tray";
-              "pinned" = [
-              ];
+              "diskPath" = "/";
+              "id" = "SystemMonitor";
+              "showCpuTemp" = true;
+              "showCpuUsage" = true;
+              "showDiskUsage" = false;
+              "showMemoryAsPercent" = true;
+              "showMemoryUsage" = true;
+              "showNetworkStats" = true;
+              "usePrimaryColor" = false;
+              "compactMode" = false;
             }
           ];
         };
@@ -143,7 +157,7 @@
         predefinedScheme = "Osaka jade";
         schedulingMode = "off";
         useWallpaperColors = true;
-        extractionMethod = "material";
+        extractionMethod = "fruit-salad";
       };
       controlCenter = {
         cards = [
@@ -361,7 +375,7 @@
         wezterm = false;
       };
       ui = {
-        fontDefault = ["Terminus" "mplus12"];
+        fontDefault = "Terminus";
         fontDefaultScale = 1;
         fontFixed = "Cozette";
         fontFixedScale = 1;

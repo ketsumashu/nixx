@@ -41,7 +41,7 @@
     blacklistedKernelModules = [ "k10temp" ];
     kernelPackages = pkgs.linuxPackages_xanmod_latest;
     tmp.cleanOnBoot = true;
-    kernelParams = [ "fbcon=rotate:1" ];
+    #kernelParams = [ "fbcon=rotate:1" ];
     extraModulePackages = with config.boot.kernelPackages; [
       zenpower
       v4l2loopback
