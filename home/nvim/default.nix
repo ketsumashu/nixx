@@ -20,12 +20,9 @@
     enableMan = false;
     viAlias = true;
     vimAlias = true;
-    colorschemes.modus = {
+    colorschemes.base16 = {
       enable = true;
-      settings = {
-        style = "modus_vivendi";
-        transparent = true;
-      };
+      colorscheme = "nova";
     };
   };
 }
