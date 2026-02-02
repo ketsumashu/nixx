@@ -20,11 +20,9 @@
     enableMan = false;
     viAlias = true;
     vimAlias = true;
-    colorschemes.everforest = {
+    colorschemes.cyberdream = {
       enable = true;
       settings = {
-        enable_italic = 0;
-        transparent_background = 2;
       };
     };
   };
