@@ -23,8 +23,10 @@
     colorschemes.nightfox = {
       enable = true;
       flavor = "nightfox";
-      options = {
-        transparent = true;
+      settings = {
+        options = {
+          transparent = true;
+        };
       };
     };
   };
