@@ -22,6 +22,7 @@
         style = "blue";
         format = "[$time]($style) ";
       };
+      scan_timeout = 10;
     };
   };
 }
