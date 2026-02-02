@@ -20,7 +20,7 @@
     enableMan = false;
     viAlias = true;
     vimAlias = true;
-    colorschemes.cyberdream = {
+    colorschemes.modus = {
       enable = true;
       settings = {
         transparent = true;
