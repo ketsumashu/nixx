@@ -15,7 +15,7 @@
         line-height = 12.4;
         letter-spacing = 1.0;
         vertical-letter-offset = 1.0;
-        dpi-aware = false;
+        dpi-aware = true;
         pad = "20x15 center"; # optionally append 'center'
         initial-window-size-pixels = "640x200";
       };
@@ -23,8 +23,8 @@
         hide-when-typing = "yes";
         alternate-scroll-mode = "yes";
       };
-      #colors = {
-      #  alpha = 0.94;
+      colors = {
+        alpha = 0.94;
       #  background = "191c25";
       #  foreground = "c5c4d4";
       #  cursor = "191724 e0def4";
@@ -44,7 +44,7 @@
       #  bright5 = "cdb6dd";
       #  bright6 = "94cdd1";
       #  bright7 = "f0ecfe";
-      #};
+      };
     };
   };
 }
