@@ -22,9 +22,10 @@
     vimAlias = true;
     colorschemes.nightfox = {
       enable = true;
-      flavor = "nightfox";
+      flavor = "nordfox";
       settings = {
         options = {
+          terminal_colors = true;
           transparent = true;
         };
       };
