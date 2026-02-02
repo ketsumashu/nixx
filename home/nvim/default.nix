@@ -22,7 +22,7 @@
     vimAlias = true;
     colorschemes.nightfox = {
       enable = true;
-      flavor = "carbonfox";
+      flavor = "nightfox";
       options = {
         transparent = true;
       };
