@@ -23,6 +23,7 @@
     colorschemes.modus = {
       enable = true;
       settings = {
+        style = "modus_vivendi";
         transparent = true;
       };
     };
