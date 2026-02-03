@@ -56,7 +56,6 @@
         marginVertical = 0;
         monitors = [
           "DP-1"
-          "HDMI-A-1"
           "DP-3"
         ];
         outerCorners = false;
@@ -66,10 +65,10 @@
           "left" = [
             {
               "customFont" = "";
-              "formatHorizontal" = "HH=mm=ss yyyy-MM-dd";
+              "formatHorizontal" = "HH:mm:ss yyyy-MM-dd";
               "formatVertical" = "HH mm ss - dd MM";
               "id" = "Clock";
-              "tooltipFormat" = "HH=mm ddd; MMM dd";
+              "tooltipFormat" = "HH:mm ddd - MMM dd";
               "useCustomFont" = false;
               "usePrimaryColor" = true;
             }
