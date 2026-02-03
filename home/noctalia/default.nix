@@ -46,7 +46,7 @@
       };
       bar = {
         barType = "simple";
-        backgroundOpacity = 1;
+        backgroundOpacity = 0;
         capsuleOpacity = 0;
         useSeparateOpacity = true;
         density = "mini";
