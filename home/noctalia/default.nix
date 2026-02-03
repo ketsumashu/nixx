@@ -11,27 +11,27 @@
     systemd.enable = true;
     settings = {
       appLauncher = {
-        "enableClipboardHistory"= false;
-        "autoPasteClipboard"= false;
-        "enableClipPreview"= true;
-        "clipboardWrapText"= true;
-        "clipboardWatchTextCommand"= "wl-paste --type text --watch cliphist store";
-        "clipboardWatchImageCommand"= "wl-paste --type image --watch cliphist store";
-        "position"= "center";
-        "pinnedApps"= [];
-        "useApp2Unit"= false;
-        "sortByMostUsed"= true;
-        "terminalCommand"= "foot -e";
-        "customLaunchPrefixEnabled"= false;
-        "customLaunchPrefix"= "";
-        "viewMode"= "list";
-        "showCategories"= false;
-        "iconMode"= "tabler";
-        "showIconBackground"= false;
-        "enableSettingsSearch"= true;
-        "enableWindowsSearch"= true;
-        "ignoreMouseInput"= false;
-        "screenshotAnnotationTool"= "";
+        "enableClipboardHistory" = false;
+        "autoPasteClipboard" = false;
+        "enableClipPreview" = true;
+        "clipboardWrapText" = true;
+        "clipboardWatchTextCommand" = "wl-paste --type text --watch cliphist store";
+        "clipboardWatchImageCommand" = "wl-paste --type image --watch cliphist store";
+        "position" = "center";
+        "pinnedApps" = [ ];
+        "useApp2Unit" = false;
+        "sortByMostUsed" = true;
+        "terminalCommand" = "foot -e";
+        "customLaunchPrefixEnabled" = false;
+        "customLaunchPrefix" = "";
+        "viewMode" = "list";
+        "showCategories" = false;
+        "iconMode" = "tabler";
+        "showIconBackground" = false;
+        "enableSettingsSearch" = true;
+        "enableWindowsSearch" = true;
+        "ignoreMouseInput" = false;
+        "screenshotAnnotationTool" = "";
       };
       audio = {
         cavaFrameRate = 30;
@@ -45,8 +45,10 @@
         volumeStep = 5;
       };
       bar = {
+        barType = "simple";
         backgroundOpacity = 1;
-        capsuleOpacity = 1;
+        capsuleOpacity = 0;
+        useSeparateOpacity = true;
         density = "mini";
         exclusive = true;
         floating = false;
@@ -57,75 +59,62 @@
           "HDMI-A-1"
           "DP-3"
         ];
-        outerCorners = true;
+        outerCorners = false;
         position = "bottom";
-        showCapsule = true;
+        showCapsule = false;
         widgets = {
           "left" = [
             {
-             "colorizeIcons"= false;
-             "hideMode"= "hidden";
-             "iconScale"= 1;
-             "id"= "Taskbar";
-             "maxTaskbarWidth"= 40;
-             "onlyActiveWorkspaces"= false;
-             "onlySameOutput"= false;
-             "showPinnedApps"= true;
-             "showTitle"= true;
-             "smartWidth"= false;
-             "titleWidth"= 120;
-            }
-          ];
-          "center" = [
-            {
-              "colorizeDistroLogo" = true;
-              "colorizeSystemIcon" = "primary";
-              "customIconPath" = "";
-              "enableColorization" = true;
-              "icon" = "noctalia";
-              "id" = "ControlCenter";
-              "useDistroLogo" = true;
-            }
-            {
               "customFont" = "";
-              "formatHorizontal" = "HH:mm:ss ddd MM/dd";
-              "formatVertical" = "HH mm ss - MM dd";
+              "formatHorizontal" = "HH=mm=ss yyyy-MM-dd";
+              "formatVertical" = "HH mm ss - dd MM";
               "id" = "Clock";
+              "tooltipFormat" = "HH=mm ddd; MMM dd";
               "useCustomFont" = false;
               "usePrimaryColor" = true;
             }
-          ];
-          "right" = [
             {
-              "blacklist" = [
-              ];
-              "colorizeIcons" = false;
-              "drawerEnabled" = true;
-              "id" = "Tray";
-              "pinned" = [
-              ];
-            }
-            {
-              "hideWhenZero" = true;
-              "id" = "NotificationHistory";
-              "showUnreadBadge" = true;
-            }
-            {
-              "displayMode" = "onhover";
-              "id" = "Volume";
-            }
-            {
-              "diskPath" = "/";
+              "compactMode" = false;
+              "diskPath" = "/home/mashu/game";
               "id" = "SystemMonitor";
+              "showCpuFreq" = false;
               "showCpuTemp" = true;
               "showCpuUsage" = true;
-              "showDiskUsage" = false;
-              "showMemoryAsPercent" = true;
+              "showDiskAsFree" = true;
+              "showDiskUsage" = true;
+              "showGpuTemp" = true;
+              "showLoadAverage" = false;
+              "showMemoryAsPercent" = false;
               "showMemoryUsage" = true;
               "showNetworkStats" = true;
+              "showSwapUsage" = false;
+              "useMonospaceFont" = true;
               "usePrimaryColor" = false;
-              "compactMode" = false;
             }
+            {
+              "displayMode" = "alwaysShow";
+              "id" = "Volume";
+              "middleClickCommand" = "pwvucontrol || pavucontrol";
+            }
+            {
+              "hideWhenZero" = false;
+              "hideWhenZeroUnread" = false;
+              "id" = "NotificationHistory";
+              "showUnreadBadge" = true;
+              "unreadBadgeColor" = "primary";
+            }
+            {
+              "blacklist" = [ ];
+              "colorizeIcons" = false;
+              "drawerEnabled" = true;
+              "hidePassive" = false;
+              "id" = "Tray";
+              "pinned" = [ ];
+            }
+          ];
+          "center" = [
+          ];
+          "right" = [
           ];
         };
       };
