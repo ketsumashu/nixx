@@ -277,4 +277,5 @@ binds {
   Ctrl+Alt+Delete { quit; }
   
   Mod+Alt+L { spawn-sh "noctalia-shell ipc call lockScreen lock"; }
+  Mod+Alt+C { spawn-sh "noctalia-shell ipc call launcher clipboard"; }
 }
