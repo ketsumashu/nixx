@@ -60,7 +60,7 @@
           "DP-3"
         ];
         outerCorners = false;
-        position = "top";
+        position = "bottom";
         showCapsule = false;
         widgets = {
           "left" = [
