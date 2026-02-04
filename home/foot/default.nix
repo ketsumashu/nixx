@@ -13,9 +13,9 @@
         font-italic = "mplus12:size=10,Cozette:size=11";
         font-bold-italic = "mplus12:size=10,Cozette:size=11";
         line-height = 12.4;
-        letter-spacing = 1.2;
+        letter-spacing = 1.0;
         vertical-letter-offset = 1.0;
-        dpi-aware = true;
+        dpi-aware = false;
         pad = "20x15 center"; # optionally append 'center'
         initial-window-size-pixels = "640x200";
       };
