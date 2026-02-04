@@ -13,7 +13,6 @@
     ./vivaldi
     ./niri
     ./noctalia
-    ./waybar
     ./obs
     ./krisp
     ./input
