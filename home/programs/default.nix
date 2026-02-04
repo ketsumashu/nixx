@@ -27,7 +27,7 @@
     nautilus
     discord
     fastfetch
-    qt6ct
+    qt6Packages.qt6ct
   ];
 
 }
