@@ -24,7 +24,7 @@
     };
     font = {
       name = "Noto Sans";
-      size = 13;
+      size = 11;
     };
   };
   dconf.settings = {
