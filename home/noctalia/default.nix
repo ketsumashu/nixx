@@ -56,10 +56,11 @@
         marginVertical = 0;
         monitors = [
           "DP-1"
+          "HDMI-A-1"
           "DP-3"
         ];
         outerCorners = false;
-        position = "bottom";
+        position = "top";
         showCapsule = false;
         widgets = {
           "left" = [
@@ -363,7 +364,7 @@
       };
       ui = {
         fontDefault = "Noto Sans";
-        fontDefaultScale = 1.1;
+        fontDefaultScale = 1;
         fontFixed = "Cozette";
         fontFixedScale = 1;
         panelBackgroundOpacity = 1;
