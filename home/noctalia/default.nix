@@ -11,7 +11,7 @@
     systemd.enable = true;
     settings = {
       appLauncher = {
-        "enableClipboardHistory" = false;
+        "enableClipboardHistory" = true;
         "autoPasteClipboard" = false;
         "enableClipPreview" = true;
         "clipboardWrapText" = true;
@@ -64,12 +64,12 @@
         widgets = {
           "left" = [
             {
-              "customFont" = "";
+              "customFont" = "Cozette";
               "formatHorizontal" = "HH:mm:ss yyyy-MM-dd";
               "formatVertical" = "HH mm ss - dd MM";
               "id" = "Clock";
               "tooltipFormat" = "HH:mm ddd - MMM dd";
-              "useCustomFont" = false;
+              "useCustomFont" = true;
               "usePrimaryColor" = true;
             }
             {
@@ -145,7 +145,7 @@
         predefinedScheme = "Osaka jade";
         schedulingMode = "off";
         useWallpaperColors = true;
-        extractionMethod = "fruit-salad";
+        generationMethod = "rainbow";
       };
       controlCenter = {
         cards = [
@@ -202,7 +202,7 @@
         animationSpeed = 1;
         avatarImage = "/home/mashu/PB112024-20251111-DxO_DeepPRIME XD2s.jpg";
         boxRadiusRatio = 1;
-        compactLockScreen = false;
+        compactLockScreen = true;
         dimmerOpacity = 0.31;
         enableShadows = true;
         forceBlackScreenCorners = false;
@@ -266,17 +266,6 @@
         ];
         overlayLayer = true;
       };
-      screenRecorder = {
-        audioCodec = "opus";
-        audioSource = "default_output";
-        colorRange = "limited";
-        directory = "/home/mashu/Videos";
-        frameRate = 120;
-        quality = "very_high";
-        showCursor = true;
-        videoCodec = "h264";
-        videoSource = "portal";
-      };
       sessionMenu = {
         countdownDuration = 10000;
         enableCountdown = true;
@@ -323,25 +312,35 @@
       };
       settingsVersion = 26;
       systemMonitor = {
-        cpuCriticalThreshold = 90;
-        cpuPollingInterval = 3000;
         cpuWarningThreshold = 80;
-        criticalColor = "";
-        diskCriticalThreshold = 90;
-        diskPollingInterval = 3000;
-        diskWarningThreshold = 80;
-        memCriticalThreshold = 90;
-        memPollingInterval = 3000;
-        memWarningThreshold = 80;
-        networkPollingInterval = 3000;
-        tempCriticalThreshold = 90;
-        tempPollingInterval = 3000;
+        cpuCriticalThreshold = 90;
         tempWarningThreshold = 80;
+        tempCriticalThreshold = 90;
+        gpuWarningThreshold = 80;
+        gpuCriticalThreshold = 90;
+        memWarningThreshold = 80;
+        memCriticalThreshold = 90;
+        swapWarningThreshold = 80;
+        swapCriticalThreshold = 90;
+        diskWarningThreshold = 80;
+        diskCriticalThreshold = 90;
+        diskAvailWarningThreshold = 20;
+        diskAvailCriticalThreshold = 10;
+        cpuPollingInterval = 1000;
+        gpuPollingInterval = 3000;
+        enableDgpuMonitoring = true;
+        memPollingInterval = 1000;
+        diskPollingInterval = 3000;
+        networkPollingInterval = 1000;
+        loadAvgPollingInterval = 3000;
         useCustomColors = false;
         warningColor = "";
+        criticalColor = "";
+        externalMonitor = "resources || missioncenter || jdsystemmonitor || corestats || system-monitoring-center || gnome-system-monitor || plasma-systemmonitor || mate-system-monitor || ukui-system-monitor || deepin-system-monitor || pantheon-system-monitor";
       };
       templates = {
         alacritty = false;
+        btop = true;
         cava = false;
         code = false;
         discord = true;
@@ -363,8 +362,8 @@
         wezterm = false;
       };
       ui = {
-        fontDefault = "Terminus";
-        fontDefaultScale = 1;
+        fontDefault = "Noto Sans";
+        fontDefaultScale = 1.1;
         fontFixed = "Cozette";
         fontFixedScale = 1;
         panelBackgroundOpacity = 1;
