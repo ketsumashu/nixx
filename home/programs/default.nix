@@ -27,6 +27,7 @@
     nautilus
     discord
     fastfetch
+    qt6ct
   ];
 
 }
