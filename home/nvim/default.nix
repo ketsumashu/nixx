@@ -20,14 +20,10 @@
     enableMan = false;
     viAlias = true;
     vimAlias = true;
-    colorschemes.nightfox = {
+    colorschemes.poimandres = {
       enable = true;
-      flavor = "nordfox";
       settings = {
-        options = {
-          terminal_colors = true;
-          transparent = true;
-        };
+        disable_background = true;
       };
     };
   };
