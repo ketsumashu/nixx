@@ -36,7 +36,7 @@
       click_interval 0.5
       cursor_blink_interval 0
       modify_font cell_width 100%
-      include noctalia.conf
+      include /home/mashu/.config/kitty/themes/noctalia.conf
     '';
   };
 }
