@@ -5,6 +5,7 @@ return {
     enable_wayland = true,
     color_scheme = "Noctalia",
     use_ime = true,
+    check_for_updates = false,
     warn_about_missing_glyphs = false,
     hide_tab_bar_if_only_one_tab = true,
     window_close_confirmation = "NeverPrompt",
@@ -37,10 +38,10 @@ return {
     line_height = 1.3,
     cell_width = 1.02,
     window_padding = {
-      left = 10px,
-      top = 10px,
-      bottom = 10px,
-      right = 10px,
+      left = "10px",
+      top = "10px",
+      bottom = "10px",
+      right = "10px",
     }
 }
 
