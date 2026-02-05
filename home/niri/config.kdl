@@ -72,7 +72,7 @@ layout {
   }
 }
 
-spawn-at-startup "imes"
+spawn-sh-at-startup "imes"
 spawn-sh-at-startup "steam"
 spawn-sh-at-startup "discord --gtk-version=4 --ozone-platform-hint=auto --wayland-text-input-version=3"
 spawn-sh-at-startup "openrgb --startminimized -p ~/.config/OpenRGB/pro.orp"
@@ -141,7 +141,7 @@ layer-rule {
 binds {
   Mod+Shift+Slash { show-hotkey-overlay; }
   
-  Mod+Return hotkey-overlay-title="Open a Terminal: foot" { spawn "foot"; }
+  Mod+Return hotkey-overlay-title="Open a Terminal: wezterm" { spawn "wezterm"; }
   Mod+b hotkey-overlay-title="Open a browser: vivaldi" { spawn-sh "vivaldi"; }
   Super+space hotkey-overlay-title="Run an Application Launcher" { spawn-sh "noctalia-shell ipc call launcher toggle"; }
   Super+Alt+p hotkey-overlay-title="powermenu" { spawn-sh "noctalia-shell ipc call sessionMenu toggle"; }
