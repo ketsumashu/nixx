@@ -3,7 +3,7 @@
     enable = true;
     settings = {
       background_opacity = 0.92;
-      font_family = "Moralerspace Argon";
+      font_family = "Terminus";
       italic_font = "auto";
       bold_font = "auto";
       bold_italic_font = "auto";
