@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixos-hardware.url = "github:NixOS/nixos-hardware/master";
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -11,11 +12,11 @@
       url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    nixos-hardware.url = "github:NixOS/nixos-hardware/master";
     noctalia = {
       url = "github:noctalia-dev/noctalia-shell";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    wezterm.url = "github:wezterm/wezterm?dir=nix";
   };
   outputs =
     inputs@{
@@ -24,6 +25,7 @@
       nixvim,
       nixos-hardware,
       noctalia,
+      wezterm,
       ...
     }:
     {
@@ -51,6 +53,7 @@
                   inherit inputs;
                   inherit nixvim;
                   inherit noctalia;
+                  inherit wezterm;
                 };
               };
             }
