@@ -38,10 +38,10 @@ return {
     line_height = 1.3,
     cell_width = 1.02,
     window_padding = {
-      left = "10px",
-      top = "10px",
-      bottom = "10px",
-      right = "10px",
+      left = "16px",
+      top = "16px",
+      bottom = "16px",
+      right = "16px",
     }
 }
 
