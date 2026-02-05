@@ -3,7 +3,7 @@ return {
     default_prog = { '/usr/bin/fish', '-l' },
     window_background_opacity = 0.87,
     enable_wayland = false,
-    color_scheme = "noctalia",
+    color_scheme = "Noctalia",
     use_ime = true,
     warn_about_missing_glyphs = false,
     hide_tab_bar_if_only_one_tab = true,
