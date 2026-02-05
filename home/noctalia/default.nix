@@ -447,6 +447,10 @@
           }
           {
             enabled = true;
+            id = "btop";
+          }
+          {
+            enabled = true;
             id = "kitty";
           }
           {
