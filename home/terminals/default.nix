@@ -36,42 +36,7 @@
       click_interval 0.5
       cursor_blink_interval 0
       modify_font cell_width 100%
-      background #191c25
-      foreground #a6accd
-      cursor     #e0def4
-
-      # Black
-      color0 #525566
-      color8 #666b7f
-
-      # Red
-      color1 #a994b8
-      color9 #cdb6dd
-
-      # Green
-      color2  #77adb1
-      color10 #94cdd1
-
-      # Yellow
-      color3  #c5c4d4
-      color11 #f0ecfe
-
-      # Blue
-      color4  #889bb4
-      color12 #afc5de
-
-      # Magenta
-      color5  #a994b8
-      color13 #cdb6dd
-
-      # Cyan
-      color6  #77adb1
-      color14 #94cdd1
-
-      # White
-      color7  #c5c4d4
-      color15 #f0ecfe
-
+      include noctalia.conf
     '';
   };
 }
