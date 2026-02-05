@@ -36,5 +36,10 @@ return {
     font_size = 11.0,
     line_height = 1.3,
     cell_width = 1.02,
+    window_padding = {
+      left = 3,
+      top = 3,
+      bottom = 3,
+    }
 }
 
