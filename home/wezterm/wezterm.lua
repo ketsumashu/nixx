@@ -6,6 +6,7 @@ return {
     color_scheme = "Noctalia",
     use_ime = true,
     check_for_updates = false,
+    show_update_window = false,
     warn_about_missing_glyphs = false,
     hide_tab_bar_if_only_one_tab = true,
     window_close_confirmation = "NeverPrompt",
