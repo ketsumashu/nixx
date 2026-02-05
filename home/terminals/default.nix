@@ -3,7 +3,7 @@
     enable = true;
     settings = {
       background_opacity = 0.92;
-      font_family = "CozetteVectorBold medium";
+      font_family = "CozetteVectorBold";
       italic_font = "auto";
       bold_font = "auto";
       bold_italic_font = "auto";
