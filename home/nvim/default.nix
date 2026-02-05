@@ -20,11 +20,14 @@
     enableMan = false;
     viAlias = true;
     vimAlias = true;
-    colorschemes.poimandres = {
+    #colorschemes.poimandres = {
+    #  enable = true;
+    #  settings = {
+    #    disable_background = true;
+    #  };
+    #};
+    colorschemes.base16 = {
       enable = true;
-      settings = {
-        disable_background = true;
-      };
     };
   };
 }
