@@ -360,7 +360,7 @@
         telegram = false;
         vicinae = false;
         walker = false;
-        wezterm = false;
+        wezterm = true;
       };
       ui = {
         fontDefault = "Noto Sans";
