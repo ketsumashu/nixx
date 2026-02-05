@@ -346,7 +346,7 @@
         code = false;
         discord = true;
         emacs = false;
-        enableUserTemplates = true;
+        enableUserTemplates = false;
         foot = true;
         fuzzel = false;
         ghostty = false;
