@@ -5,7 +5,7 @@
     ./terminals
     ./foot
     ./starship
-    # ./wezterm
+    ./wezterm
     ./libskk
     ./localfont
     ./scripts
