@@ -11,7 +11,7 @@ return {
     window_close_confirmation = "NeverPrompt",
     font = wezterm.font_with_fallback {
         {
-            family = "Cozette",
+            family = "Terminus",
             weight = "Medium",
             stretch = "Normal",
             style = "Normal",
