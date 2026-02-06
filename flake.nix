@@ -16,7 +16,6 @@
       url = "github:noctalia-dev/noctalia-shell";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    wezterm.url = "github:wezterm/wezterm?dir=nix";
   };
   outputs =
     inputs@{
@@ -25,7 +24,6 @@
       nixvim,
       nixos-hardware,
       noctalia,
-      wezterm,
       ...
     }:
     {
@@ -53,7 +51,6 @@
                   inherit inputs;
                   inherit nixvim;
                   inherit noctalia;
-                  inherit wezterm;
                 };
               };
             }
