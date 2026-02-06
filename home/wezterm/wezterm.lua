@@ -4,7 +4,7 @@ return {
     window_background_opacity = 0.87,
     enable_wayland = true,
     color_scheme = "Noctalia",
-    use_ime = true,
+    use_ime = false,
     check_for_updates = false,
     warn_about_missing_glyphs = false,
     hide_tab_bar_if_only_one_tab = true,
@@ -20,12 +20,6 @@ return {
           weight = "Medium",
           stretch = "Normal",
           style = "Normal"
-        },
-        { family = "Blobmoji",
-          weight = "Regular",
-          stretch = "Normal",
-          style = "Normal",
-          assume_emoji_presentation = true
         },
         {
             family = "mplus12",
