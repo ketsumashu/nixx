@@ -15,13 +15,13 @@
         };
       }
       {
-        action = "o<Esc>";
+        action = "o";
         key = "o";
         mode = "n";
       }
 
       {
-        action = "O<Esc>";
+        action = "O";
         key = "O";
         mode = "n";
       }
@@ -43,7 +43,16 @@
         mode = "n";
       }
       {
-        action = ":q<CR>";
+        action.__raw = ''
+          function()
+            local bufs = vim.fn.getbufinfo({ buflisted = 1})
+            if #bufs > 1 then
+              vim.cmd('bdelete')}
+            else
+              vim.cmd('quit')
+            end
+          end
+        '';
         key = "<leader>q";
         mode = "n";
       }

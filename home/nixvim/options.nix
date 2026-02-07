@@ -8,7 +8,7 @@
       termguicolors = true;
       showmode = false;
       backup = false;
-      cmdheight = 1;
+      cmdheight = 0;
       conceallevel = 0;
       encoding = "utf-8";
       fileencoding = "utf-8";

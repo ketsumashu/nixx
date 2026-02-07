@@ -33,6 +33,37 @@
           "<C-b>" = "cmp.mapping.scroll_docs(-4)";
           "<CR>" = "cmp.mapping.confirm({ select = true })";
         };
+        window = {
+          completion = {
+            winhighlight = "FloatBorder:CmpBorder,Normal:CmpPmenu,CursorLine:CmpSel,Search:PmenuSel";
+            scrollbar = false;
+            sidePadding = 0;
+            border = [
+              "╭"
+              "─"
+              "╮"
+              "│"
+              "╯"
+              "─"
+              "╰"
+              "│"
+            ];
+          };
+
+          settings.documentation = {
+            border = [
+              "╭"
+              "─"
+              "╮"
+              "│"
+              "╯"
+              "─"
+              "╰"
+              "│"
+            ];
+            winhighlight = "FloatBorder:CmpBorder,Normal:CmpPmenu,CursorLine:CmpSel,Search:PmenuSel";
+          };
+        };
       };
     };
   };
