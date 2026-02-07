@@ -1,6 +1,6 @@
 { pkgs, ... }:
 {
-  plugins.indent-blankline = {
+  programs.nixvim.plugins.indent-blankline = {
     enable = pkgs.lib.mkDefault true;
     settings = {
       indent.char = "│";

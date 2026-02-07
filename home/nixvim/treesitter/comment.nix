@@ -1,5 +1,5 @@
 {
-  plugins.ts-context-commentstring = {
+  programs.nixvim.plugins.ts-context-commentstring = {
     enable = true;
     skipTsContextCommentStringModule = true;
   };

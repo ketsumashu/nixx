@@ -1,6 +1,6 @@
 { pkgs, ... }:
 {
-  plugins.lspsaga = {
+  programs.nixvim.plugins.lspsaga = {
     enable = pkgs.lib.mkDefault true;
     settings = {
       beacon.enable = pkgs.lib.mkDefault true;

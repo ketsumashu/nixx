@@ -1,5 +1,5 @@
 {
-  config = {
+  programs.nixvim.config = {
     clipboard = {
       register = "unnamedplus";
     };
@@ -28,14 +28,14 @@
       updatetime = 300;
       writebackup = false;
       expandtab = true;
-      shiftwidth = 4;
-      tabstop = 4;
+      shiftwidth = 2;
+      tabstop = 2;
       cursorline = true;
       laststatus = 3;
       number = true;
       relativenumber = true;
       signcolumn = "yes";
-      wrap = true;
+      wrap = false;
       scrolloff = 8;
       listchars = {
         tab = "󰌒 ";

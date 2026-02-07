@@ -1,6 +1,6 @@
 { pkgs, ... }:
 {
-  plugins.lsp = {
+  programs.nixvim.plugins.lsp = {
     enable = pkgs.lib.mkDefault true;
     servers = {
       bashls.enable = pkgs.lib.mkDefault true;
@@ -23,5 +23,5 @@
     };
   };
 
-  plugins.lsp-format.enable = pkgs.lib.mkDefault true;
+  programs.nixvim.plugins.lsp-format.enable = pkgs.lib.mkDefault true;
 }

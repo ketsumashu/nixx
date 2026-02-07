@@ -1,6 +1,6 @@
 { pkgs, ... }:
 {
-  plugins.notify = {
+  programs.nixvim.plugins.notify = {
     enable = pkgs.lib.mkDefault true;
     settings = {
       level = "info";

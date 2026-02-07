@@ -1,6 +1,6 @@
 { pkgs, ... }:
 {
-  plugins.bufferline = {
+  programs.nixvim.plugins.bufferline = {
     enable = pkgs.lib.mkDefault true;
     settings.options = {
       alwaysShowBufferline = pkgs.lib.mkDefault false;

@@ -1,9 +1,10 @@
 {
-  config.globals = {
+  programs.nixvim.config = { 
+    globals = {
     mapleader = " ";
     maplocalleader = " ";
-  };
-  config.keymaps = [
+    };
+  keymaps = [
     {
       mode = "";
       key = "<Space>";
@@ -272,4 +273,5 @@
       };
     }
   ];
+  };
 }

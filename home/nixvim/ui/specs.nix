@@ -1,6 +1,6 @@
 { pkgs, ... }:
 {
-  plugins.specs = {
+  programs.nixvim.plugins.specs = {
     enable = pkgs.lib.mkDefault true;
     settings = {
       min_jump = 10;

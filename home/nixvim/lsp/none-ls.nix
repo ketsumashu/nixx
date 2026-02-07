@@ -1,6 +1,6 @@
 { pkgs, ... }:
 {
-  plugins.none-ls = {
+  programs.nixvim.plugins.none-ls = {
     enable = pkgs.lib.mkDefault true;
     sources = {
       code_actions = {

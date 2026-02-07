@@ -1,3 +1,3 @@
 {
-  extraConfigLuaPost = builtins.readFile ./extra.lua;
+  programs.nixvim.extraConfigLuaPost = builtins.readFile ./extra.lua;
 }

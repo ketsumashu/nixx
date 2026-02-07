@@ -1,5 +1,5 @@
 {
-  config.keymaps = [
+  programs.nixvim.config.keymaps = [
     # Alpha dashboard
     {
       action = "<cmd>Alpha<CR>";

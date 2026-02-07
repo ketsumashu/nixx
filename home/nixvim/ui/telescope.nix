@@ -1,6 +1,6 @@
 { pkgs, ... }:
 {
-  plugins.telescope = {
+  programs.nixvim.plugins.telescope = {
     enable = pkgs.lib.mkDefault true;
     settings = {
       defaults = {

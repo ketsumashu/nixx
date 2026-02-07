@@ -1,6 +1,6 @@
 { pkgs, ... }:
 {
-  plugins.treesitter-context = {
+  programs.nixvim.plugins.treesitter-context = {
     enable = pkgs.lib.mkDefault true;
   };
 }

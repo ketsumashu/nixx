@@ -1,6 +1,6 @@
 { pkgs, ... }:
 {
-  plugins.lualine = {
+  programs.nixvim.plugins.lualine = {
     enable = pkgs.lib.mkDefault true;
     settings = {
       globalstatus = pkgs.lib.mkDefault true;

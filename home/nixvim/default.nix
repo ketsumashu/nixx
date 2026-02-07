@@ -1,5 +1,7 @@
-{
+{nixvim, ...}:{
+
   imports = [
+    nixvim.homeModules.nixvim
     ./keymaps
     ./lsp
     ./plugins

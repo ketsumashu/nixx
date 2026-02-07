@@ -1,6 +1,6 @@
 { pkgs, ... }:
 {
-  plugins = {
+  programs.nixvim.plugins = {
     luasnip = {
       enable = pkgs.lib.mkDefault true;
       settings = {
