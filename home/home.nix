@@ -1,6 +1,6 @@
 {
   imports = [
-    ./nvim
+    ./nixvim
     ./fish
     ./terminals
     ./foot
