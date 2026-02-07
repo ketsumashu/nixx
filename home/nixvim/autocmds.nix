@@ -1,5 +1,5 @@
 {
-  autoCmd = [
+  programs.nixvim.autoCmd = [
     {
       event = [ "BufWinEnter" ];
       callback = {
