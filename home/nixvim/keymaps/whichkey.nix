@@ -1,6 +1,6 @@
 { pkgs, ... }:
 {
-  plugins.which-key = {
+  programs.nixvim.plugins.which-key = {
     enable = pkgs.lib.mkDefault true;
     settings = {
       notify = false;
