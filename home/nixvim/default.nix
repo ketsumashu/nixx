@@ -1,5 +1,5 @@
-{nixvim, ...}:{
-
+{ nixvim, ... }:
+{
   imports = [
     nixvim.homeModules.nixvim
     ./keymaps
@@ -13,8 +13,8 @@
     ./cmp.nix
     ./colorscheme.nix
     ./extra.nix
-    ./lualine.nix
     ./options.nix
+    ./status.nix
   ];
   programs.nixvim = {
     enable = true;
@@ -22,5 +22,4 @@
     viAlias = true;
     vimAlias = true;
   };
-  
 }
