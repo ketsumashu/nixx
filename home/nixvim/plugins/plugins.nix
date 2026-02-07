@@ -29,12 +29,12 @@
     sleuth.enable = pkgs.lib.mkDefault true;
     nvim-tree = {
       enable = pkgs.lib.mkDefault true;
-      view = {
-        floating.enable = true;
-        width = 30;
-      };
       settings = {
         update_focused_file.enable = pkgs.lib.mkDefault true;
+        view = {
+          floating = true;
+          width = 30;
+        };
       };
     };
     nvim-ufo.enable = pkgs.lib.mkDefault true;
