@@ -32,7 +32,6 @@
       settings = {
         update_focused_file.enable = pkgs.lib.mkDefault true;
       };
-      luaConfig = builtins.readFile ./tree.lua;
     };
     nvim-ufo.enable = pkgs.lib.mkDefault true;
     toggleterm = {
