@@ -1,4 +1,4 @@
-{ pkgs, lib, ... }:
+{ pkgs, lib, config, ... }:
 {
   home.sessionVariables = {
     BROWSER = "vivaldi";
@@ -12,6 +12,6 @@
   ];
 
   xdg.configFile = {
-    "niri/config.kdl".source = ./config.kdl;
+    "niri/config.kdl".source = config.lib.file.mkOutofStoreSymlink "${config.home.homeDirectory}/nixx/home/niri/config.kdl";
   };
 }
