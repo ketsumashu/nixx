@@ -30,7 +30,7 @@
       expandtab = true;
       shiftwidth = 2;
       tabstop = 2;
-      cursorline = true;
+      cursorline = false;
       laststatus = 3;
       number = true;
       relativenumber = true;
