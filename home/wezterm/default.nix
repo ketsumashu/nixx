@@ -1,8 +1,10 @@
-{ inputs, pkgs, ... }:
+{ config, ... }:
 {
 
   programs.wezterm = {
     enable = true;
-    extraConfig = builtins.readFile ./wezterm.lua;
+  };
+  xdg.configFile."wezterm" = {
+    "wezterm.lua".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/nixx/home/wezterm/wezterm.lua";
   };
 }
