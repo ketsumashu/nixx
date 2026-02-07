@@ -16,4 +16,11 @@
     ./lualine.nix
     ./options.nix
   ];
+  programs.nixvim = {
+    enable = true;
+    enableMan = false;
+    viAlias = true;
+    vimAlias = true;
+  };
+  
 }
