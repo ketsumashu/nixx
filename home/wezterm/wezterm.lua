@@ -30,7 +30,7 @@ return {
         },
     }),
     font_size = 11.0,
-    line_height = 1.3,
+    line_height = 1.4,
     cell_width = 1.02,
     window_padding = {
         left = "16px",
