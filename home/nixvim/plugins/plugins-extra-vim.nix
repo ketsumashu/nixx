@@ -20,7 +20,13 @@
     }
     {
       plugin = zen-mode-nvim;
-      config = "lua require('zen-mode').setup({window = {backdrop = 0, }})";
+      config = "
+      lua
+      require('zen-mode').setup({
+        window = {
+          backdrop = 0,
+        }
+      })";
     }
   ];
 }
