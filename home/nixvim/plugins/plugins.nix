@@ -31,7 +31,7 @@
       enable = pkgs.lib.mkDefault true;
       settings = {
         update_focused_file.enable = pkgs.lib.mkDefault true;
-        extraConfigLua__raw = ''
+        luaConfig__raw = ''
            local function open_win_config_func()
              local scr_w = vim.opt.columns:get()
              local scr_h = vim.opt.lines:get()
