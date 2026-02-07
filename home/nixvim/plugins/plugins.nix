@@ -32,7 +32,7 @@
       settings = {
         update_focused_file.enable = pkgs.lib.mkDefault true;
         view = {
-          floating = true;
+          float = true;
           width = 30;
         };
       };
