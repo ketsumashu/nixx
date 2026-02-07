@@ -4,6 +4,7 @@
     plenary-nvim
     vim-repeat
     lspkind-nvim
+    zen-mode-nvim
     twilight-nvim
     vim-just
     {
@@ -17,16 +18,6 @@
     {
       plugin = treesj;
       config = "lua require('treesj').setup({use_default_keymaps=false})";
-    }
-    {
-      plugin = zen-mode-nvim;
-      config = "
-      lua
-      require('zen-mode').setup({
-        window = {
-          backdrop = 0,
-        }
-      })";
     }
   ];
 }
