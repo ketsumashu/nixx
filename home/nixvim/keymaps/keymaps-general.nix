@@ -47,7 +47,7 @@
           function()
             local bufs = vim.fn.getbufinfo({ buflisted = 1})
             if #bufs > 1 then
-              vim.cmd('bdelete')}
+              vim.cmd('bdelete')
             else
               vim.cmd('quit')
             end
