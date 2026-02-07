@@ -34,14 +34,14 @@
         view = {
           float = {
             enable = true;
-            openWinConfig = {
-              relative = "editor";
-              border = "rounded";
-              width = 100;
-              height = 100;
-              row = 1;
-              col = 1;
-            };
+          };
+          openWinConfig = {
+            relative = "editor";
+            border = "rounded";
+            width = 100;
+            height = 100;
+            row = 1;
+            col = 1;
           };
         };
       };
