@@ -29,10 +29,10 @@
     sleuth.enable = pkgs.lib.mkDefault true;
     nvim-tree = {
       enable = pkgs.lib.mkDefault true;
-      view = {
-        floating.enable = true;
-      };
       settings = {
+        view = {
+          floating.enable = true;
+        };
         update_focused_file.enable = pkgs.lib.mkDefault true;
       };
     };
