@@ -1,11 +1,10 @@
 { pkgs, ... }:
 {
   programs.nixvim = {
-  
-  extraPlugins = with pkgs.vimPlugins; [
-    alpha-nvim
-  ];
+    extraPlugins = with pkgs.vimPlugins; [
+      alpha-nvim
+    ];
 
-  extraConfigLua = builtins.readFile ./alpha.lua;
+    extraConfigLua = builtins.readFile ./alpha.lua;
   };
 }
