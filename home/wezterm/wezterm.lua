@@ -1,7 +1,7 @@
 local wezterm = require("wezterm")
 return {
     default_prog = { "/usr/bin/fish", "-l" },
-    window_background_opacity = 0.87,
+    window_background_opacity = 1,
     enable_wayland = true,
     color_scheme = "Noctalia",
     use_ime = false,

@@ -33,7 +33,7 @@
     navic = {
       enable = pkgs.lib.mkDefault true;
       settings = {
-        highlight = pkgs.lib.mkDefault true;
+        highlight = pkgs.lib.mkDefault false;
         lsp.autoAttach = pkgs.lib.mkDefault true;
       };
     };
