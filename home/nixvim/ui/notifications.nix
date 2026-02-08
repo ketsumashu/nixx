@@ -4,7 +4,7 @@
     enable = pkgs.lib.mkDefault true;
     settings = {
       level = "info";
-      background_color = "#131313";
+      background_colour = "#131313";
     };
   };
   programs.nixvim.plugins.noice = {

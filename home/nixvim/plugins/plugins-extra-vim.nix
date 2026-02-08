@@ -6,7 +6,6 @@
     lspkind-nvim
     zen-mode-nvim
     twilight-nvim
-    vim-just
     {
       plugin = tint-nvim;
       config = "lua require('tint').setup()";

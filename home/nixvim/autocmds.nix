@@ -13,19 +13,6 @@
     {
       event = [ "FileType" ];
       pattern = [
-        "markdown"
-      ];
-      callback = {
-        __raw = ''
-          function()
-            vim.cmd ":TSDisable highlight"
-          end
-        '';
-      };
-    }
-    {
-      event = [ "FileType" ];
-      pattern = [
         "netrw"
         "Jaq"
         "qf"
