@@ -4,7 +4,7 @@
     enable = pkgs.lib.mkDefault true;
     settings = {
       disable_background = true;
-      palettes = {
+      custom_palettes = {
         main = {
           "color0" = "#131313";
           "color1" = "#ffb4ab";
