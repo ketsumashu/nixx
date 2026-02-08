@@ -26,7 +26,7 @@ local highlights = {
 	NavicSeparator = { bg = "NONE" },
 	BufferLineFill = { bg = "#131313" },
 	BufferLineBackground = { bg = "#131313" },
-	BufferLineVufferSelected = { fg = "#5fdbba", bg = "#131313" },
+	BufferLineBufferSelected = { fg = "#5fdbba", bg = "#131313" },
 	BufferLineSeparator = { fg = "#131313", bg = "#131313" },
 	BufferLineOffsetSeparator = { fg = "#131313", bg = "#131313" },
 }
