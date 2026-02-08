@@ -19,3 +19,19 @@ local function toggle_definition()
 end
 
 vim.api.nvim_create_user_command("ToggleDefinition", toggle_definition, {})
+
+local highlights = {
+	-- nvim-tree
+	NvimTreeNormal = { bg = "#131313" },
+	NvimTreeNormalNC = { bg = "#131313" },
+	NvimTreeEndOfBuffer = { bg = "#131313" },
+
+	-- navic
+	NavicIconsDefault = { bg = "#131313" },
+	NavicText = { bg = "#131313" },
+	NavicSeparator = { bg = "#131313" },
+}
+
+for group, settings in pairs(highlights) do
+	vim.api.nvim_set_hl(0, group, settings)
+end
