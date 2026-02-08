@@ -21,15 +21,13 @@ end
 vim.api.nvim_create_user_command("ToggleDefinition", toggle_definition, {})
 
 local highlights = {
-	-- nvim-tree
-	NvimTreeNormal = { bg = "#131313" },
-	NvimTreeNormalNC = { bg = "#131313" },
-	NvimTreeEndOfBuffer = { bg = "#131313" },
-
-	-- navic
-	NavicIconsDefault = { bg = "#131313" },
-	NavicText = { bg = "#131313" },
-	NavicSeparator = { bg = "#131313" },
+	NavicIconsDefault = { bg = "NONE" },
+	NavicText = { bg = "NONE" },
+	NavicSeparator = { bg = "NONE" },
+	BufferLineFill = { bg = "#131313" },
+	BufferLineBackground = { bg = "#131313" },
+	BufferLineSeparator = { fg = "#131313", bg = "#131313" },
+	BufferLineOffsetSeparator = { fg = "#131313", bg = "#131313" },
 }
 
 for group, settings in pairs(highlights) do
