@@ -19,24 +19,3 @@ local function toggle_definition()
 end
 
 vim.api.nvim_create_user_command("ToggleDefinition", toggle_definition, {})
-
-local highlights = {
-	NavicIconsDefault = { bg = "NONE" },
-	NavicText = { bg = "NONE" },
-	NavicSeparator = { bg = "NONE" },
-	BufferLineFill = { bg = "#131313" },
-	BufferLineBackground = { bg = "#131313" },
-	BufferLineCloseButton = { bg = "#131313" },
-	BufferLineCloseButtonSelected = { bg = "#131313" },
-	BufferLineCloseButtonVisible = { bg = "#131313" },
-	BufferLineCloseDeviconLuaInactive = { bg = "#131313" },
-	BufferLineCloseDeviconLuaSelected = { bg = "#131313" },
-	BufferLineBufferSelected = { fg = "#5fdbba", bg = "#131313" },
-	BufferLineSeparator = { fg = "#131313", bg = "#131313" },
-	BufferLineSeparatorVisible = { fg = "#131313", bg = "#131313" },
-	BufferLineOffsetSeparator = { fg = "#131313", bg = "#131313" },
-}
-
-for group, settings in pairs(highlights) do
-	vim.api.nvim_set_hl(0, group, settings)
-end
