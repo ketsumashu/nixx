@@ -5,7 +5,7 @@
     settings = {
       disable_background = true;
     };
-    luaConfig.pre = ''
+    luaConfig.post = ''
       require("palette").setup({
         palettes = {
           main = "custom_main_palette",
