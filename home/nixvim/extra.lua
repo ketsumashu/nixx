@@ -26,8 +26,14 @@ local highlights = {
 	NavicSeparator = { bg = "NONE" },
 	BufferLineFill = { bg = "#131313" },
 	BufferLineBackground = { bg = "#131313" },
+	BufferLineCloseButton = { bg = "#131313" },
+	BufferLineCloseButtonSelected = { bg = "#131313" },
+	BufferLineCloseButtonVisible = { bg = "#131313" },
+	BufferLineCloseDeviconLuaInactive = { bg = "#131313" },
+	BufferLineCloseDeviconLuaSelected = { bg = "#131313" },
 	BufferLineBufferSelected = { fg = "#5fdbba", bg = "#131313" },
 	BufferLineSeparator = { fg = "#131313", bg = "#131313" },
+	BufferLineSeparatorVisible = { fg = "#131313", bg = "#131313" },
 	BufferLineOffsetSeparator = { fg = "#131313", bg = "#131313" },
 }
 
