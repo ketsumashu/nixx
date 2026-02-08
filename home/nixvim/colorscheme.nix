@@ -25,26 +25,26 @@
              color7 = "#e2e2e2",
             },
           },
-          --accent = {
-          --  custom_accent_palette = {
-          --    accent0 = "#D97C8F",
-          --    accent1 = "#D9AE7E",
-          --    accent2 = "#D9D87E",
-          --    accent3 = "#A5D9A7",
-          --    accent4 = "#8BB9C8",
-          --    accent5 = "#C9A1D3",
-          --    accent6 = "#B8A1D9",
-          --  },
-          --},
-          --state = {
-          --  custom_state_palette = {
-          --    error = "#D97C8F",
-          --    warning = "#D9AE7E",
-          --    hint = "#D9D87E",
-          --    ok = "#A5D9A7",
-          --    info = "#8BB9C8",
-          --  },
-          --},
+          accent = {
+            custom_accent_palette = {
+              accent0 = "#D97C8F",
+              accent1 = "#D9AE7E",
+              accent2 = "#D9D87E",
+              accent3 = "#A5D9A7",
+              accent4 = "#8BB9C8",
+              accent5 = "#C9A1D3",
+              accent6 = "#B8A1D9",
+            },
+          },
+          state = {
+            custom_state_palette = {
+              error = "#D97C8F",
+              warning = "#D9AE7E",
+              hint = "#D9D87E",
+              ok = "#A5D9A7",
+              info = "#8BB9C8",
+            },
+          },
         },
       })
     '';
