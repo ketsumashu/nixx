@@ -14,7 +14,7 @@
           }
         ];
       };
-      settings.highlights =
+      highlights =
         let
           bgColor = "#131313";
         in
