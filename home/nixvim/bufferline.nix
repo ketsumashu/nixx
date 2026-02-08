@@ -8,7 +8,7 @@
         {
           filetype = "NvimTree";
           text = "Explorer";
-          highlight = "PanelHeading";
+          highlight = "NvimTreeNormal";
           padding = 1;
         }
       ];
