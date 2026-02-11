@@ -43,16 +43,7 @@
         mode = "n";
       }
       {
-        action.__raw = ''
-          function()
-            local bufs = vim.fn.getbufinfo({ buflisted = 1})
-            if #bufs > 1 then
-              vim.cmd('bdelete')
-            else
-              vim.cmd('quit')
-            end
-          end
-        '';
+        action = ":enew<bar>bd #<CR>";
         key = "<leader>q";
         mode = "n";
       }
