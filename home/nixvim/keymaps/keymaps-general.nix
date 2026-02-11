@@ -43,7 +43,7 @@
         mode = "n";
       }
       {
-        action = ":enew<bar>bd #<CR>";
+        action = "Bdelete";
         key = "<leader>q";
         mode = "n";
       }

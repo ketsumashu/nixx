@@ -58,5 +58,6 @@
         };
       };
     };
+    bufdelete.enable = true;
   };
 }
