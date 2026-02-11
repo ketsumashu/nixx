@@ -16,12 +16,12 @@
           main = {
             custom_main_palette = {
              color0 = "#131313",
-             color1 = "#5fdbba",
-             color2 = "#b2ccc2",
+             color1 = "#b2ccc2",
+             color2 = "#5fdbba",
              color3 = "#b2ccc2",
              color4 = "#5fdbba",
              color5 = "#b2ccc2",
-             color6 = "#b2ccc2",
+             color6 = "#5fdbba",
              color7 = "#e2e2e2",
              color8 = "#5fdbba",
             },
