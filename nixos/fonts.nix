@@ -4,15 +4,13 @@
     packages = with pkgs; [
       noto-fonts-emoji-blob-bin
       nerd-fonts.fira-code
-      nerd-fonts.terminess-ttf
       cozette
       noto-fonts
       noto-fonts-cjk-sans
       noto-fonts-cjk-serif
       plemoljp-hs
-      hackgen-nf-font
-      moralerspace
       terminus_font
+      helvetica-neue-lt-std
     ];
     fontDir.enable = true;
     fontconfig.enable = true;
