@@ -1,7 +1,4 @@
-{
-  inputs,
-  ...
-}:
+{ inputs, ... }:
 {
   imports = [
     inputs.noctalia.homeModules.default
@@ -122,7 +119,7 @@
         allowPasswordWithFprintd = false;
       };
       ui = {
-        fontDefault = "Noto Sans";
+        fontDefault = "HelveticaNeueLT Std Med";
         fontFixed = "Cozette";
         fontDefaultScale = 1;
         fontFixedScale = 1;
@@ -498,6 +495,5 @@
         monitorWidgets = [ ];
       };
     };
-
   };
 }
