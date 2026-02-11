@@ -43,7 +43,16 @@
         mode = "n";
       }
       {
-        action = "Bdelete";
+        action.__raw = ''
+          function()
+            local bufs = vim.fn.getbufinfo({buflisted = 1})
+            if #bufs <= 1 then
+              vim.cmd('quit')
+            else
+              vim.cmd('Bdelete')
+            end
+          end
+        '';
         key = "<leader>q";
         mode = "n";
       }
