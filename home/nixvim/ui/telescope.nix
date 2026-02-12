@@ -61,9 +61,6 @@
         commands = {
           theme = "dropdown";
         };
-        file_browser = {
-          theme = "ivy";
-        };
       };
       mappings = {
         n = {
@@ -79,12 +76,15 @@
           "<C-p>" = {
             __raw = "require('telescope.actions').cycle_history_prev";
           };
+          "q" = {
+            __raw = "require('telescope.actions').close";
+          };
         };
         i = {
-          "<C-j>" = {
+          "<C-,>" = {
             __raw = "require('telescope.actions').move_selection_next";
           };
-          "<C-k>" = {
+          "<C-.>" = {
             __raw = "require('telescope.actions').move_selection_previous";
           };
         };
