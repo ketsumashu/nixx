@@ -2,6 +2,7 @@
 {
   programs.nixvim.plugins.none-ls = {
     enable = pkgs.lib.mkDefault true;
+    lazyload.enable = true;
     sources = {
       diagnostics = {
         stylelint.enable = pkgs.lib.mkDefault true;
