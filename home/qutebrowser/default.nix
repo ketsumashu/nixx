@@ -1,18 +1,18 @@
 { ... }:
 let
   palette = {
-    background = "#191c25";
-    background-alt = "#191c25";
-    background-attention = "#191724";
-    border = "#77adb1";
+    background = "#131313";
+    background-alt = "#131313";
+    background-attention = "#131313";
+    border = "#5edbbb";
     current-line = "#525566";
     selection = "#525566";
-    foreground = "#c5c4d4";
+    foreground = "#e2e2e2";
     foreground-alt = "#e0e0e0";
     foreground-attention = "#ffffff";
-    comment = "#77adb1";
-    cyan = "#94cdd1";
-    green = "#77adb1";
+    comment = "#5edbbb";
+    cyan = "#a9cbe3";
+    green = "#5edbbb";
     pink = "#cdb6dd";
     purple = "#cdb6dd";
     red = "#a994b8";
