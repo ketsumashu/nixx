@@ -5,21 +5,21 @@
     nvim-autopairs = {
       enable = pkgs.lib.mkDefault true;
       settings.checkTs = pkgs.lib.mkDefault true;
-    luaConfig.post = ''
-      local au = require('nvim-autopairs')
-      local Rule = require('nvim-autopairs.rule')
-      local cond = require('nvim-autopairs.conds')
+      luaConfig.post = ''
+        local au = require('nvim-autopairs')
+        local Rule = require('nvim-autopairs.rule')
+        local cond = require('nvim-autopairs.conds')
 
-      au.add_rules({
-        -- nixファイルでのみ動作するルール
-        Rule("{", "};", "nix")
-          -- "{" を入力したとき、次の文字が "}" であれば実行しない（重複防止）
-          :with_pair(cond.not_after_regex("}"))
-          -- 改行（Enter）を押した時にカーソルを中間に置くなどの挙動を維持
-          :with_move(cond.none())
-      })
-    '';
-  };};
+        au.add_rules({
+          -- nixファイルでのみ動作するルール
+          Rule("{", "};", "nix")
+            -- "{" を入力したとき、次の文字が "}" であれば実行しない（重複防止）
+            :with_pair(cond.not_after_regex("}"))
+            -- 改行（Enter）を押した時にカーソルを中間に置くなどの挙動を維持
+            :with_move(cond.none())
+        })
+      '';
+    };
     lastplace.enable = pkgs.lib.mkDefault true;
     sleuth.enable = pkgs.lib.mkDefault true;
     nvim-tree = {
