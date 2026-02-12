@@ -61,6 +61,9 @@
         commands = {
           theme = "dropdown";
         };
+        file_browser = {
+          theme = "ivy";
+        };
       };
       mappings = {
         n = {
@@ -103,6 +106,17 @@
         enable = pkgs.lib.mkDefault true;
         settings.useDelta = pkgs.lib.mkDefault true;
       };
+      file-browser = {
+        enable = true;
+        settings = {
+          hidden = {
+            file_browser = true;
+            folder_browser = true;
+          };
+          hijack_netrw = true;
+          use_fd = true;
+        };
+      };
     };
     keymaps = {
       "<leader>f" = {
@@ -112,6 +126,10 @@
       "<leader>s" = {
         action = "live_grep";
         options.desc = "Search Text";
+      };
+      "<leader>e" = {
+        action = "file_browser";
+        options.desc = "browse files";
       };
     };
   };

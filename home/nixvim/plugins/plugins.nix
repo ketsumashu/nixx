@@ -10,7 +10,7 @@
     lastplace.enable = pkgs.lib.mkDefault true;
     sleuth.enable = pkgs.lib.mkDefault true;
     nvim-tree = {
-      enable = pkgs.lib.mkDefault true;
+      enable = pkgs.lib.mkDefault false;
       settings = {
         update_focused_file.enable = pkgs.lib.mkDefault true;
       };
@@ -18,6 +18,7 @@
     nvim-ufo.enable = pkgs.lib.mkDefault true;
     toggleterm = {
       enable = pkgs.lib.mkDefault true;
+      lazyload.settings.cmd = "Toggleterm";
       settings = {
         direction = "float";
         floatOpts = {
