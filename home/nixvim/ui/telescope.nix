@@ -109,12 +109,12 @@
       file-browser = {
         enable = true;
         settings = {
-          layout_strategy = "horizontal";
+          layout_strategy = "Vertical";
           layout_config = {
             anchor = "SE";
             height = 0.2;
-            width = 0.3;
-            prompt_position = "bottom";
+            width = 0.45;
+            prompt_position = "top";
           };
           sorting_strategy = "ascending";
           previewer = false;
