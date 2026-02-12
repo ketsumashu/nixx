@@ -12,17 +12,29 @@
       };
     }
 
-    # NvimTree
-    #{
-    #  action = "<cmd>NvimTreeFindFileToggle<CR>";
-    #  key = "<leader>e";
-    #  mode = "n";
-    #  options = {
-    #    noremap = true;
-    #    silent = true;
-    #    desc = "Explorer";
-    #  };
-    #}
+    # Telescope_file-browser
+    {
+      action.__raw = ''
+        function()
+           local win_val = vim.fn.getwinvar(vim.fn.winnr(), "&filetype")
+           if win_val == "TelescopePrompt" then
+             vim.api.nvim_command("forceit bdelete")
+           else
+             require("telescope").extensions.file_browser.file_browser({
+               path = "%:p:h",
+               select_buffer = true,
+             })
+           end
+         end
+      '';
+      key = "<leader>e";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+        desc = "Explorer";
+      };
+    }
 
     # LSP
     {

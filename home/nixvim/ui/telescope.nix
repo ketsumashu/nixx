@@ -128,10 +128,6 @@
         action = "live_grep";
         options.desc = "Search Text";
       };
-      "<leader>e" = {
-        action = "file_browser";
-        options.desc = "browse files";
-      };
     };
   };
 }
