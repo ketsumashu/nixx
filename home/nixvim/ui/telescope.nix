@@ -111,16 +111,17 @@
         settings = {
           layout_strategy = "horizontal";
           layout_config = {
-            anchor = "NW";
+            anchor = "SE";
             height = 0.99;
-            width = 0.2;
+            width = 0.3;
             prompt_position = "bottom";
           };
+          sorting_strategy = "ascending";
           previewer = false;
           select_buffer = true;
           hijack_netrw = true;
           use_fd = true;
-          #theme = "ivy";
+          theme = "ivy";
           hidden = {
             file_browser = true;
             folder_browser = true;

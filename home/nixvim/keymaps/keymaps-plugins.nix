@@ -21,7 +21,6 @@
              vim.api.nvim_command("bdelete!")
            else
              require("telescope").extensions.file_browser.file_browser({
-               path = "%:p:h",
                select_buffer = true,
              })
            end
