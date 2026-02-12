@@ -115,6 +115,7 @@
           };
           hijack_netrw = true;
           use_fd = true;
+          theme = "ivy";
         };
       };
     };
