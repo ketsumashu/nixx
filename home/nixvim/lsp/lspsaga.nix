@@ -2,6 +2,7 @@
 {
   programs.nixvim.plugins.lspsaga = {
     enable = pkgs.lib.mkDefault true;
+    lazyload.enable = true;
     settings = {
       beacon.enable = pkgs.lib.mkDefault true;
       implement = {
