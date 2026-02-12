@@ -6,11 +6,11 @@
       enable = pkgs.lib.mkDefault true;
       settings.checkTs = pkgs.lib.mkDefault true;
       luaConfig.post = ''
-        au.get_rules("{")[1]:with_pair(cond.not_filetypes({"nix"}))
         local au = require('nvim-autopairs')
         local Rule = require('nvim-autopairs.rule')
         local cond = require('nvim-autopairs.conds')
 
+        au.get_rules("{")[1]:with_pair(cond.not_filetypes({"nix"}))
         au.add_rules({
           -- nixファイルでのみ動作するルール
           Rule("{", "};")
