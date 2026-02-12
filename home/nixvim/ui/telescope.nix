@@ -109,13 +109,22 @@
       file-browser = {
         enable = true;
         settings = {
+          layout_strategy = "horizontal";
+          layout_config = {
+            anchor = "NW";
+            height = 0.99;
+            width = 0.2;
+            prompt_position = "bottom";
+          };
+          previewer = false;
+          select_buffer = true;
+          hijack_netrw = true;
+          use_fd = true;
+          #theme = "ivy";
           hidden = {
             file_browser = true;
             folder_browser = true;
           };
-          hijack_netrw = true;
-          use_fd = true;
-          theme = "ivy";
         };
       };
     };

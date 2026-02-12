@@ -18,7 +18,7 @@
         function()
            local win_val = vim.fn.getwinvar(vim.fn.winnr(), "&filetype")
            if win_val == "TelescopePrompt" then
-             vim.api.nvim_command("forceit bdelete")
+             vim.api.nvim_command("bdelete")
            else
              require("telescope").extensions.file_browser.file_browser({
                path = "%:p:h",
