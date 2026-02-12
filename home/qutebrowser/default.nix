@@ -52,7 +52,8 @@ in
       content.javascript.clipboard = "access-paste";
       fonts = {
         default_family = [
-          "HelveticaNeueLT Std Blk"
+          "Terminus"
+          "mplus12"
         ];
         default_size = "14px";
         web.family = {
