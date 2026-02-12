@@ -23,7 +23,7 @@
              color5 = "#b2ccc2",
              color6 = "#a9cbe3",
              color7 = "#b2ccc2",
-             color8 = "#5edbbb",
+             color8 = "#b2ccc2",
             },
           },
           accent = {
