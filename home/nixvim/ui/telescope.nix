@@ -128,33 +128,6 @@
             folder_browser = true;
           };
         };
-        mappings = {
-          n = {
-            "<C-j>" = {
-              __raw = "require('telescope.actions').move_selection_next";
-            };
-            "<C-k>" = {
-              __raw = "require('telescope.actions').move_selection_previous";
-            };
-            "<C-n>" = {
-              __raw = "require('telescope.actions').cycle_history_next";
-            };
-            "<C-p>" = {
-              __raw = "require('telescope.actions').cycle_history_prev";
-            };
-            "q" = {
-              __raw = "require('telescope.actions').close";
-            };
-          };
-          i = {
-            "<C-,>" = {
-              __raw = "require('telescope.actions').move_selection_next";
-            };
-            "<C-.>" = {
-              __raw = "require('telescope.actions').move_selection_previous";
-            };
-          };
-        };
       };
     };
     keymaps = {
