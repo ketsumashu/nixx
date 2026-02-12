@@ -4,7 +4,10 @@
     lz-n.enable = true;
     nvim-autopairs = {
       enable = pkgs.lib.mkDefault true;
-      settings.checkTs = pkgs.lib.mkDefault true;
+      settings = {
+        checkTs = true;
+        map_cr = true;
+      };
       luaConfig.post = ''
         local au = require('nvim-autopairs')
         local Rule = require('nvim-autopairs.rule')
