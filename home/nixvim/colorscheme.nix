@@ -18,7 +18,7 @@
              color0 = "#131313",
              color1 = "#1d352e",
              color2 = "#0e3447",
-             color3 = "#474747",
+             color3 = "#b2ccc2",
              color4 = "#5edbbb",
              color5 = "#b2ccc2",
              color6 = "#a9cbe3",
