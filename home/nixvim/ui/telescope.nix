@@ -109,7 +109,7 @@
       file-browser = {
         enable = true;
         settings = {
-          layout_strategy = "Vertical";
+          layout_strategy = "vertical";
           layout_config = {
             anchor = "SE";
             height = 0.2;
