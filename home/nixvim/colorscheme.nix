@@ -16,14 +16,13 @@
           main = {
             custom_main_palette = {
              color0 = "#131313",
-             color1 = "#1d352e",
-             color2 = "#b2ccc2",
+             color1 = "#ffb4ab",
+             color2 = "#a9cbe3",
              color3 = "#b2ccc2",
-             color4 = "#a9cbe3",
-             color5 = "#5edbbb",
-             color6 = "#a9cbe3",
-             color7 = "#b2ccc2",
-             color8 = "#1d352e",
+             color4 = "#53dbbb",
+             color5 = "#a9cbe3",
+             color6 = "#b2ccc2",
+             color7 = "#e2e2e2",
             },
           },
           accent = {
