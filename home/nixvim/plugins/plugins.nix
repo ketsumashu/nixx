@@ -10,19 +10,15 @@
         local Rule = require('nvim-autopairs.rule')
         local cond = require('nvim-autopairs.conds')
 
-        -- 1. 標準の "{" ルールから nix を除外する (競合回避)
-        local brkts = au.get_rules("{")
-        for _, rule in ipairs(brkts) do
-          rule:with_pair(cond.not_filetypes({"nix"}))
-        end
-
-        -- 2. nix専用のルールを追加
+        au.get_rules("{")[1]:with_pair(cond.not_filetypes({"nix"}))
         au.add_rules({
+          -- nixファイルでのみ動作するルール
           Rule("{", "};", "nix")
-            -- Enterを押したときに自動でインデントして改行を入れる設定
+            -- "{" を入力したとき、次の文字が "}" であれば実行しない（重複防止）
+            :with_pair(cond.not_after_regex("}"))
+            -- 改行（Enter）を押した時にカーソルを中間に置くなどの挙動を維持
+            :with_move(cond.none())
             :append_pair_if_newline()
-            -- カーソルの後ろに既に文字がある場合は補完しない
-            :with_pair(cond.not_after_regex("."))
         })
       '';
     };
