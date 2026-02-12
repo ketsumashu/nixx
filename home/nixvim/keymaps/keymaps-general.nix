@@ -65,7 +65,7 @@
       # Terminal escape back to nvim
       {
         action = "<C-\\><C-n>";
-        key = "<Esc>";
+        key = "jj";
         mode = "t";
       }
 
@@ -222,7 +222,7 @@
       # Turn off search highlight
       {
         action = "<cmd>nohl<CR>";
-        key = "<C-n>";
+        key = "<esc><esc>";
         mode = "n";
         options = {
           noremap = true;

@@ -18,4 +18,12 @@ local function toggle_definition()
 	end, 100) -- Delay time in milliseconds
 end
 
+--autopairにてBracketの後にセミコロンが来るようにする
+local npairs = require("nvim-autopairs")
+local Rule = require("nvim-autopairs.rule")
+local cond = require("nvim-autopairs.conds")
+
+npairs.add_rules({
+	Rule("{", "};", "nix"):with_pair(cond.not_after_regex("%;")),
+})
 vim.api.nvim_create_user_command("ToggleDefinition", toggle_definition, {})

@@ -5,7 +5,6 @@
     nvim-autopairs = {
       enable = pkgs.lib.mkDefault true;
       settings.checkTs = pkgs.lib.mkDefault true;
-      lazyload.enable = true;
     };
     lastplace.enable = pkgs.lib.mkDefault true;
     sleuth.enable = pkgs.lib.mkDefault true;
@@ -18,13 +17,23 @@
     nvim-ufo.enable = pkgs.lib.mkDefault true;
     toggleterm = {
       enable = pkgs.lib.mkDefault true;
-      lazyload.settings.cmd = "Toggleterm";
+      lazyload.settings.cmd = "ToggleTerm";
       settings = {
-        direction = "float";
+        direction = "vertical";
         floatOpts = {
-          border = "single";
+          border = "shadow";
         };
+        shell = "fish";
         terminalMappings = pkgs.lib.mkDefault true;
+        size = ''
+          function(term)
+            if term.direction == "horizontal" then
+              return 15
+            elseif term.direction == "vertical" then
+              return vim.o.columns * 0.4
+            end
+          end
+        '';
       };
     };
     illuminate = {

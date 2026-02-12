@@ -59,16 +59,6 @@
     }
     # Alt+Enter for code actions like IntelliJ
     {
-      action = "<cmd>Lspsaga code_action<cr>";
-      key = "<M-CR>";
-      mode = "n";
-      options = {
-        noremap = true;
-        silent = true;
-        desc = "Code Action";
-      };
-    }
-    {
       action = "<cmd>Telescope diagnostics theme=dropdown<cr>";
       key = "<leader>d";
       mode = "n";
@@ -98,37 +88,6 @@
         desc = "Previous Diagnostic";
       };
     }
-    {
-      action = "<cmd>lua vim.lsp.codelens.run()<cr>";
-      key = "<leader>l";
-      mode = "n";
-      options = {
-        noremap = true;
-        silent = true;
-        desc = "CodeLens";
-      };
-    }
-    {
-      action = ":IncRename ";
-      key = ",,";
-      mode = "n";
-      options = {
-        noremap = true;
-        silent = true;
-        desc = "Incremental Rename (file)";
-      };
-    }
-    {
-      action = "<cmd>Lspsaga lsp_rename ++project<cr>";
-      key = "<leader>r";
-      mode = "n";
-      options = {
-        noremap = true;
-        silent = true;
-        desc = "Project-wide Rename";
-      };
-    }
-
     # Terminal
     {
       action = "<cmd>ToggleTerm<CR>";
