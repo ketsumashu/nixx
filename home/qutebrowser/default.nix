@@ -52,15 +52,14 @@ in
       content.javascript.clipboard = "access-paste";
       fonts = {
         default_family = [
-          "terminus"
-          "mplus12"
+          "HelveticaNeueLT Std Med"
         ];
-        default_size = "16px";
+        default_size = "12px";
         web.family = {
-          sans_serif = "PlemolJP35 Console HS";
+          sans_serif = "HelveticaNeueLT Std Med";
           serif = "Noto Serif CJK JP";
           fixed = "PlemolJP35 Console HS";
-          standard = "PlemolJP35 Console HS";
+          standard = "HelveticaNeueLT Std Med";
         };
       };
       content.blocking.method = "both";
