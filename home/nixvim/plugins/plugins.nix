@@ -4,6 +4,7 @@
     nvim-autopairs = {
       enable = pkgs.lib.mkDefault true;
       settings.checkTs = pkgs.lib.mkDefault true;
+      lazyload.enable = true;
     };
     lastplace.enable = pkgs.lib.mkDefault true;
     sleuth.enable = pkgs.lib.mkDefault true;
