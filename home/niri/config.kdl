@@ -46,24 +46,24 @@ layout {
     proportion 0.5
     proportion 0.66667
   }
-  
+ 
   default-column-width { proportion 0.5; }
   focus-ring {
     width 3
   }
-  
+ 
   border {
       off
       width 1
   }
-  
+ 
   shadow {
     on
     softness 30
     spread 6
     offset x=0 y=5
   }
-  
+ 
   struts {
     // top 0
     // left 64
@@ -76,6 +76,7 @@ spawn-sh-at-startup "imes"
 spawn-sh-at-startup "steam"
 spawn-sh-at-startup "discord --gtk-version=4 --ozone-platform-hint=auto --wayland-text-input-version=3"
 spawn-sh-at-startup "openrgb --startminimized -p ~/.config/OpenRGB/pro.orp"
+spawn-sh-at-startup "noctalia-shell ipc call lockScreen lock"
 
 hotkey-overlay {
     skip-at-startup
@@ -112,7 +113,7 @@ window-rule {
     // - host Firefox (app-id is "firefox")
     // - Flatpak Firefox (app-id is "org.mozilla.firefox")
     match app-id=r#"discord$"#
-    open-on-output "DP-3"    
+    open-on-output "DP-3"
     default-column-width { proportion 1.0; }
     default-window-height { proportion 1.0; }
     open-focused false
@@ -140,22 +141,22 @@ layer-rule {
 }
 binds {
   Mod+Shift+Slash { show-hotkey-overlay; }
-  
+
   Mod+Return hotkey-overlay-title="Open a Terminal: wezterm" { spawn "wezterm"; }
   Mod+b hotkey-overlay-title="Open a browser: vivaldi" { spawn-sh "vivaldi"; }
   Super+space hotkey-overlay-title="Run an Application Launcher" { spawn-sh "noctalia-shell ipc call launcher toggle"; }
   Super+Alt+p hotkey-overlay-title="powermenu" { spawn-sh "noctalia-shell ipc call sessionMenu toggle"; }
-  
+
   XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+"; }
   XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-"; }
   XF86AudioMute        allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"; }
   XF86AudioMicMute     allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"; }
   XF86MonBrightnessUp allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "+10%"; }
   XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "10%-"; }
-  
+
   Mod+O repeat=false { toggle-overview; }
   Mod+x repeat=false { close-window; }
-  
+
   Mod+Left  { focus-column-left; }
   Mod+Down  { focus-window-down; }
   Mod+Up    { focus-window-up; }
@@ -164,7 +165,7 @@ binds {
   Mod+J     { focus-window-down; }
   Mod+K     { focus-window-up; }
   Mod+L     { focus-column-right; }
-  
+
   Mod+Ctrl+Left  { move-column-left; }
   Mod+Ctrl+Down  { move-window-down; }
   Mod+Ctrl+Up    { move-window-up; }
@@ -173,12 +174,12 @@ binds {
   Mod+Ctrl+J     { move-window-down; }
   Mod+Ctrl+K     { move-window-up; }
   Mod+Ctrl+L     { move-column-right; }
-  
+
   Mod+Home { focus-column-first; }
   Mod+End  { focus-column-last; }
   Mod+Ctrl+Home { move-column-to-first; }
   Mod+Ctrl+End  { move-column-to-last; }
-  
+
   Mod+Shift+Left  { focus-monitor-left; }
   Mod+Shift+Down  { focus-monitor-down; }
   Mod+Shift+Up    { focus-monitor-up; }
@@ -187,7 +188,7 @@ binds {
   Mod+Shift+J     { focus-monitor-down; }
   Mod+Shift+K     { focus-monitor-up; }
   Mod+Shift+L     { focus-monitor-right; }
-  
+
   Mod+Shift+Ctrl+Left  { move-column-to-monitor-left; }
   Mod+Shift+Ctrl+Down  { move-column-to-monitor-down; }
   Mod+Shift+Ctrl+Up    { move-column-to-monitor-up; }
@@ -196,7 +197,7 @@ binds {
   Mod+Shift+Ctrl+J     { move-column-to-monitor-down; }
   Mod+Shift+Ctrl+K     { move-column-to-monitor-up; }
   Mod+Shift+Ctrl+L     { move-column-to-monitor-right; }
-  
+
   Mod+Page_Down      { focus-workspace-down; }
   Mod+Page_Up        { focus-workspace-up; }
   Mod+I              { focus-workspace-down; }
@@ -205,7 +206,7 @@ binds {
   Mod+Ctrl+Page_Up   { move-column-to-workspace-up; }
   Mod+Ctrl+U         { move-column-to-workspace-down; }
   Mod+Ctrl+I         { move-column-to-workspace-up; }
-  
+
   Mod+Shift+Page_Down { move-workspace-down; }
   Mod+Shift+Page_Up   { move-workspace-up; }
   Mod+Shift+U         { move-workspace-down; }
@@ -214,12 +215,12 @@ binds {
   Mod+WheelScrollUp        cooldown-ms=150 { focus-column-left; }
   Mod+Ctrl+WheelScrollDown cooldown-ms=150 { focus-workspace-down; }
   Mod+Ctrl+WheelScrollUp   cooldown-ms=150 { focus-workspace-up; }
-  
+
   Mod+Shift+WheelScrollDown      { focus-monitor-right; }
   Mod+Shift+WheelScrollUp        { focus-monitor-left; }
   Mod+Ctrl+Shift+WheelScrollDown { move-column-right; }
   Mod+Ctrl+Shift+WheelScrollUp   { move-column-left; }
-  
+
   Mod+1 { focus-workspace 1; }
   Mod+2 { focus-workspace 2; }
   Mod+3 { focus-workspace 3; }
@@ -238,10 +239,10 @@ binds {
   Mod+Ctrl+7 { move-column-to-workspace 7; }
   Mod+Ctrl+8 { move-column-to-workspace 8; }
   Mod+Ctrl+9 { move-column-to-workspace 9; }
-  
+
   Mod+BracketLeft  { consume-or-expel-window-left; }
   Mod+BracketRight { consume-or-expel-window-right; }
-  
+
   Mod+Comma  { consume-window-into-column; }
   Mod+Period { expel-window-from-column; }
   Mod+R { switch-preset-column-width; }
@@ -249,33 +250,33 @@ binds {
   Mod+Ctrl+R { reset-window-height; }
   Mod+F { maximize-column; }
   Mod+Shift+F { fullscreen-window; }
-  
+
   Mod+Ctrl+F { expand-column-to-available-width; }
-  
+
   Mod+C { center-column; }
-  
+
   Mod+Ctrl+C { center-visible-columns; }
-  
+
   Mod+Minus { set-column-width "-10%"; }
   Mod+Equal { set-column-width "+10%"; }
-  
+
   Mod+Shift+Minus { set-window-height "-10%"; }
   Mod+Shift+Equal { set-window-height "+10%"; }
-  
+
   Mod+V       { toggle-window-floating; }
   Mod+Shift+V { switch-focus-between-floating-and-tiling; }
-  
+
   Mod+W { toggle-column-tabbed-display; }
-  
+
   Ctrl+Print { screenshot; }
   Print { screenshot-screen; }
   Alt+Print { screenshot-window; }
-  
+
   Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
-  
+
   Mod+Shift+E { quit; }
   Ctrl+Alt+Delete { quit; }
-  
+
   Mod+Alt+L { spawn-sh "noctalia-shell ipc call lockScreen lock"; }
   Mod+Alt+C { spawn-sh "noctalia-shell ipc call launcher clipboard"; }
 }

@@ -4,7 +4,7 @@
     enable = pkgs.lib.mkDefault true;
     settings = {
       disable_background = true;
-    };
+    }; # comment
     luaConfig.post = ''
       require("palette").setup({
         palettes = {
@@ -17,13 +17,13 @@
             custom_main_palette = {
              color0 = "#131313",
              color1 = "#1d352e",
-             color2 = "#0e3447",
+             color2 = "#b2ccc2",
              color3 = "#b2ccc2",
-             color4 = "#5edbbb",
-             color5 = "#b2ccc2",
+             color4 = "#a9cbe3",
+             color5 = "#5edbbb",
              color6 = "#a9cbe3",
              color7 = "#b2ccc2",
-             color8 = "#b2ccc2",
+             color8 = "#1d352e",
             },
           },
           accent = {
