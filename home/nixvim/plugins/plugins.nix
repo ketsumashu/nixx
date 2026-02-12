@@ -19,7 +19,7 @@
       enable = pkgs.lib.mkDefault true;
       lazyload.settings.cmd = "ToggleTerm";
       settings = {
-        direction = "vertical";
+        direction = "horizontal";
         floatOpts = {
           border = "shadow";
         };
