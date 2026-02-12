@@ -59,12 +59,9 @@
     {
       event = [ "FileType" ];
       pattern = [
-        "javascript"
-        "typescript"
-        "cpp"
-        "c"
         "css"
         "scss"
+        "nix"
       ];
       callback = {
         __raw = ''
