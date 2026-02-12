@@ -17,5 +17,20 @@ local function toggle_definition()
 		end
 	end, 100) -- Delay time in milliseconds
 end
+local npairs = require("nvim-autopairs")
+local Rule = require("nvim-autopairs.rule")
+local cond = require("nvim-autopairs.conds")
 
+npairs.add_rules({
+	-- { を入力して改行したとき、閉じ括弧を }; にする (Nix用)
+	Rule("{", "};", "nix")
+			:append_pair_if_newline()
+	-- すでに後ろに ; がある場合は重複させない判定
+			:with_pair(cond.not_after_text(";")),
+
+	-- 特定の単語（let など）の後に = を打ったら ; を自動挿入するなどの応用も可能
+	Rule("=", ";", "nix"):with_pair(cond.not_after_text(";")):replace_endpair(function(opts)
+		return ""
+	end), -- 単純なペアではなく末尾追加用
+})
 vim.api.nvim_create_user_command("ToggleDefinition", toggle_definition, {})
