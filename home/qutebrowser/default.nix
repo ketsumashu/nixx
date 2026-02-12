@@ -52,9 +52,9 @@ in
       content.javascript.clipboard = "access-paste";
       fonts = {
         default_family = [
-          "HelveticaNeueLT Std Med"
+          "HelveticaNeueLT Std"
         ];
-        default_size = "12px";
+        default_size = "14px";
         web.family = {
           sans_serif = "HelveticaNeueLT Std Med";
           serif = "Noto Serif CJK JP";
