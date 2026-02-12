@@ -16,7 +16,7 @@
           main = {
             custom_main_palette = {
              color0 = "#131313",
-             color1 = "#ffb4ab",
+             color1 = "#1d352a",
              color2 = "#a9cbe3",
              color3 = "#b2ccc2",
              color4 = "#53dbbb",
