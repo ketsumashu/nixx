@@ -108,6 +108,7 @@
       };
       file-browser = {
         enable = true;
+        display_stat = false;
         settings = {
           layout_strategy = "vertical";
           layout_config = {
@@ -120,7 +121,6 @@
           previewer = false;
           select_buffer = true;
           hijack_netrw = true;
-          display_stat = false;
           use_fd = true;
           theme = "ivy";
           hidden = {
