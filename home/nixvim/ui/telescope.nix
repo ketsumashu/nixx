@@ -112,7 +112,7 @@
           layout_strategy = "horizontal";
           layout_config = {
             anchor = "SE";
-            height = 0.99;
+            height = 0.2;
             width = 0.3;
             prompt_position = "bottom";
           };
