@@ -122,7 +122,7 @@
           select_buffer = true;
           hijack_netrw = true;
           use_fd = true;
-          theme = "ivy";
+          theme = "dropdown";
           hidden = {
             file_browser = true;
             folder_browser = true;
