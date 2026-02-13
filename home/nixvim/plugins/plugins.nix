@@ -13,22 +13,12 @@
         local Rule = require('nvim-autopairs.rule')
         local cond = require('nvim-autopairs.conds')
 
-        -- 1. まず、デフォルトの "{" ルールを nix ファイルで無効化（これはそのままでOK）
         au.get_rules("{")[1]:with_pair(cond.not_filetypes({"nix"}))
-
-        -- 2. nix用の { }; ルールを追加
         au.add_rules({
+          -- nixファイルでのみ動作するルール
           Rule("{", "};", "nix")
-            :with_pair(cond.not_after_regex("}")),
-
-          -- 3. 【ここが重要！】 { と }; の間で Enter を押した時の挙動を定義
-          -- これを追加することで、autopairsに「この間でもインデントして！」って教えるよ
-          Rule("{", "};", "nix")
-            :with_pair(function() return false end) -- 普通に打った時は反応させない
-            :with_move(function(opts)
-                return opts.prev_char:match("{") and opts.next_char:match("};")
-            end)
-            :use_key("<cr>") -- Enterキーを押した時にこのルールを発動！
+            -- "{" を入力したとき、次の文字が "}" であれば実行しない（重複防止）
+            :with_pair(cond.not_after_regex("}"))
         })
       '';
     };
