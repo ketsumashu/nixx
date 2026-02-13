@@ -15,11 +15,14 @@
 
         au.get_rules("{")[1]:with_pair(cond.not_filetypes({"nix"}))
         au.add_rules({
-          -- nixファイルでのみ動作するルール
           Rule("{", "};", "nix")
-            -- "{" を入力したとき、次の文字が "}" であれば実行しない（重複防止）
             :with_pair(cond.not_after_regex("}"))
         })
+        local cmp_autopairs = require('nvim-autopairs.completion.cmp)
+        require('cmp').event:on(
+          'confirm_done',
+          cmp_autopairs.on_confirm_done()
+        )
       '';
     };
     lastplace.enable = pkgs.lib.mkDefault true;
