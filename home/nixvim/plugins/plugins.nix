@@ -17,10 +17,12 @@
         au.add_rules({
           -- nixファイルでのみ動作するルール
           Rule("{", "};", "nix")
+          Rule("[", "];", "nix")
+          Rule("\'\'", "\'\';", "nix")
             -- "{" を入力したとき、次の文字が "}" であれば実行しない（重複防止）
             --:with_pair(cond.not_after_regex("}"))
             -- 改行（Enter）を押した時にカーソルを中間に置くなどの挙動を維持
-            --:with_move(cond.none())
+            :with_move(au.esc())
         })
       '';
     };
