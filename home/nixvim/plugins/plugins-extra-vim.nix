@@ -6,7 +6,6 @@
     lspkind-nvim
     zen-mode-nvim
     twilight-nvim
-    cosco-vim
     {
       plugin = tint-nvim;
       config = "lua require('tint').setup()";

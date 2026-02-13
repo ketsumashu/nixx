@@ -56,21 +56,5 @@
         '';
       };
     }
-    {
-      event = [ "FileType" ];
-      pattern = [
-        "css"
-        "scss"
-        "nix"
-      ];
-      callback = {
-        __raw = ''
-          function()
-            vim.keymap.set("n", "<Leader>c", "<Plug>(cosco-commaOrSemiColon)", { desc = "Cosco: Toggle comma/semicolon" })
-            vim.keymap.set("i", "<C-c>", "<Plug>(cosco-commaOrSemiColon)", { desc = "Cosco: Toggle comma/semicolon" })
-          end
-        '';
-      };
-    }
   ];
 }
