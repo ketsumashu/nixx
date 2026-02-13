@@ -21,10 +21,6 @@
             --:with_pair(cond.not_after_regex("}"))
             -- 改行（Enter）を押した時にカーソルを中間に置くなどの挙動を維持
             :with_move(au.esc())
-          Rule("{", "};", "nix")
-            :with_move(au.esc())
-          Rule("\'\'", "\'\';", "nix")
-            :with_move(au.esc())
         })
       '';
     };
