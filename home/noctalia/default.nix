@@ -489,6 +489,9 @@
         startup = "";
         session = "";
       };
+      plugins = {
+        autoUpdate = true;
+      };
       desktopWidgets = {
         enabled = false;
         gridSnap = false;
