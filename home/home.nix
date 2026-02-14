@@ -18,6 +18,7 @@
     ./krisp
     ./input
     ./qutebrowser
+    ./hyprland
   ];
 
   home = {
