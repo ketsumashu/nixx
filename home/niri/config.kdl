@@ -46,24 +46,24 @@ layout {
     proportion 0.5
     proportion 0.66667
   }
- 
+
   default-column-width { proportion 0.5; }
   focus-ring {
     width 1
   }
- 
+
   border {
       off
       width 1
   }
- 
+
   shadow {
     on
     softness 30
     spread 6
     offset x=0 y=5
   }
- 
+
   struts {
      top 0
      left 0
