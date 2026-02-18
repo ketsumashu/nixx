@@ -73,9 +73,8 @@ layout {
 }
 
 spawn-sh-at-startup "steam"
-spawn-sh-at-startup "discord --gtk-version=4 --ozone-platform-hint=auto --wayland-text-input-version=3"
+spawn-sh-at-startup "vesktop --gtk-version=4 --ozone-platform-hint=auto --wayland-text-input-version=3"
 spawn-sh-at-startup "openrgb --startminimized -p ~/.config/OpenRGB/pro.orp"
-spawn-sh-at-startup "noctalia-shell ipc call lockScreen lock"
 
 hotkey-overlay {
     skip-at-startup
