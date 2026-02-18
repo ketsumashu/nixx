@@ -2,6 +2,7 @@
   imports = [
     ./nixvim
     ./fish
+    ./firefox
     ./terminals
     ./foot
     ./starship
