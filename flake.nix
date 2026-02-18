@@ -16,6 +16,11 @@
       url = "github:noctalia-dev/noctalia-shell";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    zen = {
+      url = "github:0xc000022070/zen-browser-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.home-manager.follows = "home-manager";
+    };
   };
   outputs =
     inputs@{
@@ -24,6 +29,7 @@
       nixvim,
       nixos-hardware,
       noctalia,
+      zen,
       ...
     }:
     {
@@ -51,6 +57,7 @@
                   inherit inputs;
                   inherit nixvim;
                   inherit noctalia;
+                  inherit zen;
                 };
               };
             }
