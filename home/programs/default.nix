@@ -25,7 +25,6 @@
     git
     xwayland-satellite
     nautilus
-    vesktop
     fastfetch
     qt6Packages.qt6ct
     tree-sitter
