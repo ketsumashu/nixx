@@ -28,5 +28,8 @@
     fastfetch
     qt6Packages.qt6ct
     tree-sitter
+    (discord.override {
+      withVencord = true;
+    })
   ];
 }
