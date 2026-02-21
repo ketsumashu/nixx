@@ -11,7 +11,6 @@
       powerOnBoot = true;
     };
     amdgpu.overdrive.enable = true;
-
   };
   services = {
     dbus.enable = true;
@@ -26,6 +25,15 @@
       wireplumber.enable = true;
     };
     gvfs.enable = true;
+    udev = {
+      packages = with pkgs; [
+        qmk
+        qmk-udev-rules
+        qmk_hid
+        via
+        vial
+      ];
+    };
   };
   security.rtkit.enable = true;
 }
