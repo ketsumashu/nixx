@@ -31,5 +31,6 @@
     (discord.override {
       withVencord = true;
     })
+    vial
   ];
 }
