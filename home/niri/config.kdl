@@ -110,7 +110,7 @@ window-rule {
     // This app-id regular expression will work for both:
     // - host Firefox (app-id is "firefox")
     // - Flatpak Firefox (app-id is "org.mozilla.firefox")
-    match app-id=r#"discord$"#
+    match app-id=r#"vesktop$"#
     open-on-output "DP-3"
     default-column-width { proportion 1.0; }
     default-window-height { proportion 1.0; }
