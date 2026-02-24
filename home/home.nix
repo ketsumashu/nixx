@@ -15,8 +15,6 @@
     ./vivaldi
     ./niri
     ./noctalia
-    ./obs
-    ./krisp
     ./input
     ./qutebrowser
     ./hyprland
