@@ -37,7 +37,7 @@
           left = [
             {
               clockColor = "primary";
-              customFont = "Cozette";
+              customFont = "Terminus";
               formatHorizontal = "HH:mm:ss yyyy-MM-dd";
               formatVertical = "HH mm ss - dd MM";
               id = "Clock";

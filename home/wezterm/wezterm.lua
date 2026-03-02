@@ -11,12 +11,6 @@ return {
     window_close_confirmation = "NeverPrompt",
     font = wezterm.font_with_fallback({
         {
-            family = "Terminus",
-            weight = "Medium",
-            stretch = "Normal",
-            style = "Normal",
-        },
-        {
             family = "FiraCode Nerd Font",
             weight = "Medium",
             stretch = "Normal",
@@ -29,9 +23,9 @@ return {
             style = "Normal",
         },
     }),
-    font_size = 11.0,
+    font_size = 12,
     line_height = 1.4,
-    cell_width = 1.02,
+    cell_width = 1.10,
     window_padding = {
         left = "16px",
         top = "16px",
