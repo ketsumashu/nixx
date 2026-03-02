@@ -15,7 +15,7 @@
         monitors = [
           "DP-1"
           "HDMI-A-1"
-          "DP-3"
+          "DP-2"
         ];
         density = "mini";
         showOutline = false;
@@ -429,7 +429,6 @@
         schedulingMode = "off";
         manualSunrise = "06=30";
         manualSunset = "18=30";
-        generationMethod = "M3-Fruit Salad";
         monitorForColors = "";
       };
       templates = {
