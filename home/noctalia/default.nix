@@ -8,7 +8,6 @@
     systemd.enable = true;
 
     settings = {
-      settingsVersion = 47;
       bar = {
         barType = "simple";
         position = "bottom";
@@ -21,14 +20,14 @@
         showOutline = false;
         showCapsule = false;
         capsuleOpacity = 0;
-        backgroundOpacity = 0;
+        backgroundOpacity = 100;
         useSeparateOpacity = true;
         floating = false;
         marginVertical = 0;
         marginHorizontal = 13;
         frameThickness = 8;
         frameRadius = 12;
-        outerCorners = false;
+        outerCorners = true;
         hideOnOverview = false;
         displayMode = "always_visible";
         autoHideDelay = 500;
