@@ -111,7 +111,7 @@ window-rule {
     // - host Firefox (app-id is "firefox")
     // - Flatpak Firefox (app-id is "org.mozilla.firefox")
     match app-id=r#"vesktop$"#
-    open-on-output "DP-3"
+    open-on-output "DP-2"
     default-column-width { proportion 1.0; }
     default-window-height { proportion 1.0; }
     open-focused false
