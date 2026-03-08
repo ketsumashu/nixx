@@ -12,7 +12,7 @@
         "enableSessionSearch": true,
         "enableSettingsSearch": true,
         "enableWindowsSearch": true,
-        "iconMode": "tabler",
+        "iconMode": "native",
         "ignoreMouseInput": false,
         "overviewLayer": false,
         "pinnedApps": [
@@ -46,7 +46,7 @@
         "capsuleOpacity": 1,
         "contentPadding": 23,
         "density": "mini",
-        "displayMode": "always_visible",
+        "displayMode": "auto_hide",
         "floating": true,
         "fontScale": 1,
         "frameRadius": 12,
@@ -225,9 +225,47 @@
         }
     },
     "desktopWidgets": {
-        "enabled": false,
+        "enabled": true,
         "gridSnap": false,
         "monitorWidgets": [
+            {
+                "name": "HDMI-A-1",
+                "widgets": [
+                    {
+                        "diskPath": "/",
+                        "id": "SystemStat",
+                        "layout": "bottom",
+                        "roundedCorners": true,
+                        "scale": 1.2319089271422752,
+                        "showBackground": true,
+                        "statType": "GPU",
+                        "x": 3463,
+                        "y": 1949
+                    },
+                    {
+                        "diskPath": "/",
+                        "id": "SystemStat",
+                        "layout": "bottom",
+                        "roundedCorners": true,
+                        "scale": 1.220602584338928,
+                        "showBackground": true,
+                        "statType": "Memory",
+                        "x": 3465,
+                        "y": 1783
+                    },
+                    {
+                        "diskPath": "/",
+                        "id": "SystemStat",
+                        "layout": "bottom",
+                        "roundedCorners": true,
+                        "scale": 1.2262925842187886,
+                        "showBackground": true,
+                        "statType": "CPU",
+                        "x": 3465,
+                        "y": 1617
+                    }
+                ]
+            }
         ],
         "overviewEnabled": true
     },
@@ -512,7 +550,7 @@
         "batteryWarningThreshold": 20,
         "cpuCriticalThreshold": 90,
         "cpuWarningThreshold": 80,
-        "criticalColor": "",
+        "criticalColor": "#ffb4ab",
         "diskAvailCriticalThreshold": 10,
         "diskAvailWarningThreshold": 20,
         "diskCriticalThreshold": 90,
@@ -528,7 +566,7 @@
         "tempCriticalThreshold": 90,
         "tempWarningThreshold": 80,
         "useCustomColors": false,
-        "warningColor": ""
+        "warningColor": "#88d1ec"
     },
     "templates": {
         "activeTemplates": [
@@ -578,7 +616,7 @@
     "ui": {
         "boxBorderEnabled": false,
         "fontDefault": "HelveticaNeueLT Std Med",
-        "fontDefaultScale": 1,
+        "fontDefaultScale": 0.99,
         "fontFixed": "Terminus",
         "fontFixedScale": 1.18,
         "panelBackgroundOpacity": 1,
@@ -613,13 +651,13 @@
         "transitionEdgeSmoothness": 0.05,
         "transitionType": "random",
         "useSolidColor": false,
-        "useWallhaven": true,
+        "useWallhaven": false,
         "viewMode": "single",
         "wallhavenApiKey": "",
         "wallhavenCategories": "111",
         "wallhavenOrder": "desc",
         "wallhavenPurity": "100",
-        "wallhavenQuery": "forest",
+        "wallhavenQuery": "king halo",
         "wallhavenRatios": "",
         "wallhavenResolutionHeight": "",
         "wallhavenResolutionMode": "atleast",
