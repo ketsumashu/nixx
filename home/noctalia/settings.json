@@ -6,7 +6,7 @@
         "clipboardWrapText": true,
         "customLaunchPrefix": "",
         "customLaunchPrefixEnabled": false,
-        "density": "comfortable",
+        "density": "default",
         "enableClipPreview": true,
         "enableClipboardHistory": true,
         "enableSessionSearch": true,
@@ -17,10 +17,10 @@
         "overviewLayer": false,
         "pinnedApps": [
         ],
-        "position": "center",
+        "position": "follow_bar",
         "screenshotAnnotationTool": "",
         "showCategories": false,
-        "showIconBackground": false,
+        "showIconBackground": true,
         "sortByMostUsed": true,
         "terminalCommand": "wezterm -e",
         "useApp2Unit": false,
@@ -46,7 +46,7 @@
         "capsuleOpacity": 1,
         "contentPadding": 23,
         "density": "mini",
-        "displayMode": "auto_hide",
+        "displayMode": "always_visible",
         "floating": true,
         "fontScale": 1,
         "frameRadius": 12,
@@ -81,6 +81,15 @@
             "center": [
             ],
             "left": [
+                {
+                    "colorizeSystemIcon": "primary",
+                    "customIconPath": "",
+                    "enableColorization": true,
+                    "icon": "rocket",
+                    "iconColor": "none",
+                    "id": "Launcher",
+                    "useDistroLogo": true
+                },
                 {
                     "clockColor": "primary",
                     "customFont": "Terminus",
@@ -147,7 +156,7 @@
         "backlightDeviceMappings": [
         ],
         "brightnessStep": 5,
-        "enableDdcSupport": false,
+        "enableDdcSupport": true,
         "enforceMinimum": true
     },
     "calendar": {
@@ -176,7 +185,7 @@
         "manualSunrise": "06=30",
         "manualSunset": "18=30",
         "monitorForColors": "",
-        "predefinedScheme": "Osaka jade",
+        "predefinedScheme": "Peche",
         "schedulingMode": "off",
         "useWallpaperColors": true
     },
@@ -311,12 +320,12 @@
         "clockFormat": "hh\\nmm",
         "clockStyle": "custom",
         "compactLockScreen": true,
-        "dimmerOpacity": 0.31,
+        "dimmerOpacity": 0.47000000000000003,
         "enableBlurBehind": true,
         "enableLockScreenCountdown": true,
         "enableLockScreenMediaControls": false,
         "enableShadows": true,
-        "forceBlackScreenCorners": false,
+        "forceBlackScreenCorners": true,
         "iRadiusRatio": 1,
         "keybinds": {
             "keyDown": [
@@ -354,7 +363,7 @@
         "radiusRatio": 1,
         "reverseScroll": false,
         "scaleRatio": 1,
-        "screenRadiusRatio": 0.62,
+        "screenRadiusRatio": 1.01,
         "shadowDirection": "bottom_right",
         "shadowOffsetX": 2,
         "shadowOffsetY": 3,
@@ -620,7 +629,7 @@
         "fontFixed": "Terminus",
         "fontFixedScale": 1.18,
         "panelBackgroundOpacity": 1,
-        "panelsAttachedToBar": true,
+        "panelsAttachedToBar": false,
         "settingsPanelMode": "centered",
         "settingsPanelSideBarCardStyle": false,
         "tooltipsEnabled": true
@@ -654,15 +663,15 @@
         "useWallhaven": false,
         "viewMode": "single",
         "wallhavenApiKey": "",
-        "wallhavenCategories": "111",
+        "wallhavenCategories": "010",
         "wallhavenOrder": "desc",
         "wallhavenPurity": "100",
-        "wallhavenQuery": "king halo",
-        "wallhavenRatios": "",
+        "wallhavenQuery": "pixel",
+        "wallhavenRatios": "landscape",
         "wallhavenResolutionHeight": "",
         "wallhavenResolutionMode": "atleast",
         "wallhavenResolutionWidth": "",
-        "wallhavenSorting": "relevance",
+        "wallhavenSorting": "views",
         "wallpaperChangeMode": "random"
     }
 }
