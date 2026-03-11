@@ -279,32 +279,34 @@
         "overviewEnabled": true
     },
     "dock": {
-        "animationSpeed": 1,
+        "animationSpeed": 1.56,
         "backgroundOpacity": 1,
-        "colorizeIcons": false,
+        "colorizeIcons": true,
         "deadOpacity": 0.6,
         "displayMode": "auto_hide",
-        "dockType": "floating",
+        "dockType": "static",
         "enabled": false,
-        "floatingRatio": 1,
+        "floatingRatio": 0.07,
         "groupApps": false,
         "groupClickAction": "cycle",
         "groupContextMenuMode": "extended",
         "groupIndicatorStyle": "dots",
-        "inactiveIndicators": false,
+        "inactiveIndicators": true,
         "indicatorColor": "primary",
-        "indicatorOpacity": 0.6,
+        "indicatorOpacity": 0.51,
         "indicatorThickness": 3,
-        "launcherIconColor": "none",
+        "launcherIconColor": "primary",
         "launcherPosition": "end",
         "monitors": [
         ],
-        "onlySameOutput": true,
+        "onlySameOutput": false,
         "pinnedApps": [
+            "vivaldi-stable",
+            "steam"
         ],
         "pinnedStatic": false,
         "position": "bottom",
-        "showDockIndicator": false,
+        "showDockIndicator": true,
         "showLauncherIcon": false,
         "sitOnFrame": false,
         "size": 1
@@ -431,7 +433,7 @@
         "forced": false,
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
-        "nightTemp": "4000"
+        "nightTemp": "5279"
     },
     "noctaliaPerformance": {
         "disableDesktopWidgets": true,
