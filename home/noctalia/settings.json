@@ -40,15 +40,16 @@
     "bar": {
         "autoHideDelay": 500,
         "autoShowDelay": 150,
-        "backgroundOpacity": 0,
-        "barType": "floating",
+        "backgroundOpacity": 1,
+        "barType": "simple",
         "capsuleColorKey": "none",
         "capsuleOpacity": 1,
-        "contentPadding": 23,
+        "contentPadding": 7,
         "density": "mini",
         "displayMode": "always_visible",
-        "floating": true,
-        "fontScale": 1,
+        "enableExclusionZoneInset": true,
+        "floating": false,
+        "fontScale": 1.1600000000000001,
         "frameRadius": 12,
         "frameThickness": 8,
         "hideOnOverview": false,
@@ -64,8 +65,8 @@
         ],
         "mouseWheelAction": "workspace",
         "mouseWheelWrap": true,
-        "outerCorners": false,
-        "position": "bottom",
+        "outerCorners": true,
+        "position": "left",
         "reverseScroll": false,
         "rightClickAction": "controlCenter",
         "rightClickCommand": "",
@@ -76,29 +77,13 @@
         "showOnWorkspaceSwitch": true,
         "showOutline": false,
         "useSeparateOpacity": true,
-        "widgetSpacing": 8,
+        "widgetSpacing": 2,
         "widgets": {
             "center": [
             ],
             "left": [
-                {
-                    "colorizeSystemIcon": "primary",
-                    "customIconPath": "",
-                    "enableColorization": true,
-                    "icon": "rocket",
-                    "iconColor": "none",
-                    "id": "Launcher",
-                    "useDistroLogo": true
-                },
-                {
-                    "clockColor": "primary",
-                    "customFont": "Terminus",
-                    "formatHorizontal": "HH:mm:ss yyyy-MM-dd",
-                    "formatVertical": "HH mm ss - dd MM",
-                    "id": "Clock",
-                    "tooltipFormat": "HH:mm ddd - MMM dd",
-                    "useCustomFont": true
-                },
+            ],
+            "right": [
                 {
                     "compactMode": false,
                     "diskPath": "/home/mashu/game",
@@ -117,16 +102,16 @@
                     "showMemoryUsage": true,
                     "showNetworkStats": true,
                     "showSwapUsage": false,
-                    "textColor": "none",
+                    "textColor": "primary",
                     "useMonospaceFont": true,
                     "usePadding": false
                 },
                 {
                     "displayMode": "alwaysShow",
-                    "iconColor": "none",
+                    "iconColor": "primary",
                     "id": "Volume",
                     "middleClickCommand": "pwvucontrol || pavucontrol",
-                    "textColor": "none"
+                    "textColor": "primary"
                 },
                 {
                     "hideWhenZero": false,
@@ -146,9 +131,16 @@
                     "id": "Tray",
                     "pinned": [
                     ]
+                },
+                {
+                    "clockColor": "primary",
+                    "customFont": "Cozette",
+                    "formatHorizontal": "HH:mm:ss yyyy-MM-dd",
+                    "formatVertical": "HH mm ss - dd MM",
+                    "id": "Clock",
+                    "tooltipFormat": "HH:mm ddd - MMM dd",
+                    "useCustomFont": true
                 }
-            ],
-            "right": [
             ]
         }
     },
@@ -200,7 +192,7 @@
                 "id": "shortcuts-card"
             },
             {
-                "enabled": true,
+                "enabled": false,
                 "id": "audio-card"
             },
             {
@@ -210,25 +202,23 @@
             {
                 "enabled": true,
                 "id": "media-sysmon-card"
+            },
+            {
+                "enabled": true,
+                "id": "brightness-card"
             }
         ],
         "diskPath": "/",
         "position": "close_to_bar_button",
         "shortcuts": {
             "left": [
-                {
-                    "id": "Bluetooth"
-                }
             ],
             "right": [
                 {
-                    "id": "Notifications"
-                },
-                {
-                    "id": "KeepAwake"
-                },
-                {
                     "id": "WallpaperSelector"
+                },
+                {
+                    "id": "Bluetooth"
                 }
             ]
         }
@@ -236,6 +226,7 @@
     "desktopWidgets": {
         "enabled": true,
         "gridSnap": false,
+        "gridSnapScale": false,
         "monitorWidgets": [
             {
                 "name": "HDMI-A-1",
@@ -319,8 +310,8 @@
         "autoStartAuth": false,
         "avatarImage": "/home/mashu/PB112024-20251111-DxO_DeepPRIME XD2s.jpg",
         "boxRadiusRatio": 1,
-        "clockFormat": "hh\\nmm",
-        "clockStyle": "custom",
+        "clockFormat": "yyyy-MM-dd \\n HH:mm:ss ",
+        "clockStyle": "digital",
         "compactLockScreen": true,
         "dimmerOpacity": 0.47000000000000003,
         "enableBlurBehind": true,
@@ -356,12 +347,13 @@
         "language": "",
         "lockOnSuspend": true,
         "lockScreenAnimations": false,
-        "lockScreenBlur": 0,
+        "lockScreenBlur": 0.26,
         "lockScreenCountdownDuration": 10000,
         "lockScreenMonitors": [
+            "HDMI-A-1"
         ],
-        "lockScreenTint": 0,
-        "passwordChars": false,
+        "lockScreenTint": 0.27,
+        "passwordChars": true,
         "radiusRatio": 1,
         "reverseScroll": false,
         "scaleRatio": 1,
@@ -626,15 +618,17 @@
     },
     "ui": {
         "boxBorderEnabled": false,
-        "fontDefault": "HelveticaNeueLT Std Med",
-        "fontDefaultScale": 0.99,
-        "fontFixed": "Terminus",
-        "fontFixedScale": 1.18,
+        "fontDefault": "Cozette",
+        "fontDefaultScale": 1.1,
+        "fontFixed": "Cozette",
+        "fontFixedScale": 1,
         "panelBackgroundOpacity": 1,
         "panelsAttachedToBar": false,
+        "scrollbarAlwaysVisible": true,
         "settingsPanelMode": "centered",
         "settingsPanelSideBarCardStyle": false,
-        "tooltipsEnabled": true
+        "tooltipsEnabled": true,
+        "translucentWidgets": false
     },
     "wallpaper": {
         "automationEnabled": false,
@@ -665,15 +659,15 @@
         "useWallhaven": false,
         "viewMode": "single",
         "wallhavenApiKey": "",
-        "wallhavenCategories": "010",
+        "wallhavenCategories": "110",
         "wallhavenOrder": "desc",
-        "wallhavenPurity": "100",
-        "wallhavenQuery": "pixel",
-        "wallhavenRatios": "landscape",
+        "wallhavenPurity": "000",
+        "wallhavenQuery": "touhou",
+        "wallhavenRatios": "16x9",
         "wallhavenResolutionHeight": "",
-        "wallhavenResolutionMode": "atleast",
+        "wallhavenResolutionMode": "exact",
         "wallhavenResolutionWidth": "",
-        "wallhavenSorting": "views",
+        "wallhavenSorting": "favorites",
         "wallpaperChangeMode": "random"
     }
 }
