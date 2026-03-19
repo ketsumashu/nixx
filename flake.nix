@@ -11,10 +11,10 @@
     nixvim = {
       url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
-      skkeleton = {
-        url = "github:vim-skk/skkeleton";
-        flake = false;
-      };
+    };
+    skkeleton = {
+      url = "github:vim-skk/skkeleton";
+      flake = false;
     };
     noctalia = {
       url = "github:noctalia-dev/noctalia-shell";
