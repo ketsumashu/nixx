@@ -17,7 +17,7 @@ return {
             style = "Normal",
         },
         {
-            family = "mplus12",
+            family = "Noto Sans CJK JP",
             weight = "Regular",
             stretch = "Normal",
             style = "Normal",
