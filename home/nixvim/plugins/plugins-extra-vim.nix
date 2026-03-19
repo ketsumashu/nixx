@@ -25,6 +25,7 @@ in
     twilight-nvim
     skkeleton-nix
     denops-nix
+    firenvim
     {
       plugin = tint-nvim;
       config = "lua require('tint').setup()";
