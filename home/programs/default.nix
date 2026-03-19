@@ -30,5 +30,8 @@
     tree-sitter
     vial
     vesktop
+    (discord.override {
+      withVencord = true;
+    })
   ];
 }

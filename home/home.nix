@@ -17,7 +17,7 @@
     ./noctalia
     ./input
     ./qutebrowser
-    ./hyprland
+    ./krisp
   ];
 
   home = {
