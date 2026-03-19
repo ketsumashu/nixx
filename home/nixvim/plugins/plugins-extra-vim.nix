@@ -58,5 +58,14 @@ in
     else
       vim.o.laststatus = 3
     end
+    vim.g.firenvim_config = {
+      localSettings = {
+        [".*"] = [
+          window_type = "floating",
+          width = "80%",
+          height = "50%",
+        ]
+      }
+    }
   '';
 }
