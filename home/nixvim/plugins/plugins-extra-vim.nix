@@ -58,5 +58,5 @@ in
     else
       vim.o.laststatus = 3
     end
-  ''
+  '';
 }
