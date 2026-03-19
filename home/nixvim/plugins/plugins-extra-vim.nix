@@ -55,6 +55,8 @@ in
   programs.nixvim.extraConfigLua = ''
     if vim.g.started_by_firenvim == true then
       vim.o.laststatus = 0
+      vim.o.showtabline = 0
+      cmp.setup.buffer { enabled = false }
     else
       vim.o.laststatus = 3
     end
