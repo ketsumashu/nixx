@@ -60,11 +60,11 @@ in
     end
     vim.g.firenvim_config = {
       localSettings = {
-        [".*"] = [
+        [".*"] = {
           window_type = "floating",
           width = "80%",
           height = "50%",
-        ]
+        }
       }
     }
   '';
