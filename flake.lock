@@ -119,11 +119,11 @@
         "noctalia-qs": "noctalia-qs"
       },
       "locked": {
-        "lastModified": 1773907741,
-        "narHash": "sha256-VCOseUhojMawFh/O0ZlSftbiEql4kJn0+WjPqorvk9o=",
+        "lastModified": 1773925146,
+        "narHash": "sha256-gccci8li5UaXsCgrgmT2TAgt1d4XJeHa9WyCkW/t6VY=",
         "owner": "noctalia-dev",
         "repo": "noctalia-shell",
-        "rev": "5eb8b9cbcbf7f9ffcff8b75233bad6e80c721f4c",
+        "rev": "e08b08893e2194c0f6dc172f858e788ba825904d",
         "type": "github"
       },
       "original": {
@@ -162,7 +162,24 @@
         "nixpkgs": "nixpkgs",
         "nixvim": "nixvim",
         "noctalia": "noctalia",
+        "skkeleton": "skkeleton",
         "zen": "zen"
+      }
+    },
+    "skkeleton": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1767537530,
+        "narHash": "sha256-Ee55oGlNCoKwvDxaJyRCjqY89+DU2bP+7t8o/kkh8lU=",
+        "owner": "vim-skk",
+        "repo": "skkeleton",
+        "rev": "158ae753bc5099ab12537c23152926c42b1f7c3a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "vim-skk",
+        "repo": "skkeleton",
+        "type": "github"
       }
     },
     "systems": {
