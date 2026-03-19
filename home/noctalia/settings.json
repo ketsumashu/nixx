@@ -19,7 +19,7 @@
         "overviewLayer": false,
         "pinnedApps": [
         ],
-        "position": "follow_bar",
+        "position": "center",
         "screenshotAnnotationTool": "",
         "showCategories": false,
         "showIconBackground": true,
@@ -42,7 +42,7 @@
         "autoHideDelay": 500,
         "autoShowDelay": 150,
         "backgroundOpacity": 1,
-        "barType": "framed",
+        "barType": "simple",
         "capsuleColorKey": "none",
         "capsuleOpacity": 1,
         "contentPadding": 5,
@@ -61,7 +61,6 @@
         "middleClickFollowMouse": false,
         "monitors": [
             "DP-1",
-            "HDMI-A-1",
             "DP-2"
         ],
         "mouseWheelAction": "workspace",

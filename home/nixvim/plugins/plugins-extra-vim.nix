@@ -1,4 +1,15 @@
-{ pkgs, ... }:
+{
+  pkgs,
+  skkeleton,
+  ...
+}:
+let
+  skkeleton-nix = pkgs.vimUtils.buildVimPlugin {
+    pname = "skkeleton";
+    version = "latest";
+    src = skkeleton;
+  };
+in
 {
   programs.nixvim.extraPlugins = with pkgs.vimPlugins; [
     plenary-nvim
@@ -6,6 +17,7 @@
     lspkind-nvim
     zen-mode-nvim
     twilight-nvim
+    skkeleton-nix
     {
       plugin = tint-nvim;
       config = "lua require('tint').setup()";

@@ -11,6 +11,10 @@
     nixvim = {
       url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
+      skkeleton = {
+        url = "github:vim-skk/skkeleton";
+        flake = false;
+      };
     };
     noctalia = {
       url = "github:noctalia-dev/noctalia-shell";
@@ -30,6 +34,7 @@
       nixos-hardware,
       noctalia,
       zen,
+      skkeleton,
       ...
     }:
     {
@@ -58,6 +63,7 @@
                   inherit nixvim;
                   inherit noctalia;
                   inherit zen;
+                  inherit skkeleton;
                 };
               };
             }

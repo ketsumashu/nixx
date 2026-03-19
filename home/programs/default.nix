@@ -29,7 +29,6 @@
     qt6Packages.qt6ct
     tree-sitter
     vial
-    vesktop
     (discord.override {
       withVencord = true;
     })
