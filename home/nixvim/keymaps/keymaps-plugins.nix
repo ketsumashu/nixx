@@ -11,7 +11,12 @@
         desc = "Dashboard";
       };
     }
-
+    # skkeleton
+    {
+      action = "<Plug>(skkeleton-toggle)";
+      key = "<C-j>";
+      mode = "i";
+    }
     # Telescope_file-browser
     {
       action.__raw = ''
