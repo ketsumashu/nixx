@@ -60,9 +60,13 @@ in
     end
     vim.g.firenvim_config = {
       globalSettings = {
-        window_type = "floating",
-        width = "100%",
-        height = "200%",
+        ['.*'] = {
+          cmdline  = 'neovim',
+          content  = 'text',
+          priority = 0,
+          selector = 'textarea',
+          takeover = 'never',
+        },
       }
     }
   '';
