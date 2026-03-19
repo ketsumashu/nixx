@@ -61,8 +61,8 @@ in
     vim.g.firenvim_config = {
       globalSettings = {
         window_type = "floating",
-        width = "80%",
-        height = "50%",
+        width = "100%",
+        height = "200%",
       }
     }
   '';
