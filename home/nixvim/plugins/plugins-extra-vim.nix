@@ -59,6 +59,11 @@ in
       vim.o.laststatus = 3
     end
     vim.g.firenvim_config = {
+      globalSettings = {
+        window_type = "floating",
+        width = "80%",
+        height = "50%",
+      }
     }
   '';
 }
