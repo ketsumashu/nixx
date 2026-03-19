@@ -1,5 +1,21 @@
 {
   "nodes": {
+    "denops": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1761463144,
+        "narHash": "sha256-4AACZ3h6uAqiXW24gUF1+uq7dnWA0w/PcxAeO4yxitc=",
+        "owner": "vim-denops",
+        "repo": "denops.vim",
+        "rev": "5cfca39988a36e42d81b925264fc846077a727e3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "vim-denops",
+        "repo": "denops.vim",
+        "type": "github"
+      }
+    },
     "flake-parts": {
       "inputs": {
         "nixpkgs-lib": [
@@ -157,6 +173,7 @@
     },
     "root": {
       "inputs": {
+        "denops": "denops",
         "home-manager": "home-manager",
         "nixos-hardware": "nixos-hardware",
         "nixpkgs": "nixpkgs",
