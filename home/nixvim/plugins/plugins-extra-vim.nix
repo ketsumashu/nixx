@@ -59,7 +59,7 @@ in
       vim.o.laststatus = 3
     end
     vim.g.firenvim_config = {
-      globalSettings = {
+      localSettings = {
         ['.*'] = {
           cmdline  = 'neovim',
           content  = 'text',
