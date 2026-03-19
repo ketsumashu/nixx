@@ -1,6 +1,7 @@
 {
   pkgs,
   skkeleton,
+  denops,
   ...
 }:
 let
@@ -8,6 +9,11 @@ let
     pname = "skkeleton";
     version = "latest";
     src = skkeleton;
+  };
+  denops-nix = pkgs.vimUtils.buildVimPlugin {
+    pname = "denops.vim";
+    version = "latest";
+    src = denops;
   };
 in
 {
@@ -18,6 +24,7 @@ in
     zen-mode-nvim
     twilight-nvim
     skkeleton-nix
+    denops-nix
     {
       plugin = tint-nvim;
       config = "lua require('tint').setup()";

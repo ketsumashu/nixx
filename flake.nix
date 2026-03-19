@@ -16,6 +16,10 @@
       url = "github:vim-skk/skkeleton";
       flake = false;
     };
+    denops = {
+      url = "github:vim-denops/denops.vim";
+      flake = false;
+    };
     noctalia = {
       url = "github:noctalia-dev/noctalia-shell";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -35,6 +39,7 @@
       noctalia,
       zen,
       skkeleton,
+      denops,
       ...
     }:
     {
@@ -64,6 +69,7 @@
                   inherit noctalia;
                   inherit zen;
                   inherit skkeleton;
+                  inherit denops;
                 };
               };
             }
