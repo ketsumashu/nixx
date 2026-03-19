@@ -25,7 +25,6 @@ in
     twilight-nvim
     skkeleton-nix
     denops-nix
-    firenvim
     {
       plugin = tint-nvim;
       config = "lua require('tint').setup()";
@@ -51,24 +50,5 @@ in
       \  'keepState': v:true
       \})
     call skkeleton#register_keymap('input', ';', 'henkanPoint')
-  '';
-  programs.nixvim.extraConfigLua = ''
-    if vim.g.started_by_firenvim == true then
-      vim.o.laststatus = 0
-      vim.o.showtabline = 0
-      cmp.setup.buffer { enabled = false }
-    else
-      vim.o.laststatus = 3
-    end
-    vim.g.firenvim_config = {
-      localSettings = {
-        ['.*'] = {
-          cmdline  = 'neovim',
-          content  = 'text',
-          priority = 0,
-          selector = 'textarea',
-        },
-      }
-    }
   '';
 }
