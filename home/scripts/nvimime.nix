@@ -5,7 +5,6 @@ let
     wezterm start --class "Floaterm"  -e nvim -c 'startinsert' -c 'set binary noeol' /tmp/scr || exit 1
     if [[ -e /tmp/scr ]]; then
         cat /tmp/scr | wl-copy
-        notify-send -t 1000 copied
         rm -f /tmp/scr
     fi
   '';

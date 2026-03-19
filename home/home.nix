@@ -15,7 +15,6 @@
     ./vivaldi
     ./niri
     ./noctalia
-    ./input
     ./qutebrowser
     ./krisp
   ];
