@@ -12,5 +12,5 @@
     };
   };
 
-  programs.nixvim.plugins.lsp-format.enable = pkgs.lib.mkDefault true;
+  programs.nixvim.plugins.lsp-format.enable = pkgs.lib.mkDefault false;
 }
