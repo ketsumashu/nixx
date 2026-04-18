@@ -65,8 +65,8 @@
         ],
         "mouseWheelAction": "content",
         "mouseWheelWrap": true,
-        "outerCorners": true,
-        "position": "left",
+        "outerCorners": false,
+        "position": "bottom",
         "reverseScroll": false,
         "rightClickAction": "controlCenter",
         "rightClickCommand": "",
@@ -80,10 +80,15 @@
         "widgetSpacing": 10,
         "widgets": {
             "center": [
-            ],
-            "left": [
-            ],
-            "right": [
+                {
+                    "clockColor": "none",
+                    "customFont": "Terminus",
+                    "formatHorizontal": "HH:mm:ss yyyy-MM-dd",
+                    "formatVertical": "HH mm ss - dd MM",
+                    "id": "Clock",
+                    "tooltipFormat": "HH:mm ddd - MMM dd",
+                    "useCustomFont": true
+                },
                 {
                     "blacklist": [
                     ],
@@ -109,16 +114,11 @@
                     "id": "Volume",
                     "middleClickCommand": "pwvucontrol || pavucontrol",
                     "textColor": "secondary"
-                },
-                {
-                    "clockColor": "primary",
-                    "customFont": "Terminus",
-                    "formatHorizontal": "HH:mm:ss yyyy-MM-dd",
-                    "formatVertical": "HH mm ss - dd MM",
-                    "id": "Clock",
-                    "tooltipFormat": "HH:mm ddd - MMM dd",
-                    "useCustomFont": true
                 }
+            ],
+            "left": [
+            ],
+            "right": [
             ]
         }
     },
@@ -147,7 +147,7 @@
     },
     "colorSchemes": {
         "darkMode": true,
-        "generationMethod": "fruit-salad",
+        "generationMethod": "tonal-spot",
         "manualSunrise": "06=30",
         "manualSunset": "18=30",
         "monitorForColors": "",
@@ -404,7 +404,7 @@
         "forced": false,
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
-        "nightTemp": "5279"
+        "nightTemp": "5420"
     },
     "noctaliaPerformance": {
         "disableDesktopWidgets": true,
