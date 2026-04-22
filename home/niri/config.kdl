@@ -30,12 +30,12 @@ output "HDMI-A-1" {
 output "DP-2" {
   mode "2560x1440@100.000"
   transform "normal"
-  position x=0 y=150
+  position x=0 y=0
 }
 output "DP-1" {
   mode "2560x1440@120.000"
   transform "normal"
-  position x=6400 y=150
+  position x=6400 y=0
 }
 
 layout {

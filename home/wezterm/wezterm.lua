@@ -11,21 +11,21 @@ return {
     window_close_confirmation = "NeverPrompt",
     font = wezterm.font_with_fallback({
         {
-            family = "FiraCode Nerd Font",
+            family = "PlemolJP35 Console HS",
             weight = "Medium",
             stretch = "Normal",
             style = "Normal",
         },
         {
-            family = "Noto Sans CJK JP",
+            family = "mplus12",
             weight = "Regular",
             stretch = "Normal",
             style = "Normal",
         },
     }),
     font_size = 12,
-    line_height = 1.4,
-    cell_width = 1.10,
+    line_height = 1.3,
+    cell_width = 1.03,
     window_padding = {
         left = "16px",
         top = "16px",
