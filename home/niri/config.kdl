@@ -74,9 +74,8 @@ layout {
 
 spawn-sh-at-startup "steam"
 spawn-sh-at-startup "noctalia-shell"
-spawn-sh-at-startup "imes"
-spawn-sh-at-startup "vesktop --gtk-version=4 --ozone-platform-hint=auto --wayland-text-input-version=3"
-spawn-sh-at-startup "openrgb --startminimized -p /home/mashu/.config/OpenRGB/pro.orp"
+spawn-sh-at-startup "discord --gtk-version=4 --ozone-platform-hint=auto --wayland-text-input-version=3"
+spawn-sh-at-startup "sleep 5; openrgb --startminimized -p /home/mashu/.config/OpenRGB/pro.orp"
 
 hotkey-overlay {
     skip-at-startup
@@ -107,12 +106,22 @@ window-rule {
     max-height 800
     max-width 1400
 }
-
+window-rule {
+    match title=r#"^Open Files"#
+    open-floating true
+    max-height 800
+    max-width 1400
+}
+window-rule {
+    match title=r#"^Bitwarden"#
+    match app-id=r#"^vivaldi-stable"#
+    open-floating true
+}
 window-rule {
     // This app-id regular expression will work for both:
     // - host Firefox (app-id is "firefox")
     // - Flatpak Firefox (app-id is "org.mozilla.firefox")
-    match app-id=r#"vesktop$"#
+    match app-id=r#"discord$"#
     open-on-output "DP-2"
     default-column-width { proportion 1.0; }
     default-window-height { proportion 1.0; }
@@ -144,7 +153,7 @@ binds {
 
   Mod+Return hotkey-overlay-title="Open a Terminal: wezterm" { spawn "wezterm"; }
   Mod+b hotkey-overlay-title="Open a browser: vivaldi" { spawn-sh "vivaldi"; }
-  Super+space hotkey-overlay-title="Run an Application Launcher" { spawn-sh "noctalia-shell ipc call launcher toggle"; }
+  Mod+space hotkey-overlay-title="Run an Application Launcher" { spawn-sh "noctalia-shell ipc call launcher toggle"; }
   Super+Alt+p hotkey-overlay-title="powermenu" { spawn-sh "noctalia-shell ipc call sessionMenu toggle"; }
 
   XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+"; }
@@ -278,6 +287,6 @@ binds {
 
   Mod+Alt+L { spawn-sh "noctalia-shell ipc call lockScreen lock"; }
   Mod+Alt+C { spawn-sh "noctalia-shell ipc call launcher clipboard"; }
-  Mod+ALt+Slash { spawn-sh "noctalia-shell ipc call plugin:assistant-panel toggle"; }
+  Mod+Alt+Slash { spawn-sh "noctalia-shell ipc call plugin:assistant-panel toggle"; }
   Mod+I              { spawn-sh "scr"; }
 }
