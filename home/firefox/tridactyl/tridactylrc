@@ -34,9 +34,9 @@ bind yt clipboard yanktitle
 bind gH home true
 bind p clipboard open
 bind P clipboard tabopen
-bind j scrollline 10
+bind j scrollpage 0.3
 bind <C-e> scrollline 10
-bind k scrollline -10
+bind k scrollpage -0.3
 bind <C-y> scrollline -10
 bind h scrollpx -50
 bind l scrollpx 50

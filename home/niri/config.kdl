@@ -114,7 +114,6 @@ window-rule {
 }
 window-rule {
     match title=r#"^Bitwarden"#
-    match app-id=r#"^vivaldi-stable"#
     open-floating true
 }
 window-rule {
