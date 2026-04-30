@@ -16,7 +16,6 @@
     bat
     eza
     ripgrep
-    deno
     xdg-utils
     darktable
     which

@@ -14,6 +14,7 @@
     ./gui
     ./vivaldi
     ./niri
+    ./input
     ./noctalia
     ./qutebrowser
     ./krisp

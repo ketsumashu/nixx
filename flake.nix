@@ -12,14 +12,6 @@
       url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    skkeleton = {
-      url = "github:vim-skk/skkeleton";
-      flake = false;
-    };
-    denops = {
-      url = "github:vim-denops/denops.vim";
-      flake = false;
-    };
     noctalia = {
       url = "github:noctalia-dev/noctalia-shell";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -38,8 +30,6 @@
       nixos-hardware,
       noctalia,
       zen,
-      skkeleton,
-      denops,
       ...
     }:
     {
@@ -68,8 +58,6 @@
                   inherit nixvim;
                   inherit noctalia;
                   inherit zen;
-                  inherit skkeleton;
-                  inherit denops;
                 };
               };
             }
