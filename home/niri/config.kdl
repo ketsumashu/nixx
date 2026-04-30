@@ -287,5 +287,4 @@ binds {
   Mod+Alt+L { spawn-sh "noctalia-shell ipc call lockScreen lock"; }
   Mod+Alt+C { spawn-sh "noctalia-shell ipc call launcher clipboard"; }
   Mod+Alt+Slash { spawn-sh "noctalia-shell ipc call plugin:assistant-panel toggle"; }
-  Mod+I              { spawn-sh "scr"; }
 }
