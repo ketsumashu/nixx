@@ -666,10 +666,6 @@
             {
                 "enabled": true,
                 "id": "zenBrowser"
-            },
-            {
-                "enabled": true,
-                "id": "steam"
             }
         ],
         "enableUserTheming": false
