@@ -42,17 +42,17 @@
     "bar": {
         "autoHideDelay": 500,
         "autoShowDelay": 150,
-        "backgroundOpacity": 1,
+        "backgroundOpacity": 0.79,
         "barType": "simple",
         "capsuleColorKey": "none",
         "capsuleOpacity": 1,
-        "contentPadding": 0,
-        "density": "mini",
+        "contentPadding": 7,
+        "density": "compact",
         "displayMode": "always_visible",
         "enableExclusionZoneInset": true,
-        "fontScale": 1.25,
-        "frameRadius": 12,
-        "frameThickness": 8,
+        "fontScale": 1.28,
+        "frameRadius": 8,
+        "frameThickness": 4,
         "hideOnOverview": false,
         "marginHorizontal": 0,
         "marginVertical": 12,
@@ -67,16 +67,17 @@
         "mouseWheelAction": "content",
         "mouseWheelWrap": true,
         "outerCorners": true,
-        "position": "bottom",
+        "position": "left",
         "reverseScroll": false,
         "rightClickAction": "controlCenter",
         "rightClickCommand": "",
         "rightClickFollowMouse": true,
         "screenOverrides": [
             {
-                "density": "compact",
+                "density": "default",
                 "enabled": true,
                 "name": "HDMI-A-1",
+                "position": "bottom",
                 "widgets": {
                     "center": [
                         {
@@ -130,51 +131,6 @@
         "widgets": {
             "center": [
                 {
-                    "clockColor": "primary",
-                    "customFont": "Cozette",
-                    "formatHorizontal": "HH:mm:ss yyyy-MM-dd",
-                    "formatVertical": "HH mm ss - dd MM",
-                    "id": "Clock",
-                    "tooltipFormat": "HH:mm ddd - MMM dd",
-                    "useCustomFont": true
-                },
-                {
-                    "blacklist": [
-                    ],
-                    "chevronColor": "none",
-                    "colorizeIcons": true,
-                    "drawerEnabled": false,
-                    "hidePassive": false,
-                    "id": "Tray",
-                    "pinned": [
-                    ]
-                },
-                {
-                    "hideWhenZero": true,
-                    "hideWhenZeroUnread": true,
-                    "iconColor": "none",
-                    "id": "NotificationHistory",
-                    "showUnreadBadge": true,
-                    "unreadBadgeColor": "primary"
-                },
-                {
-                    "displayMode": "onhover",
-                    "iconColor": "none",
-                    "id": "Volume",
-                    "middleClickCommand": "pwvucontrol || pavucontrol",
-                    "textColor": "secondary"
-                },
-                {
-                    "displayMode": "onhover",
-                    "iconColor": "primary",
-                    "id": "Bluetooth",
-                    "textColor": "primary"
-                }
-            ],
-            "left": [
-            ],
-            "right": [
-                {
                     "compactMode": false,
                     "diskPath": "/home/mashu/game",
                     "iconColor": "primary",
@@ -195,6 +151,51 @@
                     "textColor": "none",
                     "useMonospaceFont": true,
                     "usePadding": false
+                }
+            ],
+            "left": [
+            ],
+            "right": [
+                {
+                    "hideWhenZero": true,
+                    "hideWhenZeroUnread": true,
+                    "iconColor": "none",
+                    "id": "NotificationHistory",
+                    "showUnreadBadge": true,
+                    "unreadBadgeColor": "primary"
+                },
+                {
+                    "displayMode": "onhover",
+                    "iconColor": "none",
+                    "id": "Volume",
+                    "middleClickCommand": "pwvucontrol || pavucontrol",
+                    "textColor": "secondary"
+                },
+                {
+                    "displayMode": "onhover",
+                    "iconColor": "primary",
+                    "id": "Bluetooth",
+                    "textColor": "primary"
+                },
+                {
+                    "blacklist": [
+                    ],
+                    "chevronColor": "none",
+                    "colorizeIcons": false,
+                    "drawerEnabled": false,
+                    "hidePassive": false,
+                    "id": "Tray",
+                    "pinned": [
+                    ]
+                },
+                {
+                    "clockColor": "primary",
+                    "customFont": "Cozette",
+                    "formatHorizontal": "HH:mm:ss yyyy-MM-dd",
+                    "formatVertical": "HH mm ss -  MM dd",
+                    "id": "Clock",
+                    "tooltipFormat": "HH:mm ddd - MMM dd",
+                    "useCustomFont": true
                 }
             ]
         }

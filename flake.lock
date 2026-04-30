@@ -1,21 +1,5 @@
 {
   "nodes": {
-    "denops": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1774176782,
-        "narHash": "sha256-lj8yjZrwE9GfNPDIpH4tCI4TTJHkYRlFFCTdqMqWtZg=",
-        "owner": "vim-denops",
-        "repo": "denops.vim",
-        "rev": "1df7a022d6e9cb3f6a3db43235e0f174ccd79e03",
-        "type": "github"
-      },
-      "original": {
-        "owner": "vim-denops",
-        "repo": "denops.vim",
-        "type": "github"
-      }
-    },
     "flake-parts": {
       "inputs": {
         "nixpkgs-lib": [
@@ -157,30 +141,12 @@
     },
     "root": {
       "inputs": {
-        "denops": "denops",
         "home-manager": "home-manager",
         "nixos-hardware": "nixos-hardware",
         "nixpkgs": "nixpkgs",
         "nixvim": "nixvim",
         "noctalia": "noctalia",
-        "skkeleton": "skkeleton",
         "zen": "zen"
-      }
-    },
-    "skkeleton": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1775125108,
-        "narHash": "sha256-OhHlG3ngNbvUSNqS/MFJpYI/cfbkxSxTPo8EiSwW/MU=",
-        "owner": "vim-skk",
-        "repo": "skkeleton",
-        "rev": "b530eac5a859ce2f8fa4d99fa5cd83b9d3199086",
-        "type": "github"
-      },
-      "original": {
-        "owner": "vim-skk",
-        "repo": "skkeleton",
-        "type": "github"
       }
     },
     "systems": {
