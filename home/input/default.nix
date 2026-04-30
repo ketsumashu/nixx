@@ -8,6 +8,8 @@
       fcitx5-gtk
       fcitx5-nord
       fcitx5-material-color
+      fcitx5-fluent
+      fcitx5-rose-pine
       qt6Packages.fcitx5-configtool
     ];
     fcitx5.waylandFrontend = true;
