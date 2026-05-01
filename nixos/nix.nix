@@ -26,6 +26,8 @@
         libGL
         fontconfig
         libX11
+        glib
+        glibc
       ];
     };
 
