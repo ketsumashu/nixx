@@ -22,6 +22,7 @@
     gh
     wget
     git
+    sl
     xwayland-satellite
     nautilus
     fastfetch
