@@ -20,24 +20,6 @@ input {
 
 include "noctalia.kdl"
 
-output "HDMI-A-1" {
-  mode "3840x2160@120.000"
-  scale 1.25
-  transform "normal"
-  focus-at-startup
-  position x=2560 y=0
-}
-output "DP-2" {
-  mode "2560x1440@100.000"
-  transform "normal"
-  position x=0 y=0
-}
-output "DP-1" {
-  mode "2560x1440@120.000"
-  transform "normal"
-  position x=6400 y=0
-}
-
 layout {
   gaps 8
   center-focused-column "never"
@@ -289,3 +271,6 @@ binds {
   Mod+Alt+C { spawn-sh "noctalia-shell ipc call launcher clipboard"; }
   Mod+Alt+Slash { spawn-sh "noctalia-shell ipc call plugin:assistant-panel toggle"; }
 }
+
+// Monique monitor configuration
+include "monitors.kdl"

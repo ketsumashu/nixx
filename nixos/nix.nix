@@ -23,11 +23,6 @@
       libraries = with pkgs; [
         stdenv.cc.cc.lib
         zlib
-        libGL
-        fontconfig
-        libX11
-        glib
-        glibc
       ];
     };
 

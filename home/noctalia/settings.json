@@ -61,8 +61,7 @@
         "middleClickFollowMouse": false,
         "monitors": [
             "DP-1",
-            "DP-2",
-            "HDMI-A-1"
+            "DP-2"
         ],
         "mouseWheelAction": "content",
         "mouseWheelWrap": true,
@@ -121,6 +120,16 @@
                     "right": [
                     ]
                 }
+            },
+            {
+                "enabled": false,
+                "name": "DP-1",
+                "position": "left"
+            },
+            {
+                "enabled": true,
+                "name": "DP-2",
+                "position": "right"
             }
         ],
         "showCapsule": false,
