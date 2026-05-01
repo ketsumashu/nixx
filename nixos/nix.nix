@@ -23,6 +23,7 @@
       libraries = with pkgs; [
         stdenv.cc.cc.lib
         zlib
+        libGL
       ];
     };
 

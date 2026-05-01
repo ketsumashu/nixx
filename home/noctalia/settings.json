@@ -50,7 +50,7 @@
         "density": "compact",
         "displayMode": "always_visible",
         "enableExclusionZoneInset": true,
-        "fontScale": 1.28,
+        "fontScale": 1,
         "frameRadius": 8,
         "frameThickness": 4,
         "hideOnOverview": false,
@@ -74,15 +74,15 @@
         "rightClickFollowMouse": true,
         "screenOverrides": [
             {
-                "density": "default",
+                "density": "mini",
                 "enabled": true,
                 "name": "HDMI-A-1",
                 "position": "bottom",
                 "widgets": {
                     "center": [
                         {
-                            "clockColor": "none",
-                            "customFont": "Terminus",
+                            "clockColor": "primary",
+                            "customFont": "FiraCode Nerd Font Med",
                             "formatHorizontal": "HH:mm:ss yyyy-MM-dd",
                             "formatVertical": "HH mm ss - dd MM",
                             "id": "Clock",
@@ -180,8 +180,8 @@
                 {
                     "blacklist": [
                     ],
-                    "chevronColor": "none",
-                    "colorizeIcons": false,
+                    "chevronColor": "primary",
+                    "colorizeIcons": true,
                     "drawerEnabled": false,
                     "hidePassive": false,
                     "id": "Tray",
