@@ -34,35 +34,12 @@
       nixos-hardware,
       noctalia,
       zen,
-      yaskkserv2-bin,
       ...
     }:
-    let
-      system = "x86_64-linux";
-      pkgs = nixpkgs.legacyPackages.${system};
-
-      yaskkserv2-pkg = pkgs.stdenv.mkDerivation {
-        pname = "yaskkserv2";
-        version = "0.1.7";
-        src = yaskkserv2-bin;
-
-        dontBuild = true;
-        dontConfigure = true;
-
-        nativeBuildInputs = [ pkgs.autoPatchelfHook ];
-        buildInputs = [ pkgs.stdenv.cc.cc.lib ];
-
-        installPhase = ''
-          mkdir -p $out/bin
-          cp yaskkserv2 $out/bin/
-          chmod +x $out/bin/yaskkserv2
-        '';
-      };
-    in
     {
       nixosConfigurations = {
         mashu-nix-101 = nixpkgs.lib.nixosSystem {
-          inherit system;
+          system = "x86_64-linux";
           modules = [
             nixos-hardware.nixosModules.common-cpu-amd
             nixos-hardware.nixosModules.common-gpu-amd
@@ -85,7 +62,6 @@
                   inherit nixvim;
                   inherit noctalia;
                   inherit zen;
-                  yaskkserv2 = yaskkserv2-pkg;
                 };
               };
             }

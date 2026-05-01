@@ -1,4 +1,4 @@
-{ pkgs, yaskkserv2, ... }:
+{ pkgs, ... }:
 {
   home.packages = with pkgs; [
     wl-clipboard
