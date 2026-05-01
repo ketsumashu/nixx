@@ -25,6 +25,7 @@
         zlib
         libGL
         fontconfig
+        libX11
       ];
     };
 
