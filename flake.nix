@@ -21,6 +21,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.home-manager.follows = "home-manager";
     };
+    yaskkserv2-bin = {
+      url = "https://github.com/wachikun/yaskkserv2/releases/download/0.1.7/yaskkserv2-0.1.7-x86_64-unknown-linux-gnu.tar.gz";
+      flake = false;
+    };
   };
   outputs =
     inputs@{
@@ -30,12 +34,35 @@
       nixos-hardware,
       noctalia,
       zen,
+      yaskkserv2-bin,
       ...
     }:
+    let
+      system = "x86_64-linux";
+      pkgs = nixpkgs.legacyPackages.${system};
+
+      yaskkserv2-pkg = pkgs.stdenv.mkDerivation {
+        pname = "yaskkserv2";
+        version = "0.1.7";
+        src = yaskkserv2-bin;
+
+        dontBuild = true;
+        dontConfigure = true;
+
+        nativeBuildInputs = [ pkgs.autoPatchelfHook ];
+        buildInputs = [ pkgs.stdenv.cc.cc.lib ];
+
+        installPhase = ''
+          mkdir -p $out/bin
+          cp yaskkserv2 $out/bin/
+          chmod +x $out/bin/yaskkserv2
+        '';
+      };
+    in
     {
       nixosConfigurations = {
         mashu-nix-101 = nixpkgs.lib.nixosSystem {
-          system = "x86_64-linux";
+          inherit system;
           modules = [
             nixos-hardware.nixosModules.common-cpu-amd
             nixos-hardware.nixosModules.common-gpu-amd
@@ -58,6 +85,7 @@
                   inherit nixvim;
                   inherit noctalia;
                   inherit zen;
+                  yaskkserv2 = yaskkserv2-pkg;
                 };
               };
             }

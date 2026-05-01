@@ -146,6 +146,7 @@
         "nixpkgs": "nixpkgs",
         "nixvim": "nixvim",
         "noctalia": "noctalia",
+        "yaskkserv2-bin": "yaskkserv2-bin",
         "zen": "zen"
       }
     },
@@ -199,6 +200,19 @@
         "owner": "numtide",
         "repo": "treefmt-nix",
         "type": "github"
+      }
+    },
+    "yaskkserv2-bin": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1694775067,
+        "narHash": "sha256-2mdnwSDoToJqdk0U48KOOGPwO6+D0mfxXWn6eeeGCQU=",
+        "type": "tarball",
+        "url": "https://github.com/wachikun/yaskkserv2/releases/download/0.1.7/yaskkserv2-0.1.7-x86_64-unknown-linux-gnu.tar.gz"
+      },
+      "original": {
+        "type": "tarball",
+        "url": "https://github.com/wachikun/yaskkserv2/releases/download/0.1.7/yaskkserv2-0.1.7-x86_64-unknown-linux-gnu.tar.gz"
       }
     },
     "zen": {

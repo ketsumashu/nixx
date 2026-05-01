@@ -5,6 +5,7 @@
     enable = true;
   };
   xdg.configFile = {
-    "wezterm/wezterm.lua".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/nixx/home/wezterm/wezterm.lua";
+    "wezterm/wezterm.lua".source =
+      config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/nixx/home/wezterm/wezterm.lua";
   };
 }

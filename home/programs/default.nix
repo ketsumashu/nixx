@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, yaskkserv2, ... }:
 {
   home.packages = with pkgs; [
     wl-clipboard
@@ -31,5 +31,6 @@
     (discord.override {
       withVencord = true;
     })
+    yaskkserv2
   ];
 }
