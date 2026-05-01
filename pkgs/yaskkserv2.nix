@@ -1,7 +1,7 @@
 { stdenv, autoPatchelfHook, yaskkserv2-bin }:
 
 stdenv.mkDerivation {
-  pname = "yaskkserv2";
+  pname = "yaskkserv2-test";
   version = "0.1.7";
   src = yaskkserv2-bin;
 
