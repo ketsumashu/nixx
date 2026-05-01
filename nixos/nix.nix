@@ -24,6 +24,7 @@
         stdenv.cc.cc.lib
         zlib
         libGL
+        fontconfig
       ];
     };
 
