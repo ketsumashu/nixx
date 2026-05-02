@@ -32,5 +32,6 @@
       withVencord = true;
     })
     yaskkserv2
+    zmkbatx
   ];
 }
