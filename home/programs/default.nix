@@ -33,5 +33,6 @@
     })
     yaskkserv2
     zmkbatx
+    neovide
   ];
 }
