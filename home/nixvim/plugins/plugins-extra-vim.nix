@@ -13,9 +13,5 @@
       plugin = tint-nvim;
       config = "lua require('tint').setup()";
     }
-    {
-      plugin = treesj;
-      config = "lua require('treesj').setup({use_default_keymaps=false})";
-    }
   ];
 }
