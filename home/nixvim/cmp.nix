@@ -20,7 +20,6 @@
           { name = "path"; }
           { name = "buffer"; }
           { name = "git"; }
-          { name = "calc"; }
         ];
 
         mapping = {
