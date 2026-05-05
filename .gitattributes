@@ -1,2 +1,4 @@
 *.L linguist-documentation
 *.js linguist-documentation
+*.css linguist-documentation
+*.lua linguist-documentation
