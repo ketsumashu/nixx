@@ -55,6 +55,7 @@ layout {
 }
 
 spawn-sh-at-startup "steam"
+spawn-sh-at-startup "zmkbatx"
 spawn-at-startup "sh" "-c" "yaskkserv2 --google-suggest /home/mashu/nixx/home/libskk/jisyo.yaskkserv2 && fcitx5 -r"
 spawn-sh-at-startup "noctalia-shell"
 spawn-at-startup "sh" "-c" " sleep 5 && discord --gtk-version=4 --ozone-platform-hint=auto --wayland-text-input-version=3"
