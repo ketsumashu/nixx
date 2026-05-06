@@ -2,7 +2,6 @@
   imports = [
     ./nixvim
     ./fish
-    ./firefox
     ./terminals
     ./foot
     ./starship
@@ -16,7 +15,6 @@
     ./niri
     ./input
     ./noctalia
-    ./qutebrowser
     ./krisp
   ];
 
