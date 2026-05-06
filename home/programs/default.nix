@@ -33,6 +33,6 @@
     })
     yaskkserv2
     zmkbatx
-    neovide
+    openrgb-with-all-plugins
   ];
 }
