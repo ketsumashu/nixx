@@ -19,7 +19,7 @@ input {
 }
 
 include "monitors.kdl"
-include "noctalia.kdl
+include "noctalia.kdl"
 
 blur {
     saturation 1.6000000000000005
