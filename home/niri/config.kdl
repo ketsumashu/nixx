@@ -18,8 +18,16 @@ input {
   warp-mouse-to-focus
 }
 
-include "noctalia.kdl"
+include "monitors.kdl"
+include "noctalia.kdl
 
+blur {
+    saturation 1.6000000000000005
+
+    noise 0.060000000000000005
+
+    passes 3
+}
 layout {
   gaps 8
   center-focused-column "never"
@@ -273,4 +281,3 @@ binds {
 }
 
 // Monique monitor configuration
-include "monitors.kdl"
