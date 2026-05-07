@@ -15,6 +15,7 @@
     duf
     bat
     eza
+    killall
     ripgrep
     xdg-utils
     darktable
@@ -24,7 +25,6 @@
     git
     xwayland-satellite
     nautilus
-    fastfetch
     qt6Packages.qt6ct
     tree-sitter
     vial
@@ -33,6 +33,6 @@
     })
     yaskkserv2
     zmkbatx
-    openrgb-with-all-plugins
+    openrgb
   ];
 }
