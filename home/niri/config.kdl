@@ -55,11 +55,11 @@ layout {
 }
 
 spawn-sh-at-startup "steam"
-spawn-at-startup "sh" "-c" "sleep 5 && zmkbatx"
+spawn-at-startup "sh" "-c" "sleep 3 && zmkbatx"
 spawn-at-startup "sh" "-c" "yaskkserv2 --google-suggest /home/mashu/nixx/home/libskk/jisyo.yaskkserv2 && fcitx5 -r"
 spawn-sh-at-startup "noctalia-shell"
 spawn-at-startup "sh" "-c" " sleep 5 && discord --gtk-version=4 --ozone-platform-hint=auto --wayland-text-input-version=3"
-spawn-at-startup "sh" "-c" " sleep 5 && openrgb -p /home/mashu/.config/OpenRGB/pro.orp"
+spawn-at-startup "sh" "-c" " sleep 10 && openrgb -p /home/mashu/.config/OpenRGB/pro.orp"
 
 hotkey-overlay {
     skip-at-startup
