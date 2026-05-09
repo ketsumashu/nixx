@@ -23,9 +23,9 @@ include "noctalia.kdl"
 
 blur {
     saturation 1.5
-    noise 0.02
-    passes 1
-    offset 3.0
+    noise 0.08
+    passes 4
+    offset 2.0
 }
 layout {
   gaps 8

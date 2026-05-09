@@ -2,7 +2,7 @@
   programs.kitty = {
     enable = true;
     settings = {
-      background_opacity = 0.92;
+      background_opacity = 0.9;
       font_family = "PlemolJP35 Console HS";
       italic_font = "auto";
       bold_font = "auto";
@@ -32,10 +32,10 @@
       bell_on_tab = "yes";
     };
     extraConfig = ''
-      modify_font cell_height 100%
+      modify_font cell_height 110%
       click_interval 0.5
       cursor_blink_interval 0
-      modify_font cell_width 100%
+      modify_font cell_width 105%
       include /home/mashu/.config/kitty/themes/noctalia.conf
     '';
   };
