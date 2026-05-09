@@ -22,9 +22,9 @@ include "monitors.kdl"
 include "noctalia.kdl"
 
 blur {
-    saturation 1.6000000000000005
-    noise 0.060000000000000005
-    passes 3
+    saturation 1.5
+    noise 0.02
+    passes 1
     offset 3.0
 }
 layout {
@@ -82,6 +82,30 @@ animations {
 window-rule {
     match app-id=r#"^Floaterm$"#
     open-floating true
+}
+window-rule {
+    match app-id=r#"^kitty$"#
+    background-effect {
+      blur true
+    }
+}
+window-rule {
+    match app-id=r#"wezterm$"#
+    background-effect {
+      blur true
+    }
+}
+window-rule {
+    match app-id=r#"foot$"#
+    background-effect {
+      blur true
+    }
+}
+window-rule {
+    match app-id=r#"noctalia-shell$"#
+    background-effect {
+      blur true
+    }
 }
 window-rule {
     match app-id=r#"pavucontrol$"#

@@ -6,7 +6,7 @@
         "clipboardWrapText": true,
         "customLaunchPrefix": "",
         "customLaunchPrefixEnabled": false,
-        "density": "compact",
+        "density": "comfortable",
         "enableClipPreview": true,
         "enableClipboardChips": true,
         "enableClipboardHistory": true,
@@ -42,7 +42,7 @@
     "bar": {
         "autoHideDelay": 500,
         "autoShowDelay": 150,
-        "backgroundOpacity": 0.49,
+        "backgroundOpacity": 0.56,
         "barType": "simple",
         "capsuleColorKey": "none",
         "capsuleOpacity": 1,
@@ -488,7 +488,7 @@
         "clockFormat": "yyyy-MM-dd \\n HH:mm:ss ",
         "clockStyle": "digital",
         "compactLockScreen": false,
-        "dimmerOpacity": 0.47000000000000003,
+        "dimmerOpacity": 0,
         "enableBlurBehind": true,
         "enableLockScreenCountdown": true,
         "enableLockScreenMediaControls": true,
@@ -641,8 +641,8 @@
         }
     },
     "osd": {
-        "autoHideMs": 2000,
-        "backgroundOpacity": 1,
+        "autoHideMs": 1500,
+        "backgroundOpacity": 0.53,
         "enabled": true,
         "enabledTypes": [
             0,
@@ -796,13 +796,13 @@
         "fontDefaultScale": 1,
         "fontFixed": "Cozette",
         "fontFixedScale": 1,
-        "panelBackgroundOpacity": 1,
+        "panelBackgroundOpacity": 0.8300000000000001,
         "panelsAttachedToBar": false,
         "scrollbarAlwaysVisible": true,
         "settingsPanelMode": "centered",
         "settingsPanelSideBarCardStyle": false,
         "tooltipsEnabled": true,
-        "translucentWidgets": false
+        "translucentWidgets": true
     },
     "wallpaper": {
         "automationEnabled": false,
