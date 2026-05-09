@@ -305,15 +305,15 @@
                     "id": "plugin:assistant-panel"
                 },
                 {
-                    "colorizeIcons": true,
-                    "hideMode": "visible",
+                    "colorizeIcons": false,
+                    "hideMode": "transparent",
                     "id": "ActiveWindow",
                     "maxWidth": 145,
                     "scrollingMode": "hover",
                     "showIcon": true,
-                    "showText": true,
-                    "textColor": "primary",
-                    "useFixedWidth": true
+                    "showText": false,
+                    "textColor": "secondary",
+                    "useFixedWidth": false
                 }
             ],
             "right": [
@@ -345,7 +345,7 @@
     },
     "colorSchemes": {
         "darkMode": true,
-        "generationMethod": "fruit-salad",
+        "generationMethod": "content",
         "manualSunrise": "06=30",
         "manualSunset": "18=30",
         "monitorForColors": "HDMI-A-1",

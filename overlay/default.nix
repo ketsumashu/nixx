@@ -9,8 +9,7 @@
           ];
       };
       yaskkserv2 = final.callPackage ../pkgs/yaskkserv2.nix {
-    # flakeのinputsから渡ってきたバイナリソース
-        yaskkserv2-bin = inputs.yaskkserv2-bin;
+        inherit (inputs) yaskkserv2-bin;
       };
     })
   ];
