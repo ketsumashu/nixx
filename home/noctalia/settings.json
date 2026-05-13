@@ -345,7 +345,7 @@
     },
     "colorSchemes": {
         "darkMode": true,
-        "generationMethod": "content",
+        "generationMethod": "monochrome",
         "manualSunrise": "06=30",
         "manualSunset": "18=30",
         "monitorForColors": "HDMI-A-1",
@@ -397,45 +397,57 @@
         }
     },
     "desktopWidgets": {
-        "enabled": true,
-        "gridSnap": false,
-        "gridSnapScale": false,
+        "enabled": false,
+        "gridSnap": true,
+        "gridSnapScale": true,
         "monitorWidgets": [
             {
                 "name": "HDMI-A-1",
+                "widgets": [
+                ]
+            },
+            {
+                "name": "DP-2",
+                "widgets": [
+                ]
+            },
+            {
+                "name": "DP-1",
                 "widgets": [
                     {
                         "diskPath": "/",
                         "id": "SystemStat",
                         "layout": "bottom",
                         "roundedCorners": true,
-                        "scale": 1.2319089271422752,
-                        "showBackground": true,
-                        "statType": "GPU",
-                        "x": 3463,
-                        "y": 1949
-                    },
-                    {
-                        "diskPath": "/",
-                        "id": "SystemStat",
-                        "layout": "bottom",
-                        "roundedCorners": true,
-                        "scale": 1.220602584338928,
+                        "scale": 1.7556651296758425,
                         "showBackground": true,
                         "statType": "Memory",
-                        "x": 3465,
-                        "y": 1783
+                        "x": 40,
+                        "y": 880
                     },
                     {
                         "diskPath": "/",
                         "id": "SystemStat",
                         "layout": "bottom",
                         "roundedCorners": true,
-                        "scale": 1.2262925842187886,
+                        "scale": 1.7551679452203208,
                         "showBackground": true,
-                        "statType": "CPU",
-                        "x": 3465,
-                        "y": 1617
+                        "statType": "GPU",
+                        "x": 40,
+                        "y": 1120
+                    },
+                    {
+                        "clockColor": "none",
+                        "clockStyle": "minimal",
+                        "customFont": "Cozette",
+                        "format": "HH:mm\\nd MMMM yyyy",
+                        "id": "Clock",
+                        "roundedCorners": true,
+                        "scale": 5,
+                        "showBackground": true,
+                        "useCustomFont": true,
+                        "x": 200,
+                        "y": 680
                     }
                 ]
             }
@@ -845,10 +857,10 @@
         "wallhavenCategories": "110",
         "wallhavenOrder": "desc",
         "wallhavenPurity": "000",
-        "wallhavenQuery": "",
+        "wallhavenQuery": "dark souls ",
         "wallhavenRatios": "",
         "wallhavenResolutionHeight": "",
-        "wallhavenResolutionMode": "exact",
+        "wallhavenResolutionMode": "atleast",
         "wallhavenResolutionWidth": "",
         "wallhavenSorting": "favorites",
         "wallpaperChangeMode": "random"

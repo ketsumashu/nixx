@@ -12,8 +12,9 @@ input {
       natural-scroll
   }
   mouse {
-    accel-speed 0.2
-    accel-profile "flat"
+    accel-speed -0.1
+    scroll-factor 0.4
+    accel-profile "adaptive"
   }
   warp-mouse-to-focus
 }
@@ -25,7 +26,7 @@ blur {
     saturation 1.5
     noise 0.08
     passes 4
-    offset 2.0
+    offset 1.0
 }
 layout {
   gaps 8
