@@ -12,7 +12,7 @@ input {
       natural-scroll
   }
   mouse {
-    accel-speed -0.1
+    accel-speed -0.3
     scroll-factor 0.4
     accel-profile "adaptive"
   }
@@ -83,6 +83,10 @@ animations {
 window-rule {
     match app-id=r#"^Floaterm$"#
     open-floating true
+}
+window-rule {
+    match app-id=r#"^gamescope"#
+    open-fullscreen true
 }
 window-rule {
     match app-id=r#"^kitty$"#
