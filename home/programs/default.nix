@@ -27,12 +27,12 @@
     nautilus
     qt6Packages.qt6ct
     tree-sitter
+    fastfetch
     vial
     (discord.override {
       withVencord = true;
     })
     yaskkserv2
-    zmkbatx
     openrgb
   ];
 }

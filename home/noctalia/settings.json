@@ -42,11 +42,11 @@
     "bar": {
         "autoHideDelay": 500,
         "autoShowDelay": 150,
-        "backgroundOpacity": 0.56,
+        "backgroundOpacity": 0.7000000000000001,
         "barType": "simple",
         "capsuleColorKey": "none",
         "capsuleOpacity": 1,
-        "contentPadding": 7,
+        "contentPadding": 0,
         "density": "compact",
         "displayMode": "always_visible",
         "enableExclusionZoneInset": true,
@@ -60,8 +60,9 @@
         "middleClickCommand": "",
         "middleClickFollowMouse": false,
         "monitors": [
-            "DP-1",
-            "DP-2"
+            "HDMI-A-1",
+            "DP-2",
+            "DP-1"
         ],
         "mouseWheelAction": "content",
         "mouseWheelWrap": true,
@@ -254,28 +255,6 @@
             ],
             "left": [
                 {
-                    "compactMode": false,
-                    "diskPath": "/home/mashu/game",
-                    "iconColor": "primary",
-                    "id": "SystemMonitor",
-                    "showCpuCores": false,
-                    "showCpuFreq": true,
-                    "showCpuTemp": true,
-                    "showCpuUsage": true,
-                    "showDiskAvailable": true,
-                    "showDiskUsage": true,
-                    "showDiskUsageAsPercent": false,
-                    "showGpuTemp": true,
-                    "showLoadAverage": false,
-                    "showMemoryAsPercent": false,
-                    "showMemoryUsage": true,
-                    "showNetworkStats": true,
-                    "showSwapUsage": false,
-                    "textColor": "none",
-                    "useMonospaceFont": true,
-                    "usePadding": false
-                },
-                {
                     "defaultSettings": {
                         "ai": {
                             "apiKeys": {
@@ -314,9 +293,35 @@
                     "showText": false,
                     "textColor": "secondary",
                     "useFixedWidth": false
+                },
+                {
+                    "compactMode": false,
+                    "diskPath": "/home/mashu/game",
+                    "iconColor": "secondary",
+                    "id": "SystemMonitor",
+                    "showCpuCores": true,
+                    "showCpuFreq": true,
+                    "showCpuTemp": true,
+                    "showCpuUsage": true,
+                    "showDiskAvailable": true,
+                    "showDiskUsage": true,
+                    "showDiskUsageAsPercent": false,
+                    "showGpuTemp": true,
+                    "showLoadAverage": true,
+                    "showMemoryAsPercent": false,
+                    "showMemoryUsage": true,
+                    "showNetworkStats": true,
+                    "showSwapUsage": false,
+                    "textColor": "secondary",
+                    "useMonospaceFont": true,
+                    "usePadding": true
                 }
             ],
             "right": [
+                {
+                    "iconColor": "none",
+                    "id": "Settings"
+                }
             ]
         }
     },
@@ -345,7 +350,7 @@
     },
     "colorSchemes": {
         "darkMode": true,
-        "generationMethod": "monochrome",
+        "generationMethod": "content",
         "manualSunrise": "06=30",
         "manualSunset": "18=30",
         "monitorForColors": "HDMI-A-1",
