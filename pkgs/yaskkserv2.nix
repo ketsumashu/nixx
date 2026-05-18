@@ -1,4 +1,8 @@
-{ stdenv, autoPatchelfHook, yaskkserv2-bin }:
+{
+  stdenv,
+  autoPatchelfHook,
+  yaskkserv2-bin,
+}:
 
 stdenv.mkDerivation {
   pname = "yaskkserv2";

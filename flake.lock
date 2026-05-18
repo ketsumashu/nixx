@@ -73,6 +73,22 @@
         "type": "github"
       }
     },
+    "nixpkgs-discord": {
+      "locked": {
+        "lastModified": 1778111185,
+        "narHash": "sha256-gO4vmZBvg/usG7U0IRpDOv9MRF+AIW+/veFce9mTG0s=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "48dd7b3c34fff167391ced88bc97a1b66e7cd353",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "48dd7b3c34fff167391ced88bc97a1b66e7cd353",
+        "type": "github"
+      }
+    },
     "nixvim": {
       "inputs": {
         "flake-parts": "flake-parts",
@@ -144,6 +160,7 @@
         "home-manager": "home-manager",
         "nixos-hardware": "nixos-hardware",
         "nixpkgs": "nixpkgs",
+        "nixpkgs-discord": "nixpkgs-discord",
         "nixvim": "nixvim",
         "noctalia": "noctalia",
         "yaskkserv2-bin": "yaskkserv2-bin"
