@@ -15,6 +15,7 @@
     ./niri
     ./input
     ./noctalia
+    ./firefox
     ./krisp
   ];
 
