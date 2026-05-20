@@ -43,11 +43,11 @@
     },
     "nixos-hardware": {
       "locked": {
-        "lastModified": 1779099457,
-        "narHash": "sha256-u73aVD/lUmmT3JV+kPDztl7zPwQKd0eobD1AbJltaGs=",
+        "lastModified": 1779258371,
+        "narHash": "sha256-j1iZsLy6oFApqR1oiDmHhvkwxXqcNi0aoSJj643LuwU=",
         "owner": "NixOS",
         "repo": "nixos-hardware",
-        "rev": "8792fab9d4a6454a9201675f01326f827ce35ead",
+        "rev": "c97bc4d15bd3473dd095e8e8ba57330ab1943a77",
         "type": "github"
       },
       "original": {
@@ -163,7 +163,8 @@
         "nixpkgs-discord": "nixpkgs-discord",
         "nixvim": "nixvim",
         "noctalia": "noctalia",
-        "yaskkserv2-bin": "yaskkserv2-bin"
+        "yaskkserv2-bin": "yaskkserv2-bin",
+        "zen": "zen"
       }
     },
     "systems": {
@@ -229,6 +230,29 @@
       "original": {
         "type": "tarball",
         "url": "https://github.com/wachikun/yaskkserv2/releases/download/0.1.7/yaskkserv2-0.1.7-x86_64-unknown-linux-gnu.tar.gz"
+      }
+    },
+    "zen": {
+      "inputs": {
+        "home-manager": [
+          "home-manager"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1779093899,
+        "narHash": "sha256-wzHbwUimm45J5r+d4VOi2rrRWwvYimP6OM8BJBIHbYc=",
+        "owner": "0xc000022070",
+        "repo": "zen-browser-flake",
+        "rev": "d21282d88c6bd4b3dc692566c5d84de39f7a96c0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "0xc000022070",
+        "repo": "zen-browser-flake",
+        "type": "github"
       }
     }
   },
