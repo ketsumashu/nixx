@@ -798,11 +798,11 @@
             },
             {
                 "enabled": true,
-                "id": "zenBrowser"
+                "id": "discord"
             },
             {
                 "enabled": true,
-                "id": "discord"
+                "id": "zenBrowser"
             }
         ],
         "enableUserTheming": false
