@@ -12,7 +12,7 @@
     "noctalia/settings.json".source =
       config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/nixx/home/noctalia/settings.json";
   };
-  programs.noctalia-shell = {
+  programs.noctalia = {
     enable = true;
   };
 }
