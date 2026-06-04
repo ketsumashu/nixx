@@ -24,8 +24,8 @@ include "noctalia.kdl"
 blur {
     saturation 1.5
     noise 0.08
-    passes 4
-    offset 1.0
+    passes 3
+    offset 3.0
 }
 layout {
   gaps 8
@@ -63,7 +63,7 @@ layout {
 
 spawn-sh-at-startup "steam"
 spawn-at-startup "sh" "-c" "yaskkserv2 --google-suggest /home/mashu/nixx/home/libskk/jisyo.yaskkserv2 && fcitx5"
-spawn-sh-at-startup "noctalia-shell"
+spawn-sh-at-startup "noctalia"
 spawn-at-startup "sh" "-c" " sleep 5 && discord --gtk-version=4 --ozone-platform-hint=auto --wayland-text-input-version=3"
 spawn-at-startup "sh" "-c" " sleep 10 && openrgb --startminimized -p /home/mashu/.config/OpenRGB/pro.orp"
 
@@ -80,6 +80,10 @@ animations {
 
 window-rule {
     match app-id=r#"^Floaterm$"#
+    open-floating true
+}
+window-rule {
+    match app-id=r#"^dev.noctalia.Noctalia.Settings$"#
     open-floating true
 }
 window-rule {
@@ -161,16 +165,22 @@ window-rule {
 }
 
 layer-rule {
-  match namespace="^noctalia-overview*"
+  match namespace="^noctalia-backdrop"
   place-within-backdrop true
+}
+layer-rule {
+  match namespace="^noctalia-(bar-[^\"]+|notification|dock|panel|osd)$"
+  background-effect {
+    xray false
+  }
 }
 binds {
   Mod+Shift+Slash { show-hotkey-overlay; }
 
   Mod+Return hotkey-overlay-title="Open a Terminal: Kitty" { spawn "kitty"; }
   Mod+b hotkey-overlay-title="Open a browser: vivaldi" { spawn-sh "vivaldi"; }
-  Mod+space hotkey-overlay-title="Run an Application Launcher" { spawn-sh "noctalia-shell ipc call launcher toggle"; }
-  Super+Alt+p hotkey-overlay-title="powermenu" { spawn-sh "noctalia-shell ipc call sessionMenu toggle"; }
+  Mod+space hotkey-overlay-title="Run an Application Launcher" { spawn-sh "noctalia msg panel-toggle launcher"; }
+  Super+Alt+p hotkey-overlay-title="powermenu" { spawn-sh "noctalia msg panel-toggle session"; }
 
   XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+"; }
   XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-"; }
@@ -301,9 +311,8 @@ binds {
   Mod+Shift+E { quit; }
   Ctrl+Alt+Delete { quit; }
 
-  Mod+Alt+L { spawn-sh "noctalia-shell ipc call lockScreen lock"; }
-  Mod+Alt+C { spawn-sh "noctalia-shell ipc call launcher clipboard"; }
-  Mod+Alt+Slash { spawn-sh "noctalia-shell ipc call plugin:assistant-panel toggle"; }
+  Mod+Alt+L { spawn-sh "noctalia msg session lock "; }
+  Mod+Alt+C { spawn-sh "noctalia msg panel-open clipboard"; }
 }
 
 // Monique monitor configuration
@@ -331,4 +340,8 @@ output "HDMI-A-1" {
 
     transform "normal"
     position x=2560 y=-335
+}
+debug {
+  // Allows notification actions and window activation from Noctalia.
+  honor-xdg-activation-with-invalid-serial
 }
