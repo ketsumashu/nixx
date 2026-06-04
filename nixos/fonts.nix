@@ -11,6 +11,8 @@
       plemoljp-hs
       terminus_font
       helvetica-neue-lt-std
+      envypn-font
+      gohufont
     ];
     fontDir.enable = true;
     fontconfig.enable = true;
