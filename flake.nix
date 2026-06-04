@@ -14,7 +14,6 @@
     };
     noctalia = {
       url = "github:noctalia-dev/noctalia-shell/v5";
-      inputs.nixpkgs.follows = "nixpkgs";
     };
     yaskkserv2-bin = {
       url = "https://github.com/wachikun/yaskkserv2/releases/download/0.1.7/yaskkserv2-0.1.7-x86_64-unknown-linux-gnu.tar.gz";
