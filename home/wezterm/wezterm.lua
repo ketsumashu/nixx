@@ -1,7 +1,7 @@
 local wezterm = require("wezterm")
 return {
     default_prog = { "/usr/bin/fish", "-l" },
-    window_background_opacity = 0.95,
+    window_background_opacity = 0.92,
     enable_wayland = true,
     color_scheme = "Noctalia",
     use_ime = false,
@@ -11,7 +11,7 @@ return {
     window_close_confirmation = "NeverPrompt",
     font = wezterm.font_with_fallback({
         {
-            family = "PlemolJP35 Console HS",
+            family = "GohuFont",
             weight = "Medium",
             stretch = "Normal",
             style = "Normal",
@@ -23,9 +23,9 @@ return {
             style = "Normal",
         },
     }),
-    font_size = 12,
-    line_height = 1.3,
-    cell_width = 1.03,
+    font_size = 11,
+    line_height = 1.4,
+    cell_width = 1.1,
     window_padding = {
         left = "16px",
         top = "16px",

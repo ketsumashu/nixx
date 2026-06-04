@@ -34,5 +34,6 @@
     })
     yaskkserv2
     openrgb
+    ddcutil
   ];
 }
