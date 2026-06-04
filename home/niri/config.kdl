@@ -12,9 +12,9 @@ input {
       natural-scroll
   }
   mouse {
-    accel-speed -0.3
+    accel-speed 0.4
     scroll-factor 0.4
-    accel-profile "adaptive"
+    accel-profile "flat"
   }
   warp-mouse-to-focus
 }
@@ -169,9 +169,10 @@ layer-rule {
   place-within-backdrop true
 }
 layer-rule {
-  match namespace="^noctalia-(bar-[^\"]+|notification|dock|panel|osd)$"
+  match namespace="^noctalia-(bar-[^\"]+|notification|dock|panel|osd|launcher)$"
   background-effect {
     xray false
+    blur true
   }
 }
 binds {
