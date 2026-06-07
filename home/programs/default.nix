@@ -33,6 +33,7 @@
       withVencord = true;
     })
     yaskkserv2
+    arrpc
     openrgb
     ddcutil
   ];
