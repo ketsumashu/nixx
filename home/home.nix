@@ -16,7 +16,7 @@
     ./input
     ./noctalia
     ./firefox
-    ./krisp
+    ./nixcord
   ];
 
   home = {

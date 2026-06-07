@@ -29,11 +29,7 @@
     tree-sitter
     fastfetch
     vial
-    (discord.override {
-      withVencord = true;
-    })
     yaskkserv2
-    arrpc
     openrgb
     ddcutil
   ];
