@@ -21,5 +21,8 @@
     enableMan = false;
     viAlias = true;
     vimAlias = true;
+    nixpkgs.config = {
+      allowxUnfree = true;
+    };
   };
 }
