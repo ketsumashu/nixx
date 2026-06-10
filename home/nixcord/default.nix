@@ -6,9 +6,6 @@
     discord = {
       krisp.enable = true;
       vencord.enable = true;
-      settings = {
-        SKIP_HOST_UPDATE = true;
-      };
     };
   };
 }

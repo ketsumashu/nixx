@@ -179,7 +179,7 @@ binds {
   Mod+Shift+Slash { show-hotkey-overlay; }
 
   Mod+Return hotkey-overlay-title="Open a Terminal: wezterm" { spawn "wezterm"; }
-  Mod+b hotkey-overlay-title="Open a browser: vivaldi" { spawn-sh "vivaldi"; }
+  Mod+b hotkey-overlay-title="Open a browser: zen" { spawn-sh "zen-beta"; }
   Mod+space hotkey-overlay-title="Run an Application Launcher" { spawn-sh "noctalia msg panel-toggle launcher"; }
   Super+Alt+p hotkey-overlay-title="powermenu" { spawn-sh "noctalia msg panel-toggle session"; }
 
@@ -187,12 +187,11 @@ binds {
   XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-"; }
   XF86AudioMute        allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"; }
   XF86AudioMicMute     allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"; }
-  XF86MonBrightnessUp allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "+10%"; }
+  XF86MonBrightnessUp allow-when-locked=true { spawn "brightnesnsctl" "--class=backlight" "set" "+10%"; }
   XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "10%-"; }
 
   Mod+O repeat=false { toggle-overview; }
   Mod+x repeat=false { close-window; }
-
   Mod+Left  { focus-column-left; }
   Mod+Down  { focus-window-down; }
   Mod+Up    { focus-window-up; }
