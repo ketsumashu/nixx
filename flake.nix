@@ -15,9 +15,6 @@
       url = "github:noctalia-dev/noctalia";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    nixcord = {
-      url = "github:FlameFlag/nixcord";
-    };
     yaskkserv2-bin = {
       url = "https://github.com/wachikun/yaskkserv2/releases/download/0.1.7/yaskkserv2-0.1.7-x86_64-unknown-linux-gnu.tar.gz";
       flake = false;
@@ -38,7 +35,6 @@
       nixos-hardware,
       noctalia,
       zen,
-      nixcord,
       ...
     }:
     {
@@ -66,7 +62,6 @@
                   inherit inputs;
                   inherit nixvim;
                   inherit noctalia;
-                  inherit nixcord;
                   inherit zen;
                 };
               };

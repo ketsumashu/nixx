@@ -16,7 +16,6 @@
     ./input
     ./noctalia
     ./firefox
-    ./nixcord
   ];
 
   home = {
