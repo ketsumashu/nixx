@@ -33,5 +33,6 @@
     openrgb
     ddcutil
     vesktop
+    arrpc
   ];
 }
