@@ -64,7 +64,7 @@ layout {
 spawn-sh-at-startup "steam"
 spawn-at-startup "sh" "-c" "yaskkserv2 --google-suggest /home/mashu/nixx/home/libskk/jisyo.yaskkserv2 && fcitx5"
 spawn-sh-at-startup "noctalia"
-spawn-at-startup "sh" "-c" " sleep 5 && discord --gtk-version=4 --ozone-platform-hint=auto --wayland-text-input-version=3"
+spawn-at-startup "sh" "-c" " sleep 5 && vesktop --gtk-version=4 --ozone-platform-hint=auto --wayland-text-input-version=3"
 spawn-at-startup "sh" "-c" " sleep 10 && openrgb --startminimized -p /home/mashu/.config/OpenRGB/pro.orp"
 
 hotkey-overlay {
@@ -141,7 +141,7 @@ window-rule {
     // This app-id regular expression will work for both:
     // - host Firefox (app-id is "firefox")
     // - Flatpak Firefox (app-id is "org.mozilla.firefox")
-    match app-id=r#"discord$"#
+    match app-id=r#"vesktop$"#
     open-on-output "DP-2"
     default-column-width { proportion 1.0; }
     default-window-height { proportion 1.0; }
