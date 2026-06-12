@@ -36,11 +36,9 @@
     enable = true;
     extraPortals = with pkgs; [
       xdg-desktop-portal-gnome
-      xdg-desktop-portal-wlr
     ];
     configPackages = with pkgs; [
       xdg-desktop-portal-gnome
-      xdg-desktop-portal-wlr
     ];
     config = {
       common = {
@@ -52,8 +50,8 @@
         default = [
           "gnome"
         ];
-        "org.freedesktop.impl.portal.ScreenCast" = [ "wlr" ];
-        "org.freedesktop.impl.portal.Screenshot" = [ "wlr" ];
+        "org.freedesktop.impl.portal.ScreenCast" = [ "gnome" ];
+        "org.freedesktop.impl.portal.Screenshot" = [ "gnome" ];
       };
     };
   };

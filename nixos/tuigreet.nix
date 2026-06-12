@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
   services.greetd = {
-    enable = false;
+    enable = true;
     settings = {
       default_session = {
         command = "tuigreet --time --remember --cmd niri-session";
