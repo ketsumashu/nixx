@@ -32,7 +32,6 @@
     yaskkserv2
     openrgb
     ddcutil
-    vesktop
     arrpc
   ];
 }
