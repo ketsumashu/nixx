@@ -5,7 +5,7 @@
     enable = true;
     discord = {
       krisp.enable = true;
-      vencord.enable = true;
+      vencord.enable = false;
       openASAR.enable = true;
     };
   };
