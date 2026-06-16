@@ -108,15 +108,8 @@
       };
       file-browser = {
         enable = true;
-        display_stat = false;
         settings = {
-          layout_strategy = "vertical";
-          layout_config = {
-            anchor = "SE";
-            height = 0.2;
-            width = 0.45;
-            prompt_position = "top";
-          };
+          display_stat = false;
           sorting_strategy = "ascending";
           previewer = false;
           select_buffer = true;
@@ -126,6 +119,13 @@
           hidden = {
             file_browser = true;
             folder_browser = true;
+          };
+          layout_strategy = "vertical";
+          layout_config = {
+            anchor = "SE";
+            height = 0.2;
+            width = 0.45;
+            prompt_position = "top";
           };
         };
       };
