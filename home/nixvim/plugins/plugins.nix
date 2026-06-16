@@ -31,7 +31,6 @@
     nvim-ufo.enable = pkgs.lib.mkDefault true;
     toggleterm = {
       enable = pkgs.lib.mkDefault true;
-      lazyload.settings.cmd = "ToggleTerm";
       settings = {
         direction = "horizontal";
         floatOpts = {
