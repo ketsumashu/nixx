@@ -109,7 +109,6 @@
       file-browser = {
         enable = true;
         settings = {
-          display_stat = false;
           sorting_strategy = "ascending";
           previewer = false;
           select_buffer = true;
