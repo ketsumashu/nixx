@@ -14,7 +14,7 @@
     ./vivaldi
     ./niri
     ./input
-    #./noctalia
+    ./noctalia
     ./firefox
   ];
 
