@@ -12,7 +12,7 @@
       url = "github:nix-community/nixvim";
     };
     noctalia = {
-      url = "github:noctalia-dev/noctalia";
+      url = "github:noctalia-dev/noctalia/legacy-v4";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nixcord = {
