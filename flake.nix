@@ -11,10 +11,10 @@
     nixvim = {
       url = "github:nix-community/nixvim";
     };
-    noctalia = {
-      url = "github:noctalia-dev/noctalia";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    #noctalia = {
+    #  url = "github:noctalia-dev/noctalia";
+    #  inputs.nixpkgs.follows = "nixpkgs";
+    #};
     nixcord = {
       url = "github:FlameFlag/nixcord";
     };
@@ -36,7 +36,7 @@
       home-manager,
       nixvim,
       nixos-hardware,
-      noctalia,
+      #noctalia,
       zen,
       nixcord,
       ...
@@ -65,7 +65,7 @@
                 extraSpecialArgs = {
                   inherit inputs;
                   inherit nixvim;
-                  inherit noctalia;
+                  #inherit noctalia;
                   inherit nixcord;
                   inherit zen;
                 };
