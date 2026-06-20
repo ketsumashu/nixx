@@ -34,5 +34,6 @@
     ddcutil
     arrpc
     vesktop
+    noctalia-shell
   ];
 }
