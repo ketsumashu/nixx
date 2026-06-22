@@ -13,6 +13,7 @@
       helvetica-neue-lt-std
       envypn-font
       gohufont
+      jetbrains-mono
     ];
     fontDir.enable = true;
     fontconfig.enable = true;
