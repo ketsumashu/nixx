@@ -63,7 +63,7 @@ layout {
 
 spawn-sh-at-startup "steam"
 spawn-at-startup "sh" "-c" "yaskkserv2 --google-suggest /home/mashu/nixx/home/libskk/jisyo.yaskkserv2 && fcitx5"
-spawn-sh-at-startup "noctalia"
+spawn-sh-at-startup "noctalia-shell"
 spawn-at-startup "sh" "-c" " sleep 5 && vesktop --gtk-version=4 --ozone-platform-hint=auto --wayland-text-input-version=3"
 spawn-at-startup "sh" "-c" " sleep 10 && openrgb --startminimized -p /home/mashu/.config/OpenRGB/pro.orp"
 
@@ -168,20 +168,20 @@ layer-rule {
   match namespace="^noctalia-backdrop"
   place-within-backdrop true
 }
-layer-rule {
-  match namespace="^noctalia-(bar-[^\"]+|notification|dock|panel|osd|launcher)$"
-  background-effect {
-    xray false
-    blur true
-  }
-}
+//layer-rule {
+//  match namespace="^noctalia-(bar-[^\"]+|notification|dock|panel|osd|launcher)$"
+//  background-effect {
+//    xray true
+//    blur true
+//  }
+//}
 binds {
   Mod+Shift+Slash { show-hotkey-overlay; }
 
   Mod+Return hotkey-overlay-title="Open a Terminal: wezterm" { spawn "wezterm"; }
   Mod+b hotkey-overlay-title="Open a browser: zen" { spawn-sh "zen-beta"; }
-  Mod+space hotkey-overlay-title="Run an Application Launcher" { spawn-sh "noctalia msg panel-toggle launcher"; }
-  Super+Alt+p hotkey-overlay-title="powermenu" { spawn-sh "noctalia msg panel-toggle session"; }
+  Mod+space hotkey-overlay-title="Run an Application Launcher" { spawn-sh "noctalia-shell ipc call launcher toggle"; }
+  Super+Alt+p hotkey-overlay-title="powermenu" { spawn-sh "noctalia-shell ipc call sessionMenu toggle"; }
 
   XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+"; }
   XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-"; }
