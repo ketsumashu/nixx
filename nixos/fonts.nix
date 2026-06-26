@@ -6,14 +6,14 @@
       nerd-fonts.fira-code
       cozette
       noto-fonts
-      noto-fonts-cjk-sans
-      noto-fonts-cjk-serif
       plemoljp-hs
       terminus_font
       helvetica-neue-lt-std
       envypn-font
       gohufont
       jetbrains-mono
+      noto-fonts-cjk-sans-static
+      noto-fonts-cjk-serif-static
     ];
     fontDir.enable = true;
     fontconfig.enable = true;
