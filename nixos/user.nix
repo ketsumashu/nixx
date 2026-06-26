@@ -16,6 +16,8 @@
     "/share/fish"
     "/share/applications"
     "/share/xdg-desktop-portal"
+    "/var/lib/flatpak/exports/share"
+    "/home/mashu/.local/share/flatpak/exports/share"
   ];
 
   security = {
