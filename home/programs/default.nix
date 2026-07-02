@@ -36,5 +36,6 @@
     vesktop
     noctalia-shell
     mcpelauncher-ui-qt
+    helix
   ];
 }
