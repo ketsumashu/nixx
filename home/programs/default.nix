@@ -34,7 +34,6 @@
     ddcutil
     arrpc
     vesktop
-    noctalia-shell
-    helix
+      helix
   ];
 }
