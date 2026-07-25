@@ -30,6 +30,7 @@
     envfs = {
       enable = true;
     };
+    flatpak.enable = true;
   };
 
   system.stateVersion = "26.05";

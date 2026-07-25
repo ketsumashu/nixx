@@ -6,9 +6,6 @@
       "networkmanager"
       "wheel"
     ];
-    packages = with pkgs; [
-     flatpak
-    ];
   };
   environment.variables = {
     MOZ_ENABLE_WAYLAND = "1";
