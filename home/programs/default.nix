@@ -35,6 +35,5 @@
     arrpc
     vesktop
     helix
-    mcpelauncher-ui-qt
   ];
 }

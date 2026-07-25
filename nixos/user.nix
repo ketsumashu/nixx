@@ -1,10 +1,13 @@
-{
+{pkgs, ...}:{
   users.users.mashu = {
     isNormalUser = true;
     description = "mashu";
     extraGroups = [
       "networkmanager"
       "wheel"
+    ];
+    packages = with pkgs; [
+     flatpak
     ];
   };
   environment.variables = {
@@ -24,4 +27,8 @@
     polkit.enable = true;
     sudo.wheelNeedsPassword = false;
   };
+
+  packages = with pkgs; [
+    flatpak
+  ];
 }
