@@ -32,6 +32,8 @@
     };
     flatpak.enable = true;
   };
+  xdg.portal.enable = true;
+  xdg.portal.extraPortals = [pkgs.xdg-desktop-portal-gtk];
 
   system.stateVersion = "26.05";
 }
