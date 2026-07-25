@@ -27,8 +27,4 @@
     polkit.enable = true;
     sudo.wheelNeedsPassword = false;
   };
-
-  packages = with pkgs; [
-    flatpak
-  ];
 }
