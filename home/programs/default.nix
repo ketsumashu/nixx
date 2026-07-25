@@ -34,6 +34,7 @@
     ddcutil
     arrpc
     vesktop
-      helix
+    helix
+    mcpelauncher-ui-qt
   ];
 }
