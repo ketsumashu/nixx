@@ -26,6 +26,7 @@
     xwayland-satellite
     nautilus
     qt6Packages.qt6ct
+    libdisplay-info
     tree-sitter
     fastfetch
     vial
