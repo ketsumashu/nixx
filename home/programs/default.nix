@@ -35,6 +35,6 @@
     ddcutil
     arrpc
     vesktop
-    helix
+    liberica-qt-bin
   ];
 }
