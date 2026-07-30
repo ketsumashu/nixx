@@ -10,7 +10,7 @@
     ./alpha.nix
     ./autocmds.nix
     ./bufferline.nix
-    #./cmp.nix
+    ./cmp.nix
     ./colorscheme.nix
     ./options.nix
     ./status.nix
