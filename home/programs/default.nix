@@ -35,6 +35,6 @@
     ddcutil
     arrpc
     vesktop
-    liberica-qt-bin
+    zulu
   ];
 }
