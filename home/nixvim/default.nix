@@ -3,7 +3,7 @@
   imports = [
     nixvim.homeModules.nixvim
     ./keymaps
-    #./lsp
+    ./lsp
     #./plugins
     ./treesitter
     ./ui
