@@ -4,7 +4,7 @@
     nixvim.homeModules.nixvim
     ./keymaps
     ./lsp
-    #./plugins
+    ./plugins
     ./treesitter
     ./ui
     ./alpha.nix
