@@ -20,7 +20,6 @@
       '';
     };
     lastplace.enable = pkgs.lib.mkDefault true;
-    sleuth.enable = pkgs.lib.mkDefault true;
     nvim-tree = {
       enable = pkgs.lib.mkDefault false;
       settings = {
@@ -54,26 +53,7 @@
       };
     };
     colorizer.enable = pkgs.lib.mkDefault true;
-    vim-matchup = {
-      enable = pkgs.lib.mkDefault true;
-      settings = pkgs.lib.mkDefault {
-        surround_enabled = pkgs.lib.mkDefault 1;
-        transmute_enabled = pkgs.lib.mkDefault 1;
-      };
-      treesitter = pkgs.lib.mkDefault {
-        enable = pkgs.lib.mkDefault true;
-      };
-    };
     web-devicons.enable = true;
-    typst-preview = {
-      enable = true;
-      settings = {
-        dependencies_bin = {
-          tinymist = "${pkgs.tinymist}/bin/tinymist";
-          websocat = "${pkgs.websocat}/bin/websocat";
-        };
-      };
-    };
     bufdelete.enable = true;
   };
 }
