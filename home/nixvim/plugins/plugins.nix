@@ -1,7 +1,6 @@
 { pkgs, ... }:
 {
   programs.nixvim.plugins = {
-    lz-n.enable = true;
     nvim-autopairs = {
       enable = pkgs.lib.mkDefault true;
       settings = {
@@ -28,7 +27,6 @@
         update_focused_file.enable = pkgs.lib.mkDefault true;
       };
     };
-    nvim-ufo.enable = pkgs.lib.mkDefault true;
     toggleterm = {
       enable = pkgs.lib.mkDefault true;
       settings = {
@@ -53,13 +51,6 @@
       enable = pkgs.lib.mkDefault true;
       settings = {
         under_cursor = pkgs.lib.mkDefault true;
-      };
-    };
-    navic = {
-      enable = pkgs.lib.mkDefault true;
-      settings = {
-        highlight = pkgs.lib.mkDefault true;
-        lsp.autoAttach = pkgs.lib.mkDefault true;
       };
     };
     colorizer.enable = pkgs.lib.mkDefault true;
