@@ -35,6 +35,6 @@
     ddcutil
     arrpc
     vesktop
-    zulu
+    (pkgs.zulu.override {enableJavaFX = true;})
   ];
 }
