@@ -46,12 +46,6 @@
         '';
       };
     };
-    illuminate = {
-      enable = pkgs.lib.mkDefault true;
-      settings = {
-        under_cursor = pkgs.lib.mkDefault true;
-      };
-    };
     colorizer.enable = pkgs.lib.mkDefault true;
     web-devicons.enable = true;
     bufdelete.enable = true;
