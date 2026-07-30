@@ -3,8 +3,8 @@
   imports = [
     nixvim.homeModules.nixvim
     ./keymaps
-    ./lsp
-    ./plugins
+    #./lsp
+    #./plugins
     ./treesitter
     ./ui
     ./alpha.nix
