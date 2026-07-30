@@ -10,10 +10,10 @@
     };
     nixvim = {
       url = "github:nix-community/nixvim";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
     noctalia = {
       url = "github:noctalia-dev/noctalia/cachix";
-      #inputs.nixpkgs.follows = "nixpkgs";
     };
     nixcord = {
       url = "github:FlameFlag/nixcord";
