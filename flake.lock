@@ -81,11 +81,11 @@
         "nixpkgs-nixcord": "nixpkgs-nixcord"
       },
       "locked": {
-        "lastModified": 1785374849,
-        "narHash": "sha256-PchiZVsRnL35p9PPUKS/9sTzh3JR+popjrELhMatqhQ=",
+        "lastModified": 1785379815,
+        "narHash": "sha256-8tAgIblbxz3QZZLvnc7vGpc0y0SmeOJqIo8tEX9XmE8=",
         "owner": "FlameFlag",
         "repo": "nixcord",
-        "rev": "df6b9a5fc59ea6750c39b377fdd67c7a026442eb",
+        "rev": "9e0853c383b037c630840f993f75eae3095e3dc5",
         "type": "github"
       },
       "original": {
@@ -229,11 +229,11 @@
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "lastModified": 1785373752,
-        "narHash": "sha256-IAZQSE3NFv+5Z00b7O1mvkwrwcRX2o0Vq7vVl2PntKU=",
+        "lastModified": 1785377861,
+        "narHash": "sha256-XimkvVE08sY7EAmpPWx2kE6YKhPA8HcW+LrjCwf09rw=",
         "owner": "noctalia-dev",
         "repo": "noctalia",
-        "rev": "d218905ad07587e2aa8c23d931096244f90af875",
+        "rev": "74ae1cb5f7048a9c024903788bc6ad7f45e907fc",
         "type": "github"
       },
       "original": {
