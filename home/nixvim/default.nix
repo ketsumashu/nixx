@@ -12,7 +12,6 @@
     ./bufferline.nix
     ./cmp.nix
     ./colorscheme.nix
-    ./extra.nix
     ./options.nix
     ./status.nix
   ];
