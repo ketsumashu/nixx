@@ -82,6 +82,10 @@ window-rule {
     open-floating true
 }
 window-rule {
+    match title=r#"^bmz-player"#
+    open-fullscreen true
+}
+window-rule {
     match app-id=r#"mcpelauncher-ui-qt$"#
     open-floating true
 }
