@@ -9,8 +9,11 @@
         "nix-command"
         "flakes"
       ];
-      trusted-users = ["root" "mashu"];
-      substituters = [ 
+      trusted-users = [
+        "root"
+        "mashu"
+      ];
+      substituters = [
         "https://wezterm.cachix.org"
         "https://noctalia.cachix.org"
       ];
@@ -44,7 +47,7 @@
     flatpak.enable = true;
   };
   xdg.portal.enable = true;
-  xdg.portal.extraPortals = [pkgs.xdg-desktop-portal-gtk];
+  xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
   xdg.portal.config.common.default = "*";
   system.stateVersion = "26.05";
 }

@@ -1,4 +1,4 @@
-{pkgs, ...}:{
+{ pkgs, ... }: {
   users.users.mashu = {
     isNormalUser = true;
     description = "mashu";
