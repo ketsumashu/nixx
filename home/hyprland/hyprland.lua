@@ -162,6 +162,11 @@ for _, rule in ipairs(float_rules) do
 end
 
 hl.window_rule({
+    match = { title = ".*bmz.*" },
+    fullscreen = true,
+})
+
+hl.window_rule({
     match = { class = "vesktop" },
     workspace = "7",
 })

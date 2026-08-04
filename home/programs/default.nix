@@ -34,5 +34,6 @@
     ddcutil
     arrpc
     vesktop
+    gpu-screen-recorder
   ];
 }
