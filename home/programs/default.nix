@@ -26,7 +26,6 @@
     xwayland-satellite
     nautilus
     qt6Packages.qt6ct
-    libdisplay-info
     tree-sitter
     fastfetch
     vial
@@ -35,6 +34,6 @@
     ddcutil
     arrpc
     vesktop
-    (pkgs.zulu.override {enableJavaFX = true;})
+    umu-launcher
   ];
 }
