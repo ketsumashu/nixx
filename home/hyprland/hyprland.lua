@@ -166,6 +166,10 @@ hl.window_rule({
     workspace = "7",
 })
 hl.window_rule({
+    match = { class = "steam" },
+    workspace = "1",
+})
+hl.window_rule({
     match = { class = ".*steam.*", title = ".*Manager.*" },
 })
 
@@ -174,12 +178,12 @@ for _, leaf_name in ipairs({ "windows", "workspaces" }) do
     hl.animation({
         leaf = leaf_name,
         enabled = true,
-        speed = 20,
+        speed = 40,
         spring = "rubber",
         style = "slide"
     })
 end
-hl.curve( "rubber", { type = "spring", mass = 1.2, stiffness = 200, dampening = 30 } )
+hl.curve( "rubber", { type = "spring", mass = 1, stiffness = 300, dampening = 30 } )
 
 -- Autostart
 hl.on("hyprland.start", function()
