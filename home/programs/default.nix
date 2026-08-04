@@ -35,5 +35,6 @@
     arrpc
     vesktop
     umu-launcher
+    desktop-file-utils
   ];
 }
