@@ -29,7 +29,7 @@
 
   xdg.configFile = {
     "hypr/hyprland.lua".source =
-      config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/nixx/hyprland/hyprland.lua";
+      config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/nixx/home/hyprland/hyprland.lua";
   };
 }
 #
