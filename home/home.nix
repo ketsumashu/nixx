@@ -16,6 +16,7 @@
     ./input
     ./noctalia
     ./firefox
+    ./hyprland
   ];
 
   home = {

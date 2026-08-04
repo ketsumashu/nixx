@@ -21,13 +21,10 @@
   #   BROWSER = "qutebrowser";
   # };
 
-  # wayland.windowManager.hyprland = {
-  #   enable = true;
-  #   systemd.enable = true;
-  #   #plugins = [
-  #   #  inputs.hyprland-plugins.packages.${pkgs.stdenv.hostPlatform.system}.hyprscrolling
-  #   #];
-  # };
+  wayland.windowManager.hyprland = {
+    enable = true;
+    systemd.enable = true;
+  };
 
   # wayland.windowManager.hyprland.settings = {
   #   "$mod" = "Super_L";
