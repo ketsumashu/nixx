@@ -174,6 +174,7 @@ hl.window_rule({
 })
 
 --window animations
+hl.curve( "rubber", { type = "spring", mass = 1, stiffness = 300, dampening = 30 } )
 for _, leaf_name in ipairs({ "windows", "workspaces" }) do
     hl.animation({
         leaf = leaf_name,
@@ -183,7 +184,6 @@ for _, leaf_name in ipairs({ "windows", "workspaces" }) do
         style = "slide"
     })
 end
-hl.curve( "rubber", { type = "spring", mass = 1, stiffness = 300, dampening = 30 } )
 
 -- Autostart
 hl.on("hyprland.start", function()
