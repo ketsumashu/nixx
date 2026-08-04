@@ -30,6 +30,7 @@
       clean.enable = true;
       clean.extraArgs = "--keep-one";
       flake = "/home/mashu/nixx/";
+    };
     nix-ld = {
       enable = true;
       libraries = with pkgs; [
