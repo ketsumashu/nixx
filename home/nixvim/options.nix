@@ -33,7 +33,7 @@
       cursorline = false;
       laststatus = 3;
       number = true;
-      relativenumber = true;
+      relativenumber = false;
       signcolumn = "yes";
       wrap = false;
       scrolloff = 8;
