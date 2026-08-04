@@ -3,15 +3,12 @@
     ./nixvim
     ./fish
     ./terminals
-    ./foot
     ./starship
-    ./wezterm
     ./libskk
     ./localfont
     ./scripts
     ./programs
     ./gui
-    ./vivaldi
     ./niri
     ./input
     ./noctalia
