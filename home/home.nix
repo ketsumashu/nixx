@@ -14,6 +14,7 @@
     ./noctalia
     ./firefox
     ./hyprland
+    ./nixcord
   ];
 
   home = {
