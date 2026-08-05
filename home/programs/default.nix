@@ -32,8 +32,6 @@
     yaskkserv2
     openrgb
     ddcutil
-    arrpc
-    vesktop
     gpu-screen-recorder
   ];
 }

@@ -63,7 +63,7 @@ layout {
 
 spawn-sh-at-startup "steam"
 spawn-at-startup "sh" "-c" "yaskkserv2 --google-suggest /home/mashu/nixx/home/libskk/jisyo.yaskkserv2 && fcitx5"
-spawn-at-startup "sh" "-c" " sleep 5 && vesktop --gtk-version=4 --ozone-platform-hint=auto --wayland-text-input-version=3"
+spawn-at-startup "sh" "-c" " sleep 5 && discord --gtk-version=4 --ozone-platform-hint=auto --wayland-text-input-version=3"
 spawn-at-startup "sh" "-c" " sleep 10 && openrgb --startminimized -p /home/mashu/.config/OpenRGB/pro.orp"
 
 hotkey-overlay {
@@ -145,10 +145,7 @@ window-rule {
     open-floating true
 }
 window-rule {
-    // This app-id regular expression will work for both:
-    // - host Firefox (app-id is "firefox")
-    // - Flatpak Firefox (app-id is "org.mozilla.firefox")
-    match app-id=r#"vesktop$"#
+    match app-id=r#"discord$"#
     open-on-output "DP-2"
     default-column-width { proportion 1.0; }
     default-window-height { proportion 1.0; }
@@ -185,8 +182,8 @@ layer-rule {
 binds {
   Mod+Shift+Slash { show-hotkey-overlay; }
 
-  Mod+Return hotkey-overlay-title="Open a Terminal: wezterm" { spawn "wezterm"; }
-  Mod+b hotkey-overlay-title="Open a browser: zen" { spawn-sh "zen-beta"; }
+  Mod+Return hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
+  Mod+b hotkey-overlay-title="Open a browser: zen" { spawn "zen-beta"; }
   Mod+space hotkey-overlay-title="Run an Application Launcher" { spawn-sh "noctalia msg panel-toggle launcher"; }
   Super+Alt+p hotkey-overlay-title="powermenu" { spawn-sh "noctalia msg panel-toggle session"; }
 
