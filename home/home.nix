@@ -13,7 +13,6 @@
     ./input
     ./noctalia
     ./firefox
-    ./hyprland
     ./nixcord
   ];
 
