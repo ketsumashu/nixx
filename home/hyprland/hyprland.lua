@@ -167,12 +167,12 @@ hl.window_rule({
 })
 
 hl.window_rule({
-    match = { class = "vesktop" },
-    workspace = "7",
+    match = { class = ".*vesktop.*" },
+    workspace = "7 silent",
 })
 hl.window_rule({
     match = { class = "steam" },
-    workspace = "1",
+    workspace = "1 silent",
 })
 hl.window_rule({
     match = { class = ".*steam.*", title = ".*Manager.*" },
@@ -194,8 +194,9 @@ end
 hl.on("hyprland.start", function()
     hl.exec_cmd("dbus-update-activation-environment --systemd DISPLAY HYPRLAND_INSTANCE_SIGNATURE WAYLAND_DISPLAY XDG_CURRENT_DESKTOP XDG_SESSION_TYPE && systemctl --user stop hyprland-session.target && systemctl --user start hyprland-session.target")
     hl.exec_cmd("systemctl --user enable xdg-desktop-portal-hyprland")
-    hl.exec_cmd("hyprctl dispatch exec \"[workspace 1 silent]\" steam")
-    hl.exec_cmd("hyprctl dispatch exec \"[workspace 7 silent]\" \"vesktop --gtk-version=4 --ozone-platform=wayland\"")
+    hl.exec_cmd("steam")
+    hl.exec_cmd("yaskkserv2 --google-suggest /home/mashu/nixx/home/libskk/jisyo.yaskkserv2")
+    hl.exec_cmd("vesktop --gtk-version=4 --ozone-platform=wayland")
     hl.exec_cmd("openrgb --startminimized -p ~/.config/OpenRGB/pro.orp")
 end)
 

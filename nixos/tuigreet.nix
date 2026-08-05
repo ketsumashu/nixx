@@ -8,7 +8,7 @@
         user = "greeter";
       };
       initial_session = {
-        command = "start-hyprland";
+        command = "niri";
         user = "mashu";
       };
     };
