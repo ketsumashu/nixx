@@ -33,5 +33,8 @@
     openrgb
     ddcutil
     gpu-screen-recorder
+    (zulu17.override  {
+      enableJavaFX = true;
+    })
   ];
 }
