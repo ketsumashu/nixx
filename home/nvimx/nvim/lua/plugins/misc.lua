@@ -78,8 +78,8 @@ return {
         long_message_to_split = false,
         lsp_doc_border = true,
       },
-      notify = { enabled = false },
-      messages = { enabled = false },
+      notify = { enabled = true },
+      messages = { enabled = true },
       views = {
         cmdline_popup = {
           position = {
