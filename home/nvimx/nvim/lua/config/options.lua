@@ -2,7 +2,7 @@ local opt = vim.opt
 
 opt.clipboard = "unnamedplus"
 opt.termguicolors = true
-opt.showmode = true
+opt.showmode = false
 opt.backup = false
 opt.cmdheight = 0
 opt.conceallevel = 0
@@ -38,5 +38,6 @@ opt.listchars = {
   trail = "•",
   nbsp = "␣",
 }
+
 opt.list = true
 opt.showbreak = "↪ "
