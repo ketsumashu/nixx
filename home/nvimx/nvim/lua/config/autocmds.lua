@@ -41,7 +41,6 @@ vim.api.nvim_create_autocmd("VimResized", {
     vim.cmd("tabdo wincmd =")
   end,
 })
-
 vim.api.nvim_create_autocmd("BufWritePre", {
   group = augroup,
   pattern = {
@@ -53,10 +52,21 @@ vim.api.nvim_create_autocmd("BufWritePre", {
       async = false,
     })
   end,
-  vim.api.nvim_create_autocmd("Progress", {
-    group = augroup,
-    callback = function(args)
-      vim.print(args.data)
-    end,
-  })
+vim.api.nvim_create_autocmd("Progress", {
+  group = augroup,
+  callback = function(args)
+    local data = args.data
+    if data.source ~= "nvim" then
+      return
+    end
+    if data.id ~= "bufwrite" then
+      return
+    end
+    if data.status ~= "success" then
+      return
+    end
+    vim.notify(table.concat(data.text, "\n"), vim.log.levels.INFO, {
+      title = "Written",
+    })
+  end,
 })
