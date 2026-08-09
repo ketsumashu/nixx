@@ -1,123 +1,207 @@
+local api = vim.api
+
 local colors = {
-  regular0 = "#525566",
-  regular1 = "#d59076",
-  regular2 = "#83aa74",
-  regular3 = "#b8a161",
-  regular4 = "#889bb4",
-  regular5 = "#a994b8",
-  regular6 = "#77adb1",
-  regular7 = "#bfbed0",
-  bright0 = "#666b7f",
-  bright1 = "#fead90",
-  bright2 = "#9dca8c",
-  bright3 = "#dbc380",
-  bright4 = "#afc5de",
-  bright5 = "#cdb6dd",
-  bright6 = "#94cdd1",
-  bright7 = "#f0ecfe",
+  normal = "#a994b8",
+  insert = "#889bb4",
+  visual = "#b8a161",
+  command = "#83aa74",
+  select = "#77adb1",
+  replace = "#cdb6dd",
+  terminal = "#9dca8c",
+  prompt = "#dbc380",
+  shell = "#f0ecfe",
+
+  meta = "#fead90",
+  progress = "#77adb1",
 }
-
-local mode_colors = {
-  n = colors.regular5,
-  i = colors.regular4,
-
-  v = colors.regular3,
-  V = colors.regular3,
-  ["\22"] = colors.regular3,
-
-  c = colors.regular2,
-  no = colors.regular1,
-
-  s = colors.regular6,
-  S = colors.regular6,
-  ["\19"] = colors.regular6,
-
-  ic = colors.bright4,
-
-  R = colors.bright5,
-  Rv = colors.bright5,
-
-  cv = colors.bright1,
-  ce = colors.bright1,
-
-  r = colors.bright3,
-  rm = colors.bright3,
-
-  ["r?"] = colors.bright7,
-  ["!"] = colors.bright7,
-
-  t = colors.bright2,
-}
-
-local function set_highlight(name, opts)
-  vim.api.nvim_set_hl(0, name, opts)
-end
-
-local function update_mode_highlight()
-  local mode = vim.fn.mode()
-
-  set_highlight("StatusMode", {
-    fg = mode_colors[mode] or colors.regular5,
-    bg = "NONE",
-  })
-end
 
 local function setup_highlights()
-  set_highlight("StatusRight", {
-    fg = colors.bright1,
+  api.nvim_set_hl(0, "StatusLine", {
     bg = "NONE",
   })
 
-  set_highlight("StatusLine", {
+  api.nvim_set_hl(0, "StatusModeNormal", {
+    fg = colors.normal,
     bg = "NONE",
-    update = true,
   })
 
-  set_highlight("FloatBorder", {
+  api.nvim_set_hl(0, "StatusModeInsert", {
+    fg = colors.insert,
     bg = "NONE",
-    update = true,
   })
 
-  update_mode_highlight()
+  api.nvim_set_hl(0, "StatusModeVisual", {
+    fg = colors.visual,
+    bg = "NONE",
+  })
+
+  api.nvim_set_hl(0, "StatusModeCommand", {
+    fg = colors.command,
+    bg = "NONE",
+  })
+
+  api.nvim_set_hl(0, "StatusModeSelect", {
+    fg = colors.select,
+    bg = "NONE",
+  })
+
+  api.nvim_set_hl(0, "StatusModeReplace", {
+    fg = colors.replace,
+    bg = "NONE",
+  })
+
+  api.nvim_set_hl(0, "StatusModeTerminal", {
+    fg = colors.terminal,
+    bg = "NONE",
+  })
+
+  api.nvim_set_hl(0, "StatusModePrompt", {
+    fg = colors.prompt,
+    bg = "NONE",
+  })
+
+  api.nvim_set_hl(0, "StatusModeShell", {
+    fg = colors.shell,
+    bg = "NONE",
+  })
+
+  api.nvim_set_hl(0, "StatusMeta", {
+    fg = colors.meta,
+    bg = "NONE",
+  })
+
+  api.nvim_set_hl(0, "StatusProgress", {
+    fg = colors.progress,
+    bg = "NONE",
+  })
 end
 
-local function lsp_name()
-  local clients = vim.lsp.get_clients({ bufnr = 0 })
+local function mode_highlight()
+  local mode = api.nvim_get_mode().mode
 
-  if #clients == 0 then
-    return "No Active Lsp"
+  if mode:sub(1, 1) == "i" then
+    return "StatusModeInsert"
   end
 
-  return clients[1].name
+  if mode == "v" or mode == "V" or mode == "\22" then
+    return "StatusModeVisual"
+  end
+
+  if mode:sub(1, 1) == "s" or mode == "S" or mode == "\19" then
+    return "StatusModeSelect"
+  end
+
+  if mode:sub(1, 1) == "R" then
+    return "StatusModeReplace"
+  end
+
+  if mode:sub(1, 1) == "c" then
+    return "StatusModeCommand"
+  end
+
+  if mode:sub(1, 1) == "r" then
+    return "StatusModePrompt"
+  end
+
+  if mode == "!" then
+    return "StatusModeShell"
+  end
+
+  if mode:sub(1, 1) == "t" or mode == "nt" then
+    return "StatusModeTerminal"
+  end
+
+  return "StatusModeNormal"
 end
 
-_G.status_line = function()
+local function status_buffer()
+  local winid = tonumber(vim.g.statusline_winid)
+
+  if not winid or winid == 0 or not api.nvim_win_is_valid(winid) then
+    winid = api.nvim_get_current_win()
+  end
+
+  return api.nvim_win_get_buf(winid)
+end
+
+local function escape(text)
+  return text:gsub("%%", "%%%%")
+end
+
+local function lsp_status(bufnr)
+  local clients = vim.lsp.get_clients({
+    bufnr = bufnr,
+  })
+
+  if #clients == 0 then
+    return "No LSP"
+  end
+
+  local names = {}
+
+  for _, client in ipairs(clients) do
+    names[#names + 1] = client.name
+  end
+
+  table.sort(names)
+
+  return table.concat(names, ", ")
+end
+
+local function render()
+  local bufnr = status_buffer()
+
+  local progress = vim.ui.progress_status():gsub("%s+$", "")
+  local diagnostics = vim.diagnostic.status(bufnr)
+  local filetype = vim.bo[bufnr].filetype
+  local lsp = lsp_status(bufnr)
+
+  local center = ""
+
+  if progress ~= "" then
+    center = "%#StatusProgress#" .. progress
+  end
+
+  local right = {}
+
+  if diagnostics ~= "" then
+    right[#right + 1] = "%#StatusMeta#" .. diagnostics
+  end
+
+  if filetype ~= "" then
+    right[#right + 1] = "%#StatusMeta#" .. escape(filetype)
+  end
+
+  right[#right + 1] = "%#StatusMeta#" .. escape(lsp)
+
   return table.concat({
+    "%#",
+    mode_highlight(),
+    "# ",
+    "%t%M%r%h%w",
+
     "%=",
-    "  ",
-    "%#StatusMode#",
-    vim.fn.expand("%:t"),
-    "%M%r%h%w",
-    "    ",
-    "%#StatusRight#",
-    "%{&ft}",
-    "  ",
-    lsp_name(),
+
+    center,
+
+    "%=",
+
+    table.concat(right, "  "),
+    " ",
   })
 end
 
-local augroup = vim.api.nvim_create_augroup("status_line", { clear = true })
-
-vim.api.nvim_create_autocmd("ModeChanged", {
-  group = augroup,
-  callback = update_mode_highlight,
+local augroup = api.nvim_create_augroup("statusline", {
+  clear = true,
 })
 
-vim.api.nvim_create_autocmd("ColorScheme", {
+api.nvim_create_autocmd("ColorScheme", {
   group = augroup,
   callback = setup_highlights,
 })
 
 setup_highlights()
 
-vim.opt.statusline = "%!luaeval('status_line()')"
+_G.MashuStatusline = render
+
+vim.opt.statusline = "%!v:lua.MashuStatusline()"
