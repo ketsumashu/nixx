@@ -2,7 +2,7 @@ local opt = vim.opt
 
 opt.clipboard = "unnamedplus"
 opt.termguicolors = true
-opt.showmode = false
+opt.showmode = true
 opt.backup = false
 opt.cmdheight = 0
 opt.conceallevel = 0
@@ -40,13 +40,3 @@ opt.listchars = {
 }
 opt.list = true
 opt.showbreak = "↪ "
-opt.foldmethod = "expr"
-opt.foldnestmax = 20
-opt.foldminlines = 2
-opt.foldlevel = 99
-opt.foldlevelstart = 99
-opt.foldenable = true
-opt.foldexpr = "nvim_treesitter#foldexpr()"
-
-vim.g.loaded_node_provider = 0
-vim.g.loaded_perl_provider = 0
