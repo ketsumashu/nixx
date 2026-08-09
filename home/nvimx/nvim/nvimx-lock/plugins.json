@@ -404,6 +404,24 @@
       "tag": null,
       "version": null
     },
+    "nvim-nio": {
+      "branch": null,
+      "build": {
+        "kind": "none"
+      },
+      "commit": null,
+      "dependencies": [],
+      "inputName": "nvim-nio",
+      "pin": null,
+      "resolvedRef": null,
+      "source": {
+        "owner": "nvim-neotest",
+        "repo": "nvim-nio",
+        "type": "github"
+      },
+      "tag": null,
+      "version": null
+    },
     "nvim-notify": {
       "branch": null,
       "build": {
