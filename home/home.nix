@@ -13,6 +13,7 @@
     ./noctalia
     ./firefox
     ./nixcord
+    ./nvimx
   ];
 
   home = {
