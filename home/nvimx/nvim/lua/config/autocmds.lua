@@ -69,6 +69,7 @@ vim.api.nvim_create_autocmd("Progress", {
     end
     vim.notify(table.concat(data.text, "\n"), vim.log.levels.INFO, {
       title = "Written",
+      timeout = 1000,
     })
   end,
 })
