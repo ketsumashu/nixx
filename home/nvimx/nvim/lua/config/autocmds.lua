@@ -42,7 +42,7 @@ vim.api.nvim_create_autocmd("VimResized", {
   end,
 })
 
-vim.api.nvim_create_autocmd("BufWritePre",{
+vim.api.nvim_create_autocmd("BufWritePre", {
   group = augroup,
   pattern = {
     "*.lua",

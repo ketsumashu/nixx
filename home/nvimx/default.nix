@@ -1,6 +1,6 @@
-{inputs, pkgs, ...}:{
+{ inputs, pkgs, ... }: {
 
-  imports = [inputs.nvimx.homeModules.nvimx];
+  imports = [ inputs.nvimx.homeModules.nvimx ];
 
   programs.nvimx = {
     enable = true;
@@ -8,7 +8,10 @@
     viAlias = true;
     configDir = ./nvim;
     lockDir = ./nvim/nvimx-lock;
-    treesitter.grammars = ["lua" "nix"];
+    treesitter.grammars = [
+      "lua"
+      "nix"
+    ];
 
     lock = {
       installCommand = true;

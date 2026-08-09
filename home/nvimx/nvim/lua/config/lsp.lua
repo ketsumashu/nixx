@@ -4,7 +4,7 @@ vim.lsp.enable({
   "bashls",
 })
 
-vim.lsp.config("lua_ls",{
+vim.lsp.config("lua_ls", {
   capabilities = capabilities,
   settings = {
     Lua = {
