@@ -13,7 +13,15 @@ return {
       for name, config in pairs({
         bashls = {},
         lua_ls = {},
-        nixd = {},
+        nixd = {
+          settings = {
+            nixd = {
+              formatting = {
+                command = { "nixfmt" },
+              },
+            },
+          },
+        },
       }) do
         config.capabilities = capabilities
         vim.lsp.config(name, config)
@@ -23,7 +31,7 @@ return {
       require("lspsaga").setup({
         beacon = { enable = true },
         implement = { enable = true, sign = false },
-        lightbulb = { enable = true, sign = true, virtualText = false },
+        lightbulb = { enable = true, sign = true, virtualText = true },
         outline = { layout = "float" },
         symbolInWinbar = { enable = true },
         ui = { border = "rounded", codeAction = "" },

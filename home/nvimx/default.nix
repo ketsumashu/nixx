@@ -17,6 +17,7 @@
       lockDirRelative = "./nvim/nvimx-lock";
     };
   };
+
   home.packages = with pkgs; [
     nixd
     nixfmt

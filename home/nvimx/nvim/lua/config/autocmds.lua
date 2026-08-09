@@ -28,7 +28,7 @@ vim.api.nvim_create_autocmd("FileType", {
   end,
 })
 
-vim.api.nvim_create_autocmd("CmdWinEnter", {
+vim.api.nvim_create_autocmd("CmdwinEnter", {
   group = augroup,
   callback = function()
     vim.cmd("quit")
@@ -39,5 +39,18 @@ vim.api.nvim_create_autocmd("VimResized", {
   group = augroup,
   callback = function()
     vim.cmd("tabdo wincmd =")
+  end,
+})
+
+vim.api.nvim_create_autocmd("BufWritePre",{
+  group = augroup,
+  pattern = {
+    "*.lua",
+    "*.nix",
+  },
+  callback = function()
+    vim.lsp.buf.format({
+      async = false,
+    })
   end,
 })
