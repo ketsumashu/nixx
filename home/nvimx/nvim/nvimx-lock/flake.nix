@@ -101,26 +101,6 @@
       url = "github:rcarriga/nvim-notify";
       flake = false;
     };
-    nvim-treesitter = {
-      url = "github:nvim-treesitter/nvim-treesitter";
-      flake = false;
-    };
-    nvim-treesitter-context = {
-      url = "github:nvim-treesitter/nvim-treesitter-context";
-      flake = false;
-    };
-    nvim-treesitter-textobjects = {
-      url = "github:nvim-treesitter/nvim-treesitter-textobjects";
-      flake = false;
-    };
-    nvim-ts-autotag = {
-      url = "github:windwp/nvim-ts-autotag";
-      flake = false;
-    };
-    nvim-ts-context-commentstring = {
-      url = "github:JoosepAlviste/nvim-ts-context-commentstring";
-      flake = false;
-    };
     nvim-ufo = {
       url = "github:kevinhwang91/nvim-ufo";
       flake = false;

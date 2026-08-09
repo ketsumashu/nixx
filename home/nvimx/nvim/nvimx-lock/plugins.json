@@ -461,99 +461,6 @@
       "tag": null,
       "version": null
     },
-    "nvim-treesitter": {
-      "branch": null,
-      "build": {
-        "cmd": ":TSUpdate",
-        "kind": "excmd"
-      },
-      "commit": null,
-      "dependencies": [],
-      "inputName": "nvim-treesitter",
-      "pin": null,
-      "resolvedRef": null,
-      "source": {
-        "owner": "nvim-treesitter",
-        "repo": "nvim-treesitter",
-        "type": "github"
-      },
-      "tag": null,
-      "version": null
-    },
-    "nvim-treesitter-context": {
-      "branch": null,
-      "build": {
-        "kind": "none"
-      },
-      "commit": null,
-      "dependencies": [],
-      "inputName": "nvim-treesitter-context",
-      "pin": null,
-      "resolvedRef": null,
-      "source": {
-        "owner": "nvim-treesitter",
-        "repo": "nvim-treesitter-context",
-        "type": "github"
-      },
-      "tag": null,
-      "version": null
-    },
-    "nvim-treesitter-textobjects": {
-      "branch": null,
-      "build": {
-        "kind": "none"
-      },
-      "commit": null,
-      "dependencies": [
-        "nvim-treesitter"
-      ],
-      "inputName": "nvim-treesitter-textobjects",
-      "pin": null,
-      "resolvedRef": null,
-      "source": {
-        "owner": "nvim-treesitter",
-        "repo": "nvim-treesitter-textobjects",
-        "type": "github"
-      },
-      "tag": null,
-      "version": null
-    },
-    "nvim-ts-autotag": {
-      "branch": null,
-      "build": {
-        "kind": "none"
-      },
-      "commit": null,
-      "dependencies": [],
-      "inputName": "nvim-ts-autotag",
-      "pin": null,
-      "resolvedRef": null,
-      "source": {
-        "owner": "windwp",
-        "repo": "nvim-ts-autotag",
-        "type": "github"
-      },
-      "tag": null,
-      "version": null
-    },
-    "nvim-ts-context-commentstring": {
-      "branch": null,
-      "build": {
-        "kind": "none"
-      },
-      "commit": null,
-      "dependencies": [],
-      "inputName": "nvim-ts-context-commentstring",
-      "pin": null,
-      "resolvedRef": null,
-      "source": {
-        "owner": "JoosepAlviste",
-        "repo": "nvim-ts-context-commentstring",
-        "type": "github"
-      },
-      "tag": null,
-      "version": null
-    },
     "nvim-ufo": {
       "branch": null,
       "build": {
@@ -853,7 +760,5 @@
     }
   },
   "schemaVersion": 1,
-  "warnings": [
-    "plugin \"nvim-treesitter\": build is a neovim command (\":TSUpdate\") and cannot be run at build time. nvimx merges parsers from nixpkgs instead -- set programs.nvimx.treesitter.grammars"
-  ]
+  "warnings": []
 }
