@@ -352,6 +352,22 @@
         "type": "github"
       }
     },
+    "nvim-nio": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1784103140,
+        "narHash": "sha256-7NWyTAF6cgB2weYRBmEtGnWlA+pn2A35wlLttOuLNN8=",
+        "owner": "nvim-neotest",
+        "repo": "nvim-nio",
+        "rev": "edcc181a875301dd21840189aa2f2f9ad69fc172",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nvim-neotest",
+        "repo": "nvim-nio",
+        "type": "github"
+      }
+    },
     "nvim-notify": {
       "flake": false,
       "locked": {
@@ -381,6 +397,22 @@
       "original": {
         "owner": "nvim-treesitter",
         "repo": "nvim-treesitter",
+        "type": "github"
+      }
+    },
+    "nvim-ufo": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1768128452,
+        "narHash": "sha256-zISVDb+YwBr5aQ/LdACKJ62eAzvtYVFpon4uh5OjA3A=",
+        "owner": "kevinhwang91",
+        "repo": "nvim-ufo",
+        "rev": "ab3eb124062422d276fae49e0dd63b3ad1062cfc",
+        "type": "github"
+      },
+      "original": {
+        "owner": "kevinhwang91",
+        "repo": "nvim-ufo",
         "type": "github"
       }
     },
@@ -432,6 +464,22 @@
         "type": "github"
       }
     },
+    "promise-async": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1722813441,
+        "narHash": "sha256-9eM66brPjiFlY64vmBetRYrKnpDyN7+/URMm4GsGimA=",
+        "owner": "kevinhwang91",
+        "repo": "promise-async",
+        "rev": "119e8961014c9bfaf1487bf3c2a393d254f337e2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "kevinhwang91",
+        "repo": "promise-async",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "LuaSnip": "LuaSnip",
@@ -456,17 +504,21 @@
         "nvim-lastplace": "nvim-lastplace",
         "nvim-lint": "nvim-lint",
         "nvim-lspconfig": "nvim-lspconfig",
+        "nvim-nio": "nvim-nio",
         "nvim-notify": "nvim-notify",
         "nvim-treesitter": "nvim-treesitter",
+        "nvim-ufo": "nvim-ufo",
         "nvim-web-devicons": "nvim-web-devicons",
         "plenary-nvim": "plenary-nvim",
         "poimandres-nvim": "poimandres-nvim",
+        "promise-async": "promise-async",
         "telescope-file-browser-nvim": "telescope-file-browser-nvim",
         "telescope-frecency-nvim": "telescope-frecency-nvim",
         "telescope-fzf-native-nvim": "telescope-fzf-native-nvim",
         "telescope-nvim": "telescope-nvim",
         "telescope-undo-nvim": "telescope-undo-nvim",
         "toggleterm-nvim": "toggleterm-nvim",
+        "treesj": "treesj",
         "twilight-nvim": "twilight-nvim",
         "which-key-nvim": "which-key-nvim",
         "zen-mode-nvim": "zen-mode-nvim"
@@ -565,6 +617,22 @@
       "original": {
         "owner": "akinsho",
         "repo": "toggleterm.nvim",
+        "type": "github"
+      }
+    },
+    "treesj": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1779977664,
+        "narHash": "sha256-MoR46Z3ghEfsVaB8D3tE154DRdg/2iT2l54PICgC/X4=",
+        "owner": "Wansmer",
+        "repo": "treesj",
+        "rev": "79aedb401bbdc7e4202f7881eab5f6feb2105b0a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Wansmer",
+        "repo": "treesj",
         "type": "github"
       }
     },

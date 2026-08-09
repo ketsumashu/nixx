@@ -404,6 +404,24 @@
       "tag": null,
       "version": null
     },
+    "nvim-nio": {
+      "branch": null,
+      "build": {
+        "kind": "none"
+      },
+      "commit": null,
+      "dependencies": [],
+      "inputName": "nvim-nio",
+      "pin": null,
+      "resolvedRef": null,
+      "source": {
+        "owner": "nvim-neotest",
+        "repo": "nvim-nio",
+        "type": "github"
+      },
+      "tag": null,
+      "version": null
+    },
     "nvim-notify": {
       "branch": null,
       "build": {
@@ -435,6 +453,26 @@
       "source": {
         "owner": "nvim-treesitter",
         "repo": "nvim-treesitter",
+        "type": "github"
+      },
+      "tag": null,
+      "version": null
+    },
+    "nvim-ufo": {
+      "branch": null,
+      "build": {
+        "kind": "none"
+      },
+      "commit": null,
+      "dependencies": [
+        "promise-async"
+      ],
+      "inputName": "nvim-ufo",
+      "pin": null,
+      "resolvedRef": null,
+      "source": {
+        "owner": "kevinhwang91",
+        "repo": "nvim-ufo",
         "type": "github"
       },
       "tag": null,
@@ -489,6 +527,24 @@
       "source": {
         "owner": "olivercederborg",
         "repo": "poimandres.nvim",
+        "type": "github"
+      },
+      "tag": null,
+      "version": null
+    },
+    "promise-async": {
+      "branch": null,
+      "build": {
+        "kind": "none"
+      },
+      "commit": null,
+      "dependencies": [],
+      "inputName": "promise-async",
+      "pin": null,
+      "resolvedRef": null,
+      "source": {
+        "owner": "kevinhwang91",
+        "repo": "promise-async",
         "type": "github"
       },
       "tag": null,
@@ -604,6 +660,24 @@
       "source": {
         "owner": "akinsho",
         "repo": "toggleterm.nvim",
+        "type": "github"
+      },
+      "tag": null,
+      "version": null
+    },
+    "treesj": {
+      "branch": null,
+      "build": {
+        "kind": "none"
+      },
+      "commit": null,
+      "dependencies": [],
+      "inputName": "treesj",
+      "pin": null,
+      "resolvedRef": null,
+      "source": {
+        "owner": "Wansmer",
+        "repo": "treesj",
         "type": "github"
       },
       "tag": null,
