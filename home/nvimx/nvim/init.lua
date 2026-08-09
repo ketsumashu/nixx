@@ -3,11 +3,10 @@ vim.g.maplocalleader = " "
 
 vim.loader.enable()
 
-require("options")
-require("lazy")
-require("extra")
-require("status")
-
-require("keymaps")
-require("autocmds")
-require("lsp")
+require("config.lazy")
+require("config.options")
+require("config.extra")
+require("config.status")
+require("config.keymaps")
+require("config.autocmds")
+require("config.lsp")
