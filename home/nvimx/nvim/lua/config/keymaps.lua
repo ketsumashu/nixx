@@ -79,9 +79,3 @@ map("n", "zM", function()
   require("ufo").closeAllFolds()
 end, { desc = "Close All Folds" })
 
--- Zen / Twilight / TreeSJ
-map("n", "<leader>zz", "<cmd>ZenMode<CR>", { desc = "Zen Mode" })
-map("n", "<leader>zt", "<cmd>Twilight<CR>", { desc = "Twilight Mode" })
-map("n", "<leader>j", function()
-  require("treesj").toggle()
-end, { desc = "Toggle treeSJ" })
