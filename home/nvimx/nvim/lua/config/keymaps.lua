@@ -62,7 +62,12 @@ end, { desc = "Explorer" })
 -- LSP
 map("n", ",B", "<cmd>ToggleDefinition<cr>", { desc = "Go To Definition / Finder" })
 map("n", ",b", "<cmd>Lspsaga peek_definition<cr>", { desc = "Definition" })
-map("n", "<leader>d", "<cmd>Telescope diagnostics theme=dropdown<cr>", { desc = "Diagnostics" })
+map("n", "<leader>d", function()
+  require("telescope.builtin").diagnostics({
+    bufnr = 0,
+    theme = "dropdown",
+  })
+end, { desc = "Buffer Diagnostics" })
 map("n", "]d", "<cmd>Lspsaga diagnostic_jump_next<CR>", { desc = "Next Diagnostic" })
 map("n", "[d", "<cmd>Lspsaga diagnostic_jump_prev<cr>", { desc = "Previous Diagnostic" })
 
@@ -77,4 +82,3 @@ end, { desc = "Open All Folds" })
 map("n", "zM", function()
   require("ufo").closeAllFolds()
 end, { desc = "Close All Folds" })
-
