@@ -148,6 +148,16 @@ local function lsp_status(bufnr)
   return table.concat(names, ", ")
 end
 
+local function filename(bufnr)
+  local name = api.nvim_buf_get_name(bufnr)
+
+  if name == "" then
+    return "[No Name]"
+  end
+
+  return vim.fn.fnamemodify(name, ":t")
+end
+
 local function render()
   local bufnr = status_buffer()
 
@@ -162,7 +172,9 @@ local function render()
     center = "%#StatusProgress#" .. progress
   end
 
-  local right = {}
+  local right = {
+    "%#" .. mode_highlight() .. "#" .. escape(filename(bufnr)) .. "%M%r%h%w",
+  }
 
   if diagnostics ~= "" then
     right[#right + 1] = "%#StatusMeta#" .. diagnostics
@@ -175,17 +187,9 @@ local function render()
   right[#right + 1] = "%#StatusMeta#" .. escape(lsp)
 
   return table.concat({
-    "%#",
-    mode_highlight(),
-    "# ",
-    "%t%M%r%h%w",
-
     "%=",
-
     center,
-
     "%=",
-
     table.concat(right, "  "),
     " ",
   })
