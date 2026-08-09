@@ -25,6 +25,7 @@
         home-manager.follows = "home-manager";
       };
     };
+    nvimx.url = "github:myuron/nvimx";
   };
   outputs =
     inputs@{
@@ -34,6 +35,7 @@
       noctalia,
       zen,
       nixcord,
+      nvimx,
       ...
     }:
     {
@@ -62,6 +64,7 @@
                   inherit noctalia;
                   inherit nixcord;
                   inherit zen;
+		  inherit nvimx;
                 };
               };
             }
