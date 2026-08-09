@@ -89,20 +89,12 @@
       url = "github:neovim/nvim-lspconfig";
       flake = false;
     };
-    nvim-nio = {
-      url = "github:nvim-neotest/nvim-nio";
-      flake = false;
-    };
     nvim-notify = {
       url = "github:rcarriga/nvim-notify";
       flake = false;
     };
     nvim-treesitter = {
       url = "github:nvim-treesitter/nvim-treesitter";
-      flake = false;
-    };
-    nvim-ufo = {
-      url = "github:kevinhwang91/nvim-ufo";
       flake = false;
     };
     nvim-web-devicons = {
@@ -115,10 +107,6 @@
     };
     poimandres-nvim = {
       url = "github:olivercederborg/poimandres.nvim";
-      flake = false;
-    };
-    promise-async = {
-      url = "github:kevinhwang91/promise-async";
       flake = false;
     };
     telescope-file-browser-nvim = {
@@ -143,10 +131,6 @@
     };
     toggleterm-nvim = {
       url = "github:akinsho/toggleterm.nvim";
-      flake = false;
-    };
-    treesj = {
-      url = "github:Wansmer/treesj";
       flake = false;
     };
     twilight-nvim = {

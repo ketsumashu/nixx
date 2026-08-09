@@ -8,26 +8,6 @@ return {
       "smjonas/inc-rename.nvim",
     },
     config = function()
-      local capabilities = require("cmp_nvim_lsp").default_capabilities()
-
-      for name, config in pairs({
-        bashls = {},
-        lua_ls = {},
-        nixd = {
-          settings = {
-            nixd = {
-              formatting = {
-                command = { "nixfmt" },
-              },
-            },
-          },
-        },
-      }) do
-        config.capabilities = capabilities
-        vim.lsp.config(name, config)
-        vim.lsp.enable(name)
-      end
-
       require("lspsaga").setup({
         beacon = { enable = true },
         implement = { enable = true, sign = false },
@@ -36,14 +16,6 @@ return {
         symbolInWinbar = { enable = true },
         ui = { border = "rounded", codeAction = "" },
       })
-
-      pcall(require, "inc_rename")
-
-      require("lint").linters_by_ft = {
-        text = {},
-        markdown = {},
-        nix = { "nix" },
-      }
     end,
   },
   {

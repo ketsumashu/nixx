@@ -12,6 +12,7 @@
     ./firefox
     ./nixcord
     ./nvimx
+    ./fish
   ];
 
   home = {

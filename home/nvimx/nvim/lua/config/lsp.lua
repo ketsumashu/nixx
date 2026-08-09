@@ -22,3 +22,13 @@ vim.lsp.config("lua_ls", {
     },
   },
 })
+
+vim.lspconfig("nixd", {
+  settings = {
+    nixd = {
+      formatting = {
+        command = { "nixfmt" },
+      },
+    },
+  },
+})
