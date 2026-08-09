@@ -23,7 +23,7 @@ vim.lsp.config("lua_ls", {
   },
 })
 
-vim.lspconfig("nixd", {
+vim.lsp.config("nixd", {
   settings = {
     nixd = {
       formatting = {
