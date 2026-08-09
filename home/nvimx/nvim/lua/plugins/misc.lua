@@ -59,15 +59,6 @@ return {
     opts = {},
   },
   {
-    "edluffy/specs.nvim",
-    opts = {
-      min_jump = 10,
-      increment = 10,
-      delay = 10,
-      width = 20,
-    },
-  },
-  {
     "rcarriga/nvim-notify",
     opts = {
       level = "info",
@@ -101,22 +92,6 @@ return {
             height = "auto",
           },
         },
-      },
-    },
-  },
-  {
-    "nvim-lualine/lualine.nvim",
-    dependencies = { "nvim-tree/nvim-web-devicons" },
-    opts = {
-      options = {
-        globalstatus = true,
-        theme = "kanagawa",
-        disabled_filetypes = {
-          statusline = { "alpha" },
-        },
-      },
-      sections = {
-        lualine_x = { "filetype" },
       },
     },
   },

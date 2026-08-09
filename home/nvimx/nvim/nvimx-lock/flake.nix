@@ -53,16 +53,8 @@
       url = "github:nvimdev/lspsaga.nvim";
       flake = false;
     };
-    lualine-nvim = {
-      url = "github:nvim-lualine/lualine.nvim";
-      flake = false;
-    };
     noice-nvim = {
       url = "github:folke/noice.nvim";
-      flake = false;
-    };
-    none-ls-nvim = {
-      url = "github:nvimtools/none-ls.nvim";
       flake = false;
     };
     nui-nvim = {
@@ -119,10 +111,6 @@
     };
     promise-async = {
       url = "github:kevinhwang91/promise-async";
-      flake = false;
-    };
-    specs-nvim = {
-      url = "github:edluffy/specs.nvim";
       flake = false;
     };
     telescope-file-browser-nvim = {
