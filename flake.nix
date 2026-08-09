@@ -28,8 +28,8 @@
         home-manager.follows = "home-manager";
       };
     };
-    nvimx ={
-      url ="github:myuron/nvimx";
+    nvimx = {
+      url = "github:myuron/nvimx";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
