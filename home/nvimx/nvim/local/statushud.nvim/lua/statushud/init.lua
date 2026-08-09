@@ -2,41 +2,38 @@ local M = {}
 
 local api = vim.api
 
+local config = {
+  margin_right = 2,
+  margin_bottom = 1,
+}
+
 local state = {
   buf = nil,
   win = nil,
 }
 
-local config = {
-  margin_right = 2,
-  margin_bottom = 1,
-
-  filename_hl = "MashuHudFilename",
-  meta_hl = "MashuHudMeta",
-}
-
-local function setup_highlights()
-  api.nvim_set_hl(0, config.filename_hl, {
-    fg = "#a994b8",
-    bg = "NONE",
-  })
-
-  api.nvim_set_hl(0, config.meta_hl, {
-    fg = "#fead90",
-    bg = "NONE",
-  })
-
-  api.nvim_set_hl(0, "MashuHudNormal", {
-    bg = "NONE",
-  })
+local function valid_buffer()
+  return state.buf and api.nvim_buf_is_valid(state.buf)
 end
 
 local function valid_window()
   return state.win and api.nvim_win_is_valid(state.win)
 end
 
-local function valid_buffer()
-  return state.buf and api.nvim_buf_is_valid(state.buf)
+local function setup_highlights()
+  api.nvim_set_hl(0, "HudFilename", {
+    fg = "#a994b8",
+    bg = "NONE",
+  })
+
+  api.nvim_set_hl(0, "HudMeta", {
+    fg = "#fead90",
+    bg = "NONE",
+  })
+
+  api.nvim_set_hl(0, "HudNormal", {
+    bg = "NONE",
+  })
 end
 
 local function ensure_buffer()
@@ -51,7 +48,7 @@ local function ensure_buffer()
   vim.bo[state.buf].swapfile = false
 end
 
-local function current_filename()
+local function filename()
   local bufnr = api.nvim_get_current_buf()
   local name = api.nvim_buf_get_name(bufnr)
 
@@ -62,17 +59,17 @@ local function current_filename()
   return vim.fn.fnamemodify(name, ":t")
 end
 
-local function current_filetype()
-  local filetype = vim.bo.filetype
+local function filetype()
+  local ft = vim.bo.filetype
 
-  if filetype == "" then
+  if ft == "" then
     return "unknown"
   end
 
-  return filetype
+  return ft
 end
 
-local function current_lsp()
+local function lsp()
   local clients = vim.lsp.get_clients({
     bufnr = api.nvim_get_current_buf(),
   })
@@ -94,8 +91,8 @@ end
 
 local function contents()
   return {
-    current_filename(),
-    string.format("%s  %s", current_filetype(), current_lsp()),
+    filename(),
+    string.format("%s  %s", filetype(), lsp()),
   }
 end
 
@@ -103,21 +100,21 @@ local function display_width(lines)
   local width = 1
 
   for _, line in ipairs(lines) do
-    width = math.max(width, vim.fn.strdisplaywidth(line))
+    width = math.max(
+      width,
+      vim.fn.strdisplaywidth(line)
+    )
   end
 
   return width
 end
 
 local function window_config(width)
-  local columns = vim.o.columns
-  local lines = vim.o.lines
-
   return {
     relative = "editor",
 
-    row = lines - 3 - config.margin_bottom,
-    col = columns - width - config.margin_right,
+    row = vim.o.lines - 3 - config.margin_bottom,
+    col = vim.o.columns - width - config.margin_right,
 
     width = width,
     height = 2,
@@ -138,7 +135,11 @@ local function ensure_window(width)
   ensure_buffer()
 
   if valid_window() then
-    api.nvim_win_set_config(state.win, window_config(width))
+    api.nvim_win_set_config(
+      state.win,
+      window_config(width)
+    )
+
     return
   end
 
@@ -148,15 +149,13 @@ local function ensure_window(width)
     window_config(width)
   )
 
-  vim.wo[state.win].winhighlight = "Normal:MashuHudNormal"
+  vim.wo[state.win].winhighlight =
+  "Normal:HudNormal"
+
   vim.wo[state.win].wrap = false
 end
 
 function M.render()
-  if vim.fn.mode() == "c" then
-    return
-  end
-
   local lines = contents()
   local width = display_width(lines)
 
@@ -182,7 +181,7 @@ function M.render()
   api.nvim_buf_add_highlight(
     state.buf,
     -1,
-    config.filename_hl,
+    "HudFilename",
     0,
     0,
     -1
@@ -191,7 +190,7 @@ function M.render()
   api.nvim_buf_add_highlight(
     state.buf,
     -1,
-    config.meta_hl,
+    "HudMeta",
     1,
     0,
     -1
@@ -208,11 +207,17 @@ function M.hide()
   state.win = nil
 end
 
-function M.setup()
+function M.setup(opts)
+  config = vim.tbl_deep_extend(
+    "force",
+    config,
+    opts or {}
+  )
+
   setup_highlights()
 
   local group = api.nvim_create_augroup(
-    "mashu_hud",
+    "statushud",
     { clear = true }
   )
 
@@ -239,11 +244,6 @@ function M.setup()
       setup_highlights()
       M.render()
     end,
-  })
-
-  api.nvim_create_autocmd("VimLeavePre", {
-    group = group,
-    callback = M.hide,
   })
 
   M.render()
