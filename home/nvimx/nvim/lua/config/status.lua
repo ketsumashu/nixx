@@ -1,6 +1,3 @@
-local fn = vim.fn
-local cmd = vim.cmd
-
 local colors = {
   regular0 = "#525566",
   regular1 = "#d59076",
@@ -20,84 +17,107 @@ local colors = {
   bright7 = "#f0ecfe",
 }
 
-local function lspname()
-  local msg = "No Active Lsp"
-  local buf_ft = vim.bo.filetype
+local mode_colors = {
+  n = colors.regular5,
+  i = colors.regular4,
+
+  v = colors.regular3,
+  V = colors.regular3,
+  ["\22"] = colors.regular3,
+
+  c = colors.regular2,
+  no = colors.regular1,
+
+  s = colors.regular6,
+  S = colors.regular6,
+  ["\19"] = colors.regular6,
+
+  ic = colors.bright4,
+
+  R = colors.bright5,
+  Rv = colors.bright5,
+
+  cv = colors.bright1,
+  ce = colors.bright1,
+
+  r = colors.bright3,
+  rm = colors.bright3,
+
+  ["r?"] = colors.bright7,
+  ["!"] = colors.bright7,
+
+  t = colors.bright2,
+}
+
+local function set_highlight(name, opts)
+  vim.api.nvim_set_hl(0, name, opts)
+end
+
+local function update_mode_highlight()
+  local mode = vim.fn.mode()
+
+  set_highlight("StatusMode", {
+    fg = mode_colors[mode] or colors.regular5,
+    bg = "NONE",
+  })
+end
+
+local function setup_highlights()
+  set_highlight("StatusRight", {
+    fg = colors.bright1,
+    bg = "NONE",
+  })
+
+  set_highlight("StatusLine", {
+    bg = "NONE",
+    update = true,
+  })
+
+  set_highlight("FloatBorder", {
+    bg = "NONE",
+    update = true,
+  })
+
+  update_mode_highlight()
+end
+
+local function lsp_name()
   local clients = vim.lsp.get_clients({ bufnr = 0 })
 
-  if vim.tbl_isempty(clients) then
-    return msg
+  if #clients == 0 then
+    return "No Active Lsp"
   end
 
-  for _, client in pairs(clients) do
-    local filetypes = client.config.filetypes
-    if filetypes and fn.index(filetypes, buf_ft) ~= -1 then
-      return client.name
-    end
-  end
-
-  return msg
-end
-
-local function highlight(group, fg, bg)
-  cmd("highlight " .. group .. " guifg=" .. fg .. " guibg=" .. bg)
-end
-
-local function filename()
-  local name = fn.expand("%:t")
-  local filemode = fn.mode()
-  local modecolor = {
-    n = colors.regular5,
-    i = colors.regular4,
-    v = colors.regular3,
-    V = colors.regular3,
-    ["\22"] = colors.regular3,
-    c = colors.regular2,
-    no = colors.regular1,
-    s = colors.regular6,
-    S = colors.regular6,
-    ["\19"] = colors.regular6,
-    ic = colors.bright4,
-    R = colors.bright5,
-    Rv = colors.bright5,
-    cv = colors.bright1,
-    ce = colors.bright1,
-    r = colors.bright3,
-    rm = colors.bright3,
-    ["r?"] = colors.bright7,
-    ["!"] = colors.bright7,
-    t = colors.bright2,
-  }
-
-  highlight("StatusMode", modecolor[filemode] or colors.regular5, "NONE")
-  highlight("StatusLeft", colors.regular4, "NONE")
-  highlight("StatusMid", colors.regular4, "NONE")
-  highlight("StatusRight", colors.bright1, "NONE")
-
-  return name
+  return clients[1].name
 end
 
 _G.status_line = function()
   return table.concat({
     "%=",
-    "%#StatusMid#",
-    "%=",
     "  ",
     "%#StatusMode#",
-    filename(),
-    "%M",
-    "%r",
-    "%h",
-    "%w",
-    "  ",
-    "  ",
+    vim.fn.expand("%:t"),
+    "%M%r%h%w",
+    "    ",
     "%#StatusRight#",
     "%{&ft}",
     "  ",
-    lspname(),
+    lsp_name(),
   })
 end
 
+local augroup = vim.api.nvim_create_augroup("status_line", { clear = true })
+
+vim.api.nvim_create_autocmd("ModeChanged", {
+  group = augroup,
+  callback = update_mode_highlight,
+})
+
+vim.api.nvim_create_autocmd("ColorScheme", {
+  group = augroup,
+  callback = setup_highlights,
+})
+
+setup_highlights()
+
 vim.opt.statusline = "%!luaeval('status_line()')"
-vim.cmd([[highlight FloatBorder guibg=NONE]])
-vim.cmd([[highlight StatusLine guibg=NONE]])
