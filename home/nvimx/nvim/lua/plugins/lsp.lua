@@ -31,7 +31,7 @@ return {
       require("lspsaga").setup({
         beacon = { enable = true },
         implement = { enable = true, sign = false },
-        lightbulb = { enable = true, sign = true, virtualText = true },
+        lightbulb = { enable = true, sign = true, virtualText = false },
         outline = { layout = "float" },
         symbolInWinbar = { enable = true },
         ui = { border = "rounded", codeAction = "" },
