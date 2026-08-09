@@ -80,6 +80,16 @@ return {
       },
       notify = { enabled = true },
       messages = { enabled = true },
+      routes = {
+        {
+          view = "notify",
+          filter = {
+            event = "msg_show",
+            kind = "",
+            find = "written",
+          },
+        },
+      },
       views = {
         cmdline_popup = {
           position = {

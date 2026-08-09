@@ -17,6 +17,7 @@ end, { desc = "Delete buffer" })
 
 map("i", "jj", "<Esc>", { desc = "Escape insert mode" })
 map("t", "jj", "<C-\\><C-n>", { desc = "Escape terminal mode" })
+map("c", "jj", "<C-c>", { desc = "Escape command-line mode" })
 
 map("n", "<C-h>", "<C-w>h", { desc = "Move to left window" })
 map("n", "<C-j>", "<C-w>j", { desc = "Move to lower window" })
@@ -49,8 +50,6 @@ map("v", "p", '"_dP', { desc = "Paste without yanking" })
 
 -- Dashboard / explorer
 map("n", "<leader>;", "<cmd>Alpha<CR>", { desc = "Dashboard" })
-map("i", "<C-j>", "<Plug>(skkeleton-toggle)")
-
 map("n", "<leader>e", function()
   if vim.bo.filetype == "TelescopePrompt" then
     vim.cmd("bdelete!")
@@ -60,8 +59,6 @@ map("n", "<leader>e", function()
 end, { desc = "Explorer" })
 
 -- LSP
-map("n", ",B", "<cmd>ToggleDefinition<cr>", { desc = "Go To Definition / Finder" })
-map("n", ",b", "<cmd>Lspsaga peek_definition<cr>", { desc = "Definition" })
 map("n", "<leader>d", function()
   require("telescope.builtin").diagnostics({
     bufnr = 0,
@@ -74,11 +71,3 @@ map("n", "[d", "<cmd>Lspsaga diagnostic_jump_prev<cr>", { desc = "Previous Diagn
 -- Terminal
 map("n", "<leader>t", "<cmd>ToggleTerm<CR>", { desc = "ToggleTerm" })
 map("t", "<leader>t", "<cmd>ToggleTerm<CR>", { desc = "ToggleTerm" })
-
--- Folding
-map("n", "zR", function()
-  require("ufo").openAllFolds()
-end, { desc = "Open All Folds" })
-map("n", "zM", function()
-  require("ufo").closeAllFolds()
-end, { desc = "Close All Folds" })
