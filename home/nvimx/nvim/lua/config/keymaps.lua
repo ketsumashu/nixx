@@ -6,7 +6,6 @@ map("", "<Space>", "<Nop>")
 map("n", "|", "<cmd>vsplit<CR>", { desc = "Vertical split" })
 map("n", "-", "<cmd>split<CR>", { desc = "Horizontal split" })
 map("n", "<leader>w", "<cmd>write<CR>", { desc = "Write buffer" })
-
 map("n", "<leader>q", function()
   local bufs = vim.fn.getbufinfo({ buflisted = 1 })
   if #bufs <= 1 then

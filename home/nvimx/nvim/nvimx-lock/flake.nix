@@ -45,6 +45,10 @@
       url = "github:lukas-reineke/indent-blankline.nvim";
       flake = false;
     };
+    lazydev-nvim = {
+      url = "github:folke/lazydev.nvim";
+      flake = false;
+    };
     lspkind-nvim = {
       url = "github:onsails/lspkind.nvim";
       flake = false;

@@ -192,6 +192,24 @@
       "tag": null,
       "version": null
     },
+    "lazydev.nvim": {
+      "branch": null,
+      "build": {
+        "kind": "none"
+      },
+      "commit": null,
+      "dependencies": [],
+      "inputName": "lazydev-nvim",
+      "pin": null,
+      "resolvedRef": null,
+      "source": {
+        "owner": "folke",
+        "repo": "lazydev.nvim",
+        "type": "github"
+      },
+      "tag": null,
+      "version": null
+    },
     "lspkind.nvim": {
       "branch": null,
       "build": {

@@ -176,6 +176,22 @@
         "type": "github"
       }
     },
+    "lazydev-nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1773496496,
+        "narHash": "sha256-Tsg1wNdySi6nK00sq1qDBRkRRlpdMCXVToDJ1SiqnPQ=",
+        "owner": "folke",
+        "repo": "lazydev.nvim",
+        "rev": "ff2cbcba459b637ec3fd165a2be59b7bbaeedf0d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "folke",
+        "repo": "lazydev.nvim",
+        "type": "github"
+      }
+    },
     "lspkind-nvim": {
       "flake": false,
       "locked": {
@@ -477,6 +493,7 @@
         "inc-rename-nvim": "inc-rename-nvim",
         "indent-blankline-nvim": "indent-blankline-nvim",
         "lazy-nvim": "lazy-nvim",
+        "lazydev-nvim": "lazydev-nvim",
         "lspkind-nvim": "lspkind-nvim",
         "lspsaga-nvim": "lspsaga-nvim",
         "noice-nvim": "noice-nvim",
