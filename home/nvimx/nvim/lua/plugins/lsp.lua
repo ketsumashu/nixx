@@ -12,7 +12,6 @@ return {
 
       for name, config in pairs({
         bashls = {},
-        cssls = {},
         lua_ls = {},
         nixd = {},
       }) do
