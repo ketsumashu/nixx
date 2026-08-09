@@ -4,7 +4,6 @@
     ./starship
     ./libskk
     ./localfont
-    ./scripts
     ./programs
     ./gui
     ./niri
