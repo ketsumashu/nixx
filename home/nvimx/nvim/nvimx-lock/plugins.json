@@ -10,7 +10,7 @@
   },
   "localPlugins": {
     "statushud.nvim": {
-      "dir": "/home/mashu/projects/statushud.nvim"
+      "dir": "/tmp/tmp.ytneiWi7Vf/config/nvim/local/statushud.nvim"
     }
   },
   "plugins": {
