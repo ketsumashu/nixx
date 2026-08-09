@@ -1,6 +1,6 @@
-{inputs, ...}:{
+{nvimx, ...}:{
 
- modules = [inputs.nvimx.homeModules.nvimx];
+ inports = [nvimx.homeModules.nvimx];
 
   programs.nvimx = {
     enable = true;
