@@ -93,6 +93,10 @@
       url = "github:rcarriga/nvim-notify";
       flake = false;
     };
+    nvim-treesitter = {
+      url = "github:nvim-treesitter/nvim-treesitter";
+      flake = false;
+    };
     nvim-ufo = {
       url = "github:kevinhwang91/nvim-ufo";
       flake = false;
