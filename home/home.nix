@@ -1,6 +1,5 @@
 {
   imports = [
-    ./fish
     ./terminals
     ./starship
     ./libskk

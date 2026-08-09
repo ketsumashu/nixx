@@ -33,8 +33,5 @@
     openrgb
     ddcutil
     gpu-screen-recorder
-    nixd
-    lua-language-server
-    bash-language-server
   ];
 }

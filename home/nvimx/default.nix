@@ -1,6 +1,6 @@
-{nvimx, ...}:{
+{inputs, pkgs, ...}:{
 
- imports = [nvimx.homeModules.nvimx];
+  imports = [inputs.nvimx.homeModules.nvimx];
 
   programs.nvimx = {
     enable = true;
@@ -17,4 +17,10 @@
       lockDirRelative = "./nvim/nvimx-lock";
     };
   };
+  home.packages = with pkgs; [
+    nixd
+    nixfmt
+    lua-language-server
+    bash-language-server
+  ];
 }

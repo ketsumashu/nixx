@@ -3,7 +3,10 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    nixos-hardware.url = "github:NixOS/nixos-hardware/master";
+    nixos-hardware = {
+      url = "github:NixOS/nixos-hardware/master";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -32,27 +35,21 @@
       nixpkgs,
       home-manager,
       nixos-hardware,
-      noctalia,
-      zen,
-      nixcord,
-      nvimx,
       ...
     }:
     {
       nixosConfigurations = {
         mashu-nix-101 = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
+          specialArgs = {
+            inherit inputs;
+          };
           modules = [
             nixos-hardware.nixosModules.common-cpu-amd
             nixos-hardware.nixosModules.common-gpu-amd
             nixos-hardware.nixosModules.common-pc-ssd
             ./nixos
             ./overlay
-            {
-              _module.args = {
-                inherit inputs;
-              };
-            }
             home-manager.nixosModules.home-manager
             {
               home-manager = {
@@ -61,10 +58,6 @@
                 users.mashu = import ./home/home.nix;
                 extraSpecialArgs = {
                   inherit inputs;
-                  inherit noctalia;
-                  inherit nixcord;
-                  inherit zen;
-		  inherit nvimx;
                 };
               };
             }
