@@ -8,10 +8,6 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    nixvim = {
-      url = "github:nix-community/nixvim";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
     noctalia = {
       url = "github:noctalia-dev/noctalia/cachix";
     };
@@ -34,7 +30,6 @@
     inputs@{
       nixpkgs,
       home-manager,
-      nixvim,
       nixos-hardware,
       noctalia,
       zen,
@@ -64,7 +59,6 @@
                 users.mashu = import ./home/home.nix;
                 extraSpecialArgs = {
                   inherit inputs;
-                  inherit nixvim;
                   inherit noctalia;
                   inherit nixcord;
                   inherit zen;

@@ -1,6 +1,5 @@
 {
   imports = [
-    ./nixvim
     ./fish
     ./terminals
     ./starship
