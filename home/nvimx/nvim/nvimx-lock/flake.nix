@@ -89,10 +89,6 @@
       url = "github:neovim/nvim-lspconfig";
       flake = false;
     };
-    nvim-nio = {
-      url = "github:nvim-neotest/nvim-nio";
-      flake = false;
-    };
     nvim-notify = {
       url = "github:rcarriga/nvim-notify";
       flake = false;
