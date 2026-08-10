@@ -38,6 +38,8 @@ opt.listchars = {
   trail = "•",
   nbsp = "␣",
 }
-
+opt.fillchars = {
+  eob = " ",
+}
 opt.list = true
 opt.showbreak = "↪ "
