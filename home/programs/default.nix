@@ -34,5 +34,6 @@
     ddcutil
     gpu-screen-recorder
     umu-launcher
+    chromium
   ];
 }
