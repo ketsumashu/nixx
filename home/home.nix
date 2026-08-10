@@ -13,6 +13,7 @@
     ./nixcord
     ./nvimx
     ./fish
+    ./obs
   ];
 
   home = {
