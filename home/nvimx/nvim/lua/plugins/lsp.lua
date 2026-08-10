@@ -7,16 +7,6 @@ return {
       "mfussenegger/nvim-lint",
       "smjonas/inc-rename.nvim",
     },
-    config = function()
-      require("lspsaga").setup({
-        beacon = { enable = false },
-        implement = { enable = true, sign = false },
-        lightbulb = { enable = true, sign = true, virtualText = false },
-        outline = { layout = "float" },
-        symbolInWinbar = { enable = true },
-        ui = { border = "rounded", codeAction = "" },
-      })
-    end,
   },
   {
     "folke/lazydev.nvim",
