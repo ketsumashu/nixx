@@ -58,7 +58,7 @@ map("n", "<leader>e", function()
   end
 end, { desc = "Explorer" })
 
-map("n", "<leader>f", "<cmd>Telescope frecency workspace=CWD theme=dropdown")
+map("n", "<leader>f", "<cmd>Telescope frecency workspace=CWD theme=dropdown<CR>")
 
 -- LSP
 map("n", "<leader>d", function()
