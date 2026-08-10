@@ -8,11 +8,7 @@
     },
     "synthetic": true
   },
-  "localPlugins": {
-    "statushud.nvim": {
-      "dir": "/tmp/tmp.SY8mc8D0pM/config/nvim/local/statushud.nvim"
-    }
-  },
+  "localPlugins": {},
   "plugins": {
     "LuaSnip": {
       "branch": null,
