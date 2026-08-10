@@ -15,7 +15,6 @@
     ./fish
     ./obs
     ./vivaldi
-    ./keyring
   ];
 
   home = {
