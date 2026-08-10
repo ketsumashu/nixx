@@ -33,6 +33,10 @@
       url = "github:hrsh7th/cmp-path";
       flake = false;
     };
+    darkvoid-nvim = {
+      url = "github:darkvoid-theme/darkvoid.nvim";
+      flake = false;
+    };
     inc-rename-nvim = {
       url = "github:smjonas/inc-rename.nvim";
       flake = false;
@@ -123,10 +127,6 @@
     };
     telescope-nvim = {
       url = "github:nvim-telescope/telescope.nvim";
-      flake = false;
-    };
-    thorn-nvim = {
-      url = "github:jpwol/thorn.nvim";
       flake = false;
     };
     toggleterm-nvim = {

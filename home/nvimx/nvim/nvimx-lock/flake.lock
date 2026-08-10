@@ -112,6 +112,22 @@
         "type": "github"
       }
     },
+    "darkvoid-nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1732221927,
+        "narHash": "sha256-JiNuv1TAIHVL9tGNDYC0RdRPnI9l4zn+ZCU9B4wQ5Io=",
+        "owner": "darkvoid-theme",
+        "repo": "darkvoid.nvim",
+        "rev": "45be993a5617e05811b6b293c05e6aded7003cc9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "darkvoid-theme",
+        "repo": "darkvoid.nvim",
+        "type": "github"
+      }
+    },
     "inc-rename-nvim": {
       "flake": false,
       "locked": {
@@ -425,6 +441,7 @@
         "cmp-git": "cmp-git",
         "cmp-nvim-lsp": "cmp-nvim-lsp",
         "cmp-path": "cmp-path",
+        "darkvoid-nvim": "darkvoid-nvim",
         "inc-rename-nvim": "inc-rename-nvim",
         "incline-nvim": "incline-nvim",
         "indent-blankline-nvim": "indent-blankline-nvim",
@@ -449,7 +466,6 @@
         "telescope-fzf-native-nvim": "telescope-fzf-native-nvim",
         "telescope-nvim": "telescope-nvim",
         "telescope-undo-nvim": "telescope-undo-nvim",
-        "thorn-nvim": "thorn-nvim",
         "toggleterm-nvim": "toggleterm-nvim",
         "twilight-nvim": "twilight-nvim",
         "which-key-nvim": "which-key-nvim",
@@ -533,22 +549,6 @@
       "original": {
         "owner": "debugloop",
         "repo": "telescope-undo.nvim",
-        "type": "github"
-      }
-    },
-    "thorn-nvim": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1779057282,
-        "narHash": "sha256-3/OrgUrzNZkfCtX3OrLH669gpJcSGq+8rd6vnz/Xb5s=",
-        "owner": "jpwol",
-        "repo": "thorn.nvim",
-        "rev": "3653d1508e605fe87ec174e8c2ad0f36ce9844f3",
-        "type": "github"
-      },
-      "original": {
-        "owner": "jpwol",
-        "repo": "thorn.nvim",
         "type": "github"
       }
     },

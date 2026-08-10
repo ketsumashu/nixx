@@ -136,6 +136,24 @@
       "tag": null,
       "version": null
     },
+    "darkvoid.nvim": {
+      "branch": null,
+      "build": {
+        "kind": "none"
+      },
+      "commit": null,
+      "dependencies": [],
+      "inputName": "darkvoid-nvim",
+      "pin": null,
+      "resolvedRef": null,
+      "source": {
+        "owner": "darkvoid-theme",
+        "repo": "darkvoid.nvim",
+        "type": "github"
+      },
+      "tag": null,
+      "version": null
+    },
     "inc-rename.nvim": {
       "branch": null,
       "build": {
@@ -566,24 +584,6 @@
       "source": {
         "owner": "nvim-telescope",
         "repo": "telescope.nvim",
-        "type": "github"
-      },
-      "tag": null,
-      "version": null
-    },
-    "thorn.nvim": {
-      "branch": null,
-      "build": {
-        "kind": "none"
-      },
-      "commit": null,
-      "dependencies": [],
-      "inputName": "thorn-nvim",
-      "pin": null,
-      "resolvedRef": null,
-      "source": {
-        "owner": "jpwol",
-        "repo": "thorn.nvim",
         "type": "github"
       },
       "tag": null,
