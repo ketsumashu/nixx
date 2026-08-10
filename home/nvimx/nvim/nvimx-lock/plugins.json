@@ -474,24 +474,6 @@
       "tag": null,
       "version": null
     },
-    "poimandres.nvim": {
-      "branch": null,
-      "build": {
-        "kind": "none"
-      },
-      "commit": null,
-      "dependencies": [],
-      "inputName": "poimandres-nvim",
-      "pin": null,
-      "resolvedRef": null,
-      "source": {
-        "owner": "olivercederborg",
-        "repo": "poimandres.nvim",
-        "type": "github"
-      },
-      "tag": null,
-      "version": null
-    },
     "telescope-file-browser.nvim": {
       "branch": null,
       "build": {
@@ -584,6 +566,24 @@
       "source": {
         "owner": "nvim-telescope",
         "repo": "telescope.nvim",
+        "type": "github"
+      },
+      "tag": null,
+      "version": null
+    },
+    "thorn.nvim": {
+      "branch": null,
+      "build": {
+        "kind": "none"
+      },
+      "commit": null,
+      "dependencies": [],
+      "inputName": "thorn-nvim",
+      "pin": null,
+      "resolvedRef": null,
+      "source": {
+        "owner": "jpwol",
+        "repo": "thorn.nvim",
         "type": "github"
       },
       "tag": null,

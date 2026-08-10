@@ -105,10 +105,6 @@
       url = "github:nvim-lua/plenary.nvim";
       flake = false;
     };
-    poimandres-nvim = {
-      url = "github:olivercederborg/poimandres.nvim";
-      flake = false;
-    };
     telescope-file-browser-nvim = {
       url = "github:nvim-telescope/telescope-file-browser.nvim";
       flake = false;
@@ -127,6 +123,10 @@
     };
     telescope-nvim = {
       url = "github:nvim-telescope/telescope.nvim";
+      flake = false;
+    };
+    thorn-nvim = {
+      url = "github:jpwol/thorn.nvim";
       flake = false;
     };
     toggleterm-nvim = {

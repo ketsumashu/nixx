@@ -1,17 +1,23 @@
 return {
   {
-    "olivercederborg/poimandres.nvim",
+    "jpwol/thorn.nvim",
     lazy = false,
     priority = 1000,
     opts = {
-      disable_background = true,
-      disable_float_background = true,
-      disable_italics = true,
+      theme = "forest",
+      transparent = true,
+      terminal = true,
+
+      styles = {
+        keywords = { italic = false, bold = true },
+        comments = { italic = false, bold = true },
+        strings = { italic = false, bold = true },
+      }
     },
     config = function(_, opts)
-      require("poimandres").setup(opts)
-      vim.env.BAT_THEME = "poimandres"
-      vim.cmd.colorscheme("poimandres")
+      require("thorn").setup(opts)
+      vim.env.BAT_THEME = "thorn"
+      vim.cmd.colorscheme("thorn")
     end,
   },
 }

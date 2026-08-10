@@ -416,22 +416,6 @@
         "type": "github"
       }
     },
-    "poimandres-nvim": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1729374068,
-        "narHash": "sha256-c0c0Q1W9Nfen9jYiDUISSlCHOY+XJuNPiBCOw4masUs=",
-        "owner": "olivercederborg",
-        "repo": "poimandres.nvim",
-        "rev": "a488957d803943a4201ac3b774913fcafa9e6b3a",
-        "type": "github"
-      },
-      "original": {
-        "owner": "olivercederborg",
-        "repo": "poimandres.nvim",
-        "type": "github"
-      }
-    },
     "root": {
       "inputs": {
         "LuaSnip": "LuaSnip",
@@ -460,12 +444,12 @@
         "nvim-treesitter": "nvim-treesitter",
         "nvim-web-devicons": "nvim-web-devicons",
         "plenary-nvim": "plenary-nvim",
-        "poimandres-nvim": "poimandres-nvim",
         "telescope-file-browser-nvim": "telescope-file-browser-nvim",
         "telescope-frecency-nvim": "telescope-frecency-nvim",
         "telescope-fzf-native-nvim": "telescope-fzf-native-nvim",
         "telescope-nvim": "telescope-nvim",
         "telescope-undo-nvim": "telescope-undo-nvim",
+        "thorn-nvim": "thorn-nvim",
         "toggleterm-nvim": "toggleterm-nvim",
         "twilight-nvim": "twilight-nvim",
         "which-key-nvim": "which-key-nvim",
@@ -549,6 +533,22 @@
       "original": {
         "owner": "debugloop",
         "repo": "telescope-undo.nvim",
+        "type": "github"
+      }
+    },
+    "thorn-nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1779057282,
+        "narHash": "sha256-3/OrgUrzNZkfCtX3OrLH669gpJcSGq+8rd6vnz/Xb5s=",
+        "owner": "jpwol",
+        "repo": "thorn.nvim",
+        "rev": "3653d1508e605fe87ec174e8c2ad0f36ce9844f3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jpwol",
+        "repo": "thorn.nvim",
         "type": "github"
       }
     },
