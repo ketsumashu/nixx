@@ -39,7 +39,7 @@ return {
 
       -- local fg_active = palette.text
       local fg_active = "#dfdfdf"
-      local fg_inactive = "#909090"
+      local fg_inactive = "#ddfada"
       local icons = { error = "󰅚 ", warn = "󰀪 ", hint = "󰌶 ", info = " " }
 
       --- @param props { buf: number, win: number, focused: boolean }
@@ -105,7 +105,7 @@ return {
       return {
         highlight = {
           groups = {
-            InclineNormal = { guibg = "#162126", guifg = fg_active },
+            InclineNormal = { guibg = "none", guifg = fg_active },
             InclineNormalNC = { guibg = "none", guifg = fg_inactive },
           },
         },
