@@ -1,18 +1,33 @@
 vim.api.nvim_create_autocmd("OptionSet", {
   pattern = "laststatus",
   callback = function()
-    vim.schedule(function()
-      vim.notify(
-        string.format(
-          "laststatus: %s -> %s\n%s",
-          vim.v.option_old,
-          vim.v.option_new,
-          debug.traceback()
-        )
-      )
-    end)
+    local message = string.format(
+      "\nlaststatus: %s -> %s\n%s\n",
+      vim.v.option_old,
+      vim.v.option_new,
+      debug.traceback()
+    )
+
+    vim.fn.writefile(
+      vim.split(message, "\n"),
+      "/tmp/laststatus.log",
+      "a"
+    )
   end,
 })
+
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
+
+vim.loader.enable()
+
+require("config.lazy")
+require("config.options")
+require("config.extra")
+require("config.status")
+require("config.keymaps")
+require("config.autocmds")
+require("config.lsp")
 
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
