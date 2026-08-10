@@ -57,8 +57,8 @@ return {
             hijack_netrw = true,
             layout_config = {
               anchor = "SE",
-              height = 0.2,
-              width = 0.45,
+              height = 0.4,
+              width = 0.5,
               prompt_position = "top",
             },
             layout_strategy = "vertical",

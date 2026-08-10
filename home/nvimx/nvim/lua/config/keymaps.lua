@@ -58,6 +58,8 @@ map("n", "<leader>e", function()
   end
 end, { desc = "Explorer" })
 
+map("n", "<leader>f", "<cmd>Telescope frecency workspace=CWD theme=dropdown")
+
 -- LSP
 map("n", "<leader>d", function()
   require("telescope.builtin").diagnostics({
