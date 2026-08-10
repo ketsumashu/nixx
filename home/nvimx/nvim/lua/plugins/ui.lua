@@ -117,7 +117,7 @@ return {
             horizontal = "right",
             vertical = "bottom",
           },
-          margin = { horizontal = 0, vertical = 0 },
+          margin = { horizontal = 2, vertical = 0 },
           padding = 2,
         },
         render = render,
