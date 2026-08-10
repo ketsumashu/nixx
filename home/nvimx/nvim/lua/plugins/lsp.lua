@@ -9,7 +9,7 @@ return {
     },
     config = function()
       require("lspsaga").setup({
-        beacon = { enable = true },
+        beacon = { enable = false },
         implement = { enable = true, sign = false },
         lightbulb = { enable = true, sign = true, virtualText = false },
         outline = { layout = "float" },
