@@ -1,14 +1,14 @@
 local opt = vim.opt
 
 opt.clipboard = "unnamedplus"
+opt.laststatus = 0
 opt.termguicolors = true
 opt.showmode = false
 opt.backup = false
 opt.cmdheight = 0
-opt.conceallevel = 0
 opt.encoding = "utf-8"
 opt.fileencoding = "utf-8"
-opt.title = true
+opt.title = false
 opt.hlsearch = true
 opt.incsearch = true
 opt.inccommand = "nosplit"
@@ -21,20 +21,17 @@ opt.splitright = true
 opt.splitkeep = "cursor"
 opt.swapfile = false
 opt.undofile = true
-opt.updatetime = 300
 opt.writebackup = false
 opt.expandtab = true
 opt.shiftwidth = 2
 opt.tabstop = 2
 opt.cursorline = false
-opt.laststatus = 1
 opt.number = true
 opt.relativenumber = false
 opt.signcolumn = "yes"
 opt.wrap = false
 opt.scrolloff = 8
 opt.listchars = {
-  tab = "󰌒 ",
   trail = "•",
   nbsp = "␣",
 }
