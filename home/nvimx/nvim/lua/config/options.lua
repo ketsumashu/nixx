@@ -1,17 +1,11 @@
 local opt = vim.opt
 
 opt.laststatus = 0
-
-print("A", vim.o.laststatus)
-
 opt.clipboard = "unnamedplus"
 opt.termguicolors = true
 opt.showmode = false
 opt.backup = false
 opt.cmdheight = 0
-
-print("B", vim.o.laststatus)
-
 opt.conceallevel = 0
 opt.encoding = "utf-8"
 opt.fileencoding = "utf-8"
@@ -39,9 +33,6 @@ opt.relativenumber = false
 opt.signcolumn = "yes"
 opt.wrap = false
 opt.scrolloff = 8
-
-print("C", vim.o.laststatus)
-
 opt.listchars = {
   tab = "󰌒 ",
   trail = "•",
@@ -50,15 +41,3 @@ opt.listchars = {
 
 opt.list = true
 opt.showbreak = "↪ "
-opt.foldmethod = "expr"
-opt.foldnestmax = 20
-opt.foldminlines = 2
-opt.foldlevel = 99
-opt.foldlevelstart = 99
-opt.foldenable = true
-opt.foldexpr = "nvim_treesitter#foldexpr()"
-
-vim.g.loaded_node_provider = 0
-vim.g.loaded_perl_provider = 0
-
-print("D", vim.o.laststatus)
