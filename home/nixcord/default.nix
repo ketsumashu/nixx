@@ -8,5 +8,10 @@
       vencord.enable = true;
       openASAR.enable = false;
     };
+    config = {
+      enabledThemes = [
+        "noctalia.theme.css"
+      ];
+    };
   };
 }
