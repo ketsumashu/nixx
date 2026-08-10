@@ -14,6 +14,7 @@
     ./nvimx
     ./fish
     ./obs
+    ./vivaldi
   ];
 
   home = {
