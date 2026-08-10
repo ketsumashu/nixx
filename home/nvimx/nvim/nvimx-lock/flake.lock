@@ -48,22 +48,6 @@
         "type": "github"
       }
     },
-    "bufferline-nvim": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1736870559,
-        "narHash": "sha256-ae4MB6+6v3awvfSUWlau9ASJ147ZpwuX1fvJdfMwo1Q=",
-        "owner": "akinsho",
-        "repo": "bufferline.nvim",
-        "rev": "655133c3b4c3e5e05ec549b9f8cc2894ac6f51b3",
-        "type": "github"
-      },
-      "original": {
-        "owner": "akinsho",
-        "repo": "bufferline.nvim",
-        "type": "github"
-      }
-    },
     "cmp-buffer": {
       "flake": false,
       "locked": {
@@ -453,7 +437,6 @@
         "LuaSnip": "LuaSnip",
         "alpha-nvim": "alpha-nvim",
         "bufdelete-nvim": "bufdelete-nvim",
-        "bufferline-nvim": "bufferline-nvim",
         "cmp-buffer": "cmp-buffer",
         "cmp-git": "cmp-git",
         "cmp-nvim-lsp": "cmp-nvim-lsp",

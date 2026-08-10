@@ -64,26 +64,6 @@
       "tag": null,
       "version": null
     },
-    "bufferline.nvim": {
-      "branch": null,
-      "build": {
-        "kind": "none"
-      },
-      "commit": null,
-      "dependencies": [
-        "nvim-web-devicons"
-      ],
-      "inputName": "bufferline-nvim",
-      "pin": null,
-      "resolvedRef": null,
-      "source": {
-        "owner": "akinsho",
-        "repo": "bufferline.nvim",
-        "type": "github"
-      },
-      "tag": null,
-      "version": null
-    },
     "cmp-buffer": {
       "branch": null,
       "build": {

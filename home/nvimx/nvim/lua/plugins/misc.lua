@@ -18,23 +18,6 @@ return {
     end,
   },
   {
-    "akinsho/bufferline.nvim",
-    dependencies = { "nvim-tree/nvim-web-devicons" },
-    opts = {
-      options = {
-        always_show_bufferline = true,
-        offsets = {
-          {
-            filetype = "NvimTree",
-            text = "Explorer",
-            highlight = "NvimTreeNormal",
-            padding = 1,
-          },
-        },
-      },
-    },
-  },
-  {
     "akinsho/toggleterm.nvim",
     opts = {
       direction = "horizontal",

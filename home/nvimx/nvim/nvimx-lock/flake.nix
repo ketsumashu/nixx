@@ -17,10 +17,6 @@
       url = "github:famiu/bufdelete.nvim";
       flake = false;
     };
-    bufferline-nvim = {
-      url = "github:akinsho/bufferline.nvim";
-      flake = false;
-    };
     cmp-buffer = {
       url = "github:hrsh7th/cmp-buffer";
       flake = false;
