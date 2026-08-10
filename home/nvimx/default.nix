@@ -8,7 +8,6 @@
     viAlias = true;
     configDir = ./nvim;
     lockDir = ./nvim/nvimx-lock;
-    devPath = "/home/mashu/nixx/home/nvimx/local";
     treesitter.grammars = [
       "lua"
       "nix"
