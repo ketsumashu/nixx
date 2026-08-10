@@ -39,7 +39,7 @@ return {
 
       -- local fg_active = palette.text
       local fg_active = "#dfdfdf"
-      local fg_inactive = "#232323"
+      local fg_inactive = "#909090"
       local icons = { error = "󰅚 ", warn = "󰀪 ", hint = "󰌶 ", info = " " }
 
       --- @param props { buf: number, win: number, focused: boolean }
