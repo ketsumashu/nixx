@@ -2,7 +2,7 @@
 {
   services.gnome-keyring.enable = true;
 
-  environment.packages = with pkgs; [
+  environment.systemPackages = with pkgs; [
     gcr
     libsecret
     seahorse
