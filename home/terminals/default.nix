@@ -32,7 +32,7 @@
       bell_on_tab = "yes";
     };
     extraConfig = ''
-      modify_font cell_height 130%
+      modify_font cell_height 140%
       click_interval 0.5
       cursor_blink_interval 0
       modify_font cell_width 105%
