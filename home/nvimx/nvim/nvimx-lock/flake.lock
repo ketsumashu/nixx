@@ -144,6 +144,22 @@
         "type": "github"
       }
     },
+    "incline-nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1778159739,
+        "narHash": "sha256-UIlrWiym/wO7olXX3W3HQBAuISzzKS4qp2/gprXnb0g=",
+        "owner": "b0o",
+        "repo": "incline.nvim",
+        "rev": "debd628e9395f7a9da57bdc31ce75ca6b40a880b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "b0o",
+        "repo": "incline.nvim",
+        "type": "github"
+      }
+    },
     "indent-blankline-nvim": {
       "flake": false,
       "locked": {
@@ -443,6 +459,7 @@
         "cmp-nvim-lsp": "cmp-nvim-lsp",
         "cmp-path": "cmp-path",
         "inc-rename-nvim": "inc-rename-nvim",
+        "incline-nvim": "incline-nvim",
         "indent-blankline-nvim": "indent-blankline-nvim",
         "lazy-nvim": "lazy-nvim",
         "lazydev-nvim": "lazydev-nvim",

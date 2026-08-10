@@ -41,6 +41,10 @@
       url = "github:smjonas/inc-rename.nvim";
       flake = false;
     };
+    incline-nvim = {
+      url = "github:b0o/incline.nvim";
+      flake = false;
+    };
     indent-blankline-nvim = {
       url = "github:lukas-reineke/indent-blankline.nvim";
       flake = false;

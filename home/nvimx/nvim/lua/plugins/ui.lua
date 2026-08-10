@@ -31,4 +31,16 @@ return {
     "nvim-tree/nvim-web-devicons",
     lazy = true,
   },
+  {
+    "b0o/incline.nvim",
+    config = function()
+      require("incline").setup({
+        placement = {
+          horizontal = "right",
+          vertical = "bottom",
+        },
+      })
+    end,
+    event = "veryLazy",
+  },
 }
