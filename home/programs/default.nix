@@ -33,5 +33,6 @@
     openrgb
     ddcutil
     gpu-screen-recorder
+    umu-launcher
   ];
 }
