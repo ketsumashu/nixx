@@ -18,7 +18,7 @@ in
     bmz-launch
   ];
 
-  xdg.desktopEntries."net.hyrorre.BMZPlayer" = {
+  xdg.dataFile."applications/net.hyrorre.BMZPlayer".text = ''
     name = "BMZ Player";
     comment = "BMS player for LunaticRave2 and beatoraja style charts";
     icon = "net.hyrorre.BMZPlayer";
@@ -28,6 +28,5 @@ in
     categories = [ "Game" ];
     terminal = false;
     startupNotify = false;
-
-  };
+  '';
 }
