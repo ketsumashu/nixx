@@ -10,5 +10,6 @@
     ./system.nix
     ./hardware.nix
     ./keyring.nix
+    ./develop.nix
   ];
 }
