@@ -1,7 +1,7 @@
 { pkgs, ... }:
 
 let
-  bmz-launch = pkgs.writeShellScriptBin "infinitas-launch" ''
+  bmz-launch = pkgs.writeShellScriptBin "bmz-launch" ''
     noctalia msg caffeine-enable
 
     cleanup() {
@@ -10,7 +10,7 @@ let
 
     trap cleanup EXIT INT TERM
 
-    /home/mashu/.local/bin/konamate infinitas run --notify "$@"
+    flatpak run net.hyrorre.BMZPlayer
   '';
 in
 {
@@ -18,7 +18,7 @@ in
     bmz-launch
   ];
 
-  xdg.desktopEntries.net.hyrorre.BMZPlayer = {
+  xdg.desktopEntries."net.hyrorre.BMZPlayer" = {
     name = "BMZ Player";
     comment = "BMS player for LunaticRave2 and beatoraja style charts";
     icon = "net.hyrorre.BMZPlayer";
@@ -27,7 +27,7 @@ in
 
     categories = [ "Game" ];
     terminal = false;
-    startupNotify = true;
+    startupNotify = false;
 
   };
 }
