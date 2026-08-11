@@ -335,11 +335,9 @@ output "DP-2" {
 }
 output "DP-1" {
     mode "2560x1440@120.000"
-
     scale 1.0
-
     transform "normal"
-
+    position x=6400 y=-335
 }
 output "HDMI-A-1" {
     mode "3840x2160@120.000"
@@ -347,7 +345,7 @@ output "HDMI-A-1" {
     scale 1.0
 
     transform "normal"
-    position x=0 y=-335
+    position x=2560 y=-335
 }
 debug {
   // Allows notification actions and window activation from Noctalia.
