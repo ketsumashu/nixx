@@ -36,6 +36,7 @@
     kernelModules = [
       "kvm-amd"
       "v4l2loopback"
+      "ntsync"
     ];
     supportedFilesystems = [ "ntfs" ];
     blacklistedKernelModules = [ "k10temp" ];
