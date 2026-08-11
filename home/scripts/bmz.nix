@@ -19,14 +19,14 @@ in
   ];
 
   xdg.dataFile."applications/net.hyrorre.BMZPlayer.desktop".text = ''
-    name = "BMZ Player";
-    comment = "BMS player for LunaticRave2 and beatoraja style charts";
-    icon = "net.hyrorre.BMZPlayer";
-
-    exec = "${bmz-launch}/bin/bmz-launch";
-
-    categories = [ "Game" ];
-    terminal = false;
-    startupNotify = false;
+    [Desktop Entry]
+    Type=Application
+    Name=BMZ Player
+    Comment=BMS player for LunaticRave2 and beatoraja style charts
+    Icon=net.hyrorre.BMZPlayer
+    Exec=${bmz-launch}/bin/bmz-launch
+    Categories=Game;
+    Terminal=false
+    StartupNotify=false
   '';
 }
