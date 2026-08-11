@@ -1,16 +1,46 @@
 { pkgs, ... }:
+
+let
+  infinitas-launch = pkgs.writeShellScriptBin "infinitas-launch" ''
+    noctalia msg caffeine-enable
+
+    cleanup() {
+      noctalia msg caffeine-disable
+    }
+
+    trap cleanup EXIT INT TERM
+
+    /home/mashu/.local/bin/konamate infinitas run --notify "$@"
+  '';
+in
 {
   home.packages = [
-    (pkgs.writeShellScriptBin "infinitas-launch" ''
-      noctalia msg caffeine-enable
-
-      cleanup(){
-        noctalia msg caffeine-disable
-      }
-
-      trap cleanup EXIT INT TERM
-
-      /home/mashu/.local/bin/konamate infinitas run --notify "$@"
-    '')
+    infinitas-launch
   ];
+
+  xdg.desktopEntries.infinitas = {
+    name = "beatmania IIDX INFINITAS";
+    comment = "Play beatmania IIDX INFINITAS on Konaste";
+    icon = "infinitas";
+
+    exec = "${infinitas-launch}/bin/infinitas-launch %u";
+
+    categories = [ "Game" ];
+    terminal = false;
+    startupNotify = true;
+
+    mimeType = [
+      "x-scheme-handler/bm2dxinf"
+    ];
+  };
+
+  xdg.mimeApps = {
+    enable = true;
+
+    defaultApplications = {
+      "x-scheme-handler/bm2dxinf" = [
+        "infinitas.desktop"
+      ];
+    };
+  };
 }
