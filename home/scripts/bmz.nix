@@ -18,7 +18,7 @@ in
     bmz-launch
   ];
 
-  xdg.dataFile."applications/net.hyrorre.BMZPlayer".text = ''
+  xdg.dataFile."applications/net.hyrorre.BMZPlayer.desktop".text = ''
     name = "BMZ Player";
     comment = "BMS player for LunaticRave2 and beatoraja style charts";
     icon = "net.hyrorre.BMZPlayer";
