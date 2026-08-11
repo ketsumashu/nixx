@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 
 let
   infinitas-launch = pkgs.writeShellScriptBin "infinitas-launch" ''
@@ -34,13 +34,9 @@ in
     ];
   };
 
-  xdg.mimeApps = {
-    enable = true;
-
-    defaultApplications = {
-      "x-scheme-handler/bm2dxinf" = [
-        "infinitas.desktop"
-      ];
-    };
-  };
+  home.activation.infinitasMime = lib.hm.dag.entryAfter [ "writeBoundary" ] ''
+    ${pkgs.xdg-utils}/bin/xdg-mime default \
+      infinitas.desktop \
+      x-scheme-handler/bm2dxinf
+  '';
 }
