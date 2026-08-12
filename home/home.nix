@@ -15,7 +15,6 @@
     ./fish
     ./obs
     ./scripts
-    ./qutebrowser
   ];
 
   home = {
