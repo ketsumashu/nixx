@@ -6,7 +6,7 @@
 }:
 {
   home.sessionVariables = {
-    BROWSER = "vivaldi";
+    BROWSER = "zen-beta";
     QT_QPA_PLATFORM = "wayland";
     QT_QPA_PLATFORMTHEME = lib.mkDefault "qt6ct";
     QT_AUTO_SCREEN_SCALE_FACTOR = "1";
