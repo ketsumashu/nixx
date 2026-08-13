@@ -11,7 +11,6 @@
       helvetica-neue-lt-std
       envypn-font
       gohufont
-      jetbrains-mono
       noto-fonts-cjk-sans-static
       noto-fonts-cjk-serif-static
     ];
