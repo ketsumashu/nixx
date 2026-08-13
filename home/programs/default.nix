@@ -35,7 +35,5 @@
     gpu-screen-recorder
     umu-launcher
     chromium
-    imagemagick
-    desktop-file-utils
   ];
 }
