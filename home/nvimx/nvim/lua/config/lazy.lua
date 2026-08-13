@@ -29,7 +29,7 @@ require("lazy").setup({
     { import = "plugins" },
   },
   install = {
-    colorscheme = { "poimandres" },
+    colorscheme = { "darkvoid" },
   },
   checker = {
     enabled = false,
