@@ -16,6 +16,7 @@
     ./zellij
     ./obs
     ./scripts
+    ./yazi
   ];
 
   home = {
