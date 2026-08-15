@@ -36,7 +36,13 @@ return {
           find_files = { theme = "dropdown" },
           git_files = { theme = "dropdown" },
           fd = { theme = "dropdown" },
-          buffers = { theme = "dropdown" },
+          buffers = {
+            theme = "dropdown",
+            mappings = {
+              i = { ["<leader>b"] = actions.close },
+              n = { ["<leader>b"] = actions.close },
+            },
+          },
           marks = { theme = "dropdown" },
           registers = { theme = "dropdown" },
           jumplist = { theme = "dropdown" },
