@@ -82,7 +82,8 @@ let
         fallback "$@"
       fi
 
-      exec nvim --server "$socket" --remote "$@"
+      nvim --server "$socket" --remote "$@"
+      exec zellij --session "$session_name" action focus-pane-id "$left_pane_id"
     '';
   };
 in
