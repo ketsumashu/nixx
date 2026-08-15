@@ -92,6 +92,14 @@ in
 
     extraPackages = [ openInLeftNvim ];
 
+    keymap.mgr.prepend_keymap = [
+      {
+        on = "<Enter>";
+        run = "plugin smart-enter";
+        desc = "Enter the child directory, or open the file";
+      }
+    ];
+
     settings = {
       opener.nvim-left = [
         {
@@ -114,5 +122,7 @@ in
       package = pkgs.yaziPlugins.full-border;
       setup = true;
     };
+
+    plugins.smart-enter = pkgs.yaziPlugins.smart-enter;
   };
 }
