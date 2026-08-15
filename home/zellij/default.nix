@@ -16,8 +16,9 @@ in
 {
   programs.zellij = {
     enable = true;
-
-    # theme = "noctalia";
+    settings = {
+      theme = "noctalia";
+    };
     settings._children = [
       (block "keybinds" [ ] { "clear-defaults" = true; } [
         (block "locked" [ ] { } [
