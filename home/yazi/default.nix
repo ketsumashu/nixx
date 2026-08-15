@@ -24,7 +24,16 @@ let
         fallback "$@"
       fi
 
-      panes="$(zellij action list-panes --json)"
+      session_name="$ZELLIJ_SESSION_NAME"
+      if ! panes="$(zellij --session "$session_name" action list-panes --json 2>/dev/null)"; then
+        mapfile -t sessions < <(zellij list-sessions --short --no-formatting 2>/dev/null)
+        if [[ "''${#sessions[@]}" -ne 1 ]]; then
+          fallback "$@"
+        fi
+
+        session_name="''${sessions[0]}"
+        panes="$(zellij --session "$session_name" action list-panes --json 2>/dev/null)" || fallback "$@"
+      fi
       left_pane_id="$(
         jq --exit-status --raw-output --argjson origin_id "$ZELLIJ_PANE_ID" '
           . as $panes
