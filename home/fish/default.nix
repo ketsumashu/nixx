@@ -6,7 +6,7 @@
       set -gx NIXPKGS_ALLOW_UNFREE 1
       starship init fish | source
       abbr -a sw "nh os switch --impure"
-      abbr -a gg "cd ~/nixx && git add . && git commit --allow-empty-message -m \" \"  && git push"
+      abbr -a gg "cd ~/nixx && git add . && git commit -m \"chore\""
       abbr -a nc "nh clean all"
       abbr -a ll "eza -al"
       abbr -a nrun "nix run nixpkgs#"
