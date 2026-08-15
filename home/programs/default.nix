@@ -35,5 +35,6 @@
     gpu-screen-recorder
     umu-launcher
     chromium
+    jq
   ];
 }
