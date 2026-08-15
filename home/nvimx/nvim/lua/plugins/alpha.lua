@@ -23,7 +23,7 @@ return {
       }
 
       dashboard.section.buttons.val = {
-        dashboard.button("e", "󱝩  Explorer", ":Telescope file_browser<CR>"),
+        dashboard.button("b", "󰓩  Buffers", ":Telescope buffers<CR>"),
         dashboard.button("f", "  Find file", ":Telescope frecency workspace=CWD theme=dropdown<CR>"),
         dashboard.button("n", "  New file", ":ene <BAR> startinsert<CR>"),
         dashboard.button("r", "󱝩  Recently used files", ":Telescope oldfiles theme=dropdown<CR>"),

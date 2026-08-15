@@ -48,15 +48,11 @@ map("v", "<", "<gv", { desc = "Indent left" })
 map("v", ">", ">gv", { desc = "Indent right" })
 map("v", "p", '"_dP', { desc = "Paste without yanking" })
 
--- Dashboard / explorer
+-- Dashboard / picker
 map("n", "<leader>;", "<cmd>Alpha<CR>", { desc = "Dashboard" })
-map("n", "<leader>e", function()
-  if vim.bo.filetype == "TelescopePrompt" then
-    vim.cmd("bdelete!")
-  else
-    require("telescope").extensions.file_browser.file_browser({ select_buffer = true })
-  end
-end, { desc = "Explorer" })
+map("n", "<leader>b", function()
+  require("telescope.builtin").buffers()
+end, { desc = "Buffers" })
 
 map("n", "<leader>f", "<cmd>Telescope frecency workspace=CWD theme=dropdown<CR>")
 

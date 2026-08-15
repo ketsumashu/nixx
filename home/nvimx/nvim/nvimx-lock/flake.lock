@@ -461,7 +461,6 @@
         "nvim-treesitter": "nvim-treesitter",
         "nvim-web-devicons": "nvim-web-devicons",
         "plenary-nvim": "plenary-nvim",
-        "telescope-file-browser-nvim": "telescope-file-browser-nvim",
         "telescope-frecency-nvim": "telescope-frecency-nvim",
         "telescope-fzf-native-nvim": "telescope-fzf-native-nvim",
         "telescope-nvim": "telescope-nvim",
@@ -470,22 +469,6 @@
         "twilight-nvim": "twilight-nvim",
         "which-key-nvim": "which-key-nvim",
         "zen-mode-nvim": "zen-mode-nvim"
-      }
-    },
-    "telescope-file-browser-nvim": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1754424906,
-        "narHash": "sha256-FlJ7w5Ywwq03E0oYdnFJFb+MMUMQMa+5QhDMy2O9tGQ=",
-        "owner": "nvim-telescope",
-        "repo": "telescope-file-browser.nvim",
-        "rev": "3610dc7dc91f06aa98b11dca5cc30dfa98626b7e",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nvim-telescope",
-        "repo": "telescope-file-browser.nvim",
-        "type": "github"
       }
     },
     "telescope-frecency-nvim": {

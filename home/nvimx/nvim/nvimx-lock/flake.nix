@@ -109,10 +109,6 @@
       url = "github:nvim-lua/plenary.nvim";
       flake = false;
     };
-    telescope-file-browser-nvim = {
-      url = "github:nvim-telescope/telescope-file-browser.nvim";
-      flake = false;
-    };
     telescope-frecency-nvim = {
       url = "github:nvim-telescope/telescope-frecency.nvim";
       flake = false;

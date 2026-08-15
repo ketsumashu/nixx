@@ -5,7 +5,6 @@ return {
       "nvim-lua/plenary.nvim",
       { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
       "nvim-telescope/telescope-frecency.nvim",
-      "nvim-telescope/telescope-file-browser.nvim",
       "debugloop/telescope-undo.nvim",
     },
     config = function()
@@ -52,22 +51,6 @@ return {
           commands = { theme = "dropdown" },
         },
         extensions = {
-          file_browser = {
-            hidden = { file_browser = true, folder_browser = true },
-            hijack_netrw = true,
-            layout_config = {
-              anchor = "SE",
-              height = 0.4,
-              width = 0.5,
-              prompt_position = "top",
-            },
-            layout_strategy = "vertical",
-            previewer = false,
-            select_buffer = true,
-            sorting_strategy = "ascending",
-            theme = "dropdown",
-            use_fd = true,
-          },
           frecency = {
             defaultWorkspace = "CWD",
             showUnindexed = true,
@@ -81,7 +64,7 @@ return {
         },
       })
 
-      for _, extension in ipairs({ "undo", "fzf", "frecency", "file_browser" }) do
+      for _, extension in ipairs({ "undo", "fzf", "frecency" }) do
         telescope.load_extension(extension)
       end
     end,

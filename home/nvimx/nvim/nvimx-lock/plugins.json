@@ -492,24 +492,6 @@
       "tag": null,
       "version": null
     },
-    "telescope-file-browser.nvim": {
-      "branch": null,
-      "build": {
-        "kind": "none"
-      },
-      "commit": null,
-      "dependencies": [],
-      "inputName": "telescope-file-browser-nvim",
-      "pin": null,
-      "resolvedRef": null,
-      "source": {
-        "owner": "nvim-telescope",
-        "repo": "telescope-file-browser.nvim",
-        "type": "github"
-      },
-      "tag": null,
-      "version": null
-    },
     "telescope-frecency.nvim": {
       "branch": null,
       "build": {
@@ -573,7 +555,6 @@
       "commit": null,
       "dependencies": [
         "plenary.nvim",
-        "telescope-file-browser.nvim",
         "telescope-frecency.nvim",
         "telescope-fzf-native.nvim",
         "telescope-undo.nvim"
