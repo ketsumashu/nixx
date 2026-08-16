@@ -133,6 +133,20 @@ in
 
     extraPackages = [ openInLeftNvim ];
 
+    settings = {
+      yazi = {
+        ratio = [
+          0
+          1
+          2
+        ];
+        sort_by = "natural";
+        sort_dir_first = true;
+        show_hidden = true;
+        show_symlink = true;
+      };
+    };
+
     keymap.mgr.prepend_keymap = [
       {
         on = "<Enter>";
