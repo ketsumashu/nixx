@@ -35,6 +35,5 @@
     umu-launcher
     chromium
     jq
-    rapidraw
   ];
 }
