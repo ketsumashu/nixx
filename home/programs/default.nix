@@ -35,5 +35,6 @@
     umu-launcher
     chromium
     jq
+    file
   ];
 }
