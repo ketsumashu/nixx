@@ -18,7 +18,6 @@
     killall
     ripgrep
     xdg-utils
-    darktable
     which
     gh
     wget
@@ -36,5 +35,6 @@
     umu-launcher
     chromium
     jq
+    rapidraw
   ];
 }
