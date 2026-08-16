@@ -1,4 +1,11 @@
-*.L linguist-documentation
-*.js linguist-documentation
-*.css linguist-documentation
-*.lua linguist-documentation
+# Keep repository text files consistent across platforms.
+* text=auto eol=lf
+
+# Third-party assets kept alongside the configuration.
+home/firefox/tridactyl/poimandres.css linguist-vendored
+home/qutebrowser/greasemonkey/*.js linguist-vendored
+home/libskk/SKK-JISYO.L -text linguist-vendored
+
+# Binary assets and generated dictionary data.
+home/libskk/*.yaskkserv2 binary linguist-generated
+home/localfont/*.otb binary linguist-vendored
