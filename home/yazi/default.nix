@@ -130,8 +130,15 @@ in
 {
   programs.yazi = {
     enable = true;
-
     extraPackages = [ openInLeftNvim ];
+
+    keymap.mgr.prepend_keymap = [
+      {
+        on = "<Enter>";
+        run = "plugin smart-enter";
+        desc = "Enter the child directory, or open the file";
+      }
+    ];
 
     settings = {
       yazi = {
@@ -145,17 +152,6 @@ in
         show_hidden = true;
         show_symlink = true;
       };
-    };
-
-    keymap.mgr.prepend_keymap = [
-      {
-        on = "<Enter>";
-        run = "plugin smart-enter";
-        desc = "Enter the child directory, or open the file";
-      }
-    ];
-
-    settings = {
       opener.nvim-left = [
         {
           run = "${lib.getExe openInLeftNvim} %s";
@@ -164,7 +160,6 @@ in
           for = "unix";
         }
       ];
-
       open.prepend_rules = [
         {
           url = "*";
@@ -174,10 +169,11 @@ in
     };
 
     plugins.full-border = {
-      package = pkgs.yaziPlugins.full-border;
-      setup = true;
+      full-border = {
+        package = pkgs.yaziPlugins.full-border;
+        setup = true;
+      };
+      smart-enter = pkgs.yaziPlugins.smart-enter;
     };
-
-    plugins.smart-enter = pkgs.yaziPlugins.smart-enter;
   };
 }
