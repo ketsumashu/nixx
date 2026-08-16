@@ -1,19 +1,24 @@
 {
+  config,
   lib,
   pkgs,
   ...
 }:
 let
+  nvimxExe = lib.getExe config.programs.nvimx.package;
   openInLeftNvim = pkgs.writeShellApplication {
     name = "yazi-open-in-left-nvim";
     runtimeInputs = [
+      pkgs.fish
       pkgs.jq
       pkgs.neovim
       pkgs.zellij
     ];
     text = ''
+      nvimx=${lib.escapeShellArg nvimxExe}
+
       fallback() {
-        exec nvim "$@"
+        exec "$nvimx" "$@"
       }
 
       if [[ -z "''${ZELLIJ_PANE_ID:-}" || -z "''${ZELLIJ_SESSION_NAME:-}" || -z "''${XDG_RUNTIME_DIR:-}" ]]; then
@@ -79,6 +84,41 @@ let
       socket="$XDG_RUNTIME_DIR/nvim-zellij-$safe_session-$left_pane_id.sock"
 
       if [[ ! -S "$socket" ]]; then
+        left_pane_command="$(
+          jq --exit-status --raw-output --argjson pane_id "$left_pane_id" '
+            .[]
+            | select(
+                (.is_plugin | not)
+                and .id == $pane_id
+                and (.exited | not)
+              )
+            | .pane_command // empty
+          ' <<<"$panes"
+        )" || fallback "$@"
+
+        if [[ "''${left_pane_command##*/}" == "fish" ]]; then
+          absolute_paths=()
+          for path in "$@"; do
+            if [[ "$path" == /* ]]; then
+              absolute_paths+=("$path")
+            else
+              absolute_paths+=("$PWD/$path")
+            fi
+          done
+
+          open_command="$(
+            # This command is evaluated by fish, which expands $argv itself.
+            # shellcheck disable=SC2016
+            fish -c 'string escape -- $argv | string join " "' \
+              -- "$nvimx" -- "''${absolute_paths[@]}"
+          )"
+          zellij --session "$session_name" action write-chars \
+            --pane-id "$left_pane_id" "$open_command" || fallback "$@"
+          zellij --session "$session_name" action send-keys \
+            --pane-id "$left_pane_id" Enter || fallback "$@"
+          exec zellij --session "$session_name" action focus-pane-id "$left_pane_id"
+        fi
+
         fallback "$@"
       fi
 
