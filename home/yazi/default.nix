@@ -167,8 +167,7 @@ in
         }
       ];
     };
-
-    plugins.full-border = {
+    plugins = {
       full-border = {
         package = pkgs.yaziPlugins.full-border;
         setup = true;
