@@ -5,7 +5,7 @@
   ...
 }:
 let
-  nvimxExe = lib.getExe config.programs.nvimx.package;
+  nvimxExe = lib.getExe' config.programs.nvimx.env.wrapped "nvim";
   openInLeftNvim = pkgs.writeShellApplication {
     name = "yazi-open-in-left-nvim";
     runtimeInputs = [
