@@ -141,7 +141,7 @@ in
     ];
 
     settings = {
-      yazi = {
+      mgr = {
         ratio = [
           0
           1
