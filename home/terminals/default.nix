@@ -42,6 +42,11 @@
   };
   programs.ghostty = {
     enable = true;
+    enableFishIntegration = true;
+    themes = "noctalia";
+    settings = {
+      font_family = "PlemolJP35 Console HS";
+    };
   };
 
   home.packages = with pkgs; [
