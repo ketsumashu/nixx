@@ -43,16 +43,9 @@
   programs.ghostty = {
     enable = true;
     enableFishIntegration = true;
-    settings = {
-      initial-command = "fish";
-      command = "fish";
-      font-family = "PlemolJP35 Console HS";
-      adjust-cell-height = "40%";
-      adjust-cell-width = "5%";
-      theme = "noctalia";
-      background-opacity = 0.84;
-    };
   };
+
+  xdg.configFile."ghostty/config".source = ./config;
 
   home.packages = with pkgs; [
     codex

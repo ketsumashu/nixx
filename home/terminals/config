@@ -1,0 +1,7 @@
+adjust-cell-height = 40%
+adjust-cell-width = 5%
+background-opacity = 0.840000
+command = fish
+font-family = PlemolJP35 Console HS
+initial-command = fish
+theme = noctalia
