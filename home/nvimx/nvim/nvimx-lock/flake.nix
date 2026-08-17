@@ -17,6 +17,10 @@
       url = "github:famiu/bufdelete.nvim";
       flake = false;
     };
+    friendly-snippets = {
+      url = "github:rafamadriz/friendly-snippets";
+      flake = false;
+    };
     inc-rename-nvim = {
       url = "github:smjonas/inc-rename.nvim";
       flake = false;

@@ -34,7 +34,9 @@
         "kind": "none"
       },
       "commit": null,
-      "dependencies": [],
+      "dependencies": [
+        "friendly-snippets"
+      ],
       "inputName": "blink-cmp",
       "pin": null,
       "resolvedRef": "refs/tags/v1.10.2",
@@ -59,6 +61,24 @@
       "source": {
         "owner": "famiu",
         "repo": "bufdelete.nvim",
+        "type": "github"
+      },
+      "tag": null,
+      "version": null
+    },
+    "friendly-snippets": {
+      "branch": null,
+      "build": {
+        "kind": "none"
+      },
+      "commit": null,
+      "dependencies": [],
+      "inputName": "friendly-snippets",
+      "pin": null,
+      "resolvedRef": null,
+      "source": {
+        "owner": "rafamadriz",
+        "repo": "friendly-snippets",
         "type": "github"
       },
       "tag": null,

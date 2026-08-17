@@ -49,6 +49,22 @@
         "type": "github"
       }
     },
+    "friendly-snippets": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1769182131,
+        "narHash": "sha256-FzApcTbWfFkBD9WsYMhaCyn6ky8UmpUC2io/co/eByM=",
+        "owner": "rafamadriz",
+        "repo": "friendly-snippets",
+        "rev": "6cd7280adead7f586db6fccbd15d2cac7e2188b9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "rafamadriz",
+        "repo": "friendly-snippets",
+        "type": "github"
+      }
+    },
     "inc-rename-nvim": {
       "flake": false,
       "locked": {
@@ -342,6 +358,7 @@
         "alpha-nvim": "alpha-nvim",
         "blink-cmp": "blink-cmp",
         "bufdelete-nvim": "bufdelete-nvim",
+        "friendly-snippets": "friendly-snippets",
         "inc-rename-nvim": "inc-rename-nvim",
         "incline-nvim": "incline-nvim",
         "indent-blankline-nvim": "indent-blankline-nvim",
