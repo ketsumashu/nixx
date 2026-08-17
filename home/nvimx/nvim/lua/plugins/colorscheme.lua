@@ -1,17 +1,17 @@
 return {
   {
-    "darkvoid-theme/darkvoid.nvim",
+    "ThorstenRhau/token",
     lazy = false,
     priority = 1000,
     opts = {
       transparent = true,
-      glow = true,
-      show_end_of_buffer = true,
+      terminal_colors = true,
+      dim_inactive = false,
     },
     config = function(_, opts)
-      require("darkvoid").setup(opts)
-      vim.env.BAT_THEME = "darkvoid"
-      vim.cmd.colorscheme("darkvoid")
+      require("token").setup(opts)
+      vim.env.BAT_THEME = "token-temper"
+      vim.cmd.colorscheme("token-temper")
     end,
   },
 }
