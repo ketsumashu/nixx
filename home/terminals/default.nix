@@ -46,7 +46,7 @@
   };
 
   xdg.configFile."ghostty/config".source =
-    config.file.mkOutOfStoreSymlink "/home/mashu/nixx/home/terminals/config";
+    config.lib.file.mkOutOfStoreSymlink "/home/mashu/nixx/home/terminals/config";
 
   home.packages = with pkgs; [
     codex
