@@ -44,6 +44,7 @@
     enable = true;
     enableFishIntegration = true;
     settings = {
+      initial-command = "fish";
       command = "fish";
       font-family = "PlemolJP35 Console HS";
       adjust-cell-height = "40%";
