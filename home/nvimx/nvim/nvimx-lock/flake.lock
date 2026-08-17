@@ -49,22 +49,6 @@
         "type": "github"
       }
     },
-    "cmp-nvim-lsp": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1763018865,
-        "narHash": "sha256-CYZdfAsJYQyW413fRvNbsS5uayuc6fKDvDLZ2Y7j3ZQ=",
-        "owner": "hrsh7th",
-        "repo": "cmp-nvim-lsp",
-        "rev": "cbc7b02bb99fae35cb42f514762b89b5126651ef",
-        "type": "github"
-      },
-      "original": {
-        "owner": "hrsh7th",
-        "repo": "cmp-nvim-lsp",
-        "type": "github"
-      }
-    },
     "inc-rename-nvim": {
       "flake": false,
       "locked": {
@@ -358,7 +342,6 @@
         "alpha-nvim": "alpha-nvim",
         "blink-cmp": "blink-cmp",
         "bufdelete-nvim": "bufdelete-nvim",
-        "cmp-nvim-lsp": "cmp-nvim-lsp",
         "inc-rename-nvim": "inc-rename-nvim",
         "incline-nvim": "incline-nvim",
         "indent-blankline-nvim": "indent-blankline-nvim",

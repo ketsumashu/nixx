@@ -2,7 +2,6 @@ return {
   {
     "neovim/nvim-lspconfig",
     dependencies = {
-      "hrsh7th/cmp-nvim-lsp",
       "nvimdev/lspsaga.nvim",
       "mfussenegger/nvim-lint",
       "smjonas/inc-rename.nvim",

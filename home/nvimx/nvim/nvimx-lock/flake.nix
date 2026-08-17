@@ -17,10 +17,6 @@
       url = "github:famiu/bufdelete.nvim";
       flake = false;
     };
-    cmp-nvim-lsp = {
-      url = "github:hrsh7th/cmp-nvim-lsp";
-      flake = false;
-    };
     inc-rename-nvim = {
       url = "github:smjonas/inc-rename.nvim";
       flake = false;
