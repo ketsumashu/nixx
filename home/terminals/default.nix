@@ -44,7 +44,7 @@
     enable = true;
     enableFishIntegration = true;
     settings = {
-      font_family = "PlemolJP35 Console HS";
+      font-family = "PlemolJP35 Console HS";
       theme = "noctalia";
     };
   };
