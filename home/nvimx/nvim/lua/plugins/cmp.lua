@@ -72,8 +72,18 @@ return {
       appearance = {
         nerd_font_variant = 'mono'
       },
-
-      completion = { documentation = { auto_show = false } },
+      completion = {
+        menu = {
+          border = 'double'
+        },
+        documentation = {
+          auto_show = false,
+          window = { border = 'double' },
+        },
+        signature = {
+          window = { border = { 'single' }, },
+        },
+      },
 
       sources = {
         default = {
