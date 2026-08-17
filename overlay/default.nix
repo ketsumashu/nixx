@@ -12,6 +12,9 @@
       yaskkserv2 = final.callPackage ../pkgs/yaskkserv2.nix {
         inherit (inputs) yaskkserv2-bin;
       };
+      ai-usagebar = final.callPackage ../pkgs/ai-usagebar.nix {
+        inherit (inputs) ai-usagebar-bin;
+      };
     })
   ];
 }

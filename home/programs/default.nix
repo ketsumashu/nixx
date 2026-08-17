@@ -29,6 +29,7 @@
     fastfetch
     vial
     yaskkserv2
+    ai-usagebar
     openrgb
     ddcutil
     gpu-screen-recorder
