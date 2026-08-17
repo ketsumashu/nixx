@@ -7,9 +7,6 @@ return {
     ---@module 'blink.cmp'
     ---@type blink.cmp.config
     opts = {
-      keymap = { preset = 'super-tab' },
-      signature = { enabled = true },
-      snippets = { preset = { 'default' } },
       appearance = {
         nerd_font_variant = 'mono'
       },
@@ -27,7 +24,6 @@ return {
           window = { border = { 'single' }, },
         },
       },
-
       sources = {
         default = {
           'lsp',
@@ -36,6 +32,9 @@ return {
           'buffer'
         },
       },
+      keymap = { preset = 'super-tab' },
+      signature = { enabled = true },
+      snippets = { preset = { 'default' } },
     },
     opts_extend = { "sources.default" }
   },

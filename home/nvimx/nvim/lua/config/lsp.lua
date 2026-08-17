@@ -11,6 +11,7 @@ vim.lsp.config("lua_ls", {
         globals = {
           "vim",
           "hl",
+          "blink.cmp",
         },
       },
     },
