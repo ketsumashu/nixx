@@ -1,21 +1,5 @@
 {
   "nodes": {
-    "LuaSnip": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1779224266,
-        "narHash": "sha256-5Dm5maKjGcduew/cUZTWeyyVEgpZ0OpoVdMRYEw8Li0=",
-        "owner": "L3MON4D3",
-        "repo": "LuaSnip",
-        "rev": "0abc8f390b278c3b4aabc4c004ac8a088b65cf24",
-        "type": "github"
-      },
-      "original": {
-        "owner": "L3MON4D3",
-        "repo": "LuaSnip",
-        "type": "github"
-      }
-    },
     "alpha-nvim": {
       "flake": false,
       "locked": {
@@ -29,6 +13,23 @@
       "original": {
         "owner": "goolord",
         "repo": "alpha-nvim",
+        "type": "github"
+      }
+    },
+    "blink-cmp": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1775330305,
+        "narHash": "sha256-C1FpyGw0f35NdHvDUGPXxmKdOgw3SpIteK1gAjVy6Ns=",
+        "owner": "saghen",
+        "repo": "blink.cmp",
+        "rev": "78336bc89ee5365633bcf754d93df01678b5c08f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "saghen",
+        "ref": "refs/tags/v1.10.2",
+        "repo": "blink.cmp",
         "type": "github"
       }
     },
@@ -48,38 +49,6 @@
         "type": "github"
       }
     },
-    "cmp-buffer": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1743497185,
-        "narHash": "sha256-dG4U7MtnXThoa/PD+qFtCt76MQ14V1wX8GMYcvxEnbM=",
-        "owner": "hrsh7th",
-        "repo": "cmp-buffer",
-        "rev": "b74fab3656eea9de20a9b8116afa3cfc4ec09657",
-        "type": "github"
-      },
-      "original": {
-        "owner": "hrsh7th",
-        "repo": "cmp-buffer",
-        "type": "github"
-      }
-    },
-    "cmp-git": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1779017343,
-        "narHash": "sha256-6gxJkiJqUMB2xKx3z7v4OVUCFHDml8F7Ffs2JwiXo00=",
-        "owner": "petertriho",
-        "repo": "cmp-git",
-        "rev": "e645f69b93eede43fb644bb1a0b1db3eef1108a3",
-        "type": "github"
-      },
-      "original": {
-        "owner": "petertriho",
-        "repo": "cmp-git",
-        "type": "github"
-      }
-    },
     "cmp-nvim-lsp": {
       "flake": false,
       "locked": {
@@ -93,22 +62,6 @@
       "original": {
         "owner": "hrsh7th",
         "repo": "cmp-nvim-lsp",
-        "type": "github"
-      }
-    },
-    "cmp-path": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1753844861,
-        "narHash": "sha256-e4Rd2y1Wekp7aobpTGaUeoSBnlfIASDaBR8js5dh2Vw=",
-        "owner": "hrsh7th",
-        "repo": "cmp-path",
-        "rev": "c642487086dbd9a93160e1679a1327be111cbc25",
-        "type": "github"
-      },
-      "original": {
-        "owner": "hrsh7th",
-        "repo": "cmp-path",
         "type": "github"
       }
     },
@@ -272,22 +225,6 @@
         "type": "github"
       }
     },
-    "nvim-cmp": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1783641462,
-        "narHash": "sha256-YN8KAXVv1AFc3DajWVIl+EppOx/s3vdxiKMlb/lj5qc=",
-        "owner": "hrsh7th",
-        "repo": "nvim-cmp",
-        "rev": "2ffe79f1f021def8dd1fcd81deb16f1bb0d989f3",
-        "type": "github"
-      },
-      "original": {
-        "owner": "hrsh7th",
-        "repo": "nvim-cmp",
-        "type": "github"
-      }
-    },
     "nvim-colorizer-lua": {
       "flake": false,
       "locked": {
@@ -418,13 +355,10 @@
     },
     "root": {
       "inputs": {
-        "LuaSnip": "LuaSnip",
         "alpha-nvim": "alpha-nvim",
+        "blink-cmp": "blink-cmp",
         "bufdelete-nvim": "bufdelete-nvim",
-        "cmp-buffer": "cmp-buffer",
-        "cmp-git": "cmp-git",
         "cmp-nvim-lsp": "cmp-nvim-lsp",
-        "cmp-path": "cmp-path",
         "inc-rename-nvim": "inc-rename-nvim",
         "incline-nvim": "incline-nvim",
         "indent-blankline-nvim": "indent-blankline-nvim",
@@ -435,7 +369,6 @@
         "noice-nvim": "noice-nvim",
         "nui-nvim": "nui-nvim",
         "nvim-autopairs": "nvim-autopairs",
-        "nvim-cmp": "nvim-cmp",
         "nvim-colorizer-lua": "nvim-colorizer-lua",
         "nvim-lastplace": "nvim-lastplace",
         "nvim-lint": "nvim-lint",

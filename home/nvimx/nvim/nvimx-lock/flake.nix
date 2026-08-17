@@ -5,32 +5,20 @@
       url = "github:folke/lazy.nvim";
       flake = false;
     };
-    LuaSnip = {
-      url = "github:L3MON4D3/LuaSnip";
-      flake = false;
-    };
     alpha-nvim = {
       url = "github:goolord/alpha-nvim";
+      flake = false;
+    };
+    blink-cmp = {
+      url = "github:saghen/blink.cmp/refs/tags/v1.10.2";
       flake = false;
     };
     bufdelete-nvim = {
       url = "github:famiu/bufdelete.nvim";
       flake = false;
     };
-    cmp-buffer = {
-      url = "github:hrsh7th/cmp-buffer";
-      flake = false;
-    };
-    cmp-git = {
-      url = "github:petertriho/cmp-git";
-      flake = false;
-    };
     cmp-nvim-lsp = {
       url = "github:hrsh7th/cmp-nvim-lsp";
-      flake = false;
-    };
-    cmp-path = {
-      url = "github:hrsh7th/cmp-path";
       flake = false;
     };
     inc-rename-nvim = {
@@ -67,10 +55,6 @@
     };
     nvim-autopairs = {
       url = "github:windwp/nvim-autopairs";
-      flake = false;
-    };
-    nvim-cmp = {
-      url = "github:hrsh7th/nvim-cmp";
       flake = false;
     };
     nvim-colorizer-lua = {

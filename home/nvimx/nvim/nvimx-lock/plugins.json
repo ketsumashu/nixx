@@ -10,24 +10,6 @@
   },
   "localPlugins": {},
   "plugins": {
-    "LuaSnip": {
-      "branch": null,
-      "build": {
-        "kind": "none"
-      },
-      "commit": null,
-      "dependencies": [],
-      "inputName": "LuaSnip",
-      "pin": null,
-      "resolvedRef": null,
-      "source": {
-        "owner": "L3MON4D3",
-        "repo": "LuaSnip",
-        "type": "github"
-      },
-      "tag": null,
-      "version": null
-    },
     "alpha-nvim": {
       "branch": null,
       "build": {
@@ -45,6 +27,24 @@
       },
       "tag": null,
       "version": null
+    },
+    "blink.cmp": {
+      "branch": null,
+      "build": {
+        "kind": "none"
+      },
+      "commit": null,
+      "dependencies": [],
+      "inputName": "blink-cmp",
+      "pin": null,
+      "resolvedRef": "refs/tags/v1.10.2",
+      "source": {
+        "owner": "saghen",
+        "repo": "blink.cmp",
+        "type": "github"
+      },
+      "tag": null,
+      "version": "1.*"
     },
     "bufdelete.nvim": {
       "branch": null,
@@ -64,42 +64,6 @@
       "tag": null,
       "version": null
     },
-    "cmp-buffer": {
-      "branch": null,
-      "build": {
-        "kind": "none"
-      },
-      "commit": null,
-      "dependencies": [],
-      "inputName": "cmp-buffer",
-      "pin": null,
-      "resolvedRef": null,
-      "source": {
-        "owner": "hrsh7th",
-        "repo": "cmp-buffer",
-        "type": "github"
-      },
-      "tag": null,
-      "version": null
-    },
-    "cmp-git": {
-      "branch": null,
-      "build": {
-        "kind": "none"
-      },
-      "commit": null,
-      "dependencies": [],
-      "inputName": "cmp-git",
-      "pin": null,
-      "resolvedRef": null,
-      "source": {
-        "owner": "petertriho",
-        "repo": "cmp-git",
-        "type": "github"
-      },
-      "tag": null,
-      "version": null
-    },
     "cmp-nvim-lsp": {
       "branch": null,
       "build": {
@@ -113,24 +77,6 @@
       "source": {
         "owner": "hrsh7th",
         "repo": "cmp-nvim-lsp",
-        "type": "github"
-      },
-      "tag": null,
-      "version": null
-    },
-    "cmp-path": {
-      "branch": null,
-      "build": {
-        "kind": "none"
-      },
-      "commit": null,
-      "dependencies": [],
-      "inputName": "cmp-path",
-      "pin": null,
-      "resolvedRef": null,
-      "source": {
-        "owner": "hrsh7th",
-        "repo": "cmp-path",
         "type": "github"
       },
       "tag": null,
@@ -296,30 +242,6 @@
       "source": {
         "owner": "windwp",
         "repo": "nvim-autopairs",
-        "type": "github"
-      },
-      "tag": null,
-      "version": null
-    },
-    "nvim-cmp": {
-      "branch": null,
-      "build": {
-        "kind": "none"
-      },
-      "commit": null,
-      "dependencies": [
-        "LuaSnip",
-        "cmp-buffer",
-        "cmp-git",
-        "cmp-nvim-lsp",
-        "cmp-path"
-      ],
-      "inputName": "nvim-cmp",
-      "pin": null,
-      "resolvedRef": null,
-      "source": {
-        "owner": "hrsh7th",
-        "repo": "nvim-cmp",
         "type": "github"
       },
       "tag": null,
