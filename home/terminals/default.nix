@@ -40,6 +40,10 @@
       include /home/mashu/.config/kitty/themes/noctalia.conf
     '';
   };
+  programs.ghostty = {
+    enable = true;
+  };
+
   home.packages = with pkgs; [
     codex
   ];
