@@ -7,6 +7,7 @@ return {
       "nvim-telescope/telescope-frecency.nvim",
       "debugloop/telescope-undo.nvim",
     },
+    cmd = "Telescope",
     config = function()
       local telescope = require("telescope")
       local actions = require("telescope.actions")
