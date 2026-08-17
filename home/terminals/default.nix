@@ -44,8 +44,12 @@
     enable = true;
     enableFishIntegration = true;
     settings = {
+      command = "fish";
       font-family = "PlemolJP35 Console HS";
+      adjust-cell-height = "40%";
+      adjust-cell-width = "5%";
       theme = "noctalia";
+      background-opacity = 0.84;
     };
   };
 
