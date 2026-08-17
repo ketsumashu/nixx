@@ -136,24 +136,6 @@
       "tag": null,
       "version": null
     },
-    "darkvoid.nvim": {
-      "branch": null,
-      "build": {
-        "kind": "none"
-      },
-      "commit": null,
-      "dependencies": [],
-      "inputName": "darkvoid-nvim",
-      "pin": null,
-      "resolvedRef": null,
-      "source": {
-        "owner": "darkvoid-theme",
-        "repo": "darkvoid.nvim",
-        "type": "github"
-      },
-      "tag": null,
-      "version": null
-    },
     "inc-rename.nvim": {
       "branch": null,
       "build": {
@@ -583,6 +565,24 @@
       "source": {
         "owner": "akinsho",
         "repo": "toggleterm.nvim",
+        "type": "github"
+      },
+      "tag": null,
+      "version": null
+    },
+    "token": {
+      "branch": null,
+      "build": {
+        "kind": "none"
+      },
+      "commit": null,
+      "dependencies": [],
+      "inputName": "token",
+      "pin": null,
+      "resolvedRef": null,
+      "source": {
+        "owner": "ThorstenRhau",
+        "repo": "token",
         "type": "github"
       },
       "tag": null,

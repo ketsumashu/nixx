@@ -112,22 +112,6 @@
         "type": "github"
       }
     },
-    "darkvoid-nvim": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1732221927,
-        "narHash": "sha256-JiNuv1TAIHVL9tGNDYC0RdRPnI9l4zn+ZCU9B4wQ5Io=",
-        "owner": "darkvoid-theme",
-        "repo": "darkvoid.nvim",
-        "rev": "45be993a5617e05811b6b293c05e6aded7003cc9",
-        "type": "github"
-      },
-      "original": {
-        "owner": "darkvoid-theme",
-        "repo": "darkvoid.nvim",
-        "type": "github"
-      }
-    },
     "inc-rename-nvim": {
       "flake": false,
       "locked": {
@@ -441,7 +425,6 @@
         "cmp-git": "cmp-git",
         "cmp-nvim-lsp": "cmp-nvim-lsp",
         "cmp-path": "cmp-path",
-        "darkvoid-nvim": "darkvoid-nvim",
         "inc-rename-nvim": "inc-rename-nvim",
         "incline-nvim": "incline-nvim",
         "indent-blankline-nvim": "indent-blankline-nvim",
@@ -466,6 +449,7 @@
         "telescope-nvim": "telescope-nvim",
         "telescope-undo-nvim": "telescope-undo-nvim",
         "toggleterm-nvim": "toggleterm-nvim",
+        "token": "token",
         "twilight-nvim": "twilight-nvim",
         "which-key-nvim": "which-key-nvim",
         "zen-mode-nvim": "zen-mode-nvim"
@@ -548,6 +532,22 @@
       "original": {
         "owner": "akinsho",
         "repo": "toggleterm.nvim",
+        "type": "github"
+      }
+    },
+    "token": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1786898495,
+        "narHash": "sha256-3sbfdg8ZIws4pyQSFxLeNWIFmKSwi+KmQSNJjSKsLeI=",
+        "owner": "ThorstenRhau",
+        "repo": "token",
+        "rev": "05f9400cd489e4dab58ce40635b45f3689a6255e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ThorstenRhau",
+        "repo": "token",
         "type": "github"
       }
     },

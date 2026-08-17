@@ -7,6 +7,9 @@ return {
       transparent = true,
       terminal_colors = true,
       dim_inactive = false,
+      attributes = {
+        italic = false,
+      }
     },
     config = function(_, opts)
       require("token").setup(opts)
