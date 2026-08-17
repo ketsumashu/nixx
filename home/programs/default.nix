@@ -36,5 +36,6 @@
     chromium
     jq
     file
+    lazygit
   ];
 }
