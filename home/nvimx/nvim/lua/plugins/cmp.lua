@@ -8,6 +8,8 @@ return {
     ---@type blink.cmp.config
     opts = {
       keymap = { preset = 'super-tab' },
+      signature = { enabled = true },
+      snippets = { preset = { 'default' } },
       appearance = {
         nerd_font_variant = 'mono'
       },
@@ -15,7 +17,7 @@ return {
         ghost_text = { enabled = true, },
         menu = {
           draw = { treesitter = { 'lsp' }, },
-          border = 'double'
+          border = 'single'
         },
         documentation = {
           auto_show = false,
