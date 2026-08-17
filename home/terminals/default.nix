@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, config, ... }:
 {
   programs.kitty = {
     enable = true;
@@ -45,7 +45,8 @@
     enableFishIntegration = true;
   };
 
-  xdg.configFile."ghostty/config".source = ./config;
+  xdg.configFile."ghostty/config".source =
+    config.file.mkOutOfStoreSymlink "/home/mashu/nixx/home/terminals/config";
 
   home.packages = with pkgs; [
     codex
