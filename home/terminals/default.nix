@@ -45,8 +45,8 @@
     enableFishIntegration = true;
   };
 
-  xdg.configFile."ghostty/config".source =
-    config.lib.file.mkOutOfStoreSymlink "/home/mashu/nixx/home/terminals/config";
+  xdg.configFile."ghostty/config.ghostty".source =
+    config.lib.file.mkOutOfStoreSymlink "/home/mashu/nixx/home/terminals/config.ghostty";
 
   home.packages = with pkgs; [
     codex
