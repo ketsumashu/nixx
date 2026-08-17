@@ -20,9 +20,6 @@ return {
           auto_show = false,
           window = { border = 'double' },
         },
-        signature = {
-          window = { border = { 'single' }, },
-        },
       },
       sources = {
         default = {
