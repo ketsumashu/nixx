@@ -108,6 +108,12 @@ window-rule {
     }
 }
 window-rule {
+    match app-id=r#"^com.mitchellh.ghostty$"#
+    background-effect {
+      blur true
+    }
+}
+window-rule {
     match app-id=r#"wezterm$"#
     background-effect {
       blur true
@@ -120,7 +126,7 @@ window-rule {
     }
 }
 window-rule {
-    match app-id=r#"noctalia-shell$"#
+    match app-id=r#"noctalia$"#
     background-effect {
       blur true
     }
@@ -176,13 +182,14 @@ layer-rule {
   match namespace="^noctalia-backdrop"
   place-within-backdrop true
 }
-//layer-rule {
-//  match namespace="^noctalia-(bar-[^\"]+|notification|dock|panel|osd|launcher)$"
-//  background-effect {
-//    xray true
-//    blur true
-//  }
-//}
+layer-rule {
+  match namespace="^noctalia-(bar-[^\"]+|notification|dock|panel|osd|launcher)$"
+  background-effect {
+    xray false
+    blur true
+  }
+}
+
 binds {
   Mod+Shift+Slash { show-hotkey-overlay; }
 
