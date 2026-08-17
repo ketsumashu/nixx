@@ -68,8 +68,7 @@ return {
     ---@module 'blink.cmp'
     ---@type blink.cmp.config
     opts = {
-      keymap = { preset = 'default' },
-
+      keymap = { preset = 'super-tab' },
       appearance = {
         nerd_font_variant = 'mono'
       },
