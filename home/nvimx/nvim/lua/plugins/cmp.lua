@@ -34,7 +34,7 @@ return {
       },
       keymap = { preset = 'super-tab' },
       signature = { enabled = true },
-      snippets = { preset = { 'default' } },
+      snippets = { preset = 'default' },
     },
     opts_extend = { "sources.default" }
   },
