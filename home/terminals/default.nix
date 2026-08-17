@@ -43,9 +43,9 @@
   programs.ghostty = {
     enable = true;
     enableFishIntegration = true;
-    theme = "noctalia";
     settings = {
       font_family = "PlemolJP35 Console HS";
+      theme = "noctalia";
     };
   };
 
