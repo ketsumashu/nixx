@@ -7,7 +7,7 @@
     grim
     libnotify
     meson
-    pavucontrol
+    pwvucontrol
     lm_sensors
     dconf
     btop-rocm
