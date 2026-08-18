@@ -40,7 +40,7 @@
     ];
     supportedFilesystems = [ "ntfs" ];
     blacklistedKernelModules = [ "k10temp" ];
-    kernelPackages = pkgs.linuxPackages_testing;
+    kernelPackages = pkgs.linuxPackages_latest;
     tmp.cleanOnBoot = true;
     extraModulePackages = with config.boot.kernelPackages; [
       zenpower
