@@ -132,14 +132,19 @@ window-rule {
     }
 }
 window-rule {
-    match app-id=r#"pavucontrol$"#
+    match app-id=r#"pwvucontrol$"#
     open-floating true
-    default-floating-position x=1200 y=1000
     max-height 800
     max-width 1000
 }
 window-rule {
     match app-id=r#"xdg-desktop-portal-gtk$"#
+    open-floating true
+    max-height 800
+    max-width 1400
+}
+window-rule {
+    match title=r#"^Select File"#
     open-floating true
     max-height 800
     max-width 1400
