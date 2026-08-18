@@ -13,6 +13,7 @@
     amdgpu.overdrive.enable = true;
   };
   services = {
+    lact.enable = true;
     dbus.enable = true;
     pulseaudio.enable = false;
     hardware.openrgb.enable = true;
