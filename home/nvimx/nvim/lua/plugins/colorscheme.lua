@@ -6,7 +6,7 @@ return {
     config = function()
       vim.g.substrata_italic_comments = false
       vim.cmd.colorscheme("substrata")
-      vim.g.transparent = true
+      vim.g.substrata_transparent = true
     end,
   },
 }
