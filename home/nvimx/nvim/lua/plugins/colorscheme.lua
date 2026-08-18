@@ -4,9 +4,9 @@ return {
     lazy = false,
     priority = 1000,
     config = function()
-      require("substrata").setup()
       vim.g.substrata_italic_comments = false
       vim.g.transparent = true
+      require("substrata").setup()
       vim.cmd.colorscheme("substrata")
     end,
   },
