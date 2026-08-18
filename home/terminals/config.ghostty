@@ -1,10 +1,10 @@
-adjust-cell-height = "40%"
-adjust-cell-width = "5%"
+adjust-cell-height = "50%"
+adjust-cell-width = "7%"
 background-opacity = 0.840000
 background-blur = false
 command = "fish"
-font-family = "Terminus"
-font-size = 20
+font-family = "PlemolJP35 Console HS"
+font-size = 14
 theme = noctalia
 window-padding-x = 12
 window-padding-y = 12
