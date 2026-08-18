@@ -377,15 +377,31 @@
         "nvim-treesitter": "nvim-treesitter",
         "nvim-web-devicons": "nvim-web-devicons",
         "plenary-nvim": "plenary-nvim",
+        "substrata-nvim": "substrata-nvim",
         "telescope-frecency-nvim": "telescope-frecency-nvim",
         "telescope-fzf-native-nvim": "telescope-fzf-native-nvim",
         "telescope-nvim": "telescope-nvim",
         "telescope-undo-nvim": "telescope-undo-nvim",
         "toggleterm-nvim": "toggleterm-nvim",
-        "token": "token",
         "twilight-nvim": "twilight-nvim",
         "which-key-nvim": "which-key-nvim",
         "zen-mode-nvim": "zen-mode-nvim"
+      }
+    },
+    "substrata-nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1665105832,
+        "narHash": "sha256-mCG9mgrxkIfiVL5+9pi6K+mpzfwqLIhzRa3j7wzRgW8=",
+        "owner": "kvrohit",
+        "repo": "substrata.nvim",
+        "rev": "e3b2b69ce597e8d17767a41d8db45b15178a0b45",
+        "type": "github"
+      },
+      "original": {
+        "owner": "kvrohit",
+        "repo": "substrata.nvim",
+        "type": "github"
       }
     },
     "telescope-frecency-nvim": {
@@ -465,22 +481,6 @@
       "original": {
         "owner": "akinsho",
         "repo": "toggleterm.nvim",
-        "type": "github"
-      }
-    },
-    "token": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1786898495,
-        "narHash": "sha256-3sbfdg8ZIws4pyQSFxLeNWIFmKSwi+KmQSNJjSKsLeI=",
-        "owner": "ThorstenRhau",
-        "repo": "token",
-        "rev": "05f9400cd489e4dab58ce40635b45f3689a6255e",
-        "type": "github"
-      },
-      "original": {
-        "owner": "ThorstenRhau",
-        "repo": "token",
         "type": "github"
       }
     },

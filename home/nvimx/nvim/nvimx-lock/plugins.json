@@ -397,6 +397,24 @@
       "tag": null,
       "version": null
     },
+    "substrata.nvim": {
+      "branch": null,
+      "build": {
+        "kind": "none"
+      },
+      "commit": null,
+      "dependencies": [],
+      "inputName": "substrata-nvim",
+      "pin": null,
+      "resolvedRef": null,
+      "source": {
+        "owner": "kvrohit",
+        "repo": "substrata.nvim",
+        "type": "github"
+      },
+      "tag": null,
+      "version": null
+    },
     "telescope-frecency.nvim": {
       "branch": null,
       "build": {
@@ -488,24 +506,6 @@
       "source": {
         "owner": "akinsho",
         "repo": "toggleterm.nvim",
-        "type": "github"
-      },
-      "tag": null,
-      "version": null
-    },
-    "token": {
-      "branch": null,
-      "build": {
-        "kind": "none"
-      },
-      "commit": null,
-      "dependencies": [],
-      "inputName": "token",
-      "pin": null,
-      "resolvedRef": null,
-      "source": {
-        "owner": "ThorstenRhau",
-        "repo": "token",
         "type": "github"
       },
       "tag": null,

@@ -89,6 +89,10 @@
       url = "github:nvim-lua/plenary.nvim";
       flake = false;
     };
+    substrata-nvim = {
+      url = "github:kvrohit/substrata.nvim";
+      flake = false;
+    };
     telescope-frecency-nvim = {
       url = "github:nvim-telescope/telescope-frecency.nvim";
       flake = false;
@@ -107,10 +111,6 @@
     };
     toggleterm-nvim = {
       url = "github:akinsho/toggleterm.nvim";
-      flake = false;
-    };
-    token = {
-      url = "github:ThorstenRhau/token";
       flake = false;
     };
     twilight-nvim = {
