@@ -348,8 +348,7 @@
         "nixpkgs": "nixpkgs_2",
         "noctalia": "noctalia",
         "nvimx": "nvimx",
-        "yaskkserv2-bin": "yaskkserv2-bin",
-        "zen": "zen"
+        "yaskkserv2-bin": "yaskkserv2-bin"
       }
     },
     "treefmt-nix": {
@@ -402,29 +401,6 @@
       "original": {
         "type": "tarball",
         "url": "https://github.com/wachikun/yaskkserv2/releases/download/0.1.7/yaskkserv2-0.1.7-x86_64-unknown-linux-gnu.tar.gz"
-      }
-    },
-    "zen": {
-      "inputs": {
-        "home-manager": [
-          "home-manager"
-        ],
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1786883935,
-        "narHash": "sha256-GE0VmDa7cLMReaNTrzYQ3sFSPUd6ARynENviHdnnUDM=",
-        "owner": "0xc000022070",
-        "repo": "zen-browser-flake",
-        "rev": "37dc6abfa4a2c306b131f74770b1f36288d9bf2e",
-        "type": "github"
-      },
-      "original": {
-        "owner": "0xc000022070",
-        "repo": "zen-browser-flake",
-        "type": "github"
       }
     }
   },

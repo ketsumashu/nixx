@@ -11,7 +11,10 @@
   programs.firefox = {
     enable = true;
     package = pkgs.firefox-beta-bin;
-    nativeMessagingHosts = with pkgs; [ tridactyl-native ];
+    nativeMessagingHosts = with pkgs; [
+      tridactyl-native
+      pywalfox-native
+    ];
   };
 
   xdg.configFile."tridactyl/themes/poimandres.css".source = ./tridactyl/poimandres.css;

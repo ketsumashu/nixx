@@ -90,6 +90,10 @@ window-rule {
     open-floating true
 }
 window-rule {
+    match title=r#"Bitwarden パスワードマネージャー"#
+    open-floating true
+}
+window-rule {
     match app-id=r#"^dev.noctalia.Noctalia.Settings$"#
     open-floating true
 }
