@@ -353,6 +353,22 @@
         "type": "github"
       }
     },
+    "poimandres-nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1729374068,
+        "narHash": "sha256-c0c0Q1W9Nfen9jYiDUISSlCHOY+XJuNPiBCOw4masUs=",
+        "owner": "olivercederborg",
+        "repo": "poimandres.nvim",
+        "rev": "a488957d803943a4201ac3b774913fcafa9e6b3a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "olivercederborg",
+        "repo": "poimandres.nvim",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "alpha-nvim": "alpha-nvim",
@@ -377,7 +393,7 @@
         "nvim-treesitter": "nvim-treesitter",
         "nvim-web-devicons": "nvim-web-devicons",
         "plenary-nvim": "plenary-nvim",
-        "substrata-nvim": "substrata-nvim",
+        "poimandres-nvim": "poimandres-nvim",
         "telescope-frecency-nvim": "telescope-frecency-nvim",
         "telescope-fzf-native-nvim": "telescope-fzf-native-nvim",
         "telescope-nvim": "telescope-nvim",
@@ -386,22 +402,6 @@
         "twilight-nvim": "twilight-nvim",
         "which-key-nvim": "which-key-nvim",
         "zen-mode-nvim": "zen-mode-nvim"
-      }
-    },
-    "substrata-nvim": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1665105832,
-        "narHash": "sha256-mCG9mgrxkIfiVL5+9pi6K+mpzfwqLIhzRa3j7wzRgW8=",
-        "owner": "kvrohit",
-        "repo": "substrata.nvim",
-        "rev": "e3b2b69ce597e8d17767a41d8db45b15178a0b45",
-        "type": "github"
-      },
-      "original": {
-        "owner": "kvrohit",
-        "repo": "substrata.nvim",
-        "type": "github"
       }
     },
     "telescope-frecency-nvim": {

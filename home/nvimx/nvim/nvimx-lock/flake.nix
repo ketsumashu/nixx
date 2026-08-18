@@ -89,8 +89,8 @@
       url = "github:nvim-lua/plenary.nvim";
       flake = false;
     };
-    substrata-nvim = {
-      url = "github:kvrohit/substrata.nvim";
+    poimandres-nvim = {
+      url = "github:olivercederborg/poimandres.nvim";
       flake = false;
     };
     telescope-frecency-nvim = {

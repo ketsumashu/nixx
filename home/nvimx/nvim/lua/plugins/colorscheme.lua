@@ -1,12 +1,16 @@
 return {
   {
-    "kvrohit/substrata.nvim",
+    "olivercederborg/poimandres.nvim",
     lazy = false,
     priority = 1000,
     config = function()
-      vim.g.substrata_italic_comments = false
-      vim.cmd.colorscheme("substrata")
-      vim.g.substrata_transparent = true
+      require('poimandres').setup {
+        disable_background = true,
+        dsable_italics = true,
+      }
     end,
+    init = function()
+      vim.cmd("colorscheme poimandres")
+    end
   },
 }
