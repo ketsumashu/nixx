@@ -4,13 +4,12 @@
   ...
 }:
 {
-  #imports = [
-  #  inputs.zen.homeModules.beta
-  #];
+  imports = [
+    inputs.zen.homeModules.beta
+  ];
 
-  programs.firefox = {
+  programs.zen-browser = {
     enable = true;
-    package = pkgs.floorp-bin;
     nativeMessagingHosts = with pkgs; [
       tridactyl-native
       pywalfox-native

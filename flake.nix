@@ -25,13 +25,13 @@
       url = "https://github.com/akitaonrails/ai-usagebar/releases/download/v0.20.1/ai-usagebar-linux-x86_64.tar.gz";
       flake = false;
     };
-    #zen = {
-    #  url = "github:0xc000022070/zen-browser-flake";
-    #  inputs = {
-    #    nixpkgs.follows = "nixpkgs";
-    #    home-manager.follows = "home-manager";
-    #  };
-    #};
+    zen = {
+      url = "github:0xc000022070/zen-browser-flake";
+      inputs = {
+        nixpkgs.follows = "nixpkgs";
+        home-manager.follows = "home-manager";
+      };
+    };
     nvimx = {
       url = "github:myuron/nvimx";
       inputs.nixpkgs.follows = "nixpkgs";
