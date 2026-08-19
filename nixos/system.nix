@@ -34,7 +34,6 @@
       timeout = 5;
     };
     kernelModules = [
-      "kvm-amd"
       "v4l2loopback"
       "ntsync"
     ];
@@ -74,7 +73,6 @@
       "uid=1000"
     ];
   };
-
   fileSystems."/home/mashu/game" = {
     device = "/dev/disk/by-uuid/ECB01508B014DB42";
     fsType = "ntfs-3g";
@@ -83,7 +81,6 @@
       "uid=1000"
     ];
   };
-
   fileSystems."/home/mashu/develop" = {
     device = "/dev/disk/by-uuid/49060a3e-3f93-4af0-99d3-79533b71c38c";
     fsType = "ext4";
