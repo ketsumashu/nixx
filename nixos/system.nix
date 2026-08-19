@@ -31,7 +31,7 @@
         theme = "${pkgs.kdePackages.breeze-grub}/grub/themes/breeze";
       };
       efi.canTouchEfiVariables = true;
-      timeout = 5;
+      timeout = 1;
     };
     kernelModules = [
       "v4l2loopback"
