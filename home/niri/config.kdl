@@ -126,6 +126,12 @@ window-rule {
     }
 }
 window-rule {
+    match app-id=r#"zen-beta$"#
+    background-effect {
+      blur true
+    }
+}
+window-rule {
     match app-id=r#"noctalia$"#
     background-effect {
       blur true
@@ -198,7 +204,7 @@ layer-rule {
 binds {
   Mod+Shift+Slash { show-hotkey-overlay; }
 
-  Mod+Return hotkey-overlay-title="Open a Terminal: ghostty" { spawn "ghostty"; }
+  Mod+Return hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
   Mod+b hotkey-overlay-title="Open a browser: zen" { spawn "zen-beta"; }
   Mod+space hotkey-overlay-title="Run an Application Launcher" { spawn-sh "noctalia msg panel-toggle launcher"; }
   Super+Alt+p hotkey-overlay-title="powermenu" { spawn-sh "noctalia msg panel-toggle session"; }
