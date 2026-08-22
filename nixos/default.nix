@@ -9,6 +9,7 @@
     ./tuigreet.nix
     ./system.nix
     ./hardware.nix
+    ./hyprland.nix
     ./keyring.nix
     ./develop.nix
   ];
