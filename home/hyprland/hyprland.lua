@@ -137,8 +137,9 @@ end
 
 --window rules
 local float_rules = {
-  { class = ".*xdg-desktop-portal-gtk" },
+  { class = ".*Xdg-desktop-portal-gtk" },
   { class = ".*org.pulseaudio.pavucontrol" },
+  { class = "^chromium-browser$" },
 
   { title = "Save File" },
   { title = ".*blob.*" },
@@ -160,6 +161,11 @@ for _, rule in ipairs(float_rules) do
     float = true,
   })
 end
+
+hl.window_rule({
+  match = { class = "^chromium-browser$" },
+  size = { 1200, 800 },
+})
 
 hl.window_rule({
   match = { title = ".*bmz.*" },
@@ -193,7 +199,6 @@ end
 -- Autostart
 hl.on("hyprland.start", function()
   hl.exec_cmd("systemctl --user start hyprland-session.target")
-  hl.exec_cmd("systemctl --user enable xdg-desktop-portal-hyprland")
   hl.exec_cmd("steam")
   hl.exec_cmd("yaskkserv2 --google-suggest /home/mashu/nixx/home/libskk/jisyo.yaskkserv2")
   hl.exec_cmd("vesktop --gtk-version=4 --ozone-platform=wayland")
