@@ -176,6 +176,11 @@ hl.window_rule({
 })
 
 hl.window_rule({
+  match = { class = ".*pwvucontrol$" },
+  suppress_event = "maximize",
+})
+
+hl.window_rule({
   match = {
     title = "Noctalia Settings",
     class = "^dev.noctalia.Noctalia$",
