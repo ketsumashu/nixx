@@ -130,6 +130,7 @@ local monitors = {
   { output = "DP-2",     mode = "2560x1440@100", position = "0x0",    scale = 1 },
   { output = "HDMI-A-1", mode = "3840x2160@120", position = "2560x0", scale = 1 },
   { output = "DP-1",     mode = "2560x1440@120", position = "6400x0", scale = 1 },
+  { output = "ipad",     mode = "2266x1488@60",  position = "8960x0", scale = 1 },
 }
 for _, config in ipairs(monitors) do
   hl.monitor(config)
@@ -199,6 +200,7 @@ end
 -- Autostart
 hl.on("hyprland.start", function()
   hl.exec_cmd("systemctl --user start hyprland-session.target")
+  hl.exec_cmd("hyprctl output create headless ipad")
   hl.exec_cmd("steam")
   hl.exec_cmd("yaskkserv2 --google-suggest /home/mashu/nixx/home/libskk/jisyo.yaskkserv2")
   hl.exec_cmd("discord --gtk-version=4 --ozone-platform=wayland")
