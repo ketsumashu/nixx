@@ -140,6 +140,7 @@ end
 local float_rules = {
   { class = ".*Xdg-desktop-portal-gtk" },
   { class = ".*org.pulseaudio.pavucontrol" },
+  { class = ".*pwvucontrol$" },
   { class = "^chromium-browser$" },
 
   { title = "Save File" },
@@ -166,6 +167,21 @@ end
 hl.window_rule({
   match = { class = "^chromium-browser$" },
   size = { 1200, 800 },
+})
+
+hl.window_rule({
+  match = { class = ".*control$" },
+  size = { 1200, 800 },
+  max_size = { 1200, 800 },
+})
+
+hl.window_rule({
+  match = {
+    title = "Noctalia Settings",
+    class = "^dev.noctalia.Noctalia$",
+  },
+  size = { 1200, 800 },
+  float = true,
 })
 
 hl.window_rule({
