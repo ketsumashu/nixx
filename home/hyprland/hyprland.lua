@@ -173,7 +173,7 @@ hl.window_rule({
 })
 
 hl.window_rule({
-  match = { class = ".*vesktop.*" },
+  match = { class = ".*discord.*" },
   workspace = "7 silent",
 })
 hl.window_rule({
@@ -201,7 +201,7 @@ hl.on("hyprland.start", function()
   hl.exec_cmd("systemctl --user start hyprland-session.target")
   hl.exec_cmd("steam")
   hl.exec_cmd("yaskkserv2 --google-suggest /home/mashu/nixx/home/libskk/jisyo.yaskkserv2")
-  hl.exec_cmd("vesktop --gtk-version=4 --ozone-platform=wayland")
+  hl.exec_cmd("discord --gtk-version=4 --ozone-platform=wayland")
   hl.exec_cmd("openrgb --startminimized -p ~/.config/OpenRGB/pro.orp")
 end)
 

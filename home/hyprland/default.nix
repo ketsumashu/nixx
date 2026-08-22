@@ -17,7 +17,6 @@
 
   wayland.windowManager.hyprland = {
     enable = true;
-    portalPackage = pkgs.xdg-desktop-portal-hyprland;
     systemd.enable = false;
   };
 
