@@ -31,6 +31,11 @@
     "org/gtk/settings/file-chooser" = {
       sort-directories-first = true;
     };
+    "com/saivert/pwvucontrol" = {
+      window-width = 1200;
+      window-height = 800;
+      is-maximized = false;
+    };
   };
   home.pointerCursor = {
     enable = true;
