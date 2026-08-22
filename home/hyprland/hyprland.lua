@@ -29,8 +29,6 @@ local action_binds = {
   ["+J"]          = hl.dsp.focus({ direction = "down" }),
   ["+mouse_up"]   = hl.dsp.focus({ direction = "left" }),
   ["+mouse_down"] = hl.dsp.focus({ direction = "right" }),
-  ["+SHIFT +H"]   = hl.dsp.layout("swapcol l"),
-  ["+SHIFT +L"]   = hl.dsp.layout("swapcol r"),
   ["+SHIFT +K"]   = hl.dsp.layout("expel"),
   ["+SHIFT +J"]   = hl.dsp.layout("consume"),
   ["+C"]          = hl.dsp.layout("fit_into_view"),
@@ -41,6 +39,46 @@ local action_binds = {
 }
 for key, action in pairs(action_binds) do
   hl.bind(mainmod .. key, action)
+end
+
+local function has_column_in_direction(direction)
+  local active_window = hl.get_active_window()
+  local workspace = hl.get_active_workspace()
+  if not active_window or not workspace then
+    return false
+  end
+
+  for _, window in ipairs(hl.get_workspace_windows(workspace)) do
+    if not window.floating and not window.hidden then
+      if direction == "left" and window.at.x < active_window.at.x then
+        return true
+      end
+      if direction == "right" and window.at.x > active_window.at.x then
+        return true
+      end
+    end
+  end
+
+  return false
+end
+
+local function swap_or_move_to_monitor(direction)
+  local layout_direction = direction == "left" and "l" or "r"
+
+  return function()
+    if has_column_in_direction(direction) then
+      hl.dispatch(hl.dsp.layout("swapcol " .. layout_direction))
+    else
+      hl.dispatch(hl.dsp.window.move({ direction = direction }))
+    end
+  end
+end
+
+hl.bind(mainmod .. "+SHIFT +H", swap_or_move_to_monitor("left"))
+hl.bind(mainmod .. "+SHIFT +L", swap_or_move_to_monitor("right"))
+
+for key, direction in pairs({ H = "left", J = "down", K = "up", L = "right" }) do
+  hl.bind(mainmod .. "+CTRL +SHIFT +" .. key, hl.dsp.window.move({ direction = direction }))
 end
 
 hl.bind(mainmod .. "+ mouse:272", hl.dsp.window.drag(), { mouse = true })
@@ -91,6 +129,7 @@ hl.config({
   },
   binds = {
     scroll_event_delay = 0,
+    window_direction_monitor_fallback = true,
   },
   master = {
     smart_resizing = true,
