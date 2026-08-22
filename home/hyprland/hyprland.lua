@@ -34,8 +34,8 @@ local action_binds = {
   ["+SHIFT +K"]   = hl.dsp.layout("expel"),
   ["+SHIFT +J"]   = hl.dsp.layout("consume"),
   ["+C"]          = hl.dsp.layout("fit_into_view"),
-  ["+F"]          = hl.dsp.layout("fit active"),
-  ["+SHIFT +F"]   = hl.dsp.layout("promote"),
+  ["+F"]          = hl.dsp.window.fullscreen({ mode = "maximized", action = "toggle" }),
+  ["+SHIFT +F"]   = hl.dsp.window.fullscreen({ mode = "fullscreen", action = "toggle" }),
   ["+Tab"]        = hl.dsp.focus({ workspace = "e+1" }),
   ["+SHIFT +Tab"] = hl.dsp.focus({ workspace = "e-1" }),
 }
@@ -49,7 +49,7 @@ hl.bind(mainmod .. "+ mouse:273", hl.dsp.window.resize(), { mouse = true })
 --workspace groups
 local workspace_groups = {
   { range = { 1, 2, 3, 4 }, monitor = "HDMI-A-1" },
-  { range = { 5, 6 },       monitor = "DP-3" },
+  { range = { 5, 6 },       monitor = "DP-1" },
   { range = { 7, 8, 9 },    monitor = "DP-2" },
 }
 for _, group in ipairs(workspace_groups) do
@@ -192,8 +192,7 @@ end
 
 -- Autostart
 hl.on("hyprland.start", function()
-  hl.exec_cmd(
-    "dbus-update-activation-environment --systemd DISPLAY HYPRLAND_INSTANCE_SIGNATURE WAYLAND_DISPLAY XDG_CURRENT_DESKTOP XDG_SESSION_TYPE && systemctl --user stop hyprland-session.target && systemctl --user start hyprland-session.target")
+  hl.exec_cmd("systemctl --user start hyprland-session.target")
   hl.exec_cmd("systemctl --user enable xdg-desktop-portal-hyprland")
   hl.exec_cmd("steam")
   hl.exec_cmd("yaskkserv2 --google-suggest /home/mashu/nixx/home/libskk/jisyo.yaskkserv2")

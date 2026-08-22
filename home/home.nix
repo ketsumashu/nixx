@@ -17,6 +17,7 @@
     ./obs
     ./scripts
     ./yazi
+    ./hyprland
   ];
 
   home = {

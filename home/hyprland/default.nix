@@ -1,7 +1,4 @@
 {
-  lib,
-  inputs,
-  pkgs,
   config,
   ...
 }:
@@ -12,19 +9,25 @@
   ];
   home.sessionVariables = {
     XDG_SESSION_TYPE = "wayland";
-    XDG_CURRENT_DESKTOP = lib.mkDefault "Hyprland";
-    XDG_SESSION_DESKTOP = lib.mkDefault "Hyprland";
-    QT_QPA_PLATFORM = "wayland";
-    QT_QPA_PLATFORM_THEME = "qt6ct";
-    QT_AUTO_SCREEN_SCALE_FACTOR = "1";
-  #   HYPRCURSOR_THEME = "Bibata-Modern-Ice";
-  #   HYPRCURSOR_SIZE = "24";
-  #   BROWSER = "qutebrowser";
+    #   HYPRCURSOR_THEME = "Bibata-Modern-Ice";
+    #   HYPRCURSOR_SIZE = "24";
+    #   BROWSER = "qutebrowser";
   };
 
   wayland.windowManager.hyprland = {
     enable = true;
-    portalPackage = pkgs.xdg-desktop-portal-hyprland;
+    systemd.enable = false;
+  };
+
+  systemd.user.targets.hyprland-session = {
+    Unit = {
+      Description = "Hyprland compositor session";
+      Documentation = [ "man:systemd.special(7)" ];
+      BindsTo = [ "graphical-session.target" ];
+      Wants = [ "graphical-session-pre.target" ];
+      After = [ "graphical-session-pre.target" ];
+      PropagatesStopTo = [ "graphical-session.target" ];
+    };
   };
 
   xdg.configFile = {

@@ -37,10 +37,12 @@
     extraPortals = with pkgs; [
       xdg-desktop-portal-gnome
       xdg-desktop-portal-gtk
+      xdg-desktop-portal-hyprland
     ];
     configPackages = with pkgs; [
       xdg-desktop-portal-gnome
       xdg-desktop-portal-gtk
+      xdg-desktop-portal-hyprland
     ];
     config = {
       common = {
@@ -54,6 +56,12 @@
         ];
         "org.freedesktop.impl.portal.ScreenCast" = [ "gnome" ];
         "org.freedesktop.impl.portal.Screenshot" = [ "gnome" ];
+      };
+      hyprland = {
+        default = [
+          "hyprland"
+          "gtk"
+        ];
       };
     };
   };
