@@ -86,9 +86,9 @@ hl.bind(mainmod .. "+ mouse:273", hl.dsp.window.resize(), { mouse = true })
 
 --workspace groups
 local workspace_groups = {
-  { range = { 1, 2, 3, 4 }, monitor = "HDMI-A-1" },
-  { range = { 5, 6 },       monitor = "DP-1" },
-  { range = { 7, 8, 9 },    monitor = "DP-2" },
+  { range = { 1, }, monitor = "HDMI-A-1" },
+  { range = { 5, }, monitor = "DP-1" },
+  { range = { 7, }, monitor = "DP-2" },
 }
 for _, group in ipairs(workspace_groups) do
   for _, ws in ipairs(group.range) do
@@ -169,7 +169,7 @@ local monitors = {
   { output = "DP-2",     mode = "2560x1440@100", position = "0x0",       scale = 1 },
   { output = "HDMI-A-1", mode = "3840x2160@120", position = "2560x0",    scale = 1 },
   { output = "DP-1",     mode = "2560x1440@120", position = "6400x0",    scale = 1 },
-  { output = "ipad",     mode = "1920x1260@60",  position = "2560x2160", scale = 1 },
+  { output = "ipad",     mode = "2266x1488@60",  position = "4000x2160", scale = 2 },
 }
 for _, config in ipairs(monitors) do
   hl.monitor(config)
@@ -180,6 +180,7 @@ local float_rules = {
   { class = ".*Xdg-desktop-portal-gtk" },
   { class = ".*org.pulseaudio.pavucontrol" },
   { class = ".*pwvucontrol$" },
+  { class = ".*io.mrarm.mcpelauncher-ui-qt$" },
   { class = "^chromium-browser$" },
 
   { title = "Save File" },
