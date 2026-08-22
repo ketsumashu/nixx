@@ -5,7 +5,7 @@
 {
   imports = [
     #./hypridle.nix
-    #./xdph.nix
+    ./xdph.nix
   ];
   home.sessionVariables = {
     XDG_SESSION_TYPE = "wayland";
