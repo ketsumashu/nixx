@@ -130,7 +130,7 @@ local monitors = {
   { output = "DP-2",     mode = "2560x1440@100", position = "0x0",    scale = 1 },
   { output = "HDMI-A-1", mode = "3840x2160@120", position = "2560x0", scale = 1 },
   { output = "DP-1",     mode = "2560x1440@120", position = "6400x0", scale = 1 },
-  { output = "ipad",     mode = "1920x1260@60",  position = "8960x0", scale = 1 },
+  { output = "ipad",     mode = "1920x1260@60",  position = "2560x2160", scale = 1 },
 }
 for _, config in ipairs(monitors) do
   hl.monitor(config)
