@@ -54,8 +54,25 @@
     };
     flatpak.enable = true;
   };
-  xdg.portal.enable = true;
-  xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
-  xdg.portal.config.common.default = "*";
+  xdg.portal = {
+    enable = true;
+    extraPortals = [ pkgs.xdg-desktop-portal-gnome ];
+    configPackages = with pkgs; [
+      xdg-desktop-portal-gnome
+      xdg-desktop-portal-gtk
+    ];
+    config = {
+      common.default = [ "gnome" ];
+      niri = {
+        default = [ "gnome" ];
+        "org.freedesktop.impl.portal.ScreenCast" = [ "gnome" ];
+        "org.freedesktop.impl.portal.Screenshot" = [ "gnome" ];
+      };
+      hyprland.default = [
+        "hyprland"
+        "gtk"
+      ];
+    };
+  };
   system.stateVersion = "26.05";
 }

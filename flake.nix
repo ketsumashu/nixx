@@ -11,6 +11,9 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    hyprland = {
+      url = "github:hyprwm/Hyprland";
+    };
     noctalia = {
       url = "github:noctalia-dev/noctalia/cachix";
     };
@@ -55,6 +58,8 @@
             nixos-hardware.nixosModules.common-cpu-amd
             nixos-hardware.nixosModules.common-gpu-amd
             nixos-hardware.nixosModules.common-pc-ssd
+            inputs.hyprland.nixosModules.default
+            { programs.hyprland.enable = true; }
             ./nixos
             ./overlay
             home-manager.nixosModules.home-manager
