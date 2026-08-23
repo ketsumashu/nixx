@@ -11,7 +11,8 @@ local exec_binds = {
   ["+S"]      = "steam",
   ["+Return"] = terminal,
   ["+Space"]  = "noctalia msg panel-toggle launcher",
-  ["+P"]      = "noctalia msg panel-toggle clipboard",
+  ["+ALT +P"] = "noctalia msg panel-toggle session",
+  ["+ALT +C"] = "noctalia msg panel-toggle clipboard",
   ["+period"] = "noctalia msg session lock",
 }
 for key, cmd in pairs(exec_binds) do
