@@ -273,3 +273,6 @@ end)
 hl.on("hyprland.shutdown", function()
   hl.exec_cmd("systemctl --user stop hyprland-session.target")
 end)
+
+-- For Noctalia Color templates
+require("noctalia").apply_theme()

@@ -24,10 +24,6 @@
       url = "https://github.com/wachikun/yaskkserv2/releases/download/0.1.7/yaskkserv2-0.1.7-x86_64-unknown-linux-gnu.tar.gz";
       flake = false;
     };
-    ai-usagebar-bin = {
-      url = "https://github.com/akitaonrails/ai-usagebar/releases/download/v0.20.1/ai-usagebar-linux-x86_64.tar.gz";
-      flake = false;
-    };
     zen = {
       url = "github:0xc000022070/zen-browser-flake";
       inputs = {
