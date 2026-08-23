@@ -18,6 +18,7 @@
     ./scripts
     ./yazi
     ./hyprland
+    ./herdr
   ];
 
   home = {
