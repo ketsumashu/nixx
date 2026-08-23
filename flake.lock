@@ -19,19 +19,6 @@
         "type": "github"
       }
     },
-    "ai-usagebar-bin": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1785428146,
-        "narHash": "sha256-FBFpVxMyuiHxyqiR/m2TxAwJIWyQkKQQG2ln7Dt2BPw=",
-        "type": "tarball",
-        "url": "https://github.com/akitaonrails/ai-usagebar/releases/download/v0.20.1/ai-usagebar-linux-x86_64.tar.gz"
-      },
-      "original": {
-        "type": "tarball",
-        "url": "https://github.com/akitaonrails/ai-usagebar/releases/download/v0.20.1/ai-usagebar-linux-x86_64.tar.gz"
-      }
-    },
     "anthropic-skills": {
       "flake": false,
       "locked": {
@@ -747,7 +734,6 @@
     },
     "root": {
       "inputs": {
-        "ai-usagebar-bin": "ai-usagebar-bin",
         "home-manager": "home-manager",
         "hyprland": "hyprland",
         "nixcord": "nixcord",

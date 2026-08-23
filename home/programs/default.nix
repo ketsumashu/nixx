@@ -37,6 +37,5 @@
     jq
     file
     lazygit
-    codexbar
   ];
 }
