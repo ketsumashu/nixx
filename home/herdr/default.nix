@@ -1,6 +1,9 @@
 {
   programs.herdr = {
     enable = true;
-    settings.terminal.default_shell = "fish";
+    settings.terminal = {
+      default_shell = "fish";
+      kitty_protocol = true;
+    };
   };
 }
