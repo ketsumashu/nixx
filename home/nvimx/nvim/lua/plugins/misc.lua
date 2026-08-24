@@ -13,7 +13,15 @@ return {
       npairs.setup(opts)
       npairs.get_rules("{")[1]:with_pair(cond.not_filetypes({ "nix" }))
       npairs.add_rules({
-        Rule("{", "};", "nix"):with_pair(cond.not_after_regex("}")),
+        Rule("{", "}", "nix")
+          :with_pair(cond.not_after_regex("}"))
+          :replace_endpair(function(opts)
+            local before_cursor = opts.line:sub(1, opts.col - 1)
+            if before_cursor:match("=%s*$") then
+              return "};"
+            end
+            return "}"
+          end),
       })
     end,
   },
