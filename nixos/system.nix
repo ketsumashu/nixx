@@ -34,6 +34,7 @@
       timeout = 1;
     };
     kernelModules = [
+      "kvm-amd"
       "v4l2loopback"
       "ntsync"
     ];
