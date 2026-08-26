@@ -1,7 +1,7 @@
 ---@module 'hl'
 
 local mainmod = "SUPER"
-local terminal = "kitty"
+local terminal = "ghostty"
 local browser = "zen-beta"
 
 --app binds
