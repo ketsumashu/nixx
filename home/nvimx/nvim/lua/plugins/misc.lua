@@ -14,32 +14,16 @@ return {
       npairs.get_rules("{")[1]:with_pair(cond.not_filetypes({ "nix" }))
       npairs.add_rules({
         Rule("{", "}", "nix")
-          :with_pair(cond.not_after_regex("}"))
-          :replace_endpair(function(opts)
-            local before_cursor = opts.line:sub(1, opts.col - 1)
-            if before_cursor:match("=%s*$") then
-              return "};"
-            end
-            return "}"
-          end),
+            :with_pair(cond.not_after_regex("}"))
+            :replace_endpair(function(opts)
+              local before_cursor = opts.line:sub(1, opts.col - 1)
+              if before_cursor:match("=%s*$") then
+                return "};"
+              end
+              return "}"
+            end),
       })
     end,
-  },
-  {
-    "akinsho/toggleterm.nvim",
-    opts = {
-      direction = "horizontal",
-      float_opts = { border = "shadow" },
-      shell = "fish",
-      terminal_mappings = true,
-      size = function(term)
-        if term.direction == "horizontal" then
-          return 15
-        elseif term.direction == "vertical" then
-          return vim.o.columns * 0.4
-        end
-      end,
-    },
   },
   {
     "norcalli/nvim-colorizer.lua",
@@ -94,9 +78,6 @@ return {
         },
       },
     },
-  },
-  {
-    "famiu/bufdelete.nvim",
   },
   {
     "nvim-lua/plenary.nvim",
