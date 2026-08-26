@@ -33,22 +33,6 @@
         "type": "github"
       }
     },
-    "bufdelete-nvim": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1708814161,
-        "narHash": "sha256-ljUNfmpImtxFCS19HC9kFlaLlqaPDltKtnx1+/6Y33U=",
-        "owner": "famiu",
-        "repo": "bufdelete.nvim",
-        "rev": "f6bcea78afb3060b198125256f897040538bcb81",
-        "type": "github"
-      },
-      "original": {
-        "owner": "famiu",
-        "repo": "bufdelete.nvim",
-        "type": "github"
-      }
-    },
     "friendly-snippets": {
       "flake": false,
       "locked": {
@@ -373,7 +357,6 @@
       "inputs": {
         "alpha-nvim": "alpha-nvim",
         "blink-cmp": "blink-cmp",
-        "bufdelete-nvim": "bufdelete-nvim",
         "friendly-snippets": "friendly-snippets",
         "inc-rename-nvim": "inc-rename-nvim",
         "incline-nvim": "incline-nvim",
@@ -398,7 +381,6 @@
         "telescope-fzf-native-nvim": "telescope-fzf-native-nvim",
         "telescope-nvim": "telescope-nvim",
         "telescope-undo-nvim": "telescope-undo-nvim",
-        "toggleterm-nvim": "toggleterm-nvim",
         "twilight-nvim": "twilight-nvim",
         "which-key-nvim": "which-key-nvim",
         "zen-mode-nvim": "zen-mode-nvim"
@@ -465,22 +447,6 @@
       "original": {
         "owner": "debugloop",
         "repo": "telescope-undo.nvim",
-        "type": "github"
-      }
-    },
-    "toggleterm-nvim": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1741512039,
-        "narHash": "sha256-fytbX+L12TK45YKFU9K+iFJcDrwboKabihc2LtX29J4=",
-        "owner": "akinsho",
-        "repo": "toggleterm.nvim",
-        "rev": "9a88eae817ef395952e08650b3283726786fb5fb",
-        "type": "github"
-      },
-      "original": {
-        "owner": "akinsho",
-        "repo": "toggleterm.nvim",
         "type": "github"
       }
     },

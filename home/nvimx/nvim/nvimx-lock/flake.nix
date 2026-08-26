@@ -13,10 +13,6 @@
       url = "github:saghen/blink.cmp/refs/tags/v1.10.2";
       flake = false;
     };
-    bufdelete-nvim = {
-      url = "github:famiu/bufdelete.nvim";
-      flake = false;
-    };
     friendly-snippets = {
       url = "github:rafamadriz/friendly-snippets";
       flake = false;
@@ -107,10 +103,6 @@
     };
     telescope-nvim = {
       url = "github:nvim-telescope/telescope.nvim";
-      flake = false;
-    };
-    toggleterm-nvim = {
-      url = "github:akinsho/toggleterm.nvim";
       flake = false;
     };
     twilight-nvim = {

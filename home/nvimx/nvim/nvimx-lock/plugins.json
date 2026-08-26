@@ -48,24 +48,6 @@
       "tag": null,
       "version": "1.*"
     },
-    "bufdelete.nvim": {
-      "branch": null,
-      "build": {
-        "kind": "none"
-      },
-      "commit": null,
-      "dependencies": [],
-      "inputName": "bufdelete-nvim",
-      "pin": null,
-      "resolvedRef": null,
-      "source": {
-        "owner": "famiu",
-        "repo": "bufdelete.nvim",
-        "type": "github"
-      },
-      "tag": null,
-      "version": null
-    },
     "friendly-snippets": {
       "branch": null,
       "build": {
@@ -488,24 +470,6 @@
       "source": {
         "owner": "nvim-telescope",
         "repo": "telescope.nvim",
-        "type": "github"
-      },
-      "tag": null,
-      "version": null
-    },
-    "toggleterm.nvim": {
-      "branch": null,
-      "build": {
-        "kind": "none"
-      },
-      "commit": null,
-      "dependencies": [],
-      "inputName": "toggleterm-nvim",
-      "pin": null,
-      "resolvedRef": null,
-      "source": {
-        "owner": "akinsho",
-        "repo": "toggleterm.nvim",
         "type": "github"
       },
       "tag": null,
