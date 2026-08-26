@@ -13,7 +13,6 @@
     ./nixcord
     ./nvimx
     ./fish
-    ./zellij
     ./obs
     ./scripts
     ./yazi

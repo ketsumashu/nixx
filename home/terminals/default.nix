@@ -47,8 +47,4 @@
 
   xdg.configFile."ghostty/config.ghostty".source =
     config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/nixx/home/terminals/config.ghostty";
-
-  home.packages = with pkgs; [
-    codex
-  ];
 }
