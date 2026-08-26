@@ -67,5 +67,5 @@ map("n", "]d", "<cmd>Lspsaga diagnostic_jump_next<CR>", { desc = "Next Diagnosti
 map("n", "[d", "<cmd>Lspsaga diagnostic_jump_prev<cr>", { desc = "Previous Diagnostic" })
 
 -- Terminal
-map("n", "<leader>t", "<cmd>ToggleTerm<CR>", { desc = "ToggleTerm" })
-map("t", "<leader>t", "<cmd>ToggleTerm<CR>", { desc = "ToggleTerm" })
+--map("n", "<leader>t", "<cmd>ToggleTerm<CR>", { desc = "ToggleTerm" })
+--map("t", "<leader>t", "<cmd>ToggleTerm<CR>", { desc = "ToggleTerm" })
