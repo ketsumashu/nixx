@@ -37,5 +37,6 @@
     jq
     file
     lazygit
+    python3
   ];
 }
