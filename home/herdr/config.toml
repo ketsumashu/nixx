@@ -6,5 +6,17 @@ default_shell = "fish"
 [experimental]
 kitty_graphics = true
 
-[sesison]
+[session]
 resume_agents_on_restore = true
+
+[theme]
+name = "terminal"
+auto_switch = false
+
+[ui]
+hide_tab_bar_when_single_tab = true
+sidebar_collapsed_mode = "hidden"
+sidebar_start_collapsed = true
+sidebar_width = 15
+sidebar_min_width = 15
+show_agent_labels_on_pane_borders = true
