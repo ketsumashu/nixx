@@ -9,6 +9,25 @@ kitty_graphics = true
 [session]
 resume_agents_on_restore = true
 
+[keys]
+prefix = "ctrl+space"
+
+[[keys.command]]
+key = "prefix+]"
+type = "popup"
+command = "lazygit"
+description = "Open LazyGit"
+width = "80%"
+height = "80%"
+
+[[keys.command]]
+key = "prefix+t"
+type = "popup"
+command = "exec fish"
+description = "Open shell"
+width = "80%"
+height = "80%"
+
 [theme]
 name = "terminal"
 auto_switch = false
