@@ -10,7 +10,7 @@ let
 
     trap cleanup EXIT INT TERM
 
-    /home/mashu/.local/bin/konamate infinitas run --notify "$@"
+    /home/mashu/.local/bin/konamate run infinitas --notify "$@"
   '';
 in
 {
