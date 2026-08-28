@@ -11,6 +11,7 @@
       powerOnBoot = true;
     };
     amdgpu.overdrive.enable = true;
+    amdgpu.opencl.enable = true;
   };
   services = {
     lact.enable = true;

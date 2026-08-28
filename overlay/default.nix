@@ -5,9 +5,6 @@
       darktable =
         (prev.darktable.override {
           withAi = true;
-          onnxruntime = prev.onnxruntime.override {
-            rocmSupport = true;
-          };
         }).overrideAttrs
           (_: rec {
             version = "5.6.1";

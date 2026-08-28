@@ -11,5 +11,6 @@
     ./hardware.nix
     ./hyprland.nix
     ./keyring.nix
+    ./develop.nix
   ];
 }
