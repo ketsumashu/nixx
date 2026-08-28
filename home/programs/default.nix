@@ -10,6 +10,7 @@
     pwvucontrol
     lm_sensors
     dconf
+    darktable
     btop-rocm
     fd
     duf

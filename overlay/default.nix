@@ -2,6 +2,20 @@
 {
   nixpkgs.overlays = [
     (final: prev: {
+      darktable =
+        (prev.darktable.override {
+          withAi = true;
+          onnxruntime = prev.onnxruntime.override {
+            rocmSupport = true;
+          };
+        }).overrideAttrs
+          (_: rec {
+            version = "5.6.1";
+            src = prev.fetchurl {
+              url = "https://github.com/darktable-org/darktable/releases/download/release-${version}/darktable-${version}.tar.xz";
+              hash = "sha256-6LhKyYsLaJokTkA2xLVjlMHVjOLZq8BeCgYO+fdW3DY=";
+            };
+          });
       steam = prev.steam.override {
         extraPkgs =
           pkgs: with pkgs; [
