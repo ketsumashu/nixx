@@ -11,3 +11,4 @@ cursor-style-blink = false
 mouse-hide-while-typing =true
 focus-follows-mouse = true
 click-repeat-interval = 500
+theme = noctalia
