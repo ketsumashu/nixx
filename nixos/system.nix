@@ -55,36 +55,16 @@
   };
 
   fileSystems."/" = {
-    device = "/dev/disk/by-uuid/4e0fc1a1-da4c-49aa-898e-1d5abcc47e57";
+    device = "/dev/disk/by-uuid/1f97ab8a-6326-464c-bb68-b1ce6cefd75e";
     fsType = "ext4";
   };
   fileSystems."/boot" = {
-    device = "/dev/disk/by-uuid/24D0-28B9";
+    device = "/dev/disk/by-uuid/E58F-0428";
     fsType = "vfat";
     options = [
       "fmask=0022"
       "dmask=0022"
     ];
-  };
-  fileSystems."/home/mashu/data" = {
-    device = "/dev/disk/by-uuid/78F0F0ACF0F0722C";
-    fsType = "ntfs-3g";
-    options = [
-      "rw"
-      "uid=1000"
-    ];
-  };
-  fileSystems."/home/mashu/game" = {
-    device = "/dev/disk/by-uuid/ECB01508B014DB42";
-    fsType = "ntfs-3g";
-    options = [
-      "rw"
-      "uid=1000"
-    ];
-  };
-  fileSystems."/home/mashu/develop" = {
-    device = "/dev/disk/by-uuid/49060a3e-3f93-4af0-99d3-79533b71c38c";
-    fsType = "ext4";
   };
 
   swapDevices = [ ];
