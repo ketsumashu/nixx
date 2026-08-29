@@ -2,9 +2,20 @@
 {
   nixpkgs.overlays = [
     (final: prev: {
+      rocmPackages = prev.rocmPackages.overrideScope (
+        rocmFinal: rocmPrev: {
+          migraphx = rocmPrev.migraphx.overrideAttrs (old: {
+            patches = (old.patches or [ ]) ++ [ ../pkgs/migraphx-no-tensorflow-api.patch ];
+          });
+        }
+      );
       darktable =
         (prev.darktable.override {
           withAi = true;
+          onnxruntime = prev.onnxruntime.override {
+            rocmSupport = true;
+            rocmPackages = final.rocmPackages;
+          };
         }).overrideAttrs
           (_: rec {
             version = "5.6.1";
