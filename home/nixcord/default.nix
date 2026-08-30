@@ -8,7 +8,13 @@
       vencord.enable = true;
       openASAR.enable = false;
     };
+    quickCss = ''
+      * {
+        font-family: "PlemolJP35 Console HS", monospace !important;
+      }
+    '';
     config = {
+      useQuickCss = true;
       enabledThemes = [
         "noctalia.theme.css"
       ];

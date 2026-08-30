@@ -34,7 +34,7 @@
       };
       hinting = {
         enable = true;
-        style = "slight";
+        style = "none";
       };
       subpixel = {
         rgba = "rgb";
@@ -46,11 +46,61 @@
           <!-- Use heavier weights -->
           <match target="pattern">
             <test name="family"><string>PlemolJP35 Console HS</string></test>
+            <edit name="weight" mode="append" binding="weak"><const>Medium</const></edit>
+          </match>
+          <match target="pattern">
+            <test name="family"><string>PlemolJP35 Console HS</string></test>
+            <test name="style" compare="eq"><string>Regular</string></test>
+            <edit name="style" mode="assign" binding="strong"><string>Medium</string></edit>
+            <edit name="weight" mode="assign" binding="strong"><const>Medium</const></edit>
+          </match>
+          <match target="pattern">
+            <test name="family"><string>PlemolJP35 Console HS</string></test>
             <test name="weight" compare="eq"><const>Regular</const></test>
             <edit name="weight" mode="assign" binding="strong"><const>Medium</const></edit>
           </match>
           <match target="pattern">
             <test name="family"><string>PlemolJP35 Console HS</string></test>
+            <test name="weight" compare="eq"><const>Light</const></test>
+            <edit name="weight" mode="assign" binding="strong"><const>Medium</const></edit>
+          </match>
+          <match target="pattern">
+            <test name="family"><string>Noto Sans</string></test>
+            <edit name="weight" mode="append" binding="weak"><const>Medium</const></edit>
+          </match>
+          <match target="pattern">
+            <test name="family"><string>Noto Sans</string></test>
+            <test name="style" compare="eq"><string>Regular</string></test>
+            <edit name="style" mode="assign" binding="strong"><string>Medium</string></edit>
+            <edit name="weight" mode="assign" binding="strong"><const>Medium</const></edit>
+          </match>
+          <match target="pattern">
+            <test name="family"><string>Noto Sans</string></test>
+            <test name="weight" compare="eq"><const>Regular</const></test>
+            <edit name="weight" mode="assign" binding="strong"><const>Medium</const></edit>
+          </match>
+          <match target="pattern">
+            <test name="family"><string>Noto Sans</string></test>
+            <test name="weight" compare="eq"><const>Light</const></test>
+            <edit name="weight" mode="assign" binding="strong"><const>Medium</const></edit>
+          </match>
+          <match target="pattern">
+            <test name="family"><string>Noto Sans CJK JP</string></test>
+            <edit name="weight" mode="append" binding="weak"><const>Medium</const></edit>
+          </match>
+          <match target="pattern">
+            <test name="family"><string>Noto Sans CJK JP</string></test>
+            <test name="style" compare="eq"><string>Regular</string></test>
+            <edit name="style" mode="assign" binding="strong"><string>Medium</string></edit>
+            <edit name="weight" mode="assign" binding="strong"><const>Medium</const></edit>
+          </match>
+          <match target="pattern">
+            <test name="family"><string>Noto Sans CJK JP</string></test>
+            <test name="weight" compare="eq"><const>Regular</const></test>
+            <edit name="weight" mode="assign" binding="strong"><const>Medium</const></edit>
+          </match>
+          <match target="pattern">
+            <test name="family"><string>Noto Sans CJK JP</string></test>
             <test name="weight" compare="eq"><const>Light</const></test>
             <edit name="weight" mode="assign" binding="strong"><const>Medium</const></edit>
           </match>
