@@ -58,6 +58,14 @@
     device = "/dev/disk/by-uuid/1f97ab8a-6326-464c-bb68-b1ce6cefd75e";
     fsType = "ext4";
   };
+  fileSystems."/home/mashu/data" = {
+    device = "/dev/disk/by-uuid/4deb919e-8d75-4ed0-b146-a7c14952f0f8";
+    fsType = "ext4";
+  };
+  fileSystems."/home/mashu/game" = {
+    device = "/dev/disk/by-uuid/4120c184-02bc-4d35-a325-824269c260e0";
+    fsType = "ext4";
+  };
   fileSystems."/boot" = {
     device = "/dev/disk/by-uuid/E58F-0428";
     fsType = "vfat";
