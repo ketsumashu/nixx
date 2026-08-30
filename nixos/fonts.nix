@@ -34,7 +34,7 @@
       };
       hinting = {
         enable = true;
-        style = "none";
+        style = "slight";
       };
       subpixel = {
         rgba = "rgb";
@@ -56,12 +56,7 @@
           </match>
           <match target="pattern">
             <test name="family"><string>PlemolJP35 Console HS</string></test>
-            <test name="weight" compare="eq"><const>Regular</const></test>
-            <edit name="weight" mode="assign" binding="strong"><const>Medium</const></edit>
-          </match>
-          <match target="pattern">
-            <test name="family"><string>PlemolJP35 Console HS</string></test>
-            <test name="weight" compare="eq"><const>Light</const></test>
+            <test name="weight" compare="less_eq"><const>Medium</const></test>
             <edit name="weight" mode="assign" binding="strong"><const>Medium</const></edit>
           </match>
           <match target="pattern">
