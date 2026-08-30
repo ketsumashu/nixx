@@ -39,5 +39,6 @@
     file
     lazygit
     python3
+    mangohud
   ];
 }
