@@ -5,8 +5,7 @@
       set fish_greeting
       set -gx NIXPKGS_ALLOW_UNFREE 1
       starship init fish | source
-      abbr -a sw "nh os switch --impure"
-      abbr -a gg "cd ~/nixx && git add . && git commit -m \"chore\""
+      abbr -a sw "nh os switch"
       abbr -a nc "nh clean all"
       abbr -a ll "eza -al"
       abbr -a lg "lazygit"
