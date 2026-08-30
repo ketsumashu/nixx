@@ -12,6 +12,5 @@
     ./hyprland.nix
     ./keyring.nix
     ./develop.nix
-    ./waydroid.nix
   ];
 }
