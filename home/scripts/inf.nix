@@ -31,6 +31,8 @@ let
     WINEDLLPATH=/home/mashu/.local/lib/wine''${WINEDLLPATH:+:$WINEDLLPATH} \
       /home/mashu/.local/bin/konamate exec infinitas \
         umu-run regsvr32 /s pipeasio64.dll
+
+    /home/mashu/.local/bin/konamate registry apply infinitas
   '';
 in
 {
@@ -44,6 +46,7 @@ in
   home.file.".config/pipeasio/config.ini".text = ''
     [pipeasio]
     output_device = konaste-sink
+    sample_rate = 44100
   '';
 
   xdg.desktopEntries.infinitas = {
