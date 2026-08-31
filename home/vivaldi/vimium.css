@@ -1,0 +1,238 @@
+/*
+ * Vimium Glass Theme, recolored for the current Codex Noctalia palette.
+ * Based on https://github.com/mxxjng/vimium-glass-theme (MIT).
+ * Paste this whole file into Vimium Options > CSS for Vimium UI.
+ */
+:root {
+  --font-size: 16pt;
+  --font-size-hints: 13px;
+  --font-size-url: 14px;
+  --font-weight: medium;
+  --font-weight-medium: 500;
+  --font-weight-bold: bold;
+  --font: "PlemolJP35 Console HS";
+  --padding: 2px;
+  --padding-vomnibar: 15px;
+  --shadow: 0 20px 40px #00000040;
+  --blur: 40px;
+
+  /* Codex / Noctalia: all colors are deliberately static hex values. */
+  --fg: #e2e2e2;
+  --fg-dark: #919191;
+  --fg-url: #e2e2e2;
+  --fg-match: #69dbaf;
+  --bg: #13131399;
+  --bg-selected: #4747474d;
+  --border: #474747;
+  --fg-hints: #b3ccbf;
+  --bg-hints: #1f1f1f99;
+  --border-hints: #474747;
+}
+
+/* Link hints */
+:is(#vimiumHintMarkerContainer, #vimium-hint-marker-container) div.internalVimiumHintMarker,
+:is(#vimiumHintMarkerContainer, #vimium-hint-marker-container) div.internal-vimium-hint-marker,
+:is(#vimiumHintMarkerContainer, #vimium-hint-marker-container) div.vimiumHintMarker {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(10px);
+  box-shadow: var(--shadow);
+  padding: 3px 4px;
+}
+
+:is(#vimiumHintMarkerContainer, #vimium-hint-marker-container) div span {
+  color: var(--fg-hints);
+  font-family: var(--font);
+  font-size: var(--font-size-hints);
+  font-weight: var(--font-weight-bold);
+  text-shadow: none;
+}
+
+:is(#vimiumHintMarkerContainer, #vimium-hint-marker-container) div > .matchingCharacter {
+  opacity: 0.3;
+}
+
+:is(#vimiumHintMarkerContainer, #vimium-hint-marker-container) div > .matchingCharacter ~ span {
+  color: var(--fg-hints);
+}
+
+/* Vomnibar */
+#vomnibar {
+  background: var(--bg);
+  backdrop-filter: blur(var(--blur));
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  border-radius: 15px;
+  overflow: hidden;
+  left: 50%;
+  margin-left: -400px;
+  max-width: 800px;
+}
+
+#vomnibar :is(.vomnibarSearchArea, #vomnibar-search-area),
+#vomnibar input {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  color: var(--fg);
+  font-family: var(--font);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+}
+
+#vomnibar :is(.vomnibarSearchArea, #vomnibar-search-area) {
+  padding: 8px 15px;
+  border-radius: 6px;
+}
+
+#vomnibar input {
+  padding: var(--padding);
+}
+
+:is(.vomnibarNoInsertText, .no-insert-text) {
+  display: none;
+}
+
+#vomnibar ul {
+  background: transparent;
+  border-top: 1px solid var(--border);
+  margin: 0;
+  padding: var(--padding-vomnibar);
+}
+
+#vomnibar li {
+  border-bottom: none;
+  padding: 15px;
+}
+
+#vomnibar li :is(.vomnibarTopHalf, .top-half) {
+  padding: var(--padding);
+}
+
+#vomnibar li :is(.vomnibarBottomHalf, .bottom-half) {
+  padding-top: 0;
+  padding-bottom: 1px;
+}
+
+#vomnibar li :is(.vomnibarSource, .source) {
+  color: var(--fg-dark);
+  font-family: var(--font);
+  font-size: 12px;
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+}
+
+#vomnibar li em,
+#vomnibar li :is(.vomnibarTitle, .title) {
+  color: var(--fg);
+  font-family: var(--font);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight-medium);
+}
+
+#vomnibar li :is(.vomnibarUrl, .url) {
+  color: var(--fg-url);
+  font-family: var(--font);
+  font-size: var(--font-size-url);
+  font-weight: var(--font-weight-medium);
+}
+
+#vomnibar li :is(.vomnibarMatch, .match) {
+  color: var(--fg-match);
+  font-weight: normal;
+}
+
+#vomnibar li :is(.vomnibarTitle, .title) :is(.vomnibarMatch, .match) {
+  color: var(--fg-match);
+  font-weight: bold;
+}
+
+#vomnibar li:is(.vomnibarSelected, .selected) {
+  background-color: var(--bg-selected);
+  backdrop-filter: blur(20px);
+  border-radius: 8px;
+}
+
+#vomnibar li:is(.vomnibarSelected, .selected) :is(.vomnibarUrl, .url) {
+  color: var(--fg-url);
+}
+
+#vomnibar li:is(.vomnibarSelected, .selected) :is(.vomnibarMatch, .match) {
+  color: var(--fg-match);
+}
+
+/* Bottom-right HUD */
+div.vimiumHUD {
+  background: var(--bg);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  border-radius: 6px;
+}
+
+div.vimiumHUD span#hud-find-input,
+div.vimiumHUD .vimiumHUDSearchAreaInner {
+  color: var(--fg);
+  font-family: var(--font);
+  font-size: 13px;
+  font-weight: var(--font-weight-medium);
+}
+
+div.vimiumHUD .hud-find {
+  background-color: transparent;
+  border: none;
+}
+
+div.vimiumHUD .vimiumHUDSearchArea {
+  background-color: transparent;
+  padding: 6px;
+}
+
+/* Help dialog */
+div#vimiumHelpDialogContainer {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+div#vimiumHelpDialog {
+  background: var(--bg);
+  backdrop-filter: blur(var(--blur));
+  border: 1px solid var(--border);
+  border-radius: 15px;
+  font-family: var(--font);
+  font-size: var(--font-size);
+  padding: 15px 10px !important;
+}
+
+span#vimiumTitle {
+  color: var(--fg);
+}
+
+a:link.vimiumHelDialogLink,
+a:visited.vimiumHelDialogLink,
+a:hover.vimiumHelDialogLink,
+a:active.vimiumHelDialogLink,
+a#toggleAdvancedCommands {
+  color: var(--fg-url);
+  font-family: var(--font);
+  font-size: var(--font-size);
+}
+
+span.vimiumHelpDialogKey {
+  background-color: var(--bg-hints);
+  border: 1px solid var(--border-hints);
+  box-shadow: var(--shadow);
+  color: var(--fg-hints);
+  font-family: var(--font);
+  font-size: var(--font-size-hints);
+  font-weight: var(--font-weight-bold);
+  padding: 2px 3px;
+  text-shadow: none;
+}
+
+td.vimiumHelpSectionTitle,
+td.vimiumHelpDescription,
+div.vimiumColumn {
+  color: var(--fg);
+  font-family: var(--font);
+}

@@ -5,32 +5,49 @@
   height: 70vh;
 }
 
+#browser.auto-hide .auto-hide-wrapper.left {
+  left: 15px;
+  --radiusWindow: 14px;
+}
+
 #browser.auto-hide .auto-hide-wrapper.top,
 #browser.auto-hide .auto-hide-wrapper.bottom {
   left: 15vw;
   width: 70vw;
 }
 
-/* Keep horizontal auto-hidden tabs compact like pinned tabs. */
+/* Keep auto-hidden tabs compact like pinned tabs. */
+#browser.auto-hide .auto-hide-wrapper.left .tab:not(.pinned) .title,
+#browser.auto-hide .auto-hide-wrapper.right .tab:not(.pinned) .title,
 #browser.auto-hide .auto-hide-wrapper.top .tab:not(.pinned) .title,
 #browser.auto-hide .auto-hide-wrapper.bottom .tab:not(.pinned) .title,
+#browser.auto-hide .auto-hide-wrapper.left .tab:not(.pinned) .close,
+#browser.auto-hide .auto-hide-wrapper.right .tab:not(.pinned) .close,
 #browser.auto-hide .auto-hide-wrapper.top .tab:not(.pinned) .close,
 #browser.auto-hide .auto-hide-wrapper.bottom .tab:not(.pinned) .close {
   display: none !important;
 }
 
+#browser.auto-hide .auto-hide-wrapper.left .tab:not(.pinned) .tab-header,
+#browser.auto-hide .auto-hide-wrapper.right .tab:not(.pinned) .tab-header,
 #browser.auto-hide .auto-hide-wrapper.top .tab:not(.pinned) .tab-header,
 #browser.auto-hide .auto-hide-wrapper.bottom .tab:not(.pinned) .tab-header {
   justify-content: center;
   padding: 0;
 }
 
+#browser.auto-hide .auto-hide-wrapper.left .tab:not(.pinned) .favicon,
+#browser.auto-hide .auto-hide-wrapper.right .tab:not(.pinned) .favicon,
 #browser.auto-hide .auto-hide-wrapper.top .tab:not(.pinned) .favicon,
 #browser.auto-hide .auto-hide-wrapper.bottom .tab:not(.pinned) .favicon {
   margin: 0;
 }
 
 /* Disable Vivaldi's hover-to-close favicon shift for icon-only tabs. */
+#browser.auto-hide .auto-hide-wrapper.left .tab:hover .favicon,
+#browser.auto-hide .auto-hide-wrapper.left .tab.force-hover .favicon,
+#browser.auto-hide .auto-hide-wrapper.right .tab:hover .favicon,
+#browser.auto-hide .auto-hide-wrapper.right .tab.force-hover .favicon,
 #browser.auto-hide .auto-hide-wrapper.top .tab:hover .favicon,
 #browser.auto-hide .auto-hide-wrapper.top .tab.force-hover .favicon,
 #browser.auto-hide .auto-hide-wrapper.bottom .tab:hover .favicon,
@@ -40,4 +57,37 @@
   max-width: 18px !important;
   margin: 0 !important;
   background-position: center !important;
+}
+
+/* Keep vertical tabs icon-only while Vivaldi is handling a resize drag. */
+#browser .auto-hide-wrapper:is(.left, .right) .tab:not(.pinned) :is(.title, .close) {
+  display: none !important;
+}
+
+#browser .auto-hide-wrapper:is(.left, .right) .tab:not(.pinned) .tab-header {
+  justify-content: center;
+  padding: 0;
+}
+
+#browser .auto-hide-wrapper:is(.left, .right) .tab:not(.pinned) .favicon {
+  margin: 0;
+}
+
+/* Pinned tabs use a separate layout, so hide their title explicitly. */
+#browser .auto-hide-wrapper:is(.left, .right) .tab.pinned :is(.title, .close) {
+  display: none !important;
+}
+
+#browser .auto-hide-wrapper:is(.left, .right) .tab.pinned .tab-header {
+  justify-content: center;
+  padding: 0;
+}
+
+#browser .auto-hide-wrapper:is(.left, .right) .tab.pinned .favicon {
+  margin: 0;
+}
+
+/* Blend the address field into the surrounding toolbar. */
+#browser .UrlBar-AddressField {
+  background-color: var(--colorBg) !important;
 }
