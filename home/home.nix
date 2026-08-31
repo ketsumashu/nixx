@@ -18,6 +18,7 @@
     ./yazi
     ./hyprland
     ./herdr
+    ./vivaldi
   ];
 
   home = {
