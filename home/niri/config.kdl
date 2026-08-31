@@ -13,7 +13,7 @@ input {
   }
   mouse {
     accel-speed 0.4
-    scroll-factor 0.4
+    scroll-factor 0.7
     accel-profile "flat"
   }
   warp-mouse-to-focus
@@ -204,7 +204,7 @@ binds {
   Mod+Shift+Slash { show-hotkey-overlay; }
 
   Mod+Return hotkey-overlay-title="Open a Terminal: ghostty" { spawn "ghostty"; }
-  Mod+b hotkey-overlay-title="Open a browser: zen" { spawn "zen-beta"; }
+  Mod+b hotkey-overlay-title="Open a browser: vivaldi" { spawn "vivaldi"; }
   Mod+space hotkey-overlay-title="Run an Application Launcher" { spawn-sh "noctalia msg panel-toggle launcher"; }
   Super+Alt+p hotkey-overlay-title="powermenu" { spawn-sh "noctalia msg panel-toggle session"; }
 
