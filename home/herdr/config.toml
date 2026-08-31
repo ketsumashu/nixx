@@ -39,3 +39,24 @@ sidebar_start_collapsed = true
 sidebar_width = 15
 sidebar_min_width = 15
 show_agent_labels_on_pane_borders = true
+
+[theme.custom]
+accent = "#69dbaf"
+panel_bg = "reset"
+sidebar_bg = "reset"
+active_row_bg = "#2a2a2a"
+selection_bg = "#353535"
+surface0 = "#2a2a2a"
+surface1 = "#353535"
+surface_dim = "#131313"
+overlay0 = "#919191"
+overlay1 = "#c6c6c6"
+text = "#e2e2e2"
+subtext0 = "#c6c6c6"
+mauve = "#69dbaf"
+green = "#69dbaf"
+yellow = "#b3ccbf"
+red = "#ffb4ab"
+blue = "#a6cce0"
+teal = "#b3ccbf"
+peach = "#ffdeab"
