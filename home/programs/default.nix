@@ -40,5 +40,6 @@
     lazygit
     python3
     mangohud
+    pipeasio
   ];
 }
