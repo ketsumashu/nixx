@@ -10,7 +10,7 @@
   makeWrapper,
 }:
 stdenv.mkDerivation (finalAttrs: {
-  pname = "pipeasio";
+  pname = "pipeasio-int24";
   version = "1.4.3";
 
   src = fetchFromGitHub {
@@ -19,6 +19,10 @@ stdenv.mkDerivation (finalAttrs: {
     tag = "v${finalAttrs.version}";
     hash = "sha256-fWIRYe5BBgSdUfdRBdLwDM9t/3KCRO/IfFsomy9cDZs=";
   };
+
+  patches = [
+    ./pipeasio-int24.patch
+  ];
 
   nativeBuildInputs = [
     cmake
@@ -41,7 +45,7 @@ stdenv.mkDerivation (finalAttrs: {
   '';
 
   meta = {
-    description = "ASIO to PipeWire driver for Wine and Proton";
+    description = "Int24 ASIO to PipeWire driver for Wine and Proton";
     homepage = "https://github.com/M0n7y5/pipeasio";
     changelog = "https://github.com/M0n7y5/pipeasio/releases/tag/v${finalAttrs.version}";
     license = lib.licenses.gpl3Only;

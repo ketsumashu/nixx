@@ -1,0 +1,43 @@
+/* Center the auto-hidden vertical tab bar and limit it to 70% of the window. */
+#browser.auto-hide .auto-hide-wrapper.left,
+#browser.auto-hide .auto-hide-wrapper.right {
+  top: 15vh;
+  height: 70vh;
+}
+
+#browser.auto-hide .auto-hide-wrapper.top,
+#browser.auto-hide .auto-hide-wrapper.bottom {
+  left: 15vw;
+  width: 70vw;
+}
+
+/* Keep horizontal auto-hidden tabs compact like pinned tabs. */
+#browser.auto-hide .auto-hide-wrapper.top .tab:not(.pinned) .title,
+#browser.auto-hide .auto-hide-wrapper.bottom .tab:not(.pinned) .title,
+#browser.auto-hide .auto-hide-wrapper.top .tab:not(.pinned) .close,
+#browser.auto-hide .auto-hide-wrapper.bottom .tab:not(.pinned) .close {
+  display: none !important;
+}
+
+#browser.auto-hide .auto-hide-wrapper.top .tab:not(.pinned) .tab-header,
+#browser.auto-hide .auto-hide-wrapper.bottom .tab:not(.pinned) .tab-header {
+  justify-content: center;
+  padding: 0;
+}
+
+#browser.auto-hide .auto-hide-wrapper.top .tab:not(.pinned) .favicon,
+#browser.auto-hide .auto-hide-wrapper.bottom .tab:not(.pinned) .favicon {
+  margin: 0;
+}
+
+/* Disable Vivaldi's hover-to-close favicon shift for icon-only tabs. */
+#browser.auto-hide .auto-hide-wrapper.top .tab:hover .favicon,
+#browser.auto-hide .auto-hide-wrapper.top .tab.force-hover .favicon,
+#browser.auto-hide .auto-hide-wrapper.bottom .tab:hover .favicon,
+#browser.auto-hide .auto-hide-wrapper.bottom .tab.force-hover .favicon {
+  flex: 0 0 18px !important;
+  min-width: 18px !important;
+  max-width: 18px !important;
+  margin: 0 !important;
+  background-position: center !important;
+}

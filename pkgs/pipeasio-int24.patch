@@ -1,0 +1,252 @@
+diff --git a/src/asio.c b/src/asio.c
+--- a/src/asio.c
++++ b/src/asio.c
+@@ -255,9 +255,16 @@
+     bool                  counted;
+ } method_token;
+ 
++/* ASIOSTInt24LSB uses tightly packed three-byte little-endian samples. */
++typedef struct asio_sample
++{
++    uint8_t bytes[3];
++} asio_sample_t;
++
+ typedef struct IOChannel
+ {
+     audio_sample_t *audio_buffer;
++    asio_sample_t  *asio_buffer;
+     char            port_name[PIPEASIO_MAX_NAME_LENGTH];
+     audio_port_t   *port;
+     bool            active;
+@@ -335,6 +342,7 @@
+ 
+     /* host process-callback buffers */
+     audio_sample_t *callback_audio_buffer;
++    asio_sample_t  *callback_asio_buffer;
+     IOChannel      *input_channel;
+     IOChannel      *output_channel;
+ } IPipeASIOImpl;
+@@ -1091,6 +1099,11 @@
+         HeapFree(GetProcessHeap(), 0, This->callback_audio_buffer);
+         This->callback_audio_buffer = NULL;
+     }
++    if (This->callback_asio_buffer)
++    {
++        HeapFree(GetProcessHeap(), 0, This->callback_asio_buffer);
++        This->callback_asio_buffer = NULL;
++    }
+     audio_free_ports(This->phys_input_ports);
+     audio_free_ports(This->phys_output_ports);
+     This->phys_input_ports  = NULL;
+@@ -1465,6 +1478,7 @@
+     samples = (size_t)(This->pipeasio_number_inputs + This->pipeasio_number_outputs) * 2
+               * (size_t)This->host_current_buffersize;
+     memset(This->callback_audio_buffer, 0, samples * sizeof(*This->callback_audio_buffer));
++    memset(This->callback_asio_buffer, 0, samples * sizeof(*This->callback_asio_buffer));
+     This->host_buffer_index = 0;
+     atomic_store_explicit(&This->host_num_samples, 0, memory_order_relaxed);
+     atomic_store_explicit(&This->host_time_stamp, 0, memory_order_relaxed);
+@@ -1873,7 +1887,7 @@
+     result.channel  = request.channel;
+     result.isInput  = request.isInput;
+     result.isActive = channel->active;
+-    result.type     = 19;
++    result.type     = 17;
+     lstrcpynA(result.name, channel->port_name, sizeof(result.name));
+     memcpy(info, &result, sizeof(result));
+     method_end(&token);
+@@ -1943,6 +1957,7 @@
+     BufferInformation  *original                             = NULL;
+     BufferInformation  *result                               = NULL;
+     audio_sample_t     *audio_buffer                         = NULL;
++    asio_sample_t      *asio_buffer                          = NULL;
+     const char        **input_endpoints                      = NULL;
+     const char        **output_endpoints                     = NULL;
+     bool                input_active[PIPEASIO_MAX_CHANNELS]  = { false };
+@@ -1956,6 +1971,7 @@
+     INT                 expected = Initialized;
+     size_t              table_bytes;
+     size_t              audio_bytes;
++    size_t              asio_bytes;
+     size_t              input_endpoint_count  = 0;
+     size_t              output_endpoint_count = 0;
+ 
+@@ -2062,11 +2078,25 @@
+         error = -994;
+         goto fail_restore_size;
+     }
++    asio_bytes = pipeasio_host_callback_size_bytes(This->pipeasio_number_inputs,
++                                                    This->pipeasio_number_outputs, bufferSize,
++                                                    sizeof(*asio_buffer));
++    if (!asio_bytes
++        || !(asio_buffer = HeapAlloc(GetProcessHeap(), HEAP_ZERO_MEMORY, asio_bytes)))
++    {
++        HeapFree(GetProcessHeap(), 0, audio_buffer);
++        audio_buffer = NULL;
++        set_last_error(This, "out of memory allocating %ld Int24 ASIO buffers", (long)bufferSize);
++        error = -994;
++        goto fail_restore_size;
++    }
+ 
+     for (int i = 0; i < This->pipeasio_number_inputs; ++i)
+     {
+         This->input_channel[i].audio_buffer
+                 = audio_buffer + pipeasio_host_input_offset_samples(i, bufferSize);
++        This->input_channel[i].asio_buffer
++                = asio_buffer + pipeasio_host_input_offset_samples(i, bufferSize);
+         This->input_channel[i].active = input_active[i];
+     }
+     for (int i = 0; i < This->pipeasio_number_outputs; ++i)
+@@ -2074,14 +2104,17 @@
+         This->output_channel[i].audio_buffer = audio_buffer
+                                                + pipeasio_host_output_offset_samples(
+                                                        i, This->pipeasio_number_inputs, bufferSize);
++        This->output_channel[i].asio_buffer = asio_buffer
++                                               + pipeasio_host_output_offset_samples(
++                                                       i, This->pipeasio_number_inputs, bufferSize);
+         This->output_channel[i].active       = output_active[i];
+     }
+ 
+     for (LONG i = 0; i < numChannels; ++i)
+     {
+         LONG            channel = original[i].channelNumber;
+-        audio_sample_t *base = original[i].isInputType ? This->input_channel[channel].audio_buffer
+-                                                       : This->output_channel[channel].audio_buffer;
++        asio_sample_t  *base = original[i].isInputType ? This->input_channel[channel].asio_buffer
++                                                        : This->output_channel[channel].asio_buffer;
+         result[i].audioBufferStart = base;
+         result[i].audioBufferEnd   = base + bufferSize;
+     }
+@@ -2184,6 +2217,7 @@
+     }
+ 
+     This->callback_audio_buffer = audio_buffer;
++    This->callback_asio_buffer  = asio_buffer;
+     This->host_active_inputs    = active_inputs;
+     This->host_active_outputs   = active_outputs;
+     This->host_time_info_mode   = FALSE;
+@@ -2234,6 +2268,7 @@
+ fail_internal_published:
+     atomic_store_explicit(&This->host_callbacks, NULL, memory_order_release);
+     This->callback_audio_buffer = NULL;
++    This->callback_asio_buffer  = NULL;
+     This->host_active_inputs    = 0;
+     This->host_active_outputs   = 0;
+     stop_config_watch(This, false);
+@@ -2245,13 +2280,16 @@
+     for (int i = 0; i < This->pipeasio_number_inputs; ++i)
+     {
+         This->input_channel[i].audio_buffer = NULL;
++        This->input_channel[i].asio_buffer  = NULL;
+         This->input_channel[i].active       = false;
+     }
+     for (int i = 0; i < This->pipeasio_number_outputs; ++i)
+     {
+         This->output_channel[i].audio_buffer = NULL;
++        This->output_channel[i].asio_buffer  = NULL;
+         This->output_channel[i].active       = false;
+     }
++    HeapFree(GetProcessHeap(), 0, asio_buffer);
+     HeapFree(GetProcessHeap(), 0, audio_buffer);
+ fail_restore_size:
+     This->host_current_buffersize = old_buffer_size;
+@@ -2332,15 +2370,22 @@
+     for (int i = 0; i < This->pipeasio_number_inputs; ++i)
+     {
+         This->input_channel[i].audio_buffer = NULL;
++        This->input_channel[i].asio_buffer  = NULL;
+         This->input_channel[i].active       = false;
+     }
+     for (int i = 0; i < This->pipeasio_number_outputs; ++i)
+     {
+         This->output_channel[i].audio_buffer = NULL;
++        This->output_channel[i].asio_buffer  = NULL;
+         This->output_channel[i].active       = false;
+     }
+     This->host_active_inputs  = 0;
+     This->host_active_outputs = 0;
++    if (This->callback_asio_buffer)
++    {
++        HeapFree(GetProcessHeap(), 0, This->callback_asio_buffer);
++        This->callback_asio_buffer = NULL;
++    }
+     if (This->callback_audio_buffer)
+     {
+         HeapFree(GetProcessHeap(), 0, This->callback_audio_buffer);
+@@ -2457,6 +2502,44 @@
+  *  ASIO process callbacks
+  */
+ 
++static inline float
++asio_int24_to_float(const asio_sample_t *source)
++{
++    int32_t value = (int32_t)((uint32_t)source->bytes[0] | ((uint32_t)source->bytes[1] << 8)
++                            | ((uint32_t)source->bytes[2] << 16));
++    if (value & 0x00800000)
++        value |= ~0x00ffffff;
++    return (float)value / 8388608.0f;
++}
++
++static inline void
++float_to_asio_int24(asio_sample_t *destination, float sample)
++{
++    int32_t value;
++    if (sample <= -1.0f)
++        value = -8388608;
++    else if (sample >= 1.0f)
++        value = 8388607;
++    else
++        value = (int32_t)(sample * 8388608.0f);
++    destination->bytes[0] = (uint8_t)value;
++    destination->bytes[1] = (uint8_t)(value >> 8);
++    destination->bytes[2] = (uint8_t)(value >> 16);
++}
++
++static inline void
++float_buffer_to_asio_int24(asio_sample_t *destination, const audio_sample_t *source,
++                           audio_nframes_t nframes)
++{
++    if (!source)
++    {
++        memset(destination, 0, (size_t)nframes * sizeof(*destination));
++        return;
++    }
++    for (audio_nframes_t i = 0; i < nframes; ++i)
++        float_to_asio_int24(&destination[i], source[i]);
++}
++
+ static inline int
+ process_callback(audio_nframes_t nframes, void *arg)
+ {
+@@ -2487,11 +2570,8 @@
+             if (!This->input_channel[i].active)
+                 continue;
+             audio_sample_t *source = audio_port_get_buffer(This->input_channel[i].port, nframes);
+-            audio_sample_t *destination = &This->input_channel[i].audio_buffer[nframes * half];
+-            if (source)
+-                memcpy(destination, source, sizeof(*destination) * nframes);
+-            else
+-                memset(destination, 0, sizeof(*destination) * nframes);
++            asio_sample_t *destination = &This->input_channel[i].asio_buffer[nframes * half];
++            float_buffer_to_asio_int24(destination, source, nframes);
+         }
+ 
+         pipeasio_host_call_process(&token, half, nframes, audio_get_time_nsec(This->audio_client));
+@@ -2499,8 +2579,15 @@
+ 
+     for (int i = 0; i < This->pipeasio_number_outputs; ++i)
+     {
+-        const audio_sample_t *source
+-                = admitted ? &This->output_channel[i].audio_buffer[nframes * half] : NULL;
++        audio_sample_t *source = NULL;
++        if (admitted && This->output_channel[i].active)
++        {
++            asio_sample_t  *asio_source = &This->output_channel[i].asio_buffer[nframes * half];
++            audio_sample_t *destination = &This->output_channel[i].audio_buffer[nframes * half];
++            for (audio_nframes_t frame = 0; frame < nframes; ++frame)
++                destination[frame] = asio_int24_to_float(&asio_source[frame]);
++            source = destination;
++        }
+         audio_port_publish_output(This->output_channel[i].port, source, nframes, admitted,
+                                   This->output_channel[i].active);
+     }

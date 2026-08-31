@@ -14,6 +14,33 @@ let
       /home/mashu/.local/bin/konamate run infinitas --notify "$@"
   '';
 
+  infinitas-asio-launch = pkgs.writeShellScriptBin "infinitas-asio-launch" ''
+    pw_metadata=${pkgs.pipewire}/bin/pw-metadata
+
+    get_setting() {
+      "$pw_metadata" -n settings 0 "$1" \
+        | ${pkgs.gnused}/bin/sed -n "s/.*value:'\\([^']*\\)'.*/\\1/p"
+    }
+
+    previous_rate=$(get_setting clock.force-rate)
+    previous_quantum=$(get_setting clock.force-quantum)
+
+    cleanup() {
+      "$pw_metadata" -n settings 0 clock.force-rate "''${previous_rate:-0}" || true
+      "$pw_metadata" -n settings 0 clock.force-quantum "''${previous_quantum:-0}" || true
+      noctalia msg caffeine-disable
+    }
+
+    trap cleanup EXIT INT TERM
+
+    "$pw_metadata" -n settings 0 clock.force-rate 44100
+    "$pw_metadata" -n settings 0 clock.force-quantum 64
+    noctalia msg caffeine-enable
+
+    WINEDLLPATH=/home/mashu/.local/lib/wine''${WINEDLLPATH:+:$WINEDLLPATH} \
+      /home/mashu/.local/bin/konamate run infinitas --profile gamescope --notify "$@"
+  '';
+
   infinitas-pipeasio-register = pkgs.writeShellScriptBin "infinitas-pipeasio-register" ''
     set -eu
 
@@ -38,6 +65,7 @@ in
 {
   home.packages = [
     infinitas-launch
+    infinitas-asio-launch
     infinitas-pipeasio-register
   ];
 
@@ -46,6 +74,8 @@ in
   home.file.".config/pipeasio/config.ini".text = ''
     [pipeasio]
     output_device = konaste-sink
+    buffer_size = 64
+    fixed_buffer_size = true
     sample_rate = 44100
   '';
 
@@ -63,6 +93,18 @@ in
     mimeType = [
       "x-scheme-handler/bm2dxinf"
     ];
+  };
+
+  xdg.desktopEntries.infinitas-asio = {
+    name = "beatmania IIDX INFINITAS (ASIO)";
+    comment = "Play beatmania IIDX INFINITAS through PipeASIO";
+    icon = "infinitas";
+
+    exec = "${infinitas-asio-launch}/bin/infinitas-asio-launch %u";
+
+    categories = [ "Game" ];
+    terminal = false;
+    startupNotify = true;
   };
 
   home.activation.infinitasMime = lib.hm.dag.entryAfter [ "writeBoundary" ] ''
