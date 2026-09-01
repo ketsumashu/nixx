@@ -1,11 +1,12 @@
-adjust-cell-height = "25%"
-adjust-cell-width = "7%"
+adjust-cell-height = "40%"
+adjust-cell-width = "10%"
 background-opacity = 0.840000
 background-blur = true
 command = "fish"
 font-family = "Terminus"
-font-family = "mplus12"
-font-size = 17
+font-family = "Unifont Japanese"
+font-family = "Blobmoji"
+font-size = 18
 window-padding-x = 12
 window-padding-y = 12
 cursor-style-blink = false

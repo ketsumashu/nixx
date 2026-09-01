@@ -43,6 +43,11 @@
         <?xml version="1.0"?>
         <!DOCTYPE fontconfig SYSTEM "fonts.dtd">
         <fontconfig>
+          <!-- Prefer Unifont's native 16px PCF strike over its scalable OTF. -->
+          <match target="pattern">
+            <test name="family"><string>Unifont</string></test>
+            <edit name="scalable" mode="assign" binding="strong"><bool>false</bool></edit>
+          </match>
           <!-- Use heavier weights -->
           <match target="pattern">
             <test name="family"><string>PlemolJP35 Console HS</string></test>
