@@ -4,7 +4,7 @@ let
   hgwDnsCheck = pkgs.writeShellScript "hgw-dns-check" ''
     STATE=/run/hgw-dns-check.state
 
-    if ${pkgs.bind}/bin/dig \
+    if ${pkgs.bind.dnsutils}/bin/dig \
       @192.168.0.1 \
       example.com \
       A \
