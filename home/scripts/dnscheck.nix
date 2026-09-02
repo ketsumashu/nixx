@@ -5,7 +5,7 @@ let
     STATE="$XDG_RUNTIME_DIR/hgw-dns-check.state"
 
     if ${pkgs.bind.dnsutils}/bin/dig \
-      @192.168.0.254 \
+      @192.168.0.1 \
       example.com \
       A \
       +short \
