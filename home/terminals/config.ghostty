@@ -1,6 +1,6 @@
 adjust-cell-height = "40%"
 adjust-cell-width = "10%"
-background-opacity = 0.840000
+background-opacity = 0.800000
 background-blur = true
 command = "fish"
 font-family = "Terminus"
@@ -13,4 +13,5 @@ cursor-style-blink = false
 mouse-hide-while-typing =true
 focus-follows-mouse = true
 click-repeat-interval = 500
+confirm-close-surface = false
 theme = noctalia
