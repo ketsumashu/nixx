@@ -2,10 +2,10 @@
 
 let
   hgwDnsCheck = pkgs.writeShellScript "hgw-dns-check" ''
-    STATE=/run/hgw-dns-check.state
+    STATE="$XDG_RUNTIME_DIR/hgw-dns-check.state"
 
     if ${pkgs.bind.dnsutils}/bin/dig \
-      @192.168.0.1 \
+      @192.168.0.254 \
       example.com \
       A \
       +short \
@@ -23,11 +23,16 @@ let
     if [ "$current" != "$previous" ]; then
       case "$current" in
         down)
-          echo "BL900HW IPv4 DNS is DOWN"
+          ${pkgs.libnotify}/bin/notify-send \
+            --urgency=critical \
+            "HGW DNS障害" \
+            "BL900HWのDNSしんでるよ"
           ;;
         up)
           if [ "$previous" = down ]; then
-            echo "BL900HW IPv4 DNS has RECOVERED"
+            ${pkgs.libnotify}/bin/notify-send \
+              "HGW DNS復旧" \
+              "BL900HWのDNS復活したよ"
           fi
           ;;
       esac
@@ -37,21 +42,24 @@ let
   '';
 in
 {
-  systemd.services.hgw-dns-check = {
-    description = "Check BL900HW IPv4 DNS";
-    serviceConfig = {
+  systemd.user.services.hgw-dns-check = {
+    Unit.Description = "Check BL900HW IPv4 DNS";
+
+    Service = {
       Type = "oneshot";
       ExecStart = hgwDnsCheck;
     };
   };
 
-  systemd.timers.hgw-dns-check = {
-    wantedBy = [ "timers.target" ];
+  systemd.user.timers.hgw-dns-check = {
+    Unit.Description = "Periodically check BL900HW IPv4 DNS";
 
-    timerConfig = {
+    Timer = {
       OnBootSec = "2min";
       OnUnitActiveSec = "5min";
       Unit = "hgw-dns-check.service";
     };
+
+    Install.WantedBy = [ "timers.target" ];
   };
 }
