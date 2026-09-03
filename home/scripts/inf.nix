@@ -15,12 +15,26 @@ let
   '';
 
   infinitas-asio-launch = pkgs.writeShellScriptBin "infinitas-asio-launch" ''
+    pw_metadata=${pkgs.pipewire}/bin/pw-metadata
+
+    get_setting() {
+      "$pw_metadata" -n settings 0 "$1" \
+        | ${pkgs.gnused}/bin/sed -n "s/.*value:'\\([^']*\\)'.*/\\1/p"
+    }
+
+    previous_rate=$(get_setting clock.force-rate)
+    previous_quantum=$(get_setting clock.force-quantum)
+
     cleanup() {
+      "$pw_metadata" -n settings 0 clock.force-rate "''${previous_rate:-0}" || true
+      "$pw_metadata" -n settings 0 clock.force-quantum "''${previous_quantum:-0}" || true
       noctalia msg caffeine-disable
     }
 
     trap cleanup EXIT INT TERM
 
+    "$pw_metadata" -n settings 0 clock.force-rate 44100
+    "$pw_metadata" -n settings 0 clock.force-quantum 64
     noctalia msg caffeine-enable
 
     WINEDLLPATH=/home/mashu/.local/lib/wine''${WINEDLLPATH:+:$WINEDLLPATH} \
