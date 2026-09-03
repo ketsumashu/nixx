@@ -60,3 +60,6 @@ red = "#ffb4ab"
 blue = "#a6cce0"
 teal = "#b3ccbf"
 peach = "#ffdeab"
+
+[ui.toast]
+delivery = "herdr"
