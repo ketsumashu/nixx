@@ -1,127 +1,155 @@
+/*
+ * Vimium Glass-inspired theme, recolored for the Codex / Noctalia palette.
+ */
 :root {
+    --glass-fg: #e2e2e2;
+    --glass-fg-muted: #919191;
+    --glass-accent: #69dbaf;
+    --glass-hint-fg: #b3ccbf;
+    --glass-bg: #13131399;
+    --glass-bg-selected: #4747474d;
+    --glass-bg-hint: #1f1f1f99;
+    --glass-border: #474747;
+    --glass-shadow: 0 20px 40px #00000040;
+
     /* Generic */
-    --tridactyl-font-family: "Terminus", "Shinonome";
-    --tridactyl-font-family-sans: "Terminus", "Shinonome";
-    --tridactyl-font-size: 13px;
+    --tridactyl-font-family: "Terminus", "Shinonome" !important;
+    --tridactyl-font-family-sans: var(--tridactyl-font-family);
+    --tridactyl-font-size: 16px;
     --tridactyl-small-font-size: 13px;
-    --tridactyl-bg: #191c25;
-    --tridactyl-fg: #e0def4;
-    --tridactyl-logo: url("moz-extension://__MSG_@@extension_id__/static/logo/Tridactyl_64px.png");
-    --tridactyl-scrollbar-color: auto;
+    --tridactyl-bg: var(--glass-bg);
+    --tridactyl-fg: var(--glass-fg);
+    --tridactyl-scrollbar-color: var(--glass-border) transparent;
 
-    /* Mode Indicator */
+    /* Mode indicator */
     --tridactyl-status-font-family: var(--tridactyl-font-family);
-    --tridactyl-status-font-size: var(--tridactyl-font-size);
-    --tridactyl-status-bg: var(--tridactyl-bg);
-    --tridactyl-status-fg: var(--tridactyl-fg);
-    --tridactyl-status-border: 1px #232136 solid;
-    --tridactyl-status-border-radius: 0px;
+    --tridactyl-status-font-size: 13px;
+    --tridactyl-status-bg: var(--glass-bg);
+    --tridactyl-status-fg: var(--glass-fg);
+    --tridactyl-status-border: 1px solid var(--glass-border);
+    --tridactyl-status-border-radius: 6px;
 
-    /* Search highlight */
-    --tridactyl-search-highlight-color: #77adb1;
-
-    /* Hinting */
-
-    /* Hint character tags */
+    /* Search and hinting */
+    --tridactyl-search-highlight-color: var(--glass-accent);
+    --tridactyl-search-highlight-active-color: var(--glass-hint-fg);
     --tridactyl-hintspan-font-family: var(--tridactyl-font-family);
     --tridactyl-hintspan-font-size: var(--tridactyl-small-font-size);
     --tridactyl-hintspan-font-weight: bold;
-    --tridactyl-hintspan-fg: #77adb1;
-    --tridactyl-hintspan-bg: #232136;
-    --tridactyl-hintspan-border-color: ButtonShadow;
-    --tridactyl-hintspan-border-width: 0px;
+    --tridactyl-hintspan-fg: var(--glass-hint-fg);
+    --tridactyl-hintspan-pressed-fg: var(--glass-hint-fg);
+    --tridactyl-hintspan-bg: var(--glass-bg-hint);
+    --tridactyl-hintspan-border-color: var(--glass-border);
+    --tridactyl-hintspan-border-width: 1px;
     --tridactyl-hintspan-border-style: solid;
-    --tridactyl-hintspan-js-background: rgba(76, 86, 106, 0);
+    --tridactyl-hintspan-js-background: transparent;
+    --tridactyl-hintspan-active-fg: var(--glass-accent);
+    --tridactyl-hintspan-active-bg: var(--glass-bg-hint);
+    --tridactyl-hintspan-active-border-color: var(--glass-accent);
+    --tridactyl-hint-fg: var(--glass-fg);
+    --tridactyl-hint-active-fg: var(--glass-fg);
+    --tridactyl-hint-active-bg: #69dbaf33;
+    --tridactyl-hint-active-outline: 1px solid var(--glass-accent);
+    --tridactyl-hint-bg: #47474733;
+    --tridactyl-hint-outline: 1px solid var(--glass-border);
+    --tridactyl-hint-highlight-fg: var(--tridactyl-hint-fg);
+    --tridactyl-hint-highlight-active-fg: var(--tridactyl-hint-active-fg);
+    --tridactyl-hint-highlight-bg: var(--tridactyl-hint-bg);
+    --tridactyl-hint-highlight-active-bg: var(--tridactyl-hint-active-bg);
+    --tridactyl-hint-highlight-outline: var(--tridactyl-hint-outline);
+    --tridactyl-hint-highlight-active-outline: var(--tridactyl-hint-active-outline);
 
-    /* Element highlights */
-    --tridactyl-hint-active-fg: #232136;
-    --tridactyl-hint-active-bg: rgba(76, 86, 106, 1);
-    --tridactyl-hint-active-outline: 1px solid #5e81ac;
-    --tridactyl-hint-bg: rgba(129, 161, 193, 0);
-    --tridactyl-hint-outline: 1px solid #8caaee;
-
-    /* :viewsource */
-    --tridactyl-vs-bg: var(--tridactyl-bg);
-    --tridactyl-vs-fg: var(--tridactyl-fg);
-    --tridactyl-vs-font-family: var(--tridactyl-font-family);
-
-    /*commandline*/
-
-    --tridactyl-cmdl-bg: var(--tridactyl-bg);
-    --tridactyl-cmdl-fg: var(--tridactyl-fg);
+    /* Command line and completions */
+    --tridactyl-cmdl-bg: var(--glass-bg);
+    --tridactyl-cmdl-fg: var(--glass-fg);
     --tridactyl-cmdl-line-height: 1.5;
-    --tridactyl-cmdl-font-family: "Terminus", "mplus12";
-    --tridactyl-cmdl-font-size: 13px;
-
-    /*completions*/
-
-    --tridactyl-cmplt-option-height: 1.24em;
-    --tridactyl-cmplt-fg: var(--tridactyl-fg);
-    --tridactyl-cmplt-bg: var(--tridactyl-bg);
-    --tridactyl-cmplt-font-size: 13px;
-    --tridactyl-cmplt-font-family: "Terminus", "mplus12";
-    /* i don't think 0.5px is redered */
-    --tridactyl-cmplt-border-top: 0.5px solid grey;
-
-    /* need a better way for naming variables
-     *
-        - .Properties for .HistoryCompletionSource table
-        - .Properties for .BmarkCompletionSource table
-
-    */
-
-    /*sectionHeader*/
-
-    --tridactyl-header-first-bg: #77adb1;
-    --tridactyl-header-second-bg: #77adb1;
-    --tridactyl-header-third-bg: #77adb1;
-
-
+    --tridactyl-cmdl-font-family: var(--tridactyl-font-family);
+    --tridactyl-cmdl-font-size: var(--tridactyl-font-size);
+    --tridactyl-cmplt-option-height: 1.6em;
+    --tridactyl-cmplt-fg: var(--glass-fg);
+    --tridactyl-cmplt-bg: var(--glass-bg);
+    --tridactyl-cmplt-font-size: 14px;
+    --tridactyl-cmplt-font-family: var(--tridactyl-font-family);
+    --tridactyl-cmplt-border-top: 1px solid var(--glass-border);
+    --tridactyl-header-first-bg: transparent;
+    --tridactyl-header-second-bg: transparent;
+    --tridactyl-header-third-bg: transparent;
     --tridactyl-header-font-size: inherit;
-    --tridactyl-header-font-weight:normal;
-    /* i don't think 0.5px is redered */
-    --tridactyl-header-border-bottom: 1px solid bottom;
-
-    /*url style*/
-
+    --tridactyl-header-font-weight: bold;
+    --tridactyl-header-border-bottom: 1px solid var(--glass-border);
     --tridactyl-url-text-decoration: none;
-    --tridactyl-url-fg: #a6accd;
-    --tridactyl-url-bg: var(--tridactyl-bg);
+    --tridactyl-url-fg: var(--glass-fg);
+    --tridactyl-url-bg: transparent;
     --tridactyl-url-cursor: pointer;
-
-    /*option focused*/
-
-    --tridactyl-of-fg: #77adb1;
-    --tridactyl-of-bg: #232136;
-
-    /*new tab spoiler box*/
-    --tridactyl-highlight-box-bg: #414559;
-    --tridactyl-highlight-box-fg: var(--tridactyl-fg);
-
-    --tridactyl-private-window-icon-url: url("chrome://browser/skin/privatebrowsing/private-browsing.svg");
-
-    --tridactyl-container-fingerprint-url: url("resource://usercontext-content/fingerprint.svg");
-    --tridactyl-container-briefcase-url: url("resource://usercontext-content/briefcase.svg");
-    --tridactyl-container-dollar-url: url("resource://usercontext-content/dollar.svg");
-    --tridactyl-container-cart-url: url("resource://usercontext-content/cart.svg");
-    --tridactyl-container-circle-url: url("resource://usercontext-content/circle.svg");
-    --tridactyl-container-gift-url: url("resource://usercontext-content/gift.svg");
-    --tridactyl-container-vacation-url: url("resource://usercontext-content/vacation.svg");
-    --tridactyl-container-food-url: url("resource://usercontext-content/food.svg");
-    --tridactyl-container-fruit-url: url("resource://usercontext-content/fruit.svg");
-    --tridactyl-container-pet-url: url("resource://usercontext-content/pet.svg");
-    --tridactyl-container-tree-url: url("resource://usercontext-content/tree.svg");
-    --tridactyl-container-chill-url: url("resource://usercontext-content/chill.svg");
-
-    --tridactyl-container-color-blue: #8caaee;
-    --tridactyl-container-color-turquoise: #81c8be;
-    --tridactyl-container-color-green: #a6d189;
-    --tridactyl-container-color-yellow: #e5c890;
-    --tridactyl-container-color-orange: #ef9f76;
-    --tridactyl-container-color-red: #ea999c;
-    --tridactyl-container-color-pink: #f4b8e4;
-    --tridactyl-container-color-purple: #babbf1;
-
-    --tridactyl-externaledit-bg: var(--tridactyl-logo) no-repeat center;
+    --tridactyl-of-fg: var(--glass-fg);
+    --tridactyl-of-bg: var(--glass-bg-selected);
+    --tridactyl-highlight-box-bg: var(--glass-bg-selected);
+    --tridactyl-highlight-box-fg: var(--glass-fg);
 }
-    :root .sectionHeader { background: #8caaee; }
+
+#command-line-holder,
+#completions,
+#status {
+    backdrop-filter: blur(40px);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+}
+
+#command-line-holder {
+    background: var(--glass-bg);
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+}
+
+#tridactyl-input {
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    color: var(--glass-fg);
+    font-family: var(--tridactyl-font-family);
+    font-size: var(--tridactyl-font-size);
+    padding: 8px 15px;
+}
+
+#completions {
+    background: var(--glass-bg);
+    border-radius: 0 0 15px 15px;
+    border-top: 0;
+    padding: 15px;
+}
+
+#completions > div > table {
+    border-collapse: separate;
+    border-spacing: 0 4px;
+}
+
+#completions .sectionHeader {
+    background: transparent;
+    border-bottom: 1px solid var(--glass-border);
+    color: var(--glass-fg-muted);
+    font-weight: bold;
+    padding: 6px 10px;
+    text-transform: uppercase;
+}
+
+#completions .focused {
+    background: var(--glass-bg-selected);
+    border-radius: 8px;
+}
+
+#completions .url {
+    color: var(--glass-fg);
+}
+
+#completions .documentation,
+#completions .title {
+    color: var(--glass-fg-muted);
+}
+
+#status {
+    background: var(--glass-bg);
+}
+
+span.TridactylHint {
+    backdrop-filter: blur(10px);
+    box-shadow: var(--glass-shadow);
+}
