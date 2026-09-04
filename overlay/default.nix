@@ -48,6 +48,7 @@ in
           inherit (inputs) yaskkserv2-bin;
         };
         pipeasio = final.callPackage ../pkgs/pipeasio.nix { };
+        shinonome-font = final.callPackage ../pkgs/shinonome-font.nix { };
       }
     )
   ];

@@ -8,6 +8,7 @@
       noto-fonts
       plemoljp-hs
       terminus_font
+      shinonome-font
       helvetica-neue-lt-std
       envypn-font
       gohufont
