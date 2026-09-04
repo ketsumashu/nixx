@@ -45,6 +45,18 @@
     enableFishIntegration = true;
   };
 
+  programs = {
+    zoxide = {
+      enable = true;
+      enableFishIntegration = true;
+    };
+
+    fzf = {
+      enable = true;
+      enableFishIntegration = true;
+    };
+  };
+
   xdg.configFile."ghostty/config.ghostty".source =
     config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/nixx/home/terminals/config.ghostty";
 }
