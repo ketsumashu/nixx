@@ -12,7 +12,6 @@
     enable = true;
     nativeMessagingHosts = with pkgs; [
       tridactyl-native
-      pywalfox-native
     ];
   };
 

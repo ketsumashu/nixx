@@ -1,7 +1,7 @@
 :root {
     /* Generic */
-    --tridactyl-font-family: "Terminus", "mplus12";
-    --tridactyl-font-family-sans: "Terminus", "mplus12";
+    --tridactyl-font-family: "Terminus", "Shinonome";
+    --tridactyl-font-family-sans: "Terminus", "Shinonome";
     --tridactyl-font-size: 13px;
     --tridactyl-small-font-size: 13px;
     --tridactyl-bg: #191c25;
