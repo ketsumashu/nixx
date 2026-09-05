@@ -49,6 +49,9 @@
         structuredExtraConfig = with lib.kernel; {
           EXPERT = yes;
           PREEMPT_RT = yes;
+
+          DRM_I915_GVT = lib.mkForce unset;
+          DRM_I915_GVT_KVMGT = lib.mkForce unset;
         };
       }
     ];
