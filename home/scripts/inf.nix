@@ -78,6 +78,7 @@ in
     fixed_buffer_size = true
     sample_rate = 44100
     node_name = INFINITAS-pipeasio
+    realtime = 1
   '';
 
   xdg.desktopEntries.infinitas = {
