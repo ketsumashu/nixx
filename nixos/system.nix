@@ -41,6 +41,17 @@
     supportedFilesystems = [ "ntfs" ];
     blacklistedKernelModules = [ "k10temp" ];
     kernelPackages = pkgs.linuxPackages_latest;
+    kernelPatches = [
+      {
+        name = "preempt-rt";
+        patch = null;
+
+        structuredExtraConfig = with lib.kernel; {
+          EXPERT = yes;
+          PREEMPT_RT = yes;
+        };
+      }
+    ];
     tmp.cleanOnBoot = true;
     extraModulePackages = with config.boot.kernelPackages; [
       zenpower
