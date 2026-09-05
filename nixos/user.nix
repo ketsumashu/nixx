@@ -5,6 +5,7 @@
     extraGroups = [
       "networkmanager"
       "wheel"
+      "audio"
     ];
   };
   environment.variables = {
@@ -23,5 +24,13 @@
   security = {
     polkit.enable = true;
     sudo.wheelNeedsPassword = false;
+    pam.loginLimits = [
+      {
+        domain = "@audio";
+        type = "-";
+        item = "rtprio";
+        value = 20;
+      }
+    ];
   };
 }
